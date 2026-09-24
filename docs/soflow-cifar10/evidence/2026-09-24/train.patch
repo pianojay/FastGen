@@ -1,0 +1,290 @@
+diff --git a/train.py b/train.py
+index d27df56..c0fa254 100644
+--- a/train.py
++++ b/train.py
+@@ -33,7 +33,7 @@ class Learner:
+                  l_schedule: Literal['Const','Linear','Cosine','Exponent'] = 'Exponent', l_init_ratio: float = 0.1, l_end_ratio: float = 0.002,
+                  total_steps: int = 400000, ema_decay_rate: float = 0.9999,
+                  learning_rate: float = 1e-4, betas: Tuple[float, float] = (0.9, 0.99), weight_decay: float = 0.0, 
+-                 batch_size: int = 256, num_workers: int = 12, prefetch_factor: int = 6, 
++                 batch_size: int = 256, microbatch_size: int | None = None, num_workers: int = 12, prefetch_factor: int = 6, 
+                  eval_steps: int = 25000, eval_batch_size: int = 125, eval_NFE: int = 1, 
+                  eval_demo_steps: int = 1000, eval_demo_shape: Tuple[int, int] = (4, 8),
+                  logging_steps: int = 100, ckpt_saving_steps: int = 200000, seed: int = 42
+@@ -41,6 +41,10 @@ class Learner:
+         
+         world_size = int(os.environ['WORLD_SIZE'])
+         assert batch_size % world_size == 0, 'batch size shoule be multiple of GPU amount'
++        if microbatch_size is not None:
++            if microbatch_size <= 0 or dataset_type != 'CIFAR10' or velocity_loss_ratio != 0:
++                raise ValueError('Microbatching currently supports CIFAR10 consistency-only training with a positive chunk size')
++        self.microbatch_size = microbatch_size
+         rank = int(os.environ['RANK'])
+         local_rank = int(os.environ['LOCAL_RANK'])
+         torch.manual_seed(seed + rank)
+@@ -202,92 +206,115 @@ class Learner:
+ 
+         dist.barrier()
+             
+-    def train(self):
++    def _backward_batch(self, images_data, labels, weight):
++        augment_labels = None
++        if self.dataset_type == 'Imagenet':
++            mean, std = torch.chunk(images_data.to(self.device), chunks = 2, dim = 1)
++            samples = (mean + std * torch.randn_like(std)) * 0.18215
++        else: # self.dataset_type == 'CIFAR10':
++            samples, augment_labels = self.augment_pipe(images_data.to(self.device))
++            
++        labels = labels.to(self.device)
++                
++        batch_size = samples.size(0)
++        velocity_num = int(self.velocity_loss_ratio * batch_size)
++        consistency_num = batch_size - velocity_num
++
++        if velocity_num > 0:
++            samples_velocity = samples[:velocity_num]
++            labels_velocity = labels[:velocity_num]
++            augment_labels_velocity = None if augment_labels is None else augment_labels[:velocity_num]
++            
++            if self.dataset_type != 'Imagenet':
++                labels_velocity = None
++
++            # logit-normal sampling
++            t = torch.sigmoid(torch.randn(velocity_num, 1, 1, 1, device = self.device) * self.time_std[0] + self.time_mean[0]) 
++            if self.cfg_scale > 1.0:
++                cfg_mask = torch.rand(velocity_num, device = self.device) < self.cfg_drop_rate
++            else:
++                cfg_mask = torch.zeros(velocity_num, device = self.device).bool()
++                
++            velocity_loss, velocity_loss_mse, velocity_loss_weight = self.model(get_velocity_loss = True, 
++                samples = samples_velocity, t = t, labels = labels_velocity, cfg_mask = cfg_mask, cfg_scale = self.cfg_scale,
++                cfg_decay_time = self.cfg_decay_time, p = self.p, eps = self.eps, mix_ratio = self.mix_ratio, 
++                augment_labels = augment_labels_velocity)                 
++        else:
++            velocity_loss = torch.zeros(1, device = self.device, requires_grad=True)
++            velocity_loss_mse, velocity_loss_weight = torch.zeros(1, device = self.device), torch.zeros(1, device = self.device)
++        
++        if consistency_num > 0:
++            samples_consistency = samples[velocity_num:]
++            labels_consistency = labels[velocity_num:]
++            augment_labels_consistency = None if augment_labels is None else augment_labels[velocity_num:]
++            
++            if self.dataset_type != 'Imagenet':
++                labels_consistency = None
++            
++            # logit-normal sampling
++            time1 = torch.sigmoid(torch.randn(consistency_num, 1, 1, 1, device = self.device) * self.time_std[1] + self.time_mean[1])
++            time2 = torch.sigmoid(torch.randn(consistency_num, 1, 1, 1, device = self.device) * self.time_std[2] + self.time_mean[2])
++
++            # the minimal gap is set to 1e-4
++            t = time2.clamp(min = 1e-4)
++            s = torch.min(time1, t - 1e-4)
++            l = self.model.module.get_middle_time(t, s, self.finished_steps, self.total_steps, init_ratio = self.l_init_ratio, end_ratio = self.l_end_ratio, method = self.l_schedule)
++            l = torch.min(l, t - 1e-4)
++            
++            if self.cfg_scale > 1.0:
++                cfg_mask = torch.rand(consistency_num, device = self.device) < self.cfg_drop_rate
++            else:
++                cfg_mask = torch.zeros(consistency_num, device = self.device).bool()
++            
++            consistency_loss, consistency_loss_mse, consistency_loss_weight = self.model(get_velocity_loss = False, 
++                samples = samples_consistency, t = t, l = l, s = s, labels = labels_consistency, cfg_mask = cfg_mask, 
++                cfg_scale = self.cfg_scale, cfg_decay_time = self.cfg_decay_time, p = self.p, eps = self.eps, 
++                mix_ratio = self.mix_ratio, augment_labels = augment_labels_consistency)
++        else:
++            consistency_loss = torch.zeros(1, device = self.device, requires_grad=True)
++            consistency_loss_mse, consistency_loss_weight = torch.zeros(1, device = self.device), torch.zeros(1, device = self.device)
++
++        loss = velocity_loss * (velocity_num / batch_size) + consistency_loss * (consistency_num / batch_size)
++        (loss * weight).backward()
++        return {"vel": velocity_loss_mse.detach(), "con": consistency_loss_mse.detach(),
++                "w_vel": velocity_loss_weight.detach(), "w_con": consistency_loss_weight.detach()}
++
++    def train(self, run_steps=None):
++        # Limit an invocation for throughput measurement without shortening the
++        # full training schedule used by get_middle_time.
++        stop_step = self.total_steps if run_steps is None else min(self.total_steps, self.finished_steps + run_steps)
++        starting_step = self.finished_steps
+         avg_stats = {'vel': 0,'con': 0,'w_vel': 0,'w_con': 0,'grad': 0}
++        stats_count = 0
+         start_time = time.time()
++        if self.finished_steps >= self.total_steps:
++            dist.destroy_process_group()
++            return
+         while True:
+             self.model.train()
+             self.sampler.set_epoch(self.finished_epochs)
+                 
+             for images_data, labels in self.train_loader:
+                 
+-                augment_labels = None
+-                if self.dataset_type == 'Imagenet':
+-                    mean, std = torch.chunk(images_data.to(self.device), chunks = 2, dim = 1)
+-                    samples = (mean + std * torch.randn_like(std)) * 0.18215
+-                else: # self.dataset_type == 'CIFAR10':
+-                    samples, augment_labels = self.augment_pipe(images_data.to(self.device))
+-                    
+-                labels = labels.to(self.device)
+-                        
+-                batch_size = samples.size(0)
+-                velocity_num = int(self.velocity_loss_ratio * batch_size)
+-                consistency_num = batch_size - velocity_num
+-
+-                if velocity_num > 0:
+-                    samples_velocity = samples[:velocity_num]
+-                    labels_velocity = labels[:velocity_num]
+-                    augment_labels_velocity = None if augment_labels is None else augment_labels[:velocity_num]
+-                    
+-                    if self.dataset_type != 'Imagenet':
+-                        labels_velocity = None
+-
+-                    # logit-normal sampling
+-                    t = torch.sigmoid(torch.randn(velocity_num, 1, 1, 1, device = self.device) * self.time_std[0] + self.time_mean[0]) 
+-                    if self.cfg_scale > 1.0:
+-                        cfg_mask = torch.rand(velocity_num, device = self.device) < self.cfg_drop_rate
+-                    else:
+-                        cfg_mask = torch.zeros(velocity_num, device = self.device).bool()
+-                        
+-                    velocity_loss, velocity_loss_mse, velocity_loss_weight = self.model(get_velocity_loss = True, 
+-                        samples = samples_velocity, t = t, labels = labels_velocity, cfg_mask = cfg_mask, cfg_scale = self.cfg_scale,
+-                        cfg_decay_time = self.cfg_decay_time, p = self.p, eps = self.eps, mix_ratio = self.mix_ratio, 
+-                        augment_labels = augment_labels_velocity)                 
+-                else:
+-                    velocity_loss = torch.zeros(1, device = self.device, requires_grad=True)
+-                    velocity_loss_mse, velocity_loss_weight = torch.zeros(1, device = self.device), torch.zeros(1, device = self.device)
+-                
+-                if consistency_num > 0:
+-                    samples_consistency = samples[velocity_num:]
+-                    labels_consistency = labels[velocity_num:]
+-                    augment_labels_consistency = None if augment_labels is None else augment_labels[velocity_num:]
+-                    
+-                    if self.dataset_type != 'Imagenet':
+-                        labels_consistency = None
+-                    
+-                    # logit-normal sampling
+-                    time1 = torch.sigmoid(torch.randn(consistency_num, 1, 1, 1, device = self.device) * self.time_std[1] + self.time_mean[1])
+-                    time2 = torch.sigmoid(torch.randn(consistency_num, 1, 1, 1, device = self.device) * self.time_std[2] + self.time_mean[2])
+-
+-                    # the minimal gap is set to 1e-4
+-                    t = time2.clamp(min = 1e-4)
+-                    s = torch.min(time1, t - 1e-4)
+-                    l = self.model.module.get_middle_time(t, s, self.finished_steps, self.total_steps, init_ratio = self.l_init_ratio, end_ratio = self.l_end_ratio, method = self.l_schedule)
+-                    l = torch.min(l, t - 1e-4)
+-                    
+-                    if self.cfg_scale > 1.0:
+-                        cfg_mask = torch.rand(consistency_num, device = self.device) < self.cfg_drop_rate
+-                    else:
+-                        cfg_mask = torch.zeros(consistency_num, device = self.device).bool()
+-                    
+-                    consistency_loss, consistency_loss_mse, consistency_loss_weight = self.model(get_velocity_loss = False, 
+-                        samples = samples_consistency, t = t, l = l, s = s, labels = labels_consistency, cfg_mask = cfg_mask, 
+-                        cfg_scale = self.cfg_scale, cfg_decay_time = self.cfg_decay_time, p = self.p, eps = self.eps, 
+-                        mix_ratio = self.mix_ratio, augment_labels = augment_labels_consistency)
+-                else:
+-                    consistency_loss = torch.zeros(1, device = self.device, requires_grad=True)
+-                    consistency_loss_mse, consistency_loss_weight = torch.zeros(1, device = self.device), torch.zeros(1, device = self.device)
+-
+-                loss = velocity_loss * (velocity_num / batch_size) + consistency_loss * (consistency_num / batch_size)
+-                    
+                 self.optimizer.zero_grad()
+-                loss.backward()
+-                
++                logical_size = images_data.size(0)
++                chunk_size = self.microbatch_size or logical_size
++                step_stats = {key: torch.zeros(1, device=self.device)
++                              for key in ('vel', 'con', 'w_vel', 'w_con')}
++                for offset in range(0, logical_size, chunk_size):
++                    end = min(offset + chunk_size, logical_size)
++                    weight = (end - offset) / logical_size
++                    stats = self._backward_batch(images_data[offset:end], labels[offset:end], weight)
++                    for key in step_stats:
++                        step_stats[key] += stats[key] * weight
++
+                 grad = torch.zeros(1, device = self.device)
+                 for param in self.model.module.network.parameters():
+                     if param.grad is not None:
+                         grad += param.grad.pow(2).sum()
+                 grad = grad.sqrt()
++                if not torch.isfinite(grad).all() or not all(torch.isfinite(v).all() for v in step_stats.values()):
++                    raise FloatingPointError(f'Non-finite training statistics at step {self.finished_steps}')
+                 self.optimizer.step()
+ 
+                 with torch.inference_mode():
+@@ -310,18 +337,19 @@ class Learner:
+                             for ema_buffer, model_buffer in zip(self.ema_model.buffers(), self.model.module.buffers()):
+                                 ema_buffer.data.copy_(model_buffer.data)        
+                     
+-                    avg_stats['vel'] += velocity_loss_mse
+-                    avg_stats['con'] += consistency_loss_mse
+-                    avg_stats['w_vel'] += velocity_loss_weight
+-                    avg_stats['w_con'] += consistency_loss_weight
++                    for key in step_stats:
++                        avg_stats[key] += step_stats[key]
+                     avg_stats['grad'] += grad
++                    stats_count += 1
+                         
+                     self.finished_steps += 1
++                    if self.finished_steps == starting_step + 1 and dist.get_rank() == 0:
++                        self.logger.info(f"First optimizer update of this invocation complete: step={self.finished_steps}, batch={logical_size}, microbatch={chunk_size}, loss_mse={step_stats['con'].item():.6f}, grad_norm={grad.item():.6f}, seconds={time.time() - start_time:.2f}")
+                     if self.finished_steps % self.logging_steps == 0:
+                         torch.cuda.synchronize()
+                         end_time = time.time()
+                         for key in avg_stats.keys():
+-                            avg_stats[key] /= self.logging_steps
++                            avg_stats[key] /= stats_count
+                             dist.all_reduce(avg_stats[key], op = dist.ReduceOp.SUM)
+                             avg_stats[key] = avg_stats[key].item() / dist.get_world_size()
+                         
+@@ -330,10 +358,11 @@ class Learner:
+                             peak_memory = torch.cuda.max_memory_allocated() / 1024**3
+                             torch.cuda.reset_peak_memory_stats()
+                             self.logger.info(f"Steps = {self.finished_steps:07d}/{self.total_steps:07d} ({percentage:.3f}%), Vel_MSE = {avg_stats['vel']:.5f}, Vel_Weight = {avg_stats['w_vel']:.5f}, " + \
+-                                f"Con_MSE = {avg_stats['con']:.5f}, Con_Weight = {avg_stats['w_con']:.5f}, Grad_Norm = {avg_stats['grad']:.5f}, Mem = {peak_memory:.2f} GB, Time = {end_time - start_time:.2f} seconds")
++                                f"Con_MSE = {avg_stats['con']:.5f}, Con_Weight = {avg_stats['w_con']:.5f}, Grad_Norm = {avg_stats['grad']:.5f}, Mem = {peak_memory:.2f} GB, Updates = {stats_count}, Time = {end_time - start_time:.2f} seconds")
+                         
+                         for key in avg_stats.keys():
+                             avg_stats[key] = 0
++                        stats_count = 0
+                         start_time = time.time()
+                         
+                     if self.finished_steps % self.eval_demo_steps == 0 and dist.get_rank() == 0:
+@@ -432,7 +461,18 @@ class Learner:
+                             self.logger.info(f"50000 samples  (NFE = {self.eval_NFE}) are saved to {os.path.join(self.working_dir, 'evals', f'{self.finished_steps}.npz')}")
+                         
+                     
+-                if self.finished_steps >= self.total_steps:
++                if self.finished_steps >= stop_step:
++                    if dist.get_rank() == 0 and self.finished_steps % self.ckpt_saving_steps != 0:
++                        checkpoint_path = os.path.join(self.working_dir, 'ckpts', f'{self.finished_steps}.pt')
++                        torch.save({
++                            'model': self.model.module.state_dict(),
++                            'ema_model': self.ema_model.state_dict(),
++                            'optimizer': self.optimizer.state_dict(),
++                            'finished_steps': self.finished_steps,
++                            'finished_epochs': self.finished_epochs,
++                        }, checkpoint_path + '.tmp')
++                        os.replace(checkpoint_path + '.tmp', checkpoint_path)
++                        self.logger.info(f'Saving checkpoint to {checkpoint_path}')
+                     dist.destroy_process_group()
+                     return 
+             self.finished_epochs += 1
+@@ -452,7 +492,10 @@ class Learner:
+ if __name__ == '__main__':
+     parser = argparse.ArgumentParser()
+     parser.add_argument("--config", type = str, required=True, help = 'Training config path')
++    parser.add_argument("--run-steps", type=int, help='Stop and checkpoint after this many additional updates; retain the full training schedule')
+     args = parser.parse_args()
++    if args.run_steps is not None and args.run_steps <= 0:
++        parser.error('--run-steps must be positive')
+     
+     with open(args.config, 'r') as file:
+         config = yaml.safe_load(file)
+@@ -463,7 +506,4 @@ if __name__ == '__main__':
+             shutil.copy(args.config, os.path.join(config['working_dir'],'config.yaml'))
+         
+     learner = Learner(**config)
+-    learner.train()
+-
+-
+-
++    learner.train(run_steps=args.run_steps)

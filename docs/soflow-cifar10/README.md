@@ -1,5 +1,9 @@
 # SoFlow CIFAR-10 documentation
 
+- [Few-NFE training-cost literature audit](few-nfe-training-cost-audit.md): Shortcut, MeanFlow, iCT, distillation, pretrained consistency tuning, and LD3/BézierFlow sampler optimization; teacher-cost accounting and implications for local budgets.
+
+- **[Formal experiment report and stop decision](EXPERIMENT_REPORT.md)**: completed trainability/throughput findings, one-day feasibility analysis, preserved evidence, and checkpoint limitations. The full training run was stopped on 2026-09-24.
+
 - [CIFAR-10 training scale and runtime](cifar10-training-cost.md): paper schedule, epoch calculations, TITAN RTX throughput measurements, and interpretation of the approximately four-month estimate.
 - [Training run record](TRAINING_RUN.md): setup, commands, implementation changes, and operational history.
 

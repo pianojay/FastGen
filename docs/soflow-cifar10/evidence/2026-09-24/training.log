@@ -1,0 +1,22 @@
+[2026-09-24 19:03:28] Logger initialized with world size = 1
+[2026-09-24 20:22:17] Logger initialized with world size = 1
+[2026-09-24 20:22:22] Saving checkpoint to ./runs/cifar10_gpu0/ckpts/0.pt
+[2026-09-24 20:22:22] Dataset type: CIFAR10, Model type: UNet, Parameters: 55.93 M
+[2026-09-24 20:22:35] First optimizer update complete: batch=1024, microbatch=16, loss_mse=1.252576, grad_norm=2.731277, seconds=13.16
+[2026-09-24 20:46:56] Logger initialized with world size = 1
+[2026-09-24 20:47:01] Loaded checkpoint from ./runs/cifar10_gpu0/ckpts/5.pt
+[2026-09-24 20:47:01] Dataset type: CIFAR10, Model type: UNet, Parameters: 55.93 M
+[2026-09-24 20:47:13] First optimizer update of this invocation complete: step=6, batch=1024, microbatch=64, loss_mse=1.244692, grad_norm=2.676620, seconds=11.70
+[2026-09-24 20:48:00] Steps = 0000010/0800000 (0.001%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.24413, Con_Weight = 0.85389, Grad_Norm = 2.89397, Mem = 9.51 GB, Updates = 5, Time = 59.47 seconds
+[2026-09-24 20:50:13] Steps = 0000020/0800000 (0.003%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.21459, Con_Weight = 0.86902, Grad_Norm = 3.34372, Mem = 9.51 GB, Updates = 10, Time = 132.51 seconds
+[2026-09-24 20:52:28] Steps = 0000030/0800000 (0.004%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.16612, Con_Weight = 0.89469, Grad_Norm = 2.80804, Mem = 9.51 GB, Updates = 10, Time = 135.11 seconds
+[2026-09-24 20:54:44] Steps = 0000040/0800000 (0.005%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.12557, Con_Weight = 0.91742, Grad_Norm = 1.56511, Mem = 9.51 GB, Updates = 10, Time = 135.48 seconds
+[2026-09-24 20:56:59] Steps = 0000050/0800000 (0.006%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.09470, Con_Weight = 0.93603, Grad_Norm = 1.20530, Mem = 9.51 GB, Updates = 10, Time = 135.43 seconds
+[2026-09-24 20:59:15] Steps = 0000060/0800000 (0.007%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.06026, Con_Weight = 0.95877, Grad_Norm = 1.45868, Mem = 9.51 GB, Updates = 10, Time = 135.90 seconds
+[2026-09-24 21:01:31] Steps = 0000070/0800000 (0.009%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.01577, Con_Weight = 0.99040, Grad_Norm = 1.79064, Mem = 9.51 GB, Updates = 10, Time = 135.81 seconds
+[2026-09-24 21:03:47] Steps = 0000080/0800000 (0.010%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 0.95585, Con_Weight = 1.03755, Grad_Norm = 1.95197, Mem = 9.51 GB, Updates = 10, Time = 136.29 seconds
+[2026-09-24 21:06:02] Steps = 0000090/0800000 (0.011%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 0.89131, Con_Weight = 1.09474, Grad_Norm = 2.33092, Mem = 9.51 GB, Updates = 10, Time = 135.49 seconds
+[2026-09-24 21:08:18] Steps = 0000100/0800000 (0.013%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 0.81928, Con_Weight = 1.16828, Grad_Norm = 2.38676, Mem = 9.51 GB, Updates = 10, Time = 135.65 seconds
+[2026-09-24 21:10:34] Steps = 0000110/0800000 (0.014%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 0.75182, Con_Weight = 1.24890, Grad_Norm = 2.64475, Mem = 9.51 GB, Updates = 10, Time = 135.99 seconds
+[2026-09-24 21:12:50] Steps = 0000120/0800000 (0.015%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 0.68201, Con_Weight = 1.34837, Grad_Norm = 2.36412, Mem = 9.51 GB, Updates = 10, Time = 136.38 seconds
+[2026-09-24 21:15:09] Steps = 0000130/0800000 (0.016%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 0.61469, Con_Weight = 1.46139, Grad_Norm = 2.73487, Mem = 9.51 GB, Updates = 10, Time = 138.80 seconds

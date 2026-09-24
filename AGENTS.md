@@ -16,6 +16,8 @@
 - Private GitHub carries source; SFTP carries artifacts. No Slack messages or collaborator invitations have been authorized.
 - KCloud begins with a fresh run and repeats its own memory, throughput, and environment qualification.
 
+The [consolidated FastGen strategy](docs/FASTGEN_STRATEGY.md) connects the CIFAR closure, literature audit and current Pokémon experiment. Read it before proposing learned sampling schedules: it distinguishes backbone training, calibration and evaluation costs, and separates the one-call and few-call decisions. Its future experiments are proposals, not launched jobs or changes to the current run.
+
 
 ## Shared SoFlow CIFAR-10 documentation
 
@@ -23,6 +25,7 @@ The canonical documents from the SoFlow CIFAR-10 work reside in this checkout
 so Astra and the CIFAR agent can use the same records:
 
 - [CIFAR documentation index](docs/soflow-cifar10/README.md).
+- [Few-NFE training-cost literature audit](docs/soflow-cifar10/few-nfe-training-cost-audit.md): direct training, distillation, pretrained tuning, and LD3/BézierFlow sampler optimization. Its pretrained options do not change FastGen's scratch-initialization requirement or permitted losses.
 - [Training scale, paper comparison, and runtime measurements](docs/soflow-cifar10/cifar10-training-cost.md).
 - [Training run record, scripts, modifications, and restart history](docs/soflow-cifar10/TRAINING_RUN.md).
 
@@ -37,3 +40,16 @@ keep its index and both repositories' AGENTS.md links current. The user's
 shared-documentation instruction permits maintaining these documents and
 references; it does not authorize changing the other experiment's training
 processes, code, or environment.
+
+
+### CIFAR experiment report and closure
+
+The [formal CIFAR experiment report](docs/soflow-cifar10/EXPERIMENT_REPORT.md)
+records the conditions, loss trajectory, microbatch measurements, paper
+comparison, one-day budget assessment, and stop decision. The GPU 0 CIFAR
+run was stopped on 2026-09-24 after demonstrating initial trainability;
+its full schedule projected to about 126 days. Image quality was not
+measured. Last logged step is 130, but the latest recoverable main
+checkpoint is step 5. Consult the archived evidence before transferring
+these conclusions to FastGen, and do not restart the closed CIFAR run
+automatically.

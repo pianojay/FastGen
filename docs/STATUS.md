@@ -60,3 +60,36 @@ Follow `runs/pokemon_unet128_seed42/console.log`, `status.json`, `active_job.jso
 Official starter pinned at `e3f5120000cd91037017d86f23993492195101a5`; vendored SoFlow at `cc47661a0b0843f8f1b6cff3a17107a052d18b21`. See [attribution](../THIRD_PARTY.md). The seven protected files and the base `Model` class have hash checks before training and export. Current modifications preserve those hashes.
 
 Raw evidence is deliberately outside Git: `artifacts/tests.log`, `artifacts/pokemon_profile/summary.json`, `artifacts/integration_smoke.log`, `artifacts/export_verification.json`, `artifacts/fid_smoke.log`, and the corresponding run folders. Migration archives carry these artifacts. Source control contains this measured summary so it remains useful without the local logs.
+
+
+## Shared CIFAR feasibility report — 2026-09-24
+
+The separate GPU 0 CIFAR experiment is closed by an authorized feasibility decision.
+Its [formal report](soflow-cifar10/EXPERIMENT_REPORT.md) documents 130 logged updates,
+initial trainability, 13.603 seconds/update, and an approximately 126-day full-run
+projection. No generation-quality evaluation was performed; the latest saved main
+checkpoint is step 5. These findings describe the original CIFAR configuration and
+are not Pokémon measurements. This status entry links the CIFAR report only; the
+Pokémon experiment's measurements and status are documented above.
+
+## Shared training-cost literature audit — 2026-09-24
+
+The [few-NFE literature audit](soflow-cifar10/few-nfe-training-cost-audit.md)
+compares prescribed training budgets for SoFlow, MeanFlow, Shortcut, iCT,
+Consistency Distillation, Progressive Distillation, SFD, and ECT (seven
+comparison methods plus the SoFlow reference). It separates pretrained
+fine-tuning from total training cost and records a budget discrepancy in
+ECT's script named `run_ecm_1hour.sh`. This was documentation-only work;
+published measurements are not new local results. FastGen's requirement
+to initialize generative weights from scratch remains applicable.
+
+The audit now also covers LD3 and BézierFlow as sampler optimization methods.
+Their reported minute-scale calibration uses already trained generators;
+it does not measure backbone learning time. Inspection of the CIFAR checkout
+found a finite-jump denoise-and-renoise sampler, so ODE-scheduler methods
+would require adaptation. This follow-up adds literature and code analysis
+only; no training, calibration, or evaluation was launched.
+
+## Consolidated interpretation — 2026-09-24
+
+[FastGen strategy](FASTGEN_STRATEGY.md) integrates the CIFAR experiment, paper-cost audit and Pokémon baseline. The Pokémon presentation budget is 320 times smaller than the full CIFAR recipe. At 22:06 KST, update 1,650 was running with finite statistics and stable memory. The saved update-1,500 four-call panel shows coarse shapes; one-call samples remain noisy and class fidelity is still uncertain. Scheduled development FID is pending. The strategy records criteria for later sampler calibration, one-call tuning or capacity experiments; this review changed no training settings and launched no additional GPU work.

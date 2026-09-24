@@ -1,5 +1,7 @@
 # CIFAR-10 training scale and runtime
 
+**Final experiment disposition:** the run was stopped on 2026-09-24. The [formal experiment report](EXPERIMENT_REPORT.md) records sustained timing of 13.603 seconds/update, a 125.95-day full-run projection, and the evidence limits. Earlier estimates below are dated observations.
+
 Recorded: 2026-09-24. Canonical document location: `FastGen-SoFlow/docs/soflow-cifar10/`. These measurements describe the local SoFlow CIFAR-10 run on GPU 0, an NVIDIA TITAN RTX. They are separate from the Pokémon/FastGen adaptation in the sibling `FastGen-SoFlow` checkout.
 
 ## Why the full run takes months

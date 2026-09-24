@@ -1,9 +1,11 @@
 # CIFAR-10 GPU 0 training
 
+**Status: stopped on 2026-09-24 at 21:15:59 KST by an authorized feasibility decision.** See the [formal experiment report](EXPERIMENT_REPORT.md). Last logged update: 130; last recoverable main checkpoint: 5. Earlier running-status entries below are historical.
+
 Canonical document location: `FastGen-SoFlow/docs/soflow-cifar10/TRAINING_RUN.md`.
 All commands and relative code/artifact paths below refer to `/home/user/jw_soflow/SoFlow`, unless explicitly stated otherwise. This record was moved into Astra's documentation tree on 2026-09-24; historical entries retain their original dates and settings.
 
-## Current settings after throughput tuning
+## Settings used after throughput tuning
 
 GPU 0 only; effective batch 1,024; microbatch **64**; **16** accumulation passes per update; target 800,000 updates. Progress logging is every **10** updates. Default sampling and checkpoint intervals remain in place. The launcher disables user-site imports with `PYTHONNOUSERSITE=1` and uses the repaired conda environment.
 
@@ -95,3 +97,11 @@ Resume verified: at 20:47:13, step 6 completed with microbatch 64, effective bat
 The paper comparison, epoch arithmetic, timing estimates, and microbatch
 measurements are consolidated in
 [CIFAR-10 training scale and runtime](cifar10-training-cost.md).
+
+## Closure — 2026-09-24 21:15:59 KST
+
+Stopped by SIGTERM to verified torchrun PID 423798 under the user's conditional authorization after assessing the one-day quality budget. The launcher exited with status 1 due to intentional termination. No training failure was observed in the selected configuration. The main run logged update 130; at least 125 logged updates beyond checkpoint 5 were not saved because the running trainer had no checkpoint-on-signal support. No new terminal checkpoint, generated sample grid, or FID result was produced.
+
+Updates 21–130 took 1496.33 seconds (13.603 seconds/update), projecting to 125.95 days plus overhead for the full schedule. A day would allow approximately 6352 updates, or 0.794% of the schedule. Training loss fell, but meaningful image-quality improvement within a day was unestablished. This is a feasibility decision, not a claim that quality improvement is impossible.
+
+The [formal report](EXPERIMENT_REPORT.md) and its adjacent evidence archive preserve the configuration, logs, timings, source hashes/patch, commands, and limitations. Do not treat the closed run as completed training or restart it automatically from the earlier launch instructions.
