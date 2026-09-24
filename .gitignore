@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+data/**/PokemonData/
+data/**/.transparency_composited_on_white
+runs/
+artifacts/
+checkpoints/
+dist/
+*.egg-info/
+.pytest_cache/

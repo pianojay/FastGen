@@ -77,7 +77,14 @@ class ModelOneNFE(Model):
     """Student model evaluated with exactly one model function evaluation."""
 
     def __init__(self, device="cpu", **kwargs):
-        raise NotImplementedError("Implement the one-NFE model constructor.")
+        import json
+        from pathlib import Path
+        from soflow_fastgen.models import Soflow
+        config = json.loads(Path(__file__).with_name('inference_config.json').read_text())
+        config.update(kwargs)
+        super().__init__(Soflow(**config))
+        self.register_buffer('sampling_nfe', torch.tensor(1, dtype=torch.long))
+        self.to(device)
 
     def sample(
         self,
@@ -87,14 +94,25 @@ class ModelOneNFE(Model):
         category: torch.Tensor | None = None,
         **kwargs,
     ) -> torch.Tensor:
-        raise NotImplementedError("Implement sample() in ModelOneNFE.")
+        from soflow_fastgen.sampling import sample
+        if int(self.sampling_nfe) != 1:
+            raise ValueError('one_nfe checkpoint must specify exactly one evaluation')
+        return sample(self.backbone, shape, device=device, category=category,
+                      nfe=1, generator=kwargs.get('generator'))
 
 
 class ModelFewNFE(Model):
     """Student model evaluated with no more than four model evaluations."""
 
     def __init__(self, device="cpu", **kwargs):
-        raise NotImplementedError("Implement the few-NFE model constructor.")
+        import json
+        from pathlib import Path
+        from soflow_fastgen.models import Soflow
+        config = json.loads(Path(__file__).with_name('inference_config.json').read_text())
+        config.update(kwargs)
+        super().__init__(Soflow(**config))
+        self.register_buffer('sampling_nfe', torch.tensor(4, dtype=torch.long))
+        self.to(device)
     def sample(
         self,
         shape: tuple[int, ...],
@@ -103,4 +121,9 @@ class ModelFewNFE(Model):
         category: torch.Tensor | None = None,
         **kwargs,
     ) -> torch.Tensor:
-        raise NotImplementedError("Implement sample() in ModelFewNFE.")
+        from soflow_fastgen.sampling import sample
+        nfe = int(self.sampling_nfe)
+        if nfe not in (2, 3, 4):
+            raise ValueError('few_nfe checkpoint must specify two to four evaluations')
+        return sample(self.backbone, shape, device=device, category=category,
+                      nfe=nfe, generator=kwargs.get('generator'))
