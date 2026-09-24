@@ -15,7 +15,8 @@ from soflow_fastgen.training import Trainer
 
 def candidate(config,size):
     torch.set_num_threads(config['torch_threads'])
-    torch.cuda.set_per_process_memory_fraction(config['memory_target_bytes']/torch.cuda.get_device_properties(0).total_memory)
+    capacity = torch.cuda.get_device_properties(0).total_memory
+    torch.cuda.set_per_process_memory_fraction(min(1.,config['memory_target_bytes']/capacity))
     config['microbatch_size']=size
     seed_all(config['seed'])
     train_set,_,_=datasets(config)

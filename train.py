@@ -26,7 +26,9 @@ def main(args):
     if (run/'checkpoints/latest.pt').exists() and not args.resume:
         raise ValueError('Existing checkpoint: pass --resume or choose a fresh run directory')
     torch.set_num_threads(config['torch_threads'])
-    torch.cuda.set_per_process_memory_fraction((config['memory_limit_bytes']-32*1024**2)/torch.cuda.get_device_properties(0).total_memory)
+    # A KCloud slice may expose less memory than the challenge's 20 GB ceiling.
+    capacity = torch.cuda.get_device_properties(0).total_memory
+    torch.cuda.set_per_process_memory_fraction(min(1.,(config['memory_limit_bytes']-32*1024**2)/capacity))
     seed_all(config['seed'])
     train_set,_,mapping=datasets(config)
     trainer=Trainer(config)
