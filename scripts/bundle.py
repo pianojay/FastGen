@@ -13,7 +13,7 @@ def bundle(config, output):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     names = subprocess.check_output(
-        ['git', 'ls-files', '-z', '--cached', '--others', '--exclude-standard'], cwd=ROOT
+        ['git', 'ls-files', '-z', '--cached'], cwd=ROOT
     ).decode().split('\0')
     source = sorted({ROOT/name for name in names if name and (ROOT/name).is_file()})
     run = ROOT/config['run_dir']

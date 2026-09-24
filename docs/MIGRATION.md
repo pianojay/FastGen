@@ -15,7 +15,7 @@ Bundle locally:
 python -m scripts.bundle --config configs/pokemon_local.json --output dist/migration
 ```
 
-The bundle contains source.tar.gz, artifacts.tar.gz, bundle_metadata.json and SHA256SUMS. Source contains the official directory layout plus added files, but no dataset images or weights. Artifact archive includes development manifests, qualification reports, the latest full training checkpoint, export checkpoints, sample grids, FID reports and environment provenance; it excludes the raw image dataset and bulk generated FID PNGs. A bundle taken during training is a progress snapshot; the workflow creates an updated terminal bundle in dist/RUN_NAME after evaluation and export.
+The bundle contains source.tar.gz, artifacts.tar.gz, bundle_metadata.json and SHA256SUMS. Source contains Git-tracked files, including the official directory layout and added tools, but no dataset images or weights. Commit new source/config files before bundling; unrelated untracked work from other agents is excluded. Artifact archive includes development manifests, qualification reports, the latest full training checkpoint, export checkpoints, sample grids, FID reports and environment provenance; it excludes the raw image dataset and bulk generated FID PNGs. A bundle taken during training is a progress snapshot; the workflow creates an updated terminal bundle in dist/RUN_NAME after evaluation and export.
 
 Interactive transfer (fill in connection details locally):
 
