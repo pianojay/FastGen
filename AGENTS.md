@@ -7,10 +7,10 @@
 - Preserve the official base Model class and every file in configs/protected_files.json. Verify their hashes before runs and exports.
 - Official validation images must not train models or select checkpoints, hyperparameters, or sampling schedules.
 - All generative weights start from scratch on the training-derived optimization partition. Only the official FID Inception is pretrained.
-- Keep the first experiment to 24 cumulative GPU job hours, including qualification/evaluation, with four hours reserved for terminal evaluation.
+- The completed baseline EXP-1 had a 24-hour GPU-job ceiling with four hours reserved for terminal evaluation. The first future autoresearch session has a separate 12-hour cumulative GPU-job budget with a default two-hour confirmation reserve; follow program.md. Neither allowance restarts automatically.
 - Checkpoint loaded inference models must contain fewer than 100M parameters. Actual training peak allocation must remain below 20,000,000,000 bytes.
 - Microbatch tuning must retain the effective batch. Compare timings with full augmentation, gradient accumulation, optimizer and EMA live.
-- Data augmentation follows upstream SoFlow. Pass identical transform metadata to both consistency branches and zeros at inference.
+- Baseline augmentation follows upstream SoFlow; catalogued augmentation comparisons are explicit recipe branches. Pass identical transform metadata to both consistency branches and zeros at inference.
 - Update docs/STATUS.md with measured facts, commands, limitations, and next actions. Do not call a running job complete or a local FID official.
 - Use python -m unittest discover -s tests -v for contract/numerical checks. Do not rerun expensive profiling without a relevant code or hardware change.
 - Private GitHub carries source; SFTP carries artifacts. No Slack messages or collaborator invitations have been authorized.
@@ -20,6 +20,12 @@ The [completed Pokémon baseline report](docs/POKEMON_BASELINE_RESULTS.md) recor
 
 The [consolidated FastGen strategy](docs/FASTGEN_STRATEGY.md) connects the CIFAR closure, literature audit and Pokémon experiment. Read it before proposing learned sampling schedules: it distinguishes backbone training, calibration and evaluation costs, and separates the one-call and few-call decisions. Its future experiments are proposals, not launched jobs or changes to the completed run.
 
+
+## Question-driven autoresearch
+
+[program.md](program.md) defines the future research loop: choose an uncertainty, write a bounded experiment brief, run a controlled comparison, and update both the quality evidence and the explanation. The [research agenda and intervention catalog](docs/AUTORESEARCH_DIRECTIONS.md) connects four broad directions to SoFlow-specific options and records their implementation prerequisites.
+
+One-call and few-call quality have equal standing and separate best candidates. Parameter ranges, trial lengths and confirmation rules belong to individual experiment briefs; the catalog is not a mandatory sweep. These documents do not launch a research session. Once a session is started by the user, the agent may select and implement in-scope probes within its budget without asking after every trial. The completed baseline, exact-resume guard and official evaluation remain protected; a changed recipe needs an explicit branch.
 
 ## Shared SoFlow CIFAR-10 documentation
 

@@ -1,6 +1,6 @@
 # Local Pokémon/FastGen experiment status
 
-Updated 2026-09-28, Asia/Seoul. This experiment ran on the local TITAN RTX server; it is not the KCloud VM or an official submission.
+Updated 2026-09-29, Asia/Seoul. This experiment ran on the local TITAN RTX server; it is not the KCloud VM or an official submission.
 
 ## Completed baseline — reviewed 2026-09-28
 
@@ -9,6 +9,14 @@ The full 20,000-update workflow completed on September 25, including all termina
 Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.613 GB**; peak sampled process-tree PSS: **2.120 GB**. Each exported inference model has **39,667,843 parameters** and verified 1/4 backbone calls. All 20,000 logged updates have finite statistics. Export and bundle hashes were rechecked on September 28. The final panels show recognizable category-dependent forms at four calls and substantial one-call artifacts; broader class/diversity/memorization checks remain open. This review started no additional GPU work.
 
 ## Decisions and boundaries
+
+### September 29 autoresearch instructions and research catalog
+
+[Research instructions](../program.md) and the [SoFlow research catalog](AUTORESEARCH_DIRECTIONS.md) now connect the four agreed directions—error audits, frozen-model sampling, one-call learning, and the baseline recipe—to bounded experiment briefs. The detailed SoFlow options are candidate interventions, not a fixed sweep. Each experiment records its decision, competing explanations, control, exact intervention, budget, evaluation/confirmation rule, and conditional next questions. Quality improvement and explanatory support are separate conclusions; one-call and few-call candidates are tracked separately.
+
+The first future research session is specified at 12 cumulative GPU-job hours, including failures and evaluation, with a default two-hour confirmation reserve. It favors matched checkpoint branches for probing and fresh-training confirmation for recipe claims. This documentation does not start that session or replenish the completed baseline's budget. No controller, model/training API change, new training, sampling, calibration, or GPU evaluation was introduced.
+
+Readiness notes identify prerequisite work, including explicit recipe branching, configurable sampling times, matched randomness, schedule-aware evaluation records, and objective mixing. The existing exact-resume guard remains intact. Link/fact review and five written scenarios cover an informative audit, confirmed FID improvement, inconclusive short run, implementation failure, and exhausted budget. These are documentation checks, not new experimental evidence.
 
 ### September 28 training-curve readability
 
