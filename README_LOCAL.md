@@ -44,6 +44,8 @@ For a stopped run, use the same launch command with --resume. Do not relaunch a 
 
 Reports: metrics.jsonl, status.json, budget.json, REPORT.md, report.html, curves.png, samples/, evaluations/, export/. Reports refresh with sample grids every 500 updates and at workflow exit. Use `python -m scripts.report` to refresh sooner. Parent RSS and sampled process-tree PSS include a distinction between trainer memory and total memory including loader workers. `active_job.json` identifies the current training/evaluation child.
 
+Training curves occupy one full-width row per metric. The default trend is a centered 201-record rolling median, with a local 10th–90th percentile band and all raw values retained. MSE also shows a rolling mean and uses a log y-axis when all values are positive; `curves_linear.png` provides the full-range linear view. The band describes local observed variability, not uncertainty in the trend. Windows shorten at the boundaries. Set `--smooth-window 501` (or another positive odd length) when regenerating the report to adjust smoothing. The changing consistency curriculum means MSE is not a fixed validation objective.
+
 ## Offline visual gallery
 
 ```bash

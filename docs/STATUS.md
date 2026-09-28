@@ -10,6 +10,12 @@ Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.61
 
 ## Decisions and boundaries
 
+### September 28 training-curve readability
+
+The local report now stacks consistency MSE, gradient norm and update time vertically. Every raw observation remains visible underneath a centered 201-record rolling median and local 10th–90th percentile band. MSE additionally shows the rolling mean to expose sensitivity to high values, with a log-scale default and a linked full-range linear alternative. No data are clipped, classified as outliers or removed; the band is observed spread, not a confidence interval. `--smooth-window` controls the positive odd window length, with shorter edge windows. Historical archived evidence images remain unchanged.
+
+The full run was rendered and inspected. Between updates 9,001–10,000 and 19,001–20,000, median consistency MSE increased from 0.9424 to 1.4577, while the 90th percentile increased from 1.8966 to 3.4752. Thus the later increase is not solely a handful of isolated extremes. This remains a diagnostic under a changing consistency-gap curriculum, not evidence by itself of worse generation quality; measured FID improved. This visualization change uses CPU only.
+
 ### September 28 gallery and experiment-order clarification
 
 `python -m scripts.gallery --run-dir runs/pokemon_unet128_seed42` builds `gallery.html` beside the original report. The offline gallery indexes 36,240 existing generated images from 12 evaluation passes, 3,020 development references and 41 saved panel checkpoints. It supports category search, NFE/checkpoint/seed comparisons, image enlargement and downloadable browser-local review notes. It does not generate images or perform nearest-neighbor analysis. Evaluation rows are not reliably noise-paired across NFE; the fixed training panels reset their initial noise and are labeled separately.
