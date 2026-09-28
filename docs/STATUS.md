@@ -18,6 +18,8 @@ The full run was rendered and inspected. Between updates 9,001–10,000 and 19,0
 
 ### September 28 gallery and experiment-order clarification
 
+Browse categories now displays one real held-out reference directly below its toolbar. It uses the first indexed development reference for the selected class, fixed across NFE/checkpoint/seed changes, with an enlargement action and explicit source label. The existing expandable 20-reference collection remains available for pose/style variation. This supports recognizing obvious class mismatches; a single example is not a class-fidelity measurement. No model sampling or data-partition changes were needed.
+
 `python -m scripts.gallery --run-dir runs/pokemon_unet128_seed42` builds `gallery.html` beside the original report. The offline gallery indexes 36,240 existing generated images from 12 evaluation passes, 3,020 development references and 41 saved panel checkpoints. It supports category search, NFE/checkpoint/seed comparisons, image enlargement and downloadable browser-local review notes. It does not generate images or perform nearest-neighbor analysis. Evaluation rows are not reliably noise-paired across NFE; the fixed training panels reset their initial noise and are labeled separately.
 
 Validation: the generator checked all evaluation filenames/counts and reference mappings against the partition hashes. Headless Chromium loaded the gallery directly from disk and passed filter, NFE/seed/checkpoint, zoom, references, note persistence/download, progression and mobile overflow checks with no JavaScript errors. Selected PNGs decoded successfully and desktop/mobile screenshots were inspected. Protected upstream hashes still pass. No GPU tests or training were rerun for this visualization change.
