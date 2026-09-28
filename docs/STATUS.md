@@ -10,6 +10,16 @@ Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.61
 
 ## Decisions and boundaries
 
+### September 28 gallery and experiment-order clarification
+
+`python -m scripts.gallery --run-dir runs/pokemon_unet128_seed42` builds `gallery.html` beside the original report. The offline gallery indexes 36,240 existing generated images from 12 evaluation passes, 3,020 development references and 41 saved panel checkpoints. It supports category search, NFE/checkpoint/seed comparisons, image enlargement and downloadable browser-local review notes. It does not generate images or perform nearest-neighbor analysis. Evaluation rows are not reliably noise-paired across NFE; the fixed training panels reset their initial noise and are labeled separately.
+
+Validation: the generator checked all evaluation filenames/counts and reference mappings against the partition hashes. Headless Chromium loaded the gallery directly from disk and passed filter, NFE/seed/checkpoint, zoom, references, note persistence/download, progression and mobile overflow checks with no JavaScript errors. Selected PNGs decoded successfully and desktop/mobile screenshots were inspected. Protected upstream hashes still pass. No GPU tests or training were rerun for this visualization change.
+
+Longer training is a priority candidate, not a last resort. Both one-call and four-call FID improved from 10k to 20k updates; this supports testing more training, without proving its benefit. A small frozen-backbone schedule comparison can answer a cheaper, complementary question first, but cannot repair everything the backbone has not learned, and its best settings may change after further training. A one-call objective redesign should follow a clear training-duration control rather than automatically precede it.
+
+An explicit continuation at the terminal consistency-gap ratio and a fresh longer curriculum are different experiments. Changing `total_steps` from 20k to 40k halfway through changes the gap ratio at update 20k from approximately 1/3200 to 1/sqrt(3200), about 57 times larger; it is not a neutral duration extension. The existing resume guard correctly rejects such changes. A proposed +10k-update terminal-curriculum continuation would require a separate recorded branch/run and explicit EMA behavior, and costs approximately 4.78 optimizer hours at observed throughput, plus evaluation and overhead. No continuation or sampler experiment has been launched.
+
 The approved starting point is a class-conditioned, pixel-space SoFlow U-Net trained from scratch. Keep the separate CIFAR-10 agent's GPU 0 run and environment intact; Pokémon uses GPU 1, checkout `FastGen-SoFlow`, and Conda environment `fastgen_soflow`. The [CIFAR records](soflow-cifar10/README.md) provide shared context, but their batch size and throughput are not Pokémon measurements.
 
 Source repository: [pianojay/fastgen-soflow](https://github.com/pianojay/fastgen-soflow), private. [Notion experiment EXP-1](https://app.notion.com/p/3e5f3544609181f5a1d7e29d547ea7fc). Large weights, raw data and generated images stay outside Git. [Migration instructions](MIGRATION.md) describe checked archives and SFTP. KCloud's first comparison starts from scratch and repeats memory/throughput qualification on its A100 with less than 20 GB available.

@@ -84,3 +84,11 @@ The observations support the following order for discussion, without launching a
 4. **Test augmentation or capacity one factor at a time.** There is room under the parameter/memory limits, but this run does not show that insufficient width caused the errors. A matched augmentation-off comparison or explicit longer-training recipe would resolve different questions from widening the U-Net. Keep training presentations, EMA, curriculum and evaluation protocol explicit.
 
 No new training, calibration or GPU evaluation was started for this review. See the earlier [strategy and cost distinctions](FASTGEN_STRATEGY.md) for context.
+
+### Follow-up clarification: longer training is an early candidate
+
+The ordering above was intended to favor inexpensive diagnosis, not to rank expected quality gains or require a one-call redesign before more training. Both measured modes still improved from 10k to 20k. A budgeted longer-training control should precede a more complicated change to the one-call objective. A small fixed-backbone sampling comparison is complementary: it asks whether the existing model can be sampled better, while more training asks whether its learned mapping improves.
+
+Duration and consistency curriculum are coupled in this implementation, as in the [SoFlow exponential schedule](https://arxiv.org/html/2512.15657v2#A1). A continuation at the terminal gap ratio and a fresh run with a slower longer curriculum are distinct recipes. Simply increasing `total_steps` on the finished checkpoint would enlarge its gap and is blocked by the resume guard. Define the continuation curriculum and EMA policy explicitly, retain the completed baseline unchanged, and score fixed NFE/sampling settings when comparing duration. At the observed 1.7201 seconds/update, +10k updates would take approximately 4.78 optimizer hours plus overhead; benefit is not guaranteed.
+
+The additional local `gallery.html` supports all 151 categories and 20 saved evaluation samples per category/pass, along with development references, training panels and downloadable audit notes. See [gallery usage](../README_LOCAL.md#offline-visual-gallery). Browsing these images is an audit aid, not a completed class/diversity/memorization measurement.

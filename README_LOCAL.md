@@ -44,6 +44,18 @@ For a stopped run, use the same launch command with --resume. Do not relaunch a 
 
 Reports: metrics.jsonl, status.json, budget.json, REPORT.md, report.html, curves.png, samples/, evaluations/, export/. Reports refresh with sample grids every 500 updates and at workflow exit. Use `python -m scripts.report` to refresh sooner. Parent RSS and sampled process-tree PSS include a distinction between trainer memory and total memory including loader workers. `active_job.json` identifies the current training/evaluation child.
 
+## Offline visual gallery
+
+```bash
+python -m scripts.gallery --run-dir runs/pokemon_unet128_seed42
+```
+
+Open `runs/pokemon_unet128_seed42/gallery.html` directly in a browser, beside the existing `report.html`. The gallery needs no server, CDN, model loading or GPU. It references existing PNGs, so keep it with the run's `evaluations/`, `reference_dev/` and `samples/` directories. It is not a self-contained image archive; the original SFTP bundle excludes bulk evaluation PNGs.
+
+Browse all 151 categories, checkpoint/seed combinations and call counts, enlarge images, inspect 20 held-out real references per category, or switch to the 41 saved training panels. Evaluation images are not guaranteed to share initial noise across NFE; the gallery explains that distinction. The progression panels do reset initial noise across NFE/checkpoints. References are held-out development examples, not nearest optimization images.
+
+Review notes are stored per category/checkpoint/seed in the current browser when supported. Download the audit JSON for a portable copy; notes are not automatically written to the run directory or Notion. Moving the HTML or using a different browser may not preserve browser-local notes. Rebuild the gallery after additional evaluations to refresh its embedded index.
+
 ## Inference-only package
 
 ```bash

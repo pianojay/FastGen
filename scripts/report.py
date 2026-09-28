@@ -42,7 +42,9 @@ def report(run_dir):
     images=['curves.png']+[str(p.relative_to(run)) for p in samples[-4:]]
     (run/'report.html').write_text('<!doctype html><meta charset="utf-8"><title>Pokémon SoFlow</title>'
         '<style>body{font-family:system-ui;max-width:1100px;margin:30px auto}img{max-width:100%}pre{white-space:pre-wrap}</style>'
-        '<h1>Pokémon SoFlow — local development</h1><pre>'+html.escape('\n'.join(content[:len(content)-len(samples[-4:])*2]))+'</pre>'+
+        '<h1>Pokémon SoFlow — local development</h1>'+
+        ('<p><a href="gallery.html">Browse the sample gallery →</a></p>' if (run/'gallery.html').exists() else '')+
+        '<pre>'+html.escape('\n'.join(content[:len(content)-len(samples[-4:])*2]))+'</pre>'+
         ''.join(f'<p><img src="{html.escape(p)}"></p>' for p in images))
 
 
