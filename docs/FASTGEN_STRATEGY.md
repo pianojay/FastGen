@@ -1,5 +1,7 @@
 # FastGen strategy after the CIFAR experiment and training-cost audit
 
+Update 2026-09-28: the Pokémon baseline has completed. See [final results](POKEMON_BASELINE_RESULTS.md) for measured one/few-call quality and the resulting next-experiment discussion. The running observations below are historical snapshots from September 24.
+
 Consolidated 2026-09-24, Asia/Seoul. This note synthesizes the parallel agent's [formal CIFAR report](soflow-cifar10/EXPERIMENT_REPORT.md), [training-cost analysis](soflow-cifar10/cifar10-training-cost.md), [literature audit](soflow-cifar10/few-nfe-training-cost-audit.md), and our [Pokémon run record](STATUS.md). It adds interpretation and future experiment proposals. The running Pokémon configuration remains unchanged; no calibration or new training experiment was launched for this review.
 
 ## What the experiments establish

@@ -16,7 +16,9 @@
 - Private GitHub carries source; SFTP carries artifacts. No Slack messages or collaborator invitations have been authorized.
 - KCloud begins with a fresh run and repeats its own memory, throughput, and environment qualification.
 
-The [consolidated FastGen strategy](docs/FASTGEN_STRATEGY.md) connects the CIFAR closure, literature audit and current Pokémon experiment. Read it before proposing learned sampling schedules: it distinguishes backbone training, calibration and evaluation costs, and separates the one-call and few-call decisions. Its future experiments are proposals, not launched jobs or changes to the current run.
+The [completed Pokémon baseline report](docs/POKEMON_BASELINE_RESULTS.md) records the 20,000-update result, final FIDs, resources and next-experiment questions. Read it before treating historical running snapshots as current. The baseline completed on 2026-09-25; no follow-up run has been launched.
+
+The [consolidated FastGen strategy](docs/FASTGEN_STRATEGY.md) connects the CIFAR closure, literature audit and Pokémon experiment. Read it before proposing learned sampling schedules: it distinguishes backbone training, calibration and evaluation costs, and separates the one-call and few-call decisions. Its future experiments are proposals, not launched jobs or changes to the completed run.
 
 
 ## Shared SoFlow CIFAR-10 documentation

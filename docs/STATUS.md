@@ -1,6 +1,12 @@
 # Local Pokémon/FastGen experiment status
 
-Recorded 2026-09-24, Asia/Seoul. This experiment runs on the local TITAN RTX server; it is not the KCloud VM or an official submission.
+Updated 2026-09-28, Asia/Seoul. This experiment ran on the local TITAN RTX server; it is not the KCloud VM or an official submission.
+
+## Completed baseline — reviewed 2026-09-28
+
+The full 20,000-update workflow completed on September 25, including all terminal FIDs, export verification and SFTP archives. [Final results and interpretation](POKEMON_BASELINE_RESULTS.md) supersede the historical running snapshots below. Mean development FID across sampling seeds 42/43 is **113.9551 / 46.5978 / 40.2773 / 38.2858** for NFE **1 / 2 / 3 / 4**. Four calls were selected. These are training-derived development scores, not official validation scores.
+
+Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.613 GB**; peak sampled process-tree PSS: **2.120 GB**. Each exported inference model has **39,667,843 parameters** and verified 1/4 backbone calls. All 20,000 logged updates have finite statistics. Export and bundle hashes were rechecked on September 28. The final panels show recognizable category-dependent forms at four calls and substantial one-call artifacts; broader class/diversity/memorization checks remain open. This review started no additional GPU work.
 
 ## Decisions and boundaries
 

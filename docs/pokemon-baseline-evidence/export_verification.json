@@ -1,0 +1,22 @@
+{
+  "one_nfe": {
+    "parameters": 39667843,
+    "backbone_calls": 1,
+    "shape": [
+      3,
+      3,
+      64,
+      64
+    ]
+  },
+  "few_nfe": {
+    "parameters": 39667843,
+    "backbone_calls": 4,
+    "shape": [
+      3,
+      3,
+      64,
+      64
+    ]
+  }
+}
