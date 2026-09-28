@@ -8,33 +8,33 @@
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 system-ui,sans-serif}
 main{max-width:1320px;margin:auto;padding:36px 24px}h1{font-size:38px;letter-spacing:-1.5px;line-height:1.1;margin:8px 0 16px}h2{font-size:22px;margin:24px 0 8px}p{max-width:900px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--accent)}.muted,small{color:var(--muted)}a{color:var(--accent)}
 .stats{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}.stat{background:white;border:1px solid var(--line);padding:12px 20px;border-radius:12px}.stat strong{display:block;font-size:23px}
-.class-reference{display:flex;align-items:center;flex-wrap:wrap;gap:20px;margin:16px 0;padding:16px;border:1px solid var(--line);border-radius:12px;background:#edf2eb}.class-reference p{margin:6px 0;max-width:560px}.class-reference h2{margin:4px 0;font-size:20px}
+.class-reference{flex:none}.class-reference .sample{padding:3px}.class-reference .sample img{width:96px;height:96px}.class-reference figcaption{display:none}
+#categoryView>.toolbar{position:sticky;top:8px;z-index:5;align-items:center;padding:10px;gap:10px;box-shadow:0 3px 12px #18332f12}
+#categoryView>.comparison{margin-top:8px}.comparison-help{margin:12px 0;font-size:13px}.comparison-help p{margin:8px 0}
+header h1{font-size:28px;letter-spacing:-.8px;margin:8px 0}header p{margin:8px 0}.tabs{margin-top:16px!important}
 .toolbar{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fff;display:flex;gap:12px;flex-wrap:wrap;align-items:end}.toolbar label{display:flex;flex-direction:column;gap:4px;font-size:12px;font-weight:650}select,input,button,textarea{font:inherit;color:inherit;border:1px solid #a5b9ae;border-radius:7px;background:white;padding:8px 10px}button{cursor:pointer}button:hover{background:#e5eee8}button:disabled{opacity:.4;cursor:default}button[aria-pressed=true]{background:var(--accent);color:white;border-color:var(--accent)}input{max-width:180px}.tabs{display:flex;gap:8px;margin:22px 0 12px}.notice{padding:12px 16px;background:#e7eee5;border-radius:9px;font-size:13px}.grid{display:grid;gap:12px}.comparison{overflow-x:auto}.samples{grid-template-columns:repeat(var(--cols),minmax(142px,1fr));min-width:calc(var(--cols)*154px)}.sample{margin:0;background:white;border:1px solid var(--line);border-radius:9px;padding:8px;text-align:center}.sample img{width:128px;height:128px;object-fit:contain;cursor:zoom-in;display:block;margin:auto}.sample figcaption{font-size:12px;color:var(--muted);margin-top:5px}.colhead{font-weight:700;padding:12px 0;position:sticky;top:0;background:var(--paper);z-index:1}.colhead small{display:block;font-weight:400}.references{grid-template-columns:repeat(auto-fill,minmax(138px,1fr))}.panels{display:flex;align-items:flex-start;gap:16px;overflow-x:auto}.panels figure{margin:0}.panels img{width:256px;height:auto;max-width:none;cursor:zoom-in}.review{background:white;border:1px solid var(--line);border-radius:12px;padding:16px;margin:20px 0}.review textarea{display:block;width:100%;margin:10px 0;min-height:75px}details{margin:24px 0}summary{cursor:pointer;font-weight:600}table{border-collapse:collapse;width:100%;max-width:720px}td,th{text-align:left;padding:8px;border-bottom:1px solid var(--line)}dialog{border:1px solid var(--line);border-radius:16px;max-width:94vw;max-height:94vh}dialog::backdrop{background:#112b24c9}dialog img{display:block;max-width:80vw;max-height:72vh;width:512px;object-fit:contain;margin:12px auto}dialog button{float:right}.hidden{display:none!important}footer{margin-top:32px;font-size:12px;color:var(--muted)}
 @media(max-width:600px){main{padding:22px 12px}h1{font-size:30px}.toolbar{gap:8px}.stat{padding:8px 12px}.stat strong{font-size:19px}}
 </style>
 </head>
 <body><main>
 <header><div class="eyebrow">FastGen / Local development / EXP-1</div><h1>Pokémon sample gallery</h1>
-<p class="muted">Explore the saved outputs, compare model call counts, and review how the images changed during training. Every image here already existed in the completed run.</p>
+<p class="muted">151 categories · 20 samples per pass · <span id="total"></span> saved images</p>
 <a href="report.html">Training report & curves ↗</a>
-<div class="stats"><div class="stat"><strong>151</strong>categories</div><div class="stat"><strong>20</strong>images / category / pass</div><div class="stat"><strong>1–4</strong>model calls</div><div class="stat"><strong id="total"></strong>saved evaluation images</div></div></header>
+</header>
 <nav class="tabs" aria-label="Gallery views"><button id="categoryTab" aria-pressed="true">Browse categories</button><button id="progressTab" aria-pressed="false">Training progression</button></nav>
 <section id="categoryView">
 <div class="toolbar">
+<aside id="classReference" class="class-reference hidden" aria-label="Selected category real reference" title="Real held-out reference · click to enlarge"><div id="classReferenceImage"></div></aside>
 <label>Find category<input id="search" type="search" placeholder="e.g. Gengar"></label>
 <label>Category<select id="category"></select></label>
 <button id="previous" aria-label="Previous category">←</button><button id="next" aria-label="Next category">→</button>
 <label>Checkpoint<select id="step"></select></label><label>Sampling seed<select id="seed"></select></label>
 <label>Compare calls<select id="calls"><option value="all">All available</option><option value="1,4">1 vs 4</option><option value="2,3,4">2 vs 3 vs 4</option><option value="4">4 only</option><option value="1">1 only</option></select></label>
 </div>
-<aside id="classReference" class="class-reference hidden" aria-label="Selected category reference">
-<div id="classReferenceImage"></div>
-<div><div class="eyebrow">Real dataset example</div><h2 id="classReferenceName"></h2>
-<p class="muted">One held-out image of this class, kept fixed across checkpoints, seeds and call counts. Click to enlarge.</p>
-<small>Poses and styles vary. More examples are available in “Held-out real references” below.</small></div>
-</aside>
-<h2 id="categoryTitle"></h2><p class="notice">Compare distributions across columns, not matched individual images. Extra calls consume extra random draws, so the same seed and sample number do not guarantee the same starting noise across NFE. FID is for all 151 categories, not the selected category. Click an image to enlarge it.</p>
 <div class="comparison"><div id="samples" class="grid samples"></div></div>
+<details class="comparison-help"><summary>Comparison notes</summary>
+<p>The toolbar thumbnail is one real held-out reference of the selected class, fixed across checkpoints, seeds and call counts. Click any image to enlarge it. Poses and styles vary; more real examples are available below.</p>
+<p>Evaluation rows are not reliably paired by initial noise across NFE. Extra calls consume extra random draws, so compare distributions across columns. FID summarizes all 151 categories, not the selected category.</p></details>
 <details id="referenceDetails"><summary>Held-out real references · 20 images of this category</summary><p class="muted">Unaugmented 64×64 references from the training-derived development split. These images were excluded from optimization. They are not nearest training neighbors and cannot establish absence of memorization.</p><div id="references" class="grid references"></div></details>
 <section class="review"><strong>Review notes</strong><p class="muted">Record class identity, shape defects, background artifacts and repeated poses. Notes are grouped by category, checkpoint and seed; include the NFE and sample number for specific observations.</p>
 <label>Review status <select id="reviewStatus"><option value="unreviewed">Unreviewed</option><option value="reviewed">Reviewed</option><option value="follow-up">Needs follow-up</option></select></label>
@@ -64,14 +64,12 @@ function imageCard(path,label){const f=document.createElement('figure');f.classN
 function zoom(path,label){$('zoomImage').src=path;$('zoomImage').alt=label;$('zoomCaption').textContent=label;$('original').href=path;$('zoom').showModal()}
 function noteKey(){return [$('category').value,$('step').value,$('seed').value].join('/')}
 function render(){const c=D.categories.find(c=>String(c.id)===$('category').value);$('samples').replaceChildren();$('references').replaceChildren();$('classReferenceImage').replaceChildren();$('classReference').classList.toggle('hidden',!c);$('previous').disabled=$('category').selectedIndex<=0;$('next').disabled=$('category').selectedIndex>=$('category').options.length-1;$('notes').disabled=$('reviewStatus').disabled=!c;
-if(!c){$('categoryTitle').textContent='No matching categories';$('notes').value='';return}
-$('classReferenceName').textContent=c.name;
+if(!c){$('samples').textContent='No matching categories';$('notes').value='';return}
 $('classReferenceImage').append(imageCard(D.references[String(c.id)][0],'Real '+c.name+' · reference #01'));
-$('categoryTitle').textContent=c.name+' · category '+c.id;
 const wanted=$('calls').value;const es=D.evaluations.filter(e=>e.step===+$('step').value&&e.seed===+$('seed').value&&(wanted==='all'||wanted.split(',').includes(String(e.nfe)))).sort((a,b)=>a.nfe-b.nfe);
 $('samples').style.setProperty('--cols',Math.max(1,es.length));
 for(const e of es){const h=document.createElement('div');h.className='colhead';h.textContent=e.nfe+' call'+(e.nfe===1?'':'s');const s=document.createElement('small');s.textContent='Global FID '+e.fid.toFixed(2);h.append(s);$('samples').append(h)}
-for(let i=0;i<20;i++)for(const e of es)$('samples').append(imageCard(e.path+'/'+String(c.id).padStart(4,'0')+'_'+String(i).padStart(2,'0')+'.png',c.name+' · '+e.nfe+' NFE · #'+String(i+1).padStart(2,'0')));
+for(let i=0;i<20;i++)for(const e of es){const card=imageCard(e.path+'/'+String(c.id).padStart(4,'0')+'_'+String(i).padStart(2,'0')+'.png',c.name+' · '+e.nfe+' NFE · #'+String(i+1).padStart(2,'0'));card.querySelector('figcaption').textContent=e.nfe+' NFE · #'+String(i+1).padStart(2,'0');$('samples').append(card)}
 if(!es.length)$('samples').textContent='No saved evaluation for this selection.';
 for(const [i,path] of D.references[String(c.id)].entries())$('references').append(imageCard(path,'Real '+c.name+' · #'+String(i+1).padStart(2,'0')));
 const n=notes[noteKey()]||{};$('notes').value=n.note||'';$('reviewStatus').value=n.status||'unreviewed';$('saveStatus').textContent=storageOK?'Notes stay in this browser. Download JSON to keep a portable copy.':'Browser storage unavailable. Download JSON before closing.';
