@@ -1,6 +1,6 @@
 # Local Pokémon/FastGen experiment status
 
-Updated 2026-09-29, Asia/Seoul. This experiment ran on the local TITAN RTX server; it is not the KCloud VM or an official submission.
+Updated 2026-09-30, Asia/Seoul. This experiment ran on the local TITAN RTX server; it is not the KCloud VM or an official submission.
 
 ## Completed baseline — reviewed 2026-09-28
 
@@ -10,11 +10,15 @@ Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.61
 
 ## Decisions and boundaries
 
+### September 30 promptware recovery rehearsal
+
+Reconciled program.md and AGENTS.md with the user's per-training-run budget and approval between substantial experiments. Removed the fixed exploration/confirmation split. A clean agent recovered a real CPU-only dummy worker after orderly termination: logged step 8, saved checkpoint 5, correct final sum 210 at step 20. Seven checks passed; total worker time 23.19 seconds against a 60-second allowance across both attempts. A concurrent duplicate launch was rejected by the worker's lock. No model training or GPU work occurred. [Report, evidence, and limitations](PROMPTWARE_RECOVERY_REHEARSAL.md) distinguish this from hard-crash or production-trainer validation. Post-test instructions require reconciling stale status fields and unresolved accounting after unclean exits.
+
 ### September 29 autoresearch instructions and research catalog
 
 [Research instructions](../program.md) and the [SoFlow research catalog](AUTORESEARCH_DIRECTIONS.md) now connect the four agreed directions—error audits, frozen-model sampling, one-call learning, and the baseline recipe—to bounded experiment briefs. The detailed SoFlow options are candidate interventions, not a fixed sweep. Each experiment records its decision, competing explanations, control, exact intervention, budget, evaluation/confirmation rule, and conditional next questions. Quality improvement and explanatory support are separate conclusions; one-call and few-call candidates are tracked separately.
 
-The first future research session is specified at 12 cumulative GPU-job hours, including failures and evaluation, with a default two-hour confirmation reserve. It favors matched checkpoint branches for probing and fresh-training confirmation for recipe claims. This documentation does not start that session or replenish the completed baseline's budget. No controller, model/training API change, new training, sampling, calibration, or GPU evaluation was introduced.
+Correction on September 30: the default is 12 cumulative GPU-job hours per model-training run, including failures and recovery; evaluation and confirmation are budgeted per approved experiment, without a fixed 10/2 split. Each substantial next experiment requires user assessment and approval. It favors matched checkpoint branches for probing and fresh-training confirmation for recipe claims. This documentation does not start that session or replenish the completed baseline's budget. No controller, model/training API change, new training, sampling, calibration, or GPU evaluation was introduced.
 
 Readiness notes identify prerequisite work, including explicit recipe branching, configurable sampling times, matched randomness, schedule-aware evaluation records, and objective mixing. The existing exact-resume guard remains intact. Link/fact review and five written scenarios cover an informative audit, confirmed FID improvement, inconclusive short run, implementation failure, and exhausted budget. These are documentation checks, not new experimental evidence.
 

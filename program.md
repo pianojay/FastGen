@@ -1,6 +1,6 @@
 # SoFlow autoresearch instructions
 
-Prepared 2026-09-29, Asia/Seoul. **Documentation ready; no research session has started.** This file governs a future user-started session. Reading or editing it does not launch experiments.
+Updated 2026-09-30, Asia/Seoul. **Documentation ready; no research session has started.** This file governs a future user-started session. Reading or editing it does not launch experiments.
 
 ## Purpose and starting evidence
 
@@ -24,11 +24,13 @@ Our scope is SoFlow and close variants. Use the four questions in the catalog to
 1. **Select an uncertainty.** Review existing results for both tracks. State the decision that new evidence could change, the competing explanations, and why this probe is worth its cost now. There is no mandatory catalog order or fixed compute split between tracks.
 2. **Write the experiment brief below before observing candidate scores.** Choose an audit, numerical diagnostic, controlled training comparison, or small local search. Declare exact settings only when instantiating the experiment; illustration values are not standing instructions.
 3. **Prepare the comparison.** Check implementation readiness, validate any prerequisite changes, preserve the control, and establish provenance. Prefer existing artifacts when they answer the question. An early-training proxy cannot rank eventual quality unless that relationship has evidence.
-4. **Run within the brief and session limits.** Change one factor for an attribution claim, or explicitly identify a bundled intervention and the later ablation needed. A new question or changed evaluation rule requires a new brief, not rewriting the original after seeing results.
+4. **Run within the approved brief and run limits.** Change one factor for an attribution claim, or explicitly identify a bundled intervention and the later ablation needed. A new question or changed evaluation rule requires a new brief, not rewriting the original after seeing results.
 5. **Interpret and confirm.** Record quality and explanatory conclusions separately. Label outcomes preliminary, confirmed under this protocol, negative within the tested scope, inconclusive, or implementation failure. Missing or failed evaluations have no numeric score.
 6. **Update the agenda.** State the next question and the alternatives now more or less plausible. Preserve useful negative evidence, rejected candidates, and unexplained gains. Avoid repeatedly testing a low-information neighborhood simply because it is easy to score.
 
-An active session may choose and implement its next probe within these boundaries without asking after every trial. Novel in-scope ideas are allowed: add their evidence and dependencies to the catalog first. A catalog change does not alter the fixed evaluation, protected files, or resource limits. This is one research agent using the assigned GPU; do not spawn additional agents without an explicit request.
+Prepare a concrete experiment brief and implementation for user assessment before launching a substantial new experiment. Approval covers the named control/candidates, evaluation, and bounded recovery in that brief; do not ask again for ordinary steps already authorized. After reporting its results, propose the next experiment and await assessment before launching it. A changed research question, recipe, evaluation rule, additional training run, or exceeded allowance requires an updated proposal and approval unless explicitly included in the existing authorization. Read-only review and preparation may continue.
+
+Novel in-scope ideas are allowed: add their evidence and dependencies to the catalog first. A catalog change does not alter authorization, evaluation, protected files, or resource limits. This is one research agent using the assigned GPU; do not spawn additional agents without an explicit request.
 
 ## Experiment brief
 
@@ -43,7 +45,8 @@ Control / candidate(s) / exact permitted changes / fixed variables:
 Starting checkpoint and code revision / prerequisites / relevant checks:
 Training state policy: optimizer, EMA, curriculum, RNG, data progression:
 Trial length or stopping criterion / candidate and retry limits:
-Estimated GPU-job time and other cost / hard cap / confirmation reserve:
+Per-training-run cap / evaluation and confirmation allowances / total experiment cost:
+Approval reference and exact scope / permitted recovery and retry limits:
 Evaluation: partition, preprocessing, sample counts, seeds, NFE, pairing:
 Selection rule / separate confirmation procedure / uncertainty rule:
 Diagnostics and interpretation limits:
@@ -69,9 +72,11 @@ Maintain a confirmed best candidate for each track and separately list provision
 
 ## Budget, environment, and provenance
 
-The **first future session has 12 cumulative GPU-job hours**, including qualification, startup, failed attempts, teacher/target work, sampling, and evaluation. Default to reserving the final **two hours for confirmation**, leaving ten for exploration. Stop starting exploratory work when it would consume that reserve. Stop at the session limit, preserve available evidence, and report unresolved questions rather than spending beyond the cap to force a conclusion. Include shutdown/checkpoint overhead in each job's allowance.
+The default maximum is **12 cumulative GPU-job hours per model-training run**, not per research session or campaign. A brief may specify a shorter cap. Charge training startup, checkpoint/shutdown overhead, failed attempts, and resumed segments to that same run; recovery never resets its allowance. This is elapsed job time, not GPU utilization time or conversation duration.
 
-Before launching each job, sum completed job time and outstanding allocations, then cap the next job at the remaining session allowance. Reconcile actual time afterward without double-counting parent and child intervals. Existing budgets are per run; they do **not** enforce a shared 12-hour session cap. Record the aggregate accounting with the session, and enforce each job's timeout using the existing supervised-job mechanism. Do not assume copying a 24-hour baseline config implements this budget. Record agent/token expenditure if the execution surface provides it; do not invent unavailable costs.
+Budget qualification, controls, teacher/target preparation, sampling, evaluation, and confirmation explicitly in the experiment brief. If evaluation shares a training process, declare its accounting before launch and never double-count intervals. There is no fixed ten-hour exploration/two-hour confirmation split. Confirmation effort follows the claim; if it cannot fit the approved scope, report preliminary evidence and propose the additional work. The per-run ceiling does not authorize an unlimited sequence of runs. Record the total approved experiment allowance and actual cumulative campaign cost separately.
+
+Before each job, reconcile completed and active job intervals with its allowance, reserve shutdown time, and cap its runtime using the existing supervised-job mechanism. Per-run tools do not enforce every experiment-level allowance automatically. Record accounting durably, including failure and recovery costs, without double-counting parent/child intervals. Record agent/token expenditure if available; do not invent unavailable costs.
 
 Record incremental session cost separately from the inherited baseline's **10.1978 GPU-job hours**. Include inherited training, teacher preparation, calibration, and search when comparing total method cost; a reused checkpoint is not free pretraining. Old baseline limits remain historical and are not a replenishing allowance.
 
@@ -81,6 +86,18 @@ Record incremental session cost separately from the inherited baseline's **10.19
 - Keep a dedicated experiment branch or isolated checkout and fresh run directories. Preserve the completed baseline, parent hashes, source revisions, configs, seeds, optimizer/EMA state, and data-order provenance. Commit reviewable candidate changes; do not destructively reset a shared working tree to reject a trial.
 - A recipe change is an explicit branch, not exact resume. Keep the existing strict resume guard. Lengthening `total_steps` changes the consistency curriculum; define continuation behavior separately. Retain both optimizer step and curriculum position when they differ.
 - Store small briefs and conclusions in versioned documentation and large artifacts in ignored run directories. Summarize measured milestones in status/Notion under the existing publication authorization. This file does not authorize Slack messages, invitations, or a new training launch merely by being read.
+
+## Recovery and handoff
+
+Keep a small durable run record beside the experiment brief: approval scope, code/configuration identity, parent checkpoint, job identity and process start identity, log/checkpoint paths, consumed allowance, retry count, and current state. Suggested states are prepared, approved, running, interrupted, completed, evaluation-failed, and awaiting assessment; these are records, not a new controller requirement.
+
+A fresh session first reads that record and inspects the actual job and artifacts. An existing live job is monitored, not launched again. Check process identity and the existing GPU lock; a stale PID or status file alone is insufficient. If interrupted, recover only within the approved policy, using the latest valid saved checkpoint and the remaining allowance. Logged steps beyond that checkpoint are lost work, not recoverable weights. Preserve the strict resume checks, optimizer/EMA/RNG/curriculum/data state and original recipe. Reconcile elapsed time before relaunch; unresolved accounting or incompatible state must be reported before dependent work.
+
+Reconcile the latest checkpoint, event history, and current process state together; a historical interruption reason can remain in a status record after successful recovery. For an unclean exit, do not assume shutdown accounting was saved: reconstruct consumed time from supervision records or report the unresolved allowance before restarting.
+
+After recovery, report the interruption, saved and logged steps, resumed step, lost work, attempts, cost, and evaluation outcome. Training completion does not imply successful evaluation; a failed metric remains missing. Routine authorized recovery does not need renewed permission. Finishing a run does not authorize the next substantial experiment.
+
+These instructions guide an agent; they are not an enforcement boundary. The [September 30 CPU rehearsal](docs/PROMPTWARE_RECOVERY_REHEARSAL.md) tested orderly interruption, saved-checkpoint recovery, unchanged configuration, cumulative allowance, and duplicate-worker rejection. It did not test hard crashes, power loss, timeout exhaustion, GPU training state, or unattended ten-hour operation. Document tested behavior and its limits rather than claiming that a prompt guarantees it.
 
 ## Current implementation readiness
 

@@ -1,0 +1,7 @@
+{
+  "metric": "sum integers 1 through 20",
+  "expected": 210,
+  "actual": 210,
+  "passed": true,
+  "completed_step": 20
+}

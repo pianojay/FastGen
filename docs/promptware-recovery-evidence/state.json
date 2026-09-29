@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "attempts": 2,
+  "elapsed_seconds": 23.186433734372258,
+  "config_sha256": "1130d7d7c0dc739d73e3d99326a65986e98ae985ca58719b07a4e962dbeee9db",
+  "pid": null,
+  "resumed_from": 5,
+  "process_start_ticks": "1049125366",
+  "reason": "intentional interruption"
+}
