@@ -80,8 +80,11 @@ def main(args):
                     print(json.dumps(stats),flush=True)
                     atomic_json(run/'status.json',dict(state='running',**stats,gpu=gpu_telemetry()))
                     budget.save()
-                if trainer.step%config['checkpoint_steps']==0:
+                retain = trainer.step in config.get('checkpoint_retain_steps', [])
+                if trainer.step%config['checkpoint_steps']==0 or retain:
                     save()
+                if retain:
+                    trainer.save(run/'checkpoints'/f'step_{trainer.step:06d}.pt',metadata)
                 if trainer.step%config['sample_steps']==0:
                     demo(trainer.ema,run/'samples'/f'{trainer.step:06d}',mapping)
                     subprocess.run([sys.executable,'-m','scripts.report','--run-dir',str(run)],check=True)

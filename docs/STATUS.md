@@ -10,6 +10,14 @@ Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.61
 
 ## Decisions and boundaries
 
+### September 30 S1 launch authorized — current execution
+
+The user instructed **"Launch training."** S1 uses [the fresh U-Net128 configuration](../configs/research_s1_train.json), 40k updates at effective batch 128 / microbatch 32, seed 42, and the full 40k schedule declared at initialization. The [frozen protocol](../configs/research_s1_20260930.json) separates a 22-hour cumulative training watchdog, five-minute contract qualification and 50-minute paired evaluation allowance. The selected optimizer estimate remains 19.11 hours; the larger watchdog covers measured overhead and bounded recovery rather than adding optimizer updates. No checkpoint initializes this model.
+
+GPU 1 was idle at reconciliation (`nvidia-smi -i 1` reported 1 MiB and 0% utilization). The branch is `research/s1-scratch-40k-20260930`; run artifacts are `runs/research_s1_unet128_40k_seed42/`. Source/protocol/environment identities, process start identities and stage accounting will be persisted before GPU execution. CPU contract/numerical discovery passed 11 tests with five CUDA tests skipped; full GPU qualification precedes training. Paired evaluation reuses the B1 noise protocol and protected official metric. Retained 20k/30k checkpoints are evaluated after the uninterrupted full training schedule, with the final 40k checkpoint fixed as the primary candidate.
+
+Launch command: `PYTHONNOUSERSITE=1 CUDA_VISIBLE_DEVICES=1 /home/user/miniconda3/envs/fastgen_soflow/bin/python -m scripts.training_study --config configs/research_s1_20260930.json` after its `--prepare` step. The workflow owns the GPU 1 lock, records reference evaluations before training, supervises training and terminal evaluation, and leaves separate stage logs and recoverable state. Current process/stage/results must be read from its `record.json`, `status.json` and `exit_status`; this preparation entry does not claim training completion or a new FID.
+
 ### September 30 longer-training authorization and scratch-only plan — current
 
 The user removed the fixed training-hour limit while retaining fewer than 100M loaded inference parameters and peak training allocation below 20,000,000,000 bytes. [program.md](../program.md#resources-and-boundaries) and AGENTS.md now require finite optimizer-hour allocations justified by learning and throughput evidence, with separately accounted overhead, qualification, evaluation and recovery. Older 12-hour policies below are historical; no replacement universal time cap or new per-experiment approval gate was introduced.

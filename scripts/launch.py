@@ -18,15 +18,23 @@ def used_seconds(run):
     return json.loads(path.read_text())['used_seconds'] if path.exists() else 0.
 
 
-def run_gpu_job(command, config, run):
+def run_gpu_job(command, config, run, *, stdout=None, stderr=None):
     """Count process startup too; stop the whole child group when its budget expires."""
     before = used_seconds(run)
     timeout = config['budget_seconds'] - before
     if timeout <= 0:
         return None
     started = time.monotonic()
-    process = subprocess.Popen(command, start_new_session=True)
-    atomic_json(run/'active_job.json', {'pid':process.pid, 'command':command})
+    launched_unix = time.time()
+    process = subprocess.Popen(command, start_new_session=True, stdout=stdout, stderr=stderr)
+    try:
+        start_ticks = Path(f'/proc/{process.pid}/stat').read_text().rsplit(')', 1)[1].split()[19]
+    except FileNotFoundError:
+        start_ticks = None
+    identity = {'command':command, 'started_unix':launched_unix,
+                'proc_start_ticks':start_ticks,
+                'boot_id':Path('/proc/sys/kernel/random/boot_id').read_text().strip()}
+    atomic_json(run/'active_job.json', {'pid':process.pid, **identity})
     try:
         return process.wait(timeout=timeout)
     except subprocess.TimeoutExpired:
@@ -41,7 +49,7 @@ def run_gpu_job(command, config, run):
         atomic_json(run/'budget.json', {
             'used_seconds':max(used_seconds(run), before+time.monotonic()-started),
             'limit_seconds':config['budget_seconds']})
-        atomic_json(run/'active_job.json', {'pid':None, 'command':command, 'returncode':process.returncode})
+        atomic_json(run/'active_job.json', {'pid':None, **identity, 'returncode':process.returncode})
 
 
 def worker(args):

@@ -1,6 +1,6 @@
 # Incremental SoFlow research log
 
-Follow [program.md](../program.md); one research-start instruction authorizes consecutive in-scope experiments. Updated September 30 with the user's longer-training authorization and requirement that every new training experiment start from scratch. This plan revision launches no GPU work.
+Follow [program.md](../program.md); one research-start instruction authorizes consecutive in-scope experiments. On September 30 the user instructed **"Launch training."** S1 is the first fresh run in the authorized scaling sequence; S2 follows its evaluation and changed-architecture qualification.
 
 ## Campaign context
 
@@ -8,15 +8,15 @@ Fill once, update when needed; link exact machine-readable settings rather than 
 
 | Field | Value |
 |---|---|
-| Current request / date | September 30: allow evidence-justified longer training within model-size/memory limits; every new experiment must start from scratch |
+| Current request / date | September 30: "Launch training." Earlier instructions require evidence-justified hours and every new training experiment to start from scratch. |
 | Track objectives | Separate one-call and two-to-four-call FID |
 | Training-time policy | No fixed hour cap; justify and charge each fresh run's full optimizer allocation, including failures and exact recovery |
 | Initialization / scheduling | Fresh model, optimizer, EMA, RNG and data state at update zero; full horizon/schedules set before training; previous checkpoints are references only |
 | Hard resource limits | Loaded inference parameters <100M; peak training allocation <20,000,000,000 bytes; also record host memory |
 | User campaign cap / deadline | None specified; keep cumulative costs and justify each additional allocation |
-| Evaluation protocol | Proposed selection seeds 3101/3102 and confirmation seeds 4101–4104, with actual matched noise and the full development metric; details below, freeze in executable configs before launch |
+| Evaluation protocol | Frozen [S1 protocol](../configs/research_s1_20260930.json): selection 3101/3102, confirmation 4101–4104, actual matched noise, full development metric, fixed final-checkpoint decision |
 | Prior evidence reviewed | EXP-1; completed negative B1 (`94f2915` and local result); prepared/unrun A2 (`dfe9c77`); unlaunched C3/C1/D2 direction plan (`5d3db1b`) |
-| Current active run / process identity / remaining allowance | No matching FastGen job observed at review; this revision starts none. Reconcile process/lock/accounting before execution. |
+| Current run / process identity / allowance | S1 prepared for launch in `runs/research_s1_unet128_40k_seed42`; durable `record.json`, `process.json`, stage logs and separate cumulative budget files are authoritative. GPU 1 was idle before qualification. |
 
 ## Planned experiments
 
@@ -24,7 +24,7 @@ One row before launch; details belong in the linked configuration. Add status up
 
 | ID / target track | Recipe delta / control / parent / source | Horizon and state policy | Train / eval / confirmation caps; retry limit | Config / protocol link | Why now; positive / negative next decision |
 |---|---|---|---|---|---|
-| S1 / proposed, both tracks | Fresh U-Net128 longer-horizon recipe, training seed 42; EXP-1 is a reference only; source reviewed `deed05b` | 0 → 40k; 5.12M new presentations; full 40k curriculum and fresh optimizer/EMA/RNG/data state | Estimated 19.112 new optimizer hours; 50 min selection/confirmation; at most one exact-recovery attempt within the declared job allocation; wall-time allowance set before launch | [Allocation evidence and initialization policy](research/evidence/scaling-20260930.json); fresh-run/evaluation configs pending | Test a full longer recipe after substantial historical 10k → 20k gains; use the complete learning curve to justify any subsequent fresh horizon |
+| S1 / launch authorized, both tracks | Fresh U-Net128, seed 42; EXP-1 is a reference only; branch `research/s1-scratch-40k-20260930`, exact source hash frozen in run record | 0 → 40k; 5.12M new presentations; full 40k curriculum, fresh optimizer/EMA/RNG/data state; retain 20k/30k checkpoints | 19.112 estimated optimizer hours; 22 h training watchdog including overhead/recovery; 5 min qualification; 50 min evaluation; at most one recovery attempt, no allowance renewal | [Training config](../configs/research_s1_train.json), [protocol and cost rationale](../configs/research_s1_20260930.json) | Test the complete longer recipe and supply S2's control; evaluate both tracks before allocating the next fresh run |
 | S2 / proposed, both tracks | Fresh U-Net160, training seed 42; S1 U-Net128 at equal exposure/schedule; other recipe settings fixed | 0 → 40k; 5.12M new presentations; the same complete 40k schedule as S1 | Optimizer hours = 40,000 × measured full-update seconds / 3,600; qualification, evaluation and finite wall-time allowance set from changed-path measurements; at most one exact-recovery attempt | [Allocation formula](research/evidence/scaling-20260930.json); wider-model qualification/config pending | Test 56% more parameters at matched exposure; a gain motivates fresh replication/capacity refinement, a negative redirects toward objective/time-coverage changes |
 
 At a major direction change, add at most three short option rows (option, plausible gain or decision value, cost/limitation), then one sentence selecting the next experiment. Do not repeat the comparison for every local parameter trial.
@@ -49,7 +49,7 @@ At a major direction change, add at most three short option rows (option, plausi
 
 Complete the declared 40k schedule rather than reject it solely from a noisy midpoint. Resource/numerical failures permit bounded exact recovery of the same experiment, with its horizon unchanged. Review the full curve and paired 30k → 40k gains before selecting any longer experiment. That experiment must start from scratch, with a newly declared complete schedule and its full cost justified. No extension of S1/S2 is planned. S2 supplies the capacity comparison; an unproductive S2 redirects toward C3/C1 rather than automatically funding S3. These decisions remain autonomous once research is started.
 
-These are planned scientific allocations, not launch-ready configurations. Remaining prerequisites are fresh-run configs with complete schedules, paired evaluation configs, changed-architecture qualification and finite job-time allowances. No continuation implementation is needed. The user's time-policy and scratch-initialization instructions are already authoritative.
+S1's executable training/protocol configs and finite allowances are now frozen. The durable workflow runs GPU contract checks, records the four paired historical-reference passes, trains the fresh 40k model without changing its horizon, and then performs the declared curve/final evaluations and eligible confirmation. Training and evaluation time are recorded separately. S2 still needs its own wider-model qualification and measured time allocation. No continuation implementation is needed.
 
 ## Results
 
@@ -77,3 +77,4 @@ Append launch, completion, failure, recovery, and major direction changes with t
 
 - **2026-09-30, initial longer-training plan, superseded:** user removed the fixed hour cap and required evidence for optimizer allocations. The proposed 20k → 40k continuation was never launched; the subsequent scratch-only instruction replaces it.
 - **2026-09-30, scratch-only correction:** S1 and S2 now both initialize at zero with full 40k schedules. S1 costs about 19.11 new optimizer hours; historical EXP-1 is an evaluation reference only. Current code inspection confirms fixed-LR RAdam, step-dependent optimizer/EMA state and a horizon-dependent gap curriculum. Documentation/configuration-record changes only; no GPU work or new FID result.
+- **2026-09-30, S1 launch preparation:** user instructed "Launch training." GPU 1 reported 1 MiB / 0% utilization, with no matching FastGen job. Added retained curve checkpoints and durable separate qualification/training/evaluation accounting; paired-noise primitives reuse B1 commit `94f2915`. CPU discovery passed 11 tests with five GPU tests skipped; the supervised qualification stage runs all 16 on GPU 1 before training. Source/configuration hashes and process start identities are retained in the run record.
