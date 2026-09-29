@@ -1,112 +1,97 @@
-# SoFlow autoresearch instructions
+# Autonomous SoFlow research loop
 
-Updated 2026-09-30, Asia/Seoul. **Documentation ready; no research session has started.** This file governs a future user-started session. Reading or editing it does not launch experiments.
+Updated September 30, 2026. These instructions govern an actual research loop once the user starts it. Editing or reading this file alone does not launch training. A request to start or continue research authorizes consecutive in-scope experiments; do not stop for approval between them.
 
-## Purpose and starting evidence
+## Objective and scope
 
-Use **research agenda → question and competing explanations → bounded experiment → results → updated agenda**. FID is the quality objective; diagnostics help choose interventions and interpret their effects. A useful negative result can change the next decision without improving a checkpoint. A reproducible FID improvement can be useful even when its mechanism remains unresolved.
+Find substantially better development FID at **exactly one NFE** and **two to four NFEs**, within the FastGen resource limits. Maintain separate best candidates; do not average the tracks. The scope is SoFlow and close variants, including its training objectives, curriculum, conditioning, architecture, augmentation, optimization, and compatible local-teacher methods. Direct class conditioning is the starting point. Different winning checkpoints are allowed.
 
-Read [AGENTS.md](AGENTS.md), the [completed baseline](docs/POKEMON_BASELINE_RESULTS.md), the [research catalog](docs/AUTORESEARCH_DIRECTIONS.md), and the [strategy and cost distinctions](docs/FASTGEN_STRATEGY.md). Historical running snapshots do not supersede the completed result.
+Read [AGENTS.md](AGENTS.md), [current status](docs/STATUS.md), the [research log](docs/RESEARCH_LOG.md), and the [baseline results](docs/POKEMON_BASELINE_RESULTS.md). Consult the [intervention catalog](docs/AUTORESEARCH_DIRECTIONS.md) and [strategy/cost audit](docs/FASTGEN_STRATEGY.md) when relevant. Catalog entries are ingredients at different levels of a design, not equally ranked next experiments. Check existing result records and relevant branches before repeating work; a checkout's older status is not proof that another session ran no experiments. Inspect other branches without switching a checkout used by a running process.
 
-Maintain two equally important objectives, with separate best candidates:
+Starting baseline: 39,667,843-parameter U-Net, 20k updates, 10.1978 GPU-job hours; mean development FID **113.9551 / 46.5978 / 40.2773 / 38.2858** at NFE 1/2/3/4. These are two sampling seeds from one trained checkpoint. TA targets checked September 29 were 39.15 / 30.90; recheck the official course page at milestone assessment. Our development references differ from the official references, so these are directional targets, not an official score comparison.
 
-| Track | Goal | Current development baseline |
+## Choose at the right level
+
+The primary decision is **which training recipe is worth allocating meaningful compute to**, not which catalog item is easiest to execute. Use the following hierarchy to organize choices. It is a default allocation of attention, not a claim about which untested method will win.
+
+| Level | Role | Examples and priority rule |
 |---|---|---|
-| One-call | Improve exactly-one-NFE generation | Mean FID **113.9551** |
-| Few-call | Improve generation at 2, 3, or 4 NFEs | Mean FID **38.2858**, four calls |
+| Validity and targeted diagnosis | Make a comparison trustworthy or resolve a concrete design ambiguity | Fix broken conditioning, numerical errors, invalid evaluation, or resource violations first. Use an audit only when its possible outcomes change a pending design choice; do not require exhaustive diagnosis before training. |
+| Recipe design | Main search for a substantial change in attainable quality at practical training cost | Objective/supervision, time and gap curriculum, conditioning, architecture/expressivity, and data/augmentation policy. Compare plausible recipes under declared compute/exposure conditions. Larger models are candidates, not an assumed cure. |
+| Recipe optimization and compute scaling | Develop a promising recipe and determine how efficiently it learns | Learning rate, EMA policy, regularization, training duration, and local parameter search. Promote these earlier when specific evidence makes them a likely bottleneck. Do not extend training merely because a curve is still improving. |
+| Checkpoint and sampler selection | Extract quality from an existing trained model | Online versus EMA weights, checkpoint choice, two-to-four-call schedules. These can be worthwhile cheap checks, but ease of implementation is not evidence of a large remaining gain. One-call training cannot be repaired by tuning nonexistent intermediate sampling times. |
 
-The baselines use one trained checkpoint and two sampling seeds, not independent training repetitions. The [official TA targets](https://generative-models.kaist.ac.kr/fastgen/) checked September 29 are 39.15 and 30.90, respectively; recheck them when assessing an official milestone. Different reference sets prevent equating our development FIDs with official scores. Do not average the two tracks into one optimization target. Separate winning checkpoints are allowed.
+Interventions can cross levels. A learned sampler or local teacher with its own optimization is a training-method decision with full cost, not a free inference tweak. Evidence can elevate a lower-level intervention; record why. An expensive training run can be the smallest useful experiment when shorter runs cannot answer the question.
 
-Our scope is SoFlow and close variants. Use the four questions in the catalog to select relevant interventions; do not run every catalog entry. Keep direct conditioning as the starting recipe. Broader model-family exploration belongs to the team's other work.
+At each major choice, compare at most three plausible options in **three short rows**: option, reason it could materially improve the target track or change the next recipe, and full cost/limitation. Then choose one in a sentence. Include a recipe-level option unless current evidence or a user constraint rules training out. Use qualitative judgment rather than invented numerical probabilities or a weighted ranking score.
 
-## Research loop
+- Consider plausible gain, relevance to the current gap, information that changes the next choice, and total preparation/training/evaluation cost. Cheapness is a tie-breaker, not the objective.
+- State what a positive and negative result would change. A diagnostic with no actionable consequence can be deferred.
+- D1 (longer training) asks about extra compute; it is not automatically the best fixed-budget recipe improvement. Compare its inherited plus incremental cost with a fresh alternative. A2 (saved online versus EMA) is a checkpoint-selection check; a negative result does not resolve the training bottleneck.
+- Give both tracks meaningful attention over the sequence; log the reason for focusing on one. Do not spend an indefinite series polishing the few-call sampler while the one-call learning gap remains unaddressed.
+- After an unproductive local neighborhood, change the design question or recipe. Do not keep shrinking a sweep because it is easy to score. Conversely, a promising recipe merits refinement and confirmation rather than novelty for its own sake.
 
-1. **Select an uncertainty.** Review existing results for both tracks. State the decision that new evidence could change, the competing explanations, and why this probe is worth its cost now. There is no mandatory catalog order or fixed compute split between tracks.
-2. **Write the experiment brief below before observing candidate scores.** Choose an audit, numerical diagnostic, controlled training comparison, or small local search. Declare exact settings only when instantiating the experiment; illustration values are not standing instructions.
-3. **Prepare the comparison.** Check implementation readiness, validate any prerequisite changes, preserve the control, and establish provenance. Prefer existing artifacts when they answer the question. An early-training proxy cannot rank eventual quality unless that relationship has evidence.
-4. **Run within the approved brief and run limits.** Change one factor for an attribution claim, or explicitly identify a bundled intervention and the later ablation needed. A new question or changed evaluation rule requires a new brief, not rewriting the original after seeing results.
-5. **Interpret and confirm.** Record quality and explanatory conclusions separately. Label outcomes preliminary, confirmed under this protocol, negative within the tested scope, inconclusive, or implementation failure. Missing or failed evaluations have no numeric score.
-6. **Update the agenda.** State the next question and the alternatives now more or less plausible. Preserve useful negative evidence, rejected candidates, and unexplained gains. Avoid repeatedly testing a low-information neighborhood simply because it is easy to score.
+## Execute the loop
 
-Prepare a concrete experiment brief and implementation for user assessment before launching a substantial new experiment. Approval covers the named control/candidates, evaluation, and bounded recovery in that brief; do not ask again for ordinary steps already authorized. After reporting its results, propose the next experiment and await assessment before launching it. A changed research question, recipe, evaluation rule, additional training run, or exceeded allowance requires an updated proposal and approval unless explicitly included in the existing authorization. Read-only review and preparation may continue.
+1. Read the latest results and active job state. Select the next option using the short comparison above.
+2. Add a planned row to the log and save an exact configuration before observing candidate scores. Declare the control, intervention, training length/curriculum, seeds, evaluation rule, and job/retry limits. Reuse a campaign evaluation protocol instead of rewriting it for every experiment.
+3. Implement the necessary change and run relevant contract/numerical checks. Preserve baseline artifacts and use fresh run directories. Change one factor when claiming attribution; bundled recipe changes are allowed for quality search, but do not attribute the result to one component without ablation.
+4. Launch and supervise. **Hours-long training is normal.** Do not substitute a short proxy merely to finish the conversation quickly. Use durable jobs and bounded waits, check meaningful progress/checkpoint/error signals, and continue through completion. Do not poll noisily or stop at “training launched.” If the execution surface interrupts the agent, leave a recoverable record; do not promise persistence the runtime does not provide.
+5. Evaluate, update the row and separate track incumbents, and record one or two sentences on the quality result and what to try next. Confirm promising candidates under the declared protocol; retain provisional status when evidence is insufficient.
+6. Select and run the next experiment autonomously. A completed experiment, a negative result, a new in-scope recipe, or a long expected runtime is not a reason to wait for user approval.
 
-Novel in-scope ideas are allowed: add their evidence and dependencies to the catalog first. A catalog change does not alter authorization, evaluation, protected files, or resource limits. This is one research agent using the assigned GPU; do not spawn additional agents without an explicit request.
+Send concise nonblocking updates at launch, meaningful results, failures, and changes of direction. Ask only when a required external dependency, a genuine unresolved user constraint, or an action outside the authorized scope prevents progress. Respect a user stop/pause request and any explicit campaign limit. Do not introduce a periodic approval gate. Older briefs may contain per-experiment approval language; this policy supersedes that gate while preserving their recorded results and protocol limits. If a launcher requires an authorization reference, use the actual research-start instruction and its scope, never a fabricated approval. No extra agents unless explicitly requested.
 
-## Experiment brief
+## Compact records
 
-Store a dated brief with the future session's records. Complete all fields before the relevant GPU work; for a CPU-only audit, mark GPU fields not applicable. The following is a record template, not an implemented CLI or configuration schema.
+Use [docs/RESEARCH_LOG.md](docs/RESEARCH_LOG.md) for incremental decisions and results. Save full configurations and machine-readable metrics beside each run; link them instead of duplicating their contents in prose. A new essay/report per experiment is not required. Historical detailed reports remain evidence, not a required template.
 
-```text
-Question ID / date / target NFE track(s):
-Decision this result could change:
-Evidence, sources, competing explanations, and unresolved assumptions:
-Probe and why it is the smallest informative comparison:
-Control / candidate(s) / exact permitted changes / fixed variables:
-Starting checkpoint and code revision / prerequisites / relevant checks:
-Training state policy: optimizer, EMA, curriculum, RNG, data progression:
-Trial length or stopping criterion / candidate and retry limits:
-Per-training-run cap / evaluation and confirmation allowances / total experiment cost:
-Approval reference and exact scope / permitted recovery and retry limits:
-Evaluation: partition, preprocessing, sample counts, seeds, NFE, pairing:
-Selection rule / separate confirmation procedure / uncertainty rule:
-Diagnostics and interpretation limits:
-Positive / negative / inconclusive outcomes and corresponding next questions:
-```
+Before launch, a row or linked configuration must identify:
 
-For inference-only probes, declare training state frozen. For matched training branches, start from the same parent and preserve its state except for the named intervention. Declare whether comparisons match image presentations, elapsed compute, or both; log both quantities regardless. Controls can be reused only when their relevant conditions match.
+- ID, target track, changed factor/recipe, control, source revision, starting checkpoint, and exact training/EMA/curriculum/data-state policy.
+- Training horizon and maximum time, evaluation/confirmation allowance, retry limit, selection and confirmation seeds, sample/reference identity, and the decision rule fixed before candidate scores.
+- One-sentence rationale and positive/negative next decision. The three-option comparison is needed at major direction changes, not every local trial.
 
-Afterward append actual cost, artifact locations, all scores, failures, deviations, and two conclusions: **what happened to quality** and **what this says about the explanation**. Record which track's candidate changed and what evidence supports that change.
+Append the common metrics without overwriting older outcomes:
 
-## Evaluation and confirmation
+| ID / status | Recipe delta / parent / control | Updates / image presentations | GPU-job hours: train / eval / cumulative campaign | FID 1 / 2 / 3 / 4 | Inference params | Peak allocated VRAM / host RAM | Evidence / decision |
+|---|---|---|---|---|---|---|---|
 
-- Keep the established unaugmented **3,020 training-derived development references and 3,020 generated images, 20 per category** for headline development FID. Preserve partition identity and the official metric implementation. Any smaller diagnostic is labeled separately and never replaces this metric.
-- Official validation does not participate in training, candidate selection, or schedule fitting. Fit any learned calibration on the optimization partition, and predeclare development selection and later verification. The existing development set has already informed choices: resplitting it or using new generation seeds does not create an untouched holdout.
-- Fix the selection seeds and reserve separate confirmation seeds before search. Evaluate the candidate and its control under the same confirmation protocol. Repeated use of confirmation results makes them selection evidence; disclose that use in later briefs.
-- Match actual initial and intermediate noise draws for sampler comparisons, where applicable. The current evaluator's identical seed values do not reliably pair images across different NFEs. Keep batch size, output processing, and reference processing fixed within the comparison.
-- Training probes normally report both one-call and four-call results. Few-call selection compares the declared 2–4-call candidates; a schedule-only result at four calls says nothing about one-call learning. Verify actual network-call counts, including any auxiliary network.
-- FID ranks distributional quality, not requested-class accuracy or memorization. Use predeclared category panels and diagnostics to understand changes; record contradictory findings rather than selecting attractive examples afterward. Tiny per-class sample sets do not support dependable classwise FID rankings.
-- Confirmation effort and the decision rule depend on observed control variability and the claim's size. Estimate variability before candidate selection or predeclare a bounded procedure for doing so. There is **no universal FID gain threshold**. Conflicting or insufficient evidence remains inconclusive; do not add seeds until a desired conclusion appears.
-- Sampling seeds assess generation variability. Fresh training repetitions assess recipe variability. Short checkpoint branches establish local adaptation evidence; a stronger recipe claim needs fresh-training confirmation. The changing consistency MSE is a diagnostic, never the quality objective.
+Include seeds, per-seed scores, reference identity, and pairing in linked metrics. Mark unmeasured values `—` and failed evaluations `failed`; never use zero. Distinguish provisional and confirmed winners. Record sampling-only versus fresh-training replication. Log retries, interruptions and recovery costs as they occur. A small fixed visual panel can flag contradictory evidence without a full gallery essay.
 
-Maintain a confirmed best candidate for each track and separately list provisional contenders. A confirmed quality improvement does not require a proven mechanism, and a supported mechanism does not imply a quality improvement. Resource and challenge validity remain prerequisites for either candidate's use.
+## Evaluation rules
 
-## Budget, environment, and provenance
+- Headline development FID retains **3,020 unaugmented training-derived references and 3,020 generated images, 20 per category**, using the protected official metric. Smaller diagnostics are labeled separately. Official validation never participates in training, candidate selection, or fitting a schedule.
+- Fix selection and separate confirmation seeds and a bounded decision rule before scores. Use the same protocol for candidate and control. There is no universal FID-gain threshold; a marginal or conflicting result remains inconclusive. Do not add seeds until the desired conclusion appears. Campaign defaults can be reused; new experiments need not invent new statistical procedures.
+- Preserve reference/preprocessing/batch conditions and actual matched noise where applicable. Same seed alone does not guarantee matching across NFEs. Include checkpoint, weight source, sampling schedule and RNG protocol in cache/output identities.
+- Training comparisons normally evaluate both one and four calls. Report two/three calls when selected by the few-call experiment. Verify actual network-call counts, including auxiliary models.
+- Short branches are useful for screening, not proof of a better from-scratch recipe. Do not reject slow-learning recipes from early FID unless the proxy's relevance has evidence. Define EMA and curriculum explicitly for longer training; changing total_steps changes the baseline curriculum.
+- Fresh training assesses recipe variability; extra generation seeds assess sampling variability. Already-used development data are not an untouched holdout. Quality gains need not have a proven mechanism; mechanisms need not improve FID. FID does not establish class accuracy, diversity, or absence of memorization.
 
-The default maximum is **12 cumulative GPU-job hours per model-training run**, not per research session or campaign. A brief may specify a shorter cap. Charge training startup, checkpoint/shutdown overhead, failed attempts, and resumed segments to that same run; recovery never resets its allowance. This is elapsed job time, not GPU utilization time or conversation duration.
+## Resources and boundaries
 
-Budget qualification, controls, teacher/target preparation, sampling, evaluation, and confirmation explicitly in the experiment brief. If evaluation shares a training process, declare its accounting before launch and never double-count intervals. There is no fixed ten-hour exploration/two-hour confirmation split. Confirmation effort follows the claim; if it cannot fit the approved scope, report preliminary evidence and propose the additional work. The per-run ceiling does not authorize an unlimited sequence of runs. Record the total approved experiment allowance and actual cumulative campaign cost separately.
+The default maximum is **12 cumulative GPU-job hours per model-training run**, including startup, failed attempts, resumed segments, checkpointing and shutdown. Recovery never renews this allowance. A fresh recipe has its own recorded run allowance; do not relabel an unchanged interrupted/continued job to reset its cap. Preserve inherited training cost when comparing a warm-started method with a fresh recipe.
 
-Before each job, reconcile completed and active job intervals with its allowance, reserve shutdown time, and cap its runtime using the existing supervised-job mechanism. Per-run tools do not enforce every experiment-level allowance automatically. Record accounting durably, including failure and recovery costs, without double-counting parent/child intervals. Record agent/token expenditure if available; do not invent unavailable costs.
+Budget qualification, controls, teachers, sampling and confirmation separately before each experiment and record total method cost. There is no fixed 10/2 allocation. A long run is permitted when it is informative and fits the limits. Once research is started, consecutive runs are authorized; **there is no default 12-hour campaign cap**. Honor any user-specified total cap or deadline, and always keep cumulative campaign accounting. Absence of a total cap is not a reason to spend on repetitive low-value trials.
 
-Record incremental session cost separately from the inherited baseline's **10.1978 GPU-job hours**. Include inherited training, teacher preparation, calibration, and search when comparing total method cost; a reused checkpoint is not free pretraining. Old baseline limits remain historical and are not a replenishing allowance.
+Reconcile used time and active allocations before launch; use existing supervised timeouts, GPU locks, and a shutdown allowance. Do not double-count nested process intervals or equate GPU utilization with elapsed job time. Per-run supervision does not automatically enforce a multi-run campaign cap. Report agent/token costs only if available.
 
-- Work in `FastGen-SoFlow`, using local **GPU 1** and `PYTHONNOUSERSITE=1` with `/home/user/miniconda3/envs/fastgen_soflow/bin/python`. Use existing GPU locks and avoid other users' processes. The closed CIFAR experiment and GPU 0 remain untouched.
-- Follow [AGENTS.md](AGENTS.md): preserve official file/base-class hashes, scratch-trained lineage on the optimization partition, fewer than 100M loaded inference parameters, and peak training allocation below 20,000,000,000 bytes. Only the official FID Inception is pretrained. Measure memory for new training/calibration paths.
-- Preserve effective batch when tuning microbatch for resource reasons. Record changed throughput instead of treating faster updates as equivalent learning progress. KCloud requires its own qualification and fresh run; TITAN measurements are not A100 predictions.
-- Keep a dedicated experiment branch or isolated checkout and fresh run directories. Preserve the completed baseline, parent hashes, source revisions, configs, seeds, optimizer/EMA state, and data-order provenance. Commit reviewable candidate changes; do not destructively reset a shared working tree to reject a trial.
-- A recipe change is an explicit branch, not exact resume. Keep the existing strict resume guard. Lengthening `total_steps` changes the consistency curriculum; define continuation behavior separately. Retain both optimizer step and curriculum position when they differ.
-- Store small briefs and conclusions in versioned documentation and large artifacts in ignored run directories. Summarize measured milestones in status/Notion under the existing publication authorization. This file does not authorize Slack messages, invitations, or a new training launch merely by being read.
+- Use local **GPU 1**, `PYTHONNOUSERSITE=1`, and `/home/user/miniconda3/envs/fastgen_soflow/bin/python`. Leave GPU 0 and the closed CIFAR work alone.
+- Preserve protected files/base Model and official evaluation. All generative lineage is scratch-trained on the optimization partition; only official FID Inception may be pretrained. Loaded inference parameters stay below 100M, peak training allocation below 20,000,000,000 bytes. Measure new paths; log host memory as well.
+- Preserve effective batch when adjusting microbatch for resources. Declare whether comparisons match compute or presentations and record both. KCloud requires its own qualification; TITAN timings are not A100 predictions.
+- Use dedicated branches or isolated checkouts and fresh outputs. Never reset another agent's work to reject a candidate. Retain configs, hashes, seeds, optimizer/EMA/RNG/data state, and original results. Recipe branches must not weaken exact-resume checks.
+- Commit reviewable changes and small records; keep large artifacts ignored. Summarize major milestones in STATUS/Notion under existing authorization, not every trial. No Slack messages or invitations are authorized.
 
-## Recovery and handoff
+## Recovery and continuity
 
-Keep a small durable run record beside the experiment brief: approval scope, code/configuration identity, parent checkpoint, job identity and process start identity, log/checkpoint paths, consumed allowance, retry count, and current state. Suggested states are prepared, approved, running, interrupted, completed, evaluation-failed, and awaiting assessment; these are records, not a new controller requirement.
+Persist the run ID, source/configuration/checkpoint identity, process start identity, artifact paths, consumed allowance, retries, and current state. A fresh session reconciles logs, checkpoint, process and lock before acting: monitor a live job instead of duplicating it; resume an interrupted one within the same allowance. Logged progress beyond saved weights is lost work. Restore required optimizer/EMA/RNG/data/curriculum state and retain strict resume validation.
 
-A fresh session first reads that record and inspects the actual job and artifacts. An existing live job is monitored, not launched again. Check process identity and the existing GPU lock; a stale PID or status file alone is insufficient. If interrupted, recover only within the approved policy, using the latest valid saved checkpoint and the remaining allowance. Logged steps beyond that checkpoint are lost work, not recoverable weights. Preserve the strict resume checks, optimizer/EMA/RNG/curriculum/data state and original recipe. Reconcile elapsed time before relaunch; unresolved accounting or incompatible state must be reported before dependent work.
+A stale interruption reason is not evidence of a current failure. An unclean exit may not save accounting; reconstruct it from supervisor records or resolve the discrepancy before relaunch. An evaluation failure does not erase completed training or create a score. After a bounded unrecoverable failure, log it and choose another viable in-scope experiment; do not let one broken candidate halt the whole campaign unnecessarily.
 
-Reconcile the latest checkpoint, event history, and current process state together; a historical interruption reason can remain in a status record after successful recovery. For an unclean exit, do not assume shutdown accounting was saved: reconstruct consumed time from supervision records or report the unresolved allowance before restarting.
+The [CPU recovery rehearsal](docs/PROMPTWARE_RECOVERY_REHEARSAL.md) established one orderly interruption/recovery, not hard-crash, timeout-exhaustion, GPU-state or ten-hour reliability. Its older per-experiment approval policy is historical and superseded by this file. These instructions do not themselves implement a scheduler or enforce access permissions.
 
-After recovery, report the interruption, saved and logged steps, resumed step, lost work, attempts, cost, and evaluation outcome. Training completion does not imply successful evaluation; a failed metric remains missing. Routine authorized recovery does not need renewed permission. Finishing a run does not authorize the next substantial experiment.
+## Implementation readiness
 
-These instructions guide an agent; they are not an enforcement boundary. The [September 30 CPU rehearsal](docs/PROMPTWARE_RECOVERY_REHEARSAL.md) tested orderly interruption, saved-checkpoint recovery, unchanged configuration, cumulative allowance, and duplicate-worker rejection. It did not test hard crashes, power loss, timeout exhaustion, GPU training state, or unattended ten-hour operation. Document tested behavior and its limits rather than claiming that a prompt guarantees it.
+Inspect the current checkout and existing research branches rather than assuming a catalog feature exists. Implement only prerequisites for the selected experiment. At baseline revision `0084d02`, configurable inference times, explicit recipe branching, objective mixing and some diagnostics required work; later branches may contain reusable implementations. Existing `--run-steps` alone cannot extend the completed 20k recipe. Do not bypass that through a weakened resume check.
 
-## Current implementation readiness
-
-As inspected at source revision `0084d02`, the repository has a trainer, exact-resume checks, per-run budget supervision, development FID, exports, reports, and an offline gallery. It has **no custom autoresearch controller**. This document and the catalog are the operating layer for an agent using and, when needed, extending those tools.
-
-Before relevant trials, implement and validate only the required prerequisites: explicit recipe branching, configurable inference times and matched randomness, objective mixing, or diagnostic collection. Their presence in the catalog is not evidence that they are already implemented. Existing `--run-steps` can limit an unfinished recipe but cannot continue the completed 20k checkpoint beyond its configured horizon. Do not bypass that limitation by weakening the resume check.
-
-Use the repository's contract/numerical checks for relevant future code changes, plus targeted checks for the new behavior. Documentation-only work requires link, fact, and scenario review, not GPU training tests. The catalog's [walkthroughs](docs/AUTORESEARCH_DIRECTIONS.md#protocol-walkthroughs) exercise the intended decisions without claiming actual experimental results.
-
-## Attribution
-
-This workflow adapts [Karpathy's autoresearch](https://github.com/karpathy/autoresearch) and its [program instructions](https://github.com/karpathy/autoresearch/blob/master/program.md): bounded code changes, experiments, evaluation, and retained records. We add question selection, two quality tracks, explicit interpretation, and a finite project budget. We do not copy its five-minute language-model workload or indefinite-loop instruction. The [September 28 meeting](https://app.notion.com/p/3e9f3544609181deb002cd5e50c0651a) supplies team context; [the catalog](docs/AUTORESEARCH_DIRECTIONS.md) links the scientific and local implementation evidence.
+Use relevant repository tests for runtime changes. Documentation-only changes need consistency/link review, not another GPU experiment. This workflow adapts [Karpathy's autoresearch](https://github.com/karpathy/autoresearch): repeated implementation, measurement, retained evidence and autonomous iteration, with SoFlow-scale training times and two separate quality objectives.

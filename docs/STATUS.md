@@ -10,6 +10,12 @@ Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.61
 
 ## Decisions and boundaries
 
+### September 30 autonomous research policy — current
+
+The user clarified that a started research loop should run consecutive experiments without approval between them, including meaningful hours-long training. This supersedes the earlier per-experiment assessment gate below. program.md now organizes interventions by their role in finding substantial FID gains: validity/targeted diagnosis, recipe design, recipe optimization/compute scaling, and checkpoint/sampler selection, with evidence-based exceptions. Cheap checks must inform a decision rather than displace recipe exploration indefinitely. Twelve hours remains the default cap per model-training run across retries/resumes, not a campaign-wide cap; any explicit user campaign limit still applies.
+
+[RESEARCH_LOG.md](RESEARCH_LOG.md) supplies compact planned/result tables and linked configurations. Full essays and fresh statistical protocols per trial are not required. Existing reports and CPU recovery evidence remain historical records. This policy edit starts no GPU work and does not assert that experiments on other research branches disappeared; import their relevant evidence before choosing the next run.
+
 ### September 30 promptware recovery rehearsal
 
 Reconciled program.md and AGENTS.md with the user's per-training-run budget and approval between substantial experiments. Removed the fixed exploration/confirmation split. A clean agent recovered a real CPU-only dummy worker after orderly termination: logged step 8, saved checkpoint 5, correct final sum 210 at step 20. Seven checks passed; total worker time 23.19 seconds against a 60-second allowance across both attempts. A concurrent duplicate launch was rejected by the worker's lock. No model training or GPU work occurred. [Report, evidence, and limitations](PROMPTWARE_RECOVERY_REHEARSAL.md) distinguish this from hard-crash or production-trainer validation. Post-test instructions require reconciling stale status fields and unresolved accounting after unclean exits.

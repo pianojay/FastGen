@@ -1,6 +1,12 @@
 # SoFlow research agenda and intervention catalog
 
-Prepared 2026-09-29, Asia/Seoul. **Proposals and documentation walkthroughs; no follow-up experiment has been launched.** Read [program.md](../program.md) for the operating instructions. This catalog connects research questions to possible interventions; it is not a sweep specification or an ordered checklist.
+Prepared 2026-09-29; operating guidance updated 2026-09-30, Asia/Seoul. **Candidate interventions and historical walkthroughs.** Consult current research records for execution status. Read [program.md](../program.md) for the operating instructions. This catalog connects research questions to possible interventions; it is not a sweep specification or an ordered checklist.
+
+## How to use this catalog
+
+The A–D groups organize scientific questions; they do not assign equal priority or define the loop order. [program.md](../program.md#choose-at-the-right-level) sets the decision hierarchy and autonomous execution policy. Map a candidate to recipe design, optimization/compute scaling, or checkpoint/sampler selection, using targeted diagnosis when it changes the decision. In particular, D1's extra training and A2's saved-weight comparison are not substitutes for comparing alternative training recipes at practical cost. Neither is automatically the best bet for a substantial FID reduction.
+
+Once research is started, choose and execute consecutive in-scope experiments without per-experiment approval. Keep concise planned/result rows in the [research log](RESEARCH_LOG.md), with exact settings and decision rules in linked configurations. The detailed illustrative briefs below are references, not mandatory reports for every trial.
 
 ## Four research directions
 
@@ -11,7 +17,7 @@ Prepared 2026-09-29, Asia/Seoul. **Proposals and documentation walkthroughs; no 
 | **C. Improve one-call learning** | Is the gap explained by insufficient training, weak large-jump supervision, optimization, or another limitation? | Time distributions, consistency curriculum, objective mixture, loss weighting, numerical behavior, local teacher |
 | **D. Improve the baseline recipe** | Does training use the available data, compute, and capacity effectively? | Duration, augmentation, learning rate, EMA, regularization, conditioning architecture, width/depth |
 
-Entries may serve multiple directions. Choose the next question from current evidence and the decision it could change, then instantiate an experiment brief. The initial agenda does not prescribe endpoint fractions, learning-rate grids, fixed trial lengths, or a universal FID improvement threshold.
+Entries may serve multiple directions. Choose the next question from current evidence and the decision it could change, then record a concise plan and exact configuration. The initial agenda does not prescribe endpoint fractions, learning-rate grids, fixed trial lengths, or a universal FID improvement threshold.
 
 ### Evidence at the starting point
 
@@ -140,8 +146,8 @@ The following are **hypothetical documentation checks**, not measured results, t
 | **Informative audit**: a declared image review suggests recurring class confusion, without a new FID. | Preserve reviewed IDs and notes, state uncertainty, and propose a matched-noise conditioning diagnostic. Leave quality incumbents unchanged. | The inquiry can advance without fabricating a score or claiming that a visual audit measured class accuracy. |
 | **Confirmed FID improvement**: a schedule candidate meets its predeclared confirmation rule, with mechanism still uncertain. | Preserve control and candidate scores, schedule/noise identity, resource evidence, and confirmation provenance. Update only the few-call incumbent and record mechanism as unresolved. | Quality improvement and explanatory support are separate; neither a one-call gain nor an official TA-score win is inferred. |
 | **Inconclusive short run**: one sampling seed favors a training branch and another does not. | Apply only the declared confirmation procedure within remaining budget. If unresolved, retain it as inconclusive and propose a longer or fresh comparison when justified. | Do not cherry-pick a seed, redefine the threshold, or reject the whole research direction. |
-| **Implementation failure**: a new branch exceeds memory or cannot resume as intended. | Save logs and actual cost, record failure with no FID, and use only the brief's allowed repair/retry allocation. Revalidate before rerunning; preserve effective batch for a microbatch repair. | A crash is not a scientific negative result; retries consume the same approved run/experiment allowance. |
-| **Budget exhaustion**: exploration reaches its allowance before all questions are answered. | Start only work that fits the approved run and experiment allowances, including declared evaluation/confirmation costs. At the cap preserve state, report incomplete claims, and hand off the next question. | No unbounded loop, fabricated confirmation, or silent renewal of a training-run allowance. |
+| **Implementation failure**: a new branch exceeds memory or cannot resume as intended. | Save logs and actual cost, record failure with no FID, and use only the brief's allowed repair/retry allocation. Revalidate before rerunning; preserve effective batch for a microbatch repair. | A crash is not a scientific negative result; retries consume the same recorded run/experiment allowance. |
+| **Budget exhaustion**: exploration reaches its allowance before all questions are answered. | Start only work that fits the recorded run and experiment allowances, including declared evaluation/confirmation costs. At the cap preserve state, report incomplete claims, and hand off the next question. | No unbounded loop, fabricated confirmation, or silent renewal of a training-run allowance. |
 
 ### Ongoing evidence maintenance
 
