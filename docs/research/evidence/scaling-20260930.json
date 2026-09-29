@@ -1,0 +1,112 @@
+{
+  "state": "plan_only_no_gpu_execution",
+  "date": "2026-09-30",
+  "authorization_reference": "I will allow longer training; Only the model checkpoint parameter count and peak training RAM must be followed. However, selected optimizer hour must be justified based on evidence. Adjust your plan.",
+  "initialization_instruction": "Continuing from pre-trained 20k will be infeasible as we have scheduled optimizer. You must run all expreiments from scratch.",
+  "superseded_proposal": "The unlaunched 20k-checkpoint continuation is replaced by complete fresh 40k experiments.",
+  "source_revision_reviewed": "deed05b092138e04d27a2ee8086b13d30afefe24",
+  "raw_metrics_path": "runs/pokemon_unet128_seed42/metrics.jsonl",
+  "raw_metrics_sha256": "0bddb346ab280434e0899b2b112be718c96e997fa866247e8c8f092d2f66c688",
+  "summary_path": "docs/pokemon-baseline-evidence/metrics_summary.json",
+  "protected_files_and_base_model_hashes_verified": true,
+  "logged_updates": 20000,
+  "effective_batch": 128,
+  "timing_definition": "Sum of synchronized Trainer.update seconds: full augmented forward/backward accumulation, optimizer and EMA; excludes data loading, checkpointing, sampling and process startup.",
+  "observed_optimizer_hours": 9.556187308810445,
+  "observed_combined_gpu_job_hours": 10.197810473509857,
+  "mean_update_seconds": 1.7201137155858799,
+  "windows": [
+    {
+      "first_step": 1,
+      "last_step": 5000,
+      "optimizer_hours": 2.388438381796392,
+      "mean_update_seconds": 1.7196756348934024
+    },
+    {
+      "first_step": 5001,
+      "last_step": 10000,
+      "optimizer_hours": 2.3907659760169273,
+      "mean_update_seconds": 1.7213515027321875
+    },
+    {
+      "first_step": 10001,
+      "last_step": 20000,
+      "optimizer_hours": 4.776982950997125,
+      "mean_update_seconds": 1.719713862358965
+    },
+    {
+      "first_step": 19001,
+      "last_step": 20000,
+      "optimizer_hours": 0.477748893732205,
+      "mean_update_seconds": 1.7198960174359381
+    }
+  ],
+  "fid_evidence": {
+    "metric": "development_clean_fid",
+    "sampling_seed": 42,
+    "references": 3020,
+    "generated_images_per_pass": 3020,
+    "official_score": false,
+    "nfe1_at_10000": 174.68294443931694,
+    "nfe1_at_20000": 114.60358907734553,
+    "nfe4_at_10000": 57.41686961215805,
+    "nfe4_at_20000": 38.304112390735895,
+    "relative_fid_reduction_nfe1": 0.3439337226356541,
+    "relative_fid_reduction_nfe4": 0.3328770333618993,
+    "limitation": "One training seed, sparse checkpoints, evolving consistency curriculum; supports an experiment, not a quality forecast."
+  },
+  "s1_duration_plan": {
+    "inference_parameters": 39667843,
+    "initialization": "scratch",
+    "training_seed": 42,
+    "starting_checkpoint": null,
+    "reference_checkpoint": "runs/pokemon_unet128_seed42/checkpoints/step_020000.pt",
+    "reference_checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+    "comparison_scope": "Complete fresh 40k-horizon recipe versus historical EXP-1; not a pure duration-only ablation.",
+    "start_step": 0,
+    "end_step": 40000,
+    "new_image_presentations": 5120000,
+    "total_image_presentations": 5120000,
+    "estimated_new_optimizer_hours": 19.11237461762089,
+    "curve_steps": [20000, 30000, 40000],
+    "gap_policy": "Set total_steps=40000 at initialization; exponential ratio 1 to 1/3200 across the full horizon; retain the numerical minimum gap.",
+    "optimizer_policy": "Fresh RAdam at fixed learning rate 1e-4; no separate learning-rate scheduler in the inspected trainer.",
+    "state_policy": "Fresh model, optimizer, EMA, RNG and data state at update zero. Restore a checkpoint only for exact recovery of this same unchanged experiment.",
+    "ema_policy": "Fresh copy of the initialized model; original global-step warmup starts at zero.",
+    "evaluation_reference": "Archived EXP-1 20k checkpoint, evaluated only; never loaded as training initialization.",
+    "evaluation_allowance_seconds": 3000,
+    "evaluation_max_primary_passes": 32,
+    "bounded_retries": 1,
+    "execution_ready": false
+  },
+  "s2_capacity_plan": {
+    "width": 160,
+    "inference_parameters": 61934243,
+    "initialization": "scratch",
+    "training_seed": 42,
+    "starting_checkpoint": null,
+    "start_step": 0,
+    "end_step": 40000,
+    "total_image_presentations": 5120000,
+    "curriculum": "The same complete 40000-update exponential curriculum as S1, set at initialization; no terminal-gap continuation.",
+    "state_policy": "Fresh model, optimizer, EMA, RNG and data state at update zero; same optimizer/EMA policies as S1.",
+    "comparison": "Matched image presentations and curriculum against S1; report compute separately.",
+    "optimizer_hours": null,
+    "optimizer_hours_formula": "40000 * measured_full_update_seconds / 3600",
+    "allocation_reason": "Match S1 exposure to test width; throughput and memory must be measured before assigning hours.",
+    "bounded_retries": 1,
+    "execution_ready": false
+  },
+  "s3_deferred_capacity": {
+    "width": 192,
+    "inference_parameters": 89140419,
+    "initialization": "scratch",
+    "starting_checkpoint": null,
+    "optimizer_hours": null,
+    "condition": "Allocate only if measured U-Net160 quality/cost or another concrete diagnosis supports further capacity."
+  },
+  "hard_limits": {
+    "inference_parameters_exclusive_upper_bound": 100000000,
+    "training_peak_allocated_bytes_exclusive_upper_bound": 20000000000
+  }
+}

@@ -8,6 +8,8 @@ The A–D groups organize scientific questions; they do not assign equal priorit
 
 Once research is started, choose and execute consecutive in-scope experiments without per-experiment approval. Keep concise planned/result rows in the [research log](RESEARCH_LOG.md), with exact settings and decision rules in linked configurations. The detailed illustrative briefs below are references, not mandatory reports for every trial.
 
+**September 30 initialization correction:** every new training comparison starts from scratch with its full optimizer/EMA/curriculum horizon declared at initialization. Older checkpoint-branch suggestions below are historical and do not authorize warm-started experiments or extensions of completed runs. New training controls also start fresh; previously completed models may serve as evaluation references. Count each new run's full cost and reserve exact resume for recovery of the same unchanged experiment. Current [program.md](../program.md) governs this rule and the evidence-based hour allocations.
+
 ## Four research directions
 
 | Direction | Decision-relevant questions | Candidate interventions |
@@ -94,13 +96,13 @@ Readiness below refers to the inspected code at `0084d02`; update it after imple
 - **Cost:** teacher construction or inherited training, target generation, student fitting, and evaluation. A locally reused teacher's historical cost remains visible in total method comparisons.
 - **Interpretation / next question:** a successful transfer supports specialization, not a claim of cheaper end-to-end training without accounting. Downloaded generative or perceptual weights are outside the protocol.
 
-### D1. Training duration with an explicit continuation policy
+### D1. Training duration from scratch with an explicit schedule
 
 - **Motivation / evidence:** both evaluated modes improved from 10k to 20k; longer training is an early candidate, not a last resort. [Duration clarification](POKEMON_BASELINE_RESULTS.md#follow-up-clarification-longer-training-is-an-early-candidate).
-- **Possible probe:** an unchanged-recipe branch continuing at the terminal gap supplies a duration comparison and a control for other training interventions. Define optimizer, EMA global step, curriculum position, data cursor, RNG, and evaluation behavior before running.
-- **Readiness / dependencies:** strict resume currently rejects semantic changes and the loop ends at the configured horizon. An explicit branch/continuation facility is required. Keep the exact-resume guard; merely increasing `total_steps` changes the gap at the branch point.
-- **Cost:** +10k updates extrapolate to about 4.78 optimizer hours before overhead. This is a scale reference, not a prescribed probe length. Choose a shorter or longer comparison according to the question and budget, then report its interpretive limits.
-- **Interpretation / next question:** improvement supports more training; a short flat segment does not establish a plateau. A fresh slower curriculum is a different recipe requiring its own comparison.
+- **Possible probe:** compare a fresh longer-horizon recipe against the completed baseline as a reference, with a fresh control when needed for replication. Initialize model/optimizer/EMA/RNG/data state at zero and define all schedules before running. Match the full longer schedule across architecture comparisons.
+- **Readiness / dependencies:** the existing trainer accepts `total_steps` at initialization. Preserve strict exact-resume checks; no completed-checkpoint continuation is permitted. The current RAdam learning rate is fixed, while optimizer state, EMA warmup and the consistency-gap curriculum depend on progress.
+- **Cost:** a complete fresh 40k U-Net128 run projects to about 19.11 optimizer hours before overhead, using measured baseline throughput. Wider-model hours require their own full-update timings. Do not charge only the updates beyond the old checkpoint.
+- **Interpretation / next question:** a different total horizon also changes the consistency curriculum. Report a longer-recipe result rather than claiming a pure duration effect. A promising result can justify a still-longer fresh run at its full cost; an early flat segment is not proof of convergence.
 
 ### D2. Augmentation and regularization
 
