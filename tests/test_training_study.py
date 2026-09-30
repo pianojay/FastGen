@@ -10,7 +10,7 @@ import torch
 
 from scripts.launch import run_gpu_job, used_seconds
 from soflow_fastgen.paired_evaluation import PairedAdapter
-from soflow_fastgen.training_study import decide, validate_pairing, validate_protocol
+from soflow_fastgen.training_study import checkpoint_plan, decide, validate_pairing, validate_protocol
 
 
 class StudyContracts(unittest.TestCase):
@@ -34,6 +34,24 @@ class StudyContracts(unittest.TestCase):
         changed['confirmation_seeds'][0] = changed['selection_seeds'][0]
         with self.assertRaises(ValueError):
             validate_protocol(changed, self.training)
+
+    def test_reference_checkpoint_can_have_a_different_completed_horizon(self):
+        for stage in ('control', 'selection', 'confirmation'):
+            self.assertEqual(checkpoint_plan(self.protocol, stage)[0][2], 20000)
+        changed = dict(self.protocol, reference_step=40000,
+                       reference_checkpoint='runs/completed_s1/checkpoints/step_040000.pt')
+        validate_protocol(changed, self.training)
+        for stage in ('control', 'selection', 'confirmation'):
+            plan = checkpoint_plan(changed, stage)
+            self.assertEqual(plan[0], ('reference', Path(changed['reference_checkpoint']), 40000))
+            if stage != 'control':
+                self.assertEqual(plan[-1][0], 'step_040000')
+                self.assertNotEqual(plan[-1][1], plan[0][1])
+
+    def test_invalid_reference_step_is_rejected_before_evaluation(self):
+        for step in (0, -1, 40000.0, True, '40000'):
+            with self.subTest(step=step), self.assertRaises(ValueError):
+                validate_protocol(dict(self.protocol, reference_step=step), self.training)
 
     def rows(self, seeds):
         result = []

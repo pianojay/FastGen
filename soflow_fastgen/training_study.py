@@ -18,6 +18,9 @@ from .paired_evaluation import (
 def validate_protocol(protocol, training):
     if protocol['initialization'] != 'scratch' or protocol['starting_checkpoint'] is not None:
         raise ValueError('New experiments must initialize from scratch')
+    reference_step = protocol.get('reference_step', 20000)
+    if type(reference_step) is not int or reference_step <= 0:
+        raise ValueError('Reference checkpoint step must be a positive integer')
     run = (ROOT / protocol['run_dir']).resolve()
     run.relative_to((ROOT / 'runs').resolve())
     if run != (ROOT / training['run_dir']).resolve():
@@ -122,6 +125,23 @@ def decide(rows, protocol, stage, nfes=None):
     return decisions
 
 
+def checkpoint_plan(protocol, stage):
+    """Keep reference identity independent of the new candidate's horizon."""
+    reference = ('reference', Path(protocol['reference_checkpoint']),
+                 protocol.get('reference_step', 20000))
+    run = Path(protocol['run_dir'])
+    if stage == 'control':
+        steps = []
+    elif stage == 'selection':
+        steps = protocol['curve_steps']
+    elif stage == 'confirmation':
+        steps = [protocol['expected_steps']]
+    else:
+        raise ValueError('Unknown evaluation stage')
+    return [reference] + [(f'step_{step:06d}', run/'checkpoints'/f'step_{step:06d}.pt', step)
+                          for step in steps]
+
+
 def evaluate_study(protocol, stage, prepared):
     training = json.loads(Path(protocol['training_config']).read_text())
     check_prepared(protocol, prepared)
@@ -132,21 +152,14 @@ def evaluate_study(protocol, stage, prepared):
         raise ValueError('Study reference pixels do not match EXP-1')
     run = Path(protocol['run_dir'])
     nfes = protocol['nfes']
+    labels = checkpoint_plan(protocol, stage)
     if stage == 'control':
-        labels = [('reference', Path(protocol['reference_checkpoint']), 20000)]
         seeds = protocol['selection_seeds']
     elif stage == 'selection':
-        labels = [('reference', Path(protocol['reference_checkpoint']), 20000)] + [
-            (f'step_{step:06d}', run/'checkpoints'/f'step_{step:06d}.pt', step)
-            for step in protocol['curve_steps']]
         seeds = protocol['selection_seeds']
     elif stage == 'confirmation':
         selected = json.loads((run/'selection.json').read_text())['decisions']
         nfes = [n for n in nfes if selected[str(n)]['eligible']]
-        labels = [('reference', Path(protocol['reference_checkpoint']), 20000),
-                  (f"step_{protocol['expected_steps']:06d}",
-                   run/'checkpoints'/f"step_{protocol['expected_steps']:06d}.pt",
-                   protocol['expected_steps'])]
         seeds = protocol['confirmation_seeds']
     else:
         raise ValueError('Unknown evaluation stage')
