@@ -1,0 +1,24 @@
+{
+  "experiment": "S2-microbatch16-20261001",
+  "authorization_reference": "User: Launch training. Consecutive in-scope scratch experiments under program.md.",
+  "run_dir": "runs/research_s2_microbatch16_20261001",
+  "training_config": "configs/research_s2_microbatch16_train.json",
+  "initialization": "scratch",
+  "expected_parameters": 61934243,
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "budget_seconds": 900,
+  "budget_rationale": "Width160 microbatch32 measured 4.1306 s/update, implying 45.895 optimizer hours. One 115-update microbatch16 probe plus sampling/contracts is capped at 15 minutes to determine whether the same effective batch can be run materially faster. This is additional qualification, with all prior 516.627 seconds retained.",
+  "microbatch_candidates": [
+    16
+  ],
+  "selection_rule": "Qualify microbatch16 at effective batch128. Choose it for production only if its measured mean and terminal timing are at least 5% faster than microbatch32 and peak allocation is below 18GB; otherwise retain32. No further microbatch sweep is allocated.",
+  "warmup_updates": 10,
+  "measured_updates": 100,
+  "terminal_updates": 5,
+  "sampling_warmup_batches": 2,
+  "sampling_measured_batches": 10,
+  "production_steps": 40000,
+  "production_optimizer_hours": null,
+  "production_initialization": "New random initialization at update zero after qualification; no qualification weights or optimizer state are saved.",
+  "previous_qualification_gpu_job_seconds": 516.6271812710911
+}
