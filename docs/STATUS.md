@@ -10,6 +10,14 @@ Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.61
 
 ## Decisions and boundaries
 
+### October 1 S2 qualified — fresh production run ready
+
+The wider **61,934,243-parameter U-Net160** passed two bounded qualification probes on GPU 1; every probe used fresh disposable weights, full augmentation, optimizer/EMA and effective batch 128. Microbatch 16 is selected after measuring **2.5753 seconds/update** versus **4.1306** at microbatch 32, with stable last-half/terminal timings of 2.5826/2.5860 seconds. Its peak qualification allocation was **6,164,570,624 bytes**, sampled process-tree PSS **2,644,388,864 bytes**; all 18 GPU contract/numerical tests passed. Both probes cost **854.159 GPU-job seconds** and are charged to the S2 method/campaign. [Measurement and allocation evidence](research/evidence/s2-allocation-20261001.json).
+
+The [production recipe](../configs/research_s2_train.json) starts again from scratch for **40,000 updates**, matching S1's full horizon, objective, optimizer, EMA, augmentation and effective batch. The selected full optimizer estimate is **28.614 hours**. Its [frozen protocol](../configs/research_s2_20261001.json) permits a **33-hour cumulative training watchdog**, **90 minutes for paired selection/confirmation**, and **five minutes for production contracts**, with one bounded recovery and no allowance renewal. Training/sampling implementation hashes match S1; width and execution microbatch differ. The longer watchdog includes measured overhead and uncertainty, without adding updates. Qualification used an 18GB allocation target; the actual production peak will be measured under the strict 20GB guard.
+
+No production updates or S2 FID exist yet. S1 remains both track incumbents. Next: prepare/freeze source and environment identities, re-score S1 as the paired control, launch the fresh U-Net160 run, and supervise through its full schedule and final evaluation. Campaign cost before production is **20.7092 GPU-job hours**, excluding inherited EXP-1; pretraining qualification is already included and must not be counted twice.
+
 ### October 1 S1 completed — current research result
 
 S1 finished at **04:15:55 KST on October 1**, including its fresh 40,000-update schedule and all 32 paired development FID passes. The final EMA checkpoint improves both tracks on both selection seeds and all four reserved confirmation seeds. Confirmation mean FID is **82.3062 / 29.4079** at one/four calls, against **113.0753 / 38.2838** for EXP-1 under identical actual noise: **27.2% / 23.2% lower**. S1 is now the separate one-call and four-call incumbent. This confirms generation-seed consistency for one fresh training seed; it is not a fresh-training replication or an official validation result. [Complete evidence, per-seed scores, hashes and costs](research/evidence/s1-complete-20261001.json).
