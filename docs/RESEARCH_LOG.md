@@ -1,6 +1,6 @@
 # Incremental SoFlow research log
 
-Follow [program.md](../program.md); one research-start instruction authorizes consecutive in-scope experiments. On September 30 the user instructed **"Launch training."** S1 is the first fresh run in the authorized scaling sequence; S2 follows its evaluation and changed-architecture qualification.
+Follow [program.md](../program.md); one research-start instruction authorizes consecutive in-scope experiments. On September 30 the user instructed **"Launch training."** S1 completed on October 1 with confirmed generation-seed improvements on both tracks; S2 follows changed-architecture qualification.
 
 ## Campaign context
 
@@ -16,7 +16,7 @@ Fill once, update when needed; link exact machine-readable settings rather than 
 | User campaign cap / deadline | None specified; keep cumulative costs and justify each additional allocation |
 | Evaluation protocol | Frozen [S1 protocol](../configs/research_s1_20260930.json): selection 3101/3102, confirmation 4101–4104, actual matched noise, full development metric, fixed final-checkpoint decision |
 | Prior evidence reviewed | EXP-1; completed negative B1 (`94f2915` and local result); prepared/unrun A2 (`dfe9c77`); unlaunched C3/C1/D2 direction plan (`5d3db1b`) |
-| Current run / process identity / allowance | S1 started 2026-09-30 07:55:23 KST, workflow PID 2126655; trainer PID 2128216 started at 07:59:37 KST in `runs/research_s1_unet128_40k_seed42`. All 16 GPU tests and four reference passes succeeded. Durable `record.json`, `process.json`, stage logs and separate cumulative budget files are authoritative. [Launch evidence](research/evidence/s1-launch-20260930.json). |
+| Current run / process identity / allowance | S1 completed 2026-10-01 04:15:55 KST with no retry; workflow exited and GPU 1 is idle. All 32 paired passes completed. [Final evidence](research/evidence/s1-complete-20261001.json); S2 qualification is next. |
 
 ## Planned experiments
 
@@ -24,7 +24,7 @@ One row before launch; details belong in the linked configuration. Add status up
 
 | ID / target track | Recipe delta / control / parent / source | Horizon and state policy | Train / eval / confirmation caps; retry limit | Config / protocol link | Why now; positive / negative next decision |
 |---|---|---|---|---|---|
-| S1 / running, both tracks | Fresh U-Net128, seed 42; EXP-1 is a reference only; branch `research/s1-scratch-40k-20260930`, prepared revision `1a4853e`, exact source hash frozen in run record | 0 → 40k; 5.12M new presentations; full 40k curriculum, fresh optimizer/EMA/RNG/data state; retain 20k/30k checkpoints | 19.112 estimated optimizer hours; 22 h training watchdog including overhead/recovery; 5 min qualification; 50 min evaluation; at most one recovery attempt, no allowance renewal | [Training config](../configs/research_s1_train.json), [protocol and cost rationale](../configs/research_s1_20260930.json) | Test the complete longer recipe and supply S2's control; evaluate both tracks before allocating the next fresh run |
+| S1 / completed, both tracks | Fresh U-Net128, seed 42; EXP-1 is a reference only; branch `research/s1-scratch-40k-20260930`, prepared revision `1a4853e`, exact source hash frozen in run record | 0 → 40k; 5.12M new presentations; full 40k curriculum, fresh optimizer/EMA/RNG/data state; retain 20k/30k checkpoints | 19.112 estimated optimizer hours; 22 h training watchdog including overhead/recovery; 5 min qualification; 50 min evaluation; at most one recovery attempt, no allowance renewal | [Training config](../configs/research_s1_train.json), [protocol and cost rationale](../configs/research_s1_20260930.json) | Test the complete longer recipe and supply S2's control; evaluate both tracks before allocating the next fresh run |
 | S2 / proposed, both tracks | Fresh U-Net160, training seed 42; S1 U-Net128 at equal exposure/schedule; other recipe settings fixed | 0 → 40k; 5.12M new presentations; the same complete 40k schedule as S1 | Optimizer hours = 40,000 × measured full-update seconds / 3,600; qualification, evaluation and finite wall-time allowance set from changed-path measurements; at most one exact-recovery attempt | [Allocation formula](research/evidence/scaling-20260930.json); wider-model qualification/config pending | Test 56% more parameters at matched exposure; a gain motivates fresh replication/capacity refinement, a negative redirects toward objective/time-coverage changes |
 
 At a major direction change, add at most three short option rows (option, plausible gain or decision value, cost/limitation), then one sentence selecting the next experiment. Do not repeat the comparison for every local parameter trial.
@@ -63,17 +63,18 @@ FID columns hold comparable protocol-specific means; per-seed records and uncert
 | S1 / running, September 30 12:56 KST snapshot | Same fresh U-Net128 experiment; no recipe change | First 10,000 measured / 1,280,000; live progress ≥10,040 | Running train estimate 4.952; completed reference eval 0.0682; qualification 0.0023; campaign estimate including B1 5.153, excluding inherited EXP-1 | — / — / — / — | 39,667,843 | Training allocation so far 8.6107 GB / sampled process-tree PSS 2.0530 GB, host-process peak RSS 2.1119 GB | [10k snapshot](research/evidence/s1-10000-20260930.json); 4.7846 optimizer hours for first 10k; no retries or candidate FID |
 | S1 / running, September 30 17:53 KST snapshot | Same fresh U-Net128 experiment; midpoint of full 40k recipe | First 20,000 measured / 2,560,000; live progress ≥20,050 | Running train estimate 9.903; completed reference eval 0.0682; qualification 0.0023; campaign estimate including B1 10.103, excluding inherited EXP-1 | — / — / — / — | 39,667,843 | Training allocation so far 8.6108 GB / sampled process-tree PSS 2.0530 GB, host-process peak RSS 2.1119 GB | [20k retained checkpoint and snapshot](research/evidence/s1-20000-20260930.json); 9.5697 optimizer hours; source/state/parameters verified; no retries or candidate FID |
 | S1 / running, September 30 22:51 KST snapshot | Same fresh U-Net128 experiment; full 40k recipe | First 30,000 measured / 3,840,000; live progress ≥30,050 | Running train estimate 14.868; completed reference eval 0.0682; qualification 0.0023; campaign estimate including B1 15.068, excluding inherited EXP-1 | — / — / — / — | 39,667,843 | Training allocation so far 8.6110 GB / sampled process-tree PSS 2.0530 GB, host-process peak RSS 2.1119 GB | [30k retained checkpoint and snapshot](research/evidence/s1-30000-20260930.json); 14.3589 optimizer hours; no retries or candidate FID |
+| S1 / completed, October 1 04:15 KST | Fresh U-Net128, complete 40k recipe versus EXP-1; fixed final EMA candidate | 40,000 / 5,120,000 | Train 19.8025; eval 0.5372; qualification 0.0023; S1 total 20.3420; campaign including B1 20.4719 | Confirmation **82.3062 / — / — / 29.4079**; selection 82.6983 / — / — / 29.4154 | 39,667,843 | 8.6110 GB / sampled process-tree PSS 2.0530 GB, host-process peak RSS 2.1119 GB | [Full results](research/evidence/s1-complete-20261001.json); both tracks improved on 2 selection + 4 confirmation seeds; 19.1362 optimizer hours; zero retries |
 
 ## Track incumbents
 
 | Track | Candidate / protocol | Evidence status |
 |---|---|---|
-| One-call | EXP-1 EMA; historical mean FID 113.9551 | Starting reference; not a fresh-training replication |
-| Few-call | EXP-1 EMA, uniform four calls; historical mean FID 38.2858 | Starting reference; compare future controls under matched protocols |
+| One-call | S1 final 40k EMA; confirmation mean FID **82.3062** versus paired EXP-1 113.0753 | Confirmed on all four reserved generation seeds; one fresh training seed, no training replication |
+| Few-call | S1 final 40k EMA, uniform four calls; confirmation mean FID **29.4079** versus paired EXP-1 38.2838 | Confirmed on all four reserved generation seeds; NFE 2/3 unmeasured for S1 |
 
 Update provisional and confirmed candidates separately. An unchanged model with different sampling seeds is not itself an improvement. This seed table does not supersede valid results on other branches.
 
-B1's uniform score differs from EXP-1 because sampling seeds/RNG differ; it is not a new generator improvement. A2 has zero GPU-job seconds and no scores in its [preparation record](../runs/research_a2_20260930/record.json). The C3/C1/D2 direction record at `5d3db1b` launched no model training. S1/S2/S3 above have no candidate scores.
+B1's uniform score differs from EXP-1 because sampling seeds/RNG differ; it is not a new generator improvement. A2 has zero GPU-job seconds and no scores in its [preparation record](../runs/research_a2_20260930/record.json). The C3/C1/D2 direction record at `5d3db1b` launched no model training. S2/S3 have no candidate scores; S1 is recorded above.
 
 ## Short decision and event notes
 
@@ -89,3 +90,16 @@ Append launch, completion, failure, recovery, and major direction changes with t
 - **2026-09-30 12:56:46 KST, S1 10k milestone:** first 10,000 updates are finite and consecutive, totaling 4.7846 optimizer hours. Recent throughput remains 1.7224 seconds/update; peak allocation is 8.6107 GB. No retries, candidate FID or incumbent change. [Snapshot](research/evidence/s1-10000-20260930.json); continue to the retained 20k midpoint and full 40k horizon.
 - **2026-09-30 17:53:47 KST, S1 midpoint verified:** first 20,000 updates consumed 9.5697 optimizer hours, with stable 1.7226-second updates and 8.6108 GB peak allocation so far. Retained checkpoint SHA-256 starts `4888e651`; loaded EMA parameters, finite weights, optimizer/RNG/data state, source, partition and declared 40k horizon passed inspection. [20k evidence](research/evidence/s1-20000-20260930.json). Training continued past 20,050; this midpoint has no candidate FID yet and does not finish the experiment.
 - **2026-09-30 22:51:41 KST, S1 30k checkpoint verified:** first 30,000 updates consumed 14.3589 optimizer hours; latest 10k mean is 1.7241 seconds/update. Retained checkpoint SHA-256 starts `dfdb74b6`; finite EMA, 39,667,843 parameters, full recovery state and frozen identities passed inspection. Peak allocation so far is 8.6110 GB, with no retries. [30k evidence](research/evidence/s1-30000-20260930.json). Continue the final 10k updates, then the predeclared paired evaluation; no candidate FID or incumbent change yet.
+
+- **2026-10-01 04:15:55 KST, S1 completed:** all 40k updates and 32 paired FID passes finished without retry. Confirmation means 82.3062 / 29.4079 beat EXP-1 by 27.2% / 23.2%; promote the final EMA to both track incumbents under the generation-seed protocol. [Final evidence](research/evidence/s1-complete-20261001.json). Full cost: 19.1362 optimizer hours, 19.8025 training GPU-job hours, 0.5372 evaluation and 0.0023 qualification; campaign total 20.4719 hours excluding inherited EXP-1.
+- **2026-10-01, interpretation and next allocation:** S1's selection curve at 20k/30k/40k is 140.6670/97.3934/82.6983 (one call) and 41.0388/32.2356/29.4154 (four calls). Last-interval gains of 15.1%/8.7% support meaningful learning through 40k but do not establish a longer optimum. Keep the predeclared S2 capacity comparison at 40k; measure its full-update speed before allocating hours. No extension or warm-start is allowed. Directly rechecked [course targets](https://generative-models.kaist.ac.kr/fastgen/) remain 39.15/30.90; development references differ.
+
+### October 1 next experiment decision
+
+| Option | Why it can change the next decision | Full cost / limitation |
+|---|---|---|
+| **S2: fresh U-Net160, 40k** | Answer the user's capacity question against S1's successful 40k recipe, with identical exposure/curriculum | 61.93M parameters; full optimizer hours remain pending changed-width timing and memory qualification |
+| Fresh S1 replication, seed 43 | Measure training-seed variability before making a replicated recipe claim | About 19.14 optimizer hours plus overhead/evaluation; does not answer the capacity question |
+| C3/C1 objective/time-coverage recipe | Address the substantial remaining one-call gap directly | New implementation and a complete scratch comparison; mechanism and runtime unmeasured |
+
+**Select S2 at matched 40k exposure.** Its full cost must come from real augmented updates, and a negative result returns attention to C3/C1 instead of automatically funding U-Net192. Qualification uses disposable scratch weights; production training starts over at update zero. A shorter horizon would confound width with the curriculum/exposure, while a longer one lacks a matched control.
