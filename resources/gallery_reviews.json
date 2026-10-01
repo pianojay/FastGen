@@ -1,0 +1,10 @@
+{
+  "T at 10,000": {
+    "gallery": "runs/campaign/T/eval_010000/gallery_fixed_0.png",
+    "observation": "Six fixed-noise generations in each of 16 fixed classes show varied color and composition with broad class cues, but distorted anatomy and sometimes ambiguous class features. No severe common-output collapse is apparent in this displayed subset; all-class pixel flags are 0/151."
+  },
+  "T at 20,000": {
+    "gallery": "runs/campaign/T/eval_020000/gallery_fixed_0.png",
+    "observation": "Class features are clearer in the fixed gallery, particularly Eevee, Gengar, Kabuto and Starmie, and compositions remain varied. Limb/body distortions and ambiguous shapes remain visible in classes such as Gyarados, Metapod and Scyther. This is a qualitative review of 16 fixed classes, not an all-class recognition score; all-class pixel flags are 0/151."
+  }
+}
