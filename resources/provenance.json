@@ -131,7 +131,8 @@
   "soflow_reference": {
     "url": "https://github.com/pianojay/fastgen-soflow",
     "commit": "3841b79044b0c64c1af4e2ea925e2068f681b767",
-    "local_checkout": "/home/user/jw_soflow/FastGen-SoFlow"
+    "local_checkout": "/home/user/jw_soflow/FastGen-SoFlow",
+    "commit_availability": "Verified in local checkout; not present on GitHub remote at preparation. Use local git show; remote default branch is not a substitute."
   },
   "protected_files_sha256": {
     "dataset.py": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",

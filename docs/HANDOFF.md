@@ -69,7 +69,7 @@ Local checkout: `/home/user/jw_soflow/FastGen-SoFlow`. Inspect files with `git -
 | `scripts/report.py`, `scripts/gallery.py` | Vertical plots with raw data plus trends and class-reference gallery; adapt to AFM metrics, not a fake consistency-MSE graph. |
 | `docs/POKEMON_BASELINE_RESULTS.md`, `docs/research/evidence/s1-complete-20261001.json`, `docs/STATUS.md` | Baseline, paired S1 result and dated S2 status; cite exact evidence rather than treating stale running prose as live state. |
 
-Pinned online source root: https://github.com/pianojay/fastgen-soflow/tree/3841b79044b0c64c1af4e2ea925e2068f681b767
+The pinned SoFlow commit is available in the local checkout but was not published on its GitHub remote when checked October 1. Use the local `git show` commands above. For another machine, the owner must first make that exact commit available; do not substitute the remote default branch silently. No changes or pushes to the sibling repository were made by this preparation.
 
 ## Data, environment and migration
 
