@@ -1,0 +1,49 @@
+{
+  "checkpoint_step": 10000,
+  "provisional_selected": {
+    "checkpoint": "runs/campaign/T/best.pt",
+    "checkpoint_sha256": "91d17d2592f9661b4b5e4929147b970ad2b79723fd8f205ee79f1efbf6c5ad48",
+    "diversity": {
+      "exact_unique_fraction": 1.0,
+      "median_relative_diversity": 0.6533231201564341,
+      "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+      "potential_collapse_classes": []
+    },
+    "fid": 63.88736748194424,
+    "gallery_directory": "runs/campaign/T/eval_010000",
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "run": "T",
+    "samples": 3020,
+    "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+    "seconds": 607.2718338053674,
+    "seed": 1729,
+    "step": 10000,
+    "teacher_sha256": null
+  },
+  "evaluation": {
+    "diversity": {
+      "exact_unique_fraction": 1.0,
+      "median_relative_diversity": 0.6533231201564341,
+      "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+      "potential_collapse_classes": []
+    },
+    "fid": 63.88736748194424,
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "samples": 3020,
+    "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+    "seconds": 607.2718338053674,
+    "seed": 1729
+  },
+  "train_update_seconds": 10035.761139532551,
+  "teacher_stage_seconds_through_evaluation": 11101.164606332779,
+  "setup": {
+    "recorded_setup_start": 1790870298,
+    "teacher_worker_start": 1790871900.9554448,
+    "notes": "Setup wall time begins at environment creation. Includes implementation, dependencies, data preprocessing and qualification with overlapping work; do not sum it again with overlapping preparation stage durations. Pre-environment read-only handoff review was not instrumented. All failed GPU probes appear in cost.jsonl; all 64 attempted probe updates charged.",
+    "pre_teacher_wall_seconds": 1602.9554448127747
+  },
+  "teacher_not_final_selected": true,
+  "gallery_review": "Fixed 16-class reference gallery shows varied compositions and broad class color/form cues, but distorted anatomy and ambiguous class identity remain. No severe persistent collapse established. Continue the fixed horizon."
+}
