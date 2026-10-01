@@ -1,0 +1,13 @@
+{
+  "starter_files_unchanged": 14,
+  "afm_files_unchanged": 99,
+  "protected_files_and_base_Model": true,
+  "partition_hash_counts_disjointness_and_class_balance": true,
+  "local_training_images_present": 17079,
+  "local_document_links": 23,
+  "pinned_soflow_source_references": 15,
+  "no_local_trainer_or_runs": true,
+  "all_snapshot_files_stageable": true,
+  "runtime_and_secret_exclusions": true,
+  "snapshot_bytes": 587308
+}
