@@ -1,0 +1,36 @@
+{
+  "effective_batch": 64,
+  "microbatch": 16,
+  "checkpointing": false,
+  "precision": "fp16",
+  "loss_scale": 65536,
+  "teacher_seed": 20261002,
+  "student_seed": 91373,
+  "teacher": {
+    "lr": 0.0002,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "lr_warmup": 500,
+    "grad_clip": 10,
+    "ema_half_life_images": 100000
+  },
+  "student": {
+    "lr": 2e-05,
+    "fake_lr": 2e-05,
+    "betas": [
+      0.0,
+      0.999
+    ],
+    "lr_warmup": 100,
+    "grad_clip": 10,
+    "ema_half_life_images": 50000,
+    "alpha": 1.0,
+    "sid_weight": 1.0,
+    "d_weight": 1.0,
+    "g_gan_weight": 0.01,
+    "gan_warmup": 625,
+    "gan_ramp": 625
+  }
+}

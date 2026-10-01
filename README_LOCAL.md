@@ -1,6 +1,6 @@
 # FastGen-SiD-DiT: flow-SiDA with a class-conditioned U-Net
 
-**October 2, 2026: source-and-context handoff prepared; experiments not started.** This repository retains the official FastGen starter and pinned upstream references. Its root `model.py` is still the official unimplemented skeleton. There is no integrated Pokémon trainer, environment, qualified GPU or trained model here.
+**October 2, 2026: implementation and GPU 2 qualification completed; campaign starting.** The repository contains the pixel-space class-conditioned flow SiD/SiDA integration. Protected starter files, the base `Model`, vendored sources and partition identity remain unchanged. [Implementation](docs/IMPLEMENTATION.md), [frozen protocol](docs/FROZEN_PROTOCOL.md), [results](docs/RESULTS.md).
 
 Read [AGENTS.md](AGENTS.md), [context and source map](docs/HANDOFF.md), then [experiment assignment](docs/EXPERIMENT_PLAN.md). The project name records the method source: the planned backbone is a roughly 62M DDPM++ **U-Net**, not a DiT.
 

@@ -1,0 +1,17 @@
+{
+  "purpose": "Disposable correctness and execution probes, no quality trials",
+  "architecture": "DDPM++ SongUNet128, [1,2,2,2], 4 blocks, 61823875 parameters",
+  "gpu_stage_wall_seconds": 7200,
+  "maximum_probe_updates": 96,
+  "maximum_execution_adaptations": 4,
+  "allowed_adaptations": ["microbatch", "gradient checkpointing", "FP16 scaler or FP32"],
+  "memory_limit_bytes": 20000000000,
+  "initial_microbatch": 4,
+  "initial_effective_batch": 64,
+  "initial_precision": "fp16",
+  "initial_checkpointing": false,
+  "initial_loss_scale": 128,
+  "data_threads": 2,
+  "cpu_threads": 2,
+  "quality_selection": "none; all probe weights discarded"
+}

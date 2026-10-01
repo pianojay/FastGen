@@ -1,0 +1,215 @@
+{
+  "config_sha256": "28c371ef0253453e7f651da593865158765529cf9a9d53e4fda0b80c84d5f9ea",
+  "cpu_checks": "test_accumulation_reductions (test_math.Mathematics) ... ok\ntest_conditioning (test_math.Mathematics) ... ok\ntest_detached_fake_target_and_bce (test_math.Mathematics) ... ok\ntest_flow_direction_and_conversion (test_math.Mathematics) ... ok\ntest_nfe_and_gradient_boundaries (test_math.Mathematics) ... ok\ntest_sid_full_input_jacobians (test_math.Mathematics) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.738s\n\nOK\n",
+  "export_smoke": {
+    "evaluation": {
+      "fid": 468.69046099229695,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "samples": 3020,
+      "seconds": 58.98423884622753,
+      "seed": 271828
+    },
+    "exports": {
+      "1": {
+        "finite": true,
+        "independent_loading": true,
+        "nfe": 1,
+        "parameters": 61823875,
+        "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/fastgen_export_em9ootuj"
+      },
+      "2": {
+        "finite": true,
+        "independent_loading": true,
+        "nfe": 2,
+        "parameters": 61823875,
+        "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/fastgen_export_em9ootuj"
+      },
+      "3": {
+        "finite": true,
+        "independent_loading": true,
+        "nfe": 3,
+        "parameters": 61823875,
+        "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/fastgen_export_em9ootuj"
+      },
+      "4": {
+        "finite": true,
+        "independent_loading": true,
+        "nfe": 4,
+        "parameters": 61823875,
+        "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/fastgen_export_em9ootuj"
+      }
+    },
+    "memory": {
+      "allocated_bytes": 33652736,
+      "device": {
+        "capability": "7.5",
+        "index": "2",
+        "name": "NVIDIA TITAN RTX",
+        "total_MiB": "24576",
+        "used_MiB": "268",
+        "utilization_pct": "7",
+        "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+      },
+      "host": {
+        "Pss_bytes": 2364783616,
+        "Rss_bytes": 2378907648,
+        "VmHWM_bytes": 2411667456,
+        "VmRSS_bytes": 2378907648
+      },
+      "peak_allocated_bytes": 767166976,
+      "peak_reserved_bytes": 1285554176,
+      "reserved_bytes": 35651584
+    },
+    "purpose": "Untrained plumbing only; not a model-quality result"
+  },
+  "hardware": {
+    "bf16_native": false,
+    "cuda": "12.4",
+    "device": "_CudaDeviceProperties(name='NVIDIA TITAN RTX', major=7, minor=5, total_memory=24021MB, multi_processor_count=72, uuid=1dc48c25-2861-508e-c83b-a2a4fab02ad2, L2_cache_size=6MB)",
+    "duplicate_lease_refused": true,
+    "packages": {
+      "PIL": "/home/user/miniconda3/envs/fastgen_sid_dit/lib/python3.10/site-packages/PIL/__init__.py",
+      "cleanfid": "/home/user/miniconda3/envs/fastgen_sid_dit/lib/python3.10/site-packages/cleanfid/__init__.py",
+      "kagglehub": "/home/user/miniconda3/envs/fastgen_sid_dit/lib/python3.10/site-packages/kagglehub/__init__.py",
+      "numpy": "/home/user/miniconda3/envs/fastgen_sid_dit/lib/python3.10/site-packages/numpy/__init__.py",
+      "scipy": "/home/user/miniconda3/envs/fastgen_sid_dit/lib/python3.10/site-packages/scipy/__init__.py",
+      "torch": "/home/user/miniconda3/envs/fastgen_sid_dit/lib/python3.10/site-packages/torch/__init__.py",
+      "torchvision": "/home/user/miniconda3/envs/fastgen_sid_dit/lib/python3.10/site-packages/torchvision/__init__.py",
+      "tqdm": "/home/user/miniconda3/envs/fastgen_sid_dit/lib/python3.10/site-packages/tqdm/__init__.py"
+    },
+    "python": "/home/user/miniconda3/envs/fastgen_sid_dit/bin/python",
+    "sources": {
+      "base_Model": "verified",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "protected_files": 7,
+      "snapshots": "verified"
+    },
+    "torch": "2.6.0+cu124"
+  },
+  "probe_ledger": {
+    "attempted_updates": 64,
+    "initial_accounting": "profile attempts 02/03/04: 8+12+12; recovery T/A4/S1/A1: 3+3+1+1; first UUID-format attempt failed before any update"
+  },
+  "profile": {
+    "A4": {
+      "counts": {
+        "discriminator_head": 0,
+        "ema_state_elements": 61823923,
+        "fake_score_discriminator": 61823875,
+        "student": 61823875,
+        "teacher": 61823875
+      },
+      "full_rate_updates": 12,
+      "median_seconds": 5.912671569734812,
+      "memory": {
+        "allocated_bytes": 2353092608,
+        "device": {
+          "capability": "7.5",
+          "index": "2",
+          "name": "NVIDIA TITAN RTX",
+          "total_MiB": "24576",
+          "used_MiB": "15460",
+          "utilization_pct": "90",
+          "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+        },
+        "host": {
+          "Pss_bytes": 2832432128,
+          "Rss_bytes": 2846081024,
+          "VmHWM_bytes": 2846081024,
+          "VmRSS_bytes": 2846081024
+        },
+        "peak_allocated_bytes": 15763146752,
+        "peak_reserved_bytes": 15927869440,
+        "reserved_bytes": 15927869440
+      }
+    },
+    "T": {
+      "counts": {
+        "discriminator_head": 0,
+        "ema_state_elements": 61823923,
+        "fake_score_discriminator": null,
+        "student": null,
+        "teacher": 61823875
+      },
+      "full_rate_updates": 12,
+      "median_seconds": 0.9932400640100241,
+      "memory": {
+        "allocated_bytes": 1336828928,
+        "device": {
+          "capability": "7.5",
+          "index": "2",
+          "name": "NVIDIA TITAN RTX",
+          "total_MiB": "24576",
+          "used_MiB": "6080",
+          "utilization_pct": "75",
+          "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+        },
+        "host": {
+          "Pss_bytes": 1986788352,
+          "Rss_bytes": 2000437248,
+          "VmHWM_bytes": 2007281664,
+          "VmRSS_bytes": 2000437248
+        },
+        "peak_allocated_bytes": 6016333824,
+        "peak_reserved_bytes": 6092226560,
+        "reserved_bytes": 6092226560
+      }
+    }
+  },
+  "recovery": {
+    "stages": {
+      "A4": {
+        "interruption": "save, destroy objects, reload, next complete update",
+        "memory": {
+          "allocated_bytes": 2346276864,
+          "device": {
+            "capability": "7.5",
+            "index": "2",
+            "name": "NVIDIA TITAN RTX",
+            "total_MiB": "24576",
+            "used_MiB": "15478",
+            "utilization_pct": "12",
+            "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+          },
+          "host": {
+            "Pss_bytes": 7179678720,
+            "Rss_bytes": 7193329664,
+            "VmHWM_bytes": 7193329664,
+            "VmRSS_bytes": 7193329664
+          },
+          "peak_allocated_bytes": 15761704960,
+          "peak_reserved_bytes": 15946743808,
+          "reserved_bytes": 15946743808
+        },
+        "next_complete_update_bitwise_equal": true
+      },
+      "T": {
+        "interruption": "save, destroy objects, reload, next complete update",
+        "memory": {
+          "allocated_bytes": 1334993920,
+          "device": {
+            "capability": "7.5",
+            "index": "2",
+            "name": "NVIDIA TITAN RTX",
+            "total_MiB": "24576",
+            "used_MiB": "6070",
+            "utilization_pct": "51",
+            "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+          },
+          "host": {
+            "Pss_bytes": 4159164416,
+            "Rss_bytes": 4172812288,
+            "VmHWM_bytes": 4172812288,
+            "VmRSS_bytes": 4172812288
+          },
+          "peak_allocated_bytes": 6010042368,
+          "peak_reserved_bytes": 6123683840,
+          "reserved_bytes": 6081740800
+        },
+        "next_complete_update_bitwise_equal": true
+      }
+    },
+    "zero_adversarial_equivalence": true
+  }
+}
