@@ -1,0 +1,8 @@
+# Third-party sources and snapshot policy
+
+- Official FastGen starter: [KAIST repository](https://github.com/KAIST-Visual-AI-Group/AIC313-Project-FastGen/tree/3ccf3261495bd144bf844b7f298d10406b53117a). All 14 supplied files remain unchanged. No new license is asserted over supplied course materials.
+- SiD-DiT: [Apple source revision](https://github.com/apple-aiml-research/ml-sid-dit/tree/626b79f396fac565c96e6a1f381610b68dd4c418), copyright Apple Inc. Preserve [LICENSE](vendor/ml-sid-dit/LICENSE) and [ACKNOWLEDGEMENTS](vendor/ml-sid-dit/ACKNOWLEDGEMENTS), including NVIDIA CC BY-NC-SA 4.0 and other bundled notices. This is not labeled MIT/Apache wholesale.
+- SiDA: [official sida revision](https://github.com/mingyuanzhou/SiD/tree/29df86ae4d183d62f5a88a713ecbd066487792e7), root [Apache 2.0 license](vendor/sid-sida/LICENSE.txt). Individual bundled NVIDIA components retain their own notices; inspect them when adapting code.
+- Local AFM/SoFlow source maps are references only; no utility code was copied during preparation. If copied later, retain relevant per-file notices and record adaptation provenance.
+
+The vendored material is an **unmodified source-only snapshot**. All source/config/license files are included byte-for-byte. SiD-DiT's `Examples/` generated image and `prompts/` text assets are intentionally omitted to avoid storing generated images or external prompt datasets; their original hashes and omission reasons are in [provenance](resources/provenance.json). Vendor README links to those assets may be unresolved locally; read the pinned upstream pages for examples. No snapshot contains a nested `.git`, model weights or installed environment. Preserve included files; put future integration outside `vendor/`.

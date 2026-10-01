@@ -1,0 +1,278 @@
+{
+  "prepared_date_kst": "2026-10-02",
+  "state": "source-and-context handoff; no flow-SiDA integration, environment, GPU qualification or training",
+  "starter": {
+    "url": "https://github.com/KAIST-Visual-AI-Group/AIC313-Project-FastGen",
+    "commit": "3ccf3261495bd144bf844b7f298d10406b53117a",
+    "files_sha256": {
+      ".orca/.gitignore": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "README.md": "8aae302be3aaeb69f11cc73a63590d6787fce1b02e0a3853219977ba3cc004f3",
+      "assets/FastGen.pdf": "1a9ccc1af4d6513d3eaef28998b6540581bb368399c333a888168f85dc85e6aa",
+      "assets/representative_samples.png": "f57aa021d0840177145e241063a1c4c689180c3fc194706c39453c4caa8b3df6",
+      "data/pokemon-generation-one-22k/category_to_id.json": "7c27ec2a15fa4f70b5729319d596d3a80bc528cdeeb02f36b88877a6545b77e8",
+      "data/pokemon-generation-one-22k/train_split.txt": "c4068bdec8c5994fa14887d3335e762dd6a4da1bc6394a6df7fae96d293138c0",
+      "data/pokemon-generation-one-22k/val_split.txt": "6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0",
+      "dataset.py": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+      "download_dataset.py": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+      "evaluate.py": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "model.py": "c4cadfacb550ade39beb041b5d6e7460d6c2a08917c457ae71f05fe3e33ed1a9",
+      "requirements.txt": "e30940e3e890e6e5463f617475b97d7415e73f349fbf4070936aa284f0573eb2",
+      "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/utils.py": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f"
+    }
+  },
+  "protected_files_sha256": {
+    "dataset.py": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+    "download_dataset.py": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+    "evaluate.py": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "src/utils.py": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f",
+    "data/pokemon-generation-one-22k/train_split.txt": "c4068bdec8c5994fa14887d3335e762dd6a4da1bc6394a6df7fae96d293138c0",
+    "data/pokemon-generation-one-22k/val_split.txt": "6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0",
+    "data/pokemon-generation-one-22k/category_to_id.json": "7c27ec2a15fa4f70b5729319d596d3a80bc528cdeeb02f36b88877a6545b77e8"
+  },
+  "base_Model": {
+    "extraction": "ast.get_source_segment(source, class Model), UTF-8",
+    "sha256": "db64b05ce7b1fdbdbc4fd961c9e40ee460db6e649df16dd04e07258c72a082bb"
+  },
+  "snapshots": {
+    "sid_dit": {
+      "url": "https://github.com/apple-aiml-research/ml-sid-dit",
+      "commit": "626b79f396fac565c96e6a1f381610b68dd4c418",
+      "snapshot": "vendor/ml-sid-dit",
+      "license": "vendor/ml-sid-dit/LICENSE",
+      "files_sha256": {
+        "ACKNOWLEDGEMENTS": "fcc5f8a167f4f9efab09bed4f523f01a0329ec880e06d6a38434c782657a8400",
+        "LICENSE": "6b4a9607cda0f43d499d387abc770d8c1c4566d4ba17c827055460ede75979b0",
+        "README.md": "100c65df5ecfa20257f565a635753ff2b1c142de7491e327a20fcc8577b7c7cb",
+        "dataset_tool.py": "c2ec09d14ac4eb506bbeabb2b0209f4b79677f3178dc3461fd0fe9ea502d67f9",
+        "dnnlib/__init__.py": "1ecb88d5819b79cc8532fbe04ffb9e4436bafdd4da280e3c3f2d3d0f2ec37eaf",
+        "dnnlib/util.py": "6350e2bcce1b83c3470b1f43bcdf0d795d0de617f696461c7a373c9098d9b15e",
+        "generate_sid_fewstep_sd3.py": "b546351f1c205bc5fcfde0cbfbb151c7f0dbdb2ba0bd68c3657c5947f6ff4306",
+        "metrics/__init__.py": "1567bc685cf47ee3cb0556a6d0145219c0c9301ff780c54c9dfb41912479d2c0",
+        "metrics/sid_fid_and_clip.py": "6c5ce3d85bfe02f3f9ff162b7454d259624eed90d7e95f4c102029aaf648a850",
+        "metrics/sid_metric_main.py": "442609216dda19770441ff6be7e72b8f1f0f3fcb00b71fcf9fd2bc273063336f",
+        "metrics/sid_metric_utils.py": "21a4d1dde9f5b6681a9c48a3a0436d89116b976d4b801d0b5aa52d96e80d0ef4",
+        "networks/clip.py": "6c3b1522a42ea08d64c39a39427c32e4ef40924d23233d19ccb40c768e0dbbca",
+        "run_sid_dit.sh": "21d4759a3ab03f72f2ea02bf422b1cd27fa89a12da155418092a9cded43118f2",
+        "sid_dit_environment.yml": "576f47cf522a076a1c22d361f920f55eb5f6f5450191d5f8e61b676f45a4e46d",
+        "sid_dit_flux_train.py": "3eac474ced52e08ab9f175e628e4027cd1ca97d59cc5429f7760d9c4a26a5118",
+        "sid_dit_sd3_train.py": "39905279eb8c745fed82760cdc0133ece338b7434b4a6d89a9f7d90ced3e50f5",
+        "sid_dit_train.py": "191934c3ea52f850641ce5bd6a6659a2717ab8bdc089d0c1387c3ad8c8306db8",
+        "torch_utils/__init__.py": "3ca5fad0e224437c0be86175e4d3b974c7b4b01165e04f5e020176e0e147c2bd",
+        "torch_utils/distributed.py": "e21a40c384c649fc6348844dbcee1b23140bac26c737056076bf31c7f4ecc49b",
+        "torch_utils/misc.py": "57c71687360f88a7b0132f0c611d25c19f410486aa5e95bc3a8cbc03946c58ac",
+        "torch_utils/training_stats.py": "0142fe1633aa8bea99eaa07a7c10d08c0f5c9dde41ca5cef86cca1890b4933d7",
+        "training/__init__.py": "0d89cf7c942338f65311ac6368866afe2ac5ee5169afba24722228c7b07704bb",
+        "training/aesthetics_dataset.py": "114d4c8159a0aebe7512e4d49b59d32f4e6ab91ee165884f3ce38a964202d35b",
+        "training/dataset.py": "19c86c1779d936cad40f94d801c9ac068d5ae6eae38c91230bcad53073e82624",
+        "training/mscoco_dataset.py": "6ca20eaacc44ca8b6e1e8200bc68153fefc3d8a48badf94e1368c79b823ad8a2",
+        "training/precompute_latents.py": "c8783bb363867543c551c4647f61a4feb86eac6dd4457330282c47c8ba1d576a",
+        "training/sid_dit_flux_train.py": "bfb87e5919e423cc4ba72decc64f113278cdcc3120bf86a7583836217330843d",
+        "training/sid_dit_flux_training_loop.py": "73d8eaf424e4c870883baffb69c1bb9e0928daba91477088ba0ab8b4c4910454",
+        "training/sid_dit_flux_util.py": "0e350ed8dd5e04ae54dcf76656a61ae44062c43c5315265099182bad668bd722",
+        "training/sid_dit_sd3_training_loop.py": "e2be3a3db1e533d75c41df8c24fe01510eeeed56a62efc97f898dc9592819968",
+        "training/sid_dit_sd3_util.py": "6015b11a1d4a6eabee1c56ce252ab4913dde73a6c34e5179de9ef3560a4e2720",
+        "training/sid_dit_training_loop.py": "07a27f0dca0c8b4e4afcc6b2902518c881ed4f72242f3326b9d9b9958be33ba4",
+        "training/sid_dit_util.py": "da00ba83f4d621eadc312ed58db160a136da88a2b70258818e69e4690aaae326",
+        "training/transformer_with_encoder.py": "e5a93b7ef36dcc4f22d74cc95f0b6ad2b39fe44761975993372bcee3ce64807b",
+        "training/transformer_with_encoder_flux.py": "b49b349b2358a74ee9936d31e32a55450f28e760b01ff6327cbb886b1147123a",
+        "training/transformer_with_encoder_sd3.py": "f2f8120de71387d1220de3d6897d15e30857e42c85d21f03938fd71e7f332ca9"
+      },
+      "omitted_upstream_assets": {
+        "Examples/sid_dit_teaser.png": {
+          "sha256": "b11774bcc1470f3fe39bbf37d4624d68d3cf1b9f7fb01709f4a553a8c00973eb",
+          "bytes": 5310556,
+          "reason": "Upstream generated-image/prompt assets excluded from the source-only handoff; not Pok\u00e9mon training inputs."
+        },
+        "prompts/captions.txt": {
+          "sha256": "edabd2a556026cbf5d36a5fffa35ad43d7ba71b72f6d640b727c1edefb7f1945",
+          "bytes": 1595018,
+          "reason": "Upstream generated-image/prompt assets excluded from the source-only handoff; not Pok\u00e9mon training inputs."
+        },
+        "prompts/example_prompts.txt": {
+          "sha256": "faf8d44f95f69c25940ff26c9ef969d12dd05999e2f39c41c1912abef57ac9c8",
+          "bytes": 1542,
+          "reason": "Upstream generated-image/prompt assets excluded from the source-only handoff; not Pok\u00e9mon training inputs."
+        },
+        "prompts/fig1-captions.txt": {
+          "sha256": "25ddf001a9a31a7e4d73e835f89edafacd619f23ea7b2f35f282fd1d8d48950f",
+          "bytes": 1934,
+          "reason": "Upstream generated-image/prompt assets excluded from the source-only handoff; not Pok\u00e9mon training inputs."
+        },
+        "prompts/fig1-prompts.md": {
+          "sha256": "cdd93cf167dbf56b5832e1b5937b4406818c7abfd53caecc555182d646cad9dd",
+          "bytes": 3226,
+          "reason": "Upstream generated-image/prompt assets excluded from the source-only handoff; not Pok\u00e9mon training inputs."
+        },
+        "prompts/fig6-captions.txt": {
+          "sha256": "dce15e8bb350183296d83eaf0284a080e6e1c445e6b6961ce90d66ce66ad7c2b",
+          "bytes": 559,
+          "reason": "Upstream generated-image/prompt assets excluded from the source-only handoff; not Pok\u00e9mon training inputs."
+        },
+        "prompts/fig6-prompts.md": {
+          "sha256": "3b70c768333c1fd655dd123cc4e8fa70f8eecdcc3f1d5dcd0c798f7844f6dbdf",
+          "bytes": 944,
+          "reason": "Upstream generated-image/prompt assets excluded from the source-only handoff; not Pok\u00e9mon training inputs."
+        },
+        "prompts/fig8-captions.txt": {
+          "sha256": "8c5cf14281659ac95a6e68b371555db0adc15b0f46658e0889778123b12b104b",
+          "bytes": 3586,
+          "reason": "Upstream generated-image/prompt assets excluded from the source-only handoff; not Pok\u00e9mon training inputs."
+        },
+        "prompts/fig8-prompts.md": {
+          "sha256": "26886a7fba9751e041217ad13934f944790b0b1f7c4e01de05f8c72144484b42",
+          "bytes": 4958,
+          "reason": "Upstream generated-image/prompt assets excluded from the source-only handoff; not Pok\u00e9mon training inputs."
+        }
+      },
+      "policy": "Unmodified source-only snapshot; all upstream code/config/license files retained. No nested Git history, generated example images or prompt datasets."
+    },
+    "sida": {
+      "url": "https://github.com/mingyuanzhou/SiD",
+      "commit": "29df86ae4d183d62f5a88a713ecbd066487792e7",
+      "snapshot": "vendor/sid-sida",
+      "license": "vendor/sid-sida/LICENSE.txt",
+      "files_sha256": {
+        ".gitignore": "32981c913e959171c7da283003986229077cb489ba1f41bcab018b321ceadd7f",
+        "LICENSE.txt": "02c9a8e50e8776dd1496a3c4d025dbab3f9175c5ad20697abbe0c513d49887f2",
+        "README.md": "4d371ef3f1010f17de33ba2f9c583ce35dc646d3c9d22a52f19458dcf108a532",
+        "datafree_dataset_tool.py": "181bc45841152c90e4d19b947dc2589a2c0cec68c40a3f76038519f60414fb15",
+        "dataset_tool.py": "9cedf44bf0a78184aaa2380bf2b033716aa6b6976ab10d06f972cf96133782f9",
+        "dnnlib/__init__.py": "57a5dd0f58b26c72961c7a64e0a7806c722c6046e06e79ce64ea344b47ecd516",
+        "dnnlib/util.py": "00a0e339dc8eca358c9053ae6d93ab87b8d3f4df1e5dd30d3185558721986e1c",
+        "edm2/__init__.py": "e6191415d4ee726a2b18a639811070d39e5b8fc46bad388b4cc11795e60129b2",
+        "edm2/dataset.py": "5bca8f0d967aec0238d96c6a3586e883eb4534d26d1a24dedcd7e80bf61715a2",
+        "edm2/encoders.py": "4733f539cb2982cdf4a7db0212ad19e5b008990474ae7f965095dcb0512ebb18",
+        "edm2/misc.py": "2d2db83d436984ff1682ed55854088acdc8299ce2215686734fd16e07f466905",
+        "edm2/networks_edm2.py": "ca7b03c263fb71fca293cca337d1982785217de294eb3967ff471f6a18c156ad",
+        "edm2/phema.py": "7b300c7aa154eeae8b2246ec1543ecd0f07c6caf48fa8a04d72ac32f545226cd",
+        "edm2/training_loop.py": "eb070f85cb46012bbe549402d8721f5997bbd73c23a2db157eaf88de1b1b95e2",
+        "environment.yaml": "7d90476ba5df04e4421b5a6780a94d83be4df6ba1646a99e6c902469ebc53bee",
+        "generate_onestep.py": "94e58b8239388351eb3fb53bd56ec0407a6e54a9e82b8c0ef8fcd173f0ea8f42",
+        "generate_onestep_edm2.py": "352e6f101abefa35ddc2b3a2876da920ba002524394decaf7a195e4a7cc0e431",
+        "metrics/__init__.py": "5efa02ab9dadcd7c016c7de60161b08288ae64d3375ed6f287c1501b2635f3d9",
+        "metrics/perceptual_path_length.py": "a2f8319504ecfb00dd5e2c05e39946760bcf28abb9ff9d2b8460474e4863bdee",
+        "metrics/sid_frechet_inception_distance.py": "536486d299498e860c88cac949c806a100847632763aaa518467d74654da6e6a",
+        "metrics/sid_inception_score.py": "3816c7b8823c3f3d98febde8a312d4016d7378d4b0aa5c2b75b9de32f5da5736",
+        "metrics/sid_kernel_inception_distance.py": "1bec79bb83c5439f4eb7454ffab9753c538f1f8eab7fa3dae9764cfd9cfe531b",
+        "metrics/sid_metric_main.py": "35f2f12f36c196822c7d9632750877b3ec809f40eaf92ef09c7fed6ae6081ade",
+        "metrics/sid_metric_utils.py": "d89f7e9b5240686278ef8df59fee8288c55053ae876b60c64439af3f4c6318bc",
+        "metrics/sid_precision_recall.py": "ab89c5391feec98f6feee22655995515238f32aa40ec8c7ad161666db87c2bb0",
+        "metrics_edm2/__init__.py": "013a1b1cababc4f6668775cedc98f3737ae19517ceffb832a175e888fb59dc37",
+        "metrics_edm2/perceptual_path_length.py": "3b1205aef3d6fd662fcd9530e2ff7edb364b1d25ccfc50bb14948086542ede5c",
+        "metrics_edm2/sid_frechet_inception_distance_edm2.py": "61c7363f98020c8538abc97f16268d6736ba2b772427c6135be7e8f979ebf979",
+        "metrics_edm2/sid_metric_main_edm2.py": "98a2ad0e80b9ee0aeace0b8e04e9a9f944db6966e6b85af605f1efb701a8cb51",
+        "metrics_edm2/sid_metric_utils_edm2.py": "ba30e35dc0f4071184eeda9da9e9815c3916c62ebebb73a029a252df8bb1ee56",
+        "run_generate_onestep.sh": "2d272b4e73b84190b69da34693cc2ff7c71a1f053b638e68899566c5bb936a5f",
+        "run_sid.sh": "751e5a119f9a2634862ae92fd99b2c558b62522591daa1cdf645fad09e4867cf",
+        "run_sid_edm2.sh": "d1434e54bd906c0b1e671e0e1e1b5aab709d7c507bf408e4bd06f1fd5bff1d70",
+        "run_sid_sida.sh": "b5475774d45797e395ae9db1043ecad767822c9270cc13a8899cf1f934949a20",
+        "run_sid_sida_edm2.sh": "ba084b1a8eab49b9a04bf5feebabae52d6685a365ea9a0f739569a8cd636af50",
+        "run_sid_v1.sh": "7050b97b6215d336e51d6627dee05577a646bd45daa8e43e362c1c5a08fa192d",
+        "run_sida.sh": "7dfd76f6c3d66c879471ba772dffb95656269dafa8bb9b8bf2847367a85dccac",
+        "run_sida_edm2.sh": "6e7ae20dba7ec7b27b12bce842f7b1ecf62e97aada1db4d91cf7afc5023bfd39",
+        "sid_generate.py": "47a8ac0087c9eeb89c46ff23b22f7af4f9699fc2ef8c665fe31d687bd747e02c",
+        "sid_metrics.py": "71e9b4c6b04a101de1e9ad189d46bbe4d09f275d0b1dcfc6a6858140ec189236",
+        "sid_metrics_edm2.sh": "0dfce40cdc69d73a3d60c5d4ca167174d507c752ba4a28ddf856454377d212df",
+        "sid_train.py": "5f355571d1a60edb72ef6e6da8324bb33875bcb9bdee791c6151ef4583710bac",
+        "sida_edm2_train.py": "061f0d8da803288301c52333c7cde9dd67d170227af123b38c2c8003d1c22e9c",
+        "sida_train.py": "9ca162ca159acd56a6838eac6b3f8326b31a6e108e5c30f82c418a2b314dceab",
+        "sida_training/__init__.py": "5447136fbeb32a5cc9346e664bc49f65715294f5afef1acdd04ade89b714aa2f",
+        "sida_training/sida_loss.py": "63edbef7a20f7382983077bd7e57d73e71e9df3f3ddf4368bab86e4281edbd48",
+        "sida_training/sida_networks.py": "dc23e8985470323c99828af809e0a77faab4808d2091977b323db0f365c9f6ab",
+        "sida_training/sida_training_loop.py": "5b3d469bdf3eeab2ae2e9e931081090acd577529a65d1c353ede8d27ba9033f8",
+        "sida_training_edm2/__init__.py": "e97773d022b123767532a2b6bf6e3a51b4674e981411d9eb90af146a9cac0ff4",
+        "sida_training_edm2/json_labels_dataset.py": "c587fcb3d75ac01bdcfeb21daf4245d38446528df7cf4bec8d2c0026d263e1ce",
+        "sida_training_edm2/networks_edm2_modified.py": "898adb0fcca7245cf7393286ac16a3184a831799c5374d2689696d555e4db3c5",
+        "sida_training_edm2/sida_loss_edm2.py": "5fb1ae388c35458ea984e53c1c911ac1a9c707c3126f89518c8c8973d0d151a2",
+        "sida_training_edm2/sida_networks_edm2.py": "220219708524211d03ef714f406dd4e5d239b390b23e81d48458d173a2e4c43c",
+        "sida_training_edm2/sida_training_loop_edm2.py": "4df9c9a91df7ce2db135d58c5741c00be212be960662e18ad26a1a20421d00ff",
+        "sida_training_edm2/vae_edm2_utils.py": "4f1f708199020d7bf62c9ce51bb1a3f4d0eeb79d9dd57955a6730c8e9f339369",
+        "torch_utils/__init__.py": "c206ac297b56e0acc8671f9f93170e3822abc87abcdf5886b65ea326ade8dac8",
+        "torch_utils/custom_ops.py": "ee123ae0458fbe463000d5962a5b804d9e91b25d3fda8500eeaa6ddf6b5c932a",
+        "torch_utils/distributed.py": "ad471875c199d67cc42e9a125887e55cec794cb7650ec509ce7d2a889ce9b68d",
+        "torch_utils/misc.py": "d1b9ccfa41cbb0e232675d49d1875179cb010dbbd2a021584aa5d1614348ac83",
+        "torch_utils/ops/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+        "torch_utils/ops/bias_act.cpp": "4a3eb091ce936451ac3a0e9c7c771cc5576cba195332cd777ec275cb806f4f53",
+        "torch_utils/ops/bias_act.cu": "bc6b93e2c347cc00b07dfe0f6dca35011c2291645806239cc86632902694d017",
+        "torch_utils/ops/bias_act.h": "f0ca2d087bb22b20f6642e4affd7c77e2ff5b601a2f6d1632a79002608d87aa4",
+        "torch_utils/ops/bias_act.py": "e6e0ecdb18a181c010ec54502753540d1c47454feba7654e1e7d1f600f227ac9",
+        "torch_utils/ops/conv2d_gradfix.py": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3",
+        "torch_utils/ops/conv2d_resample.py": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+        "torch_utils/ops/fma.py": "f3fdd6b890e250124557cba35360a1297cac5bdbc4925325403b44bf290956e9",
+        "torch_utils/ops/grid_sample_gradfix.py": "a49a8195b734ecba95c9b63d035f26faa5d794a0b26eb3e9d5f3c521be29c536",
+        "torch_utils/ops/upfirdn2d.cpp": "a3930ed91584ab11786f44aca9abad9beab9f4020b564d4c547727da49d70b11",
+        "torch_utils/ops/upfirdn2d.cu": "af059a0dd7be4ba24e2b6b2f8fb5bcb0a89c4ac8320d17a59f228580164528ca",
+        "torch_utils/ops/upfirdn2d.h": "9f703976585fd9c07d18cf1c00edd3a495dc641ff1e1e1671e2df2ab24126535",
+        "torch_utils/ops/upfirdn2d.py": "94d386941cc4da50ade97da1da1ca02c0866a84e7595347e90474a6c0ef93c2c",
+        "torch_utils/persistence.py": "71589e7a4b5175047a48a4bc58e30438b58bea87e415e6873d13d7d438c44b38",
+        "torch_utils/training_stats.py": "0f16df14740b91a040870e8425dce37014142be7f7016e6871fe19a5585a19c6",
+        "training/__init__.py": "5447136fbeb32a5cc9346e664bc49f65715294f5afef1acdd04ade89b714aa2f",
+        "training/augment.py": "fd411af7c2d74489ce11a245293047369fc044d00a9aeed1c0bd46b322c8a8b5",
+        "training/dataset.py": "f46fe15ecd66206819e416ffca6ea22a06610405d6954ccc0fffc53092ab81c2",
+        "training/networks.py": "2c02ea22779577e80489c3f8861489dab0a0e88164f5c2b6e7a3cc0fec5a38c6",
+        "training/sid_loss.py": "fa47caa3b2a65d3182d4feca2eddec102498d0aa471a66f8b0425cf1bf4b02c5",
+        "training/sid_training_loop.py": "a8af28b9267192dfe4764a6d8a82f675e2912565c42bfe745355f0f53797c8da"
+      },
+      "omitted_upstream_assets": {},
+      "policy": "Unmodified source-only snapshot; all upstream code/config/license files retained. No nested Git history, generated example images or prompt datasets."
+    }
+  },
+  "local_source_references": {
+    "afm": {
+      "local_checkout": "/home/user/jw_soflow/FastGen-AFM",
+      "url": "https://github.com/pianojay/fastgen-afm",
+      "commit": "ee74486c4bc01328223419e29372ba77883688a5",
+      "files_sha256": {
+        "afm_fastgen/data.py": "264430c9da8539f9293b49a62a90830e13d610c4001e9f174e287c3e496c4a36",
+        "afm_fastgen/common.py": "60ec0fcfa120f4fc62c3c9490520bb25c2cdaf7b81d3dee6352f362a8f6c9f29",
+        "afm_fastgen/evaluation.py": "bdb8a5788957a6ee429fe75d3207b77f6a020ff07765a64b37f008d92c93c82e",
+        "afm_fastgen/reporting.py": "e0b6723f5a57a983947fd912310516cbed40968e00be067cfdfb9dfb3f63ebc3",
+        "scripts/check_export.py": "3ddaf3e7fe31111c04e9bd8200fed820cca4872b51e437dd39ec8d3207168b4c",
+        "scripts/qualify.py": "b3132ab48baf4bb5a8d0126aae88a0372466f75d45532e7ba0fdec8532b4a171",
+        "docs/EXPERIMENT_REPORT.md": "04b75845ddfec96e4489549b10df814fee7cffa0c489b7e45d3ae5f12e8f280d"
+      }
+    },
+    "soflow": {
+      "local_checkout": "/home/user/jw_soflow/FastGen-SoFlow",
+      "url": "https://github.com/pianojay/fastgen-soflow",
+      "commit": "a53eb644d9902e6d521af46fbda319d4e45ed158",
+      "commit_availability": "Verified local; public/private remote availability not assumed. Use local git show; do not substitute default branch.",
+      "files_sha256": {
+        "soflow_fastgen/unet.py": "c083e2d94b01229ffa8aa792d9d5cb33d7e2ae8a5c14cadef5838ed74777fd0a",
+        "soflow_fastgen/data.py": "fba5ea4118f5117ebf148b27b3ad288430ae2b091e9f67578046a5a7263bb843",
+        "soflow_fastgen/evaluation.py": "22635e82a0af534c4b75af27e860f78ff531708b6cf40fdd6399654a5acbc64a",
+        "soflow_fastgen/paired_evaluation.py": "b7ad455c29beeac4e459a9cfdd11b1640d65ea12062f6c3ccaaf841242f1e19f",
+        "scripts/report.py": "a7334efd62dbe03a36b1cda2f96dfd451080a27eef5f3970987e893fd9ea17f2",
+        "scripts/gallery.py": "573e896f0cf2272ad4ae2e5e1eed5f6e7ca069ff869a2fd442cd9d47ebbe24cc"
+      }
+    }
+  },
+  "partition": {
+    "path": "resources/development_split.json",
+    "sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "optimization_count": 14059,
+    "development_count": 3020
+  },
+  "local_image_root": "/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k",
+  "physical_gpu": 2,
+  "gpu_uuid": null,
+  "gpu_qualification": "Deferred to implementation; do not copy a sibling GPU identity or fall back to another device.",
+  "environment_to_create": "fastgen_sid_dit",
+  "experiment": {
+    "teacher_runs": 1,
+    "student_arms": [
+      "S1",
+      "A1",
+      "S2",
+      "A2",
+      "S3",
+      "A3",
+      "S4",
+      "A4"
+    ],
+    "backbone": "class-conditioned DDPM++ U-Net, approximately 62M; exact Sangwoo configuration unavailable",
+    "framework_parameter_limit": 100000000,
+    "peak_allocated_bytes_strict_limit": 20000000000
+  }
+}

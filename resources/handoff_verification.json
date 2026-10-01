@@ -1,0 +1,52 @@
+{
+  "date_kst": "2026-10-02",
+  "scope": "CPU/stdlib source and documentation verification; no model import, environment change, GPU qualification or training",
+  "checks": {
+    "starter_files_unchanged": 14,
+    "protected_files_and_base_Model": true,
+    "sid_dit": {
+      "commit": "626b79f396fac565c96e6a1f381610b68dd4c418",
+      "unchanged_files": 36,
+      "explicitly_omitted_assets": 9,
+      "bytes": 833525
+    },
+    "sida": {
+      "commit": "29df86ae4d183d62f5a88a713ecbd066487792e7",
+      "unchanged_files": 80,
+      "explicitly_omitted_assets": 0,
+      "bytes": 792420
+    },
+    "pinned_local_source_paths_verified": 13,
+    "partition_hash_counts_class_balance_and_disjointness": true,
+    "local_training_files_present": 17079,
+    "local_document_links": 28,
+    "gpu2_and_eight_student_assignment": true,
+    "no_local_integration_environment_or_runs": true,
+    "runtime_and_secret_ignore_patterns": true
+  },
+  "sibling_preservation": {
+    "SoFlow": {
+      "head_before": "cc47661a0b0843f8f1b6cff3a17107a052d18b21",
+      "head_after": "cc47661a0b0843f8f1b6cff3a17107a052d18b21",
+      "tracked_file_changes_since_start": [],
+      "working_tree_status_matches_start": true,
+      "written_by_this_preparation": false
+    },
+    "FastGen-SoFlow": {
+      "head_before": "a53eb644d9902e6d521af46fbda319d4e45ed158",
+      "head_after": "a53eb644d9902e6d521af46fbda319d4e45ed158",
+      "tracked_file_changes_since_start": [],
+      "working_tree_status_matches_start": true,
+      "written_by_this_preparation": false
+    }
+  },
+  "authored_files_sha256": {
+    "AGENTS.md": "d3609d0f5746acf59defab4abf4678cbafd42aa609774c66f6ec6dc5ac1534a4",
+    "README_LOCAL.md": "679b479b8ae84ba3d394a164c46f71179d256f73a3fb67a5c7583303b7169743",
+    "THIRD_PARTY.md": "0ed93997d4cfeef54daee16308858382e043b5675b3f77a570555c5c24df7b12",
+    "docs/HANDOFF.md": "6d5ddf9b5980c56a91ef1a216fa0465d77ada636620b19a3deb857a74ba08914",
+    "docs/EXPERIMENT_PLAN.md": "cb2d43087bfa54b044f102c0da6c1a86d473a332c027d413820a8f3557bb07a7",
+    "resources/provenance.json": "b6e7b057353695d9ecc9b7eaad9c7cd0352a4391b67c59bc2f88ce2159ef9bae"
+  },
+  "publication": "Commit/private-remote identity and tree verified separately after publication; this record describes preparation checks."
+}
