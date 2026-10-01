@@ -64,6 +64,18 @@ class ObjectiveTests(unittest.TestCase):
         for a, b in zip(full.parameters(), micro.parameters()):
             torch.testing.assert_close(a.grad, b.grad, rtol=1e-4, atol=1e-5)
 
+    def test_post_normalization_target_scale(self):
+        # A loss coefficient is canceled at equilibrium; the target is not.
+        x = torch.randn(7, 3, 8, 8)
+        gradients = []
+        for coefficient, target in [(1., 1.), (.1, 1.), (1., .25)]:
+            z = x.clone().requires_grad_()
+            n = GradientNormalization(decay=0., target_scale=target)
+            (n(z).square().mean()*coefficient).backward()
+            gradients.append(z.grad)
+        torch.testing.assert_close(gradients[0], gradients[1])
+        torch.testing.assert_close(gradients[0]*.25, gradients[2])
+
     def test_routing_and_classes(self):
         g = nn.Linear(5, 5); d = Discriminator(channels=8)
         z = torch.randn(2, 5); x = torch.randn(2, 3, 64, 64); y = torch.tensor([0, 1])

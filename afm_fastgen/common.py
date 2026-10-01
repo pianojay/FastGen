@@ -104,19 +104,23 @@ class GpuLease:
         self.file = None
 
     def __enter__(self):
-        path = ROOT/'artifacts/gpu0.lock'; path.parent.mkdir(exist_ok=True)
+        path = Path('/tmp/fastgen-gpu0.lock')
         self.file = path.open('a+')
         try:
             fcntl.flock(self.file, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
             raise RuntimeError('Duplicate GPU 0 job refused')
+        uuid = subprocess.check_output(['nvidia-smi', '-i', '0', '--query-gpu=uuid', '--format=csv,noheader'], text=True).strip()
+        if uuid != GPU_UUID:
+            self.file.close()
+            raise RuntimeError(f'GPU identity mismatch: {uuid}')
         rows = subprocess.check_output(['nvidia-smi', '--query-compute-apps=gpu_uuid,pid', '--format=csv,noheader'], text=True)
         for row in rows.splitlines():
             uuid, pid = [x.strip() for x in row.split(',')]
             if uuid == GPU_UUID and int(pid) != os.getpid():
                 raise RuntimeError(f'GPU 0 occupied by PID {pid}; not terminating it')
         self.file.seek(0); self.file.truncate()
-        json.dump(process_identity(), self.file); self.file.flush()
+        json.dump({**process_identity(), 'gpu_uuid': GPU_UUID}, self.file); self.file.flush()
         return self
 
     def __exit__(self, *args):

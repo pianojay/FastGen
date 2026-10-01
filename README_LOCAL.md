@@ -1,10 +1,10 @@
 # FastGen-AFM
 
-**Current state, October 2, 2026:** the first baseline was implemented and stopped for strongly suspected within-class collapse. A bounded stability-search assignment is now prepared, **not started**. Read [program.md](program.md) and [AGENTS.md](AGENTS.md) for current instructions.
+**Current state, October 2, 2026:** the first baseline was implemented and stopped for strongly suspected within-class collapse. The user has started the bounded stability-search campaign; see the [incremental record](docs/STABILITY_SEARCH.md). Read [program.md](program.md) and [AGENTS.md](AGENTS.md) for current instructions.
 
 The stopped baseline completed 10,294 G/D cycles; the complete 10k checkpoint and logs are preserved. Trained development FID was unmeasured. See the [experiment report](docs/EXPERIMENT_REPORT.md), [frozen recipe](configs/baseline.json) and [historical stage accounting](docs/BASELINE_PLAN.md). Do not resume that run.
 
-Available: working baseline G/D/trainer, recoverable state, data cache, panels and official evaluation/export utilities. Still to implement when the campaign is started: calibrated collapse/diversity diagnostics, configurable search controls, device-wide lease and bounded campaign orchestration. This documentation preparation did not change training code or create GPU work.
+Available: working baseline G/D/trainer, recoverable state, data cache, panels and official evaluation/export utilities. The campaign adds calibrated diagnostics, separate optimizer/gradient-normalization controls, a device-wide lease and a finite search runner. The historical preparation provenance remains unchanged.
 
 The new campaign holds the architecture fixed, searches up to six evidence-driven training recipes, and independently repeats the first qualifying result once. Its goal is recognizable, persistent within-class variation; FID is not its search objective. Use **physical GPU 0** and the existing `fastgen_afm` environment with `PYTHONNOUSERSITE=1`. SiD-DiT uses physical GPU 2; GPU 1 remains assigned to SoFlow.
 

@@ -23,12 +23,12 @@ class Trainer:
         self.g = Generator(**config['generator']).cuda()
         self.d = Discriminator(**config['discriminator']).cuda()
         self.ema = copy.deepcopy(self.g).eval().requires_grad_(False)
-        self.norm = GradientNormalization().cuda()
+        self.norm = GradientNormalization(**config.get('gradient_normalization', {})).cuda()
         self.parameters = {'generator': sum(p.numel() for p in self.g.parameters()),
                            'discriminator': sum(p.numel() for p in self.d.parameters())}
         assert max(self.parameters.values()) <= 100_000_000
-        self.go = torch.optim.AdamW(self.g.parameters(), **config['optimizer'], foreach=False)
-        self.do = torch.optim.AdamW(self.d.parameters(), **config['optimizer'], foreach=False)
+        self.go = torch.optim.AdamW(self.g.parameters(), **config.get('g_optimizer', config['optimizer']), foreach=False)
+        self.do = torch.optim.AdamW(self.d.parameters(), **config.get('d_optimizer', config['optimizer']), foreach=False)
         cache, record = prepare_cache(config)
         self.identity['data_cache_sha256'] = record['cache_sha256']
         self.identity['data_sources_sha256'] = digest(ROOT/'artifacts/data_cache/manifest.json')

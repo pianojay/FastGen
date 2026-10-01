@@ -33,33 +33,34 @@ def generator_losses(real, fake, prediction, source, ot):
 
 
 class GradientNormalization(nn.Module):
-    def __init__(self, decay=0.9, eps=1e-8):
+    def __init__(self, decay=0.9, eps=1e-8, target_scale=1.0):
         super().__init__()
         self.decay, self.eps = decay, eps
+        self.target_scale = target_scale
         self.register_buffer('square_avg', torch.tensor(0.0))
         self.register_buffer('backwards', torch.tensor(0, dtype=torch.long))
 
     def forward(self, x, loss_weight=1.0):
         return _Normalize.apply(x, self.square_avg, self.backwards,
-                                self.decay, self.eps, loss_weight)
+                                self.decay, self.eps, loss_weight, self.target_scale)
 
 
 class _Normalize(torch.autograd.Function):
     @staticmethod
-    def forward(ctx, x, square_avg, backwards, decay, eps, weight):
-        ctx.state = square_avg, backwards, decay, eps, weight
+    def forward(ctx, x, square_avg, backwards, decay, eps, weight, target_scale):
+        ctx.state = square_avg, backwards, decay, eps, weight, target_scale
         return x.clone()
 
     @staticmethod
     def backward(ctx, gradient):
-        avg, backwards, decay, eps, weight = ctx.state
+        avg, backwards, decay, eps, weight, target_scale = ctx.state
         # Track the LOCAL MEAN adversarial gradient, then retain the microbatch
         # weight in the outgoing gradient. Upstream cancels accumulation weights.
         local = gradient.float() / weight
         square = local.square().sum() * local.numel()
         avg.lerp_(square, 1-decay)
         backwards.add_(1)
-        return gradient * (1.0 / (avg.sqrt()+eps)), None, None, None, None, None
+        return gradient * (target_scale / (avg.sqrt()+eps)), None, None, None, None, None, None
 
 
 def augmentation_parameters(batch, device, probability=0.5, translation=8, cutout=16):

@@ -1,6 +1,6 @@
 # AFM stability-search program
 
-Prepared October 2, 2026 (Asia/Seoul). **Ready as an assignment; not started.**
+Prepared October 2, 2026 (Asia/Seoul). **Started by explicit user instruction October 2; see [campaign record](docs/STABILITY_SEARCH.md).**
 This program replaces the closed one-baseline mandate for future user-started work. Reading it, preparing this handoff, or opening the repository does not start training. Once explicitly started, complete the bounded campaign without intermediate approval waits, including hours-long runs and exact recovery. No extra agents unless requested.
 
 ## Question, evidence and scope
