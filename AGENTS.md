@@ -1,33 +1,32 @@
 # FastGen-AFM work instructions
 
-## Read first and scope
+## Current assignment and history
 
-- Read [handoff](docs/HANDOFF.md) and [baseline assignment](docs/BASELINE_PLAN.md). This is a prepared source-and-context workspace, not a working AFM integration.
-- Preparation is complete when sources, documents and provenance are verified and pushed. Do not interpret preparation, opening this repository or reading these files as an instruction to train.
-- Once the user explicitly starts the baseline, implement, qualify, train and evaluate **one** U-Net-first, teacher-free, one-call pixel-space discrete AFM baseline. Do not wait for approval between those stages. Short disposable qualification checks and exact recovery are included; additional quality trials, architecture sweeps, second training seeds and few-step experiments are not.
-- After baseline evaluation, report results and proposed next directions, then stop. No campaign loop, mandatory essays or inherited 12-hour cap. No additional agents unless requested.
+- Read [program.md](program.md) first, then the [closed baseline report](docs/EXPERIMENT_REPORT.md) and [implementation mapping](docs/IMPLEMENTATION.md).
+- October 2, 2026: the user approved preparation of a stability-search handoff. Preparation creates documentation only; it does not launch training. When explicitly started, the campaign may implement necessary controls, qualify and run up to six fresh recipes plus one independent confirmation without intermediate approval waits. Stop at the program's boundary.
+- The October 1 single-baseline assignment is closed by user-directed termination. Its recipe, checkpoint and report remain historical evidence; do not resume it. Older `docs/HANDOFF.md`, `docs/BASELINE_PLAN.md` and preparation provenance are dated records, not current launch instructions.
+- `program.md` is the current campaign policy. No automatic capacity sweep, extra seeds, FID search, teacher, CAFM or few-NFE extension. No extra agents unless requested.
 
 ## Machine and isolation
 
-- Work in `/home/user/jw_soflow/FastGen-AFM`. This is the local TITAN server, not KCloud.
-- Use physical GPU 0 only: `CUDA_VISIBLE_DEVICES=0`. Verify device UUID and ownership before work; do not terminate an unknown process. GPU 1 is running SoFlow. GPU 0's closed CIFAR experiment must not be restarted.
-- Do not change either sibling repository, its branch, environment or jobs. Read their source at the pinned commit in provenance; never runtime-import from their mutable working trees.
-- Create a separate `fastgen_afm` Conda environment during implementation, including pip. Set `PYTHONNOUSERSITE=1`; use that interpreter's `python -m pip`, never bare pip. Do not install into `fastgen_soflow`, `soflow` or `soflow_eval`.
-- Prefer the official supplied dependencies. Upstream AFM requirements are reference material, not an approved install list. Port the needed operations using supplied libraries; report an essential dependency exception to the user rather than contacting the course or installing it silently.
-- All run outputs, caches, references and checkpoints belong here, outside Git. The sibling image directory is read-only input: do not run its downloader, transparency conversion or partition writer. Limit CPU/data-loader threads reasonably to coexist with GPU 1; measure resulting throughput.
+- Work only in `/home/user/jw_soflow/FastGen-AFM`; use **physical GPU 0** with `CUDA_VISIBLE_DEVICES=0`. Recheck GPU UUID and occupancy before GPU work. Historical GPU 0 UUID: `GPU-e9d30df5-3b84-1a7e-c505-c6fff0a0ce7f`; do not silently substitute another GPU after a hardware change.
+- Use a host-wide device-specific lease (`/tmp/fastgen-gpu0.lock`) for future GPU jobs, together with PID/start-time identity and occupancy checks. The current repository-local lease needs adaptation; no new lock implementation was added during preparation.
+- GPU 1 and all SoFlow jobs belong to the sibling project. **Physical GPU 2 belongs to FastGen-SiD-DiT**; its independent experiment may run concurrently. Never auto-select the least-used GPU or terminate an unknown process.
+- Preserve both sibling repositories, their branches, files, environments and processes. No runtime Python imports from mutable sibling checkouts. The closed CIFAR experiment must not restart.
+- Retain `/home/user/miniconda3/envs/fastgen_afm/bin/python`; set `PYTHONNOUSERSITE=1` for execution and installation. Include pip in any explicitly needed environment recreation and use that interpreter's `python -m pip`. No changes to other environments.
+- Course dependencies govern the implementation; upstream requirements are reference material, not an installation instruction. Do not contact the course or silently add an essential dependency exception.
 
-## Training and evaluation boundaries
+## Data and resource boundaries
 
-- Generator and discriminator begin with fresh weights, optimizer, EMA, RNG and data state. No teacher, pretrained VAE, pretrained discriminator/features, classifier guidance or CAFM in this baseline. The official FID feature extractor is evaluation-only.
-- Preserve official protected files and base `Model`; hashes and source pins are in [provenance](resources/provenance.json). Every learned model used in training or sampling must individually have at most 100,000,000 parameters, including its full framework and frozen parameters. Check generator and discriminator separately; export only the inference generator.
-- Enforce peak training allocation below 20,000,000,000 bytes for the complete simultaneous training workload. Log reserved/device memory and host memory too. TITAN measurements are not A100 timing predictions.
-- Use the copied fixed optimization/development partition. Official validation images are never training, checkpoint-selection or tuning input. Do not regenerate the partition.
-- One-call sampling executes the generator exactly once; no trained auxiliary network or guidance at inference. Arithmetic and noise generation do not add NFE. Preserve the official loader and check a self-contained export.
-- Choose a finite full horizon and schedule before training from measured cost and a written rationale. Account for G and D updates, image presentations, qualification, overhead, evaluation and failures. Exact resume keeps recipe/horizon unchanged and carries accounting forward. Do not silently extend a completed run or rename failures to reset its allowance.
-- Minimal durable process identity, GPU ownership, logs and recoverable state should prevent duplicate jobs and support hours-long supervision. An agent saying “launched” is not completion. Report real blockers; do not fill unknown metrics with invented values.
+- Keep G and D architecture fixed at the baseline; each new recipe starts fresh weights, optimizers, EMA, RNG and data state. The official FID Inception is evaluation-only; no external pretrained training networks.
+- Preserve official protected files and base `Model`, pinned AFM snapshot and partition in [original provenance](resources/provenance.json). Count each learned model's full framework, including frozen parameters, separately: **at most 100,000,000 parameters per model**. Export only inference G.
+- Entire simultaneous training workload must remain **below 20,000,000,000 peak allocated bytes**. Report reserved/device and host memory too. Record device identity and measured throughput; do not translate timings to KCloud/A100.
+- Use the copied 14,059 optimization / 3,020 development partition. Official validation is never tuning, calibration, training or checkpoint-selection input. Shared images under `/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k` are read-only. Do not invoke their downloader, conversion or partition writer.
+- Keep artifacts, caches, datasets, generated images, logs and environments out of Git. Use modest CPU/data-loader thread counts for coexistence.
+- One-call inference executes G once, with no discriminator, guide, decoder or teacher in sampling. Arithmetic and random-noise generation are not learned calls.
+- Predeclare finite horizons/watchdogs, audits and bounded exact recovery. Carry all failures/replayed work and overhead into cumulative accounting. No inherited 12-hour cap and no cost reset by renaming a run.
 
-## Communication and external actions
+## Reporting and external actions
 
-- Log incrementally in the baseline document's tables, linking configurations and machine-readable metrics; short progress updates suffice.
-- The user approved the private repository `pianojay/fastgen-afm` and source pushes. Exclude credentials, datasets and large artifacts. No Slack messages, collaborator invitations or Notion writes are part of this assignment.
-- The authorization for GPU 0 here supersedes historical CIFAR ownership wording in sibling documents; it does not authorize changes to those projects. Their older budgets, launch commands and broader autonomous loops are historical/contextual, not this experiment's policy.
+- Keep concise incremental tables and machine-readable evidence as described in the program. Preparation is complete after source/document verification and push; saying “launched” is not experimental completion.
+- Source commits/pushes to private `pianojay/fastgen-afm` are approved. No Slack messages, Notion edits or collaborator invitations are part of this assignment.

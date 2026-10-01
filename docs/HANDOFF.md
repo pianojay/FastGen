@@ -1,3 +1,5 @@
+> **Historical handoff (October 1, 2026).** The baseline described below was implemented and stopped. Current October 2 instructions are [program.md](../program.md) and [AGENTS.md](../AGENTS.md); the [experiment report](EXPERIMENT_REPORT.md) closes the original assignment. Statements below about work not yet implemented or environments not yet created refer to the preparation date, not current state.
+
 # Context and source map
 
 Prepared October 1, 2026 (Asia/Seoul). This document is a dated handoff, not a live process monitor. Decisions come from the user's approved preparation plan. Root [README_LOCAL](../README_LOCAL.md) distinguishes available source from work still required.

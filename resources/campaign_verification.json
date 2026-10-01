@@ -1,0 +1,35 @@
+{
+  "date_kst": "2026-10-02",
+  "scope": "CPU/stdlib source and documentation verification; no model import, environment change, GPU qualification or training",
+  "checks": {
+    "original_tracked_files_verified_unchanged_except_three_docs": 139,
+    "historical_handoff_body_unchanged": true,
+    "baseline_code_config_report_and_partition_unchanged": true,
+    "limits_and_gpu_assignment": true,
+    "local_document_links": 28
+  },
+  "sibling_preservation": {
+    "SoFlow": {
+      "head_before": "cc47661a0b0843f8f1b6cff3a17107a052d18b21",
+      "head_after": "cc47661a0b0843f8f1b6cff3a17107a052d18b21",
+      "tracked_file_changes_since_start": [],
+      "working_tree_status_matches_start": true,
+      "written_by_this_preparation": false
+    },
+    "FastGen-SoFlow": {
+      "head_before": "a53eb644d9902e6d521af46fbda319d4e45ed158",
+      "head_after": "a53eb644d9902e6d521af46fbda319d4e45ed158",
+      "tracked_file_changes_since_start": [],
+      "working_tree_status_matches_start": true,
+      "written_by_this_preparation": false
+    }
+  },
+  "authored_files_sha256": {
+    "AGENTS.md": "bbb9e0d84aa8620c25c2fd73f53c6de1fd31a7ac73257ffb2beb9e49167d94a5",
+    "program.md": "6387b43128fa07d49c6d20beddb2db66d239eaaf0888beb1b5abe6936b049cfb",
+    "README_LOCAL.md": "cbb1c4c0e2a938d3ec1cabb22bba485175d79c7e7809a3c03a92a62e09aadea3",
+    "docs/HANDOFF.md": "c68dcc35f790d69bc146f3554cf5e3257108fd10bc543b94fd3a8a54246cbf9f",
+    "resources/campaign_handoff.json": "ef23d969f26f9ede1c72d10358cb5b0ecd2775c357cf4d404fc768b2abcceed1"
+  },
+  "publication": "Commit/private-remote identity and tree verified separately after publication; this record describes preparation checks."
+}

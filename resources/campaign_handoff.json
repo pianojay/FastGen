@@ -1,0 +1,21 @@
+{
+  "prepared_date_kst": "2026-10-02",
+  "state": "stability-search handoff prepared; campaign not started",
+  "prior_baseline_commit": "ee74486c4bc01328223419e29372ba77883688a5",
+  "physical_gpu": 0,
+  "environment": "fastgen_afm",
+  "max_candidate_recipes": 6,
+  "max_independent_confirmations": 1,
+  "architecture_change_allowed": false,
+  "fid_search_objective": false,
+  "historical_artifacts_unchanged": {
+    "configs/baseline.json": "51d5289002e6556e9f8d3b59a2473a2c8c828bd4085a073d49005e538f8a66d3",
+    "docs/BASELINE_PLAN.md": "48986ffb41e50cf0020f5149bf7b2de6ddc78b42bd93d14fcfc90e7388eb27fd",
+    "docs/EXPERIMENT_REPORT.md": "04b75845ddfec96e4489549b10df814fee7cffa0c489b7e45d3ae5f12e8f280d",
+    "docs/IMPLEMENTATION.md": "a70183350e198d62acc58f8adf3734a8c70978ed0fb0dc911fc0c828796c86d8",
+    "resources/provenance.json": "599915322a549fa12174e0821dd144427e5f4c3d71f557e90c6752786ae1f55a",
+    "resources/development_split.json": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e"
+  },
+  "preparation_scope": "documentation only; no trainer changes, environment changes or GPU work",
+  "source_reference": "Original source pins remain in resources/provenance.json; executable baseline at prior_baseline_commit."
+}
