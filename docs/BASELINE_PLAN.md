@@ -1,6 +1,6 @@
 # One-baseline assignment: pixel-space AFM
 
-Status: **implementation and qualification complete; single recipe frozen October 1, 2026 at 18:52 KST; training next**. Read [context](HANDOFF.md) and [boundaries](../AGENTS.md). The next explicitly started agent owns one meaningful baseline through evaluation, without intermediate approval waits. This document is the work assignment, not a frozen training configuration.
+Status: **implementation and qualification complete; single recipe frozen October 1, 2026 at 18:52 KST; training running on GPU 0**. Read [context](HANDOFF.md) and [boundaries](../AGENTS.md). The next explicitly started agent owns one meaningful baseline through evaluation, without intermediate approval waits. This document is the work assignment, not a frozen training configuration.
 
 ## Question and deliverable
 
@@ -40,7 +40,7 @@ Fill these tables incrementally; link machine-readable evidence rather than writ
 |---|---|---|---|---|
 | Implementation and qualification | [adaptation map](IMPLEMENTATION.md), [scratch config](../configs/qualification.json); separate `fastgen_afm` | 80 disposable G + 80 D updates; 2,560 real images/stream, 5,120 total; all scratch states discarded | ~0.0575 GPU-job h including interrupted smoke; CPU implementation/setup separate | Six objective tests; exact full-cycle recovery at microbatch 8 and 32; duplicate refusal; data wraparound/recovery and exact preprocessing cache checks; protected hashes. [summary](../artifacts/qualification_summary.json) |
 | Frozen baseline plan | [frozen recipe](../configs/baseline.json); seed 20261001; FP32; G 39,664,771 / D 9,918,657 | 50,000 G + 50,000 D; 1.6M real images/stream, 3.2M total; 3.2M generated images across D/G training | 10.46 optimizer h projected from last 32 cycles; 18h finite train/eval/recovery watchdog | Primary final EMA only; sampling seeds 42/43 reserved before training; no FID selection |
-| Training and any recovery | [run](../runs/afm_unet128_50k_seed20261001/) | pending | pending | Not launched yet |
+| Training and any recovery | Source `d99e89e8b3b346d71c757c4962a0942c4466cb48`; [durable record](../runs/afm_unet128_50k_seed20261001/record.json), [status](../runs/afm_unet128_50k_seed20261001/status.json) | First full D/G cycle verified; proceeding to 50,000 each | Running; actual [per-cycle accounting](../runs/afm_unet128_50k_seed20261001/metrics.jsonl) | Started 2026-10-01 18:54 KST; PID 2769157/start ticks 1063175408; exact GPU 0 UUID verified; no recovery |
 | Evaluation and export | [smoke](../artifacts/qualification_micro32/evaluation_smoke/seed901/metrics.json), [independent loader](../artifacts/qualification_micro32/export_bundle/loader_check.json) | 3,020 untrained samples, 20/class; seed 901 | Smoke 52.81s | Plumbing passed; untrained FID 463.7915 is not a quality result. Final evaluation pending |
 
 | Checkpoint / seed | 1-NFE development FID | G / D parameters | Train / eval / total GPU hours | Peak allocated / reserved / device GB | Host RSS / tree PSS | Numerical failures / recovery | Gallery / metrics |
