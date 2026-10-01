@@ -1,6 +1,6 @@
 # One-baseline assignment: pixel-space AFM
 
-Status: **handoff prepared; implementation, environment and qualification pending**. Read [context](HANDOFF.md) and [boundaries](../AGENTS.md). The next explicitly started agent owns one meaningful baseline through evaluation, without intermediate approval waits. This document is the work assignment, not a frozen training configuration.
+Status: **implementation and qualification complete; single recipe frozen October 1, 2026 at 18:52 KST; training next**. Read [context](HANDOFF.md) and [boundaries](../AGENTS.md). The next explicitly started agent owns one meaningful baseline through evaluation, without intermediate approval waits. This document is the work assignment, not a frozen training configuration.
 
 ## Question and deliverable
 
@@ -38,13 +38,28 @@ Fill these tables incrementally; link machine-readable evidence rather than writ
 
 | Stage | Source/config identity | G/D updates and image presentations | GPU hours / allowance | Outcome / evidence |
 |---|---|---|---|---|
-| Implementation and qualification | pending | pending | pending | pending |
-| Frozen baseline plan | pending | pending | pending | pending |
-| Training and any recovery | pending | pending | pending | pending |
-| Evaluation and export | pending | pending | pending | pending |
+| Implementation and qualification | [adaptation map](IMPLEMENTATION.md), [scratch config](../configs/qualification.json); separate `fastgen_afm` | 80 disposable G + 80 D updates; 2,560 real images/stream, 5,120 total; all scratch states discarded | ~0.0575 GPU-job h including interrupted smoke; CPU implementation/setup separate | Six objective tests; exact full-cycle recovery at microbatch 8 and 32; duplicate refusal; data wraparound/recovery and exact preprocessing cache checks; protected hashes. [summary](../artifacts/qualification_summary.json) |
+| Frozen baseline plan | [frozen recipe](../configs/baseline.json); seed 20261001; FP32; G 39,664,771 / D 9,918,657 | 50,000 G + 50,000 D; 1.6M real images/stream, 3.2M total; 3.2M generated images across D/G training | 10.46 optimizer h projected from last 32 cycles; 18h finite train/eval/recovery watchdog | Primary final EMA only; sampling seeds 42/43 reserved before training; no FID selection |
+| Training and any recovery | [run](../runs/afm_unet128_50k_seed20261001/) | pending | pending | Not launched yet |
+| Evaluation and export | [smoke](../artifacts/qualification_micro32/evaluation_smoke/seed901/metrics.json), [independent loader](../artifacts/qualification_micro32/export_bundle/loader_check.json) | 3,020 untrained samples, 20/class; seed 901 | Smoke 52.81s | Plumbing passed; untrained FID 463.7915 is not a quality result. Final evaluation pending |
 
 | Checkpoint / seed | 1-NFE development FID | G / D parameters | Train / eval / total GPU hours | Peak allocated / reserved / device GB | Host RSS / tree PSS | Numerical failures / recovery | Gallery / metrics |
 |---|---|---|---|---|---|---|---|
 | pending | pending | pending | pending | pending | pending | pending | pending |
 
 At completion, give the measured result, limitations and one or two evidence-supported next directions, then stop. Do not automatically launch another baseline, extend the completed horizon, add a second training seed or turn this into an unrestricted autoresearch loop.
+
+
+## Frozen recipe and allocation (before substantive training)
+
+The endpoint U-Net and projection discriminator are specified in [the implementation map](IMPLEMENTATION.md) and [JSON config](../configs/baseline.json). Both start from fresh weights with seed 20261001, fresh AdamW states, EMA, gradient-normalization buffer, RNG and independent data-stream permutations. No scratch checkpoint is reused. Effective and execution batch are both 32 for both networks. Full-batch execution is within memory and avoids microbatch-dependent normalization updates in the actual baseline; the accumulated path remains tested. Precision is FP32 and CPU threads are capped at four, with a read-only cached optimization set and no training loader workers.
+
+Each cycle is one D update followed by one G update. Both optimizers use constant learning rate 1e-4, betas (0,.9), epsilon 1e-8 and weight decay .01. G EMA decay is .999 (about 693 G-update half-life), chosen to track a finite small-data run rather than retaining the ImageNet reference's 10,000-update averaging timescale. Gradient clipping at 50 is logged. OT is .2→.005 cosine over the first 10,000 G updates (indices 0–9,999), then .005 through update 50,000. R1/R2 each use .25 on exactly 8 of 32 samples, epsilon .01; centering is .01. Gradient normalization uses decay .9 and epsilon 1e-8, one backward/state update per G update. These coefficients are a reference-anchored first pixel baseline, not tuned values or a claim of optimality. Real x-flip .5 and paired translation/cutout are fixed as described in the mapping.
+
+The finite horizon is **50,000 G + 50,000 D updates**, equivalent to 113.81 optimization-set passes for each real-data stream. This gives over 100 discriminator data passes and 40,000 updates after OT decay, making it a substantive direct adversarial transport experiment at about 10.46 measured TITAN optimizer hours. It is chosen from exposure and measured cost, not copied from SoFlow's 40k or the upstream arbitrary five-million-loop bound. We retain a constant learning rate to follow the AFM reference; there is no post-horizon extension or second training seed.
+
+Training qualification at full batch peaked at **7,523,963,904 allocated bytes**, 8,147,435,520 reserved bytes and 8,376,025,088 device bytes; host RSS 2,135,375,872 and tree PSS 2,122,695,680 bytes. The runtime asserts peak allocated below 20,000,000,000 bytes for the simultaneous workload. Last-32-cycle mean is 0.7530s, about 42.50 images/s per stream and 85.00 total real presentations/s. TITAN timings are not A100 predictions.
+
+Allocation before launch: forecast optimizer cost ~10.46h, up to 13h for healthy-throughput variability, .5h startup/checkpoint/panel/report overhead, .25h final evaluation/export, up to 2h bounded exact recovery, and 2.25h additional shared-machine/downtime margin. The **18h watchdog** covers the substantive run, evaluation and recovery; prior qualification cost remains separately counted. At most two exact recovery attempts preserve recipe/horizon and all consumed cost, including failed/replayed work. Elapsed wall time is measured from the first launch and never reset. Persistent PID/start ticks/boot ID, GPU UUID, advisory lock, atomic complete checkpoints and incremental records support supervision. Only orderly checkpoint recovery has been tested; no hard-crash guarantee is claimed.
+
+Metrics are appended every cycle; durable status every 50; recoverable checkpoint every 500 and at the final update; fixed class/reference panels every 1,000. Primary result is **final EMA at exactly 50,000 updates**, evaluated only on the fixed development reference using official functions, 3,020 images at each predeclared sampling seed **42 and 43**. Two sampling seeds assess sampling variation, not independent training replication. No intermediate FID selection or paired-noise claim against SoFlow. The official validation images are unused. Export is G-only via the untouched official loader and an independent directory; this is not a full two-track course submission.

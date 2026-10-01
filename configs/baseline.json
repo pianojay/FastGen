@@ -1,0 +1,51 @@
+{
+  "augment_probability": 0.5,
+  "batch_size": 32,
+  "center_scale": 0.01,
+  "checkpoint_interval": 500,
+  "cutout_pixels": 16,
+  "data_root": "/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k",
+  "discriminator": {
+    "channels": 64
+  },
+  "ema_decay": 0.999,
+  "eval_batch_size": 32,
+  "eval_seeds": [
+    42,
+    43
+  ],
+  "generator": {
+    "model_channels": 128,
+    "num_blocks": 2
+  },
+  "gp_epsilon": 0.01,
+  "gp_fraction": 0.25,
+  "gp_scale": 0.25,
+  "gradient_clip": 50.0,
+  "horizon_g_updates": 50000,
+  "lr_schedule": "constant",
+  "max_recoveries": 2,
+  "microbatch": 32,
+  "optimizer": {
+    "betas": [
+      0.0,
+      0.9
+    ],
+    "eps": 1e-08,
+    "lr": 0.0001,
+    "weight_decay": 0.01
+  },
+  "ot_decay_updates": 10000,
+  "ot_end": 0.005,
+  "ot_start": 0.2,
+  "partition": "resources/development_split.json",
+  "precision": "float32",
+  "primary_checkpoint": "final_ema",
+  "run_dir": "runs/afm_unet128_50k_seed20261001",
+  "sample_interval": 1000,
+  "seed": 20261001,
+  "status_interval": 50,
+  "threads": 4,
+  "translate_pixels": 8,
+  "watchdog_seconds": 64800
+}

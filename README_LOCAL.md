@@ -1,13 +1,9 @@
-# FastGen-AFM handoff
+# FastGen-AFM baseline
 
-Prepared October 1, 2026 (Asia/Seoul). **Materials only: no integrated Pokémon AFM trainer, environment, trained model or GPU qualification exists here.** Root `model.py` remains the official unimplemented starter. The upstream [README](README.md) documents the challenge, not completed local capabilities.
+The single teacher-free, pixel-space, one-call U-Net AFM baseline was explicitly started October 1, 2026. Implementation and disposable GPU qualification are complete. The frozen 50,000-update recipe is in [configs/baseline.json](configs/baseline.json); current status, measurements and final results belong in [docs/BASELINE_PLAN.md](docs/BASELINE_PLAN.md).
 
-Read [AGENTS.md](AGENTS.md), then [context and source map](docs/HANDOFF.md), then [one-baseline assignment](docs/BASELINE_PLAN.md). [Provenance](resources/provenance.json) records source revisions and checksums. [Attribution](THIRD_PARTY.md) records source licenses.
+Read [AGENTS.md](AGENTS.md), [dated handoff](docs/HANDOFF.md), [implementation mapping](docs/IMPLEMENTATION.md) and [source provenance](resources/provenance.json). The official base `Model`, evaluation code and data manifests remain protected. [model.py](model.py) implements the one-call EMA generator; the few-call track remains unimplemented.
 
-This independent checkout belongs to `pianojay/fastgen-afm`. GPU 0 is allocated to AFM; the separate SoFlow job uses GPU 1. Preparation does not launch experiments. A future agent starts only when the user explicitly assigns it the baseline below.
+Use the separate `/home/user/miniconda3/envs/fastgen_afm/bin/python`, `PYTHONNOUSERSITE=1`, `CUDA_VISIBLE_DEVICES=0`, and four CPU threads. All outputs, caches and model artifacts stay in ignored `artifacts/` and `runs/`. GPU 1 and both sibling repositories are untouched. A durable lock refuses duplicate jobs. Do not relaunch a completed baseline or start a new quality trial from this README.
 
-Suggested launch instruction:
-
-> Read AGENTS.md, docs/HANDOFF.md and docs/BASELINE_PLAN.md. Implement, qualify, train and evaluate the single teacher-free, one-call, U-Net-first pixel-space AFM baseline on GPU 0. Choose and record the complete recipe and finite runtime allowance from source inspection and measured throughput. Proceed without intermediate approval waits within that assignment. Keep concise incremental records, preserve SoFlow, and stop after the baseline evaluation with results and proposed next directions.
-
-Private remote: https://github.com/pianojay/fastgen-afm
+Private source remote: https://github.com/pianojay/fastgen-afm

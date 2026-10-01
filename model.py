@@ -74,20 +74,24 @@ class Model(nn.Module):
 
 
 class ModelOneNFE(Model):
-    """Student model evaluated with exactly one model function evaluation."""
+    """Teacher-free AFM: one U-Net call transports Gaussian noise to pixels."""
 
     def __init__(self, device="cpu", **kwargs):
-        raise NotImplementedError("Implement the one-NFE model constructor.")
+        from afm_fastgen.models import Generator
+        super().__init__(Generator())
+        self.to(device)
 
-    def sample(
-        self,
-        shape: tuple[int, ...],
-        *,
-        device: torch.device | str = "cuda",
-        category: torch.Tensor | None = None,
-        **kwargs,
-    ) -> torch.Tensor:
-        raise NotImplementedError("Implement sample() in ModelOneNFE.")
+    @torch.no_grad()
+    def sample(self, shape, *, device="cuda", category=None, **kwargs):
+        if len(shape) != 4 or tuple(shape[1:]) != (3, 64, 64):
+            raise ValueError("Expected N x 3 x 64 x 64")
+        if category is None or category.shape != (shape[0],):
+            raise ValueError("One category ID per image is required")
+        category = category.to(device)
+        if category.dtype != torch.long or ((category < 0) | (category >= 151)).any():
+            raise ValueError("Category IDs must be int64 in [0, 150]")
+        noise = torch.randn(shape, device=device)
+        return self.backbone(noise, category).clamp(-1, 1)
 
 
 class ModelFewNFE(Model):
