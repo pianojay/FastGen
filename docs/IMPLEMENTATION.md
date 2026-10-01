@@ -134,7 +134,8 @@ minimum pooled development FID, with the earliest checkpoint winning ties.
 Each selected student receives one additional sampling seed confirmation, with
 no reselection. These are sampling checks, not training replications. Fixed
 class galleries show two development examples, six generated images and the
-nearest optimization example to the first sample. All classes receive exact
+nearest same-class optimization example to the first sample, using 16×16
+area-pooled pixel distance. All classes receive exact
 duplicate, 16×16 area-pooled pixel diversity, and saturation diagnostics. Pixel
 neighbors and variance do not establish recognition or perceptual diversity;
 gallery inspection is reported separately.
@@ -156,3 +157,9 @@ scientific horizon or allowance. Source, dependency, partition and recipe hashes
 accompany every checkpoint and export. Inference loading has been checked from
 a clean directory with no training files, vendor or sibling imports at exactly
 1, 2, 3 and 4 backbone calls.
+
+`analysis_tools/archive_candidates.py` is a CPU-only evidence utility outside
+the frozen training source set. It retains EMA weights and their tensor/file
+hashes at each predeclared evaluation, extracted from the exact recovery
+checkpoint, and links the resulting metrics. It does not execute a model or
+change training, RNG streams, selection, horizons or checkpoint inputs.
