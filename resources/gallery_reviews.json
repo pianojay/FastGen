@@ -1,4 +1,8 @@
 {
+  "Selected T at 30,000": {
+    "gallery": "runs/campaign/T/eval_030000/gallery_fixed_0.png",
+    "observation": "The fixed 16-class gallery shows varied compositions and recognizable class cues, with clearer outlines and details than earlier checkpoints. Anatomy and some class-specific shapes remain imperfect, notably in Gyarados, Metapod and Scyther. No severe common-output collapse is apparent in this subset. All-class pixel diagnostics flag 0/151 classes at both 20k and 30k and at the selected checkpoint. Pixel diversity does not establish all-class semantic coverage."
+  },
   "T at 10,000": {
     "gallery": "runs/campaign/T/eval_010000/gallery_fixed_0.png",
     "observation": "Six fixed-noise generations in each of 16 fixed classes show varied color and composition with broad class cues, but distorted anatomy and sometimes ambiguous class features. No severe common-output collapse is apparent in this displayed subset; all-class pixel flags are 0/151."

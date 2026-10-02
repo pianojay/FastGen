@@ -1,0 +1,27 @@
+{
+  "changes_from_pre_teacher_recipe": [],
+  "common_recipe": "configs/campaign.json",
+  "config_sha256": "28c371ef0253453e7f651da593865158765529cf9a9d53e4fda0b80c84d5f9ea",
+  "discriminator_head_initialization": "Parameter-free channel mean; no independent head weights",
+  "execution": "FP16 autocast without weight caching; FP32 master/optimizer/EMA, loss scale 65536, microbatch16 accumulation4",
+  "frozen_at": "2026-10-02T13:08:33.061810+09:00",
+  "pair_initialization": "G, fake-score/D and EMA freshly copied from T*; fresh optimizer and RNG state per arm",
+  "pair_matching": "Actual common class/noise/time/step draws recorded per update; separate adversarial RNG streams",
+  "protocol": "docs/FROZEN_PROTOCOL.md",
+  "runs": [
+    "S1",
+    "A1",
+    "S2",
+    "A2",
+    "S3",
+    "A3",
+    "S4",
+    "A4"
+  ],
+  "selected_teacher_probe_updates": 3,
+  "source_sha256": "49ae213d200a0f1253dafea2d382b114534e5e31263fd5943fd4e4aa9ad028f1",
+  "teacher_checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf",
+  "teacher_qualification": "resources/teacher_qualification.json",
+  "teacher_tensor_sha256": "87992c00b868e03c3559ac6fcf5c81c37e69f9f0a00231c646b25484043cad49",
+  "total_disposable_attempts": 67
+}

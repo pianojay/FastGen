@@ -1,0 +1,173 @@
+{
+  "allowance": {
+    "attempts": [
+      {
+        "allowance_at_start": 72000.0,
+        "end": 1790905201.7838843,
+        "identity": {
+          "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+          "pid": 2916757,
+          "start_ticks": "1065521231",
+          "uid": 1000
+        },
+        "log": "runs/campaign/T/worker_00.log",
+        "pid": 2916757,
+        "returncode": 0,
+        "seconds": 33300.828439474106,
+        "start": 1790871900.9554448
+      }
+    ],
+    "consumed_seconds": 33300.828439474106
+  },
+  "evaluations": [
+    {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 0.6533231201564341,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 63.88736748194424,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "samples": 3020,
+      "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+      "seconds": 607.2718338053674,
+      "seed": 1729
+    },
+    {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 0.668970177418912,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 45.384950031443395,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "samples": 3020,
+      "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+      "seconds": 539.4165148697793,
+      "seed": 1729
+    },
+    {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 0.6607681485596754,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 37.25255624696035,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "samples": 3020,
+      "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+      "seconds": 535.9944820441306,
+      "seed": 1729
+    }
+  ],
+  "selected": {
+    "checkpoint": "runs/campaign/T/best.pt",
+    "checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf",
+    "diversity": {
+      "exact_unique_fraction": 1.0,
+      "median_relative_diversity": 0.6607681485596754,
+      "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+      "potential_collapse_classes": []
+    },
+    "fid": 37.25255624696035,
+    "gallery_directory": "runs/campaign/T/eval_030000",
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "run": "T",
+    "samples": 3020,
+    "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+    "seconds": 535.9944820441306,
+    "seed": 1729,
+    "step": 30000,
+    "teacher_sha256": null
+  },
+  "status": {
+    "attempt_seconds": 33295.820600405335,
+    "exposures": {
+      "d_real_images": 0,
+      "fake_images": 0,
+      "fake_updates": 0,
+      "g_images": 0,
+      "g_updates": 30000,
+      "teacher_images": 1920000
+    },
+    "horizon": 30000,
+    "memory": {
+      "allocated_bytes": 1077277696,
+      "device": {
+        "capability": "7.5",
+        "index": "2",
+        "name": "NVIDIA TITAN RTX",
+        "total_MiB": "24576",
+        "used_MiB": "1506",
+        "utilization_pct": "0",
+        "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+      },
+      "host": {
+        "Pss_bytes": 4753547264,
+        "Rss_bytes": 4857753600,
+        "VmHWM_bytes": 4953088000,
+        "VmRSS_bytes": 4857753600
+      },
+      "peak_allocated_bytes": 6016333824,
+      "peak_reserved_bytes": 6392119296,
+      "reserved_bytes": 1296039936
+    },
+    "phase": "complete",
+    "pid": 2916757,
+    "run": "T",
+    "selected": {
+      "checkpoint": "runs/campaign/T/best.pt",
+      "checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf",
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 0.6607681485596754,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 37.25255624696035,
+      "gallery_directory": "runs/campaign/T/eval_030000",
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "run": "T",
+      "samples": 3020,
+      "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+      "seconds": 535.9944820441306,
+      "seed": 1729,
+      "step": 30000,
+      "teacher_sha256": null
+    },
+    "step": 30000,
+    "time": 1790905196.8668385
+  },
+  "teacher_qualification": {
+    "eligible_for_distillation": true,
+    "finite_outputs_verified_by_evaluator": true,
+    "frozen_at": "2026-10-02T13:08:33.061810+09:00",
+    "gallery_review": "The fixed 16-class gallery shows varied compositions and recognizable class cues, with clearer outlines and details than earlier checkpoints. Anatomy and some class-specific shapes remain imperfect, notably in Gyarados, Metapod and Scyther. No severe common-output collapse is apparent in this subset. All-class pixel diagnostics flag 0/151 classes at both 20k and 30k and at the selected checkpoint. Pixel diversity does not establish all-class semantic coverage.",
+    "late_checkpoint_flags": [
+      0,
+      0
+    ],
+    "peak_full_workload_allocated_bytes": 15763146752,
+    "probe_record": "runs/qualification_selected_teacher.json",
+    "selected_fid": 37.25255624696035,
+    "selected_step": 30000,
+    "selected_teacher_full_A4_probe_passed": true,
+    "selection_rule": "minimum development FID; earliest tie; confirmation does not reselect",
+    "source_checks": {
+      "base_Model": "verified",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "protected_files": 7,
+      "snapshots": "verified"
+    },
+    "teacher_checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf",
+    "teacher_tensor_sha256": "87992c00b868e03c3559ac6fcf5c81c37e69f9f0a00231c646b25484043cad49"
+  }
+}
