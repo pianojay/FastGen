@@ -1,0 +1,51 @@
+{
+  "archive": {
+    "ema_tensor_sha256": "cf38473d2a50c4a8ccb9989ddaedaf1e5de95430b0a5b8e1af0c9a2a0ea51c34",
+    "evaluation": {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 0.9403605531165482,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 55.62826473788607,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "samples": 3020,
+      "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+      "seconds": 52.91749874688685,
+      "seed": 1729
+    },
+    "method": "CPU extraction of EMA from complete-update recovery checkpoint",
+    "path": "artifacts/evaluated_weights/A1/002000.pt",
+    "run": "A1",
+    "saved_at": 1790936705.274873,
+    "sha256": "b5f782eda15edf8f63f4889a38917cdd6a79586d4b79f4660180c3199b66f6bb",
+    "step": 2000
+  },
+  "evaluation": {
+    "diversity": {
+      "exact_unique_fraction": 1.0,
+      "median_relative_diversity": 0.9403605531165482,
+      "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+      "potential_collapse_classes": []
+    },
+    "fid": 55.62826473788607,
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "samples": 3020,
+    "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+    "seconds": 52.91749874688685,
+    "seed": 1729
+  },
+  "optimization_seconds": 7759.552576221526,
+  "paired_S1_fid": 77.4692116960357,
+  "paired_delta_fid": -21.84094695814963,
+  "peak_allocated_bytes": 15760787456,
+  "peak_reserved_bytes": 16131293184,
+  "provisional_until_horizon_complete": true,
+  "run": "A1",
+  "sampling_draws_match_S1": true,
+  "stage_wall_seconds_at_evaluation_end": 8020.788336753845,
+  "step": 2000
+}

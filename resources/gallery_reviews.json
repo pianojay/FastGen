@@ -3,6 +3,10 @@
     "gallery": "runs/campaign/A1/eval_001000/gallery_fixed_0.png",
     "observation": "Some class contours are clearer than the matched S1 checkpoint, but quality is mixed. The Gyarados row contains compact blue figures with little expected serpentine structure; Metapod repeatedly uses upright rounded forms rather than clear angular cocoons. Noisy texture and wrong anatomy remain elsewhere. Zero pixel-collapse flags do not rule out restricted structural variation or class confusion. The lower pooled FID is provisional evidence, not a complete quality/diversity conclusion."
   },
+  "A1 at 2,000 (provisional)": {
+    "gallery": "runs/campaign/A1/eval_002000/gallery_fixed_0.png",
+    "observation": "Pooled FID improves further, with recognizable contours in classes such as Eevee and Gengar. Strong semantic/shape errors persist: Gyarados samples remain compact blue figures rather than serpentine creatures, and Metapod uses repeated upright rounded forms. Other classes still have wrong anatomy and texture artifacts. Median pixel diversity is close to matched S1, but that does not resolve structural coverage. Selection remains provisional."
+  },
   "S1 at 1,000 (provisional)": {
     "gallery": "runs/campaign/S1/eval_001000/gallery_fixed_0.png",
     "observation": "The 16 fixed classes retain varied compositions and recognizable broad class cues, but noise, edge artifacts and less coherent anatomy/detail are apparent relative to the selected teacher. Pixel-diversity flags are 0/151; this is not a semantic-coverage score. This checkpoint is provisional until the fixed student horizon finishes."

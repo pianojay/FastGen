@@ -1,6 +1,6 @@
 {
-  "recorded_pipeline_hours": 14.901831725239754,
-  "run_stage_hours_teacher_once": 14.44896194782522,
+  "recorded_pipeline_hours": 16.019139570328925,
+  "run_stage_hours_teacher_once": 15.56626979291439,
   "runs": {
     "A1": {
       "attempts": 1,
@@ -23,62 +23,79 @@
           "seconds": 52.55837574787438,
           "seed": 1729,
           "step": 1000
+        },
+        {
+          "diversity": {
+            "exact_unique_fraction": 1.0,
+            "median_relative_diversity": 0.9403605531165482,
+            "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+            "potential_collapse_classes": []
+          },
+          "fid": 55.62826473788607,
+          "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "run": "A1",
+          "samples": 3020,
+          "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+          "seconds": 52.91749874688685,
+          "seed": 1729,
+          "step": 2000
         }
       ],
       "fake_presentations_by_ladder_position": [
-        65408
+        129728
       ],
       "final_fid": null,
       "g_presentations_by_ladder_position": [
-        65408
+        129728
       ],
-      "generation_and_fid_seconds": 52.55837574787438,
-      "host_HWM": 4524724224,
-      "host_PSS": 4421194752,
-      "host_RSS": 4524724224,
+      "generation_and_fid_seconds": 105.47587449476123,
+      "host_HWM": 5826908160,
+      "host_PSS": 5151085568,
+      "host_RSS": 5255200768,
       "nfe": 1,
-      "optimization_seconds": 3966.20466209203,
+      "optimization_seconds": 7864.108483454213,
       "peak_allocated": 15760787456,
-      "peak_reserved": 15925772288,
-      "pipeline_hours": 10.389523754914602,
+      "peak_reserved": 16131293184,
+      "pipeline_hours": 11.506831600003773,
       "run": "A1",
       "selected": {
         "checkpoint": "runs/campaign/A1/best.pt",
-        "checkpoint_sha256": "47c68e7a78ee7cce7a6e7d9b58281798f3518b790698bf588b00c4f660ae6055",
+        "checkpoint_sha256": "ceca19a14dec9b37aa9484e8c41390eb7ace686327d613cf9b4dbb6b98a46b27",
         "diversity": {
           "exact_unique_fraction": 1.0,
-          "median_relative_diversity": 0.8278203392674347,
+          "median_relative_diversity": 0.9403605531165482,
           "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
           "potential_collapse_classes": []
         },
-        "fid": 61.65960562608484,
-        "gallery_directory": "runs/campaign/A1/eval_001000",
+        "fid": 55.62826473788607,
+        "gallery_directory": "runs/campaign/A1/eval_002000",
         "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
         "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
         "run": "A1",
         "samples": 3020,
         "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
-        "seconds": 52.55837574787438,
+        "seconds": 52.91749874688685,
         "seed": 1729,
-        "step": 1000,
+        "step": 2000,
         "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
       },
-      "stage_hours": 1.139293632838461,
+      "stage_hours": 2.256601477927632,
       "status": {
         "exposures": {
-          "d_real_images": 65408,
-          "fake_images": 65408,
-          "fake_updates": 1022,
-          "g_images": 65408,
-          "g_updates": 1022,
+          "d_real_images": 129728,
+          "fake_images": 129728,
+          "fake_updates": 2027,
+          "g_images": 129728,
+          "g_updates": 2027,
           "teacher_images": 0
         },
         "horizon": 4000,
         "phase": "training",
         "pid": 3167629,
         "run": "A1",
-        "step": 1022,
-        "time": 1790932842.1632578
+        "step": 2027,
+        "time": 1790936868.4014447
       }
     },
     "A2": {
@@ -570,5 +587,5 @@
   },
   "setup_seconds": 1602.9554448127747,
   "subsequent_checks_seconds": 27.37575387954712,
-  "updated_at": 1790932841.2795398
+  "updated_at": 1790936863.5877821
 }

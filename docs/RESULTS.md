@@ -6,7 +6,7 @@ Local development evaluation: 3,020 fixed train-derived reference images and 20 
 |---|---|---:|---:|---:|---:|---:|---:|---:|
 | T | complete / 30000 | 30000 | 32 | 37.2526 | 37.2526 | — | 0 | 9.250 |
 | S1 | complete / 4000 | 4000 | 1 | 66.4564 | 66.4564 | 67.0671 | 0 | 4.059 |
-| A1 | training / 1022 | 1000 | 1 | 61.6596 | — | — | 0 | 1.139 |
+| A1 | training / 2027 | 2000 | 1 | 55.6283 | — | — | 0 | 2.257 |
 | S2 | not started / 0 | — | 2 | — | — | — | — | 0.000 |
 | A2 | not started / 0 | — | 2 | — | — | — | — | 0.000 |
 | S3 | not started / 0 | — | 3 | — | — | — | — | 0.000 |
@@ -18,7 +18,7 @@ Active-stage hours include elapsed work; completed-stage hours use the external 
 
 | NFE | Selection ΔFID (A−S) | Final ΔFID (A−S) | Confirmation ΔFID (A−S) | Δ median relative pixel diversity (A−S) |
 |---:|---:|---:|---:|---:|
-| 1 | -4.7968 | — | — | -0.1005 |
+| 1 | -10.8281 | — | — | +0.0121 |
 | 2 | — | — | — | — |
 | 3 | — | — | — | — |
 | 4 | — | — | — | — |
@@ -26,14 +26,14 @@ Active-stage hours include elapsed work; completed-stage hours use the external 
 | NFE | Matched updates | G and fake presentations each | SiD FID | SiDA FID | ΔFID (A−S) |
 |---:|---:|---:|---:|---:|---:|
 | 1 | 1000 | 64,000 | 85.6491 | 61.6596 | -23.9895 |
-| 1 | 2000 | 128,000 | 77.4692 | — | — |
+| 1 | 2000 | 128,000 | 77.4692 | 55.6283 | -21.8409 |
 | 1 | 4000 | 256,000 | 66.4564 | — | — |
 
 | Run | Teacher presentations | G / fake / real D presentations | G presentations by ladder position |
 |---|---:|---:|---|
 | T | 1,920,000 | 0 / 0 / 0 | — |
 | S1 | 0 | 256,000 / 256,000 / 0 | 256,000 |
-| A1 | 0 | 65,408 / 65,408 / 65,408 | 65,408 |
+| A1 | 0 | 129,728 / 129,728 / 129,728 | 129,728 |
 | S2 | — | — | — |
 | A2 | — | — | — |
 | S3 | — | — | — |
@@ -47,7 +47,7 @@ Same-NFE initial-baseline FID: **unavailable**. The teacher’s 32-call evaluati
 |---|---:|---:|---:|---:|---:|---:|
 | T | 8.399 | 0.467 | 6.016 / 6.392 | 6.470 | 4.881 / 4.776 / 4.953 | 1 |
 | S1 | 3.917 | 0.058 | 15.765 / 16.108 | 16.186 | 4.859 / 4.755 / 5.834 | 1 |
-| A1 | 1.102 | 0.015 | 15.761 / 15.926 | 16.209 | 4.525 / 4.421 / 4.525 | 1 |
+| A1 | 2.184 | 0.029 | 15.761 / 16.131 | 16.209 | 5.255 / 5.151 / 5.827 | 1 |
 | S2 | — | — | — | — | — | 0 |
 | A2 | — | — | — | — | — | 0 |
 | S3 | — | — | — | — | — | 0 |
@@ -55,13 +55,14 @@ Same-NFE initial-baseline FID: **unavailable**. The teacher’s 32-call evaluati
 | S4 | — | — | — | — | — | 0 |
 | A4 | — | — | — | — | — | 0 |
 
-Recorded pipeline cost: **14.902 hours** = 14.449 run-stage hours (teacher once) + 0.445 pre-teacher setup wall hours + 0.008 subsequent qualification/export/analysis hours. Setup includes overlapping installation, preprocessing and disposable probes; those components are not added twice. Pre-environment read-only review was not instrumented. The finite component allowances sum to 152 hours.
+Recorded pipeline cost: **16.019 hours** = 15.566 run-stage hours (teacher once) + 0.445 pre-teacher setup wall hours + 0.008 subsequent qualification/export/analysis hours. Setup includes overlapping installation, preprocessing and disposable probes; those components are not added twice. Pre-environment read-only review was not instrumented. The finite component allowances sum to 152 hours.
 
 Every teacher, student and full fake-score/discriminator framework has **61,823,875 learned parameters**; the shared encoder’s pooled discriminator output adds zero parameters. EMA storage and optimizer states are included in measured simultaneous memory. The strict allocated-memory limit is 20,000,000,000 bytes. Device usage is sampled; allocated/reserved and host HWM are high-water measurements.
 
 Pixel flags use the predeclared within-class duplication/diversity rule. They do not certify semantic recognition. Nearest optimization examples are same-class neighbors in 16×16 pixel space, not a perceptual test.
 
 - **A1 at 1,000 (provisional):** Some class contours are clearer than the matched S1 checkpoint, but quality is mixed. The Gyarados row contains compact blue figures with little expected serpentine structure; Metapod repeatedly uses upright rounded forms rather than clear angular cocoons. Noisy texture and wrong anatomy remain elsewhere. Zero pixel-collapse flags do not rule out restricted structural variation or class confusion. The lower pooled FID is provisional evidence, not a complete quality/diversity conclusion. [Gallery](../runs/campaign/A1/eval_001000/gallery_fixed_0.png)
+- **A1 at 2,000 (provisional):** Pooled FID improves further, with recognizable contours in classes such as Eevee and Gengar. Strong semantic/shape errors persist: Gyarados samples remain compact blue figures rather than serpentine creatures, and Metapod uses repeated upright rounded forms. Other classes still have wrong anatomy and texture artifacts. Median pixel diversity is close to matched S1, but that does not resolve structural coverage. Selection remains provisional. [Gallery](../runs/campaign/A1/eval_002000/gallery_fixed_0.png)
 - **S1 at 1,000 (provisional):** The 16 fixed classes retain varied compositions and recognizable broad class cues, but noise, edge artifacts and less coherent anatomy/detail are apparent relative to the selected teacher. Pixel-diversity flags are 0/151; this is not a semantic-coverage score. This checkpoint is provisional until the fixed student horizon finishes. [Gallery](../runs/campaign/S1/eval_001000/gallery_fixed_0.png)
 - **S1 at 2,000 (provisional):** Fixed-noise compositions remain varied, with recognizable class cues in many displayed samples. Noisy textures, blurred or fragmented anatomy and inconsistent outlines remain. Higher pixel diversity does not establish improved semantic diversity. All-class pixel-collapse flags remain 0/151; selection is still provisional. [Gallery](../runs/campaign/S1/eval_002000/gallery_fixed_0.png)
 - **S1 confirmation seed:** Different noise produces visibly different compositions in the 16 fixed classes. Gengar, Eevee and Nidorina retain class cues; Gyarados and Metapod still show substantial structural errors, and image texture remains noisy. Confirmation FID is 67.0671 with 0/151 pixel-collapse flags. [Gallery](../runs/campaign/S1/confirmation/gallery_fixed_0.png)
