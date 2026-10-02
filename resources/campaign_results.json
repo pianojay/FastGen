@@ -1,6 +1,6 @@
 {
-  "recorded_pipeline_hours": 22.763163553807473,
-  "run_stage_hours_teacher_once": 22.30983973297808,
+  "recorded_pipeline_hours": 23.985113582015043,
+  "run_stage_hours_teacher_once": 23.53178976118565,
   "runs": {
     "A1": {
       "attempts": 1,
@@ -161,44 +161,82 @@
     "A2": {
       "attempts": 1,
       "confirmation_fid": null,
-      "device_MiB": 14946,
-      "evaluations": [],
+      "device_MiB": 15460,
+      "evaluations": [
+        {
+          "diversity": {
+            "exact_unique_fraction": 1.0,
+            "median_relative_diversity": 1.0494433400646548,
+            "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+            "potential_collapse_classes": []
+          },
+          "fid": 56.52360804761224,
+          "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "run": "A2",
+          "samples": 3020,
+          "sampling_draws_sha256": "467607cd777d1bd727cf3ff00146a5e0ea753467a475f525f12ae05f161b9a4e",
+          "seconds": 69.04782951623201,
+          "seed": 1729,
+          "step": 1000
+        }
+      ],
       "fake_presentations_by_ladder_position": [
-        768,
-        512
+        32704,
+        33216
       ],
       "final_fid": null,
       "g_presentations_by_ladder_position": [
-        832,
-        448
+        32256,
+        33664
       ],
-      "generation_and_fid_seconds": 0,
-      "host_HWM": 3059855360,
-      "host_PSS": 2945759232,
-      "host_RSS": 3049353216,
+      "generation_and_fid_seconds": 69.04782951623201,
+      "host_HWM": 4208205824,
+      "host_PSS": 4084606976,
+      "host_RSS": 4188200960,
       "nfe": 2,
-      "optimization_seconds": 84.470856487751,
-      "peak_allocated": 15255578112,
-      "peak_reserved": 15388901376,
-      "pipeline_hours": 9.275447477565873,
+      "optimization_seconds": 4334.274945149198,
+      "peak_allocated": 15761573888,
+      "peak_reserved": 15927869440,
+      "pipeline_hours": 10.497397505773439,
       "run": "A2",
-      "selected": {},
-      "stage_hours": 0.025217355489730836,
+      "selected": {
+        "checkpoint": "runs/campaign/A2/best.pt",
+        "checkpoint_sha256": "089aef7b0e302d7b9fa15dac65f08e5a90f54c63b21e57fa38125524a06d4261",
+        "diversity": {
+          "exact_unique_fraction": 1.0,
+          "median_relative_diversity": 1.0494433400646548,
+          "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+          "potential_collapse_classes": []
+        },
+        "fid": 56.52360804761224,
+        "gallery_directory": "runs/campaign/A2/eval_001000",
+        "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "run": "A2",
+        "samples": 3020,
+        "sampling_draws_sha256": "467607cd777d1bd727cf3ff00146a5e0ea753467a475f525f12ae05f161b9a4e",
+        "seconds": 69.04782951623201,
+        "seed": 1729,
+        "step": 1000,
+        "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+      },
+      "stage_hours": 1.2471673836972978,
       "status": {
         "exposures": {
-          "d_real_images": 1280,
-          "fake_images": 1280,
-          "fake_updates": 20,
-          "g_images": 1280,
-          "g_updates": 20,
+          "d_real_images": 65920,
+          "fake_images": 65920,
+          "fake_updates": 1030,
+          "g_images": 65920,
+          "g_updates": 1030,
           "teacher_images": 0
         },
         "horizon": 4000,
         "phase": "training",
         "pid": 3343894,
         "run": "A2",
-        "step": 20,
-        "time": 1790961146.4837167
+        "step": 1030,
+        "time": 1790965543.9025476
       }
     },
     "A3": {
@@ -792,5 +830,5 @@
   },
   "setup_seconds": 1602.9554448127747,
   "subsequent_checks_seconds": 29.010310173034668,
-  "updated_at": 1790961140.46249
+  "updated_at": 1790965539.4825916
 }
