@@ -1,0 +1,52 @@
+{
+  "as_of_kst": "2026-10-02T13:40:30.661382+09:00",
+  "source_commit": "37483845ffcce0332bbd9bd74425de4c1d69cc29",
+  "current": {
+    "exposures": {
+      "d_real_images": 0,
+      "fake_images": 33920,
+      "fake_updates": 530,
+      "g_images": 33920,
+      "g_updates": 530,
+      "teacher_images": 0
+    },
+    "horizon": 4000,
+    "phase": "training",
+    "pid": 3090844,
+    "run": "S1",
+    "step": 530,
+    "time": 1790916029.8089116
+  },
+  "teacher": {
+    "step": 30000,
+    "presentations": 1920000,
+    "fids": [
+      63.88736748194424,
+      45.384950031443395,
+      37.25255624696035
+    ],
+    "training_seconds": 30236.14483133331,
+    "wall_seconds": 33300.828439474106,
+    "selected_checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+  },
+  "S1_recent": {
+    "n": 200,
+    "seconds_mean": 3.4897752380743623,
+    "seconds_median": 3.475352456793189,
+    "g_grad_norm_median": 0.0022551179863512516,
+    "fake_grad_norm_median": 0.1561693251132965,
+    "loss_scale_values": [
+      65536.0
+    ]
+  },
+  "A4_probe_seconds": 5.912671569734812,
+  "files_sha256": {
+    "configs/campaign.json": "9c7806460de032ebea4e1adc18638d1380d6734952d2e1402ca75e99f07ca207",
+    "resources/frozen_students.json": "144fe06d190a733d783bd3b85cec79791049761013556fb2875d81c6e751a1be",
+    "resources/campaign_source.json": "63ba34185eefc8b4c79df557f6f33df48f6af265aebdcdf65a86283201996dba",
+    "docs/FROZEN_PROTOCOL.md": "b5922a780139a0856068b23be88eb6298ddc26f8f6ce9514aadfe9d3617fe190",
+    "flow_sid/flow.py": "ef2c5139d07827f5612d5d4c3be05a6109820eb635357984e15d2ea6a3db027a",
+    "flow_sid/engine.py": "d265be60a6a6ade3c3b4c7e46dfc3dae86d14fe7583e9650ef81ffbd55bd84db",
+    "scripts/campaign.py": "984ee0a3d36bec16695db084fe6d1afb3606757364ebe3174f8d5b9bf0c894f2"
+  }
+}
