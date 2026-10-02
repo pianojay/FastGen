@@ -3,6 +3,10 @@
     "gallery": "runs/campaign/S1/eval_001000/gallery_fixed_0.png",
     "observation": "The 16 fixed classes retain varied compositions and recognizable broad class cues, but noise, edge artifacts and less coherent anatomy/detail are apparent relative to the selected teacher. Pixel-diversity flags are 0/151; this is not a semantic-coverage score. This checkpoint is provisional until the fixed student horizon finishes."
   },
+  "S1 at 2,000 (provisional)": {
+    "gallery": "runs/campaign/S1/eval_002000/gallery_fixed_0.png",
+    "observation": "Fixed-noise compositions remain varied, with recognizable class cues in many displayed samples. Noisy textures, blurred or fragmented anatomy and inconsistent outlines remain. Higher pixel diversity does not establish improved semantic diversity. All-class pixel-collapse flags remain 0/151; selection is still provisional."
+  },
   "Selected T at 30,000": {
     "gallery": "runs/campaign/T/eval_030000/gallery_fixed_0.png",
     "observation": "The fixed 16-class gallery shows varied compositions and recognizable class cues, with clearer outlines and details than earlier checkpoints. Anatomy and some class-specific shapes remain imperfect, notably in Gyarados, Metapod and Scyther. No severe common-output collapse is apparent in this subset. All-class pixel diagnostics flag 0/151 classes at both 20k and 30k and at the selected checkpoint. Pixel diversity does not establish all-class semantic coverage."
