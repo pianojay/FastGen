@@ -1,0 +1,17 @@
+{
+  "broad_review": "Broad unblinded review covered fixed sample indices 00/01 for every one of 151 classes, plus six samples in the preselected Eevee/Gyarados/Metapod panels and the confirmation fixed-class gallery. Many classes show distinct compositions and recognizable cues; A1 often has clearer outlines and less noisy surfaces. The improvement is not uniform: both arms have serious shape errors, and A1 sometimes simplifies or changes class structure. Examples include Charizard, Gyarados, Lapras, Metapod and Weedle. No all-class semantic-accuracy score was measured. Pixel diversity is similar between the arms; zero pixel flags do not certify semantic coverage or rule out near-memorization.",
+  "confirmation_fid_delta": -14.71350970369258,
+  "fid_deltas_at_1k_2k_4k": [
+    -23.98945353467514,
+    -21.84094695814963,
+    -13.986865207217932
+  ],
+  "interpretation": "Lower pooled FID persists across the three matched checkpoints and the confirmation seed, with similar pixel-diversity summaries. Broad visual review finds useful class cues but mixed structural fidelity. No convergence, uniform semantic improvement or teacher-protects-GAN-collapse claim.",
+  "pair_stage_seconds": {
+    "A1": 16094.691118240356,
+    "S1": 14613.977494478226
+  },
+  "panel_manifest": "artifacts/report/comparisons/manifest_through_nfe1.json",
+  "source_of_effect": "Full adversarial package under fixed teacher and finite matched exposure; one training realization per arm",
+  "teacher_cost_charged_once_seconds": 33300.828439474106
+}

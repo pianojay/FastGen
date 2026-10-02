@@ -1,10 +1,10 @@
 {
-  "recorded_pipeline_hours": 16.019139570328925,
-  "run_stage_hours_teacher_once": 15.56626979291439,
+  "recorded_pipeline_hours": 18.314071702361108,
+  "run_stage_hours_teacher_once": 17.860747881531715,
   "runs": {
     "A1": {
       "attempts": 1,
-      "confirmation_fid": null,
+      "confirmation_fid": 52.35359119631556,
       "device_MiB": 15458,
       "evaluations": [
         {
@@ -40,62 +40,122 @@
           "seconds": 52.91749874688685,
           "seed": 1729,
           "step": 2000
+        },
+        {
+          "diversity": {
+            "exact_unique_fraction": 1.0,
+            "median_relative_diversity": 0.945089508315576,
+            "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+            "potential_collapse_classes": []
+          },
+          "fid": 52.46950000902615,
+          "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "run": "A1",
+          "samples": 3020,
+          "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+          "seconds": 51.43312500603497,
+          "seed": 1729,
+          "step": 4000
         }
       ],
       "fake_presentations_by_ladder_position": [
-        129728
+        256000
       ],
-      "final_fid": null,
+      "final_fid": 52.46950000902615,
       "g_presentations_by_ladder_position": [
-        129728
+        256000
       ],
-      "generation_and_fid_seconds": 105.47587449476123,
-      "host_HWM": 5826908160,
-      "host_PSS": 5151085568,
-      "host_RSS": 5255200768,
+      "generation_and_fid_seconds": 209.1966552156955,
+      "host_HWM": 6881595392,
+      "host_PSS": 5803774976,
+      "host_RSS": 5907890176,
       "nfe": 1,
-      "optimization_seconds": 7864.108483454213,
+      "optimization_seconds": 15543.5206776727,
       "peak_allocated": 15760787456,
       "peak_reserved": 16131293184,
-      "pipeline_hours": 11.506831600003773,
+      "pipeline_hours": 13.720977654920684,
       "run": "A1",
       "selected": {
         "checkpoint": "runs/campaign/A1/best.pt",
-        "checkpoint_sha256": "ceca19a14dec9b37aa9484e8c41390eb7ace686327d613cf9b4dbb6b98a46b27",
+        "checkpoint_sha256": "044230c63953bd302d9f2569284ca7fe1ebcc8198ecf530358ec43747c5e9337",
         "diversity": {
           "exact_unique_fraction": 1.0,
-          "median_relative_diversity": 0.9403605531165482,
+          "median_relative_diversity": 0.945089508315576,
           "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
           "potential_collapse_classes": []
         },
-        "fid": 55.62826473788607,
-        "gallery_directory": "runs/campaign/A1/eval_002000",
+        "fid": 52.46950000902615,
+        "gallery_directory": "runs/campaign/A1/eval_004000",
         "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
         "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
         "run": "A1",
         "samples": 3020,
         "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
-        "seconds": 52.91749874688685,
+        "seconds": 51.43312500603497,
         "seed": 1729,
-        "step": 2000,
+        "step": 4000,
         "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
       },
-      "stage_hours": 2.256601477927632,
+      "stage_hours": 4.470747532844544,
       "status": {
+        "attempt_seconds": 16086.064930927008,
         "exposures": {
-          "d_real_images": 129728,
-          "fake_images": 129728,
-          "fake_updates": 2027,
-          "g_images": 129728,
-          "g_updates": 2027,
+          "d_real_images": 256000,
+          "fake_images": 256000,
+          "fake_updates": 4000,
+          "g_images": 256000,
+          "g_updates": 4000,
           "teacher_images": 0
         },
         "horizon": 4000,
-        "phase": "training",
+        "memory": {
+          "allocated_bytes": 2345694208,
+          "device": {
+            "capability": "7.5",
+            "index": "2",
+            "name": "NVIDIA TITAN RTX",
+            "total_MiB": "24576",
+            "used_MiB": "3496",
+            "utilization_pct": "0",
+            "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+          },
+          "host": {
+            "Pss_bytes": 5803774976,
+            "Rss_bytes": 5907890176,
+            "VmHWM_bytes": 6881595392,
+            "VmRSS_bytes": 5907886080
+          },
+          "peak_allocated_bytes": 15760787456,
+          "peak_reserved_bytes": 16131293184,
+          "reserved_bytes": 3380609024
+        },
+        "phase": "complete",
         "pid": 3167629,
         "run": "A1",
-        "step": 2027,
-        "time": 1790936868.4014447
+        "selected": {
+          "checkpoint": "runs/campaign/A1/best.pt",
+          "checkpoint_sha256": "044230c63953bd302d9f2569284ca7fe1ebcc8198ecf530358ec43747c5e9337",
+          "diversity": {
+            "exact_unique_fraction": 1.0,
+            "median_relative_diversity": 0.945089508315576,
+            "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+            "potential_collapse_classes": []
+          },
+          "fid": 52.46950000902615,
+          "gallery_directory": "runs/campaign/A1/eval_004000",
+          "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "run": "A1",
+          "samples": 3020,
+          "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+          "seconds": 51.43312500603497,
+          "seed": 1729,
+          "step": 4000,
+          "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+        },
+        "step": 4000,
+        "time": 1790944825.9735317
       }
     },
     "A2": {
@@ -345,32 +405,47 @@
       }
     },
     "S2": {
-      "attempts": 0,
+      "attempts": 1,
       "confirmation_fid": null,
-      "device_MiB": 0,
+      "device_MiB": 15438,
       "evaluations": [],
       "fake_presentations_by_ladder_position": [
-        0,
-        0
+        2432,
+        2240
       ],
       "final_fid": null,
       "g_presentations_by_ladder_position": [
-        0,
-        0
+        2496,
+        2176
       ],
       "generation_and_fid_seconds": 0,
-      "host_HWM": 0,
-      "host_PSS": 0,
-      "host_RSS": 0,
+      "host_HWM": 2968100864,
+      "host_PSS": 2855533568,
+      "host_RSS": 2959126528,
       "nfe": 2,
-      "optimization_seconds": 0,
-      "peak_allocated": 0,
-      "peak_reserved": 0,
-      "pipeline_hours": 9.250230122076141,
+      "optimization_seconds": 280.31139256991446,
+      "peak_allocated": 15761764352,
+      "peak_reserved": 15904800768,
+      "pipeline_hours": 9.330562155776555,
       "run": "S2",
       "selected": {},
-      "stage_hours": 0.0,
-      "status": {}
+      "stage_hours": 0.08033203370041317,
+      "status": {
+        "exposures": {
+          "d_real_images": 0,
+          "fake_images": 4672,
+          "fake_updates": 73,
+          "g_images": 4672,
+          "g_updates": 73,
+          "teacher_images": 0
+        },
+        "horizon": 4000,
+        "phase": "training",
+        "pid": 3259186,
+        "run": "S2",
+        "step": 73,
+        "time": 1790945129.344203
+      }
     },
     "S3": {
       "attempts": 0,
@@ -586,6 +661,6 @@
     }
   },
   "setup_seconds": 1602.9554448127747,
-  "subsequent_checks_seconds": 27.37575387954712,
-  "updated_at": 1790936863.5877821
+  "subsequent_checks_seconds": 29.010310173034668,
+  "updated_at": 1790945123.7201846
 }

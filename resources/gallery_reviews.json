@@ -7,6 +7,10 @@
     "gallery": "runs/campaign/A1/eval_002000/gallery_fixed_0.png",
     "observation": "Pooled FID improves further, with recognizable contours in classes such as Eevee and Gengar. Strong semantic/shape errors persist: Gyarados samples remain compact blue figures rather than serpentine creatures, and Metapod uses repeated upright rounded forms. Other classes still have wrong anatomy and texture artifacts. Median pixel diversity is close to matched S1, but that does not resolve structural coverage. Selection remains provisional."
   },
+  "Completed 1-NFE pair, broad review": {
+    "gallery": "artifacts/report/comparisons/broad_pair_1_0.png",
+    "observation": "Broad unblinded review covered fixed sample indices 00/01 for every one of 151 classes, plus six samples in the preselected Eevee/Gyarados/Metapod panels and the confirmation fixed-class gallery. Many classes show distinct compositions and recognizable cues; A1 often has clearer outlines and less noisy surfaces. The improvement is not uniform: both arms have serious shape errors, and A1 sometimes simplifies or changes class structure. Examples include Charizard, Gyarados, Lapras, Metapod and Weedle. No all-class semantic-accuracy score was measured. Pixel diversity is similar between the arms; zero pixel flags do not certify semantic coverage or rule out near-memorization."
+  },
   "S1 at 1,000 (provisional)": {
     "gallery": "runs/campaign/S1/eval_001000/gallery_fixed_0.png",
     "observation": "The 16 fixed classes retain varied compositions and recognizable broad class cues, but noise, edge artifacts and less coherent anatomy/detail are apparent relative to the selected teacher. Pixel-diversity flags are 0/151; this is not a semantic-coverage score. This checkpoint is provisional until the fixed student horizon finishes."
@@ -18,6 +22,10 @@
   "S1 confirmation seed": {
     "gallery": "runs/campaign/S1/confirmation/gallery_fixed_0.png",
     "observation": "Different noise produces visibly different compositions in the 16 fixed classes. Gengar, Eevee and Nidorina retain class cues; Gyarados and Metapod still show substantial structural errors, and image texture remains noisy. Confirmation FID is 67.0671 with 0/151 pixel-collapse flags."
+  },
+  "Selected A1 at 4,000": {
+    "gallery": "runs/campaign/A1/eval_004000/gallery_fixed_0.png",
+    "observation": "Final/selected FID is 52.4695 and confirmation FID is 52.3536, compared with S1 66.4564 and 67.0671. The FID advantage persists at all three matched checkpoints but narrows from about 24 points at 1k to 14 points at 4k. Pixel-collapse flags are 0/151 in both final evaluation draws. Visual interpretation remains mixed; see the all-class pair review."
   },
   "Selected S1 at 4,000": {
     "gallery": "runs/campaign/S1/eval_004000/gallery_fixed_0.png",
