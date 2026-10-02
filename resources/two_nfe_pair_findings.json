@@ -1,0 +1,17 @@
+{
+  "broad_review": "Broad unblinded review covered fixed sample indices 00/01 for all 151 classes, six samples in each preselected Eevee/Gyarados/Metapod panel, and the A2 confirmation gallery. Both arms retain recognizable cues and varied compositions in many samples, but anatomy errors remain widespread. A2 often shifts toward flatter or simplified forms; some individual examples look cleaner, while Gyarados, Metapod, Lapras and Machamp show clear structural failures. S2 also fails complex shapes. The poorer A2 FID persists at every matched checkpoint and the confirmation seed, despite substantial late recovery. Similar pixel-diversity summaries and zero flags do not establish semantic coverage or rule out near-memorization.",
+  "confirmation_fid_delta": 9.115443779299198,
+  "fid_deltas_at_1k_2k_4k": [
+    16.47655331903826,
+    23.32006331950936,
+    8.274424142635098
+  ],
+  "full_pair_audit": "resources/audit_through_nfe2.json",
+  "interpretation": "The one-call adversarial FID benefit does not generalize to this two-call realization. A2 improves strongly from 2k to 4k but remains worse than S2; this is a mixed feasibility finding, not a monotonic NFE effect or convergence claim.",
+  "pair_stage_seconds": {
+    "A2": 17586.38890337944,
+    "S2": 16215.143506765366
+  },
+  "panel_manifest": "artifacts/report/comparisons/manifest_through_nfe2.json",
+  "source_of_effect": "Full adversarial package under a fixed teacher; one training realization per arm; cross-NFE seeds and per-position exposure differ."
+}

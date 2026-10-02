@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import torch
 from flow_sid.common import ROOT, StageCost, atomic_json, digest, object_hash
 
 
@@ -22,6 +23,7 @@ def copy_sources(destination):
 
 
 def main():
+    torch.set_num_threads(2)
     parser = argparse.ArgumentParser()
     parser.add_argument('--through-nfe', type=int, choices=[2, 4], required=True)
     args = parser.parse_args()
@@ -38,13 +40,26 @@ def main():
                 status = json.loads((folder / 'status.json').read_text())
                 assert status['phase'] == 'complete'
                 export = json.loads((folder / 'export.json').read_text())
+                selected = json.loads((folder / 'selected.json').read_text())
                 checkpoint = ROOT / export['path']
                 assert digest(checkpoint) == export['sha256']
                 previous = prior.get('runs', {}).get(run)
                 if (previous and prior.get('inference_sources_sha256') == source_hash
-                        and previous['checkpoint_sha256'] == export['sha256']):
+                        and previous['checkpoint_sha256'] == export['sha256']
+                        and previous.get('selected_checkpoint_sha256') == selected['checkpoint_sha256']
+                        and previous.get('selected_weights_bitwise_equal')):
                     output['runs'][run] = {**previous, 'verification_reused_from': str(prior_path.relative_to(ROOT))}
                     continue
+                assert digest(ROOT / selected['checkpoint']) == selected['checkpoint_sha256']
+                weights = torch.load(ROOT / selected['checkpoint'], map_location='cpu', weights_only=False)['weights']
+                payload = torch.load(checkpoint, map_location='cpu', weights_only=False)
+                assert set(payload) == {'state_dict'}
+                state = payload['state_dict']
+                assert set(state) == {'backbone.' + k for k in weights} | {'sampler_nfe', 'sampler_ladder'}
+                for key, value in weights.items():
+                    exported = state['backbone.' + key]
+                    assert exported.dtype == value.dtype and torch.equal(exported, value), (run, key)
+                del weights, payload, state, value, exported
                 with tempfile.TemporaryDirectory(prefix=run + '_isolated_', dir=ROOT / 'artifacts') as temp:
                     temp = Path(temp)
                     copy_sources(temp)
@@ -58,6 +73,8 @@ def main():
                     assert result.returncode == 0, (run, result.stderr)
                     record = json.loads(result.stdout)
                     record['checkpoint_sha256'] = export['sha256']
+                    record['selected_checkpoint_sha256'] = selected['checkpoint_sha256']
+                    record['selected_weights_bitwise_equal'] = True
                     output['runs'][run] = record
                     print(json.dumps({'run': run, **record}), flush=True)
         destination = ROOT / 'artifacts/exports/inference'

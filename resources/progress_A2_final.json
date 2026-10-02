@@ -1,0 +1,184 @@
+{
+  "evaluations": [
+    {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 1.0494433400646548,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 56.52360804761224,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "run": "A2",
+      "samples": 3020,
+      "sampling_draws_sha256": "467607cd777d1bd727cf3ff00146a5e0ea753467a475f525f12ae05f161b9a4e",
+      "seconds": 69.04782951623201,
+      "seed": 1729,
+      "step": 1000
+    },
+    {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 1.0495012230774305,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 60.96262616118128,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "run": "A2",
+      "samples": 3020,
+      "sampling_draws_sha256": "467607cd777d1bd727cf3ff00146a5e0ea753467a475f525f12ae05f161b9a4e",
+      "seconds": 68.31359808146954,
+      "seed": 1729,
+      "step": 2000
+    },
+    {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 1.024372594194942,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 44.904790498402974,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "run": "A2",
+      "samples": 3020,
+      "sampling_draws_sha256": "467607cd777d1bd727cf3ff00146a5e0ea753467a475f525f12ae05f161b9a4e",
+      "seconds": 67.0040876492858,
+      "seed": 1729,
+      "step": 4000
+    }
+  ],
+  "export": {
+    "confirmation": {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 1.0275059797455237,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 45.66511920577608,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "samples": 3020,
+      "sampling_draws_sha256": "dc05eeb08a24dc97683d5da64efc5b3499f145fbb8bcd55267f87604ae87a79c",
+      "seconds": 69.31985118053854,
+      "seed": 271828
+    },
+    "ladder": [
+      1.0,
+      0.5
+    ],
+    "nfe": 2,
+    "parameters": 61823875,
+    "path": "artifacts/exports/A2.ckpt",
+    "selected_step": 4000,
+    "sha256": "73a36512a8330335d9a61fe6503a8e035b4ce957f97159bf6807d1b1e9d1cf78",
+    "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+  },
+  "ledger": {
+    "attempts": [
+      {
+        "allowance_at_start": 57600.0,
+        "end": 1790978636.0689137,
+        "identity": {
+          "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+          "pid": 3343894,
+          "start_ticks": "1074436103",
+          "uid": 1000
+        },
+        "log": "runs/campaign/A2/worker_00.log",
+        "pid": 3343894,
+        "returncode": 0,
+        "seconds": 17586.38890337944,
+        "start": 1790961049.6800103
+      }
+    ],
+    "consumed_seconds": 17586.38890337944
+  },
+  "run": "A2",
+  "same_nfe_initial_baseline": "unavailable",
+  "selected": {
+    "checkpoint": "runs/campaign/A2/best.pt",
+    "checkpoint_sha256": "124069a052ff2bdaffe083e6c9004adfe5dd52e17d5f533c4bb78bbba43d111c",
+    "diversity": {
+      "exact_unique_fraction": 1.0,
+      "median_relative_diversity": 1.024372594194942,
+      "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+      "potential_collapse_classes": []
+    },
+    "fid": 44.904790498402974,
+    "gallery_directory": "runs/campaign/A2/eval_004000",
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "run": "A2",
+    "samples": 3020,
+    "sampling_draws_sha256": "467607cd777d1bd727cf3ff00146a5e0ea753467a475f525f12ae05f161b9a4e",
+    "seconds": 67.0040876492858,
+    "seed": 1729,
+    "step": 4000,
+    "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+  },
+  "status": {
+    "attempt_seconds": 17579.542006300762,
+    "exposures": {
+      "d_real_images": 256000,
+      "fake_images": 256000,
+      "fake_updates": 4000,
+      "g_images": 256000,
+      "g_updates": 4000,
+      "teacher_images": 0
+    },
+    "horizon": 4000,
+    "memory": {
+      "allocated_bytes": 2345694208,
+      "device": {
+        "capability": "7.5",
+        "index": "2",
+        "name": "NVIDIA TITAN RTX",
+        "total_MiB": "24576",
+        "used_MiB": "3498",
+        "utilization_pct": "0",
+        "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+      },
+      "host": {
+        "Pss_bytes": 5350820864,
+        "Rss_bytes": 5454991360,
+        "VmHWM_bytes": 6427680768,
+        "VmRSS_bytes": 5454987264
+      },
+      "peak_allocated_bytes": 15761573888,
+      "peak_reserved_bytes": 16166944768,
+      "reserved_bytes": 3382706176
+    },
+    "phase": "complete",
+    "pid": 3343894,
+    "run": "A2",
+    "selected": {
+      "checkpoint": "runs/campaign/A2/best.pt",
+      "checkpoint_sha256": "124069a052ff2bdaffe083e6c9004adfe5dd52e17d5f533c4bb78bbba43d111c",
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 1.024372594194942,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 44.904790498402974,
+      "gallery_directory": "runs/campaign/A2/eval_004000",
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "run": "A2",
+      "samples": 3020,
+      "sampling_draws_sha256": "467607cd777d1bd727cf3ff00146a5e0ea753467a475f525f12ae05f161b9a4e",
+      "seconds": 67.0040876492858,
+      "seed": 1729,
+      "step": 4000,
+      "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+    },
+    "step": 4000,
+    "time": 1790978629.3096824
+  }
+}

@@ -47,8 +47,8 @@ def main():
             classes = list(range(start, min(start+26, 151)))
             canvas = Image.new('RGB', (692, 40 + 86 * math.ceil(len(classes)/2)), 'white')
             draw = ImageDraw.Draw(canvas)
-            draw.text((4, 4), f'{n} NFE, selected checkpoints: reference | {s} samples 00,01 | {a} samples 00,01', fill='black')
-            draw.text((4, 19), 'All classes in ID order; original 64x64 pixels. S/A noise matches within this pair.', fill='black')
+            draw.text((4, 4), f'{n} NFE: ref | {s}@{selected[s]["step"]} (00,01) | {a}@{selected[a]["step"]} (00,01)', fill='black')
+            draw.text((4, 19), 'Selected checkpoints; all classes in ID order. Original pixels; matched within-pair noise.', fill='black')
             for index, c in enumerate(classes):
                 col, row = index % 2, index // 2
                 x, y = 4 + col * 346, 40 + row * 86

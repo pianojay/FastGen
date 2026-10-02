@@ -1,0 +1,46 @@
+{
+  "inference_sources_sha256": "70656949e7ba4e89dec99f173e562bf06c365c36c1fa8f8a0f23f0f15f9b1f1e",
+  "purpose": "CPU loading and exact call-count test of selected actual exports",
+  "runs": {
+    "A1": {
+      "checkpoint_sha256": "f7a7c0e54198919c8e4f30323e128769cddf9bb499574a88ab9870796f27bd06",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 1,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "044230c63953bd302d9f2569284ca7fe1ebcc8198ecf530358ec43747c5e9337",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/A1_isolated_z1q2uwqd"
+    },
+    "A2": {
+      "checkpoint_sha256": "73a36512a8330335d9a61fe6503a8e035b4ce957f97159bf6807d1b1e9d1cf78",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 2,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "124069a052ff2bdaffe083e6c9004adfe5dd52e17d5f533c4bb78bbba43d111c",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/A2_isolated_ro7w50_c"
+    },
+    "S1": {
+      "checkpoint_sha256": "771623ffe0bec96ca2327a1e311aabb05438b50e921ac6a5255ddfe485270f73",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 1,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "7e2c8d8a9b50b2b92edf37a3a62958f28d35814bf1859ec60ae2aa5225558444",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/S1_isolated_ol2mmsxt"
+    },
+    "S2": {
+      "checkpoint_sha256": "3d536e81636cc1c773b768ae72d3e8e2d742131603d3d75aee5f6f813db76639",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 2,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "4f314772649db69c0cf3773c3e63febbac510f3f5831fe6f2c27b76aad7c41a0",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/S2_isolated_9b46tw7s"
+    }
+  }
+}
