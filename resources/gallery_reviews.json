@@ -47,6 +47,10 @@
     "gallery": "runs/campaign/S2/confirmation/gallery_fixed_0.png",
     "observation": "Second-seed FID is 36.5497. Different noise gives visibly different poses, backgrounds and compositions in the fixed gallery; class-shape errors remain, including Gyarados, Machamp and Metapod. All-class pixel flags are 0/151 in both final draws. This does not certify semantic coverage or absence of near-memorization."
   },
+  "S3 at 1,000 (provisional)": {
+    "gallery": "runs/campaign/S3/eval_001000/gallery_fixed_0.png",
+    "observation": "FID is 41.7539 at three calls. The fixed gallery shows varied class cues and compositions, including Eevee, Gengar and Scyther, but incomplete bodies and distorted anatomy remain. Dewgong includes very thin or fragmentary shapes; Gyarados, Metapod and Pidgeot include substantial structural errors. Pixel flags are 0/151 and median relative pixel diversity is 1.0354. No same-NFE initialization baseline was measured; comparisons across NFE also change training draws and per-position exposure. Selection remains provisional."
+  },
   "Selected A1 at 4,000": {
     "gallery": "runs/campaign/A1/eval_004000/gallery_fixed_0.png",
     "observation": "Final/selected FID is 52.4695 and confirmation FID is 52.3536, compared with S1 66.4564 and 67.0671. The FID advantage persists at all three matched checkpoints but narrows from about 24 points at 1k to 14 points at 4k. Pixel-collapse flags are 0/151 in both final evaluation draws. Visual interpretation remains mixed; see the all-class pair review."
