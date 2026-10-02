@@ -1,0 +1,79 @@
+{
+  "timestamp": "2026-10-02T11:37:47.338723+09:00",
+  "selected_microbatch": 16,
+  "effective_batch": 128,
+  "expected_parameters": 89140419,
+  "full_updates": 40000,
+  "image_presentations": 5120000,
+  "mean_update_seconds": 3.1483843556605278,
+  "optimizer_hours_estimate": 34.98204839622809,
+  "conservative_update_seconds": 3.1654917769134046,
+  "conservative_optimizer_hours": 35.172130854593384,
+  "s2_nonupdate_training_seconds": 2755.7484589014202,
+  "training_watchdog_unrounded_seconds": 142320.7416804619,
+  "training_watchdog_seconds": 144000,
+  "production_qualification_seconds": 300,
+  "s2_max_candidate_eval_seconds_per_nfe": {
+    "1": 66.41532635316253,
+    "4": 174.22899318486452
+  },
+  "s2_max_eval_minus_generation_seconds": 30.784262868575752,
+  "new_95_batch_generation_seconds_per_nfe": {
+    "1": 19.495568736456335,
+    "4": 77.90360050927848
+  },
+  "evaluation_formula": "6*sum(S2 slowest pass per NFE) +10*sum(S3 slowest measured 95-batch generation per NFE) +20*1.5*(largest S2 total-pass minus generation residual) +60 startup seconds; then20% margin, round up to15-minute block.",
+  "evaluation_before_margin_seconds": 3401.385495742783,
+  "evaluation_budget_seconds": 4500,
+  "pretraining_qualification_gpu_job_seconds": 776.1038596741855,
+  "prior_research_gpu_job_seconds": 184850.19226971082,
+  "prior_research_breakdown": {
+    "B1": 467.662695446983,
+    "S1": 73231.25436696224,
+    "S2_including_qualification": 110375.17134762742,
+    "S3_pretraining_qualification": 776.1038596741855
+  },
+  "mean_timing_change_vs_s2_actual_fraction": 0.21554010780741995,
+  "qualification_record_sha256": {
+    "runs/research_s3_qualification_20261002/record.json": "ffeb21dc984959b57be62a1acfa96aaaa3f22ecd28f0bcd17357073085ff5791",
+    "runs/research_s3_microbatch32_20261002/record.json": "ee237f036de012eb0812ba75dddadfb53af31afe7656f275424347d2d48beb69"
+  },
+  "qualification_selected_sha256": {
+    "runs/research_s3_qualification_20261002/selected.json": "b12ceac39d6d56e5a0f754b91a270d83257ba6ce3e80b9fac991876ce7d5c06c",
+    "runs/research_s3_microbatch32_20261002/selected.json": "960cd49c5f070cdacdb910ce25efedef74869d2931741c2d61e2ac99ad4bf12d"
+  },
+  "official_score": false,
+  "production_config_sha256": "925eea9dc7c93298dfc62e1dd7559c63701b86929cebea564b2581e8dc45d561",
+  "production_protocol_file_sha256": "1b2fcd9a1dc08d37422dbe6b0174f224c1e8b5718a99283ec30b981132b3128b",
+  "production_differences_from_s2": {
+    "run_dir": [
+      "runs/research_s2_unet160_40k_seed42",
+      "runs/research_s3_unet192_40k_seed42"
+    ],
+    "architecture": [
+      {
+        "model_channels": 160,
+        "num_blocks": 2,
+        "dropout": 0.1
+      },
+      {
+        "model_channels": 192,
+        "num_blocks": 2,
+        "dropout": 0.1
+      }
+    ],
+    "budget_seconds": [
+      118800,
+      144000
+    ]
+  },
+  "unchanged_core_training_sampling_sha256": {
+    "train.py": "0939c9075abbad851be5177bb56b0ea58afd98f096420ba4fec2482101703358",
+    "soflow_fastgen/training.py": "a1cbe945fe644b6dc3df05afe79e82d871e107bdf30b091556bd4ff695dd07b7",
+    "soflow_fastgen/models.py": "9c889f9e20a9783f7d9fe503771f617032ea0876001b2a53e74259978e6720cf",
+    "soflow_fastgen/augment.py": "0598dfa8dd88f92301e1a167599068f6777fb51f7d96e3642e65898fe1a283ef",
+    "soflow_fastgen/data.py": "fba5ea4118f5117ebf148b27b3ad288430ae2b091e9f67578046a5a7263bb843",
+    "soflow_fastgen/sampling.py": "c536149529fcf97ef55f73ca244f9fe4f744283ed57df38bcd73a914246c3279"
+  },
+  "protected_files_verified": true
+}
