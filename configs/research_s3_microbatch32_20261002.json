@@ -1,0 +1,27 @@
+{
+  "experiment": "S3-microbatch32-20261002",
+  "authorization_reference": "User: Launch training. Consecutive in-scope scratch experiments under program.md.",
+  "run_dir": "runs/research_s3_microbatch32_20261002",
+  "training_config": "configs/research_s3_microbatch32_train.json",
+  "initialization": "scratch",
+  "expected_parameters": 89140419,
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "budget_seconds": 900,
+  "budget_rationale": "One additional execution comparison after width192 microbatch16 measured 3.1484 s/update (34.982 optimizer hours). Width192 batch32 inference measured 0.2052/0.8200 s at one/four calls versus width160 0.3779/1.5099, showing a changed execution path; S2 also showed large full-update microbatch sensitivity. Up to 900 cumulative GPU-job seconds covers contracts and one 115-update batch32 probe with no further fallback or sweep. Prior qualification cost is retained.",
+  "microbatch_candidates": [
+    32
+  ],
+  "selection_rule": "Choose microbatch32 for production only if its measured full-update mean and terminal mean are each at least 5% faster than qualified microbatch16, peak allocation is below 18GB, and numerical/contracts pass. Otherwise retain16. Effective batch stays128. This is a new declared bounded execution comparison, not a renewal of the first qualification allowance.",
+  "warmup_updates": 10,
+  "measured_updates": 100,
+  "terminal_updates": 5,
+  "sampling_warmup_batches": 2,
+  "sampling_measured_batches": 10,
+  "production_steps": 40000,
+  "production_optimizer_hours": null,
+  "production_initialization": "New random initialization at update zero after qualification; no qualification weights, optimizer, EMA, RNG or data state are reused.",
+  "prior_research_gpu_job_seconds": 184467.91179713607,
+  "prior_research_evidence": "docs/research/evidence/s2-complete-20261002.json",
+  "decision_question": "Whether microbatch32 materially improves the width192 full training-update time before allocating a 40k production run; no candidate FID.",
+  "previous_qualification_gpu_job_seconds": 393.82338709942997
+}

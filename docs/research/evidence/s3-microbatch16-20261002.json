@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-10-02T11:29:09.091774+09:00",
+  "run_dir": "runs/research_s3_qualification_20261002",
+  "state": "qualified",
+  "result": {
+    "initialization": "scratch",
+    "initial_step": 0,
+    "initial_optimizer_entries": 0,
+    "checkpoint_saved": false,
+    "parameters": 89140419,
+    "microbatch": 16,
+    "effective_batch": 128,
+    "eligible": true,
+    "mean_update_seconds": 3.1483843556605278,
+    "median_update_seconds": 3.1578258937224746,
+    "first_half_mean_seconds": 3.1336518794298174,
+    "last_half_mean_seconds": 3.1631168318912386,
+    "terminal_mean_update_seconds": 3.1654917769134046,
+    "peak_training_allocated_bytes": 7693153792,
+    "peak_training_reserved_bytes": 8462008320,
+    "peak_host_rss_bytes": 1790402560,
+    "peak_sampled_process_tree_pss_bytes": 3044447232,
+    "terminal_limitation": "Step is advanced only to exercise the declared terminal loss path; weights and optimizer have only the recorded disposable updates.",
+    "training_config_sha256": "ef5386f8a2a1ba4a6751f7a367d25972deffc6a15a3ac47aa8355d8a2f943cc4",
+    "environment": {
+      "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+      "executable": "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+      "packages": {
+        "torch": "2.7.1+cu126",
+        "torchvision": "0.22.1+cu126",
+        "clean-fid": "0.1.35",
+        "numpy": "1.26.4",
+        "Pillow": "12.3.0"
+      }
+    },
+    "gpu": "NVIDIA TITAN RTX, 69, 1845, 6500, 8288, 99",
+    "sampling_timing": {
+      "1": {
+        "batch_size": 32,
+        "measured_batches": 10,
+        "mean_batch_seconds": 0.20521651301532984,
+        "max_batch_seconds": 0.20636716857552528,
+        "network_calls": 12,
+        "seconds_for_95_full_batches_estimate": 19.495568736456335,
+        "limitation": "Disposable weights; excludes PNG writing and FID; no quality score."
+      },
+      "4": {
+        "batch_size": 32,
+        "measured_batches": 10,
+        "mean_batch_seconds": 0.8200379000976682,
+        "max_batch_seconds": 0.8208943642675877,
+        "network_calls": 48,
+        "seconds_for_95_full_batches_estimate": 77.90360050927848,
+        "limitation": "Disposable weights; excludes PNG writing and FID; no quality score."
+      }
+    },
+    "peak_sampling_allocated_bytes": 2218903552
+  },
+  "gpu_job_seconds": 393.82338709942997,
+  "record_sha256": "ffeb21dc984959b57be62a1acfa96aaaa3f22ecd28f0bcd17357073085ff5791",
+  "selected_sha256": "b12ceac39d6d56e5a0f754b91a270d83257ba6ce3e80b9fac991876ce7d5c06c",
+  "optimizer_hours_for_40000_from_mean": 34.98204839622809,
+  "protected_files_verified": true,
+  "frozen_source_verified": true,
+  "official_score": false,
+  "limitation": "Disposable scratch weights; full production hours are not yet allocated. Inference timing excludes PNG writing/FID."
+}
