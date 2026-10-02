@@ -31,6 +31,10 @@
     "gallery": "runs/campaign/S2/eval_002000/gallery_fixed_0.png",
     "observation": "FID improves from 40.0471 to 37.6426 on identical evaluation draws. The fixed gallery retains recognizable cues and distinct compositions, including Eevee and Gengar, but mixed or incorrect anatomy remains in Gyarados, Metapod, Machamp and other examples. The modest FID gain does not imply uniform visual improvement. Pixel flags remain 0/151; median relative pixel diversity rises from 0.9434 to 1.0433, which is not a semantic-coverage measure. Selection remains provisional."
   },
+  "S2 confirmation seed": {
+    "gallery": "runs/campaign/S2/confirmation/gallery_fixed_0.png",
+    "observation": "Second-seed FID is 36.5497. Different noise gives visibly different poses, backgrounds and compositions in the fixed gallery; class-shape errors remain, including Gyarados, Machamp and Metapod. All-class pixel flags are 0/151 in both final draws. This does not certify semantic coverage or absence of near-memorization."
+  },
   "Selected A1 at 4,000": {
     "gallery": "runs/campaign/A1/eval_004000/gallery_fixed_0.png",
     "observation": "Final/selected FID is 52.4695 and confirmation FID is 52.3536, compared with S1 66.4564 and 67.0671. The FID advantage persists at all three matched checkpoints but narrows from about 24 points at 1k to 14 points at 4k. Pixel-collapse flags are 0/151 in both final evaluation draws. Visual interpretation remains mixed; see the all-class pair review."
@@ -38,6 +42,10 @@
   "Selected S1 at 4,000": {
     "gallery": "runs/campaign/S1/eval_004000/gallery_fixed_0.png",
     "observation": "The fixed-class gallery has varied poses/compositions and recognizable class cues in many samples; outlines and faces are clearer than at 1k. Grain/noise, merged parts and incorrect anatomy remain, especially among more complex shapes. This review covers 16 fixed classes, not an all-class recognition score; pixel-collapse flags are 0/151."
+  },
+  "Selected S2 at 4,000": {
+    "gallery": "runs/campaign/S2/eval_004000/gallery_fixed_0.png",
+    "observation": "FID improves 40.0471 \u2192 37.6426 \u2192 36.6304 across 1k/2k/4k; the final checkpoint is selected. The 16 fixed classes retain distinct compositions and recognizable cues, with cleaner shapes in several samples but continuing merged or incorrect anatomy. Metapod varies in orientation and shape but often departs from its expected cocoon structure. Gyarados and Machamp remain difficult. This is a within-run trend, not a measured improvement over an unavailable same-NFE initialization baseline."
   },
   "Selected T at 30,000": {
     "gallery": "runs/campaign/T/eval_030000/gallery_fixed_0.png",
