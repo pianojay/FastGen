@@ -1,0 +1,113 @@
+{
+  "timestamp": "2026-10-03T05:53:51.589327+09:00",
+  "run_dir": "runs/research_s3_unet192_40k_seed42",
+  "state": "running",
+  "stage": "training",
+  "worker": {
+    "pid": 3071461,
+    "started_unix": 1790908977.1960003,
+    "proc_start_ticks": "1069228188",
+    "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21"
+  },
+  "trainer": {
+    "pid": 3073458,
+    "command": [
+      "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+      "train.py",
+      "--config",
+      "configs/research_s3_train.json",
+      "--skip-eval"
+    ],
+    "started_unix": 1790909475.8036423,
+    "proc_start_ticks": "1069278716",
+    "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21"
+  },
+  "trainer_environment_verified": {
+    "PYTHONNOUSERSITE": "1",
+    "CUDA_VISIBLE_DEVICES": "1"
+  },
+  "prepared_git_commit": "e63232ef14479b015d3bb552e73c6c66e7f2f2f2",
+  "source_sha256": "d74384004afceca4dafff0183c11f6eb362a0d996ec5367ac685fab54408180e",
+  "protocol_sha256": "1b8f44056653284d48e7af8f5e7eaea923701d3ea75e5ae9386742d191fa9406",
+  "training_config_sha256": "925eea9dc7c93298dfc62e1dd7559c63701b86929cebea564b2581e8dc45d561",
+  "checkpoint": {
+    "path": "runs/research_s3_unet192_40k_seed42/checkpoints/step_020000.pt",
+    "sha256": "8ccf06d7a90a9284b48b647f93568e35739b5b65a72f5bbc58f7b61d1905004c",
+    "step": 20000,
+    "epoch": 183,
+    "cursor": 6784,
+    "optimizer_state_entries": 355,
+    "rng_present": true,
+    "loaded_ema_parameters": 89140419,
+    "model_ema_finite": true,
+    "ema_equals_initial_model": null,
+    "schedule_steps": 40000
+  },
+  "verified_update_records": 20000,
+  "live_status_step": 20020,
+  "image_presentations": 2560000,
+  "metrics_prefix_sha256": "54f38644ec36721457e81364d96eae9c9e81a141bfaeccb0740c8e3b3f4f015e",
+  "optimizer_seconds": 63537.574519731104,
+  "mean_update_seconds": 3.176878725986555,
+  "last_window_mean_seconds": 3.1776721777612345,
+  "peak_training_allocated_bytes": 7701405184,
+  "peak_training_reserved_bytes": 8487174144,
+  "peak_host_rss_bytes": 2532368384,
+  "peak_sampled_process_tree_pss_bytes": 2004206592,
+  "control_reproduction": [
+    {
+      "nfe": 1,
+      "seed": 3101,
+      "fid": 74.68602888702105,
+      "network_calls": 95,
+      "images_sha256": "80ba7e6c97ae08974a859dec177f618fb1feec233c60d46e3286b45c227a06c8"
+    },
+    {
+      "nfe": 1,
+      "seed": 3102,
+      "fid": 75.45404006059022,
+      "network_calls": 95,
+      "images_sha256": "04f5562b4cb221d4695797cc607696bc6b02e6e0681188bb62eba6409dabd959"
+    },
+    {
+      "nfe": 4,
+      "seed": 3101,
+      "fid": 26.77202566937285,
+      "network_calls": 380,
+      "images_sha256": "ab7f44fbead0628309aa0a3825b7e96f5744f829a9d040ce2c58be5355ae8d8d"
+    },
+    {
+      "nfe": 4,
+      "seed": 3102,
+      "fid": 26.71259106849641,
+      "network_calls": 380,
+      "images_sha256": "581030b0b06ef0664fdc5293bdc4fb4cbed881903607d8db64b3b58edb9b95e2"
+    }
+  ],
+  "completed_stage_gpu_job_seconds": {
+    "qualification": 8.345878530293703,
+    "training": 0.0,
+    "evaluation": 490.1203899923712,
+    "total": 498.4662685226649
+  },
+  "training_budget_snapshot": {
+    "used_seconds": 64919.646804390475,
+    "limit_seconds": 144000
+  },
+  "running_training_job_seconds_estimate": 64955.78524160385,
+  "running_campaign_gpu_job_seconds_estimate": 250304.44377983734,
+  "prior_research_gpu_job_seconds": 184850.19226971082,
+  "pretraining_qualification_gpu_job_seconds": 776.1038596741855,
+  "retries": 0,
+  "protected_files_verified": true,
+  "candidate_fid": null,
+  "official_score": false,
+  "limitation": "Running snapshot, not final memory/cost/quality. Prior research already includes both S3 qualification probes. The budget file can lag logged updates; the supervisor finalizes complete job cost.",
+  "verified_fixed_panels": [
+    "runs/research_s3_unet192_40k_seed42/samples/020000/nfe1.png",
+    "runs/research_s3_unet192_40k_seed42/samples/020000/nfe2.png",
+    "runs/research_s3_unet192_40k_seed42/samples/020000/nfe3.png",
+    "runs/research_s3_unet192_40k_seed42/samples/020000/nfe4.png"
+  ],
+  "previous_10000_update_prefix_unchanged": true
+}
