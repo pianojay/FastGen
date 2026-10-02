@@ -1,6 +1,6 @@
 {
-  "recorded_pipeline_hours": 9.703099899490676,
-  "run_stage_hours_teacher_once": 9.250230122076141,
+  "recorded_pipeline_hours": 10.732223539882238,
+  "run_stage_hours_teacher_once": 10.279353762467704,
   "runs": {
     "A1": {
       "attempts": 0,
@@ -75,22 +75,57 @@
       "status": {}
     },
     "S1": {
-      "attempts": 0,
+      "attempts": 1,
       "confirmation_fid": null,
-      "device_MiB": 0,
-      "generation_and_fid_seconds": 0,
-      "host_HWM": 0,
-      "host_PSS": 0,
-      "host_RSS": 0,
+      "device_MiB": 15436,
+      "generation_and_fid_seconds": 51.03995801694691,
+      "host_HWM": 4165447680,
+      "host_PSS": 4048445440,
+      "host_RSS": 4151975936,
       "nfe": 1,
-      "optimization_seconds": 0,
-      "peak_allocated": 0,
-      "peak_reserved": 0,
-      "pipeline_hours": 9.250230122076141,
+      "optimization_seconds": 3578.3261717408895,
+      "peak_allocated": 15760977920,
+      "peak_reserved": 15902703616,
+      "pipeline_hours": 10.279353762467704,
       "run": "S1",
-      "selected": {},
-      "stage_hours": 0.0,
-      "status": {}
+      "selected": {
+        "checkpoint": "runs/campaign/S1/best.pt",
+        "checkpoint_sha256": "28a01b1f0c87e2b7707cb6277be0de8f6f6eb43ab93c3e49745c9e983bc90bf7",
+        "diversity": {
+          "exact_unique_fraction": 1.0,
+          "median_relative_diversity": 0.8087147769825054,
+          "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+          "potential_collapse_classes": []
+        },
+        "fid": 85.64905916075998,
+        "gallery_directory": "runs/campaign/S1/eval_001000",
+        "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "run": "S1",
+        "samples": 3020,
+        "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+        "seconds": 51.03995801694691,
+        "seed": 1729,
+        "step": 1000,
+        "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+      },
+      "stage_hours": 1.0291236403915618,
+      "status": {
+        "exposures": {
+          "d_real_images": 0,
+          "fake_images": 65152,
+          "fake_updates": 1018,
+          "g_images": 65152,
+          "g_updates": 1018,
+          "teacher_images": 0
+        },
+        "horizon": 4000,
+        "phase": "training",
+        "pid": 3090844,
+        "run": "S1",
+        "step": 1018,
+        "time": 1790917831.3274858
+      }
     },
     "S2": {
       "attempts": 0,
@@ -245,5 +280,5 @@
   },
   "setup_seconds": 1602.9554448127747,
   "subsequent_checks_seconds": 27.37575387954712,
-  "updated_at": 1790914113.2969155
+  "updated_at": 1790917830.67897
 }
