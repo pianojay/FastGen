@@ -1,6 +1,15 @@
 # Program 2 — competitive flow SiD/SiDA comparison
 
-**Prepared October 2, 2026. Not started or adopted.** This is a second assignment,
+**POSTPONED by the user on October 2, 2026. Not started or adopted.**
+
+The long-training comparison is outside the current exploratory budget. Keep
+this file as a deferred proposal, not an active assignment. The existing frozen
+pilot continues as a bounded feasibility study; see
+[the current interpretation brief](docs/FEASIBILITY_FOCUS.md). Its teacher does
+not need to satisfy this deferred program's FID gate. Do not extend training or
+switch campaigns unless the user explicitly reactivates this proposal.
+
+Historical proposal follows. This is a second assignment,
 separate from the frozen pilot. Reading it does not stop that pilot or launch
 training. An explicit instruction to start/adopt this program authorizes its
 defined transition and runs without further approval waits. It then supersedes

@@ -1,5 +1,9 @@
 # Direction audit: pilot versus competitive flow SiD/SiDA
 
+> Subsequent decision, October 2: the user postponed Program 2 and chose the
+> existing pilot as a bounded feasibility study. The stop/redirect recommendation
+> below is historical, not an active instruction. See [current focus](FEASIBILITY_FOCUS.md).
+
 Audit date: October 2, 2026, 13:40–13:42 KST. Source commit
 `37483845ffcce0332bbd9bd74425de4c1d69cc29`.
 [Read-only evidence snapshot](../resources/direction_audit_20261002.json).
