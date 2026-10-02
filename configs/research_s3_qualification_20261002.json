@@ -1,0 +1,27 @@
+{
+  "experiment": "S3-qualification-20261002",
+  "authorization_reference": "User: Launch training. Consecutive in-scope scratch experiments under program.md.",
+  "run_dir": "runs/research_s3_qualification_20261002",
+  "training_config": "configs/research_s3_profile_train.json",
+  "initialization": "scratch",
+  "expected_parameters": 89140419,
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "budget_seconds": 1200,
+  "budget_rationale": "S2 width160 microbatch16 qualification consumed 337.531 seconds and measured 2.5753 seconds per full update; its production mean was 2.5901. The changed width192 path has no measured throughput. Allocate at most 1200 cumulative GPU-job seconds for contracts, 115 disposable full updates, sampling timing and one memory-driven fallback, including shutdown; this is qualification, not a production training allocation.",
+  "microbatch_candidates": [
+    16,
+    8
+  ],
+  "selection_rule": "Use microbatch16 if the measured peak is below the 18GB qualification target. Try microbatch8 only for failure of that memory criterion or caught CUDA OOM, within the same allowance and with effective batch128. No performance sweep or saved generative checkpoint. Production hours remain unallocated until actual timing and the S2 quality/cost comparison are reviewed.",
+  "warmup_updates": 10,
+  "measured_updates": 100,
+  "terminal_updates": 5,
+  "sampling_warmup_batches": 2,
+  "sampling_measured_batches": 10,
+  "production_steps": 40000,
+  "production_optimizer_hours": null,
+  "production_initialization": "New random initialization at update zero after qualification; no qualification weights, optimizer, EMA, RNG or data state are reused.",
+  "prior_research_gpu_job_seconds": 184074.08841003664,
+  "prior_research_evidence": "docs/research/evidence/s2-complete-20261002.json",
+  "decision_question": "Whether the 89.14M-parameter 40k recipe has a useful full cost after S2 gains, versus a fresh U-Net128 60k compute comparison or a mixed-objective recipe."
+}

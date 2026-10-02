@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-10-02T11:19:31.923287+09:00",
+  "phase": "qualification_declared",
+  "expected_parameters": 89140419,
+  "profile_config_sha256": "ef5386f8a2a1ba4a6751f7a367d25972deffc6a15a3ac47aa8355d8a2f943cc4",
+  "protocol_sha256": "de4de2fb5d4c802f4072a612941f19bb1dbf53bda129914ca93855bb1bb9ce57",
+  "profile_differences_from_s2": {
+    "run_dir": [
+      "runs/research_s2_unet160_40k_seed42",
+      "runs/research_s3_qualification_20261002"
+    ],
+    "architecture": [
+      {
+        "model_channels": 160,
+        "num_blocks": 2,
+        "dropout": 0.1
+      },
+      {
+        "model_channels": 192,
+        "num_blocks": 2,
+        "dropout": 0.1
+      }
+    ],
+    "budget_seconds": [
+      118800,
+      1200
+    ]
+  },
+  "prior_research_gpu_job_seconds": 184074.08841003664,
+  "qualification_allocation_seconds": 1200,
+  "production_optimizer_hours": null,
+  "protected_files_verified": true,
+  "new_gpu_job_seconds": 0,
+  "official_score": false
+}

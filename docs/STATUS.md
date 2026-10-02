@@ -10,6 +10,12 @@ Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.61
 
 ## Decisions and boundaries
 
+### October 2 S3 qualification declared — next execution
+
+The next decision is the cost of a fresh **U-Net192, 40k** recipe, after S2 improved both tracks. CPU construction counts **89,140,419 parameters**. The [three-option comparison](RESEARCH_LOG.md#october-2-next-allocation-decision--changed-width-qualification-first) also retains a fresh U-Net128 60k compute comparison (about 28.7044 optimizer hours) and a mixed-objective recipe. Width192 throughput and training memory are unmeasured, so no production hours are assigned yet.
+
+The [bounded qualification](../configs/research_s3_qualification_20261002.json) has **1,200 cumulative GPU-job seconds**, including contracts, disposable scratch training, inference timing and shutdown. It uses microbatch16/effective128, allowing one memory-driven fallback to8 under the same allowance. No weights are saved, no FID is selected and every eventual production state starts fresh. Prior campaign cost is **51.1317 GPU-job hours**, excluding inherited EXP-1. Next: complete changed-path qualification on GPU1, retain its full cost, and then fix an evidence-based production allocation.
+
 ### October 2 S2 completed — current research result
 
 S2 completed **October 2 at 11:13:49 KST**, including all 40,000 scratch updates and all 32 paired development FID passes, with zero failures or retries. The final U-Net160 EMA improves both tracks on both selection seeds and all four declared confirmation seeds. Confirmation means are **74.8758 / 26.5204** at one/four calls, versus S1's paired **82.3062 / 29.4079**: **9.0% / 9.8% lower**. S2 is the separate one-call and four-call incumbent. These are generation-seed confirmations from one scratch training seed per width, using reused training-derived development references; they are not training-seed replications or official scores. [Complete evidence, per-seed scores, identities and accounting](research/evidence/s2-complete-20261002.json).
