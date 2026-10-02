@@ -153,6 +153,8 @@ def main():
                f'{stage_hours:.3f} run-stage hours (teacher once) + {setup_seconds/3600:.3f} pre-teacher setup wall hours '
                f'+ {extra_seconds/3600:.3f} subsequent qualification/export/analysis hours. Setup includes overlapping installation, '
                'preprocessing and disposable probes; those components are not added twice. Pre-environment read-only review was not instrumented. '
+               'This accounting sums run-stage and ancillary task durations; CPU analysis can overlap training, '
+               'so it is neither end-to-end elapsed wall time nor measured GPU-active time. '
                'The finite component allowances sum to 152 hours.', '',
                'Every teacher, student and full fake-score/discriminator framework has **61,823,875 learned parameters**; '
                'the shared encoder’s pooled discriminator output adds zero parameters. EMA storage and optimizer states are included '

@@ -27,6 +27,10 @@
     "gallery": "runs/campaign/S2/eval_001000/gallery_fixed_0.png",
     "observation": "The fixed 16-class gallery has varied compositions, class cues and relatively clear contours in examples including Eevee, Gengar and Scyther. Distorted limbs, merged anatomy and unclear class-specific shapes remain, including Gyarados and Metapod examples. Zero pixel-collapse flags are not a semantic-coverage measure. Compared across NFE budgets, inference calls, training seed/draws and per-position exposure differ; selection remains provisional."
   },
+  "S2 at 2,000 (provisional)": {
+    "gallery": "runs/campaign/S2/eval_002000/gallery_fixed_0.png",
+    "observation": "FID improves from 40.0471 to 37.6426 on identical evaluation draws. The fixed gallery retains recognizable cues and distinct compositions, including Eevee and Gengar, but mixed or incorrect anatomy remains in Gyarados, Metapod, Machamp and other examples. The modest FID gain does not imply uniform visual improvement. Pixel flags remain 0/151; median relative pixel diversity rises from 0.9434 to 1.0433, which is not a semantic-coverage measure. Selection remains provisional."
+  },
   "Selected A1 at 4,000": {
     "gallery": "runs/campaign/A1/eval_004000/gallery_fixed_0.png",
     "observation": "Final/selected FID is 52.4695 and confirmation FID is 52.3536, compared with S1 66.4564 and 67.0671. The FID advantage persists at all three matched checkpoints but narrows from about 24 points at 1k to 14 points at 4k. Pixel-collapse flags are 0/151 in both final evaluation draws. Visual interpretation remains mixed; see the all-class pair review."

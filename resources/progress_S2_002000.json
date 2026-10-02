@@ -1,0 +1,48 @@
+{
+  "archive": {
+    "ema_tensor_sha256": "50ad1a5a7216ec2047fb2ce4a60198fb23cb4a98944c943562e3f6649d8eef0f",
+    "evaluation": {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 1.0432807044403969,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 37.64256284167192,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "samples": 3020,
+      "sampling_draws_sha256": "467607cd777d1bd727cf3ff00146a5e0ea753467a475f525f12ae05f161b9a4e",
+      "seconds": 68.19267435744405,
+      "seed": 1729
+    },
+    "method": "CPU extraction of EMA from complete-update recovery checkpoint",
+    "path": "artifacts/evaluated_weights/S2/002000.pt",
+    "run": "S2",
+    "saved_at": 1790952797.0578425,
+    "sha256": "d39216fa105d5af4af1a79abf5a1e7dc9779e2096208032f23f0d5dc5fd1a0d9",
+    "step": 2000
+  },
+  "evaluation": {
+    "diversity": {
+      "exact_unique_fraction": 1.0,
+      "median_relative_diversity": 1.0432807044403969,
+      "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+      "potential_collapse_classes": []
+    },
+    "fid": 37.64256284167192,
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "samples": 3020,
+    "sampling_draws_sha256": "467607cd777d1bd727cf3ff00146a5e0ea753467a475f525f12ae05f161b9a4e",
+    "seconds": 68.19267435744405,
+    "seed": 1729
+  },
+  "optimization_seconds": 7729.805296735838,
+  "peak_allocated_bytes": 15765106688,
+  "peak_reserved_bytes": 16110321664,
+  "provisional_until_horizon_complete": true,
+  "run": "S2",
+  "stage_wall_seconds_at_evaluation_end": 8033.335784912109,
+  "step": 2000
+}
