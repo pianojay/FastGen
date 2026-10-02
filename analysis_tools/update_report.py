@@ -151,7 +151,7 @@ def main():
     stage_hours = sum(r['stage_hours'] for r in records.values())
     report += ['', f'Recorded pipeline cost: **{stage_hours+(setup_seconds+extra_seconds)/3600:.3f} hours** = '
                f'{stage_hours:.3f} run-stage hours (teacher once) + {setup_seconds/3600:.3f} pre-teacher setup wall hours '
-               f'+ {extra_seconds/3600:.3f} subsequent qualification/export-check hours. Setup includes overlapping installation, '
+               f'+ {extra_seconds/3600:.3f} subsequent qualification/export/analysis hours. Setup includes overlapping installation, '
                'preprocessing and disposable probes; those components are not added twice. Pre-environment read-only review was not instrumented. '
                'The finite component allowances sum to 152 hours.', '',
                'Every teacher, student and full fake-score/discriminator framework has **61,823,875 learned parameters**; '
@@ -175,7 +175,7 @@ def main():
                    'Plots use confirmation FID; these are sampling-seed checks, not independent training repetitions.']
     report += ['', 'Raw loss/gradient/timing records and SVG trends, all-class diversity, saturation, same-class neighbor audits '
                'and fixed-noise galleries are retained under `runs/campaign/<run>/`. '
-               'Minimal inference sources and selected student checkpoints are under `artifacts/exports/`.', '',
+               'Completed student exports are written under `artifacts/exports/`; minimal inference sources are packaged at the milestones.', '',
                'Interpretation is limited to this single teacher and training realization. The treatment adds the full adversarial package '
                '(real/fake D learning and G adversarial loss) while preserving the SiD coefficient. '
                'This experiment cannot establish that teacher supervision prevents GAN collapse without an adversarial-only control. '
