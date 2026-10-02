@@ -60,8 +60,8 @@ def main():
     report = ['# Flow SiD/SiDA campaign results', '',
               'Local development evaluation: 3,020 fixed train-derived reference images and 20 generated images per class. '
               'Selection seed 1729; confirmation seed 271828 without reselection. One training realization per arm.', '',
-              '| Run | State / completed updates | Selected update | NFE | Selection FID | Confirmation FID | Pixel flags / 151 | Stage hours |',
-              '|---|---|---:|---:|---:|---:|---:|---:|']
+              '| Run | State / completed updates | Selected update | NFE | Selection FID | Final FID | Confirmation FID | Pixel flags / 151 | Stage hours |',
+              '|---|---|---:|---:|---:|---:|---:|---:|---:|']
     for run in RUNS:
         folder = ROOT / 'runs/campaign' / run
         status = read(folder / 'status.json', {})
@@ -72,11 +72,14 @@ def main():
         seconds = entry.get('consumed_seconds', 0) + sum(now-a['start'] for a in entry.get('attempts', []) if 'end' not in a)
         metrics = rows(folder / 'metrics.jsonl')
         evals = rows(folder / 'evaluations.jsonl')
+        final_step = 30000 if run == 'T' else 4000
+        final_fid = next((e['fid'] for e in reversed(evals) if e['step'] == final_step), None)
         memories = rows(folder / 'memory.jsonl')
         if 'memory' in status:
             memories.append(status['memory'])
         r = {'run': run, 'nfe': 32 if run == 'T' else int(run[1:]), 'status': status,
              'selected': selected, 'confirmation_fid': conf.get('fid'), 'stage_hours': seconds/3600,
+             'final_fid': final_fid, 'evaluations': evals,
              'optimization_seconds': sum(m['seconds'] for m in metrics),
              'generation_and_fid_seconds': sum(e['seconds'] for e in evals) + conf.get('seconds', 0),
              'attempts': len(entry.get('attempts', [])),
@@ -90,20 +93,47 @@ def main():
         f = lambda v: '—' if v is None else f'{v:.4f}'
         flags = selected.get('diversity', {}).get('potential_collapse_classes')
         report.append(f'| {run} | {status.get("phase", "not started")} / {status.get("step", 0)} | '
-                      f'{selected.get("step", "—")} | {r["nfe"]} | {f(selected.get("fid"))} | '
+                      f'{selected.get("step", "—")} | {r["nfe"]} | {f(selected.get("fid"))} | {f(final_fid)} | '
                       f'{f(conf.get("fid"))} | {len(flags) if flags is not None else "—"} | {seconds/3600:.3f} |')
+        unique_updates = list({m['step']: m for m in metrics}.values())
+        if run != 'T':
+            r['g_presentations_by_ladder_position'] = [64 * sum(m['step_g'] == i for m in unique_updates) for i in range(r['nfe'])]
+            r['fake_presentations_by_ladder_position'] = [64 * sum(m['step_fake'] == i for m in unique_updates) for i in range(r['nfe'])]
         for key in ['fm_loss', 'sid_loss', 'fake_fm_loss', 'd_bce_loss', 'g_gan_loss', 'g_grad_norm', 'fake_D_grad_norm', 'seconds']:
             curve(metrics, key, folder / (key + '.svg'))
     report += ['', 'Active-stage hours include elapsed work; completed-stage hours use the external allowance ledger. '
                'Stage cost includes optimization, evaluation, diagnostics, checkpoint I/O, startup and any failed/replayed attempts.', '',
-               '| NFE | Selection ΔFID (A−S) | Confirmation ΔFID (A−S) | Δ median relative pixel diversity (A−S) |',
-               '|---:|---:|---:|---:|']
+               '| NFE | Selection ΔFID (A−S) | Final ΔFID (A−S) | Confirmation ΔFID (A−S) | Δ median relative pixel diversity (A−S) |',
+               '|---:|---:|---:|---:|---:|']
     for n in range(1, 5):
         s, a = records['S'+str(n)], records['A'+str(n)]
         diff = lambda av, sv: '—' if av is None or sv is None else f'{av-sv:+.4f}'
         report.append(f'| {n} | {diff(a["selected"].get("fid"),s["selected"].get("fid"))} | '
+                      f'{diff(a["final_fid"],s["final_fid"])} | '
                       f'{diff(a["confirmation_fid"],s["confirmation_fid"])} | '
                       f'{diff(a["selected"].get("diversity",{}).get("median_relative_diversity"),s["selected"].get("diversity",{}).get("median_relative_diversity"))} |')
+    report += ['', '| NFE | Matched updates | G and fake presentations each | SiD FID | SiDA FID | ΔFID (A−S) |',
+               '|---:|---:|---:|---:|---:|---:|']
+    for n in range(1, 5):
+        for step in [1000, 2000, 4000]:
+            values = [next((e['fid'] for e in reversed(records[m+str(n)]['evaluations']) if e['step'] == step), None) for m in ['S', 'A']]
+            if any(v is not None for v in values):
+                report.append(f'| {n} | {step} | {step*64:,} | {f(values[0])} | {f(values[1])} | {diff(values[1],values[0])} |')
+    report += ['', '| Run | Teacher presentations | G / fake / real D presentations | G presentations by ladder position |',
+               '|---|---:|---:|---|']
+    for run, r in records.items():
+        exp = r['status'].get('exposures', {})
+        if not exp:
+            report.append(f'| {run} | — | — | — |')
+            continue
+        counts = ' / '.join(f'{exp[k]:,}' for k in ['g_images', 'fake_images', 'd_real_images'])
+        positions = ', '.join(f'{v:,}' for v in r.get('g_presentations_by_ladder_position', [])) or '—'
+        report.append(f'| {run} | {exp["teacher_images"]:,} | {counts} | {positions} |')
+    report += ['', 'Same-NFE initial-baseline FID: **unavailable**. The teacher’s 32-call evaluation is context, '
+               'and the unrelated untrained plumbing FID is not a scientific control. '
+               'Equal student cycles match total G/fake exposure; per-position exposure and compute differ across NFE. '
+               'Interpretation follows [the feasibility focus](FEASIBILITY_FOCUS.md), written after the first S1 result; '
+               'it is not a retrospective preregistered success threshold.']
     report += ['', '| Run | Optimization hours | Generation + FID hours | Allocated / reserved GB | Sampled device GB | Host RSS / PSS / HWM GB | Attempts |',
                '|---|---:|---:|---:|---:|---:|---:|']
     for run, r in records.items():

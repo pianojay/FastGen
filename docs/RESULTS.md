@@ -2,31 +2,50 @@
 
 Local development evaluation: 3,020 fixed train-derived reference images and 20 generated images per class. Selection seed 1729; confirmation seed 271828 without reselection. One training realization per arm.
 
-| Run | State / completed updates | Selected update | NFE | Selection FID | Confirmation FID | Pixel flags / 151 | Stage hours |
-|---|---|---:|---:|---:|---:|---:|---:|
-| T | complete / 30000 | 30000 | 32 | 37.2526 | — | 0 | 9.250 |
-| S1 | training / 2027 | 2000 | 1 | 77.4692 | — | 0 | 2.046 |
-| A1 | not started / 0 | — | 1 | — | — | — | 0.000 |
-| S2 | not started / 0 | — | 2 | — | — | — | 0.000 |
-| A2 | not started / 0 | — | 2 | — | — | — | 0.000 |
-| S3 | not started / 0 | — | 3 | — | — | — | 0.000 |
-| A3 | not started / 0 | — | 3 | — | — | — | 0.000 |
-| S4 | not started / 0 | — | 4 | — | — | — | 0.000 |
-| A4 | not started / 0 | — | 4 | — | — | — | 0.000 |
+| Run | State / completed updates | Selected update | NFE | Selection FID | Final FID | Confirmation FID | Pixel flags / 151 | Stage hours |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| T | complete / 30000 | 30000 | 32 | 37.2526 | 37.2526 | — | 0 | 9.250 |
+| S1 | training / 2057 | 2000 | 1 | 77.4692 | — | — | 0 | 2.076 |
+| A1 | not started / 0 | — | 1 | — | — | — | — | 0.000 |
+| S2 | not started / 0 | — | 2 | — | — | — | — | 0.000 |
+| A2 | not started / 0 | — | 2 | — | — | — | — | 0.000 |
+| S3 | not started / 0 | — | 3 | — | — | — | — | 0.000 |
+| A3 | not started / 0 | — | 3 | — | — | — | — | 0.000 |
+| S4 | not started / 0 | — | 4 | — | — | — | — | 0.000 |
+| A4 | not started / 0 | — | 4 | — | — | — | — | 0.000 |
 
 Active-stage hours include elapsed work; completed-stage hours use the external allowance ledger. Stage cost includes optimization, evaluation, diagnostics, checkpoint I/O, startup and any failed/replayed attempts.
 
-| NFE | Selection ΔFID (A−S) | Confirmation ΔFID (A−S) | Δ median relative pixel diversity (A−S) |
-|---:|---:|---:|---:|
-| 1 | — | — | — |
-| 2 | — | — | — |
-| 3 | — | — | — |
-| 4 | — | — | — |
+| NFE | Selection ΔFID (A−S) | Final ΔFID (A−S) | Confirmation ΔFID (A−S) | Δ median relative pixel diversity (A−S) |
+|---:|---:|---:|---:|---:|
+| 1 | — | — | — | — |
+| 2 | — | — | — | — |
+| 3 | — | — | — | — |
+| 4 | — | — | — | — |
+
+| NFE | Matched updates | G and fake presentations each | SiD FID | SiDA FID | ΔFID (A−S) |
+|---:|---:|---:|---:|---:|---:|
+| 1 | 1000 | 64,000 | 85.6491 | — | — |
+| 1 | 2000 | 128,000 | 77.4692 | — | — |
+
+| Run | Teacher presentations | G / fake / real D presentations | G presentations by ladder position |
+|---|---:|---:|---|
+| T | 1,920,000 | 0 / 0 / 0 | — |
+| S1 | 0 | 131,648 / 131,648 / 0 | 131,648 |
+| A1 | — | — | — |
+| S2 | — | — | — |
+| A2 | — | — | — |
+| S3 | — | — | — |
+| A3 | — | — | — |
+| S4 | — | — | — |
+| A4 | — | — | — |
+
+Same-NFE initial-baseline FID: **unavailable**. The teacher’s 32-call evaluation is context, and the unrelated untrained plumbing FID is not a scientific control. Equal student cycles match total G/fake exposure; per-position exposure and compute differ across NFE. Interpretation follows [the feasibility focus](FEASIBILITY_FOCUS.md), written after the first S1 result; it is not a retrospective preregistered success threshold.
 
 | Run | Optimization hours | Generation + FID hours | Allocated / reserved GB | Sampled device GB | Host RSS / PSS / HWM GB | Attempts |
 |---|---:|---:|---:|---:|---:|---:|
 | T | 8.399 | 0.467 | 6.016 / 6.392 | 6.470 | 4.881 / 4.776 / 4.953 | 1 |
-| S1 | 1.976 | 0.029 | 15.765 / 16.108 | 16.186 | 4.295 / 4.190 / 4.408 | 1 |
+| S1 | 2.005 | 0.029 | 15.765 / 16.108 | 16.186 | 4.518 / 4.414 / 5.286 | 1 |
 | A1 | — | — | — | — | — | 0 |
 | S2 | — | — | — | — | — | 0 |
 | A2 | — | — | — | — | — | 0 |
@@ -35,7 +54,7 @@ Active-stage hours include elapsed work; completed-stage hours use the external 
 | S4 | — | — | — | — | — | 0 |
 | A4 | — | — | — | — | — | 0 |
 
-Recorded pipeline cost: **11.749 hours** = 11.296 run-stage hours (teacher once) + 0.445 pre-teacher setup wall hours + 0.008 subsequent qualification/export-check hours. Setup includes overlapping installation, preprocessing and disposable probes; those components are not added twice. Pre-environment read-only review was not instrumented. The finite component allowances sum to 152 hours.
+Recorded pipeline cost: **11.779 hours** = 11.326 run-stage hours (teacher once) + 0.445 pre-teacher setup wall hours + 0.008 subsequent qualification/export-check hours. Setup includes overlapping installation, preprocessing and disposable probes; those components are not added twice. Pre-environment read-only review was not instrumented. The finite component allowances sum to 152 hours.
 
 Every teacher, student and full fake-score/discriminator framework has **61,823,875 learned parameters**; the shared encoder’s pooled discriminator output adds zero parameters. EMA storage and optimizer states are included in measured simultaneous memory. The strict allocated-memory limit is 20,000,000,000 bytes. Device usage is sampled; allocated/reserved and host HWM are high-water measurements.
 
