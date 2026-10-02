@@ -1,0 +1,7 @@
+{
+  "actual_common_draws_equal": true,
+  "initial_weights_sha256": "87992c00b868e03c3559ac6fcf5c81c37e69f9f0a00231c646b25484043cad49",
+  "matched_updates": 1000,
+  "nfe": 1,
+  "teacher_checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+}
