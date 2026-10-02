@@ -7,6 +7,14 @@
     "gallery": "runs/campaign/S1/eval_002000/gallery_fixed_0.png",
     "observation": "Fixed-noise compositions remain varied, with recognizable class cues in many displayed samples. Noisy textures, blurred or fragmented anatomy and inconsistent outlines remain. Higher pixel diversity does not establish improved semantic diversity. All-class pixel-collapse flags remain 0/151; selection is still provisional."
   },
+  "S1 confirmation seed": {
+    "gallery": "runs/campaign/S1/confirmation/gallery_fixed_0.png",
+    "observation": "Different noise produces visibly different compositions in the 16 fixed classes. Gengar, Eevee and Nidorina retain class cues; Gyarados and Metapod still show substantial structural errors, and image texture remains noisy. Confirmation FID is 67.0671 with 0/151 pixel-collapse flags."
+  },
+  "Selected S1 at 4,000": {
+    "gallery": "runs/campaign/S1/eval_004000/gallery_fixed_0.png",
+    "observation": "The fixed-class gallery has varied poses/compositions and recognizable class cues in many samples; outlines and faces are clearer than at 1k. Grain/noise, merged parts and incorrect anatomy remain, especially among more complex shapes. This review covers 16 fixed classes, not an all-class recognition score; pixel-collapse flags are 0/151."
+  },
   "Selected T at 30,000": {
     "gallery": "runs/campaign/T/eval_030000/gallery_fixed_0.png",
     "observation": "The fixed 16-class gallery shows varied compositions and recognizable class cues, with clearer outlines and details than earlier checkpoints. Anatomy and some class-specific shapes remain imperfect, notably in Gyarados, Metapod and Scyther. No severe common-output collapse is apparent in this subset. All-class pixel diagnostics flag 0/151 classes at both 20k and 30k and at the selected checkpoint. Pixel diversity does not establish all-class semantic coverage."

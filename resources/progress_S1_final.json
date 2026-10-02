@@ -1,0 +1,184 @@
+{
+  "allowance": {
+    "attempts": [
+      {
+        "allowance_at_start": 57600.0,
+        "end": 1790928739.8113592,
+        "identity": {
+          "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+          "pid": 3090844,
+          "start_ticks": "1069743719",
+          "uid": 1000
+        },
+        "log": "runs/campaign/S1/worker_00.log",
+        "pid": 3090844,
+        "returncode": 0,
+        "seconds": 14613.977494478226,
+        "start": 1790914125.8338647
+      }
+    ],
+    "consumed_seconds": 14613.977494478226
+  },
+  "evaluations": [
+    {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 0.8087147769825054,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 85.64905916075998,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "run": "S1",
+      "samples": 3020,
+      "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+      "seconds": 51.03995801694691,
+      "seed": 1729,
+      "step": 1000
+    },
+    {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 0.9482975228973416,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 77.4692116960357,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "run": "S1",
+      "samples": 3020,
+      "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+      "seconds": 52.63678611628711,
+      "seed": 1729,
+      "step": 2000
+    },
+    {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 0.9282839677037651,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 66.45636521624408,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "run": "S1",
+      "samples": 3020,
+      "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+      "seconds": 52.850813802331686,
+      "seed": 1729,
+      "step": 4000
+    }
+  ],
+  "export": {
+    "confirmation": {
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 0.8852463548970562,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 67.06710090000814,
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "samples": 3020,
+      "sampling_draws_sha256": "ffc504d6061b49c1db42b93a8db50e94e7bb8a41536db1fe2e2e3d1a0bc86a46",
+      "seconds": 52.816695829853415,
+      "seed": 271828
+    },
+    "ladder": [
+      1.0
+    ],
+    "nfe": 1,
+    "parameters": 61823875,
+    "path": "artifacts/exports/S1.ckpt",
+    "selected_step": 4000,
+    "sha256": "771623ffe0bec96ca2327a1e311aabb05438b50e921ac6a5255ddfe485270f73",
+    "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+  },
+  "observation": "FID improves across all three scheduled checkpoints; the second sampling seed gives similar FID. This is within-run evidence of continued learning at the finite pilot horizon, not a comparison to initialization or a convergence claim.",
+  "run": "S1",
+  "same_nfe_initial_baseline": "not measured; unavailable",
+  "selected": {
+    "checkpoint": "runs/campaign/S1/best.pt",
+    "checkpoint_sha256": "7e2c8d8a9b50b2b92edf37a3a62958f28d35814bf1859ec60ae2aa5225558444",
+    "diversity": {
+      "exact_unique_fraction": 1.0,
+      "median_relative_diversity": 0.9282839677037651,
+      "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+      "potential_collapse_classes": []
+    },
+    "fid": 66.45636521624408,
+    "gallery_directory": "runs/campaign/S1/eval_004000",
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "run": "S1",
+    "samples": 3020,
+    "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+    "seconds": 52.850813802331686,
+    "seed": 1729,
+    "step": 4000,
+    "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+  },
+  "status": {
+    "attempt_seconds": 14609.970710372552,
+    "exposures": {
+      "d_real_images": 0,
+      "fake_images": 256000,
+      "fake_updates": 4000,
+      "g_images": 256000,
+      "g_updates": 4000,
+      "teacher_images": 0
+    },
+    "horizon": 4000,
+    "memory": {
+      "allocated_bytes": 2340975616,
+      "device": {
+        "capability": "7.5",
+        "index": "2",
+        "name": "NVIDIA TITAN RTX",
+        "total_MiB": "24576",
+        "used_MiB": "3480",
+        "utilization_pct": "0",
+        "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+      },
+      "host": {
+        "Pss_bytes": 4755064832,
+        "Rss_bytes": 4859158528,
+        "VmHWM_bytes": 5834346496,
+        "VmRSS_bytes": 4859154432
+      },
+      "peak_allocated_bytes": 15765237760,
+      "peak_reserved_bytes": 16108224512,
+      "reserved_bytes": 3363831808
+    },
+    "phase": "complete",
+    "pid": 3090844,
+    "run": "S1",
+    "selected": {
+      "checkpoint": "runs/campaign/S1/best.pt",
+      "checkpoint_sha256": "7e2c8d8a9b50b2b92edf37a3a62958f28d35814bf1859ec60ae2aa5225558444",
+      "diversity": {
+        "exact_unique_fraction": 1.0,
+        "median_relative_diversity": 0.9282839677037651,
+        "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+        "potential_collapse_classes": []
+      },
+      "fid": 66.45636521624408,
+      "gallery_directory": "runs/campaign/S1/eval_004000",
+      "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "run": "S1",
+      "samples": 3020,
+      "sampling_draws_sha256": "61d9fbf54995032615148f7ff7903c408c26f5f5896ccdd911f1b426b6b11288",
+      "seconds": 52.850813802331686,
+      "seed": 1729,
+      "step": 4000,
+      "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+    },
+    "step": 4000,
+    "time": 1790928735.900508
+  }
+}
