@@ -14,6 +14,14 @@ Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.61
 
 S3 completed **October 4 at 00:41:17 KST**, including all 40,000 scratch updates and all 32 paired development FID passes, with zero failures or retries. The final U-Net192 EMA improves both tracks on both selection seeds and all four declared confirmation seeds. Confirmation means are **66.9684 / 25.0072** at one/four calls, versus S2's paired **74.8758 / 26.5204**: **10.6% / 5.7% lower**. S3 is the separate one-call and four-call incumbent. These are generation-seed confirmations from one scratch training seed per width, using reused training-derived development references; they are not training-seed replications or official scores. [Complete evidence, per-seed scores, identities and accounting](research/evidence/s3-complete-20261004.json).
 
+| Complete fresh 40k recipe | Parameters | Optimizer hours | Peak training allocation | Confirmation FID, one / four calls |
+|---|---|---|---|---|
+| S1, U-Net128 | 39,667,843 | 19.1362 | 8.6110 GB | 82.3062 / 29.4079 |
+| S2, U-Net160 | 61,934,243 | 28.7790 | 6.1606 GB | 74.8758 / 26.5204 |
+| S3, U-Net192 | 89,140,419 | 35.3079 | 7.7014 GB | 66.9684 / 25.0072 |
+
+All three use the same full horizon and effective batch 128. S1 uses microbatch32; S2/S3 use microbatch16, which affects both memory and runtime. Each row is one scratch training seed, with identical generation-seed confirmation conditions.
+
 | S3 checkpoint in its fixed 40k curriculum | Mean one-call FID | Mean four-call FID |
 |---|---|---|
 | 20k midpoint | 123.3432 | 32.4530 |
@@ -30,7 +38,9 @@ Actual peak training allocation was **7,701,405,184 bytes**, sampled process-tre
 
 S3 launched October 2 at 11:42:57 KST, workflow PID 3071461; trainer PID 3073458 began at 11:51:15 with no resume argument and completed October 3 at 23:57:39. The initial checkpoint had step/epoch/cursor zero, empty optimizer state and identical initial model/EMA weights. Prepared revision `e63232e`, branch `research/s3-scratch-unet192-20261002`; the [protocol](../configs/research_s3_20261002.json) and training source remained frozen throughout. Command: `PYTHONNOUSERSITE=1 CUDA_VISIBLE_DEVICES=1 OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 /home/user/miniconda3/envs/fastgen_soflow/bin/python -m scripts.training_study --config configs/research_s3_20261002.json` after `--prepare`. Artifacts are in `runs/research_s3_unet192_40k_seed42/`; the workflow has exited, its record/exit status report completed, and GPU 1 was idle after closure.
 
-The [official course page](https://generative-models.kaist.ac.kr/fastgen/) was directly rechecked October 4: TA reference FIDs remain 39.15 / 30.90, with the 100M parameter and 20GB training-memory limits. Our development references differ, so no official score comparison is claimed. Next: preserve a verified local export, then select the next fresh recipe or replication using the measured quality/cost evidence. No completed checkpoint will initialize a new run.
+The [official course page](https://generative-models.kaist.ac.kr/fastgen/) was directly rechecked October 4: TA reference FIDs remain 39.15 / 30.90, with the 100M parameter and 20GB training-memory limits. Our development references differ, so no official score comparison is claimed. Next: select the next fresh recipe or replication using the measured quality/cost evidence. No completed checkpoint will initialize a new run.
+
+The local inference package `runs/research_s3_unet192_40k_seed42/export/` passed its checksum manifest and the official loader from its own directory. Both loaded models contain 89,140,419 parameters, return finite bounded images, and make exactly 1/4 backbone calls. Export plus independent verification used **28.75 CPU seconds** and zero additional GPU-job time. [Export evidence](research/evidence/s3-export-20261004.json). S1/S2 packages remain preserved; no external upload was performed.
 
 ### October 2 S2 completed — previous research result
 
