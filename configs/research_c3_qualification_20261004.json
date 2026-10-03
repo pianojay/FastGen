@@ -1,0 +1,62 @@
+{
+  "experiment": "C3-qualification-20261004",
+  "authorization_reference": "User: Launch training. Consecutive in-scope scratch experiments under program.md.",
+  "run_dir": "runs/research_c3_qualification_20261004",
+  "training_config": "configs/research_c3_profile_train.json",
+  "initialization": "scratch",
+  "expected_parameters": 89140419,
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "budget_seconds": 1200,
+  "budget_rationale": "S3 width192 microbatch16 qualification cost 393.823 seconds; production updates averaged 3.1777s. The new objective path is unmeasured. Allocate at most 1200 cumulative GPU-job seconds for contracts, 115 disposable full augmented updates, inference timing, and one memory-driven fallback including shutdown. This is qualification, not a production optimizer-hour allocation.",
+  "microbatch_candidates": [
+    16,
+    8
+  ],
+  "selection_rule": "Retain microbatch16 if peak allocation is below 18GB. Try microbatch8 only after CUDA OOM or failure of that memory criterion, within the same allowance and at effective batch128. No performance sweep. Discard all qualification states; assign production optimizer hours only after reviewing measured full-update timings.",
+  "warmup_updates": 10,
+  "measured_updates": 100,
+  "terminal_updates": 5,
+  "sampling_warmup_batches": 2,
+  "sampling_measured_batches": 10,
+  "production_steps": 40000,
+  "production_optimizer_hours": null,
+  "production_initialization": "New random initialization at update zero; no model/optimizer/EMA/RNG/data state from qualification or completed runs is reused.",
+  "prior_research_gpu_job_seconds": 317949.1768385004,
+  "prior_research_evidence": "docs/research/evidence/s3-complete-20261004.json",
+  "decision_question": "Can 25% direct flow-matching / 75% consistency batch allocation improve one/four-call FID over S3 at matched 40k exposure with practical full training cost?",
+  "production_control": "runs/research_s3_unet192_40k_seed42/checkpoints/step_040000.pt",
+  "production_control_sha256": "9b95652fb5e503b2f877b26fd3652129abcce115bdea526db00ffe1f0daefd4a",
+  "production_seed": 42,
+  "recipe": "First 32 examples of each shuffled batch128 use the existing direct-conditioned velocity objective at sigmoid(N(-0.9,1.6^2)), clamped to t>=1e-4; remaining96 use unchanged consistency objective and full40k exponential gap. Each example contributes 1/128, with no extra mixture multiplier. Same p=.75, eps=.001, augmentation and RAdam/EMA policy as S3; no guidance or extra model.",
+  "horizon_rationale": "S3 supplies a completed matched40k control. Its last10k still improved both FIDs, so a shorter changing-curriculum proxy cannot establish the final recipe comparison. A longer mixed run would confound objective allocation with horizon before any local evidence of benefit.",
+  "production_evaluation": {
+    "nfes": [
+      1,
+      4
+    ],
+    "curve_steps": [
+      20000,
+      30000,
+      40000
+    ],
+    "selection_seeds": [
+      3101,
+      3102
+    ],
+    "confirmation_seeds": [
+      4101,
+      4102,
+      4103,
+      4104
+    ],
+    "fixed_final_checkpoint": true,
+    "images_per_pass": 3020,
+    "reference_images": "runs/pokemon_unet128_seed42/reference_dev",
+    "noise_protocol": "cpu-per-draw-stream-v1",
+    "rule": "Per NFE, lower FID on both paired selection seeds qualifies the fixed final EMA; lower on all four paired confirmation seeds confirms that track. Conflicting or marginal results remain inconclusive for further allocation."
+  },
+  "next_decision": "A substantive confirmed gain promotes the relevant track and motivates fresh replication or a refined mix. A negative/inconclusive result keeps S3 and redirects to time-coverage or an equal-compute fresh recipe; do not automatically increase FM fraction or duration.",
+  "primary_motivation": "https://arxiv.org/html/2512.15657v2#S5.SS2",
+  "primary_source_limitation": "The no-CFG ImageNet DiT-B/4 ablation improves with FM allocation, but uses another dataset/backbone/representation. The published pixel CIFAR recipe uses0% FM. 25% is a conservative single test preserving most consistency presentations, not an established optimum or quality forecast.",
+  "official_score": false
+}

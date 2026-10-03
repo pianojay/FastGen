@@ -1,0 +1,56 @@
+{
+  "run_dir": "runs/research_c3_qualification_20261004",
+  "data_root": "data/pokemon-generation-one-22k",
+  "partition": "artifacts/development_split.json",
+  "architecture": {
+    "model_channels": 192,
+    "num_blocks": 2,
+    "dropout": 0.1
+  },
+  "seed": 42,
+  "augmentation": true,
+  "batch_size": 128,
+  "microbatch_size": 16,
+  "num_workers": 4,
+  "torch_threads": 4,
+  "learning_rate": 0.0001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "weight_decay": 0.0,
+  "ema_decay": 0.9999,
+  "p": 0.75,
+  "eps": 0.001,
+  "time_mean": [
+    -4.0,
+    -0.9
+  ],
+  "time_std": [
+    1.6,
+    1.6
+  ],
+  "l_init_ratio": 1.0,
+  "l_end_ratio": 0.0003125,
+  "total_steps": 40000,
+  "budget_seconds": 1200,
+  "final_eval_reserve_seconds": 60,
+  "memory_target_bytes": 18000000000,
+  "memory_limit_bytes": 20000000000,
+  "logging_steps": 10,
+  "checkpoint_steps": 500,
+  "sample_steps": 500,
+  "eval_steps": [],
+  "eval_batch_size": 32,
+  "eval_seeds": [
+    3101,
+    3102
+  ],
+  "checkpoint_retain_steps": [
+    20000,
+    30000
+  ],
+  "fm_fraction": 0.25,
+  "fm_time_mean": -0.9,
+  "fm_time_std": 1.6
+}

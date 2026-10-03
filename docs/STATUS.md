@@ -10,6 +10,12 @@ Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.61
 
 ## Decisions and boundaries
 
+### October 4 C3 selected — qualification pending
+
+The next experiment is fresh U-Net192, 40k with 25% direct flow-matching and 75% consistency examples, against completed S3 at matched exposure. The [three-option decision](RESEARCH_LOG.md#october-4-next-recipe-decision) compares a new objective recipe with fresh 60k training and seed replication. Architecture, augmentation, fixed-LR RAdam, EMA and full 40k consistency curriculum stay fixed; all generative and training states start at zero. Only the training-derived optimization partition is used.
+
+[Qualification protocol](../configs/research_c3_qualification_20261004.json): at most 1,200 cumulative GPU-job seconds for contracts, 10 warmup+100 measured+5 terminal-gap disposable updates and inference timing, microbatch 16 / effective batch 128, with 8 allowed only on memory failure. Production optimizer hours and watchdogs remain unassigned until this changed path is measured. CPU discovery passed 24 tests (8 GPU tests skipped); no C3 GPU job or candidate FID yet. S3 remains both incumbents. Command after source review and commit: `PYTHONNOUSERSITE=1 CUDA_VISIBLE_DEVICES=1 OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 /home/user/miniconda3/envs/fastgen_soflow/bin/python -m scripts.qualify_training --config configs/research_c3_qualification_20261004.json`.
+
 ### October 4 S3 completed — current research result
 
 S3 completed **October 4 at 00:41:17 KST**, including all 40,000 scratch updates and all 32 paired development FID passes, with zero failures or retries. The final U-Net192 EMA improves both tracks on both selection seeds and all four declared confirmation seeds. Confirmation means are **66.9684 / 25.0072** at one/four calls, versus S2's paired **74.8758 / 26.5204**: **10.6% / 5.7% lower**. S3 is the separate one-call and four-call incumbent. These are generation-seed confirmations from one scratch training seed per width, using reused training-derived development references; they are not training-seed replications or official scores. [Complete evidence, per-seed scores, identities and accounting](research/evidence/s3-complete-20261004.json).
