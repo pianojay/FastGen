@@ -1,6 +1,6 @@
 # AFM stability-search program
 
-Prepared October 2, 2026 (Asia/Seoul). **Started by explicit user instruction October 2; see [campaign record](docs/STABILITY_SEARCH.md).**
+Prepared October 2, 2026 (Asia/Seoul). **Completed October 3, 2026: all six candidate slots exhausted; none qualified, so no confirmation. See [final report](docs/STABILITY_REPORT.md). This campaign is closed; do not relaunch or extend it.**
 This program replaces the closed one-baseline mandate for future user-started work. Reading it, preparing this handoff, or opening the repository does not start training. Once explicitly started, complete the bounded campaign without intermediate approval waits, including hours-long runs and exact recovery. No extra agents unless requested.
 
 ## Question, evidence and scope
