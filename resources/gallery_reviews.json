@@ -23,6 +23,10 @@
     "gallery": "runs/campaign/A3/eval_002000/gallery_fixed_0.png",
     "observation": "FID changes from 60.1346 to 59.4129, while matched S3 reaches 37.3777: A\u2212S is +22.0352. The fixed gallery preserves distinct compositions but simplified or incorrect structures persist in Scyther, Metapod, Gyarados, Machamp and Dewgong examples. Median relative pixel diversity is 0.9814 and flags are 0/151; neither establishes semantic fidelity. The 1k\u20132k FID change is small, with final quality still pending."
   },
+  "A4 at 1,000 (provisional)": {
+    "gallery": "runs/campaign/A4/eval_001000/gallery_fixed_0.png",
+    "observation": "FID is 54.5247 versus matched S4 35.0944, a +19.4304 disadvantage with identical evaluation draws. The fixed 16-class gallery has varied poses and recognizable class cues in many examples, with rounded or simplified shapes and substantial anatomy errors. Gyarados, Machamp, Metapod, Pidgeot and Scyther include inconsistent bodies or class-specific structures. Pixel flags are 0/151 and median relative pixel diversity is 1.0964; these do not establish semantic coverage. Selection remains provisional."
+  },
   "Completed 1-NFE pair, broad review": {
     "gallery": "artifacts/report/comparisons/broad_pair_1_0.png",
     "observation": "Broad unblinded review covered fixed sample indices 00/01 for every one of 151 classes, plus six samples in the preselected Eevee/Gyarados/Metapod panels and the confirmation fixed-class gallery. Many classes show distinct compositions and recognizable cues; A1 often has clearer outlines and less noisy surfaces. The improvement is not uniform: both arms have serious shape errors, and A1 sometimes simplifies or changes class structure. Examples include Charizard, Gyarados, Lapras, Metapod and Weedle. No all-class semantic-accuracy score was measured. Pixel diversity is similar between the arms; zero pixel flags do not certify semantic coverage or rule out near-memorization."
