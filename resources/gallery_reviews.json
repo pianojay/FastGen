@@ -35,6 +35,10 @@
     "gallery": "artifacts/report/comparisons/broad_pair_3_0.png",
     "observation": "Broad unblinded review covered fixed samples 00/01 for all 151 classes, six samples in preselected Eevee/Gyarados/Metapod panels, and the A3 confirmation gallery. Both arms retain many class cues and distinct compositions, with substantial structural failures. A3 often simplifies anatomy or changes features; examples include Gyarados, Lapras, Scyther, Squirtle and Metapod. Some individual outputs have clearer contours, but the full comparison does not show a uniform semantic advantage. The higher A3 pixel-diversity summary does not establish greater semantic coverage. Pixel flags are 0/151 in both final draws; near-memorization is not ruled out by pixel neighbors."
   },
+  "Completed S4, selected at 1,000": {
+    "gallery": "runs/campaign/S4/eval_001000/gallery_fixed_0.png",
+    "observation": "FID trajectory is 35.0944 \u2192 36.8754 \u2192 35.6887, selecting the 1k checkpoint under the frozen minimum-FID rule. The full 4k training cost and exposure remain charged. Unlike the lower-NFE SiD arms, S4 does not improve beyond its first measured checkpoint; this does not prove convergence or overtraining. Both selected and final galleries retain varied class cues alongside structural errors, and all-class pixel flags are 0/151."
+  },
   "S1 at 1,000 (provisional)": {
     "gallery": "runs/campaign/S1/eval_001000/gallery_fixed_0.png",
     "observation": "The 16 fixed classes retain varied compositions and recognizable broad class cues, but noise, edge artifacts and less coherent anatomy/detail are apparent relative to the selected teacher. Pixel-diversity flags are 0/151; this is not a semantic-coverage score. This checkpoint is provisional until the fixed student horizon finishes."
@@ -78,6 +82,10 @@
   "S4 at 2,000 (provisional)": {
     "gallery": "runs/campaign/S4/eval_002000/gallery_fixed_0.png",
     "observation": "FID worsens from 35.0944 to 36.8754 on identical evaluation draws; 1k remains the provisional selection. Fixed-noise compositions remain varied, with recognizable class cues, but altered features and incorrect anatomy persist in Gyarados, Machamp, Metapod, Pidgeot and Scyther examples. Pixel flags remain 0/151 and median relative pixel diversity is 1.0095. Neither the gallery subset nor pixel diagnostics resolves semantic coverage; the fixed horizon continues unchanged."
+  },
+  "S4 confirmation of selected 1k checkpoint": {
+    "gallery": "runs/campaign/S4/confirmation/gallery_fixed_0.png",
+    "observation": "Confirmation FID is 34.8934 for the selected 1k checkpoint. Different noise yields visibly varied poses and compositions, including clear Eevee/Gengar cues, but Gyarados, Metapod, Machamp and other examples retain malformed bodies or inconsistent class shapes. Pixel flags are 0/151 and median relative pixel diversity is 1.1083. The reported confirmation belongs to the selected checkpoint, not the final 4k weights."
   },
   "Selected A1 at 4,000": {
     "gallery": "runs/campaign/A1/eval_004000/gallery_fixed_0.png",
