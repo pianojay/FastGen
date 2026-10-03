@@ -1,0 +1,344 @@
+{
+  "charged_run_seconds_teacher_once": 174073.67304372787,
+  "config_sha256": "28c371ef0253453e7f651da593865158765529cf9a9d53e4fda0b80c84d5f9ea",
+  "pairs": {
+    "1": {
+      "common_evaluation_draws_equal": true,
+      "common_initialization_sha256": "87992c00b868e03c3559ac6fcf5c81c37e69f9f0a00231c646b25484043cad49",
+      "common_training_draws_equal": true,
+      "matched_complete_updates": 4000
+    },
+    "2": {
+      "common_evaluation_draws_equal": true,
+      "common_initialization_sha256": "87992c00b868e03c3559ac6fcf5c81c37e69f9f0a00231c646b25484043cad49",
+      "common_training_draws_equal": true,
+      "matched_complete_updates": 4000
+    },
+    "3": {
+      "common_evaluation_draws_equal": true,
+      "common_initialization_sha256": "87992c00b868e03c3559ac6fcf5c81c37e69f9f0a00231c646b25484043cad49",
+      "common_training_draws_equal": true,
+      "matched_complete_updates": 4000
+    },
+    "4": {
+      "common_evaluation_draws_equal": true,
+      "common_initialization_sha256": "87992c00b868e03c3559ac6fcf5c81c37e69f9f0a00231c646b25484043cad49",
+      "common_training_draws_equal": true,
+      "matched_complete_updates": 4000
+    }
+  },
+  "runs": {
+    "A1": {
+      "attempts": 1,
+      "complete_update_seconds": 15543.5206776727,
+      "confirmation_fid": 52.35359119631556,
+      "confirmation_generation_and_fid_seconds": 52.2876557148993,
+      "counts": {
+        "discriminator_head": 0,
+        "ema_state_elements": 61823923,
+        "fake_score_discriminator": 61823875,
+        "student": 61823875,
+        "teacher": 61823875
+      },
+      "export_sha256": "f7a7c0e54198919c8e4f30323e128769cddf9bb499574a88ab9870796f27bd06",
+      "exposures": {
+        "d_real_images": 256000,
+        "fake_images": 256000,
+        "fake_updates": 4000,
+        "g_images": 256000,
+        "g_updates": 4000,
+        "teacher_images": 0
+      },
+      "host_high_water_bytes": 6881595392,
+      "maximum_sampled_device_MiB": 15458,
+      "maximum_sampled_host_PSS_bytes": 5803774976,
+      "maximum_sampled_host_RSS_bytes": 5907890176,
+      "peak_allocated_bytes": 15760787456,
+      "peak_reserved_bytes": 16131293184,
+      "recorded_complete_update_attempts": 4000,
+      "selected_checkpoint_sha256": "044230c63953bd302d9f2569284ca7fe1ebcc8198ecf530358ec43747c5e9337",
+      "selected_step": 4000,
+      "selection_fid": 52.46950000902615,
+      "selection_generation_and_fid_seconds": 156.9089995007962,
+      "stage_seconds": 16094.691118240356
+    },
+    "A2": {
+      "attempts": 1,
+      "complete_update_seconds": 16987.840303670615,
+      "confirmation_fid": 45.66511920577608,
+      "confirmation_generation_and_fid_seconds": 69.31985118053854,
+      "counts": {
+        "discriminator_head": 0,
+        "ema_state_elements": 61823923,
+        "fake_score_discriminator": 61823875,
+        "student": 61823875,
+        "teacher": 61823875
+      },
+      "export_sha256": "73a36512a8330335d9a61fe6503a8e035b4ce957f97159bf6807d1b1e9d1cf78",
+      "exposures": {
+        "d_real_images": 256000,
+        "fake_images": 256000,
+        "fake_updates": 4000,
+        "g_images": 256000,
+        "g_updates": 4000,
+        "teacher_images": 0
+      },
+      "host_high_water_bytes": 6427680768,
+      "maximum_sampled_device_MiB": 15492,
+      "maximum_sampled_host_PSS_bytes": 5350820864,
+      "maximum_sampled_host_RSS_bytes": 5454991360,
+      "peak_allocated_bytes": 15761573888,
+      "peak_reserved_bytes": 16166944768,
+      "recorded_complete_update_attempts": 4000,
+      "selected_checkpoint_sha256": "124069a052ff2bdaffe083e6c9004adfe5dd52e17d5f533c4bb78bbba43d111c",
+      "selected_step": 4000,
+      "selection_fid": 44.904790498402974,
+      "selection_generation_and_fid_seconds": 204.36551524698734,
+      "stage_seconds": 17586.38890337944
+    },
+    "A3": {
+      "attempts": 1,
+      "complete_update_seconds": 18297.866143565625,
+      "confirmation_fid": 43.66959165443194,
+      "confirmation_generation_and_fid_seconds": 90.1631223578006,
+      "counts": {
+        "discriminator_head": 0,
+        "ema_state_elements": 61823923,
+        "fake_score_discriminator": 61823875,
+        "student": 61823875,
+        "teacher": 61823875
+      },
+      "export_sha256": "711385f963e33af4060215e45f40a5f7155ced666cbf7287fb1e73e520bbdd75",
+      "exposures": {
+        "d_real_images": 256000,
+        "fake_images": 256000,
+        "fake_updates": 4000,
+        "g_images": 256000,
+        "g_updates": 4000,
+        "teacher_images": 0
+      },
+      "host_high_water_bytes": 7202254848,
+      "maximum_sampled_device_MiB": 15460,
+      "maximum_sampled_host_PSS_bytes": 6205033472,
+      "maximum_sampled_host_RSS_bytes": 6307368960,
+      "peak_allocated_bytes": 15762360320,
+      "peak_reserved_bytes": 16133390336,
+      "recorded_complete_update_attempts": 4000,
+      "selected_checkpoint_sha256": "b89d814d1ae439aae5b1d8c8ba0251a8494fcd7a115bba1da3b60b36e1efa229",
+      "selected_step": 4000,
+      "selection_fid": 43.82243405122716,
+      "selection_generation_and_fid_seconds": 248.85115626826882,
+      "stage_seconds": 18957.900256872177
+    },
+    "A4": {
+      "attempts": 1,
+      "complete_update_seconds": 19847.243254184723,
+      "confirmation_fid": 44.6908186997415,
+      "confirmation_generation_and_fid_seconds": 101.47666820697486,
+      "counts": {
+        "discriminator_head": 0,
+        "ema_state_elements": 61823923,
+        "fake_score_discriminator": 61823875,
+        "student": 61823875,
+        "teacher": 61823875
+      },
+      "export_sha256": "eee3acbfcac249fb4f8dfb1b16f04b2568f7baea1e1dc2ce80c0554a9b3dfcd2",
+      "exposures": {
+        "d_real_images": 256000,
+        "fake_images": 256000,
+        "fake_updates": 4000,
+        "g_images": 256000,
+        "g_updates": 4000,
+        "teacher_images": 0
+      },
+      "host_high_water_bytes": 7962210304,
+      "maximum_sampled_device_MiB": 15460,
+      "maximum_sampled_host_PSS_bytes": 6892561408,
+      "maximum_sampled_host_RSS_bytes": 6989369344,
+      "peak_allocated_bytes": 15763146752,
+      "peak_reserved_bytes": 16133390336,
+      "recorded_complete_update_attempts": 4000,
+      "selected_checkpoint_sha256": "c3dc606d52a670e5ecddd2d900d9b598552848cce06f72cd7518fde861f56b22",
+      "selected_step": 4000,
+      "selection_fid": 45.83630721575793,
+      "selection_generation_and_fid_seconds": 300.6750208251178,
+      "stage_seconds": 20569.566415309906
+    },
+    "S1": {
+      "attempts": 1,
+      "complete_update_seconds": 14102.783467074856,
+      "confirmation_fid": 67.06710090000814,
+      "confirmation_generation_and_fid_seconds": 52.816695829853415,
+      "counts": {
+        "discriminator_head": 0,
+        "ema_state_elements": 61823923,
+        "fake_score_discriminator": 61823875,
+        "student": 61823875,
+        "teacher": 61823875
+      },
+      "export_sha256": "771623ffe0bec96ca2327a1e311aabb05438b50e921ac6a5255ddfe485270f73",
+      "exposures": {
+        "d_real_images": 0,
+        "fake_images": 256000,
+        "fake_updates": 4000,
+        "g_images": 256000,
+        "g_updates": 4000,
+        "teacher_images": 0
+      },
+      "host_high_water_bytes": 5834346496,
+      "maximum_sampled_device_MiB": 15436,
+      "maximum_sampled_host_PSS_bytes": 4755064832,
+      "maximum_sampled_host_RSS_bytes": 4859158528,
+      "peak_allocated_bytes": 15765237760,
+      "peak_reserved_bytes": 16108224512,
+      "recorded_complete_update_attempts": 4000,
+      "selected_checkpoint_sha256": "7e2c8d8a9b50b2b92edf37a3a62958f28d35814bf1859ec60ae2aa5225558444",
+      "selected_step": 4000,
+      "selection_fid": 66.45636521624408,
+      "selection_generation_and_fid_seconds": 156.5275579355657,
+      "stage_seconds": 14613.977494478226
+    },
+    "S2": {
+      "attempts": 1,
+      "complete_update_seconds": 15584.11918115057,
+      "confirmation_fid": 36.54967542647688,
+      "confirmation_generation_and_fid_seconds": 68.51651246845722,
+      "counts": {
+        "discriminator_head": 0,
+        "ema_state_elements": 61823923,
+        "fake_score_discriminator": 61823875,
+        "student": 61823875,
+        "teacher": 61823875
+      },
+      "export_sha256": "3d536e81636cc1c773b768ae72d3e8e2d742131603d3d75aee5f6f813db76639",
+      "exposures": {
+        "d_real_images": 0,
+        "fake_images": 256000,
+        "fake_updates": 4000,
+        "g_images": 256000,
+        "g_updates": 4000,
+        "teacher_images": 0
+      },
+      "host_high_water_bytes": 6571446272,
+      "maximum_sampled_device_MiB": 15494,
+      "maximum_sampled_host_PSS_bytes": 5493914624,
+      "maximum_sampled_host_RSS_bytes": 5598068736,
+      "peak_allocated_bytes": 15765106688,
+      "peak_reserved_bytes": 16169041920,
+      "recorded_complete_update_attempts": 4000,
+      "selected_checkpoint_sha256": "4f314772649db69c0cf3773c3e63febbac510f3f5831fe6f2c27b76aad7c41a0",
+      "selected_step": 4000,
+      "selection_fid": 36.630366355767876,
+      "selection_generation_and_fid_seconds": 203.54776886291802,
+      "stage_seconds": 16215.143506765366
+    },
+    "S3": {
+      "attempts": 1,
+      "complete_update_seconds": 17085.576684599742,
+      "confirmation_fid": 36.09004669011671,
+      "confirmation_generation_and_fid_seconds": 84.22893424890935,
+      "counts": {
+        "discriminator_head": 0,
+        "ema_state_elements": 61823923,
+        "fake_score_discriminator": 61823875,
+        "student": 61823875,
+        "teacher": 61823875
+      },
+      "export_sha256": "94d318a3cce4d77a1af080e7cacc8f34ee69da4f7f08e56a0091e79610647b31",
+      "exposures": {
+        "d_real_images": 0,
+        "fake_images": 256000,
+        "fake_updates": 4000,
+        "g_images": 256000,
+        "g_updates": 4000,
+        "teacher_images": 0
+      },
+      "host_high_water_bytes": 8299036672,
+      "maximum_sampled_device_MiB": 15438,
+      "maximum_sampled_host_PSS_bytes": 7257319424,
+      "maximum_sampled_host_RSS_bytes": 7361449984,
+      "peak_allocated_bytes": 15766810624,
+      "peak_reserved_bytes": 16110321664,
+      "recorded_complete_update_attempts": 4000,
+      "selected_checkpoint_sha256": "b448cde8af0775ea73c24c9bbf507b2fa86d08c1630bd5fadb94831cdae909b9",
+      "selected_step": 4000,
+      "selection_fid": 35.824560397640084,
+      "selection_generation_and_fid_seconds": 256.6325011085719,
+      "stage_seconds": 17756.697492599487
+    },
+    "S4": {
+      "attempts": 1,
+      "complete_update_seconds": 18287.85249025002,
+      "confirmation_fid": 34.89336580516351,
+      "confirmation_generation_and_fid_seconds": 99.50583730265498,
+      "counts": {
+        "discriminator_head": 0,
+        "ema_state_elements": 61823923,
+        "fake_score_discriminator": 61823875,
+        "student": 61823875,
+        "teacher": 61823875
+      },
+      "export_sha256": "a1b10f4e052efd07dd9795e9372aef7e06a97a25b8c61bd5afc83bfd99da40f5",
+      "exposures": {
+        "d_real_images": 0,
+        "fake_images": 256000,
+        "fake_updates": 4000,
+        "g_images": 256000,
+        "g_updates": 4000,
+        "teacher_images": 0
+      },
+      "host_high_water_bytes": 5955444736,
+      "maximum_sampled_device_MiB": 15438,
+      "maximum_sampled_host_PSS_bytes": 4876899328,
+      "maximum_sampled_host_RSS_bytes": 4979159040,
+      "peak_allocated_bytes": 15767597056,
+      "peak_reserved_bytes": 16110321664,
+      "recorded_complete_update_attempts": 4000,
+      "selected_checkpoint_sha256": "4866105fc585ccf899c625ff1af7d6c9bf1e3efb08f614599f8b2d99d1b4912f",
+      "selected_step": 1000,
+      "selection_fid": 35.09436641090309,
+      "selection_generation_and_fid_seconds": 296.78812367096543,
+      "stage_seconds": 18978.47941660881
+    },
+    "T": {
+      "attempts": 1,
+      "complete_update_seconds": 30236.14483133331,
+      "counts": {
+        "discriminator_head": 0,
+        "ema_state_elements": 61823923,
+        "fake_score_discriminator": null,
+        "student": null,
+        "teacher": 61823875
+      },
+      "exposures": {
+        "d_real_images": 0,
+        "fake_images": 0,
+        "fake_updates": 0,
+        "g_images": 0,
+        "g_updates": 30000,
+        "teacher_images": 1920000
+      },
+      "host_high_water_bytes": 4953088000,
+      "maximum_sampled_device_MiB": 6170,
+      "maximum_sampled_host_PSS_bytes": 4776439808,
+      "maximum_sampled_host_RSS_bytes": 4880547840,
+      "peak_allocated_bytes": 6016333824,
+      "peak_reserved_bytes": 6392119296,
+      "recorded_complete_update_attempts": 30000,
+      "selected_checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf",
+      "selected_step": 30000,
+      "selection_fid": 37.25255624696035,
+      "selection_generation_and_fid_seconds": 1682.6828307192773,
+      "stage_seconds": 33300.828439474106
+    }
+  },
+  "source_check": {
+    "base_Model": "verified",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "protected_files": 7,
+    "snapshots": "verified"
+  },
+  "source_sha256": "49ae213d200a0f1253dafea2d382b114534e5e31263fd5943fd4e4aa9ad028f1",
+  "teacher_checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf",
+  "through_nfe": 4
+}

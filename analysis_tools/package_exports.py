@@ -85,13 +85,14 @@ def main():
                     'exports': {run: {'path': '../' + run + '.ckpt', 'sha256': r['checkpoint_sha256'],
                                       'parameters': r['parameters'], 'nfe': r['nfe']}
                                 for run, r in output['runs'].items()},
-                    'required_runtime': {'python': '3.10', 'torch': '2.6.0'},
+                    'required_runtime': {'python': '3.10', 'torch': '2.6.0', 'numpy': '2.2.6'},
                     'training_networks_in_export': False}
         atomic_json(destination / 'manifest.json', manifest)
         (destination / 'README.md').write_text(
             '# Selected SiD/SiDA students\n\n'
             'Run Python from this directory. Each adjacent checkpoint contains one selected student '
-            'and its NFE/ladder buffers. No teacher or fake-score network is required.\n\n'
+            'and its NFE/ladder buffers. No teacher or fake-score network is required. '
+            'Tested runtime: Python 3.10, PyTorch 2.6.0 and NumPy 2.2.6.\n\n'
             '```python\nimport torch\nfrom model import Model\n'
             'model = Model.load_checkpoint("../S2.ckpt", evaluate_mode="few_nfe", device="cpu")\n'
             'images = model.sample((1, 3, 64, 64), category=torch.tensor([25]), device="cpu")\n```\n\n'

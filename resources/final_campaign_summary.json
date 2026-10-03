@@ -1,0 +1,77 @@
+{
+  "all_actual_exports_verified": true,
+  "all_evaluations_exact_within_class_unique_fraction": 1.0,
+  "all_evaluations_pixel_flags": 0,
+  "campaign_quality_evaluations": 35,
+  "completed_at_audit": 1791055895.6101418,
+  "config_sha256": "28c371ef0253453e7f651da593865158765529cf9a9d53e4fda0b80c84d5f9ea",
+  "cost_interpretation": "Summed recorded task durations; ancillary CPU analysis may overlap training. Not elapsed wall time or GPU-active time. See report for uninstrumented work.",
+  "evidence": {
+    "actual_exports": "resources/export_verification_through_nfe4.json",
+    "campaign_audit": "resources/audit_through_nfe4.json",
+    "candidate_archives": "resources/evaluated_weights_inventory.json",
+    "first_four_milestone": "resources/milestone_nfe2.json",
+    "handoff": "docs/FEASIBILITY_HANDOFF.md",
+    "results": "docs/RESULTS.md"
+  },
+  "export_manifest": {
+    "path": "artifacts/exports/inference/manifest.json",
+    "sha256": "2faec8ddebf751a36d710a6e8e0ab2686131c2ecf473c9734faa3179b36e1bd5"
+  },
+  "gpu2_lease_available_at_final_check": true,
+  "independent_training_realizations_per_arm": 1,
+  "memory": {
+    "aggregate_host_high_water": "not instrumented",
+    "maximum_sampled_device_bytes": 16246636544,
+    "maximum_sampled_worker_host_PSS_bytes": 7257319424,
+    "maximum_sampled_worker_host_RSS_bytes": 7361449984,
+    "peak_allocated_bytes": 15767597056,
+    "peak_reserved_bytes": 16169041920,
+    "worker_host_high_water_bytes": 8299036672
+  },
+  "no_further_training_launched": true,
+  "probe_attempted_updates": 67,
+  "recorded_pipeline_hours": 48.836715772748,
+  "run_stage_hours_teacher_once": 48.35379806770219,
+  "same_nfe_initial_baseline": "unavailable",
+  "setup_seconds": 1602.9554448127747,
+  "source": {
+    "commit": "3b1502c467c7a6c82fd0da21398dd21b66beeb54",
+    "files": {
+      "flow_sid/__init__.py": "3c1c732cdaf623dd5bd4218b71475d98d702757fca9dc38f12378d084857ca73",
+      "flow_sid/common.py": "e4dc5a2cc2f3fcce5f7afcb9310eb02975fda0c609a57a2fe6beac76e1d11d20",
+      "flow_sid/data.py": "2db84f3af46cb508dc2a132ff4c0da0346604084466e6335d4cd36a3b97d1f39",
+      "flow_sid/engine.py": "d265be60a6a6ade3c3b4c7e46dfc3dae86d14fe7583e9650ef81ffbd55bd84db",
+      "flow_sid/evaluation.py": "eab273142eaa2d2a42d2c6a39a6c2deb2ccf28fc70719c6d66257ee14c1ba7c3",
+      "flow_sid/flow.py": "ef2c5139d07827f5612d5d4c3be05a6109820eb635357984e15d2ea6a3db027a",
+      "flow_sid/gpu.py": "0ec6bc46fe3c121ba1b3c2e953d1246de99eabe75aba9b25b190f0fbad3f3f55",
+      "flow_sid/networks.py": "eaee62c7af192125e5befb0e219315475ba04d2eca22b954025453ad69d2d952",
+      "flow_sid/unet.py": "d078a92dcfe3f5c2e65d4f45079b645303a387e3bda3c1d6c29b1b5cfa848c44",
+      "model.py": "b16f82d5513aca91859cdc258cd13937611192b125936bc4c008536c95df2921",
+      "scripts/campaign.py": "984ee0a3d36bec16695db084fe6d1afb3606757364ebe3174f8d5b9bf0c894f2",
+      "scripts/check_export.py": "047b950e4bc0248f4ba4cff26c7bb7ebae7d0c74beafa79e81cff90b6bb4bd29",
+      "scripts/qualify.py": "b276e949cf820a085f2c2a6855c5f2be98b6ee0423ca224048b80d3fd39cf4ee",
+      "scripts/report.py": "4a9def2434f17c429cb70d11f7621aa99a0d7d6798365853362ce47bb838b7be",
+      "scripts/run_gpu.sh": "2ce3a6ea63e07316befa1f761b815a46e3c6304857eddba298e8e9304ced7ee9",
+      "scripts/smoke_evaluation.py": "0c450da70f1683cc952d70ed43466b1ce0bb10a660edf6e99ab4a5f36c4f703e",
+      "scripts/train_stage.py": "7ed47b5ef6bd925623d2b249a12a5cdfb1b81c5ad85617636d027e65f3117f58"
+    },
+    "sha256": "49ae213d200a0f1253dafea2d382b114534e5e31263fd5943fd4e4aa9ad028f1"
+  },
+  "source_check": {
+    "base_Model": "verified",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "protected_files": 7,
+    "snapshots": "verified"
+  },
+  "source_configuration_and_partition_preserved": true,
+  "state": "complete; stopped after final evaluation, export verification and report",
+  "student_runs": 8,
+  "student_updates_each": 4000,
+  "subsequent_checks_seconds": 135.54829335212708,
+  "teacher_checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf",
+  "teacher_runs": 1,
+  "teacher_updates": 30000,
+  "training_attempts_each": 1,
+  "training_recoveries": 0
+}

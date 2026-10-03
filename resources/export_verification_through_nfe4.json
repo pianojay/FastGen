@@ -1,0 +1,90 @@
+{
+  "inference_sources_sha256": "70656949e7ba4e89dec99f173e562bf06c365c36c1fa8f8a0f23f0f15f9b1f1e",
+  "purpose": "CPU loading and exact call-count test of selected actual exports",
+  "runs": {
+    "A1": {
+      "checkpoint_sha256": "f7a7c0e54198919c8e4f30323e128769cddf9bb499574a88ab9870796f27bd06",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 1,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "044230c63953bd302d9f2569284ca7fe1ebcc8198ecf530358ec43747c5e9337",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/A1_isolated_z1q2uwqd",
+      "verification_reused_from": "resources/export_verification_through_nfe2.json"
+    },
+    "A2": {
+      "checkpoint_sha256": "73a36512a8330335d9a61fe6503a8e035b4ce957f97159bf6807d1b1e9d1cf78",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 2,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "124069a052ff2bdaffe083e6c9004adfe5dd52e17d5f533c4bb78bbba43d111c",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/A2_isolated_ro7w50_c",
+      "verification_reused_from": "resources/export_verification_through_nfe2.json"
+    },
+    "A3": {
+      "checkpoint_sha256": "711385f963e33af4060215e45f40a5f7155ced666cbf7287fb1e73e520bbdd75",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 3,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "b89d814d1ae439aae5b1d8c8ba0251a8494fcd7a115bba1da3b60b36e1efa229",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/A3_isolated_xe0b86v8"
+    },
+    "A4": {
+      "checkpoint_sha256": "eee3acbfcac249fb4f8dfb1b16f04b2568f7baea1e1dc2ce80c0554a9b3dfcd2",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 4,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "c3dc606d52a670e5ecddd2d900d9b598552848cce06f72cd7518fde861f56b22",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/A4_isolated_3ceof4sr"
+    },
+    "S1": {
+      "checkpoint_sha256": "771623ffe0bec96ca2327a1e311aabb05438b50e921ac6a5255ddfe485270f73",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 1,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "7e2c8d8a9b50b2b92edf37a3a62958f28d35814bf1859ec60ae2aa5225558444",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/S1_isolated_ol2mmsxt",
+      "verification_reused_from": "resources/export_verification_through_nfe2.json"
+    },
+    "S2": {
+      "checkpoint_sha256": "3d536e81636cc1c773b768ae72d3e8e2d742131603d3d75aee5f6f813db76639",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 2,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "4f314772649db69c0cf3773c3e63febbac510f3f5831fe6f2c27b76aad7c41a0",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/S2_isolated_9b46tw7s",
+      "verification_reused_from": "resources/export_verification_through_nfe2.json"
+    },
+    "S3": {
+      "checkpoint_sha256": "94d318a3cce4d77a1af080e7cacc8f34ee69da4f7f08e56a0091e79610647b31",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 3,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "b448cde8af0775ea73c24c9bbf507b2fa86d08c1630bd5fadb94831cdae909b9",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/S3_isolated_5220zk6b"
+    },
+    "S4": {
+      "checkpoint_sha256": "a1b10f4e052efd07dd9795e9372aef7e06a97a25b8c61bd5afc83bfd99da40f5",
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 4,
+      "parameters": 61823875,
+      "selected_checkpoint_sha256": "4866105fc585ccf899c625ff1af7d6c9bf1e3efb08f614599f8b2d99d1b4912f",
+      "selected_weights_bitwise_equal": true,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/S4_isolated_hwslpt04"
+    }
+  }
+}

@@ -134,7 +134,7 @@ def main():
                'Equal student cycles match total G/fake exposure; per-position exposure and compute differ across NFE. '
                'Interpretation follows [the feasibility focus](FEASIBILITY_FOCUS.md), written after the first S1 result; '
                'it is not a retrospective preregistered success threshold.']
-    report += ['', '| Run | Optimization hours | Generation + FID hours | Allocated / reserved GB | Sampled device GB | Host RSS / PSS / HWM GB | Attempts |',
+    report += ['', '| Run | Optimization hours | Generation + FID hours | Allocated / reserved GB | Sampled device GB | Worker host RSS / PSS / HWM GB | Attempts |',
                '|---|---:|---:|---:|---:|---:|---:|']
     for run, r in records.items():
         if not r['status']:
@@ -159,7 +159,9 @@ def main():
                'Every teacher, student and full fake-score/discriminator framework has **61,823,875 learned parameters**; '
                'the shared encoder’s pooled discriminator output adds zero parameters. EMA storage and optimizer states are included '
                'in measured simultaneous memory. The strict allocated-memory limit is 20,000,000,000 bytes. '
-               'Device usage is sampled; allocated/reserved and host HWM are high-water measurements.', '',
+               'Device usage is sampled; allocated/reserved and worker host HWM are high-water measurements. '
+               'Host statistics cover the training/evaluation worker process; an aggregate host high-water mark '
+               'including data-loader and CPU archiver processes was not instrumented.', '',
                'Pixel flags use the predeclared within-class duplication/diversity rule. They do not certify semantic recognition. '
                'Nearest optimization examples are same-class neighbors in 16×16 pixel space, not a perceptual test.', '']
     reviews = read(ROOT / 'resources/gallery_reviews.json', {})

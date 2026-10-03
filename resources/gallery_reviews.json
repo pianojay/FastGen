@@ -31,6 +31,10 @@
     "gallery": "runs/campaign/A4/eval_002000/gallery_fixed_0.png",
     "observation": "FID worsens from 54.5247 to 55.8006 on identical evaluation draws, versus matched S4 36.8754. The 1k checkpoint remains provisionally selected. Fixed-noise compositions vary and many samples retain broad class cues; some contours are clearer, while Gyarados, Metapod, Machamp and Scyther retain substantial shape errors. Pixel flags remain 0/151 and median relative pixel diversity is 1.0078; neither change establishes semantic improvement or coverage. The fixed 4k horizon continues."
   },
+  "A4 confirmation seed": {
+    "gallery": "runs/campaign/A4/confirmation/gallery_fixed_0.png",
+    "observation": "Confirmation FID is 44.6908 for the selected 4k checkpoint, versus selected S4 34.8934. Different noise changes poses and compositions, with class cues in many samples, but Gyarados often becomes a compact blue creature and Metapod has inconsistent cocoon structure. Pixel flags are 0/151 and median relative pixel diversity is 1.1112. This sampling check is not training replication or a semantic-coverage test."
+  },
   "Completed 1-NFE pair, broad review": {
     "gallery": "artifacts/report/comparisons/broad_pair_1_0.png",
     "observation": "Broad unblinded review covered fixed sample indices 00/01 for every one of 151 classes, plus six samples in the preselected Eevee/Gyarados/Metapod panels and the confirmation fixed-class gallery. Many classes show distinct compositions and recognizable cues; A1 often has clearer outlines and less noisy surfaces. The improvement is not uniform: both arms have serious shape errors, and A1 sometimes simplifies or changes class structure. Examples include Charizard, Gyarados, Lapras, Metapod and Weedle. No all-class semantic-accuracy score was measured. Pixel diversity is similar between the arms; zero pixel flags do not certify semantic coverage or rule out near-memorization."
@@ -42,6 +46,10 @@
   "Completed 3-NFE pair, broad review": {
     "gallery": "artifacts/report/comparisons/broad_pair_3_0.png",
     "observation": "Broad unblinded review covered fixed samples 00/01 for all 151 classes, six samples in preselected Eevee/Gyarados/Metapod panels, and the A3 confirmation gallery. Both arms retain many class cues and distinct compositions, with substantial structural failures. A3 often simplifies anatomy or changes features; examples include Gyarados, Lapras, Scyther, Squirtle and Metapod. Some individual outputs have clearer contours, but the full comparison does not show a uniform semantic advantage. The higher A3 pixel-diversity summary does not establish greater semantic coverage. Pixel flags are 0/151 in both final draws; near-memorization is not ruled out by pixel neighbors."
+  },
+  "Completed 4-NFE pair, broad review": {
+    "gallery": "artifacts/report/comparisons/broad_pair_4_0.png",
+    "observation": "Broad unblinded review covered fixed samples 00/01 for all 151 classes, six samples in the preselected Eevee/Gyarados/Metapod panels, and the A4 confirmation gallery. The selected comparison is S4 at 1k versus A4 at 4k, with matched sampling noise. Both retain many class cues and varied compositions. A4 sometimes sharpens contours but also simplifies or changes class structures; Gyarados, Metapod, Lapras, Dragonair and Scyther show substantial errors, and several failures are shared with S4. There is no uniform semantic advantage in this review. Zero pixel flags and higher A4 pixel variance do not establish semantic coverage or rule out near-memorization."
   },
   "Completed S4, selected at 1,000": {
     "gallery": "runs/campaign/S4/eval_001000/gallery_fixed_0.png",
@@ -106,6 +114,10 @@
   "Selected A3 at 4,000": {
     "gallery": "runs/campaign/A3/eval_004000/gallery_fixed_0.png",
     "observation": "FID trajectory is 60.1346 \u2192 59.4129 \u2192 43.8224, selecting the final checkpoint; confirmation FID is 43.6696. The final A\u2212S disadvantage is 7.9979 and confirmation disadvantage 7.5795. Pixel flags remain 0/151; selected/confirmation median relative pixel diversity is 1.1313/1.1452, higher than S3 but not evidence of improved semantic diversity."
+  },
+  "Selected A4 at 4,000": {
+    "gallery": "runs/campaign/A4/eval_004000/gallery_fixed_0.png",
+    "observation": "FID trajectory is 54.5247 \u2192 55.8006 \u2192 45.8363, selecting the final checkpoint. The matched 4k disadvantage versus S4 is +10.1476; the selected-checkpoint disadvantage is +10.7419 because S4 selects 1k. Late recovery does not reverse the four-call disadvantage. The fixed gallery retains varied class cues, but Gyarados, Metapod, Machamp and Scyther include substantial structural errors. Pixel flags are 0/151; median relative pixel diversity is 1.1209."
   },
   "Selected S1 at 4,000": {
     "gallery": "runs/campaign/S1/eval_004000/gallery_fixed_0.png",

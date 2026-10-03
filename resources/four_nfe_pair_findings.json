@@ -1,0 +1,21 @@
+{
+  "broad_review": "Broad unblinded review covered fixed samples 00/01 for all 151 classes, six samples in the preselected Eevee/Gyarados/Metapod panels, and the A4 confirmation gallery. The selected comparison is S4 at 1k versus A4 at 4k, with matched sampling noise. Both retain many class cues and varied compositions. A4 sometimes sharpens contours but also simplifies or changes class structures; Gyarados, Metapod, Lapras, Dragonair and Scyther show substantial errors, and several failures are shared with S4. There is no uniform semantic advantage in this review. Zero pixel flags and higher A4 pixel variance do not establish semantic coverage or rule out near-memorization.",
+  "confirmation_fid_delta": 9.797452894577987,
+  "draw_audit": "resources/audit_through_nfe4.json",
+  "fid_deltas_at_1k_2k_4k": [
+    19.430378007729757,
+    18.925217974940153,
+    10.147617392885763
+  ],
+  "interpretation": "A4 recovers after 2k but remains worse than S4 at every matched checkpoint and in selected-checkpoint confirmation. S4 selected its 1k checkpoint, while A4 selected 4k; final matched-update and selected comparisons are separately reported. All 4k updates and costs are charged for both. No same-NFE initialization baseline was measured.",
+  "pair_stage_seconds": {
+    "A4": 20569.566415309906,
+    "S4": 18978.47941660881
+  },
+  "panel_manifest": "artifacts/report/comparisons/manifest_through_nfe4.json",
+  "selected_fid_delta": 10.741940804854835,
+  "selected_steps": {
+    "A4": 4000,
+    "S4": 1000
+  }
+}
