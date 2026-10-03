@@ -1,0 +1,7 @@
+{
+  "common_evaluation_draws_equal": true,
+  "common_initialization_sha256": "87992c00b868e03c3559ac6fcf5c81c37e69f9f0a00231c646b25484043cad49",
+  "common_training_draws_equal": true,
+  "matched_complete_updates": 4000,
+  "teacher_checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+}

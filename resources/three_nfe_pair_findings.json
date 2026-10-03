@@ -1,0 +1,16 @@
+{
+  "broad_review": "Broad unblinded review covered fixed samples 00/01 for all 151 classes, six samples in preselected Eevee/Gyarados/Metapod panels, and the A3 confirmation gallery. Both arms retain many class cues and distinct compositions, with substantial structural failures. A3 often simplifies anatomy or changes features; examples include Gyarados, Lapras, Scyther, Squirtle and Metapod. Some individual outputs have clearer contours, but the full comparison does not show a uniform semantic advantage. The higher A3 pixel-diversity summary does not establish greater semantic coverage. Pixel flags are 0/151 in both final draws; near-memorization is not ruled out by pixel neighbors.",
+  "confirmation_fid_delta": 7.579544964315232,
+  "draw_audit": "resources/pair_draw_audit_3_final.json",
+  "fid_deltas_at_1k_2k_4k": [
+    18.380722867902932,
+    22.035244142073907,
+    7.997873653587078
+  ],
+  "interpretation": "A3 improves strongly late in training but remains worse than S3 at all three matched checkpoints and the confirmation seed. This continues the two-call disadvantage in this finite single-training-realization pilot.",
+  "pair_stage_seconds": {
+    "A3": 18957.900256872177,
+    "S3": 17756.697492599487
+  },
+  "panel_manifest": "artifacts/report/comparisons/manifest_through_nfe3.json"
+}

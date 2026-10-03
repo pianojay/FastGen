@@ -31,6 +31,10 @@
     "gallery": "artifacts/report/comparisons/broad_pair_2_0.png",
     "observation": "Broad unblinded review covered fixed sample indices 00/01 for all 151 classes, six samples in each preselected Eevee/Gyarados/Metapod panel, and the A2 confirmation gallery. Both arms retain recognizable cues and varied compositions in many samples, but anatomy errors remain widespread. A2 often shifts toward flatter or simplified forms; some individual examples look cleaner, while Gyarados, Metapod, Lapras and Machamp show clear structural failures. S2 also fails complex shapes. The poorer A2 FID persists at every matched checkpoint and the confirmation seed, despite substantial late recovery. Similar pixel-diversity summaries and zero flags do not establish semantic coverage or rule out near-memorization."
   },
+  "Completed 3-NFE pair, broad review": {
+    "gallery": "artifacts/report/comparisons/broad_pair_3_0.png",
+    "observation": "Broad unblinded review covered fixed samples 00/01 for all 151 classes, six samples in preselected Eevee/Gyarados/Metapod panels, and the A3 confirmation gallery. Both arms retain many class cues and distinct compositions, with substantial structural failures. A3 often simplifies anatomy or changes features; examples include Gyarados, Lapras, Scyther, Squirtle and Metapod. Some individual outputs have clearer contours, but the full comparison does not show a uniform semantic advantage. The higher A3 pixel-diversity summary does not establish greater semantic coverage. Pixel flags are 0/151 in both final draws; near-memorization is not ruled out by pixel neighbors."
+  },
   "S1 at 1,000 (provisional)": {
     "gallery": "runs/campaign/S1/eval_001000/gallery_fixed_0.png",
     "observation": "The 16 fixed classes retain varied compositions and recognizable broad class cues, but noise, edge artifacts and less coherent anatomy/detail are apparent relative to the selected teacher. Pixel-diversity flags are 0/151; this is not a semantic-coverage score. This checkpoint is provisional until the fixed student horizon finishes."
@@ -74,6 +78,10 @@
   "Selected A2 at 4,000": {
     "gallery": "runs/campaign/A2/eval_004000/gallery_fixed_0.png",
     "observation": "FID trajectory is 56.5236 \u2192 60.9626 \u2192 44.9048, with final checkpoint selected and confirmation FID 45.6651. The final A\u2212S gap is +8.2744; confirmation gap is +9.1154. All-class pixel flags remain 0/151 in both final draws. Late recovery narrows the gap but does not reverse the two-call disadvantage."
+  },
+  "Selected A3 at 4,000": {
+    "gallery": "runs/campaign/A3/eval_004000/gallery_fixed_0.png",
+    "observation": "FID trajectory is 60.1346 \u2192 59.4129 \u2192 43.8224, selecting the final checkpoint; confirmation FID is 43.6696. The final A\u2212S disadvantage is 7.9979 and confirmation disadvantage 7.5795. Pixel flags remain 0/151; selected/confirmation median relative pixel diversity is 1.1313/1.1452, higher than S3 but not evidence of improved semantic diversity."
   },
   "Selected S1 at 4,000": {
     "gallery": "runs/campaign/S1/eval_004000/gallery_fixed_0.png",
