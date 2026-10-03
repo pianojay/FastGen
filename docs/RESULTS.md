@@ -9,7 +9,7 @@ Local development evaluation: 3,020 fixed train-derived reference images and 20 
 | A1 | complete / 4000 | 4000 | 1 | 52.4695 | 52.4695 | 52.3536 | 0 | 4.471 |
 | S2 | complete / 4000 | 4000 | 2 | 36.6304 | 36.6304 | 36.5497 | 0 | 4.504 |
 | A2 | complete / 4000 | 4000 | 2 | 44.9048 | 44.9048 | 45.6651 | 0 | 4.885 |
-| S3 | training / 1023 | 1000 | 3 | 41.7539 | — | — | 0 | 1.254 |
+| S3 | training / 2018 | 2000 | 3 | 37.3777 | — | — | 0 | 2.480 |
 | A3 | not started / 0 | — | 3 | — | — | — | — | 0.000 |
 | S4 | not started / 0 | — | 4 | — | — | — | — | 0.000 |
 | A4 | not started / 0 | — | 4 | — | — | — | — | 0.000 |
@@ -32,6 +32,7 @@ Active-stage hours include elapsed work; completed-stage hours use the external 
 | 2 | 2000 | 128,000 | 37.6426 | 60.9626 | +23.3201 |
 | 2 | 4000 | 256,000 | 36.6304 | 44.9048 | +8.2744 |
 | 3 | 1000 | 64,000 | 41.7539 | — | — |
+| 3 | 2000 | 128,000 | 37.3777 | — | — |
 
 | Run | Teacher presentations | G / fake / real D presentations | G presentations by ladder position |
 |---|---:|---:|---|
@@ -40,7 +41,7 @@ Active-stage hours include elapsed work; completed-stage hours use the external 
 | A1 | 0 | 256,000 / 256,000 / 256,000 | 256,000 |
 | S2 | 0 | 256,000 / 256,000 / 0 | 127,040, 128,960 |
 | A2 | 0 | 256,000 / 256,000 / 256,000 | 127,040, 128,960 |
-| S3 | 0 | 65,472 / 65,472 / 0 | 20,736, 22,272, 22,464 |
+| S3 | 0 | 129,152 / 129,152 / 0 | 40,896, 44,544, 43,712 |
 | A3 | — | — | — |
 | S4 | — | — | — |
 | A4 | — | — | — |
@@ -54,12 +55,12 @@ Same-NFE initial-baseline FID: **unavailable**. The teacher’s 32-call evaluati
 | A1 | 4.318 | 0.058 | 15.761 / 16.131 | 16.209 | 5.908 / 5.804 / 6.882 | 1 |
 | S2 | 4.329 | 0.076 | 15.765 / 16.169 | 16.247 | 5.598 / 5.494 / 6.571 | 1 |
 | A2 | 4.719 | 0.076 | 15.762 / 16.167 | 16.245 | 5.455 / 5.351 / 6.428 | 1 |
-| S3 | 1.208 | 0.024 | 15.763 / 15.905 | 16.188 | 4.435 / 4.331 / 4.445 | 1 |
+| S3 | 2.389 | 0.048 | 15.767 / 16.110 | 16.188 | 5.285 / 5.181 / 5.841 | 1 |
 | A3 | — | — | — | — | — | 0 |
 | S4 | — | — | — | — | — | 0 |
 | A4 | — | — | — | — | — | 0 |
 
-Recorded pipeline cost: **28.886 hours** = 28.424 run-stage hours (teacher once) + 0.445 pre-teacher setup wall hours + 0.017 subsequent qualification/export/analysis hours. Setup includes overlapping installation, preprocessing and disposable probes; those components are not added twice. Pre-environment read-only review was not instrumented. This accounting sums run-stage and ancillary task durations; CPU analysis can overlap training, so it is neither end-to-end elapsed wall time nor measured GPU-active time. The finite component allowances sum to 152 hours.
+Recorded pipeline cost: **30.112 hours** = 29.649 run-stage hours (teacher once) + 0.445 pre-teacher setup wall hours + 0.017 subsequent qualification/export/analysis hours. Setup includes overlapping installation, preprocessing and disposable probes; those components are not added twice. Pre-environment read-only review was not instrumented. This accounting sums run-stage and ancillary task durations; CPU analysis can overlap training, so it is neither end-to-end elapsed wall time nor measured GPU-active time. The finite component allowances sum to 152 hours.
 
 Every teacher, student and full fake-score/discriminator framework has **61,823,875 learned parameters**; the shared encoder’s pooled discriminator output adds zero parameters. EMA storage and optimizer states are included in measured simultaneous memory. The strict allocated-memory limit is 20,000,000,000 bytes. Device usage is sampled; allocated/reserved and host HWM are high-water measurements.
 
@@ -78,6 +79,7 @@ Pixel flags use the predeclared within-class duplication/diversity rule. They do
 - **S2 at 2,000 (provisional):** FID improves from 40.0471 to 37.6426 on identical evaluation draws. The fixed gallery retains recognizable cues and distinct compositions, including Eevee and Gengar, but mixed or incorrect anatomy remains in Gyarados, Metapod, Machamp and other examples. The modest FID gain does not imply uniform visual improvement. Pixel flags remain 0/151; median relative pixel diversity rises from 0.9434 to 1.0433, which is not a semantic-coverage measure. Selection remains provisional. [Gallery](../runs/campaign/S2/eval_002000/gallery_fixed_0.png)
 - **S2 confirmation seed:** Second-seed FID is 36.5497. Different noise gives visibly different poses, backgrounds and compositions in the fixed gallery; class-shape errors remain, including Gyarados, Machamp and Metapod. All-class pixel flags are 0/151 in both final draws. This does not certify semantic coverage or absence of near-memorization. [Gallery](../runs/campaign/S2/confirmation/gallery_fixed_0.png)
 - **S3 at 1,000 (provisional):** FID is 41.7539 at three calls. The fixed gallery shows varied class cues and compositions, including Eevee, Gengar and Scyther, but incomplete bodies and distorted anatomy remain. Dewgong includes very thin or fragmentary shapes; Gyarados, Metapod and Pidgeot include substantial structural errors. Pixel flags are 0/151 and median relative pixel diversity is 1.0354. No same-NFE initialization baseline was measured; comparisons across NFE also change training draws and per-position exposure. Selection remains provisional. [Gallery](../runs/campaign/S3/eval_001000/gallery_fixed_0.png)
+- **S3 at 2,000 (provisional):** FID improves from 41.7539 to 37.3777 on identical evaluation draws. Fixed-noise compositions remain varied, with recognizable Eevee/Gengar/Scyther cues and clearer contours in some samples. Dewgong still includes incomplete thin bodies; Gyarados, Metapod and Pidgeot retain shape and anatomy errors. Median relative pixel diversity is 0.9591, with 0/151 flags; its change is not a semantic-diversity score. Selection remains provisional. [Gallery](../runs/campaign/S3/eval_002000/gallery_fixed_0.png)
 - **Selected A1 at 4,000:** Final/selected FID is 52.4695 and confirmation FID is 52.3536, compared with S1 66.4564 and 67.0671. The FID advantage persists at all three matched checkpoints but narrows from about 24 points at 1k to 14 points at 4k. Pixel-collapse flags are 0/151 in both final evaluation draws. Visual interpretation remains mixed; see the all-class pair review. [Gallery](../runs/campaign/A1/eval_004000/gallery_fixed_0.png)
 - **Selected A2 at 4,000:** FID trajectory is 56.5236 → 60.9626 → 44.9048, with final checkpoint selected and confirmation FID 45.6651. The final A−S gap is +8.2744; confirmation gap is +9.1154. All-class pixel flags remain 0/151 in both final draws. Late recovery narrows the gap but does not reverse the two-call disadvantage. [Gallery](../runs/campaign/A2/eval_004000/gallery_fixed_0.png)
 - **Selected S1 at 4,000:** The fixed-class gallery has varied poses/compositions and recognizable class cues in many samples; outlines and faces are clearer than at 1k. Grain/noise, merged parts and incorrect anatomy remain, especially among more complex shapes. This review covers 16 fixed classes, not an all-class recognition score; pixel-collapse flags are 0/151. [Gallery](../runs/campaign/S1/eval_004000/gallery_fixed_0.png)

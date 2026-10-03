@@ -1,6 +1,6 @@
 {
-  "recorded_pipeline_hours": 28.8861906995376,
-  "run_stage_hours_teacher_once": 28.423849868377054,
+  "recorded_pipeline_hours": 30.111643166343377,
+  "run_stage_hours_teacher_once": 29.64930233518283,
   "runs": {
     "A1": {
       "attempts": 1,
@@ -713,66 +713,83 @@
           "seconds": 84.93093751557171,
           "seed": 1729,
           "step": 1000
+        },
+        {
+          "diversity": {
+            "exact_unique_fraction": 1.0,
+            "median_relative_diversity": 0.9590610765711823,
+            "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+            "potential_collapse_classes": []
+          },
+          "fid": 37.37767907188163,
+          "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "run": "S3",
+          "samples": 3020,
+          "sampling_draws_sha256": "5b4c542c3c370103332514eeb9701f851a88ea583edf70e883fe1911f37afc34",
+          "seconds": 86.62208273634315,
+          "seed": 1729,
+          "step": 2000
         }
       ],
       "fake_presentations_by_ladder_position": [
-        22080,
-        23552,
-        19840
+        45440,
+        43328,
+        40384
       ],
       "final_fid": null,
       "g_presentations_by_ladder_position": [
-        20736,
-        22272,
-        22464
+        40896,
+        44544,
+        43712
       ],
-      "generation_and_fid_seconds": 84.93093751557171,
-      "host_HWM": 4444516352,
-      "host_PSS": 4331422720,
-      "host_RSS": 4435017728,
+      "generation_and_fid_seconds": 171.55302025191486,
+      "host_HWM": 5841158144,
+      "host_PSS": 5180988416,
+      "host_RSS": 5285171200,
       "nfe": 3,
-      "optimization_seconds": 4349.927717441693,
-      "peak_allocated": 15762550784,
-      "peak_reserved": 15904800768,
-      "pipeline_hours": 10.504349584248331,
+      "optimization_seconds": 8599.727683827281,
+      "peak_allocated": 15766810624,
+      "peak_reserved": 16110321664,
+      "pipeline_hours": 11.729802051054108,
       "run": "S3",
       "selected": {
         "checkpoint": "runs/campaign/S3/best.pt",
-        "checkpoint_sha256": "b1da6c29716af90114d6a4c1fc6d1270ca38e2bb1834d7edbcfa525424cccba5",
+        "checkpoint_sha256": "cf83c3cab3822d46a6cac5ae739c9abc2495bd6e96a7559ba8e84d8151e6b60e",
         "diversity": {
           "exact_unique_fraction": 1.0,
-          "median_relative_diversity": 1.035371518540166,
+          "median_relative_diversity": 0.9590610765711823,
           "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
           "potential_collapse_classes": []
         },
-        "fid": 41.7538507761534,
-        "gallery_directory": "runs/campaign/S3/eval_001000",
+        "fid": 37.37767907188163,
+        "gallery_directory": "runs/campaign/S3/eval_002000",
         "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
         "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
         "run": "S3",
         "samples": 3020,
         "sampling_draws_sha256": "5b4c542c3c370103332514eeb9701f851a88ea583edf70e883fe1911f37afc34",
-        "seconds": 84.93093751557171,
+        "seconds": 86.62208273634315,
         "seed": 1729,
-        "step": 1000,
+        "step": 2000,
         "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
       },
-      "stage_hours": 1.2541194621721903,
+      "stage_hours": 2.4795719289779665,
       "status": {
         "exposures": {
           "d_real_images": 0,
-          "fake_images": 65472,
-          "fake_updates": 1023,
-          "g_images": 65472,
-          "g_updates": 1023,
+          "fake_images": 129152,
+          "fake_updates": 2018,
+          "g_images": 129152,
+          "g_updates": 2018,
           "teacher_images": 0
         },
         "horizon": 4000,
         "phase": "training",
         "pid": 3438257,
         "run": "S3",
-        "step": 1023,
-        "time": 1790983308.5080886
+        "step": 2018,
+        "time": 1790987721.2714665
       }
     },
     "S4": {
@@ -960,5 +977,5 @@
   },
   "setup_seconds": 1602.9554448127747,
   "subsequent_checks_seconds": 61.4715473651886,
-  "updated_at": 1790983302.122806
+  "updated_at": 1790987713.7516866
 }
