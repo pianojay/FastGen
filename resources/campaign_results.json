@@ -1,6 +1,6 @@
 {
-  "recorded_pipeline_hours": 33.908689173791146,
-  "run_stage_hours_teacher_once": 33.4463483426306,
+  "recorded_pipeline_hours": 35.21724433806208,
+  "run_stage_hours_teacher_once": 34.754903506901535,
   "runs": {
     "A1": {
       "attempts": 1,
@@ -337,66 +337,83 @@
           "seconds": 83.08258519694209,
           "seed": 1729,
           "step": 1000
+        },
+        {
+          "diversity": {
+            "exact_unique_fraction": 1.0,
+            "median_relative_diversity": 0.9813645075970225,
+            "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+            "potential_collapse_classes": []
+          },
+          "fid": 59.41292321395554,
+          "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "run": "A3",
+          "samples": 3020,
+          "sampling_draws_sha256": "5b4c542c3c370103332514eeb9701f851a88ea583edf70e883fe1911f37afc34",
+          "seconds": 83.2073734253645,
+          "seed": 1729,
+          "step": 2000
         }
       ],
       "fake_presentations_by_ladder_position": [
-        22080,
-        23552,
-        19840
+        45504,
+        43328,
+        40384
       ],
       "final_fid": null,
       "g_presentations_by_ladder_position": [
-        20736,
-        22272,
-        22464
+        40960,
+        44544,
+        43712
       ],
-      "generation_and_fid_seconds": 83.08258519694209,
-      "host_HWM": 4645306368,
-      "host_PSS": 4522248192,
-      "host_RSS": 4625862656,
+      "generation_and_fid_seconds": 166.28995862230659,
+      "host_HWM": 6039379968,
+      "host_PSS": 5331489792,
+      "host_RSS": 5433769984,
       "nfe": 3,
-      "optimization_seconds": 4682.052681187168,
+      "optimization_seconds": 9232.34465925768,
       "peak_allocated": 15762360320,
-      "peak_reserved": 15927869440,
-      "pipeline_hours": 10.594432088335356,
+      "peak_reserved": 16133390336,
+      "pipeline_hours": 11.902987252606287,
       "run": "A3",
       "selected": {
         "checkpoint": "runs/campaign/A3/best.pt",
-        "checkpoint_sha256": "ec90da43c2ab0370c68d730848e8b99d08a0dfdb47b3fd079718946a188a0d72",
+        "checkpoint_sha256": "776f93697d3f86d1015e3a037b9fc567b07b56a58cb8c2ddf5ebd156782c521a",
         "diversity": {
           "exact_unique_fraction": 1.0,
-          "median_relative_diversity": 1.0516319020727314,
+          "median_relative_diversity": 0.9813645075970225,
           "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
           "potential_collapse_classes": []
         },
-        "fid": 60.13457364405633,
-        "gallery_directory": "runs/campaign/A3/eval_001000",
+        "fid": 59.41292321395554,
+        "gallery_directory": "runs/campaign/A3/eval_002000",
         "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
         "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
         "run": "A3",
         "samples": 3020,
         "sampling_draws_sha256": "5b4c542c3c370103332514eeb9701f851a88ea583edf70e883fe1911f37afc34",
-        "seconds": 83.08258519694209,
+        "seconds": 83.2073734253645,
         "seed": 1729,
-        "step": 1000,
+        "step": 2000,
         "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
       },
-      "stage_hours": 1.3442019662592146,
+      "stage_hours": 2.6527571305301456,
       "status": {
         "exposures": {
-          "d_real_images": 65472,
-          "fake_images": 65472,
-          "fake_updates": 1023,
-          "g_images": 65472,
-          "g_updates": 1023,
+          "d_real_images": 129216,
+          "fake_images": 129216,
+          "fake_updates": 2019,
+          "g_images": 129216,
+          "g_updates": 2019,
           "teacher_images": 0
         },
         "horizon": 4000,
         "phase": "training",
         "pid": 3537189,
         "run": "A3",
-        "step": 1023,
-        "time": 1791001391.9852
+        "step": 2019,
+        "time": 1791006099.605013
       }
     },
     "A4": {
@@ -1090,5 +1107,5 @@
   },
   "setup_seconds": 1602.9554448127747,
   "subsequent_checks_seconds": 61.4715473651886,
-  "updated_at": 1791001383.127521
+  "updated_at": 1791006093.9261124
 }
