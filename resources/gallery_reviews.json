@@ -71,6 +71,10 @@
     "gallery": "runs/campaign/S3/confirmation/gallery_fixed_0.png",
     "observation": "Confirmation FID is 36.0900. The second noise draw produces varied poses and compositions, with recognizable cues in many samples, but malformed bodies and inconsistent class-specific shapes remain. Both final draws have 0/151 pixel flags and about 1.01 median relative pixel diversity; this is not a semantic-coverage score."
   },
+  "S4 at 1,000 (provisional)": {
+    "gallery": "runs/campaign/S4/eval_001000/gallery_fixed_0.png",
+    "observation": "FID is 35.0944 at four calls. The fixed 16-class gallery contains varied poses, backgrounds and recognizable broad cues, with clear contours in many Eevee, Gengar, Nidorina and Starmie examples. Gyarados, Machamp, Metapod and Pidgeot still include substantial class-shape or anatomy errors. Pixel flags are 0/151 and median relative pixel diversity is 1.0818. This is a provisional checkpoint; no same-NFE initialization baseline was measured."
+  },
   "Selected A1 at 4,000": {
     "gallery": "runs/campaign/A1/eval_004000/gallery_fixed_0.png",
     "observation": "Final/selected FID is 52.4695 and confirmation FID is 52.3536, compared with S1 66.4564 and 67.0671. The FID advantage persists at all three matched checkpoints but narrows from about 24 points at 1k to 14 points at 4k. Pixel-collapse flags are 0/151 in both final evaluation draws. Visual interpretation remains mixed; see the all-class pair review."
