@@ -150,7 +150,7 @@ class MixtureGPU(unittest.TestCase):
         for key, value in second.model.state_dict().items():
             self.assertTrue(torch.equal(value, initial[key]))
         second_row = second.update(images, labels)
-        # Repeating the default path also has sub-ULP GPU reduction variation.
+        # Repeating the default path also has tiny GPU reduction variation.
         # Keep exact initial states, RNG and diagnostics; use the existing
         # numerical-recovery tolerance for updated model/EMA tensors.
         for p, q in zip(first.model.parameters(), second.model.parameters()):
