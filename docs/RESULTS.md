@@ -10,7 +10,7 @@ Local development evaluation: 3,020 fixed train-derived reference images and 20 
 | S2 | complete / 4000 | 4000 | 2 | 36.6304 | 36.6304 | 36.5497 | 0 | 4.504 |
 | A2 | complete / 4000 | 4000 | 2 | 44.9048 | 44.9048 | 45.6651 | 0 | 4.885 |
 | S3 | complete / 4000 | 4000 | 3 | 35.8246 | 35.8246 | 36.0900 | 0 | 4.932 |
-| A3 | training / 17 | — | 3 | — | — | — | — | 0.023 |
+| A3 | training / 1023 | 1000 | 3 | 60.1346 | — | — | 0 | 1.344 |
 | S4 | not started / 0 | — | 4 | — | — | — | — | 0.000 |
 | A4 | not started / 0 | — | 4 | — | — | — | — | 0.000 |
 
@@ -20,7 +20,7 @@ Active-stage hours include elapsed work; completed-stage hours use the external 
 |---:|---:|---:|---:|---:|
 | 1 | -13.9869 | -13.9869 | -14.7135 | +0.0168 |
 | 2 | +8.2744 | +8.2744 | +9.1154 | -0.0292 |
-| 3 | — | — | — | — |
+| 3 | +24.3100 | — | — | +0.0363 |
 | 4 | — | — | — | — |
 
 | NFE | Matched updates | G and fake presentations each | SiD FID | SiDA FID | ΔFID (A−S) |
@@ -31,7 +31,7 @@ Active-stage hours include elapsed work; completed-stage hours use the external 
 | 2 | 1000 | 64,000 | 40.0471 | 56.5236 | +16.4766 |
 | 2 | 2000 | 128,000 | 37.6426 | 60.9626 | +23.3201 |
 | 2 | 4000 | 256,000 | 36.6304 | 44.9048 | +8.2744 |
-| 3 | 1000 | 64,000 | 41.7539 | — | — |
+| 3 | 1000 | 64,000 | 41.7539 | 60.1346 | +18.3807 |
 | 3 | 2000 | 128,000 | 37.3777 | — | — |
 | 3 | 4000 | 256,000 | 35.8246 | — | — |
 
@@ -43,7 +43,7 @@ Active-stage hours include elapsed work; completed-stage hours use the external 
 | S2 | 0 | 256,000 / 256,000 / 0 | 127,040, 128,960 |
 | A2 | 0 | 256,000 / 256,000 / 256,000 | 127,040, 128,960 |
 | S3 | 0 | 256,000 / 256,000 / 0 | 83,328, 85,696, 86,976 |
-| A3 | 0 | 1,088 / 1,088 / 1,088 | 256, 384, 448 |
+| A3 | 0 | 65,472 / 65,472 / 65,472 | 20,736, 22,272, 22,464 |
 | S4 | — | — | — |
 | A4 | — | — | — |
 
@@ -57,11 +57,11 @@ Same-NFE initial-baseline FID: **unavailable**. The teacher’s 32-call evaluati
 | S2 | 4.329 | 0.076 | 15.765 / 16.169 | 16.247 | 5.598 / 5.494 / 6.571 | 1 |
 | A2 | 4.719 | 0.076 | 15.762 / 16.167 | 16.245 | 5.455 / 5.351 / 6.428 | 1 |
 | S3 | 4.746 | 0.095 | 15.767 / 16.110 | 16.188 | 7.361 / 7.257 / 8.299 | 1 |
-| A3 | 0.022 | 0.000 | 15.256 / 15.389 | 15.672 | 3.273 / 3.169 / 3.285 | 1 |
+| A3 | 1.301 | 0.023 | 15.762 / 15.928 | 16.211 | 4.626 / 4.522 / 4.645 | 1 |
 | S4 | — | — | — | — | — | 0 |
 | A4 | — | — | — | — | — | 0 |
 
-Recorded pipeline cost: **32.588 hours** = 32.125 run-stage hours (teacher once) + 0.445 pre-teacher setup wall hours + 0.017 subsequent qualification/export/analysis hours. Setup includes overlapping installation, preprocessing and disposable probes; those components are not added twice. Pre-environment read-only review was not instrumented. This accounting sums run-stage and ancillary task durations; CPU analysis can overlap training, so it is neither end-to-end elapsed wall time nor measured GPU-active time. The finite component allowances sum to 152 hours.
+Recorded pipeline cost: **33.909 hours** = 33.446 run-stage hours (teacher once) + 0.445 pre-teacher setup wall hours + 0.017 subsequent qualification/export/analysis hours. Setup includes overlapping installation, preprocessing and disposable probes; those components are not added twice. Pre-environment read-only review was not instrumented. This accounting sums run-stage and ancillary task durations; CPU analysis can overlap training, so it is neither end-to-end elapsed wall time nor measured GPU-active time. The finite component allowances sum to 152 hours.
 
 Every teacher, student and full fake-score/discriminator framework has **61,823,875 learned parameters**; the shared encoder’s pooled discriminator output adds zero parameters. EMA storage and optimizer states are included in measured simultaneous memory. The strict allocated-memory limit is 20,000,000,000 bytes. Device usage is sampled; allocated/reserved and host HWM are high-water measurements.
 
@@ -71,6 +71,7 @@ Pixel flags use the predeclared within-class duplication/diversity rule. They do
 - **A1 at 2,000 (provisional):** Pooled FID improves further, with recognizable contours in classes such as Eevee and Gengar. Strong semantic/shape errors persist: Gyarados samples remain compact blue figures rather than serpentine creatures, and Metapod uses repeated upright rounded forms. Other classes still have wrong anatomy and texture artifacts. Median pixel diversity is close to matched S1, but that does not resolve structural coverage. Selection remains provisional. [Gallery](../runs/campaign/A1/eval_002000/gallery_fixed_0.png)
 - **A2 at 1,000 (provisional):** FID is 56.5236 versus matched S2 40.0471, a 16.4766-point disadvantage at 64k presentations per phase. The fixed gallery has varied compositions and class cues, but grainy textures and substantial structural errors: simplified blue Machamp bodies, incomplete Gyarados anatomy, rounded or worm-like Metapod shapes and altered Victreebel structures. Pixel flags remain 0/151; larger pixel diversity does not establish better semantic variation. This reverses the one-call FID direction at the first checkpoint; it is provisional, with no recipe change. [Gallery](../runs/campaign/A2/eval_001000/gallery_fixed_0.png)
 - **A2 at 2,000 (provisional):** FID worsens from 56.5236 to 60.9626 while matched S2 improves to 37.6426; the A−S disadvantage widens to 23.3201. The fixed gallery still has varied compositions, but altered class anatomy persists: Gyarados frequently becomes short blue creatures, Metapod uses rounded or worm-like shapes, and Machamp/Victreebel structures are inconsistent. Cleaner surfaces in some examples do not establish better class fidelity. Pixel flags remain 0/151 and median relative pixel diversity is 1.0495, nearly unchanged from A2 at 1k; these diagnostics miss semantic errors. The predeclared horizon and recipe remain unchanged. [Gallery](../runs/campaign/A2/eval_002000/gallery_fixed_0.png)
+- **A3 at 1,000 (provisional):** FID is 60.1346 versus matched S3 41.7539, an 18.3807-point disadvantage at 64k presentations per phase. Fixed-noise compositions vary, but class structure is often simplified or altered: Scyther acquires large rounded faces, Metapod appears as rounded or worm-like forms, and Gyarados remains anatomically unclear. Dewgong includes incomplete bodies. Pixel flags are 0/151 and median relative pixel diversity is 1.0516; these do not measure semantic fidelity. This is provisional evidence under the unchanged recipe. [Gallery](../runs/campaign/A3/eval_001000/gallery_fixed_0.png)
 - **Completed 1-NFE pair, broad review:** Broad unblinded review covered fixed sample indices 00/01 for every one of 151 classes, plus six samples in the preselected Eevee/Gyarados/Metapod panels and the confirmation fixed-class gallery. Many classes show distinct compositions and recognizable cues; A1 often has clearer outlines and less noisy surfaces. The improvement is not uniform: both arms have serious shape errors, and A1 sometimes simplifies or changes class structure. Examples include Charizard, Gyarados, Lapras, Metapod and Weedle. No all-class semantic-accuracy score was measured. Pixel diversity is similar between the arms; zero pixel flags do not certify semantic coverage or rule out near-memorization. [Gallery](../artifacts/report/comparisons/broad_pair_1_0.png)
 - **Completed 2-NFE pair, broad review:** Broad unblinded review covered fixed sample indices 00/01 for all 151 classes, six samples in each preselected Eevee/Gyarados/Metapod panel, and the A2 confirmation gallery. Both arms retain recognizable cues and varied compositions in many samples, but anatomy errors remain widespread. A2 often shifts toward flatter or simplified forms; some individual examples look cleaner, while Gyarados, Metapod, Lapras and Machamp show clear structural failures. S2 also fails complex shapes. The poorer A2 FID persists at every matched checkpoint and the confirmation seed, despite substantial late recovery. Similar pixel-diversity summaries and zero flags do not establish semantic coverage or rule out near-memorization. [Gallery](../artifacts/report/comparisons/broad_pair_2_0.png)
 - **S1 at 1,000 (provisional):** The 16 fixed classes retain varied compositions and recognizable broad class cues, but noise, edge artifacts and less coherent anatomy/detail are apparent relative to the selected teacher. Pixel-diversity flags are 0/151; this is not a semantic-coverage score. This checkpoint is provisional until the fixed student horizon finishes. [Gallery](../runs/campaign/S1/eval_001000/gallery_fixed_0.png)

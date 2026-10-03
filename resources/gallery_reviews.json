@@ -15,6 +15,10 @@
     "gallery": "runs/campaign/A2/eval_002000/gallery_fixed_0.png",
     "observation": "FID worsens from 56.5236 to 60.9626 while matched S2 improves to 37.6426; the A\u2212S disadvantage widens to 23.3201. The fixed gallery still has varied compositions, but altered class anatomy persists: Gyarados frequently becomes short blue creatures, Metapod uses rounded or worm-like shapes, and Machamp/Victreebel structures are inconsistent. Cleaner surfaces in some examples do not establish better class fidelity. Pixel flags remain 0/151 and median relative pixel diversity is 1.0495, nearly unchanged from A2 at 1k; these diagnostics miss semantic errors. The predeclared horizon and recipe remain unchanged."
   },
+  "A3 at 1,000 (provisional)": {
+    "gallery": "runs/campaign/A3/eval_001000/gallery_fixed_0.png",
+    "observation": "FID is 60.1346 versus matched S3 41.7539, an 18.3807-point disadvantage at 64k presentations per phase. Fixed-noise compositions vary, but class structure is often simplified or altered: Scyther acquires large rounded faces, Metapod appears as rounded or worm-like forms, and Gyarados remains anatomically unclear. Dewgong includes incomplete bodies. Pixel flags are 0/151 and median relative pixel diversity is 1.0516; these do not measure semantic fidelity. This is provisional evidence under the unchanged recipe."
+  },
   "Completed 1-NFE pair, broad review": {
     "gallery": "artifacts/report/comparisons/broad_pair_1_0.png",
     "observation": "Broad unblinded review covered fixed sample indices 00/01 for every one of 151 classes, plus six samples in the preselected Eevee/Gyarados/Metapod panels and the confirmation fixed-class gallery. Many classes show distinct compositions and recognizable cues; A1 often has clearer outlines and less noisy surfaces. The improvement is not uniform: both arms have serious shape errors, and A1 sometimes simplifies or changes class structure. Examples include Charizard, Gyarados, Lapras, Metapod and Weedle. No all-class semantic-accuracy score was measured. Pixel diversity is similar between the arms; zero pixel flags do not certify semantic coverage or rule out near-memorization."
