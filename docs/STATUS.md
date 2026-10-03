@@ -1,5 +1,25 @@
 # Local Pokémon/FastGen experiment status
 
+## 2026-10-04 — adversarial component integration verified
+
+Current branch `codex/soflow-ayf-integration` implements S3-EMA SoFlow with a
+fresh class-conditioned StyleGAN2 discriminator, RpGAN, exact grouped R1/R2,
+and fixed-maturity SCM. **Integration only; the previous autonomous research
+loop is inactive on this branch.** S1/S2/S3 completed; C3 remains stopped.
+
+All 35 contract tests and the bounded S3 smoke passed, including bitwise
+next-update recovery and independent one-/four-call generator-only loading.
+G/D contain 89.14M/28.93M parameters; peak CUDA allocation was 12.11 GB.
+The smoke used four D and three G updates including replay, with 100.94 seconds
+of total leased verification time including an earlier numerical-test failure.
+No quality experiment or FID evaluation was performed. Existing source weights,
+partitions and protected interfaces are unchanged.
+
+Read [the integration contract](adversarial/INTEGRATION.md),
+[smoke results](adversarial/SMOKE_RESULTS.md), and
+[preserved theory](adversarial/soflow_adversarial_theory.md).
+The historical records below retain their original dates and decisions.
+
 Updated 2026-10-04, Asia/Seoul. This experiment ran on the local TITAN RTX server; it is not the KCloud VM or an official submission.
 
 ## Completed baseline — reviewed 2026-09-28

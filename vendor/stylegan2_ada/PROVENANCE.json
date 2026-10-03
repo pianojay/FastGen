@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/NVlabs/stylegan2-ada-pytorch",
+  "commit": "d72cc7d041b42ec8e806021a205ed9349f87c6a4",
+  "archive_sha256": "e09a4f09499bad8019d87b18b6ce19c91c0ae6d82e8a7af1fc16b22b4f9ebbba",
+  "files": {
+    "LICENSE.txt": "d782a1e765f4848609352fd9d74cc36b103ef6f51900baed06fb1c995188b95f",
+    "dnnlib/__init__.py": "01ee5300565a54d4a309ae87784f314a0c82db6c63e6735d1e9a124327f4c12d",
+    "dnnlib/util.py": "8f4c1e9e7eac60f9bf541b2fc0e649a022b2ddde8178df7f85f924f63e3db426",
+    "torch_utils/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+    "torch_utils/custom_ops.py": "ee123ae0458fbe463000d5962a5b804d9e91b25d3fda8500eeaa6ddf6b5c932a",
+    "torch_utils/misc.py": "8b66e614f3dbb27b9b3280030efcb65a94e5cfd0e9d940302692452cb7c44012",
+    "torch_utils/ops/__init__.py": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+    "torch_utils/ops/bias_act.cpp": "4a3eb091ce936451ac3a0e9c7c771cc5576cba195332cd777ec275cb806f4f53",
+    "torch_utils/ops/bias_act.cu": "bc6b93e2c347cc00b07dfe0f6dca35011c2291645806239cc86632902694d017",
+    "torch_utils/ops/bias_act.h": "f0ca2d087bb22b20f6642e4affd7c77e2ff5b601a2f6d1632a79002608d87aa4",
+    "torch_utils/ops/bias_act.py": "ae9d4a2efbb61f7d21d2e361a5a145704351cc9733d2bd3e5ba4e64938d8e3e3",
+    "torch_utils/ops/conv2d_gradfix.py": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3",
+    "torch_utils/ops/conv2d_resample.py": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+    "torch_utils/ops/fma.py": "f3fdd6b890e250124557cba35360a1297cac5bdbc4925325403b44bf290956e9",
+    "torch_utils/ops/grid_sample_gradfix.py": "a49a8195b734ecba95c9b63d035f26faa5d794a0b26eb3e9d5f3c521be29c536",
+    "torch_utils/ops/upfirdn2d.cpp": "a3930ed91584ab11786f44aca9abad9beab9f4020b564d4c547727da49d70b11",
+    "torch_utils/ops/upfirdn2d.cu": "af059a0dd7be4ba24e2b6b2f8fb5bcb0a89c4ac8320d17a59f228580164528ca",
+    "torch_utils/ops/upfirdn2d.h": "9f703976585fd9c07d18cf1c00edd3a495dc641ff1e1e1671e2df2ab24126535",
+    "torch_utils/ops/upfirdn2d.py": "7b5865e70ac4156edaefb2a372fee27dc55eb5661568b337cb4168e8936384a8",
+    "torch_utils/persistence.py": "1f24073d03fbb2d772babbf7b8a1175bec6c3423314c2649e9a8a13d37757121",
+    "torch_utils/training_stats.py": "c1c105b7e5c2fa5883516bf2bc05b588da5f45939d37f3fe281abca4579e7616",
+    "training/__init__.py": "5efa02ab9dadcd7c016c7de60161b08288ae64d3375ed6f287c1501b2635f3d9",
+    "training/networks.py": "df49fc78a0364015a09b592bb43546af83a6cdaad753d89a2a1a69bd6e171c24"
+  },
+  "modifications": "None. Runtime import and reference-operator selection are isolated in soflow_fastgen/stylegan2.py."
+}

@@ -20,3 +20,16 @@ https://www.kaggle.com/datasets/bhawks/pokemon-generation-one-22k
 FID: the unchanged official evaluator uses clean-fid and its pretrained Inception feature network. This network is used only for evaluation.
 
 The challenge explicitly allows cited open-source implementations. The general course page has broader wording against Internet-code copying; the Notion challenge notes record that tension. Preserve attribution and raise any remaining interpretation question through the team's normal course process; this implementation sends no course messages.
+
+StyleGAN2 discriminator: NVIDIA's official StyleGAN2-ADA PyTorch implementation,
+https://github.com/NVlabs/stylegan2-ada-pytorch, pinned revision
+`d72cc7d041b42ec8e806021a205ed9349f87c6a4`. Unmodified selected files, license and
+file hashes are in `vendor/stylegan2_ada/`. The runtime adapter selects native
+reference operators and checks top-level import origins. No pretrained weights,
+ADA trainer, StyleGAN2 generator or original GAN loss is used. NVIDIA Source Code
+License is retained in `vendor/stylegan2_ada/LICENSE.txt`.
+
+Adversarial objective: AYF Appendix F.2/F.3 (https://arxiv.org/abs/2506.14603),
+and the higher-is-real convention in https://github.com/brownvc/R3GAN.
+Our code implements RpGAN + R1/R2 around retained SoFlow SCM; it is an adaptation,
+not an AYF reproduction. See `docs/adversarial/INTEGRATION.md`.

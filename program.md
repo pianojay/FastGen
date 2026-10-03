@@ -1,3 +1,8 @@
+> **Historical and inactive on `codex/soflow-ayf-integration` (October 4, 2026).**
+> Current authorization is component integration and bounded smoke verification.
+> Follow [AGENTS.md](AGENTS.md) and [the integration contract](docs/adversarial/INTEGRATION.md).
+> The scratch-only and consecutive-run instructions below describe the previous campaign.
+
 # Autonomous SoFlow research loop
 
 Updated September 30, 2026. These instructions govern an actual research loop once the user starts it. Editing or reading this file alone does not launch training. A request to start or continue research authorizes consecutive in-scope experiments; do not stop for approval between them.

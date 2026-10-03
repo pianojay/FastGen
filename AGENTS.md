@@ -1,15 +1,24 @@
 # FastGen SoFlow work instructions
 
+## Current scope: adversarial integration and smoke verification
+
+User-authorized October 4, 2026: implement SoFlow + class-conditioned StyleGAN2
+discriminator + RpGAN, then stop after bounded component/smoke verification.
+Read [the integration contract](docs/adversarial/INTEGRATION.md). S1/S2/S3 are
+complete; C3 was stopped. The historical autonomous research loop is inactive
+on this branch. No training campaign or next experiment is authorized here.
+
+
 - This is a local TITAN RTX development project, not the KCloud VM.
-- The separate SoFlow checkout and GPU 0 belong to the CIFAR agent. Do not change its files, environments, or processes.
+- Preserve the separate SoFlow, AFM and SiD checkouts and their environments/processes. The CIFAR experiment is closed. This branch uses only physical GPU 1.
 - Use GPU 1 locally. A visible CUDA device may appear as logical GPU 0 after CUDA_VISIBLE_DEVICES=1.
 - Use PYTHONNOUSERSITE=1 and the fastgen_soflow environment. Use python -m pip; include pip in fresh Conda environments.
 - Preserve the official base Model class and every file in configs/protected_files.json. Verify their hashes before runs and exports.
 - Official validation images must not train models or select checkpoints, hyperparameters, or sampling schedules.
-- All generative weights start from scratch on the training-derived optimization partition. Only the official FID Inception is pretrained.
-- Every new training experiment, including controls and longer-horizon variants, starts with fresh model, optimizer, EMA, RNG and data state at update zero. Do not initialize a new experiment from a previous checkpoint or extend a completed schedule. Define the full horizon and all schedules before training. Exact recovery of the same interrupted experiment may restore its state without changing its declared horizon or recipe.
-- The completed baseline EXP-1 had a historical 24-hour GPU-job ceiling with four hours reserved for terminal evaluation. On September 30 the user removed the default 12-hour training cap: select finite training horizons and optimizer-hour allocations justified by measured learning and throughput evidence; follow program.md. Charge every fresh run's full cost and preserve cumulative accounting across failures and exact recovery. Budget qualification, evaluation and confirmation separately, without a fixed 10/2 split. A user-started research loop authorizes consecutive in-scope runs, including evidence-supported longer runs from scratch, without per-experiment approval; honor any later explicit campaign limit. The hard model-size and training-memory limits below remain in force.
-- Checkpoint loaded inference models must contain fewer than 100M parameters. Actual training peak allocation must remain below 20,000,000,000 bytes.
+- This integration may initialize online G and G-EMA from the challenge-trained S3 final EMA. Its optimizer state is fresh; D starts from scratch. U-Net128/160/192 loaders remain supported. No external pretrained training components are permitted.
+- New component counters start at zero while the inherited SoFlow consistency gap remains fixed at its mature value. Exact recovery restores the same configuration, state and RNG streams.
+- The authorized S3 smoke harness is limited to four D updates and three G updates including replay, with a 900-second supervisor watchdog. Small numerical test fixtures are separate disposable checks. No FID study, warmup campaign, schedule extension or autonomous successor run belongs to this scope.
+- Generator and discriminator must each contain fewer than 100M parameters; exported inference contains only the generator. Actual training peak allocation must remain below 20,000,000,000 bytes.
 - Microbatch tuning must retain the effective batch. Compare timings with full augmentation, gradient accumulation, optimizer and EMA live.
 - Baseline augmentation follows upstream SoFlow; catalogued augmentation comparisons are explicit recipe branches. Pass identical transform metadata to both consistency branches and zeros at inference.
 - Update docs/STATUS.md with measured facts, commands, limitations, and next actions. Do not call a running job complete or a local FID official.
@@ -22,11 +31,13 @@ The [completed Pokémon baseline report](docs/POKEMON_BASELINE_RESULTS.md) recor
 The [consolidated FastGen strategy](docs/FASTGEN_STRATEGY.md) connects the CIFAR closure, literature audit and Pokémon experiment. Read it before proposing learned sampling schedules: it distinguishes backbone training, calibration and evaluation costs, and separates the one-call and few-call decisions. Its future experiments are proposals, not launched jobs or changes to the completed run.
 
 
-## Question-driven autoresearch
+## Historical research instructions
 
-[program.md](program.md) defines the autonomous loop for substantial FID improvement at one and few NFEs. Once the user starts research, select, implement, train, evaluate, and continue to the next in-scope experiment without per-experiment approval. Hours-long training is expected when needed; supervise it through completion. Editing or reading instructions alone does not start training. Respect user stops, explicit campaign limits, and external permission boundaries.
-
-The [catalog](docs/AUTORESEARCH_DIRECTIONS.md) supplies possible interventions; its A–D headings are not parallel priorities. Follow program.md's hierarchy: validity/targeted diagnosis, recipe design, recipe optimization/compute scaling, then checkpoint/sampler selection, with evidence-based exceptions. Compare a few plausible options briefly at major decisions. Keep separate one-call/few-call incumbents and use the [incremental research log](docs/RESEARCH_LOG.md) with linked configs and metrics instead of mandatory per-experiment essays. Preserve baseline artifacts, strict resume validation, and protected evaluation. No additional agents without an explicit request.
+[program.md](program.md) preserves the prior autonomous scratch-training loop as
+historical context. It is inactive on this integration branch. Its scratch-only
+and consecutive-experiment rules do not override the current scope above.
+The [research log](docs/RESEARCH_LOG.md), completed results and C3 stop evidence
+remain historical facts. No additional agents without an explicit request.
 
 ## Shared SoFlow CIFAR-10 documentation
 
@@ -34,7 +45,7 @@ The canonical documents from the SoFlow CIFAR-10 work reside in this checkout
 so Astra and the CIFAR agent can use the same records:
 
 - [CIFAR documentation index](docs/soflow-cifar10/README.md).
-- [Few-NFE training-cost literature audit](docs/soflow-cifar10/few-nfe-training-cost-audit.md): direct training, distillation, pretrained tuning, and LD3/BézierFlow sampler optimization. Its pretrained options do not change FastGen's scratch-initialization requirement or permitted losses.
+- [Few-NFE training-cost literature audit](docs/soflow-cifar10/few-nfe-training-cost-audit.md): direct training, distillation, pretrained tuning, and LD3/BézierFlow sampler optimization. Its pretrained examples do not authorize external pretrained training components; the current local-checkpoint initialization permission is stated above.
 - [Training scale, paper comparison, and runtime measurements](docs/soflow-cifar10/cifar10-training-cost.md).
 - [Training run record, scripts, modifications, and restart history](docs/soflow-cifar10/TRAINING_RUN.md).
 
