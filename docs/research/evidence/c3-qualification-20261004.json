@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-10-04T01:08:16.348140+09:00",
+  "qualification": {
+    "initialization": "scratch",
+    "initial_step": 0,
+    "initial_optimizer_entries": 0,
+    "checkpoint_saved": false,
+    "parameters": 89140419,
+    "microbatch": 16,
+    "effective_batch": 128,
+    "eligible": true,
+    "mean_update_seconds": 2.9504544340632854,
+    "median_update_seconds": 2.9571436420083046,
+    "first_half_mean_seconds": 2.9372244772315024,
+    "last_half_mean_seconds": 2.9636843908950685,
+    "terminal_mean_update_seconds": 2.96593429222703,
+    "peak_training_allocated_bytes": 7689744896,
+    "peak_training_reserved_bytes": 8369733632,
+    "peak_host_rss_bytes": 1789710336,
+    "peak_sampled_process_tree_pss_bytes": 3291716608,
+    "terminal_limitation": "Step is advanced only to exercise the declared terminal loss path; weights and optimizer have only the recorded disposable updates.",
+    "training_config_sha256": "a08e0bef50fb345a21a1900f2c942ab4973df7675567bf0fef4894b95512c1ad",
+    "environment": {
+      "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+      "executable": "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+      "packages": {
+        "torch": "2.7.1+cu126",
+        "torchvision": "0.22.1+cu126",
+        "clean-fid": "0.1.35",
+        "numpy": "1.26.4",
+        "Pillow": "12.3.0"
+      }
+    },
+    "gpu": "NVIDIA TITAN RTX, 70, 1845, 6500, 8200, 99",
+    "sampling_timing": {
+      "1": {
+        "batch_size": 32,
+        "measured_batches": 10,
+        "mean_batch_seconds": 0.20679817348718643,
+        "max_batch_seconds": 0.212596008554101,
+        "network_calls": 12,
+        "seconds_for_95_full_batches_estimate": 19.64582648128271,
+        "limitation": "Disposable weights; excludes PNG writing and FID; no quality score."
+      },
+      "4": {
+        "batch_size": 32,
+        "measured_batches": 10,
+        "mean_batch_seconds": 0.8220865344628692,
+        "max_batch_seconds": 0.8234433755278587,
+        "network_calls": 48,
+        "seconds_for_95_full_batches_estimate": 78.09822077397257,
+        "limitation": "Disposable weights; excludes PNG writing and FID; no quality score."
+      }
+    },
+    "peak_sampling_allocated_bytes": 2218902016
+  },
+  "qualification_retry_gpu_job_seconds": 373.8890144750476,
+  "original_contract_failure_gpu_job_seconds": 11.008741231635213,
+  "diagnostic_gpu_job_seconds": 6.038456555455923,
+  "all_pretraining_qualification_gpu_job_seconds": 390.9362122621387,
+  "original_cumulative_allowance_seconds": 1200,
+  "all115_updates_finite_with32_fm_96_consistency": true,
+  "gpu_contract_tests_passed": 24,
+  "qualification_records": [
+    {
+      "path": "runs/research_c3_qualification_20261004/record.json",
+      "sha256": "6d9ccc94e264ab4977d29e978c90b19325fc3ced133c9a3e391e9b49d575b3b2"
+    },
+    {
+      "path": "runs/research_c3_diagnostic_20261004/record.json",
+      "sha256": "bce979dd0ec42fbc7cc2b4e5670b793c38a09fb3fe345c537fcfff46d59f6029"
+    },
+    {
+      "path": "runs/research_c3_qualification_retry_20261004/record.json",
+      "sha256": "3aed4b614dd49b71ddf6ff973aba067d4e98853cd5cd5f477697e0ccbe32e157",
+      "selected_sha256": "8f9b02dcd6f0d940933c0bc372fac589de6b5f9e7ba127abf6fd76a2337e5975"
+    }
+  ],
+  "source_sha256": "ce9325bfcc9be529bcc175e581602399a3d7fdc4e5479d4d4c34fada46462f5a",
+  "source_git_commit": "b0c83688c36e8a5b9758aca8b7db216bc79b3d9b",
+  "protected_files_verified": true,
+  "official_score": false
+}
