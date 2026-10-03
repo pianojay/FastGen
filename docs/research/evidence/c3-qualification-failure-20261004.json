@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-10-04T01:00:49.358815+09:00",
+  "state": "contracts_failed_and_diagnosed",
+  "original_qualification_budget_seconds": 1200,
+  "used_gpu_job_seconds": 17.047197787091136,
+  "remaining_gpu_job_seconds": 1182.9528022129089,
+  "failed_contracts_seconds": 11.008741231635213,
+  "diagnostic_seconds": 6.038456555455923,
+  "production_updates": 0,
+  "failure": "New zero-mixture test required bitwise equality of updated GPU weights. All other23 tests passed.",
+  "diagnosis": [
+    {
+      "comparison": "default versus repeat default",
+      "initial_equal": true,
+      "cpu_rng_equal": true,
+      "cuda_rng_equal": true,
+      "max_weight_abs_difference": 1.0842021724855044e-19,
+      "changed_parameter_tensors": 67,
+      "all_close_rtol1e-6_atol1e-7": true,
+      "stats": [
+        {
+          "loss_surrogate": -9.391484923071403e-09,
+          "consistency_mse": 1.8951090574264526,
+          "weight": 0.6217647790908813,
+          "grad_norm": 0.3265874683856964
+        },
+        {
+          "loss_surrogate": -9.391484923071403e-09,
+          "consistency_mse": 1.8951090574264526,
+          "weight": 0.6217647790908813,
+          "grad_norm": 0.3265874683856964
+        }
+      ]
+    },
+    {
+      "comparison": "default versus explicit zero",
+      "initial_equal": true,
+      "cpu_rng_equal": true,
+      "cuda_rng_equal": true,
+      "max_weight_abs_difference": 4.336808689942018e-19,
+      "changed_parameter_tensors": 67,
+      "all_close_rtol1e-6_atol1e-7": true,
+      "stats": [
+        {
+          "loss_surrogate": -9.391484923071403e-09,
+          "consistency_mse": 1.8951090574264526,
+          "weight": 0.6217647790908813,
+          "grad_norm": 0.3265874683856964
+        },
+        {
+          "loss_surrogate": -9.391484923071403e-09,
+          "consistency_mse": 1.8951090574264526,
+          "weight": 0.6217647790908813,
+          "grad_norm": 0.3265874683856964
+        }
+      ]
+    }
+  ],
+  "resolution": "Use existing recovery numerical tolerances for updated tensors; retain exact initial-state, CPU/CUDA RNG and scalar-diagnostic checks. Trainer implementation unchanged. Retry uses only the original remaining qualification allowance.",
+  "artifacts": {
+    "runs/research_c3_qualification_20261004/record.json": "6d9ccc94e264ab4977d29e978c90b19325fc3ced133c9a3e391e9b49d575b3b2",
+    "runs/research_c3_qualification_20261004/contracts.log": "0daf01e21c5bc54e11c52e8474505340c58e1a5f7358149c788410c492ed6c7d",
+    "runs/research_c3_qualification_20261004/launch.json": "8fcce272d87931c53d450514b67dce62b19cc97be5e72e4f5470f488cc846b45",
+    "runs/research_c3_diagnostic_20261004/record.json": "bce979dd0ec42fbc7cc2b4e5670b793c38a09fb3fe345c537fcfff46d59f6029",
+    "runs/research_c3_diagnostic_20261004/check.py": "86b7632f0f910a1668f6fde55d62769267fb54ca1223123e77f37a21f1a3f899",
+    "runs/research_c3_diagnostic_20261004/result.json": "ce77c1eac61d5a66c7c95feaf695a0a1ef8de1592f331aed6d286f6a0f986dfb",
+    "runs/research_c3_diagnostic_20261004/diagnostic.log": "ce77c1eac61d5a66c7c95feaf695a0a1ef8de1592f331aed6d286f6a0f986dfb"
+  },
+  "official_score": false
+}
