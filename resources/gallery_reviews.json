@@ -55,6 +55,10 @@
     "gallery": "runs/campaign/S3/eval_002000/gallery_fixed_0.png",
     "observation": "FID improves from 41.7539 to 37.3777 on identical evaluation draws. Fixed-noise compositions remain varied, with recognizable Eevee/Gengar/Scyther cues and clearer contours in some samples. Dewgong still includes incomplete thin bodies; Gyarados, Metapod and Pidgeot retain shape and anatomy errors. Median relative pixel diversity is 0.9591, with 0/151 flags; its change is not a semantic-diversity score. Selection remains provisional."
   },
+  "S3 confirmation seed": {
+    "gallery": "runs/campaign/S3/confirmation/gallery_fixed_0.png",
+    "observation": "Confirmation FID is 36.0900. The second noise draw produces varied poses and compositions, with recognizable cues in many samples, but malformed bodies and inconsistent class-specific shapes remain. Both final draws have 0/151 pixel flags and about 1.01 median relative pixel diversity; this is not a semantic-coverage score."
+  },
   "Selected A1 at 4,000": {
     "gallery": "runs/campaign/A1/eval_004000/gallery_fixed_0.png",
     "observation": "Final/selected FID is 52.4695 and confirmation FID is 52.3536, compared with S1 66.4564 and 67.0671. The FID advantage persists at all three matched checkpoints but narrows from about 24 points at 1k to 14 points at 4k. Pixel-collapse flags are 0/151 in both final evaluation draws. Visual interpretation remains mixed; see the all-class pair review."
@@ -70,6 +74,10 @@
   "Selected S2 at 4,000": {
     "gallery": "runs/campaign/S2/eval_004000/gallery_fixed_0.png",
     "observation": "FID improves 40.0471 \u2192 37.6426 \u2192 36.6304 across 1k/2k/4k; the final checkpoint is selected. The 16 fixed classes retain distinct compositions and recognizable cues, with cleaner shapes in several samples but continuing merged or incorrect anatomy. Metapod varies in orientation and shape but often departs from its expected cocoon structure. Gyarados and Machamp remain difficult. This is a within-run trend, not a measured improvement over an unavailable same-NFE initialization baseline."
+  },
+  "Selected S3 at 4,000": {
+    "gallery": "runs/campaign/S3/eval_004000/gallery_fixed_0.png",
+    "observation": "FID improves 41.7539 \u2192 37.3777 \u2192 35.8246 across the fixed 1k/2k/4k checkpoints, selecting the final checkpoint. The fixed 16-class gallery retains distinct compositions and recognizable cues; structural errors remain in Dewgong, Gyarados, Machamp, Metapod and Pidgeot examples. The small FID difference versus two-call SiD does not isolate an inference-call effect because seeds, per-position exposure and compute also differ."
   },
   "Selected T at 30,000": {
     "gallery": "runs/campaign/T/eval_030000/gallery_fixed_0.png",
