@@ -10,7 +10,7 @@ Recorded GPU-job budget use: **10.1978 hours**; peak training allocation: **8.61
 
 ## Decisions and boundaries
 
-### October 4 C3 qualified — fresh production launch next
+### October 4 C3 running — fresh mixed-objective recipe
 
 C3 tests **25% direct flow-matching / 75% consistency examples** in a fresh U-Net192, 40k run, against completed S3 at matched exposure. The [three-option decision](RESEARCH_LOG.md#october-4-next-recipe-decision) compares this objective recipe with fresh 60k training and seed replication. Architecture, augmentation, fixed-LR RAdam, EMA and the full 40k consistency curriculum match S3; all model/optimizer/EMA/RNG/data states restart at zero. Each shuffled effective batch 128 assigns 32 examples to FM and 96 to consistency with sample-count weighting, using only the optimization partition. This changes consistency exposure and RNG consumption; it matches total presentations, not compute or optimization noise.
 
@@ -18,7 +18,7 @@ Completed qualification measured **2.950454 seconds/update** (last half 2.963684
 
 The fixed [training config](../configs/research_c3_train.json) and [protocol](../configs/research_c3_20261004.json) allocate a **38-hour cumulative training watchdog**, **60-minute evaluation/confirmation allowance**, **5-minute production contract allowance**, and at most one same-run recovery within the remaining budgets. [Measured allocation arithmetic](research/evidence/c3-allocation-20261004.json). Keep microbatch 16 / effective batch 128 and the full 40k horizon. Evaluate the fixed final EMA on one/four calls against S3 with selection 3101/3102 and reserved confirmation 4101–4104; 20k/30k checkpoints describe the curve only. Both S3 incumbents remain unchanged pending scores. Prior campaign cost is **88.427809 hours**, excluding inherited EXP-1.
 
-Next: freeze prepared source/configuration identities and launch with `PYTHONNOUSERSITE=1 CUDA_VISIBLE_DEVICES=1 OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 /home/user/miniconda3/envs/fastgen_soflow/bin/python -m scripts.training_study --config configs/research_c3_20261004.json`, after `--prepare`. No C3 production updates or FID yet; all qualification processes exited and GPU 1 was idle after closure.
+Workflow PID **3755229** launched **2026-10-04 01:11:25 KST**, prepared revision `41b1294` on `research/c3-scratch-fm25-20261004`, with frozen source/protocol/configuration identities. Command: `PYTHONNOUSERSITE=1 CUDA_VISIBLE_DEVICES=1 OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 /home/user/miniconda3/envs/fastgen_soflow/bin/python -m scripts.training_study --config configs/research_c3_20261004.json`, after `--prepare`. Production contracts and S3 reference passes precede the fresh trainer. No C3 FID or incumbent change; supervise the full declared horizon and paired evaluation. [Live workflow record](../runs/research_c3_unet192_fm25_40k_seed42/record.json). The preparation guard rejected an earlier overlapping launcher invocation before any workflow or GPU job; it added zero GPU-job cost.
 
 ### October 4 S3 completed — current research result
 
