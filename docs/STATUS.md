@@ -1,5 +1,28 @@
 # Local Pokémon/FastGen experiment status
 
+## 2026-10-05 — fixed pre-program audit complete
+
+All A0–A4 procedures in the [pre-program](../pre_program.md) completed on GPUs
+1/2 in **3.9786 aggregate GPU-job hours**, with no failed stages or retries.
+All 38 contracts passed, and B8/B32 recovery was bitwise exact. Disposable A4
+used 12 D / 8 G attempts; peak whole-worker allocation was **13.06 GB**.
+
+The 6,040 frozen-S3 samples had **14.06%** clipped channel coordinates.
+Two independent 512-update D runs reached **59.52% / 59.02%** held-out pair
+accuracy, with small fit/holdout gaps. Final actual-versus-diagnostic-unmasked
+parameter-gradient cosines were **0.9971 / 0.9896**. Clamp masking did not erase
+the measured parameter gradients; useful adversarial guidance and a G learning
+horizon remain unestablished. No FID or sustained G tuning was performed.
+
+[Final report](adversarial/PRE_PROGRAM_RESULTS.md) ·
+[compact evidence](adversarial/pre-program-evidence-20261005.json) ·
+[frozen manifest](adversarial/pre-program-manifest-20261004.json) ·
+[gallery](../runs/pre_program_audit_20261004/saturation/gallery.html).
+Both workers exited and GPUs 1/2 were idle. The [program](../program.md) was
+updated with measured facts and remains **draft and inactive**; no successor
+was launched. Historical scratch instructions are preserved byte-for-byte in
+[program.scratch-history.md](../program.scratch-history.md).
+
 ## 2026-10-04 — adversarial component integration verified
 
 Current branch `codex/soflow-ayf-integration` implements S3-EMA SoFlow with a

@@ -1,6 +1,11 @@
 # SoFlow endpoint adversarial integration
 
-Current contract, October 4, 2026. This branch implements components and bounded
+Current mathematical contract, October 4, 2026. Operational update: the separately
+authorized [pre-program](../../pre_program.md) now adds fixed diagnostics on GPUs
+1/2. The audit is now [complete](PRE_PROGRAM_RESULTS.md). The original smoke scope below remains historical; no quality campaign is
+authorized, and [program.md](../../program.md) remains inactive.
+
+Original integration scope, October 4, 2026. This branch implements components and bounded
 smoke verification. It does not define or authorize a post-training experiment,
 FID study, warmup/ramp schedule, or autonomous research loop.
 

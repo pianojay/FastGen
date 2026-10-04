@@ -1,23 +1,29 @@
 # FastGen SoFlow work instructions
 
-## Current scope: adversarial integration and smoke verification
+## Current scope: completed diagnostic pre-program; research draft inactive
 
-User-authorized October 4, 2026: implement SoFlow + class-conditioned StyleGAN2
-discriminator + RpGAN, then stop after bounded component/smoke verification.
-Read [the integration contract](docs/adversarial/INTEGRATION.md). S1/S2/S3 are
-complete; C3 was stopped. The historical autonomous research loop is inactive
-on this branch. No training campaign or next experiment is authorized here.
+The fixed audit completed October 5, 2026. Read
+[its final report](docs/adversarial/PRE_PROGRAM_RESULTS.md). Do not rerun it or
+launch a successor automatically. The original authorized scope follows.
+
+User-authorized October 4, 2026: implement and execute [pre_program.md](pre_program.md),
+then report. Its scope is deterministic diagnostics, not sustained G fine-tuning
+or a FID-improvement pilot. The aggregate allowance is 12 GPU-job hours across
+physical GPUs 1 and 2, including failed attempts and recovery. It is a ceiling,
+not a spending target. [program.md](program.md) is tentative and inactive;
+completion of the pre-program never launches it. Preserve S1/S2/S3 and stopped C3.
+The [integration contract](docs/adversarial/INTEGRATION.md) still defines the math.
 
 
 - This is a local TITAN RTX development project, not the KCloud VM.
-- Preserve the separate SoFlow, AFM and SiD checkouts and their environments/processes. The CIFAR experiment is closed. This branch uses only physical GPU 1.
-- Use GPU 1 locally. A visible CUDA device may appear as logical GPU 0 after CUDA_VISIBLE_DEVICES=1.
+- Preserve the separate SoFlow, AFM and SiD checkouts and their environments/processes. The CIFAR experiment is closed. The audit may use physical GPUs 1 and 2.
+- Audit workers use CUDA_VISIBLE_DEVICES=1 or CUDA_VISIBLE_DEVICES=2 and local cuda:0. Verify physical UUID and acquire the existing device-specific lease. No fallback to GPUs 0/3, distributed training, or additional agents.
 - Use PYTHONNOUSERSITE=1 and the fastgen_soflow environment. Use python -m pip; include pip in fresh Conda environments.
 - Preserve the official base Model class and every file in configs/protected_files.json. Verify their hashes before runs and exports.
 - Official validation images must not train models or select checkpoints, hyperparameters, or sampling schedules.
 - This integration may initialize online G and G-EMA from the challenge-trained S3 final EMA. Its optimizer state is fresh; D starts from scratch. U-Net128/160/192 loaders remain supported. No external pretrained training components are permitted.
 - New component counters start at zero while the inherited SoFlow consistency gap remains fixed at its mature value. Exact recovery restores the same configuration, state and RNG streams.
-- The authorized S3 smoke harness is limited to four D updates and three G updates including replay, with a 900-second supervisor watchdog. Small numerical test fixtures are separate disposable checks. No FID study, warmup campaign, schedule extension or autonomous successor run belongs to this scope.
+- The completed integration smoke remains historical evidence. New audit limits are in pre_program.md: two frozen-G D runs up to 512 updates each; disposable A4 at most 16 D and 16 G attempts including replay. No sustained G tuning, FID study or autonomous successor run is authorized.
 - Generator and discriminator must each contain fewer than 100M parameters; exported inference contains only the generator. Actual training peak allocation must remain below 20,000,000,000 bytes.
 - Microbatch tuning must retain the effective batch. Compare timings with full augmentation, gradient accumulation, optimizer and EMA live.
 - Baseline augmentation follows upstream SoFlow; catalogued augmentation comparisons are explicit recipe branches. Pass identical transform metadata to both consistency branches and zeros at inference.
@@ -33,7 +39,7 @@ The [consolidated FastGen strategy](docs/FASTGEN_STRATEGY.md) connects the CIFAR
 
 ## Historical research instructions
 
-[program.md](program.md) preserves the prior autonomous scratch-training loop as
+[program.scratch-history.md](program.scratch-history.md) preserves the prior autonomous scratch-training loop as
 historical context. It is inactive on this integration branch. Its scratch-only
 and consecutive-experiment rules do not override the current scope above.
 The [research log](docs/RESEARCH_LOG.md), completed results and C3 stop evidence

@@ -274,15 +274,18 @@ class AdversarialComponents:
                     stats[key] += fraction * value.detach().item()
         return stats
 
-    def generator_update(self, images, categories):
+    def generator_update(self, images, categories, *, rho=None):
         images, categories = self._batch(images, categories)
         self.g_optimizer.zero_grad(set_to_none=True)
         self.d_optimizer.zero_grad(set_to_none=True)
+        rho = self.config.rho if rho is None else float(rho)
+        if not math.isfinite(rho) or rho < 0:
+            raise ValueError('rho must be finite and nonnegative')
         stats = self.consistency_backward(images, categories)
         gc = [torch.zeros_like(p) if p.grad is None else p.grad.detach().clone() for p in self.parameters]
         self.g_optimizer.zero_grad(set_to_none=True)
         stats.update(adversarial_loss=0., clipped_fraction=0., masked_gradient_energy_fraction=0.)
-        if self.config.rho != 0:
+        if rho != 0:
             noise = self._draw('g_noise', images)
             mask = self._mask('g_flip', len(images))
             for start in range(0, len(images), 4):
@@ -300,7 +303,7 @@ class AdversarialComponents:
                     stats['masked_gradient_energy_fraction'] += ((energy * clipped).sum() / energy.sum().clamp_min(1e-30)).item() * fraction
                 del raw, visible, loss
         ga = [torch.zeros_like(p) if p.grad is None else p.grad.detach() for p in self.parameters]
-        gradients, balance = balanced_gradients(gc, ga, self.config.rho)
+        gradients, balance = balanced_gradients(gc, ga, rho)
         stats.update(balance)
         for p, gradient in zip(self.parameters, gradients):
             p.grad = gradient
