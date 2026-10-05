@@ -1,3 +1,11 @@
+## October 5, 2026 — fixed matched pilot authorized
+
+The user explicitly authorized implementation and execution of the
+[matched pilot](adversarial/MATCHED_PILOT_DRAFT.md). Source preparation is complete;
+qualification and both runs are pending. Exactly two 512-update G arms, GPU1/2,
+4.5 aggregate GPU-job-hour ceiling; `program.md` remains inactive. Preserve
+completed pre-program evidence and its corrected authorization history.
+
 # Local Pokémon/FastGen experiment status
 
 ## 2026-10-05 — fixed pre-program audit complete

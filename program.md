@@ -1,8 +1,13 @@
 # Tentative SoFlow adversarial autoresearch
 
 > **DRAFT — NOT AUTHORIZED TO RUN AUTOMATICALLY.**
-> `pre_program.md` is the separately authorized diagnostic assignment.
+> `pre_program.md` records the completed diagnostic audit; the user clarified
+> that its execution exceeded the intended documentation-only assignment.
 > Its completion does not start this program or its learning pilot.
+
+A separate [matched pilot draft](docs/adversarial/MATCHED_PILOT_DRAFT.md) proposes
+stratum 0 only. The user separately authorized its implementation and fixed execution on October5;
+its numeric choices do not activate this broader research programme.
 
 ## Objective and fixed foundation
 

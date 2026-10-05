@@ -4,26 +4,30 @@
 
 The fixed audit completed October 5, 2026. Read
 [its final report](docs/adversarial/PRE_PROGRAM_RESULTS.md). Do not rerun it or
-launch a successor automatically. The original authorized scope follows.
+launch a successor automatically. The user clarified October 5 that the intended
+assignment was to **write** the pre-program; the other agent also executed it.
+Earlier prose calling that execution authorized was mistaken. Preserve the
+completed execution facts, artifacts, frozen manifest and accounting as history.
 
-User-authorized October 4, 2026: implement and execute [pre_program.md](pre_program.md),
-then report. Its scope is deterministic diagnostics, not sustained G fine-tuning
-or a FID-improvement pilot. The aggregate allowance is 12 GPU-job hours across
-physical GPUs 1 and 2, including failed attempts and recovery. It is a ceiling,
-not a spending target. [program.md](program.md) is tentative and inactive;
-completion of the pre-program never launches it. Preserve S1/S2/S3 and stopped C3.
-The [integration contract](docs/adversarial/INTEGRATION.md) still defines the math.
+Current authorization, October 5: the user instructed “Order subagent Soflow
+matched pilot draft to carry out the pilot.” Implement, qualify and execute
+[the fixed matched pilot](docs/adversarial/MATCHED_PILOT_DRAFT.md): A on GPU1,
+C on GPU2, 512 G updates per arm, fixed protocol and 4.5 aggregate GPU-job-hour
+ceiling. No intermediate approval waits for in-scope steps. This does not activate
+[program.md](program.md), authorize a successor, or replenish the completed audit's
+historical allowance. Preserve S1/S2/S3, C3 and all audit evidence. The
+[integration contract](docs/adversarial/INTEGRATION.md) defines the unchanged math.
 
 
 - This is a local TITAN RTX development project, not the KCloud VM.
-- Preserve the separate SoFlow, AFM and SiD checkouts and their environments/processes. The CIFAR experiment is closed. The audit may use physical GPUs 1 and 2.
+- Preserve the separate SoFlow, AFM and SiD checkouts and their environments/processes. The CIFAR experiment is closed. The completed audit used physical GPUs 1 and 2; availability is not launch permission.
 - Audit workers use CUDA_VISIBLE_DEVICES=1 or CUDA_VISIBLE_DEVICES=2 and local cuda:0. Verify physical UUID and acquire the existing device-specific lease. No fallback to GPUs 0/3, distributed training, or additional agents.
 - Use PYTHONNOUSERSITE=1 and the fastgen_soflow environment. Use python -m pip; include pip in fresh Conda environments.
 - Preserve the official base Model class and every file in configs/protected_files.json. Verify their hashes before runs and exports.
 - Official validation images must not train models or select checkpoints, hyperparameters, or sampling schedules.
-- This integration may initialize online G and G-EMA from the challenge-trained S3 final EMA. Its optimizer state is fresh; D starts from scratch. U-Net128/160/192 loaders remain supported. No external pretrained training components are permitted.
-- New component counters start at zero while the inherited SoFlow consistency gap remains fixed at its mature value. Exact recovery restores the same configuration, state and RNG streams.
-- The completed integration smoke remains historical evidence. New audit limits are in pre_program.md: two frozen-G D runs up to 512 updates each; disposable A4 at most 16 D and 16 G attempts including replay. No sustained G tuning, FID study or autonomous successor run is authorized.
+- This integration may initialize online G and G-EMA from the challenge-trained S3 final EMA. Its G optimizer state is fresh. D started from scratch for the completed integration/audit; the authorized pilot reuses D20261004 with its optimizer, D streams and sampler as declared. U-Net128/160/192 loaders remain supported. No external pretrained training components are permitted.
+- New G counters start at zero; the pilot preserves inherited D=512 separately while the inherited SoFlow consistency gap remains fixed at its mature value. Exact recovery restores the same configuration, state and RNG streams.
+- The completed integration smoke remains historical evidence. Historical audit limits are in pre_program.md: two frozen-G D runs up to 512 updates each; disposable A4 at most 16 D and 16 G attempts including replay. The separately authorized fixed matched pilot permits its declared G tuning/FID study; no autonomous successor is authorized.
 - Generator and discriminator must each contain fewer than 100M parameters; exported inference contains only the generator. Actual training peak allocation must remain below 20,000,000,000 bytes.
 - Microbatch tuning must retain the effective batch. Compare timings with full augmentation, gradient accumulation, optimizer and EMA live.
 - Baseline augmentation follows upstream SoFlow; catalogued augmentation comparisons are explicit recipe branches. Pass identical transform metadata to both consistency branches and zeros at inference.

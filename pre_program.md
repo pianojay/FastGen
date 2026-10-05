@@ -1,9 +1,13 @@
 # Fixed pre-program audit — October 4, 2026
 
-This assignment is authorized for execution and a final report. It stops after
-diagnostics. **Never launch `program.md` as a successor.** The 12 aggregate
-GPU-job-hour allowance is a ceiling, not a target. No sustained G tuning or
-FID-improvement pilot belongs here. Reading this document alone is not a launch.
+**Historical, completed procedure; no current execution authorization.** The user
+clarified October 5 that the intended assignment was to write this protocol;
+the other agent also executed it. The former statement that execution was
+authorized was mistaken. Preserve all completed facts, reports, frozen manifests
+and artifacts. The 12 aggregate GPU-job-hour ceiling below describes the executed
+procedure, not a remaining allowance. **Never launch `program.md` as a successor.**
+The user later separately authorized the fixed matched pilot; see its
+[protocol](docs/adversarial/MATCHED_PILOT_DRAFT.md). This does not reopen this audit.
 
 ## Completion record — October 5, 2026
 

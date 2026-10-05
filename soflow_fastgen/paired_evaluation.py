@@ -75,7 +75,7 @@ def evaluation_identity(protocol, schedule, seed, source_hash, reference_hash):
     return {
         'protocol_sha256': fingerprint(protocol), 'source_sha256': source_hash,
         'environment_sha256': fingerprint(environment_identity()),
-        'checkpoint_sha256': protocol['checkpoint_sha256'], 'weight_source': 'ema',
+        'checkpoint_sha256': protocol['checkpoint_sha256'], 'weight_source': protocol.get('weight_source', 'ema'),
         'partition_sha256': protocol['partition_sha256'], 'reference_sha256': reference_hash,
         'nfe': protocol['nfe'], 'query_times': list(query_times(protocol['nfe'], schedule['intermediate_times'])),
         'seed': seed, 'noise_protocol': NOISE_PROTOCOL, 'batch_size': protocol['eval_batch_size'],
