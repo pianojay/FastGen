@@ -1,0 +1,13 @@
+{
+  "protected_vendor_frozen_source_count": 67,
+  "assets_protocol_exports_verified": true,
+  "evaluation_count": 18,
+  "leases_free": [
+    "/home/user/jw_soflow/FastGen-SoFlow/runs/gpu_1.lock",
+    "/tmp/fastgen-gpu2.lock"
+  ],
+  "fid_call_and_noise_identity": true,
+  "docs_links": true,
+  "source_manifest_sha256": "b3e14d3ed7b41047188b2510b880737c2b771b7e3225b674b62ab9360bcf4e27",
+  "aggregate_gpu_hours": 3.079874514341354
+}

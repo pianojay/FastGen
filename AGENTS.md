@@ -1,6 +1,6 @@
 # FastGen SoFlow work instructions
 
-## Current scope: completed diagnostic pre-program; research draft inactive
+## Current scope: completed matched pilot; research draft inactive
 
 The fixed audit completed October 5, 2026. Read
 [its final report](docs/adversarial/PRE_PROGRAM_RESULTS.md). Do not rerun it or
@@ -9,14 +9,14 @@ assignment was to **write** the pre-program; the other agent also executed it.
 Earlier prose calling that execution authorized was mistaken. Preserve the
 completed execution facts, artifacts, frozen manifest and accounting as history.
 
-Current authorization, October 5: the user instructed “Order subagent Soflow
-matched pilot draft to carry out the pilot.” Implement, qualify and execute
-[the fixed matched pilot](docs/adversarial/MATCHED_PILOT_DRAFT.md): A on GPU1,
-C on GPU2, 512 G updates per arm, fixed protocol and 4.5 aggregate GPU-job-hour
-ceiling. No intermediate approval waits for in-scope steps. This does not activate
-[program.md](program.md), authorize a successor, or replenish the completed audit's
-historical allowance. Preserve S1/S2/S3, C3 and all audit evidence. The
-[integration contract](docs/adversarial/INTEGRATION.md) defines the unchanged math.
+The user explicitly authorized the fixed matched pilot on October 5. It is now
+**completed and stopped**: [results](docs/adversarial/MATCHED_PILOT_RESULTS.md).
+Both 512-update G arms and all 18 FID passes finished within 3.0799 aggregate
+GPU-job hours; GPUs 1/2 were released. No successor or restart is authorized.
+[The executed protocol](docs/adversarial/MATCHED_PILOT_DRAFT.md) remains frozen as
+history. [program.md](program.md) remains inactive. Preserve S1/S2/S3, C3 and all
+audit/pilot evidence. The [integration contract](docs/adversarial/INTEGRATION.md)
+defines the unchanged math.
 
 
 - This is a local TITAN RTX development project, not the KCloud VM.

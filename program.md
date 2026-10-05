@@ -5,9 +5,11 @@
 > that its execution exceeded the intended documentation-only assignment.
 > Its completion does not start this program or its learning pilot.
 
-A separate [matched pilot draft](docs/adversarial/MATCHED_PILOT_DRAFT.md) proposes
-stratum 0 only. The user separately authorized its implementation and fixed execution on October5;
-its numeric choices do not activate this broader research programme.
+The separately authorized [fixed matched pilot](docs/adversarial/MATCHED_PILOT_DRAFT.md)
+completed on October 5; [results](docs/adversarial/MATCHED_PILOT_RESULTS.md) show
+A improves on C's final EMA but both regress from S3. This does not advance the
+programme automatically. Explain the continuation-control regression before
+broad activation/strength search. The catalogue below remains a tentative draft.
 
 ## Objective and fixed foundation
 
@@ -98,7 +100,9 @@ families above; they do not activate them:
   to SCM in the diagnostic draws. Its effect on learning remains unknown and
   no range-training arm exists yet.
 
-**Priority remains stratum 0.** Specify a bounded, informative matched pilot
+**Historical pre-pilot priority was stratum 0.** The instructions in this paragraph
+and the next were fulfilled by the completed matched pilot; they do not authorize
+a repeat. The original requirement was to specify a bounded, informative matched pilot
 before searching timing, strength or optimizer recipes. Its protocol must state
 why D preparation is informative, how EMA lag is handled, and what evidence
 would distinguish an ineffective intervention from an observation window that
@@ -112,6 +116,9 @@ the control's G data or common draws. Qualify that pairing, the full schedule,
 and the chosen checkpoint-selection rule before substantive launches.
 
 ## Launch blockers and autonomy
+
+These blockers concern any future search campaign. The separately frozen pilot
+resolved its own recipe, qualification and finite allowance and has completed.
 
 **UNRESOLVED:** learning-pilot recipe and horizon; numerical search ranges;
 candidate count; campaign GPU-job allowance; per-run watchdogs; evaluation,

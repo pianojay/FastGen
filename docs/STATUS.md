@@ -1,12 +1,23 @@
-## October 5, 2026 — fixed matched pilot authorized
-
-The user explicitly authorized implementation and execution of the
-[matched pilot](adversarial/MATCHED_PILOT_DRAFT.md). Source preparation is complete;
-qualification and both runs are pending. Exactly two 512-update G arms, GPU1/2,
-4.5 aggregate GPU-job-hour ceiling; `program.md` remains inactive. Preserve
-completed pre-program evidence and its corrected authorization history.
-
 # Local Pokémon/FastGen experiment status
+
+## October 5, 2026 — matched adversarial pilot complete; stopped
+
+Exactly two 512-update G arms and all 18 evaluations completed. Confirmation
+1-NFE EMA means: S3 **66.9983**, consistency-only C **82.6537**, adversarial A
+**79.8656**. A−C **−2.7882** is a favorable recipe response; A−S3 **+12.8672**
+is a practical regression. Four-call seed 7301: **25.0951 /31.5657 /30.0128**.
+No S3 replacement and no next experiment launched. Final raw A did not beat C.
+
+[Report](adversarial/MATCHED_PILOT_RESULTS.md) ·
+[evidence](adversarial/matched-pilot-evidence-20261005.json) ·
+[gallery](../runs/matched_pilot_20261005/report/gallery.html).
+New aggregate GPU-job cost 3.0799 h, peak allocation 12.109 GB; exact 512-step pairing,
+recovery qualification and independent G-only exports passed. Both leases
+released. Inherited S3/D costs are separately disclosed in the report.
+No obvious new template collapse in six reviewed draws for all 151 classes;
+this is not semantic-diversity or memorization clearance. Prioritize explaining
+the continuation-control regression before GAN-strength search. `program.md`
+remains inactive; no successor is authorized.
 
 ## 2026-10-05 — fixed pre-program audit complete
 
@@ -81,7 +92,7 @@ S3 completed **October 4 at 00:41:17 KST**, including all 40,000 scratch updates
 | S2, U-Net160 | 61,934,243 | 28.7790 | 6.1606 GB | 74.8758 / 26.5204 |
 | S3, U-Net192 | 89,140,419 | 35.3079 | 7.7014 GB | 66.9684 / 25.0072 |
 
-All three use the same full horizon and effective batch 128. S1 uses microbatch32; S2/S3 use microbatch16, which affects both memory and runtime. Each row is one scratch training seed, with identical generation-seed confirmation conditions.
+All three use the same full horizon and effective batch 128. S1 uses microbatch 32; S2/S3 use microbatch16, which affects both memory and runtime. Each row is one scratch training seed, with identical generation-seed confirmation conditions.
 
 | S3 checkpoint in its fixed 40k curriculum | Mean one-call FID | Mean four-call FID |
 |---|---|---|
