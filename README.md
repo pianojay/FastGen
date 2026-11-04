@@ -1,505 +1,96 @@
-# FastGen: Fast Image Generation Challenge
+# FastGen submission — EDM teacher + adversarial Score identity Distillation
 
-**Mid Evaluation Submission Due:** October 31 (Saturday) 23:59 KST  
-**Final Submission Due:** November 7 (Saturday) 23:59 KST  
-**Where to Submit:** KLMS
+Both submitted models are EDM-preconditioned DDPM++ U-Nets (`networks.py`) trained from scratch on
+`train_split.txt` only (no pretrained weights, no validation images):
 
-## Overview
+* `ModelOneNFE` (128 channels, 61.8M parameters): one-step generator `x = D(2.5 z; sigma=2.5, class)` (exactly 1 NFE).
+* `ModelFewNFE` (160 channels, 96.6M parameters): two-step generator on the noise ladder `(2.5, 0.4)`:
+  `x_1 = D(2.5 z_1; 2.5, class)`, `x = D(x_1 + 0.4 z_2; 0.4, class)` (2 NFEs).
 
-<img width="784" alt="Representative Pokemon dataset samples" src="assets/representative_samples.png" />
+Checkpoints: `checkpoints/one_nfe.ckpt`, `checkpoints/few_nfe.ckpt` (state dicts incl. the noise
+ladder buffer). Architecture hyper-parameters are fixed in `model.py`; sampling uses a fixed seed.
 
-In this challenge, you will train two image generative models for the
-first-generation Pokemon dataset: one optimized for exactly one model function
-evaluation and one optimized for no more than four evaluations. The provided
-code contains the dataset interface, model base class, checkpoint loading
-utility, and FID evaluation pipeline. Students implement both NFE-specific
-models and their `sample()` methods inside `model.py`.
+## Method
 
-**Dataset:** [Pokemon Generation One - 22k](https://www.kaggle.com/datasets/bhawks/pokemon-generation-one-22k)
+1. **Teachers** (`train_edm.py`): class-conditional EDM diffusion models (DDPM++, dropout 0.25, x-flip,
+   no augmentation conditioning) trained on the full train split for 40M images; the EMA with a
+   1M-image half-life is used as teacher. Two sizes: 128 channels (61.8M, for the one-step chain) and
+   160 channels (96.6M, for the two-step model). Every model, teacher or student, has at most 96.6M parameters.
+2. **Few-NFE student** (`train_sida.py --sigmas 2.5,0.4`): adversarial Score identity Distillation
+   (SiDA) of the 96.6M teacher into a 96.6M generator initialised from it. The fake-score network is
+   initialised from the teacher and its encoder doubles as the discriminator. Uniform-step matching
+   trains every step of the 2-step ladder. Learning rate 2e-5 (generator and fake score), linearly
+   decayed to 2e-6 between 1.5M and 3M images; 3M images, EMA with a 1M-image half-life (rampup 0.15).
+3. **One-NFE student** (`train_sida.py`, 1 step), 61.8M chain: a 61.8M two-step generator is first
+   distilled from the 61.8M teacher exactly as in step 2 (3M images), and the one-step generator is
+   initialised from it (EMA 1M). Adversarial weight 0.03 with a multi-scale discriminator
+   (channel-mean logit maps of the fake-score encoder at 8x8, 16x16 and 32x32), learning rate 2e-5,
+   and a **restart every 1.5M images**: the EMA generator becomes the raw generator, the fake score is
+   re-initialised from the teacher and the optimiser state is cleared. 3.25M images; EMA with a
+   1M-image half-life (rampup 0.15).
 
-**Dataset size:** 20,099 images from 151 Pokemon categories
+Model selection (model size, training lengths, EMA) was done on a 20-image-per-class hold-out of the
+**train** split (`prep_data.py`) with development runs that never see the hold-out, additionally
+scored on a de-duplicated subset of the hold-out (Inception-feature cosine similarity < 0.90 to every
+remaining training image, `fid_holdout_clean` in the logs). A change was adopted only if it improved
+both hold-out scores by more than 0.3: the 96.6M two-step model did (dev hold-out 17.90 / 27.25 vs
+18.24 / 27.67 for 61.8M), the 96.6M one-step model did not (18.54 / 28.31 vs 19.01 / 28.29, mean of
+3 sampling seeds and 4 runs), so the one-step model stays at 61.8M. The final models reuse the
+selected schedules on the full train split.
 
-**Evaluation:** FID scores from two independent model checkpoints:
+## Files
 
-- `ModelOneNFE`: exactly one model function evaluation
-- `ModelFewNFE`: at most four model function evaluations
+| File | Role |
+|---|---|
+| `model.py` | `ModelOneNFE` / `ModelFewNFE` (base `Model` class unchanged) |
+| `networks.py` | DDPM++ U-Net + EDM preconditioning (adapted from NVlabs/edm); optional multi-resolution encoder features for the discriminator |
+| `augment.py` | Non-leaky ADA-style augmentation pipeline (adapted from NVlabs/edm) |
+| `prep_data.py` | Caches the train split as uint8 tensors; creates a 20-per-class dev hold-out from the TRAIN split and its clean-fid statistics (`pk_holdout`, used by the in-training hold-out FID) |
+| `train_edm.py` | Teacher (EDM) training |
+| `train_sida.py` | SiD / SiDA distillation (1-step and few-step, restarts, lr schedule, multi-scale discriminator) |
+| `export.py` | Converts a distillation snapshot into a submission checkpoint |
+| `fid_utils.py`, `eval_holdout.py`, `eval_teacher.py` | clean-fid helpers and hold-out evaluation (model selection uses the train-split hold-out only) |
+| `plot_logs.py` | Training-curve plots for the write-up |
+| `dataset.py`, `download_dataset.py`, `evaluate.py`, `src/` | Provided files, unmodified |
 
-Each category is evaluated with exactly 20 generated images.
+## Reproduction
 
-
-## Environment Setup
-
-```shell
-conda create -n pokemon-generation python=3.10 -y
-conda activate pokemon-generation
-pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
-pip install -r requirements.txt
-```
-
-The supplied `requirements.txt` contains the packages needed by the dataset,
-model, and evaluation code. Use the PyTorch installation appropriate for your
-machine if a CUDA-specific build is required.
-
-## Project Structure
-
-```text
-AIC313-Project-FastGen/
-├── model.py                         # NFE-specific model classes (students SHOULD modify subclasses)
-├── dataset.py                       # Pokemon dataset and DataLoader API (provided, DO NOT modify)
-├── download_dataset.py              # Kaggle dataset download utility (provided, DO NOT modify)
-├── evaluate.py                      # Sample generation and FID evaluation (provided, DO NOT modify)
-├── src/
-│   ├── __init__.py
-│   └── utils.py                     # Parameter counting utilities (provided, DO NOT modify)
-└── data/
-    └── pokemon-generation-one-22k/
-        ├── train_split.txt           # Fixed training split (provided, DO NOT modify)
-        ├── val_split.txt             # Fixed validation split (provided, DO NOT modify)
-        └── category_to_id.json       # Fixed category-to-ID mapping (provided, DO NOT modify)
-```
-
-## Dataset and DataLoader
-
-Many source images are RGBA or palette images with transparency. At download
-time, `download_dataset.py` composites every transparent image onto a white
-background once, in place, and drops the alpha channel (a
-`.transparency_composited_on_white` marker file records that this step already
-ran). Training images, the FID reference set, and your generated samples
-therefore all share the same opaque white-background convention.
-
-The split manifests use the original paths from the Kaggle archive:
-
-```text
-PokemonData/Abra/000-063Abra_RB.png
-PokemonData/Abra/Abra1.jpg
-PokemonData/Pikachu/Pikachu1.jpg
-```
-
-The split contains:
-
-```text
-Train:      17,079 images
-Validation:  3,020 images
-Categories:    151
-```
-
-The dataset is downloaded automatically when `PokemonData/` is not present. You can also download it explicitly:
-
-```shell
+```bash
 python download_dataset.py
+python prep_data.py                          # data_cache/train64.npz (train split only) + hold-out FID statistics
+E="--subset all --dropout 0.25 --augment_p 0 --ema_halflives_kimg 250,500,1000,2000,4000 --ema_rampup 0.1 --duration_mimg 40"
+# 1) teachers (single GPU each, peak VRAM 14.0 / 18.0 GB); teacher = ema-040000.pt, EMA index 2 (1M half-life)
+python train_edm.py --out runs/teacher62 --channels 128 $E
+python train_edm.py --out runs/teacher97 --channels 160 $E
+S="--augment_p 0 --subset all --extra_ema_kimg 1000@0.15,3000@0.3 --batch 256 --sigmas 2.5,0.4 --lr 2e-5 --glr 2e-5 \
+   --lr_decay_start_kimg 1500 --lr_decay_end_kimg 3000 --lr_final_ratio 0.1 --duration_mimg 3"
+# 2) few-NFE: 96.6M two-step student (peak VRAM 15.0 GB)
+python train_sida.py --out runs/few --teacher runs/teacher97/ema-040000.pt --teacher_ema 2 $S --micro 16 --micro_f 32
+# 3) one-NFE: 61.8M two-step generator (peak VRAM 19.0 GB), then the one-step student initialised from it (19.0 GB)
+python train_sida.py --out runs/two62 --teacher runs/teacher62/ema-040000.pt --teacher_ema 2 $S --micro 32 --micro_f 64
+python train_sida.py --out runs/one --teacher runs/teacher62/ema-040000.pt --teacher_ema 2 --augment_p 0 --subset all \
+    --extra_ema_kimg 1000@0.15,3000@0.3 --micro 32 --micro_f 64 --batch 128 --lr 2e-5 --glr 2e-5 --lsg_gan 0.03 \
+    --disc_scales 8,16,32 --fake_reset_kimg 1500 --restart_from_ema 1 --reset_extra_emas 0 \
+    --init_generator runs/two62/gen-003000.pt --init_ema 1000 --snap_kimg 250 --duration_mimg 3.25
+# 4) export
+python export.py --snapshot runs/one/gen-003250.pt --mode one_nfe --ema_kimg 1000 --out checkpoints/one_nfe.ckpt
+python export.py --snapshot runs/few/gen-003000.pt --mode few_nfe --ema_kimg 1000 --out checkpoints/few_nfe.ckpt
+# 5) official evaluation
+python evaluate.py --model_checkpoint ./checkpoints/one_nfe.ckpt --evaluate_mode one_nfe
+python evaluate.py --model_checkpoint ./checkpoints/few_nfe.ckpt --evaluate_mode few_nfe
 ```
 
-The downloader uses `kagglehub` and stores the data under:
-
-```text
-./data/pokemon-generation-one-22k/PokemonData/
-```
-
-If Kaggle requests authentication, configure a Kaggle API token before running the command. Public datasets may be downloaded without authentication unless Kaggle requires user consent.
-
-Create the data interface as follows:
-
-```python
-from dataset import PokemonDataModule
-
-module = PokemonDataModule(
-    data_root="./data/pokemon-generation-one-22k",
-    split_dir="./data/pokemon-generation-one-22k",
-    batch_size=32,
-    return_category=True,
-)
-
-train_loader = module.train_dataloader()
-val_loader = module.val_dataloader()
-```
-
-Images are converted to RGB, resized to `64 x 64`, converted to tensors, and normalized to `[-1, 1]`.
-
-The category mapping is stored in `category_to_id.json` and reused on later
-runs so that the same category always receives the same integer ID.
-
-## What to Implement
-
-### 1. Model
-
-Students implement two independent model classes in `model.py`:
-
-- `ModelOneNFE`: model and `sample()` implementation for exactly one model
-  function evaluation
-- `ModelFewNFE`: model and `sample()` implementation for no more than four
-  model function evaluations
-
-Each class may use a different architecture, objective, parameterization, and
-sampling procedure. The `sample()` method belongs inside the corresponding
-model class; no separate `sampling.py` module is required.
-
-```python
-class ModelOneNFE(Model):
-    def sample(self, shape, *, device="cuda", category=None, **kwargs):
-        ...
-
-
-class ModelFewNFE(Model):
-    def sample(self, shape, *, device="cuda", category=None, **kwargs):
-        ...
-```
-
-`Model.load_checkpoint()` selects the model class from `evaluate_mode`:
-
-```python
-model = Model.load_checkpoint(
-    checkpoint_path,
-    evaluate_mode="one_nfe",
-    device="cuda",
-)
-```
-
-The selected model's `sample()` method is called directly during image
-generation. Each model must return a tensor shaped like `shape`, normalized
-consistently with the training data.
-
-### 2. NFE budget
-
-`ModelOneNFE.sample()` must use **exactly one** network evaluation and
-`ModelFewNFE.sample()` **at most four**.
-
-**Any execution of any part of the trained model backbone counts as one NFE.**
-For example:
-
-- a classifier-free-guidance pair (conditional plus unconditional forward pass)
-  costs 2 NFEs per step, so a guided sampler fits at most two steps in the
-  few-NFE budget
-- a partial forward through a subset of the backbone blocks costs 1 NFE
-- an extra head, decoder, or auxiliary network trained with the model costs
-  1 NFE per execution
-
-Operations that do not execute a trained network are free: noise sampling,
-interpolation between tensors, noise schedules, and arithmetic on
-intermediate results.
-
-### 3. Parameter limit
-
-Parameter counting is centralized in `src/utils.py`:
-
-```python
-from src.utils import count_parameters, parameter_summary
-```
-
-All learned models used during training or sampling, including teacher models,
-must **individually have no more than 100,000,000 parameters**.
-
-The 100M limit is applied **separately to each model**. Parameter counts of
-different models, such as a teacher and a student, are **not summed together**.
-However, for each model, the parameter count refers to the **entire model
-framework, including all learnable components**, not only the main backbone.
-
-For example:
-
-- Teacher ≤ 100M / Student ≤ 100M → **Allowed**
-- Teacher > 100M / Student ≤ 100M → **Not Allowed**
-- Teacher ≤ 100M / Student > 100M → **Not Allowed**
-
-For submitted models, the evaluation script loads the selected model and counts
-all registered parameters before generating samples. `ModelOneNFE` and
-`ModelFewNFE` are checked independently. Models above the limit are rejected:
-
-```text
-WARNING: model has more than 100,000,000 parameters. Evaluation stopped.
-```
-
-The parameter count includes frozen parameters and excludes buffers. All
-registered modules that are part of a model, including auxiliary components
-such as EMA copies, encoders, discriminators, or additional heads, are included
-in that model's parameter count.
-
-- ⚠️ Each learned model used during training or sampling must individually have no more than 100M parameters.
-- ⚠️ The 100M limit applies to the entire model framework, not only the main backbone.
-- ⚠️ Parameter counts of separate models, such as a teacher and a student, are not added together.
-- ⚠️ A submitted model that exceeds the limit is not evaluated and scores zero for that NFE mode; the other mode is scored independently.
-
-## Training
-
-Training is part of the student implementation. Students must train both
-NFE-specific models and save two compatible checkpoints:
-
-1. `./checkpoints/one_nfe.ckpt` for `evaluate_mode=one_nfe`
-2. `./checkpoints/few_nfe.ckpt` for `evaluate_mode=few_nfe`
-
-`Model.load_checkpoint()` selects the architecture from `evaluate_mode`, loads
-the corresponding checkpoint, moves it to the requested device, and switches
-it to evaluation mode.
-
-The checkpoint can contain either a raw state dictionary or a dictionary with
-the model state under the `state_dict` key:
-
-```python
-torch.save(
-    {"state_dict": model_one_nfe.state_dict()},
-    "checkpoints/one_nfe.ckpt",
-)
-torch.save(
-    {"state_dict": model_few_nfe.state_dict()},
-    "checkpoints/few_nfe.ckpt",
-)
-```
-
-## Important Rules
-
-**PLEASE READ THE FOLLOWING CAREFULLY!** Any violation of the rules or failure
-to properly cite existing code, models, or papers used in the project in your
-write-up will result in a zero score.
-
-### What You CANNOT Do
-
-- ❌ **Do NOT use pre-trained image-generation models:** All learned models, including teacher model, used during training or sampling must be trained from scratch using only the provided training split.
-- ❌ **Do NOT modify the base `Model` class:** Its checkpoint-loading and
-  parameter-counting utilities are fixed for consistent evaluation.
-- ❌ **Do NOT modify the provided dataset interface or evaluation script:**
-  These files are provided to ensure consistent evaluation across submissions.
-- ❌ **Do NOT modify the provided train/val split files:**
-  `data/pokemon-generation-one-22k/train_split.txt` and
-  `data/pokemon-generation-one-22k/val_split.txt` are fixed for consistent
-  data splitting.
-- ❌ **Do NOT train on the validation split:** Only the images listed in
-  `train_split.txt` may be used for training, distillation, or hyper-parameter
-  selection. The validation split is the FID reference set.
-- ❌ **Do NOT exceed 20 GB of peak training VRAM:** Each model must train
-  within a single 20 GB GPU, matching the NVIDIA A100 vGPU provided through
-  KCLOUD for this course. Measure peak memory
-  (`torch.cuda.max_memory_allocated()`) and keep it below the limit.
-- ❌ **Do NOT install additional libraries separately:** Your code will run in
-  the TA environment with the provided dependencies only. If a specific
-  library is essential, request it through the course communication channel.
-
-### What You CAN Do
-
-- ✅ **Modify `model.py`:** Implement `ModelOneNFE`, `ModelFewNFE`, their
-  model architectures, objectives, and `sample()` methods.
-- ✅ **Add your own Training Script:** Add training logic, optimizers, learning-rate schedulers, model-specific arguments, and checkpoint-saving code.
-- ✅ **Create new files:** Add any additional implementation files required by
-your models or training procedure. Include every such file in the submission.
-- ✅ **Use open-source implementations:** As long as they are clearly mentioned
-and properly cited in your write-up.
-
-## Evaluation
-
-The performance of the two submitted model implementations will be evaluated
-quantitatively using FID scores:
-
-- `evaluate_mode=one_nfe`: evaluates `ModelOneNFE` with exactly one model
-  function evaluation
-- `evaluate_mode=few_nfe`: evaluates `ModelFewNFE` with no more than four
-  model function evaluations
-
-### Evaluation Procedure
-
-The evaluation script selects the model and checkpoint from the two command
-line arguments:
-
-```shell
-python evaluate.py \
-    --model_checkpoint ./checkpoints/one_nfe.ckpt \
-    --evaluate_mode one_nfe \
-    --reference_dir ./results/reference \
-    --output_dir ./results/evaluation
-```
-
-For the few-NFE model:
-
-```shell
-python evaluate.py \
-    --model_checkpoint ./checkpoints/few_nfe.ckpt \
-    --evaluate_mode few_nfe \
-    --reference_dir ./results/reference \
-    --output_dir ./results/evaluation
-```
-
-The evaluation script:
-
-1. Instantiates `ModelOneNFE` or `ModelFewNFE` through
-   `Model.load_checkpoint()`.
-2. Counts all model parameters and stops if the total exceeds 100M.
-3. Creates a balanced evaluation set with 20 samples for each of the 151
-categories, producing 3,020 images for the selected model.
-4. Calls the selected model's `sample()` method.
-5. Computes FID against the complete validation reference set.
-
-Output directories are selected by `evaluate_mode`:
-
-```text
-results/evaluation/
-├── one_nfe/
-│   ├── 0000_00.png
-│   └── ...
-└── few_nfe/
-    ├── 0000_00.png
-    └── ...
-```
-
-The reference set is created from `val_split.txt` and contains 3,020 images.
-FID is calculated over the complete generated and reference directories.
-
-- **TA reference scores:** 1-NFE: **39.15** · Few-NFE: **30.90**
-
-## Submissions
-
-### Mid-Term Evaluation (Optional)
-
-The purpose of the mid-term evaluation is to give all students a reference point for how other teams are progressing. **Participation is optional.** At each NFE setting, the **top-1 team** whose score also outperforms the TAs’ FID score receives **bonus credit (+0.5)** toward the final grade. The TAs’ FID scores will be updated after the mid-term evaluation submission date.
-
-
-
-**What to Submit:**
-
-1. **Self-contained source code**
-  - Include the complete code needed to train and evaluate both models.
-  - The submitted code must run end-to-end in the TA evaluation environment.
-2. **Model checkpoints**
-  - Save `./checkpoints/one_nfe.ckpt`.
-  - Save `./checkpoints/few_nfe.ckpt`.
-
-**Submission Structure:**
-
-```text
-team_{team-id:0>2}/            # e.g. team_02
-├── model.py                   # ModelOneNFE, ModelFewNFE, and Model
-├── dataset.py                 # Provided dataset/DataLoader interface
-├── download_dataset.py        # Provided dataset downloader
-├── evaluate.py                # Provided evaluation entry point
-├── src/
-│   ├── __init__.py
-│   └── utils.py               # Provided parameter-counting utilities
-├── requirements.txt
-├── checkpoints/
-│   ├── one_nfe.ckpt      # REQUIRED
-│   └── few_nfe.ckpt      # REQUIRED
-└── <all additional files>     # Include every file you implemented
-```
-
-The `data/` directory and dataset files do not need to be submitted. TAs will
-provide the dataset and fixed split files in the evaluation environment.
-Include every additional file required to construct either model, train it, or
-run evaluation.
-
-**Evaluation:**
-
-- TAs will evaluate both checkpoints with their corresponding
-`evaluate_mode`.
-- Each mode will generate 20 images for each of the 151 categories.
-- Submissions that fail to load either checkpoint or run evaluation will be
-marked as failed.
-
-### Final Submission
-
-**What to Submit:**
-
-1. **Self-contained source code (Same as Mid-Term)**
-2. **Model checkpoints (Same as Mid-Term)**
-3. **Training implementation (Same as Mid-Term)**
-4. **Write-up**
-
-- Maximum **two A4 pages**, excluding references
-- Must include **all** of the following:
-  - **Technical details:** One-paragraph description of your few-step  
-  generation implementation
-  - **Training details:** Training logs, such as loss curves, and total  
-  training time
-  - **Qualitative evidence:** Approximately 8 sample images from early  
-  training phases
-  - **Citations:** All external code and papers used must be properly cited
-- ⚠️ Missing any of these items will result in a **10% penalty for each**
-- ⚠️ If the write-up exceeds two pages, any content beyond the second page  
-will be ignored, which may lead to missing required items
-
-**Submission Structure:**
-
-```text
-team_{team-id:0>2}/            # e.g. team_02
-├── model.py                   # ModelOneNFE, ModelFewNFE, and Model
-├── train.py                   # Student training script
-├── dataset.py                 # Provided dataset/DataLoader interface
-├── download_dataset.py        # Provided dataset downloader
-├── evaluate.py                # Provided evaluation entry point
-├── src/
-│   ├── __init__.py
-│   └── utils.py               # Provided parameter-counting utilities
-├── requirements.txt
-├── checkpoints/
-│   ├── one_nfe.ckpt      # REQUIRED
-│   └── few_nfe.ckpt      # REQUIRED
-├── writeup.pdf                # Final submission write-up
-└── <all additional files>     # Include every file you implemented
-```
-
-The `data/` directory and dataset files do not need to be submitted. TAs will
-provide them in the evaluation environment. Include every additional file
-required by the submitted implementation.
-
-**Final Evaluation:**
-
-- TAs will run `evaluate.py` once for each `evaluate_mode`.
-- Results will be computed using the fixed validation split and official FID
-procedure.
-- Submissions that fail to load a checkpoint or run evaluation will be marked as failed.
-
-## Self-Evaluation Checklist
-
-Before submitting, verify:
-
-- ✅ **Code runs end-to-end:** Train both models → Generate samples → Evaluate
-both checkpoints without errors
-- ✅ **Checkpoint compatibility:** `Model.load_checkpoint()` successfully loads
-both `one_nfe.ckpt` and `few_nfe.ckpt`
-- ✅ **NFE budgets tested:** `ModelOneNFE` uses exactly one model function
-  evaluation and `ModelFewNFE` uses no more than four
-- ✅ **All required files included:** Source code, both checkpoints, and the
-final write-up are included
-- ✅ **Citations ready:** All external code, papers, models, and datasets are
-properly cited in the write-up
-
-## Grading
-
-- **Total:** up to **20 points** from the FastGen project — **10 points for
-one-NFE** and **10 points for few-NFE**
-- **Quantitative evaluation:** FID scores for the one-NFE and few-NFE models,
-officially computed by the TAs. For each NFE setting, points are assigned
-relative to the best score achieved in the class
-- **Write-up:** Clear technical explanation and proper citations; each missing
-required item costs a 10% penalty
-- **Bonus points (mid-term evaluation):** top-1 team per NFE setting that beats
-the TA baseline receives **+0.5**
-- **Bonus points (final evaluation):** per NFE setting, **1st: +1.0** and
-**2nd / 3rd: +0.5 each**
-- ⚠️ Teams that receive final-evaluation bonus points **must present their work
-in class on November 16 (Monday)**; without the presentation the bonus points
-are not awarded
-
-## Important
-
-- ⚠️ There is no late day. Submit on time.
-- ⚠️ Late submission: Zero score
-- ⚠️ Missing any required item in the final submission (samples, code/model,
-write-up): Zero score
-- ⚠️ Missing items in the write-up: 10% penalty for each
-- ⚠️ Citation is mandatory: Any violation of the rules or failure to properly
-cite existing code, models, or papers used in the project will result in a
-zero score
-
-## Recommended Reading
-
-- [Variational Autoencoders](https://arxiv.org/abs/1312.6114) — Kingma and Welling, ICLR 2014
-- [NICE: Non-linear Independent Components Estimation](https://arxiv.org/abs/1410.8516) — Dinh et al., 2015
-- [Generative Adversarial Nets](https://arxiv.org/abs/1406.2661) — Goodfellow et al., NeurIPS 2014
-- [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) — Ho et al., NeurIPS 2020
-- [Flow Matching for Generative Modeling](https://arxiv.org/abs/2210.02747) — Lipman et al., ICLR 2023
-- [Consistency Models](https://arxiv.org/abs/2303.01469) — Song et al., ICML 2023
-- [Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow](https://arxiv.org/abs/2209.03003) — Liu et al., ICLR 2023
-- [Progressive Distillation for Fast Sampling of Diffusion Models](https://arxiv.org/abs/2202.00512) — Salimans and Ho, ICLR 2022
-- [Learning to Discretize Denoising Diffusion ODEs](https://arxiv.org/abs/2405.15506) — Tong et al., ICLR 2025
-- [BézierFlow: Learning Bézier Stochastic Interpolant Schedulers for Few-Step Generation](https://arxiv.org/abs/2512.13255) — Min et al., ICLR 2026
-- [One-step Diffusion with Distribution Matching Distillation](https://arxiv.org/abs/2311.18828) — Yin et al., CVPR 2024
-
-## Dataset Citation
-
-- [Pokemon Generation One - 22k](https://www.kaggle.com/datasets/bhawks/pokemon-generation-one-22k)
-
+Peak training VRAM is logged as `peak_mem_gb` (`torch.cuda.max_memory_allocated()` / 1e9) in every
+`log.jsonl`. All scripts use only the provided environment (torch, torchvision, numpy, Pillow,
+clean-fid); `plot_logs.py` draws the curves with Pillow.
+
+## References
+
+* T. Karras et al., Elucidating the Design Space of Diffusion-Based Generative Models (EDM), NeurIPS 2022. Code: https://github.com/NVlabs/edm
+* M. Zhou et al., Score identity Distillation, ICML 2024; Adversarial Score identity Distillation, ICLR 2025; Few-Step Diffusion via Score identity Distillation, 2025. Code: https://github.com/mingyuanzhou/SiD
+* T. Yin et al., Improved Distribution Matching Distillation (DMD2), NeurIPS 2024.
+* A. Sauer et al., Adversarial Diffusion Distillation, ECCV 2024; Fast High-Resolution Image Synthesis with Latent Adversarial Diffusion Distillation, SIGGRAPH Asia 2024 (multi-level discriminator heads).
+* T. Karras et al., Training Generative Adversarial Networks with Limited Data (ADA), NeurIPS 2020.
+* T. Karras et al., Analyzing and Improving the Training Dynamics of Diffusion Models (EDM2), CVPR 2024 (EMA length).
+* Y. Song et al., Score-Based Generative Modeling through SDEs (DDPM++), ICLR 2021.
+* G. Parmar et al., On Aliased Resizing and Surprising Subtleties in GAN Evaluation (clean-fid), CVPR 2022.

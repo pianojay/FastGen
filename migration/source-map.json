@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "group": "fastgen_zip",
+  "archive_branch": "archive/peer-sida",
+  "source_head": null,
+  "files": [
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/README.md",
+      "git_path": "README.md",
+      "sha256": "74c3f6e39a2f5a856024af08e6a54f8b3c78c0f8234a9eb86e81cde7b77a3a16",
+      "bytes": 7475
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/augment.py",
+      "git_path": "augment.py",
+      "sha256": "575bb4fde704fe8c7c40d181af153365596908e4d9226fd94c96ae563e736959",
+      "bytes": 20336
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/data/pokemon-generation-one-22k/category_to_id.json",
+      "git_path": "data/pokemon-generation-one-22k/category_to_id.json",
+      "sha256": "7c27ec2a15fa4f70b5729319d596d3a80bc528cdeeb02f36b88877a6545b77e8",
+      "bytes": 2656
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/data/pokemon-generation-one-22k/train_split.txt",
+      "git_path": "data/pokemon-generation-one-22k/train_split.txt",
+      "sha256": "c4068bdec8c5994fa14887d3335e762dd6a4da1bc6394a6df7fae96d293138c0",
+      "bytes": 703371
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/data/pokemon-generation-one-22k/val_split.txt",
+      "git_path": "data/pokemon-generation-one-22k/val_split.txt",
+      "sha256": "6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0",
+      "bytes": 153787
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/dataset.py",
+      "git_path": "dataset.py",
+      "sha256": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+      "bytes": 5923
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/download_dataset.py",
+      "git_path": "download_dataset.py",
+      "sha256": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+      "bytes": 3553
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/eval_holdout.py",
+      "git_path": "eval_holdout.py",
+      "sha256": "5742510e91ca1dd7e5ea26f61e3e608b986fa8dee0f8749aa1af9ed21714e666",
+      "bytes": 1404
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/eval_teacher.py",
+      "git_path": "eval_teacher.py",
+      "sha256": "ccee8da511a48b7411e70948dc5e648e0d3ad390ea534da14ec07afa3eb13d9f",
+      "bytes": 2648
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/evaluate.py",
+      "git_path": "evaluate.py",
+      "sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "bytes": 5578
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/export.py",
+      "git_path": "export.py",
+      "sha256": "ad79ba5a6561439a7c6858037f1626c4431890bbb47575dda80fea46748e4b98",
+      "bytes": 1943
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/fid_utils.py",
+      "git_path": "fid_utils.py",
+      "sha256": "654eed8ee83694d95a8c88f991ae013c0ec2d92c4db60f4e8137d7b91743b34a",
+      "bytes": 5342
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/model.py",
+      "git_path": "model.py",
+      "sha256": "b1be4b3547152ee5f5a210002f1e0e4531a542f4a948dc36c0968e6b5880aa2c",
+      "bytes": 4762
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/networks.py",
+      "git_path": "networks.py",
+      "sha256": "96f3cd4cc75d60f81ac5ff96734e6c5ca89e893aeeb5073d1b8eb3c06f54a691",
+      "bytes": 15694
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/plot_logs.py",
+      "git_path": "plot_logs.py",
+      "sha256": "7c5d96f6210b0f22d7734c79ec4e6a4aa473203891f014b71cd53e5106f6d5a7",
+      "bytes": 4635
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/prep_data.py",
+      "git_path": "prep_data.py",
+      "sha256": "1bf684173eb5ec79df9d8949eb5be32c2587330af001f4deca3e7a1e73da0a77",
+      "bytes": 3487
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/requirements.txt",
+      "git_path": "requirements.txt",
+      "sha256": "e30940e3e890e6e5463f617475b97d7415e73f349fbf4070936aa284f0573eb2",
+      "bytes": 50
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/src/__init__.py",
+      "git_path": "src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/src/utils.py",
+      "git_path": "src/utils.py",
+      "sha256": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f",
+      "bytes": 1027
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/train_edm.py",
+      "git_path": "train_edm.py",
+      "sha256": "feb977acb11aaf27248154443ac44c9021b99831e388b84d80f26b2e16c3f580",
+      "bytes": 14220
+    },
+    {
+      "original_path": "fastgen_zip/fastgen_sida_1007/train_sida.py",
+      "git_path": "train_sida.py",
+      "sha256": "fc039f764aef78b619d69a2a3c70778f5f297dfc9565e8b111c125b3d95655e9",
+      "bytes": 28733
+    }
+  ],
+  "outcome": "Externally supplied source/checkpoint copy. README method and training claims remain attributed to the peer; original training logs and write-up were not supplied. Migration validates bytes and CPU inference only.",
+  "evidence_review": "Historical report checked; migration hashes/restore verified separately. No scientific rerun."
+}

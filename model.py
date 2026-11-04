@@ -70,37 +70,65 @@ class Model(nn.Module):
         return model.to(device).eval()
 
 
+# ---------------------------------------------------------------------------
+# Student models: an EDM-preconditioned DDPM++ denoiser (networks.py) distilled
+# into a few-step generator with adversarial Score identity Distillation
+# (train_sida.py).  Step k feeds x_{k-1} + sigma_k * z_k to the denoiser at the
+# fixed noise level sigma_k (x_{-1} = 0), i.e. exactly one backbone evaluation
+# per step.
+
+NUM_CLASSES = 151
+# augment_dim must match the teacher the student was distilled from (0 = teacher trained
+# without augmentation conditioning); it is unused at sampling time (no augmentation).
+ONE_NFE_CONFIG = dict(
+    img_resolution=64, img_channels=3, label_dim=NUM_CLASSES, augment_dim=0,
+    model_channels=128, channel_mult=(1, 2, 2, 2), num_blocks=4, attn_resolutions=(16,),
+    dropout=0.0,
+)
+FEW_NFE_CONFIG = dict(ONE_NFE_CONFIG, model_channels=160)  # 96.6M parameters
+ONE_NFE_SIGMAS = (2.5,)
+FEW_NFE_SIGMAS = (2.5, 0.4)
+SAMPLE_SEED = 0
 
 
+def _build_backbone(config):
+    from networks import EDMPrecond
 
-class ModelOneNFE(Model):
+    return EDMPrecond(**config)
+
+
+class _FewStepGenerator(Model):
+    def __init__(self, sigmas, config, device="cpu"):
+        super().__init__(_build_backbone(config))
+        self.register_buffer("sigmas", torch.tensor(sigmas, dtype=torch.float32))
+        self._generator = None
+        self._device = device
+
+    @torch.no_grad()
+    def sample(self, shape, *, device="cuda", category=None, **kwargs):
+        device = torch.device(device)
+        if self._generator is None or self._generator.device != device:
+            self._generator = torch.Generator(device=device).manual_seed(SAMPLE_SEED)
+        if category is None:
+            category = torch.zeros(shape[0], dtype=torch.long, device=device)
+        category = category.to(device).long()
+        x = torch.zeros(shape, device=device)
+        for k, sigma in enumerate(self.sigmas.tolist()):
+            z = torch.randn(shape, device=device, generator=self._generator)
+            x = self.backbone(x + sigma * z if k else sigma * z,
+                              torch.full((shape[0],), sigma, device=device), category)
+        return x.clamp(-1, 1)
+
+
+class ModelOneNFE(_FewStepGenerator):
     """Student model evaluated with exactly one model function evaluation."""
 
     def __init__(self, device="cpu", **kwargs):
-        raise NotImplementedError("Implement the one-NFE model constructor.")
-
-    def sample(
-        self,
-        shape: tuple[int, ...],
-        *,
-        device: torch.device | str = "cuda",
-        category: torch.Tensor | None = None,
-        **kwargs,
-    ) -> torch.Tensor:
-        raise NotImplementedError("Implement sample() in ModelOneNFE.")
+        super().__init__(ONE_NFE_SIGMAS, ONE_NFE_CONFIG, device=device)
 
 
-class ModelFewNFE(Model):
+class ModelFewNFE(_FewStepGenerator):
     """Student model evaluated with no more than four model evaluations."""
 
     def __init__(self, device="cpu", **kwargs):
-        raise NotImplementedError("Implement the few-NFE model constructor.")
-    def sample(
-        self,
-        shape: tuple[int, ...],
-        *,
-        device: torch.device | str = "cuda",
-        category: torch.Tensor | None = None,
-        **kwargs,
-    ) -> torch.Tensor:
-        raise NotImplementedError("Implement sample() in ModelFewNFE.")
+        super().__init__(FEW_NFE_SIGMAS, FEW_NFE_CONFIG, device=device)
