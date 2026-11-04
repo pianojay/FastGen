@@ -1,0 +1,11 @@
+{
+  "state": "pass",
+  "checked_utc": "2026-11-04T14:43:05.340231+00:00",
+  "retained_files_checked": 4152,
+  "parameter_files_checked": 4,
+  "original_git_repositories_checked": 5,
+  "mismatches": [],
+  "matching_python_processes": [],
+  "process_scope": "Read /proc on the execution host; matches original-root cwd/arguments. No signal or GPU operation.",
+  "limits": "No original files/refs modified. Historical CUDA release records are not treated as a current GPU monitoring result."
+}

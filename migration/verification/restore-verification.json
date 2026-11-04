@@ -1,0 +1,15 @@
+{
+  "state": "pass",
+  "source": "authenticated GitHub release downloads; no original-directory copies",
+  "repository": "pianojay/FastGen",
+  "tag": "migration-2026-11-04",
+  "completed_utc": "2026-11-04T14:40:49.695909+00:00",
+  "restored_root": "/tmp/fastgen-migration-20261104-r9ke4ced/restore/restored",
+  "files_verified": 4152,
+  "parameters_verified": 4,
+  "downloaded_bytes": 1758378283,
+  "evidence_raw_bytes": 754267277,
+  "parameter_bytes": 1347327916,
+  "seconds": 263.7047721459967,
+  "limits": "Byte recovery only. Inference verification is separate; no training resume state retained."
+}

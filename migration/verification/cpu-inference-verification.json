@@ -1,0 +1,80 @@
+{
+  "state": "pass",
+  "completed_utc": "2026-11-04T14:42:09.031383+00:00",
+  "python": "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+  "cases": [
+    {
+      "case": "soflow-one",
+      "state": "pass",
+      "package": "/tmp/fastgen-migration-20261104-r9ke4ced/restore/restored/legacy/FastGen-SoFlow/runs/research_s3_unet192_40k_seed42/export",
+      "parameters": 89140419,
+      "actual_backbone_calls": 1,
+      "batch_shape": [
+        2,
+        3,
+        64,
+        64
+      ],
+      "output_min": -1.0,
+      "output_max": 1.0,
+      "device": "cpu",
+      "seconds": 7.573675416002516,
+      "torch": "2.7.1+cu126"
+    },
+    {
+      "case": "soflow-few",
+      "state": "pass",
+      "package": "/tmp/fastgen-migration-20261104-r9ke4ced/restore/restored/legacy/FastGen-SoFlow/runs/research_s3_unet192_40k_seed42/export",
+      "parameters": 89140419,
+      "actual_backbone_calls": 4,
+      "batch_shape": [
+        2,
+        3,
+        64,
+        64
+      ],
+      "output_min": -1.0,
+      "output_max": 1.0,
+      "device": "cpu",
+      "seconds": 13.99276322600781,
+      "torch": "2.7.1+cu126"
+    },
+    {
+      "case": "peer-one",
+      "state": "pass",
+      "package": "/tmp/fastgen-migration-20261104-r9ke4ced/restore/restored/legacy/fastgen_zip/fastgen_sida_1007",
+      "parameters": 61823875,
+      "actual_backbone_calls": 1,
+      "batch_shape": [
+        2,
+        3,
+        64,
+        64
+      ],
+      "output_min": -1.0,
+      "output_max": 1.0,
+      "device": "cpu",
+      "seconds": 4.997240540003986,
+      "torch": "2.7.1+cu126"
+    },
+    {
+      "case": "peer-few",
+      "state": "pass",
+      "package": "/tmp/fastgen-migration-20261104-r9ke4ced/restore/restored/legacy/fastgen_zip/fastgen_sida_1007",
+      "parameters": 96561763,
+      "actual_backbone_calls": 2,
+      "batch_shape": [
+        2,
+        3,
+        64,
+        64
+      ],
+      "output_min": -1.0,
+      "output_max": 1.0,
+      "device": "cpu",
+      "seconds": 9.576081385996076,
+      "torch": "2.7.1+cu126"
+    }
+  ],
+  "limits": "CPU inference/loading only; no GPU, FID, training, or scientific-result reproduction."
+}

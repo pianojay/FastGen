@@ -7,9 +7,11 @@ This restores selected archival state, not a live job or a complete training env
 Run from a parent directory where you want the archive:
 
 ```bash
-git clone --branch FastGen https://github.com/pianojay/master_root.git FastGen-master
-git clone https://github.com/pianojay/FastGen.git FastGen-code
-python3 FastGen-code/tools/restore.py --output "$PWD/FastGen-restored"
+FASTGEN_PARENT="$PWD"
+FASTGEN_RESTORED="$FASTGEN_PARENT/FastGen-restored"
+git clone --branch FastGen https://github.com/pianojay/master_root.git "$FASTGEN_PARENT/FastGen-master"
+git clone https://github.com/pianojay/FastGen.git "$FASTGEN_PARENT/FastGen-code"
+python3 "$FASTGEN_PARENT/FastGen-code/tools/restore.py" --output "$FASTGEN_RESTORED"
 ```
 
 Keep the output separate from either Git checkout. The tool downloads only the named release assets, checks the committed manifest and checksum list, rejects unexpected/unsafe archive members, reconstructs `FastGen-restored/legacy/`, and verifies every retained file and checkpoint. It refuses to overwrite differing existing files. Repeating it rechecks already downloaded/restored files without silently clobbering changes.
@@ -30,7 +32,7 @@ Both contain their original model source and `checkpoints/one_nfe.ckpt` / `few_n
 The index clone above is enough to inspect/restore everything. To recreate the template's bare-anchor/worktree layout instead, from the Master clone:
 
 ```bash
-cd FastGen-master
+cd "$FASTGEN_PARENT/FastGen-master"
 mkdir -p workers/FastGen
 git clone --bare https://github.com/pianojay/FastGen.git workers/FastGen/.FastGen.git
 git --git-dir=workers/FastGen/.FastGen.git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
@@ -74,7 +76,7 @@ EDA features, shared pixel arrays, teacher weights and other outputs must be rec
 With an already prepared compatible environment:
 
 ```bash
-PYTHONNOUSERSITE=1 python FastGen-code/tools/verify_inference.py --legacy-root "$PWD/FastGen-restored/legacy" --report "$PWD/FastGen-restored/cpu-inference-verification.json"
+PYTHONNOUSERSITE=1 python "$FASTGEN_PARENT/FastGen-code/tools/verify_inference.py" --legacy-root "$FASTGEN_RESTORED/legacy" --report "$FASTGEN_RESTORED/cpu-inference-verification.json"
 ```
 
 This loads all four checkpoints on CPU, verifies finite parameters/outputs and actual network calls 1/4 for S3 and 1/2 for peer. It is not a FID test, GPU qualification, training reproduction or proof of peer training provenance.

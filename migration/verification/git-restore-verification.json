@@ -1,0 +1,10 @@
+{
+  "state": "pass",
+  "source": "fresh HTTPS GitHub clone",
+  "refs_verified": 16,
+  "historical_refs": 10,
+  "archive_refs": 6,
+  "worker_main": "326652dd766e87858780839d38f18dfdb3e2d7da",
+  "fsck_stdout": "",
+  "fsck_stderr": ""
+}

@@ -1,0 +1,87 @@
+{
+  "repository": "pianojay/FastGen",
+  "release_id": 434038671,
+  "tag": "migration-2026-11-04",
+  "draft": true,
+  "assets": [
+    {
+      "name": "afm-evidence.tar.gz",
+      "size": 167496363,
+      "state": "uploaded",
+      "digest": "sha256:302f1b29d83cb5d5927827c5ab2656f8d96c7c84d51fb747a3f2d8f867390675"
+    },
+    {
+      "name": "cifar-soflow-evidence.tar.gz",
+      "size": 3036934,
+      "state": "uploaded",
+      "digest": "sha256:e759cff70908845559a817a9cbf18d6d9783999f5b3482d856c37e74b6a17465"
+    },
+    {
+      "name": "exploration-evidence.tar.gz",
+      "size": 87895708,
+      "state": "uploaded",
+      "digest": "sha256:241f6216567a2a92b835d0c78476eae4c7aee98a6993b554c4189650589bfe56"
+    },
+    {
+      "name": "inventory.json",
+      "size": 2860355,
+      "state": "uploaded",
+      "digest": "sha256:1133091b0e065854aa71b6aa69917793ef5069e2a2d2232155168b671350f62e"
+    },
+    {
+      "name": "peer-sida-evidence.tar.gz",
+      "size": 237763,
+      "state": "uploaded",
+      "digest": "sha256:606b9390b5539e7f09d0271be7fcb6455e6d8883b0504b26ba14c003c93c0e57"
+    },
+    {
+      "name": "peer-sida-few_nfe.ckpt",
+      "size": 386443625,
+      "state": "uploaded",
+      "digest": "sha256:2246bfc0054026a95f7ecc4b1f54c99f896c75b9d514f9f4a24c5653345a5690"
+    },
+    {
+      "name": "peer-sida-one_nfe.ckpt",
+      "size": 247492073,
+      "state": "uploaded",
+      "digest": "sha256:7134046f1654da72ad3d7905ef1e2762d87b5eaa0840947aece32eac6be958ee"
+    },
+    {
+      "name": "release-manifest.json",
+      "size": 2722,
+      "state": "uploaded",
+      "digest": "sha256:5e4465166b211571b4c6508f3067f1f318f5eaf9e20c67d8fcf8bab69fc6aaf9"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 1071,
+      "state": "uploaded",
+      "digest": "sha256:cae4475b1b0585d8be48634674c315f22317d8adf4b251e29938daaac8480f5e"
+    },
+    {
+      "name": "sid-dit-evidence.tar.gz",
+      "size": 87356006,
+      "state": "uploaded",
+      "digest": "sha256:1c262c59fb98d2ab6b80e6794f7554b46b9c30c26363c224116b7696ea91b7cc"
+    },
+    {
+      "name": "soflow-evidence.tar.gz",
+      "size": 62163445,
+      "state": "uploaded",
+      "digest": "sha256:319537d9c868320c3e66bf2c79a77197295506cbff63b423333c3d9cfe51ec1e"
+    },
+    {
+      "name": "soflow-s3-few_nfe.ckpt",
+      "size": 356696109,
+      "state": "uploaded",
+      "digest": "sha256:fc6337a046f6a1272ffa2f0afe92ca1c7b514f642032ecdb83aec99baf5d400b"
+    },
+    {
+      "name": "soflow-s3-one_nfe.ckpt",
+      "size": 356696109,
+      "state": "uploaded",
+      "digest": "sha256:d03a959d0117a7d34ce3b82929e7b816becd3cd97199e7423cdc92ba299819c5"
+    }
+  ],
+  "total_bytes": 1758378283
+}
