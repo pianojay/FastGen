@@ -1,0 +1,14 @@
+{
+  "pid": null,
+  "command": [
+    "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+    "-m",
+    "scripts.sampling_probe",
+    "--config",
+    "configs/research_b1_20260930.json",
+    "--stage",
+    "selection",
+    "--worker"
+  ],
+  "returncode": 0
+}

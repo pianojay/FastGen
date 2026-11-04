@@ -1,0 +1,126 @@
+{
+  "experiment": "C3-20261004",
+  "state": "stopped",
+  "authorization_reference": "User: Launch training. Consecutive in-scope scratch experiments under program.md.",
+  "initialization": "scratch",
+  "starting_checkpoint": null,
+  "initial_step": 0,
+  "protocol_sha256": "b10db3145357d530ac95644ce5aa9da1696725f7d7f7ed24460365ca3212bc27",
+  "training_config_sha256": "db51d527563eaefbc1563287c6026a0c01fa9f00b733291882eaa27a8423ceba",
+  "source_sha256": "dd51d486b974a8c566f9c5e74650b9b8d0ac2925cd9daaca452ea2c628485d83",
+  "prepared_git_commit": "41b1294876e84f7e5c4fe7dcf3ee467672917848",
+  "environment": {
+    "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+    "executable": "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "torchvision": "0.22.1+cu126",
+      "clean-fid": "0.1.35",
+      "numpy": "1.26.4",
+      "Pillow": "12.3.0"
+    }
+  },
+  "prepared_unix": 1791043847.4242344,
+  "gpu": 1,
+  "parameters": 89140419,
+  "attempts": [
+    {
+      "stage": "qualification",
+      "account": "qualification",
+      "command": [
+        "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "retry": false,
+      "started_unix": 1791043886.0169816,
+      "worker": {
+        "pid": 3755229,
+        "started_unix": 1791043885.9944043,
+        "proc_start_ticks": "1082718920",
+        "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21"
+      },
+      "used_seconds_before": 0.0,
+      "timeout_seconds": 270.0,
+      "log": "runs/research_c3_unet192_fm25_40k_seed42/qualification.log",
+      "returncode": 0,
+      "used_seconds_after": 10.654195683076978,
+      "ended_unix": 1791043896.6738708
+    },
+    {
+      "stage": "control",
+      "account": "evaluation",
+      "command": [
+        "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+        "-m",
+        "scripts.training_study",
+        "--config",
+        "configs/research_c3_20261004.json",
+        "--evaluate",
+        "control"
+      ],
+      "retry": false,
+      "started_unix": 1791043896.7240138,
+      "worker": {
+        "pid": 3755229,
+        "started_unix": 1791043885.9944043,
+        "proc_start_ticks": "1082718920",
+        "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21"
+      },
+      "used_seconds_before": 0.0,
+      "timeout_seconds": 3570.0,
+      "log": "runs/research_c3_unet192_fm25_40k_seed42/control.log",
+      "returncode": 0,
+      "used_seconds_after": 333.61098313704133,
+      "ended_unix": 1791044230.3386185
+    },
+    {
+      "stage": "training",
+      "account": "training",
+      "command": [
+        "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+        "train.py",
+        "--config",
+        "configs/research_c3_train.json",
+        "--skip-eval"
+      ],
+      "retry": false,
+      "started_unix": 1791044230.3883824,
+      "worker": {
+        "pid": 3755229,
+        "started_unix": 1791043885.9944043,
+        "proc_start_ticks": "1082718920",
+        "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21"
+      },
+      "used_seconds_before": 0.0,
+      "timeout_seconds": 136770.0,
+      "log": "runs/research_c3_unet192_fm25_40k_seed42/training.log",
+      "returncode": 1,
+      "used_seconds_after": 210.37796875461936,
+      "ended_unix": 1791044440.7703846
+    }
+  ],
+  "completed_stages": [
+    "qualification",
+    "control"
+  ],
+  "unfinished_job": null,
+  "gpu_job_seconds": {
+    "qualification": 10.654195683076978,
+    "training": 210.37796875461936,
+    "evaluation": 333.61098313704133,
+    "total": 554.6431475747377
+  },
+  "token_expenditure": "unavailable",
+  "worker": {
+    "pid": 3755229,
+    "started_unix": 1791043885.9944043,
+    "proc_start_ticks": "1082718920",
+    "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21"
+  },
+  "current_stage": "training"
+}

@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-10-01T05:16:44.816665+09:00",
+  "run_dir": "runs/research_s2_unet160_40k_seed42",
+  "state": "running",
+  "snapshot_steps": 500,
+  "image_presentations": 64000,
+  "current_status_step": 540,
+  "source_sha256": "5da02d2816a688ed92d040a54ac5bfddfff9a13172e915767010a683e7fc4d96",
+  "protocol_sha256": "689ee6b767e5c05d71a45187b1172750deb3cfcc5931633ba88ad2c3efd66107",
+  "checkpoint_at_inspection": {
+    "path": "runs/research_s2_unet160_40k_seed42/checkpoints/latest.pt",
+    "sha256": "f9cd75ed77b7b0bed9184ae7eed5a749ea1ad7b845cc0aa492d77b2d3935a086",
+    "step": 500,
+    "epoch": 4,
+    "cursor": 8192,
+    "schedule_steps": 40000,
+    "optimizer_state_entries": 355,
+    "rng_state_present": true,
+    "inference_parameters": 61934243,
+    "source_and_partition_match": true,
+    "note": "Periodic latest checkpoint will be overwritten normally; retained curve checkpoints are 20k/30k/final 40k."
+  },
+  "optimizer_seconds": 1294.3281506076455,
+  "mean_update_seconds": 2.5886563012152912,
+  "peak_training_allocated_bytes_so_far": 6159657472,
+  "peak_host_rss_bytes_so_far": 1761579008,
+  "peak_sampled_process_tree_pss_bytes_so_far": 1900958720,
+  "training_budget_file_snapshot": {
+    "used_seconds": 1433.209568547085,
+    "limit_seconds": 118800
+  },
+  "running_training_gpu_job_seconds_estimate": 1443.7163293361664,
+  "completed_stage_gpu_job_seconds": {
+    "qualification": 8.295851157978177,
+    "training": 0.0,
+    "evaluation": 244.84723449125886,
+    "total": 253.14308564923704
+  },
+  "prior_research_gpu_job_seconds": 74553.07565207966,
+  "campaign_gpu_job_seconds_running_estimate": 76249.93506706506,
+  "retries": 0,
+  "protected_files_verified": true,
+  "candidate_fid": null,
+  "official_score": false,
+  "sample_panel_files": [
+    "samples/000500/nfe1.png",
+    "samples/000500/nfe2.png",
+    "samples/000500/nfe3.png",
+    "samples/000500/nfe4.png"
+  ],
+  "limitation": "Early running snapshot, not final memory, accounting or quality. Recovery state was inspected; no interruption or resume was performed.",
+  "metrics_prefix_sha256": "8b5a21bb19ada13f0e68eba4f0d7a195c8bfc9b1d537a6115e50bc7c5a737b9d"
+}

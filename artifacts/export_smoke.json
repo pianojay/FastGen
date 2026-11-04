@@ -1,0 +1,20 @@
+{
+  "source_checkpoint_sha256": "92a69ef6e7ed3f4d66d5840752f84abdd066592de0b3c0c3c039e79e6ea2a787",
+  "step": 4,
+  "architecture": {
+    "model_channels": 128,
+    "num_blocks": 2,
+    "dropout": 0.1
+  },
+  "models": {
+    "one_nfe": {
+      "parameters": 39667843,
+      "nfe": 1
+    },
+    "few_nfe": {
+      "parameters": 39667843,
+      "nfe": 3
+    }
+  },
+  "official_score": false
+}

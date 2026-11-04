@@ -1,0 +1,21 @@
+{
+  "state": "completed",
+  "arm": "A",
+  "g_steps": 512,
+  "d_steps": 1024,
+  "g_images": 16384,
+  "d_images": 32768,
+  "resources": {
+    "host_rss_bytes": 2720522240,
+    "host_peak_rss_bytes": 3234758656,
+    "allocated_bytes": 12109358592,
+    "reserved_bytes": 13065256960
+  },
+  "seconds": 8206.060989128426,
+  "final_checkpoint": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/A/step_0512.pt",
+  "final_sha256": "92f33b6ea456d43bc7cfa9dd9b13038b075445a7a653ff835aa3b4d8767e2093",
+  "parameters": {
+    "generator": 89140419,
+    "discriminator": 28930048
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-09-30T12:56:46+09:00",
+  "run_dir": "runs/research_s1_unet128_40k_seed42",
+  "state": "running",
+  "source_sha256": "92b61fea1e17e4c3c51eb953641612846f1c740ca87b0a3345c791f1e28def3c",
+  "protocol_sha256": "7ac75a6355b9ff6550af4d10aaec3b1d6bb82cde4f8c5dc72280488a72ed5b37",
+  "snapshot_steps": 10000,
+  "image_presentations": 1280000,
+  "current_status_step": 10040,
+  "metrics_prefix_sha256": "1b15139dda4d7d29e7debfa7dba720f41f435f40c086a9cace16f705b05d2476",
+  "optimizer_seconds": 17224.530858498067,
+  "mean_update_seconds": 1.7224530858498066,
+  "last_5000_mean_update_seconds": 1.7223719046998769,
+  "peak_training_allocated_bytes_so_far": 8610671104,
+  "peak_sampled_process_tree_pss_bytes_so_far": 2053035008,
+  "peak_host_rss_bytes_so_far": 2111864832,
+  "training_budget_file_snapshot": {
+    "used_seconds": 17822.266776392236,
+    "limit_seconds": 79200
+  },
+  "running_training_job_seconds_estimate_from_supervisor_start": 17828.432067871094,
+  "qualification_gpu_job_seconds": 8.398136157542467,
+  "evaluation_gpu_job_seconds": 245.41255946271122,
+  "previous_research_gpu_job_seconds": 467.662695,
+  "campaign_gpu_job_seconds_running_estimate": 18549.905458491347,
+  "retries": 0,
+  "sample_panel_files": [
+    "samples/010000/nfe1.png",
+    "samples/010000/nfe2.png",
+    "samples/010000/nfe3.png",
+    "samples/010000/nfe4.png"
+  ],
+  "official_score": false,
+  "candidate_fid": null,
+  "limitation": "Running snapshot; final stage accounting and completed-run memory peaks are pending. No candidate FID."
+}

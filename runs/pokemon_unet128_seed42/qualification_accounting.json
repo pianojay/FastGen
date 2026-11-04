@@ -1,0 +1,8 @@
+{
+  "profile_seconds": 68.59970286674798,
+  "integration_and_fid_seconds": 107.94501383975148,
+  "full_workflow_seconds": 289.83672722429037,
+  "conservative_other_qualification_allowance_seconds": 120.0,
+  "note": "One-time baseline budget initialization; allowance covers CUDA tests, independent export checks and startup outside the measured job clocks.",
+  "total_charged_seconds": 586.3814439307898
+}

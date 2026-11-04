@@ -1,0 +1,23 @@
+test_official_checkpoint (test_fastgen.Contracts) ... ok
+test_parameters (test_fastgen.Contracts) ... ok
+test_protected (test_fastgen.Contracts) ... ok
+test_accumulation_of_fixed_objective (test_fastgen.GPUBehavior) ... ok
+test_calls_and_zero_augmentation (test_fastgen.GPUBehavior) ... ok
+test_consistency_branch_conditioning_and_small_gap (test_fastgen.GPUBehavior) ... ok
+test_identity_and_conditioning (test_fastgen.GPUBehavior) ... ok
+test_resume_next_update (test_fastgen.GPUBehavior) ... ok
+test_actual_draws_repeat_across_checkpoints_and_initial_draws_across_nfes (test_training_study.PairedNoiseCPU) ... ok
+test_confirmation_requires_every_reserved_seed (test_training_study.StudyContracts) ... ok
+test_confirmation_seeds_cannot_overlap_selection (test_training_study.StudyContracts) ... ok
+test_final_checkpoint_and_nfe_tracks_are_decided_independently (test_training_study.StudyContracts) ... ok
+test_invalid_reference_step_is_rejected_before_evaluation (test_training_study.StudyContracts) ... ok
+test_pairing_rejects_changed_draws_and_duplicate_rows (test_training_study.StudyContracts) ... ok
+test_reference_checkpoint_can_have_a_different_completed_horizon (test_training_study.StudyContracts) ... ok
+test_scratch_initialization_and_complete_horizon_are_required (test_training_study.StudyContracts) ... ok
+test_child_identity_output_and_elapsed_are_retained (test_training_study.SupervisionCPU) ... ok
+test_timeout_is_charged_without_renewing_allowance (test_training_study.SupervisionCPU) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 3.817s
+
+OK

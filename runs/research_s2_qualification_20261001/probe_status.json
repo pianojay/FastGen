@@ -1,0 +1,19 @@
+{
+  "loss_surrogate": -0.06380544602870941,
+  "consistency_mse": 1.0623886585235596,
+  "weight": 0.9582080245018005,
+  "step": 110,
+  "grad_norm": 1.7527121305465698,
+  "seconds": 4.1550979893654585,
+  "ema_decay": 0.9243697478991597,
+  "host_rss_bytes": 1781633024,
+  "host_peak_rss_bytes": 1784598528,
+  "allocated_bytes": 14201069056,
+  "reserved_bytes": 17477664768,
+  "phase": "measured",
+  "process_tree_rss_bytes": 7228100608,
+  "process_tree_pss_bytes": 1877720064,
+  "process_tree_count": 5,
+  "microbatch": 32,
+  "planned_early_updates": 110
+}

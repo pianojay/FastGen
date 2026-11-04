@@ -1,0 +1,141 @@
+{
+  "experiment": "S1-20260930",
+  "training_steps": 40000,
+  "logged_update_records": 40000,
+  "optimizer_seconds": 68890.47788311169,
+  "logged_image_presentations": 5120000,
+  "peak_training_allocated_bytes": 8611038720,
+  "peak_training_reserved_bytes": 9726590976,
+  "peak_host_rss_bytes": 2111864832,
+  "peak_sampled_process_tree_pss_bytes": 2053035008,
+  "gpu_job_seconds": {
+    "qualification": 8.398136157542467,
+    "training": 71288.88064896315,
+    "evaluation": 1933.9755818415433,
+    "total": 73231.25436696224
+  },
+  "reference_training_gpu_job_seconds": 36712.117704635486,
+  "prior_research_gpu_job_seconds": 467.662695446983,
+  "selection": {
+    "1": {
+      "nfe": 1,
+      "seeds": [
+        3101,
+        3102
+      ],
+      "reference_fids": [
+        113.29582802035833,
+        112.91762523468464
+      ],
+      "candidate_fids": [
+        82.83589745505463,
+        82.56070593786473
+      ],
+      "reference_mean": 113.10672662752148,
+      "candidate_mean": 82.69830169645968,
+      "paired_deltas": [
+        -30.459930565303694,
+        -30.35691929681991
+      ],
+      "mean_delta": -30.408424931061802,
+      "eligible": true,
+      "outcome": "provisional",
+      "limitation": "Generation-seed comparison of one training seed on reused development data."
+    },
+    "4": {
+      "nfe": 4,
+      "seeds": [
+        3101,
+        3102
+      ],
+      "reference_fids": [
+        38.136801563667404,
+        37.98869620319306
+      ],
+      "candidate_fids": [
+        29.345477975714914,
+        29.48524673862994
+      ],
+      "reference_mean": 38.06274888343023,
+      "candidate_mean": 29.415362357172427,
+      "paired_deltas": [
+        -8.79132358795249,
+        -8.503449464563118
+      ],
+      "mean_delta": -8.647386526257804,
+      "eligible": true,
+      "outcome": "provisional",
+      "limitation": "Generation-seed comparison of one training seed on reused development data."
+    }
+  },
+  "confirmation": {
+    "1": {
+      "nfe": 1,
+      "seeds": [
+        4101,
+        4102,
+        4103,
+        4104
+      ],
+      "reference_fids": [
+        114.42961983563725,
+        112.01615922753155,
+        112.73260077350204,
+        113.12289934574272
+      ],
+      "candidate_fids": [
+        82.67514569030226,
+        82.62323934317283,
+        81.77252544479506,
+        82.15391150967929
+      ],
+      "reference_mean": 113.07531979560339,
+      "candidate_mean": 82.30620549698736,
+      "paired_deltas": [
+        -31.754474145334996,
+        -29.39291988435872,
+        -30.960075328706978,
+        -30.968987836063434
+      ],
+      "mean_delta": -30.76911429861603,
+      "eligible": null,
+      "outcome": "confirmed_under_protocol",
+      "limitation": "Generation-seed comparison of one training seed on reused development data."
+    },
+    "4": {
+      "nfe": 4,
+      "seeds": [
+        4101,
+        4102,
+        4103,
+        4104
+      ],
+      "reference_fids": [
+        38.64994881218507,
+        37.8847828459468,
+        38.25101553691309,
+        38.34962320988518
+      ],
+      "candidate_fids": [
+        29.56088521307015,
+        29.310285677606885,
+        29.09558954382601,
+        29.664660552174666
+      ],
+      "reference_mean": 38.283842601232536,
+      "candidate_mean": 29.407855246669428,
+      "paired_deltas": [
+        -9.089063599114922,
+        -8.574497168339917,
+        -9.155425993087078,
+        -8.684962657710514
+      ],
+      "mean_delta": -8.875987354563108,
+      "eligible": null,
+      "outcome": "confirmed_under_protocol",
+      "limitation": "Generation-seed comparison of one training seed on reused development data."
+    }
+  },
+  "protocol_sha256": "7ac75a6355b9ff6550af4d10aaec3b1d6bb82cde4f8c5dc72280488a72ed5b37",
+  "official_score": false
+}

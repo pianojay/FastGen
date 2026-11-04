@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-09-30T17:53:47+09:00",
+  "run_dir": "runs/research_s1_unet128_40k_seed42",
+  "state": "running",
+  "source_sha256": "92b61fea1e17e4c3c51eb953641612846f1c740ca87b0a3345c791f1e28def3c",
+  "protocol_sha256": "7ac75a6355b9ff6550af4d10aaec3b1d6bb82cde4f8c5dc72280488a72ed5b37",
+  "snapshot_steps": 20000,
+  "image_presentations": 2560000,
+  "current_status_step": 20050,
+  "retained_checkpoint": {
+    "path": "runs/research_s1_unet128_40k_seed42/checkpoints/step_020000.pt",
+    "sha256": "4888e6513739b0bcbac73562694316f7f91a88ef7e65f2019df7cc20a780d3d3",
+    "step": 20000,
+    "schedule_steps": 40000,
+    "epoch": 183,
+    "cursor": 6784,
+    "optimizer_state_entries": 355,
+    "inference_parameters": 39667843,
+    "source_and_partition_match": true,
+    "rng_state_present": true
+  },
+  "metrics_prefix_sha256": "73f0e7fcf6d82ec2bef5ee783fa32aa992fad575406a4b11b09df4f9b3149805",
+  "optimizer_seconds": 34451.062716946006,
+  "mean_update_seconds": 1.7225531358473003,
+  "last_10000_mean_update_seconds": 1.722653185844794,
+  "peak_training_allocated_bytes_so_far": 8610847744,
+  "peak_sampled_process_tree_pss_bytes_so_far": 2053035008,
+  "peak_host_rss_bytes_so_far": 2111864832,
+  "training_budget_file_snapshot": {
+    "used_seconds": 35642.41991075687,
+    "limit_seconds": 79200
+  },
+  "running_training_job_seconds_estimate_from_supervisor_start": 35649.484305381775,
+  "qualification_gpu_job_seconds": 8.398136157542467,
+  "evaluation_gpu_job_seconds": 245.41255946271122,
+  "previous_research_gpu_job_seconds": 467.662695,
+  "campaign_gpu_job_seconds_running_estimate": 36370.95769600203,
+  "retries": 0,
+  "sample_panel_files": [
+    "samples/020000/nfe1.png",
+    "samples/020000/nfe2.png",
+    "samples/020000/nfe3.png",
+    "samples/020000/nfe4.png"
+  ],
+  "official_score": false,
+  "candidate_fid": null,
+  "limitation": "Midpoint of the fresh 40k schedule, not the completed 20k baseline recipe. Training is still running; final accounting, memory peak and candidate FID remain pending."
+}

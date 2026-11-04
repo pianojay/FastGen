@@ -1,0 +1,49 @@
+{
+  "identity": {
+    "protocol_sha256": "5492daaddd893dac2842934754eadd952d9f200ce95a96704f0f368e763b0a21",
+    "source_sha256": "d74384004afceca4dafff0183c11f6eb362a0d996ec5367ac685fab54408180e",
+    "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+    "checkpoint_sha256": "32bf7e04d68750aff505546266d97ba9a4077e17fd68ba911254850473e75a79",
+    "weight_source": "ema",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+    "nfe": 4,
+    "query_times": [
+      1.0,
+      0.75,
+      0.5,
+      0.25
+    ],
+    "seed": 3102,
+    "noise_protocol": "cpu-per-draw-stream-v1",
+    "batch_size": 32,
+    "category_order": "0..150, each repeated 20 times",
+    "count": 3020,
+    "metric": "development_clean_fid",
+    "official_score": false
+  },
+  "schedule": "uniform",
+  "seed": 3102,
+  "fid": 26.71259106849641,
+  "noise_sha256": [
+    "1d15761628bc72c7c8ca5371887ed7e2a96f833e13ae0440762a2190b0be4a87",
+    "0eb6fa3bb349a6cb63bb31c6dd6f86b13c77145038d22db14ed3887b4495d746",
+    "5dc940fe36c7e01d0479d607f22b7494422cfefb5ad9a72117395d7c6a9989d0",
+    "a044025b9127e57818ad44ec8e640beb957a8c2377a9251175efc9e53fd5632f"
+  ],
+  "images_sha256": "581030b0b06ef0664fdc5293bdc4fb4cbed881903607d8db64b3b58edb9b95e2",
+  "network_calls": 380,
+  "batches": 95,
+  "nfe": 4,
+  "seconds": 173.08051851205528,
+  "peak_allocated_bytes": 4951972864,
+  "peak_reserved_bytes": 8751415296,
+  "output_dir": "runs/research_s3_unet192_40k_seed42/evaluations/uniform_seed3102_538657cf895ee703",
+  "host_rss_bytes": 2272436224,
+  "host_peak_rss_bytes": 2299777024,
+  "allocated_bytes": 4951972864,
+  "reserved_bytes": 8751415296,
+  "process_tree_rss_bytes": 2272436224,
+  "process_tree_pss_bytes": 2127617024,
+  "process_tree_count": 1
+}

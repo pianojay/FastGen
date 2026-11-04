@@ -1,0 +1,79 @@
+{
+  "checkpoint": "step_040000.pt",
+  "weight_source": "ema",
+  "one_nfe": 1,
+  "few_nfe": 4,
+  "schedule": "uniform",
+  "confirmation": {
+    "1": {
+      "nfe": 1,
+      "seeds": [
+        4101,
+        4102,
+        4103,
+        4104
+      ],
+      "reference_fids": [
+        75.86970574608256,
+        74.4937717374388,
+        74.52362484691105,
+        74.61601724056305
+      ],
+      "candidate_fids": [
+        68.02177482721515,
+        66.33098055279811,
+        66.71985561352687,
+        66.80113066913526
+      ],
+      "reference_mean": 74.87577989274887,
+      "candidate_mean": 66.96843541566885,
+      "paired_deltas": [
+        -7.847930918867405,
+        -8.162791184640696,
+        -7.803769233384173,
+        -7.814886571427792
+      ],
+      "mean_delta": -7.9073444770800165,
+      "eligible": null,
+      "outcome": "confirmed_under_protocol",
+      "limitation": "Generation-seed comparison of one training seed on reused development data."
+    },
+    "4": {
+      "nfe": 4,
+      "seeds": [
+        4101,
+        4102,
+        4103,
+        4104
+      ],
+      "reference_fids": [
+        26.538199064370815,
+        26.76040272648123,
+        26.29094607622494,
+        26.49221998648011
+      ],
+      "candidate_fids": [
+        25.15610224985295,
+        24.992262860095764,
+        24.90625562945445,
+        24.97430162937451
+      ],
+      "reference_mean": 26.520441963389274,
+      "candidate_mean": 25.007230592194418,
+      "paired_deltas": [
+        -1.3820968145178654,
+        -1.768139866385468,
+        -1.3846904467704917,
+        -1.5179183571056
+      ],
+      "mean_delta": -1.5132113711948563,
+      "eligible": null,
+      "outcome": "confirmed_under_protocol",
+      "limitation": "Generation-seed comparison of one training seed on reused development data."
+    }
+  },
+  "selected_by_development": true,
+  "nfe_2_3_measured": false,
+  "official_score": false,
+  "limitation": "One scratch training seed per width; generation-seed confirmation on reused development data. Four is the evaluated few-call choice; no comparison against two/three calls."
+}

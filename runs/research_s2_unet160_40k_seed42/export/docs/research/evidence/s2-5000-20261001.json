@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-10-01T08:34:52.790809+09:00",
+  "run_dir": "runs/research_s2_unet160_40k_seed42",
+  "state": "running",
+  "snapshot_steps": 5000,
+  "image_presentations": 640000,
+  "current_status_step": 5040,
+  "source_sha256": "5da02d2816a688ed92d040a54ac5bfddfff9a13172e915767010a683e7fc4d96",
+  "protocol_sha256": "689ee6b767e5c05d71a45187b1172750deb3cfcc5931633ba88ad2c3efd66107",
+  "checkpoint_at_inspection": {
+    "path": "runs/research_s2_unet160_40k_seed42/checkpoints/latest.pt",
+    "sha256": "90ea504efb8f687599784d19a682e099b0d621b7991d8f1c46914f47eb041d1f",
+    "step": 5000,
+    "epoch": 45,
+    "cursor": 12160,
+    "schedule_steps": 40000,
+    "optimizer_state_entries": 355,
+    "rng_state_present": true,
+    "source_and_partition_match": true,
+    "note": "Periodic latest checkpoint is overwritten normally; 20k/30k/final40k are retained."
+  },
+  "metrics_prefix_sha256": "ab579309bd0eb970b847586e7142b6a66c8a6dc5ffd862c1146ef2ad5aa976d3",
+  "optimizer_seconds": 12937.86886604689,
+  "mean_update_seconds": 2.587573773209378,
+  "last_1000_mean_update_seconds": 2.5866503033731134,
+  "peak_training_allocated_bytes_so_far": 6160105472,
+  "peak_host_rss_bytes_so_far": 2382884864,
+  "peak_sampled_process_tree_pss_bytes_so_far": 1965686784,
+  "training_budget_file_snapshot": {
+    "used_seconds": 13326.622233619913,
+    "limit_seconds": 118800
+  },
+  "running_training_gpu_job_seconds_estimate": 13331.6904733181,
+  "completed_stage_gpu_job_seconds": {
+    "qualification": 8.295851157978177,
+    "training": 0.0,
+    "evaluation": 244.84723449125886,
+    "total": 253.14308564923704
+  },
+  "prior_research_gpu_job_seconds": 74553.07565207966,
+  "campaign_gpu_job_seconds_running_estimate": 88137.909211047,
+  "retries": 0,
+  "protected_files_verified": true,
+  "candidate_fid": null,
+  "official_score": false,
+  "sample_panel_files": [
+    "samples/005000/nfe1.png",
+    "samples/005000/nfe2.png",
+    "samples/005000/nfe3.png",
+    "samples/005000/nfe4.png"
+  ],
+  "limitation": "Running snapshot; final memory, accounting and quality remain pending. Qualification is already included in prior research accounting."
+}

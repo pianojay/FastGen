@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-10-02T11:17:12.566402+09:00",
+  "run_dir": "runs/research_s2_unet160_40k_seed42",
+  "package": "runs/research_s2_unet160_40k_seed42/export",
+  "source_checkpoint_sha256": "32bf7e04d68750aff505546266d97ba9a4077e17fd68ba911254850473e75a79",
+  "export_metadata_sha256": "f3376e3f2103665f2f81e0fd3008b2d9aadd079a2d593fef27d2ef95dc6d53e4",
+  "manifest_sha256": "b072b942c891d92bfa3382c2d46d007fafc577547f385e9f101be5febd19c117",
+  "official_loader_verification": {
+    "one_nfe": {
+      "parameters": 61934243,
+      "backbone_calls": 1,
+      "shape": [
+        3,
+        3,
+        64,
+        64
+      ]
+    },
+    "few_nfe": {
+      "parameters": 61934243,
+      "backbone_calls": 4,
+      "shape": [
+        3,
+        3,
+        64,
+        64
+      ]
+    }
+  },
+  "device": "cpu",
+  "cpu_export_and_verification_seconds": 20.189112024381757,
+  "additional_gpu_job_seconds": 0,
+  "protected_files_verified": true,
+  "official_score": false
+}

@@ -1,0 +1,7 @@
+{
+  "gpu": 2,
+  "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2",
+  "pid": 4134726,
+  "lock": "/tmp/fastgen-gpu2.lock",
+  "started": 1791125905.5369394
+}

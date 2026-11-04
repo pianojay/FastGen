@@ -1,0 +1,41 @@
+test_completed_generator_counts (test_adversarial.LossContracts) ... ok
+test_endpoint_modes_clipping_and_gradients (test_adversarial.LossContracts) ... ok
+test_exact_group_penalty_r2_isolation_and_flip (test_adversarial.LossContracts) ... ok
+test_full_batch_gradient_balance_and_zero (test_adversarial.LossContracts) ... ok
+test_rng_stream_isolation_and_replay (test_adversarial.LossContracts) ... ok
+test_rpgan_signs_and_real_branch (test_adversarial.LossContracts) ... ok
+test_zero_adversarial_is_actual_consistency_control (test_adversarial.SmallGPUContracts) ... zero-rho control: max gradient difference=0; max weight difference=0
+ok
+test_accumulation_keeps_logical_groups (test_adversarial.StyleGANContracts) ... ok
+test_forward_first_and_second_derivative_reference_parity (test_adversarial.StyleGANContracts) ... ok
+test_real_second_order_path_and_label_conditioning (test_adversarial.StyleGANContracts) ... ok
+test_source_hashes_and_production_size (test_adversarial.StyleGANContracts) ... ok
+test_official_checkpoint (test_fastgen.Contracts) ... ok
+test_parameters (test_fastgen.Contracts) ... ok
+test_protected (test_fastgen.Contracts) ... ok
+test_accumulation_of_fixed_objective (test_fastgen.GPUBehavior) ... ok
+test_calls_and_zero_augmentation (test_fastgen.GPUBehavior) ... ok
+test_consistency_branch_conditioning_and_small_gap (test_fastgen.GPUBehavior) ... ok
+test_identity_and_conditioning (test_fastgen.GPUBehavior) ... ok
+test_resume_next_update (test_fastgen.GPUBehavior) ... ok
+test_effective_batch_gradient_and_metrics_with_uneven_microbatches (test_objective_mixture.MixtureContracts) ... ok
+test_partition_is_exact_and_independent_of_microbatch (test_objective_mixture.MixtureContracts) ... ok
+test_resume_rejects_changed_or_removed_objective_fields (test_objective_mixture.MixtureContracts) ... ok
+test_default_and_zero_mixture_have_matching_updates_and_identical_rng (test_objective_mixture.MixtureGPU) ... ok
+test_mixed_resume_reproduces_next_augmented_update (test_objective_mixture.MixtureGPU) ... ok
+test_velocity_gradient_matches_detached_adaptive_mse_and_conditioning (test_objective_mixture.MixtureGPU) ... ok
+test_actual_draws_repeat_across_checkpoints_and_initial_draws_across_nfes (test_training_study.PairedNoiseCPU) ... ok
+test_confirmation_requires_every_reserved_seed (test_training_study.StudyContracts) ... ok
+test_confirmation_seeds_cannot_overlap_selection (test_training_study.StudyContracts) ... ok
+test_final_checkpoint_and_nfe_tracks_are_decided_independently (test_training_study.StudyContracts) ... ok
+test_invalid_reference_step_is_rejected_before_evaluation (test_training_study.StudyContracts) ... ok
+test_pairing_rejects_changed_draws_and_duplicate_rows (test_training_study.StudyContracts) ... ok
+test_reference_checkpoint_can_have_a_different_completed_horizon (test_training_study.StudyContracts) ... ok
+test_scratch_initialization_and_complete_horizon_are_required (test_training_study.StudyContracts) ... ok
+test_child_identity_output_and_elapsed_are_retained (test_training_study.SupervisionCPU) ... ok
+test_timeout_is_charged_without_renewing_allowance (test_training_study.SupervisionCPU) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 10.718s
+
+OK

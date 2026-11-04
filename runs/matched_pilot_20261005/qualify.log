@@ -1,0 +1,14 @@
+test_common_draws_ignore_extra_d_calls_and_zero_rho (test_matched_pilot.PilotContracts) ... ok
+test_permutation_wrap_recovery (test_matched_pilot.PilotContracts) ... ok
+test_ramp_and_ema_clocks (test_matched_pilot.PilotContracts) ... ok
+test_real_pairing_and_boundary_recovery (test_matched_pilot.PilotGPUContracts) ... ok
+test_zero_adversarial_is_actual_consistency_control (test_adversarial.SmallGPUContracts) ... zero-rho control: max gradient difference=0; max weight difference=0
+ok
+test_rpgan_signs_and_real_branch (test_adversarial.LossContracts) ... ok
+test_exact_group_penalty_r2_isolation_and_flip (test_adversarial.LossContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 6.694s
+
+OK
+Dataset already exists: data/pokemon-generation-one-22k/PokemonData

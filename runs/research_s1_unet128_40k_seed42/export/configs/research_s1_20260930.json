@@ -1,0 +1,53 @@
+{
+  "experiment": "S1-20260930",
+  "authorization_reference": "User: Launch training.",
+  "run_dir": "runs/research_s1_unet128_40k_seed42",
+  "training_config": "configs/research_s1_train.json",
+  "initialization": "scratch",
+  "starting_checkpoint": null,
+  "expected_parameters": 39667843,
+  "expected_steps": 40000,
+  "reference_checkpoint": "runs/pokemon_unet128_seed42/checkpoints/step_020000.pt",
+  "reference_checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+  "reference_images": "runs/pokemon_unet128_seed42/reference_dev",
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+  "noise_protocol": "cpu-per-draw-stream-v1",
+  "weight_source": "ema",
+  "curve_steps": [
+    20000,
+    30000,
+    40000
+  ],
+  "nfes": [
+    1,
+    4
+  ],
+  "selection_seeds": [
+    3101,
+    3102
+  ],
+  "confirmation_seeds": [
+    4101,
+    4102,
+    4103,
+    4104
+  ],
+  "eval_batch_size": 32,
+  "samples_per_category": 20,
+  "selection_rule": "Final 40k FID must be lower than EXP-1 on both paired selection seeds, separately per NFE.",
+  "confirmation_rule": "For each eligible NFE, final 40k FID must be lower on all four paired confirmation seeds; otherwise inconclusive.",
+  "qualification_budget_seconds": 300,
+  "training_budget_seconds": 79200,
+  "evaluation_budget_seconds": 3000,
+  "max_retries": 1,
+  "shutdown_reserve_seconds": 30,
+  "optimizer_hours_estimate": 19.11237461762089,
+  "training_time_rationale": "19.112 optimizer hours from measured 1.7201 s/update; 1.284 h conservative overhead reference (twice historical non-update job time), plus 1.604 h allowance for timing uncertainty and bounded recovery; 22 h is a watchdog, not a new default or a changed 40k schedule.",
+  "evaluation_time_rationale": "At most 32 primary passes; 75.32 s/pass reference gives 40.2 min, with a 50 min cumulative evaluation allowance including startup/recovery.",
+  "reference_training_gpu_job_seconds": 36712.117704635486,
+  "prior_research_gpu_job_seconds": 467.662695446983,
+  "expected_training_memory_reference_bytes": 8612984320,
+  "training_memory_limit_bytes": 20000000000,
+  "official_score": false
+}

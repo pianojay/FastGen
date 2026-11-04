@@ -1,0 +1,38 @@
+[
+  {
+    "arm": "A",
+    "path": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/A/export/one_nfe.ckpt",
+    "sha256": "d8bf0f325267fcd94e18a0d4edd8f3ebf9488ec2d4613b0ed407ec74dc2cdf7d",
+    "mode": "one_nfe",
+    "parameters": 89140419,
+    "calls": 1,
+    "critic_imported": false
+  },
+  {
+    "arm": "A",
+    "path": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/A/export/few_nfe.ckpt",
+    "sha256": "d30303c8622316eefdfb0871479539ddf0c9351da51d8f664d7b1cd99cfd59db",
+    "mode": "few_nfe",
+    "parameters": 89140419,
+    "calls": 4,
+    "critic_imported": false
+  },
+  {
+    "arm": "C",
+    "path": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/C/export/one_nfe.ckpt",
+    "sha256": "52c95a7053b0fb05d4d51278cdf41360f23ea193ff7565de6e9e22805e294c52",
+    "mode": "one_nfe",
+    "parameters": 89140419,
+    "calls": 1,
+    "critic_imported": false
+  },
+  {
+    "arm": "C",
+    "path": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/C/export/few_nfe.ckpt",
+    "sha256": "23c549f6929a2ef3d2c058f1f5592a5e556fa8b7f7b953f465f643cf3c76f00d",
+    "mode": "few_nfe",
+    "parameters": 89140419,
+    "calls": 4,
+    "critic_imported": false
+  }
+]

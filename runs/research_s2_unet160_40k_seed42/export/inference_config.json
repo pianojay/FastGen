@@ -1,0 +1,5 @@
+{
+  "model_channels": 160,
+  "num_blocks": 2,
+  "dropout": 0.1
+}

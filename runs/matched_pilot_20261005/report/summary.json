@@ -1,0 +1,1042 @@
+{
+  "state": "numerical reporting complete; visual assessment separate",
+  "source_commit": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+  "exports": [
+    {
+      "arm": "A",
+      "path": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/A/export/one_nfe.ckpt",
+      "sha256": "d8bf0f325267fcd94e18a0d4edd8f3ebf9488ec2d4613b0ed407ec74dc2cdf7d",
+      "mode": "one_nfe",
+      "parameters": 89140419,
+      "calls": 1,
+      "critic_imported": false
+    },
+    {
+      "arm": "A",
+      "path": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/A/export/few_nfe.ckpt",
+      "sha256": "d30303c8622316eefdfb0871479539ddf0c9351da51d8f664d7b1cd99cfd59db",
+      "mode": "few_nfe",
+      "parameters": 89140419,
+      "calls": 4,
+      "critic_imported": false
+    },
+    {
+      "arm": "C",
+      "path": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/C/export/one_nfe.ckpt",
+      "sha256": "52c95a7053b0fb05d4d51278cdf41360f23ea193ff7565de6e9e22805e294c52",
+      "mode": "one_nfe",
+      "parameters": 89140419,
+      "calls": 1,
+      "critic_imported": false
+    },
+    {
+      "arm": "C",
+      "path": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/C/export/few_nfe.ckpt",
+      "sha256": "23c549f6929a2ef3d2c058f1f5592a5e556fa8b7f7b953f465f643cf3c76f00d",
+      "mode": "few_nfe",
+      "parameters": 89140419,
+      "calls": 4,
+      "critic_imported": false
+    }
+  ],
+  "rows": [
+    {
+      "identity": {
+        "protocol_sha256": "943b518a8f079a664dc696cb0e20f1da41e960522355d67c8098c0ec10b6297d",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "9b95652fb5e503b2f877b26fd3652129abcce115bdea526db00ffe1f0daefd4a",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "S3_0_ema_nfe1",
+      "seed": 7301,
+      "fid": 68.69202120165073,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429"
+      ],
+      "images_sha256": "7b2eb9e0e6afd0ee0f5863c65284dfc24dfcae106e929b50e263596bf42562d5",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 60.58401669934392,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/S3_0_ema_nfe1_seed7301_ec6f4125a89e744c",
+      "host_rss_bytes": 2063036416,
+      "host_peak_rss_bytes": 2350415872,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2063040512,
+      "process_tree_pss_bytes": 1928246272,
+      "process_tree_count": 1,
+      "arm": "S3",
+      "step": 0,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "505c0ee77dec0889a9981145f045ce5778eb1962c1dbe22bafb80b0cbd2fad4a",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "9bb2f69ab54e1b1376b10c27af5d5616ac6add044683ab94b46d663de19ac513",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "C_512_ema_nfe1",
+      "seed": 7301,
+      "fid": 85.18671464503632,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429"
+      ],
+      "images_sha256": "b5e0e190ad22ebabe8b50b61ed2f499b57718f36c98fda6080804d67743cf821",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 60.38257097825408,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/C_512_ema_nfe1_seed7301_43bd0b8922c7268d",
+      "host_rss_bytes": 2610466816,
+      "host_peak_rss_bytes": 2863915008,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2610466816,
+      "process_tree_pss_bytes": 2475672576,
+      "process_tree_count": 1,
+      "arm": "C",
+      "step": 512,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "b808408996c0c2462c35b7dcc6113696aa95105ae6b24ed41f1eab5d72f08816",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "7d6cd99af380cb3f42680fe6c7bb9146862ce2047e8055540d9de84fa7d04a93",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "A_512_ema_nfe1",
+      "seed": 7301,
+      "fid": 82.62306063175777,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429"
+      ],
+      "images_sha256": "f717a00ed20a8c3efce523e25e4ada28852c078a3589fd97b176b0a038065109",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 64.41189349256456,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/A_512_ema_nfe1_seed7301_334bd56f82003786",
+      "host_rss_bytes": 2645307392,
+      "host_peak_rss_bytes": 2899316736,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2645307392,
+      "process_tree_pss_bytes": 2510512128,
+      "process_tree_count": 1,
+      "arm": "A",
+      "step": 512,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "943b518a8f079a664dc696cb0e20f1da41e960522355d67c8098c0ec10b6297d",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "9b95652fb5e503b2f877b26fd3652129abcce115bdea526db00ffe1f0daefd4a",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7302,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "S3_0_ema_nfe1",
+      "seed": 7302,
+      "fid": 67.45597928127535,
+      "noise_sha256": [
+        "1eaf60d92116353bde345843598f8924e0f911855b920541950d530cd4f49dd4"
+      ],
+      "images_sha256": "e38088acf68cd07249472ca82ff36d539462562961835539e1ecba541c277959",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 70.6294564306736,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/S3_0_ema_nfe1_seed7302_6d810af8ffe7a1cb",
+      "host_rss_bytes": 2662649856,
+      "host_peak_rss_bytes": 2899316736,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2662649856,
+      "process_tree_pss_bytes": 2527852544,
+      "process_tree_count": 1,
+      "arm": "S3",
+      "step": 0,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "505c0ee77dec0889a9981145f045ce5778eb1962c1dbe22bafb80b0cbd2fad4a",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "9bb2f69ab54e1b1376b10c27af5d5616ac6add044683ab94b46d663de19ac513",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7302,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "C_512_ema_nfe1",
+      "seed": 7302,
+      "fid": 83.12080894177711,
+      "noise_sha256": [
+        "1eaf60d92116353bde345843598f8924e0f911855b920541950d530cd4f49dd4"
+      ],
+      "images_sha256": "21ecd322c43d75aa216c9f7c6588d0b983254e0b37f2999c4aa83d9b4621b84e",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 61.79848367907107,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/C_512_ema_nfe1_seed7302_d17c0bcf60ec2d50",
+      "host_rss_bytes": 2697342976,
+      "host_peak_rss_bytes": 2950811648,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2697342976,
+      "process_tree_pss_bytes": 2562548736,
+      "process_tree_count": 1,
+      "arm": "C",
+      "step": 512,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "b808408996c0c2462c35b7dcc6113696aa95105ae6b24ed41f1eab5d72f08816",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "7d6cd99af380cb3f42680fe6c7bb9146862ce2047e8055540d9de84fa7d04a93",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7302,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "A_512_ema_nfe1",
+      "seed": 7302,
+      "fid": 80.250868002748,
+      "noise_sha256": [
+        "1eaf60d92116353bde345843598f8924e0f911855b920541950d530cd4f49dd4"
+      ],
+      "images_sha256": "90386f63f9f578d4062c1eaef5185e6777b1e3706f57842174ab1b36a1020163",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 63.25028558820486,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/A_512_ema_nfe1_seed7302_bfac6e8613b671b6",
+      "host_rss_bytes": 2644873216,
+      "host_peak_rss_bytes": 2950811648,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2644873216,
+      "process_tree_pss_bytes": 2510077952,
+      "process_tree_count": 1,
+      "arm": "A",
+      "step": 512,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "943b518a8f079a664dc696cb0e20f1da41e960522355d67c8098c0ec10b6297d",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "9b95652fb5e503b2f877b26fd3652129abcce115bdea526db00ffe1f0daefd4a",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7303,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "S3_0_ema_nfe1",
+      "seed": 7303,
+      "fid": 66.54068768120538,
+      "noise_sha256": [
+        "fd995f67295e2786388e3d98d55e144690fa351e2377a53124b94fb94b97c7ee"
+      ],
+      "images_sha256": "9955d24080884141301382643d4a523b3cfbb66b18f36bd078f3229e4e4d8b71",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 62.21118645556271,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/S3_0_ema_nfe1_seed7303_cdd12fc1b3e7ad24",
+      "host_rss_bytes": 2705854464,
+      "host_peak_rss_bytes": 2957680640,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2705854464,
+      "process_tree_pss_bytes": 2571059200,
+      "process_tree_count": 1,
+      "arm": "S3",
+      "step": 0,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "505c0ee77dec0889a9981145f045ce5778eb1962c1dbe22bafb80b0cbd2fad4a",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "9bb2f69ab54e1b1376b10c27af5d5616ac6add044683ab94b46d663de19ac513",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7303,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "C_512_ema_nfe1",
+      "seed": 7303,
+      "fid": 82.18666930188613,
+      "noise_sha256": [
+        "fd995f67295e2786388e3d98d55e144690fa351e2377a53124b94fb94b97c7ee"
+      ],
+      "images_sha256": "93c79eb079222f6691091695460226612265b61385e952be09d76def07cafa74",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 62.19710489362478,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/C_512_ema_nfe1_seed7303_59225ca522680102",
+      "host_rss_bytes": 2674683904,
+      "host_peak_rss_bytes": 2957680640,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2674683904,
+      "process_tree_pss_bytes": 2539888640,
+      "process_tree_count": 1,
+      "arm": "C",
+      "step": 512,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "b808408996c0c2462c35b7dcc6113696aa95105ae6b24ed41f1eab5d72f08816",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "7d6cd99af380cb3f42680fe6c7bb9146862ce2047e8055540d9de84fa7d04a93",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7303,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "A_512_ema_nfe1",
+      "seed": 7303,
+      "fid": 79.48028971474935,
+      "noise_sha256": [
+        "fd995f67295e2786388e3d98d55e144690fa351e2377a53124b94fb94b97c7ee"
+      ],
+      "images_sha256": "31a0a1e7ecfda59cdef467feb9169e9ba2499ca70784474be82e724d07189fc4",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 63.045933635905385,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/A_512_ema_nfe1_seed7303_26b98e4971848608",
+      "host_rss_bytes": 2674778112,
+      "host_peak_rss_bytes": 2957680640,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2674778112,
+      "process_tree_pss_bytes": 2539983872,
+      "process_tree_count": 1,
+      "arm": "A",
+      "step": 512,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "70b35f6b73c8d22289725dc483c50eeed60b1707f4e992463b791ef0962573db",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "9b95652fb5e503b2f877b26fd3652129abcce115bdea526db00ffe1f0daefd4a",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 4,
+        "query_times": [
+          1.0,
+          0.75,
+          0.5,
+          0.25
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "S3_0_ema_nfe4",
+      "seed": 7301,
+      "fid": 25.095096382161614,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429",
+        "271b4f4923a22a9b70c6652b2d34dfcc98b408904bd49b3c835aede5adf61d6b",
+        "0ee8563d31a69f21f7e4af8dc8bace2a40a1d71ee670da80e31a4a8e4dd006e5",
+        "db4276b1338233944a38bf0b50ae92dfd51319f146974ba7890dfa4c0eefe997"
+      ],
+      "images_sha256": "c5302c131415ebc8d1d4a64d168294dfc828f3406b91a3ec2e1ff6a7acc827cc",
+      "network_calls": 380,
+      "batches": 95,
+      "nfe": 4,
+      "seconds": 123.65412389114499,
+      "peak_allocated_bytes": 2236372992,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/S3_0_ema_nfe4_seed7301_2f90a184b8c3a1f8",
+      "host_rss_bytes": 2669670400,
+      "host_peak_rss_bytes": 2957680640,
+      "allocated_bytes": 2236372992,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2669670400,
+      "process_tree_pss_bytes": 2534875136,
+      "process_tree_count": 1,
+      "arm": "S3",
+      "step": 0,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "e39ee894d405be41794ecb58457c45342adc67243bf9d6ec1051cb0a6ae5f413",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "9bb2f69ab54e1b1376b10c27af5d5616ac6add044683ab94b46d663de19ac513",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 4,
+        "query_times": [
+          1.0,
+          0.75,
+          0.5,
+          0.25
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "C_512_ema_nfe4",
+      "seed": 7301,
+      "fid": 31.565699248760268,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429",
+        "271b4f4923a22a9b70c6652b2d34dfcc98b408904bd49b3c835aede5adf61d6b",
+        "0ee8563d31a69f21f7e4af8dc8bace2a40a1d71ee670da80e31a4a8e4dd006e5",
+        "db4276b1338233944a38bf0b50ae92dfd51319f146974ba7890dfa4c0eefe997"
+      ],
+      "images_sha256": "2910e2a32c6c6c5871831438f969239393730dce1880670c4a07ecb36ec29107",
+      "network_calls": 380,
+      "batches": 95,
+      "nfe": 4,
+      "seconds": 128.31061550416052,
+      "peak_allocated_bytes": 2236372992,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/C_512_ema_nfe4_seed7301_0f90dbc4ec06deb4",
+      "host_rss_bytes": 2669850624,
+      "host_peak_rss_bytes": 2957680640,
+      "allocated_bytes": 2236372992,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2669850624,
+      "process_tree_pss_bytes": 2535053312,
+      "process_tree_count": 1,
+      "arm": "C",
+      "step": 512,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "c1cb278ad30159c04594cf64ffb9d9441b55a35241ccd82ea09b416d8e7f3720",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "7d6cd99af380cb3f42680fe6c7bb9146862ce2047e8055540d9de84fa7d04a93",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 4,
+        "query_times": [
+          1.0,
+          0.75,
+          0.5,
+          0.25
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "A_512_ema_nfe4",
+      "seed": 7301,
+      "fid": 30.012811669008443,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429",
+        "271b4f4923a22a9b70c6652b2d34dfcc98b408904bd49b3c835aede5adf61d6b",
+        "0ee8563d31a69f21f7e4af8dc8bace2a40a1d71ee670da80e31a4a8e4dd006e5",
+        "db4276b1338233944a38bf0b50ae92dfd51319f146974ba7890dfa4c0eefe997"
+      ],
+      "images_sha256": "ad1eb733a588aff0585ac51c230402e856fc913435acf4cafa1403483ed45491",
+      "network_calls": 380,
+      "batches": 95,
+      "nfe": 4,
+      "seconds": 122.19399783201516,
+      "peak_allocated_bytes": 2236372992,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/A_512_ema_nfe4_seed7301_44bcffc8b1e0efac",
+      "host_rss_bytes": 2696548352,
+      "host_peak_rss_bytes": 2957680640,
+      "allocated_bytes": 2236372992,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2696548352,
+      "process_tree_pss_bytes": 2561753088,
+      "process_tree_count": 1,
+      "arm": "A",
+      "step": 512,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "5e62943afd81334cf33b62b18888ce56af738bee3eebb204764898d3d83e7fb7",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "b92e0bde9394cc0d1d471e22084e9c28e400eaf963fe855b2bd7ff9b02b30411",
+        "weight_source": "raw",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "C_128_raw_nfe1",
+      "seed": 7301,
+      "fid": 84.80719696339446,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429"
+      ],
+      "images_sha256": "fd6a3a9a7e281ccab6a0bd63085d23d3fe563de0871424d885e4e11ab69523e2",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 63.20813418366015,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/C_128_raw_nfe1_seed7301_87a36cd3f1b87bf4",
+      "host_rss_bytes": 2670256128,
+      "host_peak_rss_bytes": 2957680640,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2670256128,
+      "process_tree_pss_bytes": 2535460864,
+      "process_tree_count": 1,
+      "arm": "C",
+      "step": 128,
+      "weight_source": "raw"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "95fd70c501f57572d5cdd3dc62ab1eddaf71b7052f7c127e41b15eb1f6f8277d",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "dee9a7e67ff1f7571b1ff07c0757a7d3e7640ba672716cda0cea3eefcdea88ee",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "C_128_ema_nfe1",
+      "seed": 7301,
+      "fid": 75.76442621494408,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429"
+      ],
+      "images_sha256": "ce358e3230ea987f0393406024b572125e4a70c96849526f622a7fce9f9d3c29",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 62.35517065227032,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/C_128_ema_nfe1_seed7301_7ab9663afeebed8b",
+      "host_rss_bytes": 2670518272,
+      "host_peak_rss_bytes": 2957680640,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2670518272,
+      "process_tree_pss_bytes": 2535718912,
+      "process_tree_count": 1,
+      "arm": "C",
+      "step": 128,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "874d46b5b2de58a1b255d937d1cd580a45a3702a31c7bed7f8c3cb22ccb6db5d",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "c36c87f49f55b9b7dffff7d4595a7968121230bfa5cc2a56e7f7389e060baab6",
+        "weight_source": "raw",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "A_128_raw_nfe1",
+      "seed": 7301,
+      "fid": 92.80452934633001,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429"
+      ],
+      "images_sha256": "dcd02e4cd7b0f6c8390192df1a1a9f191c0d8104a1c55de02ac9a5fc0f80d43f",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 62.88677150942385,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/A_128_raw_nfe1_seed7301_bdec24cea1e880b6",
+      "host_rss_bytes": 2670731264,
+      "host_peak_rss_bytes": 2957680640,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2670731264,
+      "process_tree_pss_bytes": 2535937024,
+      "process_tree_count": 1,
+      "arm": "A",
+      "step": 128,
+      "weight_source": "raw"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "99bd870b0bc9249e6e3b47b3b02561366aafc2b1914af271467b7e513cb260b0",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "8f695b5d9587b8d24fcf4c9ce8ba0cd35e4a8af034d434524f617e7a81bc2f9f",
+        "weight_source": "ema",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "A_128_ema_nfe1",
+      "seed": 7301,
+      "fid": 79.07684388128035,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429"
+      ],
+      "images_sha256": "9b498cfbc017257e2dc037ddb95a2465771859a09871b8467e03d5cd9c3c6614",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 61.58553400821984,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/A_128_ema_nfe1_seed7301_984ea67dec4c0464",
+      "host_rss_bytes": 2670784512,
+      "host_peak_rss_bytes": 2957680640,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2670784512,
+      "process_tree_pss_bytes": 2535989248,
+      "process_tree_count": 1,
+      "arm": "A",
+      "step": 128,
+      "weight_source": "ema"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "401f1b9aca3aa116e891f33b15d783b70ba3f0de5087b67cda6c411c3f673358",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "894db2d5819396603500d8b4c038dd99710d5b155a5d6691b790776f9d658350",
+        "weight_source": "raw",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "C_512_raw_nfe1",
+      "seed": 7301,
+      "fid": 88.9791101518598,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429"
+      ],
+      "images_sha256": "b2cb90458a1e2f53989ceae06587d4fe3ae44f9b543ce98856e417557e093ed4",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 61.27719593979418,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/C_512_raw_nfe1_seed7301_2f457af9dba26fed",
+      "host_rss_bytes": 2721320960,
+      "host_peak_rss_bytes": 2971287552,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2721320960,
+      "process_tree_pss_bytes": 2586525696,
+      "process_tree_count": 1,
+      "arm": "C",
+      "step": 512,
+      "weight_source": "raw"
+    },
+    {
+      "identity": {
+        "protocol_sha256": "95745dbb0fbf2eaa439b50dddff5860ee265854067d553133342016562788395",
+        "source_sha256": "7065116c8e95741a8ce7f3a8fc8fcd3ba337b12a",
+        "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+        "checkpoint_sha256": "633875fe5d00aa202673579fed5aa14b6ce411ecb02bb4f32a384a41fde53a61",
+        "weight_source": "raw",
+        "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+        "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+        "nfe": 1,
+        "query_times": [
+          1.0
+        ],
+        "seed": 7301,
+        "noise_protocol": "cpu-per-draw-stream-v1",
+        "batch_size": 32,
+        "category_order": "0..150, each repeated 20 times",
+        "count": 3020,
+        "metric": "development_clean_fid",
+        "official_score": false
+      },
+      "schedule": "A_512_raw_nfe1",
+      "seed": 7301,
+      "fid": 89.32324003389954,
+      "noise_sha256": [
+        "b344c688ba2e8f1aabb1eb8413f1e5554aa76f269a1388309d7cf1abbd4ca429"
+      ],
+      "images_sha256": "4d9e059587958f23aab86ec015c6d08154c2625323840d343385f985af7cc28e",
+      "network_calls": 95,
+      "batches": 95,
+      "nfe": 1,
+      "seconds": 61.59529643319547,
+      "peak_allocated_bytes": 2230081536,
+      "peak_reserved_bytes": 3542089728,
+      "output_dir": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/evaluations/A_512_raw_nfe1_seed7301_16aae6e88b65c66a",
+      "host_rss_bytes": 2671095808,
+      "host_peak_rss_bytes": 2971287552,
+      "allocated_bytes": 2230081536,
+      "reserved_bytes": 3542089728,
+      "process_tree_rss_bytes": 2671095808,
+      "process_tree_pss_bytes": 2536300544,
+      "process_tree_count": 1,
+      "arm": "A",
+      "step": 512,
+      "weight_source": "raw"
+    }
+  ],
+  "paired_differences": [
+    {
+      "seed": 7301,
+      "S3": 68.69202120165073,
+      "C": 85.18671464503632,
+      "A": 82.62306063175777,
+      "A_minus_C": -2.5636540132785512,
+      "A_minus_S3": 13.931039430107035
+    },
+    {
+      "seed": 7302,
+      "S3": 67.45597928127535,
+      "C": 83.12080894177711,
+      "A": 80.250868002748,
+      "A_minus_C": -2.8699409390291066,
+      "A_minus_S3": 12.79488872147266
+    },
+    {
+      "seed": 7303,
+      "S3": 66.54068768120538,
+      "C": 82.18666930188613,
+      "A": 79.48028971474935,
+      "A_minus_C": -2.70637958713678,
+      "A_minus_S3": 12.939602033543963
+    }
+  ],
+  "judgments": {
+    "A_minus_C": {
+      "mean": -2.7881602630829434,
+      "per_seed": [
+        -2.8699409390291066,
+        -2.70637958713678
+      ],
+      "outcome": "favorable"
+    },
+    "A_minus_S3": {
+      "mean": 12.867245377508311,
+      "per_seed": [
+        12.79488872147266,
+        12.939602033543963
+      ],
+      "outcome": "adverse"
+    }
+  },
+  "ledger": {
+    "limit_seconds": 16200,
+    "used_seconds": 11087.548251628876,
+    "jobs": [
+      {
+        "name": "qualify",
+        "gpu": 1,
+        "pid": 206336,
+        "started": 1791189675.510987,
+        "watchdog_seconds": 600,
+        "state": "completed",
+        "ended": 1791189768.7038705,
+        "returncode": 0
+      },
+      {
+        "name": "A",
+        "gpu": 1,
+        "pid": 206895,
+        "started": 1791189768.708564,
+        "watchdog_seconds": 10800,
+        "state": "completed",
+        "ended": 1791197997.426353,
+        "returncode": 0
+      },
+      {
+        "name": "C",
+        "gpu": 2,
+        "pid": 206896,
+        "started": 1791189768.7114887,
+        "watchdog_seconds": 2100,
+        "state": "completed",
+        "ended": 1791191162.0169806,
+        "returncode": 0
+      },
+      {
+        "name": "evaluate",
+        "gpu": 1,
+        "pid": 241985,
+        "started": 1791197997.43444,
+        "watchdog_seconds": 2700,
+        "state": "completed",
+        "ended": 1791199369.7665272,
+        "returncode": 0
+      }
+    ]
+  },
+  "arms": {
+    "A": {
+      "state": "completed",
+      "arm": "A",
+      "g_steps": 512,
+      "d_steps": 1024,
+      "g_images": 16384,
+      "d_images": 32768,
+      "resources": {
+        "host_rss_bytes": 2720522240,
+        "host_peak_rss_bytes": 3234758656,
+        "allocated_bytes": 12109358592,
+        "reserved_bytes": 13065256960
+      },
+      "seconds": 8206.060989128426,
+      "final_checkpoint": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/A/step_0512.pt",
+      "final_sha256": "92f33b6ea456d43bc7cfa9dd9b13038b075445a7a653ff835aa3b4d8767e2093",
+      "parameters": {
+        "generator": 89140419,
+        "discriminator": 28930048
+      }
+    },
+    "C": {
+      "state": "completed",
+      "arm": "C",
+      "g_steps": 512,
+      "d_steps": 0,
+      "g_images": 16384,
+      "d_images": 0,
+      "resources": {
+        "host_rss_bytes": 2620854272,
+        "host_peak_rss_bytes": 3115753472,
+        "allocated_bytes": 3106700288,
+        "reserved_bytes": 3344957440
+      },
+      "seconds": 1374.4640114232898,
+      "final_checkpoint": "/home/user/jw_soflow/FastGen-SoFlow/runs/matched_pilot_20261005/C/step_0512.pt",
+      "final_sha256": "0d89d8f159b484218d305c7e6475811b8cf87f355a3085325bad129b22ebe7c1",
+      "parameters": {
+        "generator": 89140419,
+        "discriminator": 28930048
+      }
+    }
+  },
+  "report_cpu_seconds": 133.755585571751,
+  "diversity_summary": {
+    "S3": {
+      "mean_class_pairwise": 0.18219582923990213,
+      "exact_duplicates": 0,
+      "median_nearest": 0.05242335796356201
+    },
+    "C": {
+      "mean_class_pairwise": 0.17015697881085984,
+      "exact_duplicates": 0,
+      "median_nearest": 0.049185752868652344
+    },
+    "A": {
+      "mean_class_pairwise": 0.178302171559918,
+      "exact_duplicates": 0,
+      "median_nearest": 0.04970502853393555
+    }
+  }
+}

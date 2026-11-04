@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-10-04T01:11:14.294722+09:00",
+  "action": "Initial launcher invocation overlapped the still-running CPU preparation process",
+  "outcome": "Preparation guard rejected launch before creating a workflow or GPU job",
+  "message": "Prepare and freeze the experiment before launch",
+  "additional_gpu_job_seconds": 0,
+  "resolution": "CPU preparation has now completed; record is prepared with no attempts. Launch next without resume."
+}

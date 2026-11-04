@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-10-02T03:02:20.871653+09:00",
+  "run_dir": "runs/research_s2_unet160_40k_seed42",
+  "state": "running",
+  "snapshot_steps": 30000,
+  "image_presentations": 3840000,
+  "current_status_step": 30040,
+  "source_sha256": "5da02d2816a688ed92d040a54ac5bfddfff9a13172e915767010a683e7fc4d96",
+  "protocol_sha256": "689ee6b767e5c05d71a45187b1172750deb3cfcc5931633ba88ad2c3efd66107",
+  "checkpoint_at_inspection": {
+    "path": "runs/research_s2_unet160_40k_seed42/checkpoints/step_030000.pt",
+    "sha256": "966f14b00a3f23a72b2cbd6973a29c5ee8e4197bc6bd9c735eba9a7e819201ce",
+    "step": 30000,
+    "epoch": 275,
+    "cursor": 3200,
+    "schedule_steps": 40000,
+    "optimizer_state_entries": 355,
+    "rng_state_present": true,
+    "source_and_partition_match": true,
+    "loaded_ema_parameters": 61934243,
+    "model_and_ema_weights_finite": true,
+    "note": "Retained learning-curve checkpoint of the full 40k schedule; final 40k remains the predeclared primary candidate."
+  },
+  "metrics_prefix_sha256": "15ab3e99fccde60324d8ebfb0b8549181c1fe761780c74a6a746eb2858bce90d",
+  "optimizer_seconds": 77696.76697245985,
+  "mean_update_seconds": 2.5898922324153286,
+  "last_10000_mean_update_seconds": 2.5911480659805237,
+  "last_1000_mean_update_seconds": 2.5925917765069753,
+  "peak_training_allocated_bytes_so_far": 6160562176,
+  "peak_host_rss_bytes_so_far": 2388500480,
+  "peak_sampled_process_tree_pss_bytes_so_far": 2134906880,
+  "training_budget_file_snapshot": {
+    "used_seconds": 79754.28367974795,
+    "limit_seconds": 118800
+  },
+  "running_training_gpu_job_seconds_estimate": 79779.77104830742,
+  "completed_stage_gpu_job_seconds": {
+    "qualification": 8.295851157978177,
+    "training": 0.0,
+    "evaluation": 244.84723449125886,
+    "total": 253.14308564923704
+  },
+  "prior_research_gpu_job_seconds": 74553.07565207966,
+  "campaign_gpu_job_seconds_running_estimate": 154585.9897860363,
+  "retries": 0,
+  "protected_files_verified": true,
+  "candidate_fid": null,
+  "official_score": false,
+  "sample_panel_files": [
+    "samples/030000/nfe1.png",
+    "samples/030000/nfe2.png",
+    "samples/030000/nfe3.png",
+    "samples/030000/nfe4.png"
+  ],
+  "limitation": "Running snapshot; final memory, accounting and quality remain pending. Qualification is already included in prior research accounting."
+}

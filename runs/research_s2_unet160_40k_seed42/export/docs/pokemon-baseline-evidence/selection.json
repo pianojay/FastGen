@@ -1,0 +1,112 @@
+{
+  "few_nfe": 4,
+  "selected_by_development": true,
+  "results": [
+    {
+      "metric": "development_clean_fid",
+      "fid": 40.20094812209754,
+      "nfe": 3,
+      "seed": 42,
+      "count": 3020,
+      "checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "official_score": false,
+      "seconds": 61.52078044600785,
+      "peak_allocated_bytes": 1393857536,
+      "peak_reserved_bytes": 2262827008
+    },
+    {
+      "metric": "development_clean_fid",
+      "fid": 38.267544977019895,
+      "nfe": 4,
+      "seed": 43,
+      "count": 3020,
+      "checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "official_score": false,
+      "seconds": 73.46642237715423,
+      "peak_allocated_bytes": 1393857536,
+      "peak_reserved_bytes": 2262827008
+    },
+    {
+      "metric": "development_clean_fid",
+      "fid": 38.304112390735895,
+      "nfe": 4,
+      "seed": 42,
+      "count": 3020,
+      "checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "official_score": false,
+      "seconds": 73.39600177668035,
+      "peak_allocated_bytes": 1393857536,
+      "peak_reserved_bytes": 2262827008
+    },
+    {
+      "metric": "development_clean_fid",
+      "fid": 40.353734241294944,
+      "nfe": 3,
+      "seed": 43,
+      "count": 3020,
+      "checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "official_score": false,
+      "seconds": 62.01366307400167,
+      "peak_allocated_bytes": 1393857536,
+      "peak_reserved_bytes": 2262827008
+    },
+    {
+      "metric": "development_clean_fid",
+      "fid": 113.30658990860422,
+      "nfe": 1,
+      "seed": 43,
+      "count": 3020,
+      "checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "official_score": false,
+      "seconds": 39.748421750962734,
+      "peak_allocated_bytes": 1391629312,
+      "peak_reserved_bytes": 2262827008
+    },
+    {
+      "metric": "development_clean_fid",
+      "fid": 46.698051147073386,
+      "nfe": 2,
+      "seed": 43,
+      "count": 3020,
+      "checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "official_score": false,
+      "seconds": 51.27491078339517,
+      "peak_allocated_bytes": 1393333248,
+      "peak_reserved_bytes": 2262827008
+    },
+    {
+      "metric": "development_clean_fid",
+      "fid": 114.60358907734553,
+      "nfe": 1,
+      "seed": 42,
+      "count": 3020,
+      "checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "official_score": false,
+      "seconds": 41.3306411318481,
+      "peak_allocated_bytes": 1391629312,
+      "peak_reserved_bytes": 2262827008
+    },
+    {
+      "metric": "development_clean_fid",
+      "fid": 46.49755714717543,
+      "nfe": 2,
+      "seed": 42,
+      "count": 3020,
+      "checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "official_score": false,
+      "seconds": 50.787715561687946,
+      "peak_allocated_bytes": 1393333248,
+      "peak_reserved_bytes": 2262827008
+    }
+  ],
+  "checkpoint": "runs/pokemon_unet128_seed42/checkpoints/step_020000.pt",
+  "evaluation_returncode": 0
+}

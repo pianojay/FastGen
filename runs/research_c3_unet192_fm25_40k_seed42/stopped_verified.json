@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-10-04T01:22:51.175278+09:00",
+  "instruction": "User: Halt C3 training.",
+  "state": "stopped_by_user",
+  "run_dir": "runs/research_c3_unet192_fm25_40k_seed42",
+  "stop_request": {
+    "timestamp": "2026-10-04T01:20:39.520953+09:00",
+    "instruction": "User: Halt C3 training.",
+    "action": "SIGTERM to verified C3 workflow; supervisor forwards orderly stop to its active child and suppresses later stages.",
+    "workflow": {
+      "pid": 3755229,
+      "started_unix": 1791043885.9944043,
+      "proc_start_ticks": "1082718920",
+      "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21"
+    },
+    "state_before": "running",
+    "stage_before": "training",
+    "signal": 15,
+    "no_next_experiment": true
+  },
+  "workflow_record_state": "stopped",
+  "trainer_status": {
+    "state": "failed",
+    "step": 65,
+    "error": "DataLoader worker (pid 3757838) is killed by signal: Terminated. "
+  },
+  "processes_verified_exited": [
+    {
+      "pid": 3755229,
+      "same_process_running": false
+    },
+    {
+      "pid": 3757720,
+      "same_process_running": false
+    }
+  ],
+  "gpu_1_compute_processes": [],
+  "gpu_1_lock_available": true,
+  "prepared_git_commit": "41b1294876e84f7e5c4fe7dcf3ee467672917848",
+  "source_sha256": "dd51d486b974a8c566f9c5e74650b9b8d0ac2925cd9daaca452ea2c628485d83",
+  "protocol_sha256": "b10db3145357d530ac95644ce5aa9da1696725f7d7f7ed24460365ca3212bc27",
+  "training_config_sha256": "db51d527563eaefbc1563287c6026a0c01fa9f00b733291882eaa27a8423ceba",
+  "saved_checkpoint": {
+    "path": "runs/research_c3_unet192_fm25_40k_seed42/checkpoints/latest.pt",
+    "step": 0,
+    "epoch": 0,
+    "cursor": 0,
+    "sha256": "4da0b7fbac340131baa383e67bc7559f0cab8ef6c9f7ff7ee2733579e9be6487",
+    "optimizer_state_entries": 0,
+    "rng_present": true,
+    "loaded_ema_parameters": 89140419,
+    "identical_to_verified_initial_checkpoint": true
+  },
+  "last_reported_trainer_step": 65,
+  "logged_finite_updates": 65,
+  "logged_image_presentations": 8320,
+  "logged_fm_presentations": 2080,
+  "logged_consistency_presentations": 6240,
+  "metrics_sha256": "353cdd9a6f003f1e473d10243307955aefa68beffa11b4dc84f3503db1f158c8",
+  "logged_optimizer_seconds": 192.65485181473196,
+  "mean_logged_update_seconds": 2.9639207971497226,
+  "peak_logged_training_allocated_bytes": 7697792512,
+  "peak_logged_training_reserved_bytes": 8392802304,
+  "peak_logged_host_rss_bytes": 1803304960,
+  "peak_sampled_process_tree_pss_bytes": 1949903872,
+  "production_gpu_job_seconds": {
+    "qualification": 10.654195683076978,
+    "training": 210.37796875461936,
+    "evaluation": 333.61098313704133,
+    "total": 554.6431475747377
+  },
+  "pretraining_qualification_gpu_job_seconds": 390.9362122621387,
+  "c3_method_gpu_job_seconds_including_failure_and_diagnosis": 945.5793598368764,
+  "campaign_gpu_job_seconds_excluding_inherited": 318894.7561983373,
+  "inherited_exp1_gpu_job_seconds": 36712.117704635486,
+  "production_retries": 0,
+  "qualification_contract_failures": 1,
+  "candidate_fid": null,
+  "incumbents": "S3 one/four-call final EMA unchanged",
+  "next_run_launched": false,
+  "protected_files_verified": true,
+  "official_score": false,
+  "limitation": "The supervisor forwarded SIGTERM to the entire trainer process group. A DataLoader worker exited on that signal; the trainer raised before its orderly final save. Only the initial step0 checkpoint is retained, so no learned C3 update is recoverable. All consumed compute remains charged. No candidate evaluation or successor run was launched."
+}

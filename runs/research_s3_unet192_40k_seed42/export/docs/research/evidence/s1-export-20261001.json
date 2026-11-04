@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-10-01T04:22:14.591621+09:00",
+  "state": "verified",
+  "device": "cpu",
+  "gpu_job_seconds": 0,
+  "cpu_elapsed_seconds": 18.55993021465838,
+  "models": {
+    "one_nfe": {
+      "parameters": 39667843,
+      "backbone_calls": 1,
+      "shape": [
+        3,
+        3,
+        64,
+        64
+      ]
+    },
+    "few_nfe": {
+      "parameters": 39667843,
+      "backbone_calls": 4,
+      "shape": [
+        3,
+        3,
+        64,
+        64
+      ]
+    }
+  },
+  "export_metadata_sha256": "56f44240267b5cb15f2e29685fce53b0e09d3dfbe27c777886aa498108ab9c7d",
+  "manifest_sha256": "ec75a32a598aac9d9676904fe2e51e1cdb4229f68816131aefea988cbf554fb5",
+  "protected_files_verified": true,
+  "official_score": false
+}

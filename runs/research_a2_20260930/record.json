@@ -1,0 +1,31 @@
+{
+  "experiment": "A2-20260930",
+  "state": "awaiting_assessment",
+  "approval_reference": null,
+  "protocol_sha256": "c4da01fefb24a209abc1ed99cf391e93530375094d3d2b3049c5ab4c9c61e812",
+  "source_sha256": "63257a434ad44bbd10b406fd7a2d2471295b35a08a1066d0adc129786e92fe9a",
+  "prepared_git_commit": "94f2915ec6f9563d39597ea45927d48063e69d59",
+  "environment": {
+    "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+    "executable": "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "torchvision": "0.22.1+cu126",
+      "clean-fid": "0.1.35",
+      "numpy": "1.26.4",
+      "Pillow": "12.3.0"
+    }
+  },
+  "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+  "parent_checkpoint": "runs/pokemon_unet128_seed42/checkpoints/step_020000.pt",
+  "parent_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+  "prepared_unix": 1790714011.6049137,
+  "gpu": 1,
+  "budget_seconds": 2700,
+  "inherited_baseline_gpu_job_seconds": 36712.117704635486,
+  "prior_campaign_gpu_job_seconds": 467.662695446983,
+  "incremental_gpu_job_seconds": 0.0,
+  "attempts": [],
+  "unfinished_job": null,
+  "token_expenditure": "unavailable"
+}

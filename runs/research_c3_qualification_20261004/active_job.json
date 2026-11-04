@@ -1,0 +1,16 @@
+{
+  "pid": null,
+  "command": [
+    "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "started_unix": 1791043106.2189379,
+  "proc_start_ticks": "1082641757",
+  "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+  "returncode": 1
+}

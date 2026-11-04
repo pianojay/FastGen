@@ -1,0 +1,11 @@
+{
+  "pid": null,
+  "command": [
+    "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+    "runs/research_c3_diagnostic_20261004/check.py"
+  ],
+  "started_unix": 1791043183.3951504,
+  "proc_start_ticks": "1082649475",
+  "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+  "returncode": 0
+}

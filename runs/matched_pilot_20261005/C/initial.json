@@ -1,0 +1,20 @@
+{
+  "model_sha256": "412900756f07652ebb7ad7796ed4d1df45ef1fb8a53af27f4023d864d53cad92",
+  "ema_sha256": "412900756f07652ebb7ad7796ed4d1df45ef1fb8a53af27f4023d864d53cad92",
+  "parameters": {
+    "generator": 89140419,
+    "discriminator": 28930048
+  },
+  "inherited_d_updates": 0,
+  "config": {
+    "consistency_microbatch": 2,
+    "rho": 0.1,
+    "penalty_beta": 0.1,
+    "flip_probability": 0.25,
+    "generator_lr": 2e-05,
+    "discriminator_lr": 2e-05,
+    "ema_decay": 0.9892280131939755,
+    "seed": 20261005,
+    "memory_limit_bytes": 20000000000
+  }
+}

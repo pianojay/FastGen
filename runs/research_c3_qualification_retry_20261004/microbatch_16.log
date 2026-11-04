@@ -1,0 +1,12 @@
+Dataset already exists: data/pokemon-generation-one-22k/PokemonData
+{"phase": "warmup", "update": 10, "seconds": 2.8967022448778152, "allocated_bytes": 7689586688}
+{"phase": "measured", "update": 20, "seconds": 2.92662332393229, "allocated_bytes": 7689586688}
+{"phase": "measured", "update": 30, "seconds": 2.927725676447153, "allocated_bytes": 7689586688}
+{"phase": "measured", "update": 40, "seconds": 2.9475288800895214, "allocated_bytes": 7689604608}
+{"phase": "measured", "update": 50, "seconds": 2.9551927391439676, "allocated_bytes": 7689627136}
+{"phase": "measured", "update": 60, "seconds": 2.9547228049486876, "allocated_bytes": 7689649152}
+{"phase": "measured", "update": 70, "seconds": 2.958536170423031, "allocated_bytes": 7689669120}
+{"phase": "measured", "update": 80, "seconds": 2.960625756531954, "allocated_bytes": 7689691136}
+{"phase": "measured", "update": 90, "seconds": 2.962892470881343, "allocated_bytes": 7689710080}
+{"phase": "measured", "update": 100, "seconds": 2.9621478226035833, "allocated_bytes": 7689725440}
+{"phase": "measured", "update": 110, "seconds": 2.9877847153693438, "allocated_bytes": 7689739264}

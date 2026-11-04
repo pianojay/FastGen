@@ -1,0 +1,24 @@
+test_official_checkpoint (test_fastgen.Contracts) ... ok
+test_parameters (test_fastgen.Contracts) ... ok
+test_protected (test_fastgen.Contracts) ... ok
+test_accumulation_of_fixed_objective (test_fastgen.GPUBehavior) ... skipped 'CUDA required'
+test_calls_and_zero_augmentation (test_fastgen.GPUBehavior) ... skipped 'CUDA required'
+test_consistency_branch_conditioning_and_small_gap (test_fastgen.GPUBehavior) ... skipped 'CUDA required'
+test_identity_and_conditioning (test_fastgen.GPUBehavior) ... skipped 'CUDA required'
+test_resume_next_update (test_fastgen.GPUBehavior) ... skipped 'CUDA required'
+test_real_backbone_uses_paired_draws_and_requested_times (test_sampling_probe.PairedSamplerGPU) ... skipped 'CUDA required'
+test_cache_identity_includes_schedule_noise_batch_and_provenance (test_sampling_probe.ProbeDecisions) ... ok
+test_confirmation_requires_predeclared_consistency_and_interval (test_sampling_probe.ProbeDecisions) ... ok
+test_retry_and_completed_stage_cannot_renew_allowance (test_sampling_probe.ProbeDecisions) ... ok
+test_selection_cannot_use_a_single_favorable_seed_or_missing_score (test_sampling_probe.ProbeDecisions) ... ok
+test_actual_draws_match_across_schedules_nfes_and_batches (test_sampling_probe.SamplerProtocol) ... ok
+test_default_preserves_outputs_and_generator_state (test_sampling_probe.SamplerProtocol) ... ok
+test_explicit_noise_arithmetic_calls_and_metadata (test_sampling_probe.SamplerProtocol) ... ok
+test_invalid_times_and_noise_rejected (test_sampling_probe.SamplerProtocol) ... ok
+test_child_output_and_elapsed_time_are_recorded (test_sampling_probe.SupervisionCPU) ... ok
+test_timeout_charges_elapsed_time_without_relaunch (test_sampling_probe.SupervisionCPU) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.866s
+
+OK (skipped=6)

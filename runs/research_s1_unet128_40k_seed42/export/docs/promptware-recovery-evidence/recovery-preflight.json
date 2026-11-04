@@ -1,0 +1,14 @@
+{
+  "configuration_sha256": "1130d7d7c0dc739d73e3d99326a65986e98ae985ca58719b07a4e962dbeee9db",
+  "worker_sha256": "ee44bc24e4780abe5d0b5da96fbc50bd1b43a47e4ed23163427e2ae52c6a6d5b",
+  "original_pid": 2051367,
+  "original_process_start_ticks": "1049120668",
+  "observed_process_start_ticks": null,
+  "exclusive_lock_available": true,
+  "saved_step": 5,
+  "last_logged_step": 8,
+  "consumed_seconds": 8.15936036966741,
+  "remaining_seconds": 51.84063963033259,
+  "expected_resume_work_seconds": 15,
+  "remaining_margin_seconds": 36.84063963033259
+}

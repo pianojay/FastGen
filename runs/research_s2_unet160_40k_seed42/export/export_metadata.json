@@ -1,0 +1,149 @@
+{
+  "source_checkpoint_sha256": "32bf7e04d68750aff505546266d97ba9a4077e17fd68ba911254850473e75a79",
+  "step": 40000,
+  "architecture": {
+    "model_channels": 160,
+    "num_blocks": 2,
+    "dropout": 0.1
+  },
+  "models": {
+    "one_nfe": {
+      "parameters": 61934243,
+      "nfe": 1
+    },
+    "few_nfe": {
+      "parameters": 61934243,
+      "nfe": 4
+    }
+  },
+  "official_score": false,
+  "training_provenance": {
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "source_sha256": {
+      "configs/pokemon.json": "b61ce6bf349a2808e47d12769543c8e42e13f0608f10ba59e596e2aef59b26d6",
+      "configs/pokemon_local.json": "34df61487d659bf8ea23cfd16f5cac93a494903e74b322ecfb9eba5b5e7ae794",
+      "configs/protected_files.json": "0e59d5f56900ac57bb214000e5470a922af570cc249bd4fe22a6de60067dcb2d",
+      "configs/research_s1_20260930.json": "b5970a17b0ad8d2a61f298ddafc6ab356122a66a56dca354d0b21f1bb0b4803a",
+      "configs/research_s1_train.json": "f81a002a5ff46208c72c14436adc1bbdbad57a2778e7f60f9d3aaa88c1105ca4",
+      "configs/research_s2_20261001.json": "3a7ca82ed3bac77aaf4dac18356de4fa7d28eeccac41d2cad689ba38bae031ab",
+      "configs/research_s2_microbatch16_20261001.json": "b737a13ae3459214af1b58c7bab7d519f3458d991733b5d5599d0b66069c5a8a",
+      "configs/research_s2_microbatch16_train.json": "1b928b6ae5cd2630ce10e4df969b9cc570c327fdcfa2cbf343a38bc383a10c0c",
+      "configs/research_s2_profile_train.json": "338021be2c14bf8264e36f7d74abbd950f9542b42281778197351729058493c3",
+      "configs/research_s2_qualification_20261001.json": "3f972f8467c3f8ee68bbe44a4e50e452711a9a312293ad4b5830abbf70b657fc",
+      "configs/research_s2_train.json": "b8b5572d85dc0810c1ba4e973b89766f31422073c50286987034bba3614e681e",
+      "dataset.py": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+      "download_dataset.py": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+      "evaluate.py": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "model.py": "eaa392676514c2b813e99c6a04544697a885129ed56e121cbe90d8146df1d9b2",
+      "scripts/__init__.py": "72105a03e2a93b8c806b18a623c820ef893b477541edde5b5e9be9ece90eb335",
+      "scripts/bundle.py": "390c5aef60c898711b5778239cd79da06df15979634e9995688f3d362eaef8a4",
+      "scripts/evaluate_dev.py": "bb18c583cf4dc8216dfdaa2ac6643f6e4ebecc88e459d44f29254117d944874c",
+      "scripts/evaluate_snapshot.py": "93e1ed99780cd8f65fdd5bc5353215041b63a4c1e71880cfe8e773679ddd471a",
+      "scripts/export.py": "b0b414f828ddd860cce136b3b0c47c0bfaa7c69d0009e466dbe7554b39f45cf1",
+      "scripts/gallery.py": "573e896f0cf2272ad4ae2e5e1eed5f6e7ca069ff869a2fd442cd9d47ebbe24cc",
+      "scripts/launch.py": "8d5f233cca512cdf0629cfbde14d06101f331536b3432cbd3e73d4cbe5c0510f",
+      "scripts/prepare_data.py": "006355d57a2b9227c52d63f9b0347fbf8591617680022258d640417f18921ecd",
+      "scripts/profile_batch.py": "9568a856bb5b456c0577444b53bac9a984b2b96843c0096473a963e95aee4cb6",
+      "scripts/qualify_training.py": "6aea493b17e5a51af376d591b4c60db3d398795082b927257601a04635e71cde",
+      "scripts/report.py": "a7334efd62dbe03a36b1cda2f96dfd451080a27eef5f3970987e893fd9ea17f2",
+      "scripts/training_study.py": "a4d36b2c41e1ded06423f492ba1bc2e1106356a086d8af7a41329705b2bb4e0f",
+      "scripts/verify_export.py": "23ee1c017381e678a68dd5ebcab2951c0297c77f3b04e74278e52ced664456e9",
+      "soflow_fastgen/__init__.py": "ce83782f8342c617fe31487a9e25cf7273785070eb6166a1e716ff391bd78505",
+      "soflow_fastgen/augment.py": "0598dfa8dd88f92301e1a167599068f6777fb51f7d96e3642e65898fe1a283ef",
+      "soflow_fastgen/common.py": "a9de4ab4fa6597ffaebe07ed4417ac9658ff96291e497a88879d42317ac4c14f",
+      "soflow_fastgen/data.py": "fba5ea4118f5117ebf148b27b3ad288430ae2b091e9f67578046a5a7263bb843",
+      "soflow_fastgen/evaluation.py": "22635e82a0af534c4b75af27e860f78ff531708b6cf40fdd6399654a5acbc64a",
+      "soflow_fastgen/models.py": "9c889f9e20a9783f7d9fe503771f617032ea0876001b2a53e74259978e6720cf",
+      "soflow_fastgen/paired_evaluation.py": "b7ad455c29beeac4e459a9cfdd11b1640d65ea12062f6c3ccaaf841242f1e19f",
+      "soflow_fastgen/sampling.py": "c536149529fcf97ef55f73ca244f9fe4f744283ed57df38bcd73a914246c3279",
+      "soflow_fastgen/training.py": "a1cbe945fe644b6dc3df05afe79e82d871e107bdf30b091556bd4ff695dd07b7",
+      "soflow_fastgen/training_study.py": "10f8bc11137bf50b30d1d1afdf521e1c99767647176ca41e417142a9d0e1cc9b",
+      "soflow_fastgen/unet.py": "c083e2d94b01229ffa8aa792d9d5cb33d7e2ae8a5c14cadef5838ed74777fd0a",
+      "soflow_fastgen/visualize.py": "76c7f303137c4489ef7b2c1fca60ebc0e666108be43b55aa627ea838c7f32903",
+      "tests/test_fastgen.py": "82eecd02cd772e5040ad404d147203698a2e3e7a453b042e6ad4ec3b17215d55",
+      "tests/test_training_study.py": "ceca2b9e02c5bf19391285026a4c8d14e2f339eae44b14fc09ff5c96e418073f",
+      "train.py": "0939c9075abbad851be5177bb56b0ea58afd98f096420ba4fec2482101703358"
+    },
+    "git_commit": "e3657b25e1646a991cde3723496f6016533d0b7a",
+    "git_status": ""
+  },
+  "selection": {
+    "checkpoint": "step_040000.pt",
+    "weight_source": "ema",
+    "one_nfe": 1,
+    "few_nfe": 4,
+    "schedule": "uniform",
+    "confirmation": {
+      "1": {
+        "nfe": 1,
+        "seeds": [
+          4101,
+          4102,
+          4103,
+          4104
+        ],
+        "reference_fids": [
+          82.67514569030226,
+          82.62323934317283,
+          81.77252544479506,
+          82.15391150967929
+        ],
+        "candidate_fids": [
+          75.86970574608256,
+          74.4937717374388,
+          74.52362484691105,
+          74.61601724056305
+        ],
+        "reference_mean": 82.30620549698736,
+        "candidate_mean": 74.87577989274887,
+        "paired_deltas": [
+          -6.8054399442196996,
+          -8.129467605734021,
+          -7.248900597884017,
+          -7.5378942691162365
+        ],
+        "mean_delta": -7.4304256042384935,
+        "eligible": null,
+        "outcome": "confirmed_under_protocol",
+        "limitation": "Generation-seed comparison of one training seed on reused development data."
+      },
+      "4": {
+        "nfe": 4,
+        "seeds": [
+          4101,
+          4102,
+          4103,
+          4104
+        ],
+        "reference_fids": [
+          29.56088521307015,
+          29.310285677606885,
+          29.09558954382601,
+          29.664660552174666
+        ],
+        "candidate_fids": [
+          26.538199064370815,
+          26.76040272648123,
+          26.29094607622494,
+          26.49221998648011
+        ],
+        "reference_mean": 29.407855246669428,
+        "candidate_mean": 26.520441963389274,
+        "paired_deltas": [
+          -3.0226861486993357,
+          -2.549882951125653,
+          -2.8046434676010676,
+          -3.172440565694558
+        ],
+        "mean_delta": -2.8874132832801536,
+        "eligible": null,
+        "outcome": "confirmed_under_protocol",
+        "limitation": "Generation-seed comparison of one training seed on reused development data."
+      }
+    },
+    "selected_by_development": true,
+    "nfe_2_3_measured": false,
+    "official_score": false,
+    "limitation": "One scratch training seed per width; generation-seed confirmation on reused development data. Four is the evaluated few-call choice; no comparison against two/three calls."
+  }
+}

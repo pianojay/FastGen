@@ -1,0 +1,7 @@
+{
+  "state": "training",
+  "arm": "C",
+  "g_steps": 512,
+  "d_steps": 0,
+  "seconds": 1370.7840630691499
+}

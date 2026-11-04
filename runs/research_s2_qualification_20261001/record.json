@@ -1,0 +1,131 @@
+{
+  "state": "qualified",
+  "protocol": {
+    "experiment": "S2-qualification-20261001",
+    "authorization_reference": "User: Launch training. Consecutive in-scope scratch experiments under program.md.",
+    "run_dir": "runs/research_s2_qualification_20261001",
+    "training_config": "configs/research_s2_profile_train.json",
+    "initialization": "scratch",
+    "expected_parameters": 61934243,
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "budget_seconds": 1200,
+    "budget_rationale": "At most one full GPU contract pass and two disposable changed-width probes. Each probe has 10 warmup, 100 measured and 5 terminal-gap updates plus 24 sampling batches. Twenty minutes includes startup and one memory-driven fallback; unused time grants no extra production training.",
+    "microbatch_candidates": [
+      32,
+      16
+    ],
+    "selection_rule": "Keep S1 microbatch 32 if peak allocation is below 18GB; use 16 only after OOM or failed memory target. Effective batch remains 128. No FID is computed.",
+    "warmup_updates": 10,
+    "measured_updates": 100,
+    "terminal_updates": 5,
+    "sampling_warmup_batches": 2,
+    "sampling_measured_batches": 10,
+    "production_steps": 40000,
+    "production_optimizer_hours": null,
+    "production_initialization": "New random initialization at update zero after qualification; no qualification weights or optimizer state are saved."
+  },
+  "protocol_sha256": "0edf84b360063ab7dfebb9b108c6c5cc286706c7568a9a63850aee7f9d109812",
+  "source": {
+    "source_sha256": {
+      "configs/pokemon.json": "b61ce6bf349a2808e47d12769543c8e42e13f0608f10ba59e596e2aef59b26d6",
+      "configs/pokemon_local.json": "34df61487d659bf8ea23cfd16f5cac93a494903e74b322ecfb9eba5b5e7ae794",
+      "configs/protected_files.json": "0e59d5f56900ac57bb214000e5470a922af570cc249bd4fe22a6de60067dcb2d",
+      "configs/research_s1_20260930.json": "b5970a17b0ad8d2a61f298ddafc6ab356122a66a56dca354d0b21f1bb0b4803a",
+      "configs/research_s1_train.json": "f81a002a5ff46208c72c14436adc1bbdbad57a2778e7f60f9d3aaa88c1105ca4",
+      "configs/research_s2_profile_train.json": "338021be2c14bf8264e36f7d74abbd950f9542b42281778197351729058493c3",
+      "configs/research_s2_qualification_20261001.json": "3f972f8467c3f8ee68bbe44a4e50e452711a9a312293ad4b5830abbf70b657fc",
+      "dataset.py": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+      "download_dataset.py": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+      "evaluate.py": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "model.py": "eaa392676514c2b813e99c6a04544697a885129ed56e121cbe90d8146df1d9b2",
+      "scripts/__init__.py": "72105a03e2a93b8c806b18a623c820ef893b477541edde5b5e9be9ece90eb335",
+      "scripts/bundle.py": "390c5aef60c898711b5778239cd79da06df15979634e9995688f3d362eaef8a4",
+      "scripts/evaluate_dev.py": "bb18c583cf4dc8216dfdaa2ac6643f6e4ebecc88e459d44f29254117d944874c",
+      "scripts/evaluate_snapshot.py": "93e1ed99780cd8f65fdd5bc5353215041b63a4c1e71880cfe8e773679ddd471a",
+      "scripts/export.py": "b0b414f828ddd860cce136b3b0c47c0bfaa7c69d0009e466dbe7554b39f45cf1",
+      "scripts/gallery.py": "573e896f0cf2272ad4ae2e5e1eed5f6e7ca069ff869a2fd442cd9d47ebbe24cc",
+      "scripts/launch.py": "8d5f233cca512cdf0629cfbde14d06101f331536b3432cbd3e73d4cbe5c0510f",
+      "scripts/prepare_data.py": "006355d57a2b9227c52d63f9b0347fbf8591617680022258d640417f18921ecd",
+      "scripts/profile_batch.py": "9568a856bb5b456c0577444b53bac9a984b2b96843c0096473a963e95aee4cb6",
+      "scripts/qualify_training.py": "6aea493b17e5a51af376d591b4c60db3d398795082b927257601a04635e71cde",
+      "scripts/report.py": "a7334efd62dbe03a36b1cda2f96dfd451080a27eef5f3970987e893fd9ea17f2",
+      "scripts/training_study.py": "a4d36b2c41e1ded06423f492ba1bc2e1106356a086d8af7a41329705b2bb4e0f",
+      "scripts/verify_export.py": "23ee1c017381e678a68dd5ebcab2951c0297c77f3b04e74278e52ced664456e9",
+      "soflow_fastgen/__init__.py": "ce83782f8342c617fe31487a9e25cf7273785070eb6166a1e716ff391bd78505",
+      "soflow_fastgen/augment.py": "0598dfa8dd88f92301e1a167599068f6777fb51f7d96e3642e65898fe1a283ef",
+      "soflow_fastgen/common.py": "a9de4ab4fa6597ffaebe07ed4417ac9658ff96291e497a88879d42317ac4c14f",
+      "soflow_fastgen/data.py": "fba5ea4118f5117ebf148b27b3ad288430ae2b091e9f67578046a5a7263bb843",
+      "soflow_fastgen/evaluation.py": "22635e82a0af534c4b75af27e860f78ff531708b6cf40fdd6399654a5acbc64a",
+      "soflow_fastgen/models.py": "9c889f9e20a9783f7d9fe503771f617032ea0876001b2a53e74259978e6720cf",
+      "soflow_fastgen/paired_evaluation.py": "b7ad455c29beeac4e459a9cfdd11b1640d65ea12062f6c3ccaaf841242f1e19f",
+      "soflow_fastgen/sampling.py": "c536149529fcf97ef55f73ca244f9fe4f744283ed57df38bcd73a914246c3279",
+      "soflow_fastgen/training.py": "a1cbe945fe644b6dc3df05afe79e82d871e107bdf30b091556bd4ff695dd07b7",
+      "soflow_fastgen/training_study.py": "10f8bc11137bf50b30d1d1afdf521e1c99767647176ca41e417142a9d0e1cc9b",
+      "soflow_fastgen/unet.py": "c083e2d94b01229ffa8aa792d9d5cb33d7e2ae8a5c14cadef5838ed74777fd0a",
+      "soflow_fastgen/visualize.py": "76c7f303137c4489ef7b2c1fca60ebc0e666108be43b55aa627ea838c7f32903",
+      "tests/test_fastgen.py": "82eecd02cd772e5040ad404d147203698a2e3e7a453b042e6ad4ec3b17215d55",
+      "tests/test_training_study.py": "ceca2b9e02c5bf19391285026a4c8d14e2f339eae44b14fc09ff5c96e418073f",
+      "train.py": "0939c9075abbad851be5177bb56b0ea58afd98f096420ba4fec2482101703358"
+    },
+    "git_commit": "c8f8701957e3f9996860cd8caa1202230eb04bab",
+    "git_status": ""
+  },
+  "environment": {
+    "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+    "executable": "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "torchvision": "0.22.1+cu126",
+      "clean-fid": "0.1.35",
+      "numpy": "1.26.4",
+      "Pillow": "12.3.0"
+    }
+  },
+  "worker": {
+    "pid": 2523699,
+    "started_unix": 1790796482.8553169,
+    "proc_start_ticks": "1057979096",
+    "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21"
+  },
+  "attempts": [
+    {
+      "stage": "contracts",
+      "command": [
+        "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "started_unix": 1790796482.8656647,
+      "used_seconds_before": 0.0,
+      "returncode": 0,
+      "ended_unix": 1790796490.9126096,
+      "used_seconds_after": 8.044964034110308
+    },
+    {
+      "stage": "microbatch_32",
+      "command": [
+        "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+        "-m",
+        "scripts.qualify_training",
+        "--config",
+        "configs/research_s2_qualification_20261001.json",
+        "--probe",
+        "32"
+      ],
+      "started_unix": 1790796490.9354696,
+      "used_seconds_before": 8.044964034110308,
+      "returncode": 0,
+      "ended_unix": 1790796999.5219927,
+      "used_seconds_after": 516.6271812710911
+    }
+  ],
+  "gpu_job_seconds": 516.6271812710911,
+  "authorization_reference": "User: Launch training. Consecutive in-scope scratch experiments under program.md.",
+  "active_stage": null,
+  "selected_microbatch": 32,
+  "completed_unix": 1790796999.5361867
+}

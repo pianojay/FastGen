@@ -1,0 +1,48 @@
+[
+  {
+    "comparison": "default versus repeat default",
+    "initial_equal": true,
+    "cpu_rng_equal": true,
+    "cuda_rng_equal": true,
+    "max_weight_abs_difference": 1.0842021724855044e-19,
+    "changed_parameter_tensors": 67,
+    "all_close_rtol1e-6_atol1e-7": true,
+    "stats": [
+      {
+        "loss_surrogate": -9.391484923071403e-09,
+        "consistency_mse": 1.8951090574264526,
+        "weight": 0.6217647790908813,
+        "grad_norm": 0.3265874683856964
+      },
+      {
+        "loss_surrogate": -9.391484923071403e-09,
+        "consistency_mse": 1.8951090574264526,
+        "weight": 0.6217647790908813,
+        "grad_norm": 0.3265874683856964
+      }
+    ]
+  },
+  {
+    "comparison": "default versus explicit zero",
+    "initial_equal": true,
+    "cpu_rng_equal": true,
+    "cuda_rng_equal": true,
+    "max_weight_abs_difference": 4.336808689942018e-19,
+    "changed_parameter_tensors": 67,
+    "all_close_rtol1e-6_atol1e-7": true,
+    "stats": [
+      {
+        "loss_surrogate": -9.391484923071403e-09,
+        "consistency_mse": 1.8951090574264526,
+        "weight": 0.6217647790908813,
+        "grad_norm": 0.3265874683856964
+      },
+      {
+        "loss_surrogate": -9.391484923071403e-09,
+        "consistency_mse": 1.8951090574264526,
+        "weight": 0.6217647790908813,
+        "grad_norm": 0.3265874683856964
+      }
+    ]
+  }
+]

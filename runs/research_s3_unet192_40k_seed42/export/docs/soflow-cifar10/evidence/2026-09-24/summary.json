@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-09-24T21:17:19.196528+09:00",
+  "status": "stopped_by_user_authorized_feasibility_decision",
+  "last_logged_step": 130,
+  "last_logged_timestamp_kst": "2026-09-24 21:15:09",
+  "recoverable_main_checkpoint_step": 5,
+  "exact_final_in_memory_step": "unknown; at least last_logged_step",
+  "initial_logged_consistency_mse": 1.24413,
+  "last_logged_consistency_mse": 0.61469,
+  "steady_window_first_update": 21,
+  "steady_window_last_update": 130,
+  "steady_window_updates": 110,
+  "steady_window_seconds": 1496.3300000000002,
+  "seconds_per_update": 13.603000000000002,
+  "images_per_second": 75.27751231346026,
+  "projected_full_days": 125.95370370370372,
+  "projected_updates_per_24h": 6351.5401014482095,
+  "projected_schedule_percent_per_24h": 0.7939425126810261,
+  "projected_gap_ratio_after_24h": 0.937931505405926,
+  "first_demo_hours": 3.7786111111111116,
+  "first_fid_sample_set_and_checkpoint_days": 3.9360532407407414,
+  "quality_evaluation": "not performed",
+  "meaningful_quality_within_24h": "unestablished; not demonstrated impossible",
+  "launcher_exit_status": "1",
+  "stop_record": {
+    "requested_at": "2026-09-24T21:15:59.585741+09:00",
+    "reason": "User-authorized stop after one-day feasibility assessment; generation-quality benefit is unestablished at this budget.",
+    "launcher_pid": 423732,
+    "signals": [
+      {
+        "pid": 423798,
+        "signal": "SIGTERM",
+        "command": "/home/user/miniconda3/envs/soflow/bin/python -m torch.distributed.run --standalone --nproc-per-node=1 train.py --config cifar_gpu0.yaml"
+      }
+    ],
+    "checkpoints": [
+      "0.pt",
+      "5.pt"
+    ]
+  }
+}

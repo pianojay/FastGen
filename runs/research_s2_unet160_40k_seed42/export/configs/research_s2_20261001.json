@@ -1,0 +1,75 @@
+{
+  "experiment": "S2-20261001",
+  "authorization_reference": "User: Launch training.",
+  "run_dir": "runs/research_s2_unet160_40k_seed42",
+  "training_config": "configs/research_s2_train.json",
+  "initialization": "scratch",
+  "starting_checkpoint": null,
+  "expected_parameters": 61934243,
+  "expected_steps": 40000,
+  "reference_checkpoint": "runs/research_s1_unet128_40k_seed42/checkpoints/step_040000.pt",
+  "reference_checkpoint_sha256": "b2c48b278dbaf5aebbecff6033a7ef26c68b45cef677b34dbb02f70d2412f688",
+  "reference_images": "runs/pokemon_unet128_seed42/reference_dev",
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+  "noise_protocol": "cpu-per-draw-stream-v1",
+  "weight_source": "ema",
+  "curve_steps": [
+    20000,
+    30000,
+    40000
+  ],
+  "nfes": [
+    1,
+    4
+  ],
+  "selection_seeds": [
+    3101,
+    3102
+  ],
+  "confirmation_seeds": [
+    4101,
+    4102,
+    4103,
+    4104
+  ],
+  "eval_batch_size": 32,
+  "samples_per_category": 20,
+  "selection_rule": "Final fresh U-Net160 40k FID must be lower than S1 final U-Net128 40k on both paired selection seeds, separately per NFE.",
+  "confirmation_rule": "For each eligible NFE, final U-Net160 40k FID must be lower than S1 final 40k on all four paired confirmation seeds; otherwise inconclusive.",
+  "qualification_budget_seconds": 300,
+  "training_budget_seconds": 118800,
+  "evaluation_budget_seconds": 5400,
+  "max_retries": 1,
+  "shutdown_reserve_seconds": 30,
+  "optimizer_hours_estimate": 28.61397474259138,
+  "training_time_rationale": "All 40000 fresh updates at measured 2.575257727 s/update give 28.613975 optimizer hours. The 40k horizon matches S1 exposure and full curriculum; S1 still improved 15.1%/8.7% during 30k-to40k, but a longer horizon has no matched control. A 33h watchdog rounds up 28.733492h from the slowest sustained/terminal mean +8% timing/recovery allowance +1.332446h overhead (twice S1 measured non-update training time) +60s shutdown. It does not extend the 40k schedule.",
+  "evaluation_time_rationale": "Maximum 32 passes: 12 S1 control passes and 20 S2 candidate passes (10 at each NFE). Measured 95-batch S2 generation estimates are 35.906/143.513s. Conservatively add the entire slowest S1 reference pass (75.569s) as PNG/FID overhead to each S2 pass, and use it for every S1 pass: 4212.386s before startup/uncertainty. Allocate 5400s cumulatively, including any bounded recovery.",
+  "reference_training_gpu_job_seconds": 71288.88064896315,
+  "prior_research_gpu_job_seconds": 74553.07565207966,
+  "expected_training_memory_reference_bytes": 6164570624,
+  "training_memory_limit_bytes": 20000000000,
+  "official_score": false,
+  "reference_step": 40000,
+  "pretraining_qualification_gpu_job_seconds": 854.1585896704346,
+  "pretraining_qualification_records": [
+    {
+      "path": "runs/research_s2_qualification_20261001/record.json",
+      "sha256": "bc2c6d415da7a9d85cfa2fea1ed02fca4c31416c81dfa8959e16947d967ed4bb",
+      "selected_sha256": "8c5d0b2af0f722f53ffc938cb3dcc844705c1a7e07ab77e4026bf16e5d325874"
+    },
+    {
+      "path": "runs/research_s2_microbatch16_20261001/record.json",
+      "sha256": "9795239c071a68ee7897d3261ad35b3e8a1be6fb7e2f7a528d3df1c5f10456e0",
+      "selected_sha256": "2cda4aad8688de9fbaed6045cc3d97c5094b3bc12d57471f1a3a5f4085fbee18"
+    }
+  ],
+  "prior_research_breakdown": {
+    "B1": 467.662695446983,
+    "S1": 73231.25436696224,
+    "S2_pretraining_qualification": 854.1585896704346
+  },
+  "reference_total_gpu_job_seconds": 73231.25436696224,
+  "microbatch_rationale": "16 versus 32 reduces full-update mean by 37.65% and terminal mean by 37.58%; effective batch 128, full augmentation, accumulation, optimizer and EMA remain live. Qualification weights are discarded. Production starts from scratch.",
+  "initialization_evidence": "All qualification checkpoints were disabled; production has a fresh run directory and no starting checkpoint."
+}

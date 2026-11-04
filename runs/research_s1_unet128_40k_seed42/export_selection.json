@@ -1,0 +1,74 @@
+{
+  "few_nfe": 4,
+  "selected_by_development": true,
+  "reason": "Predeclared uniform four-call candidate, confirmed against EXP-1 on both selection and all four reserved confirmation seeds; no NFE 2/3 selection was conducted.",
+  "source_summary": "runs/research_s1_unet128_40k_seed42/result_summary.json",
+  "confirmation": {
+    "1": {
+      "nfe": 1,
+      "seeds": [
+        4101,
+        4102,
+        4103,
+        4104
+      ],
+      "reference_fids": [
+        114.42961983563725,
+        112.01615922753155,
+        112.73260077350204,
+        113.12289934574272
+      ],
+      "candidate_fids": [
+        82.67514569030226,
+        82.62323934317283,
+        81.77252544479506,
+        82.15391150967929
+      ],
+      "reference_mean": 113.07531979560339,
+      "candidate_mean": 82.30620549698736,
+      "paired_deltas": [
+        -31.754474145334996,
+        -29.39291988435872,
+        -30.960075328706978,
+        -30.968987836063434
+      ],
+      "mean_delta": -30.76911429861603,
+      "eligible": null,
+      "outcome": "confirmed_under_protocol",
+      "limitation": "Generation-seed comparison of one training seed on reused development data."
+    },
+    "4": {
+      "nfe": 4,
+      "seeds": [
+        4101,
+        4102,
+        4103,
+        4104
+      ],
+      "reference_fids": [
+        38.64994881218507,
+        37.8847828459468,
+        38.25101553691309,
+        38.34962320988518
+      ],
+      "candidate_fids": [
+        29.56088521307015,
+        29.310285677606885,
+        29.09558954382601,
+        29.664660552174666
+      ],
+      "reference_mean": 38.283842601232536,
+      "candidate_mean": 29.407855246669428,
+      "paired_deltas": [
+        -9.089063599114922,
+        -8.574497168339917,
+        -9.155425993087078,
+        -8.684962657710514
+      ],
+      "mean_delta": -8.875987354563108,
+      "eligible": null,
+      "outcome": "confirmed_under_protocol",
+      "limitation": "Generation-seed comparison of one training seed on reused development data."
+    }
+  }
+}

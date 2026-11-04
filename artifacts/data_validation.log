@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "selection": "20 globally byte-unique training files per category, SHA256(seed:path) ordering",
+  "exact_duplicate_cross_partition_groups": 0,
+  "source_train_sha256": "c4068bdec8c5994fa14887d3335e762dd6a4da1bc6394a6df7fae96d293138c0",
+  "category_mapping_sha256": "7c27ec2a15fa4f70b5729319d596d3a80bc528cdeeb02f36b88877a6545b77e8",
+  "optimization_count": 14059,
+  "development_count": 3020
+}
+Exact duplicate groups: 1073

@@ -1,0 +1,16 @@
+{
+  "source": "runs/pokemon_unet128_seed42/metrics.jsonl",
+  "metrics_sha256": "0bddb346ab280434e0899b2b112be718c96e997fa866247e8c8f092d2f66c688",
+  "logged_updates": 20000,
+  "steps_contiguous": true,
+  "all_logged_numbers_finite": true,
+  "update_seconds_mean": 1.7201137155858799,
+  "update_seconds_sum": 34402.2743117176,
+  "final_ema_decay": 0.999550202408916,
+  "max_allocated_bytes": 8612984320,
+  "max_reserved_bytes": 9726590976,
+  "max_host_peak_rss_bytes": 2093682688,
+  "max_process_tree_pss_bytes": 2120355840,
+  "max_consistency_mse": 46.3460578918457,
+  "max_grad_norm": 8.107192039489746
+}

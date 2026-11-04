@@ -1,0 +1,110 @@
+[
+  {
+    "microbatch": 16,
+    "effective_batch": 1024,
+    "exit_code": 0,
+    "update_seconds": [
+      14.05,
+      13.73,
+      14.47,
+      14.73,
+      14.93
+    ],
+    "peak_device_mib": 4188,
+    "peak_allocated_gib": 3.34,
+    "command": [
+      "/home/user/miniconda3/envs/soflow/bin/python",
+      "-m",
+      "torch.distributed.run",
+      "--standalone",
+      "--nproc-per-node=1",
+      "train.py",
+      "--config",
+      "runs/cifar10_throughput/b16.yaml",
+      "--run-steps",
+      "5"
+    ],
+    "median_seconds": 14.73,
+    "images_per_second": 69.51799049558724,
+    "projected_training_days": 136.38888888888889
+  },
+  {
+    "microbatch": 64,
+    "effective_batch": 1024,
+    "exit_code": 0,
+    "update_seconds": [
+      12.31,
+      11.68,
+      12.44,
+      12.72,
+      12.93
+    ],
+    "peak_device_mib": 10574,
+    "peak_allocated_gib": 9.51,
+    "command": [
+      "/home/user/miniconda3/envs/soflow/bin/python",
+      "-m",
+      "torch.distributed.run",
+      "--standalone",
+      "--nproc-per-node=1",
+      "train.py",
+      "--config",
+      "runs/cifar10_throughput/b64.yaml",
+      "--run-steps",
+      "5"
+    ],
+    "median_seconds": 12.72,
+    "images_per_second": 80.50314465408805,
+    "projected_training_days": 117.77777777777777
+  },
+  {
+    "microbatch": 128,
+    "effective_batch": 1024,
+    "exit_code": 0,
+    "update_seconds": [
+      12.53,
+      12.04,
+      12.84,
+      13.22,
+      13.47
+    ],
+    "peak_device_mib": 19174,
+    "peak_allocated_gib": 17.74,
+    "command": [
+      "/home/user/miniconda3/envs/soflow/bin/python",
+      "-m",
+      "torch.distributed.run",
+      "--standalone",
+      "--nproc-per-node=1",
+      "train.py",
+      "--config",
+      "runs/cifar10_throughput/b128.yaml",
+      "--run-steps",
+      "5"
+    ],
+    "median_seconds": 13.22,
+    "images_per_second": 77.45839636913766,
+    "projected_training_days": 122.4074074074074
+  },
+  {
+    "microbatch": 256,
+    "effective_batch": 1024,
+    "exit_code": 1,
+    "update_seconds": [],
+    "peak_device_mib": 23898,
+    "peak_allocated_gib": null,
+    "command": [
+      "/home/user/miniconda3/envs/soflow/bin/python",
+      "-m",
+      "torch.distributed.run",
+      "--standalone",
+      "--nproc-per-node=1",
+      "train.py",
+      "--config",
+      "runs/cifar10_throughput/b256.yaml",
+      "--run-steps",
+      "5"
+    ],
+    "error_tail": "rank0]:     x = torch.nn.functional.conv2d(x, w, padding=w_pad)\n[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 256.00 MiB. GPU 0 has a total capacity of 23.46 GiB of which 123.88 MiB is free. Including non-PyTorch memory, this process has 23.33 GiB memory in use. Of the allocated memory 22.67 GiB is allocated by PyTorch, and 22.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n[rank0]:[W924 20:46:31.177888550 ProcessGroupNCCL.cpp:1479] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())\nE0924 20:46:34.112000 423063 site-packages/torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 0 (pid: 423116) of binary: /home/user/miniconda3/envs/soflow/bin/python\nTraceback (most recent call last):\n  File \"/home/user/miniconda3/envs/soflow/lib/python3.10/runpy.py\", line 196, in _run_module_as_main\n    return _run_code(code, main_globals, None,\n  File \"/home/user/miniconda3/envs/soflow/lib/python3.10/runpy.py\", line 86, in _run_code\n    exec(code, run_globals)\n  File \"/home/user/miniconda3/envs/soflow/lib/python3.10/site-packages/torch/distributed/run.py\", line 896, in <module>\n    main()\n  File \"/home/user/miniconda3/envs/soflow/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 355, in wrapper\n    return f(*args, **kwargs)\n  File \"/home/user/miniconda3/envs/soflow/lib/python3.10/site-packages/torch/distributed/run.py\", line 892, in main\n    run(args)\n  File \"/home/user/miniconda3/envs/soflow/lib/python3.10/site-packages/torch/distributed/run.py\", line 883, in run\n    elastic_launch(\n  File \"/home/user/miniconda3/envs/soflow/lib/python3.10/site-packages/torch/distributed/launcher/api.py\", line 139, in __call__\n    return launch_agent(self._config, self._entrypoint, list(args))\n  File \"/home/user/miniconda3/envs/soflow/lib/python3.10/site-packages/torch/distributed/launcher/api.py\", line 270, in launch_agent\n    raise ChildFailedError(\ntorch.distributed.elastic.multiprocessing.errors.ChildFailedError: \n============================================================\ntrain.py FAILED\n------------------------------------------------------------\nFailures:\n  <NO_OTHER_FAILURES>\n------------------------------------------------------------\nRoot Cause (first observed failure):\n[0]:\n  time      : 2026-09-24_20:46:34\n  host      : user-SYS-4029GP-TRT2\n  rank      : 0 (local_rank: 0)\n  exitcode  : 1 (pid: 423116)\n  error_file: <N/A>\n  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n============================================================\n"
+  }
+]

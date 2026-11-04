@@ -1,0 +1,10 @@
+[2026-09-24 20:43:04] Logger initialized with world size = 1
+[2026-09-24 20:43:08] Saving checkpoint to ./runs/cifar10_throughput/b128/ckpts/0.pt
+[2026-09-24 20:43:08] Dataset type: CIFAR10, Model type: UNet, Parameters: 55.93 M
+[2026-09-24 20:43:20] First optimizer update complete: batch=1024, microbatch=128, loss_mse=1.251521, grad_norm=2.748389, seconds=12.53
+[2026-09-24 20:43:20] Steps = 0000001/0800000 (0.000%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.25152, Con_Weight = 0.85053, Grad_Norm = 2.74839, Mem = 17.33 GB, Time = 12.53 seconds
+[2026-09-24 20:43:32] Steps = 0000002/0800000 (0.000%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.26193, Con_Weight = 0.84516, Grad_Norm = 2.79932, Mem = 17.74 GB, Time = 12.04 seconds
+[2026-09-24 20:43:45] Steps = 0000003/0800000 (0.000%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.25023, Con_Weight = 0.85085, Grad_Norm = 2.67379, Mem = 17.74 GB, Time = 12.84 seconds
+[2026-09-24 20:43:58] Steps = 0000004/0800000 (0.001%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.25312, Con_Weight = 0.84933, Grad_Norm = 2.70474, Mem = 17.74 GB, Time = 13.22 seconds
+[2026-09-24 20:44:12] Steps = 0000005/0800000 (0.001%), Vel_MSE = 0.00000, Vel_Weight = 0.00000, Con_MSE = 1.24287, Con_Weight = 0.85424, Grad_Norm = 2.68493, Mem = 17.74 GB, Time = 13.47 seconds
+[2026-09-24 20:44:14] Saving checkpoint to ./runs/cifar10_throughput/b128/ckpts/5.pt

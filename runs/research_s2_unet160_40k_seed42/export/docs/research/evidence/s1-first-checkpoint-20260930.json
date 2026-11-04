@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-09-30T08:15:57+09:00",
+  "run_dir": "runs/research_s1_unet128_40k_seed42",
+  "state": "running",
+  "checkpoint_observation": {
+    "step": 500,
+    "epoch": 4,
+    "cursor": 8192,
+    "optimizer_entries": 355,
+    "inference_parameters": 39667843,
+    "non_parameter_buffer_elements": 192,
+    "sha256": "8f4136b1606bf4059e1d35c1ca02f8daee55f7507fdce2207bb35b245e80e6db"
+  },
+  "training_snapshot": {
+    "updates": 500,
+    "image_presentations": 64000,
+    "optimizer_seconds": 860.6597783602774,
+    "mean_update_seconds": 1.7213195567205548,
+    "mean_last_400_seconds": 1.7220796231180429,
+    "peak_allocated_bytes": 8609871360,
+    "peak_sampled_pss": 1845840896
+  },
+  "sample_files": [
+    "samples/000500/nfe1.png",
+    "samples/000500/nfe2.png",
+    "samples/000500/nfe3.png",
+    "samples/000500/nfe4.png"
+  ],
+  "report_exists": true,
+  "official_score": false,
+  "limitation": "First periodic checkpoint and early training measurements only; no candidate FID or completed-run peak yet."
+}

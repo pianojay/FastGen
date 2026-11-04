@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/user/miniconda3/envs/fastgen_soflow/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/user/miniconda3/envs/fastgen_soflow/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/user/jw_soflow/FastGen-SoFlow/scripts/qualify_training.py", line 223, in <module>
+    supervise(args.config, protocol)
+  File "/home/user/jw_soflow/FastGen-SoFlow/scripts/qualify_training.py", line 183, in supervise
+    job('contracts', [sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-v'])
+  File "/home/user/jw_soflow/FastGen-SoFlow/scripts/qualify_training.py", line 180, in job
+    raise RuntimeError(f'Qualification stage {stage} failed: {run/stage}.log')
+RuntimeError: Qualification stage contracts failed: runs/research_c3_qualification_20261004/contracts.log

@@ -1,0 +1,7 @@
+{
+  "state": "training_complete",
+  "step": 4,
+  "schedule_steps": 20000,
+  "reason": "invocation_limit",
+  "elapsed_budget_seconds": 37.025182818993926
+}

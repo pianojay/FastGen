@@ -1,0 +1,27 @@
+{"event": "start", "attempt": 1, "from": 0, "remaining_seconds": 60, "pid": 2051367, "config_sha256": "1130d7d7c0dc739d73e3d99326a65986e98ae985ca58719b07a4e962dbeee9db"}
+{"event": "progress", "attempt": 1, "step": 1}
+{"event": "progress", "attempt": 1, "step": 2}
+{"event": "progress", "attempt": 1, "step": 3}
+{"event": "progress", "attempt": 1, "step": 4}
+{"event": "progress", "attempt": 1, "step": 5}
+{"event": "progress", "attempt": 1, "step": 6}
+{"event": "progress", "attempt": 1, "step": 7}
+{"event": "progress", "attempt": 1, "step": 8}
+{"event": "stop", "status": "interrupted", "elapsed_seconds": 8.15936036966741}
+{"event": "start", "attempt": 2, "from": 5, "remaining_seconds": 51.84063963033259, "pid": 2051626, "config_sha256": "1130d7d7c0dc739d73e3d99326a65986e98ae985ca58719b07a4e962dbeee9db"}
+{"event": "progress", "attempt": 2, "step": 6}
+{"event": "progress", "attempt": 2, "step": 7}
+{"event": "progress", "attempt": 2, "step": 8}
+{"event": "progress", "attempt": 2, "step": 9}
+{"event": "progress", "attempt": 2, "step": 10}
+{"event": "progress", "attempt": 2, "step": 11}
+{"event": "progress", "attempt": 2, "step": 12}
+{"event": "progress", "attempt": 2, "step": 13}
+{"event": "progress", "attempt": 2, "step": 14}
+{"event": "progress", "attempt": 2, "step": 15}
+{"event": "progress", "attempt": 2, "step": 16}
+{"event": "progress", "attempt": 2, "step": 17}
+{"event": "progress", "attempt": 2, "step": 18}
+{"event": "progress", "attempt": 2, "step": 19}
+{"event": "progress", "attempt": 2, "step": 20}
+{"event": "stop", "status": "completed", "elapsed_seconds": 23.186433734372258}

@@ -1,0 +1,46 @@
+{
+  "limit_seconds": 16200,
+  "used_seconds": 11087.548251628876,
+  "jobs": [
+    {
+      "name": "qualify",
+      "gpu": 1,
+      "pid": 206336,
+      "started": 1791189675.510987,
+      "watchdog_seconds": 600,
+      "state": "completed",
+      "ended": 1791189768.7038705,
+      "returncode": 0
+    },
+    {
+      "name": "A",
+      "gpu": 1,
+      "pid": 206895,
+      "started": 1791189768.708564,
+      "watchdog_seconds": 10800,
+      "state": "completed",
+      "ended": 1791197997.426353,
+      "returncode": 0
+    },
+    {
+      "name": "C",
+      "gpu": 2,
+      "pid": 206896,
+      "started": 1791189768.7114887,
+      "watchdog_seconds": 2100,
+      "state": "completed",
+      "ended": 1791191162.0169806,
+      "returncode": 0
+    },
+    {
+      "name": "evaluate",
+      "gpu": 1,
+      "pid": 241985,
+      "started": 1791197997.43444,
+      "watchdog_seconds": 2700,
+      "state": "completed",
+      "ended": 1791199369.7665272,
+      "returncode": 0
+    }
+  ]
+}

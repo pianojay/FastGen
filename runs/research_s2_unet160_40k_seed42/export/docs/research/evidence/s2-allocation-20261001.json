@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-10-01T04:45:42.715247+09:00",
+  "state": "ready_for_fresh_training",
+  "parameters": 61934243,
+  "selected_microbatch": 16,
+  "effective_batch": 128,
+  "measurement": {
+    "initialization": "scratch",
+    "initial_step": 0,
+    "initial_optimizer_entries": 0,
+    "checkpoint_saved": false,
+    "parameters": 61934243,
+    "microbatch": 16,
+    "effective_batch": 128,
+    "eligible": true,
+    "mean_update_seconds": 2.5752577268332244,
+    "median_update_seconds": 2.5791315771639347,
+    "first_half_mean_seconds": 2.5679159182682634,
+    "last_half_mean_seconds": 2.5825995353981854,
+    "terminal_mean_update_seconds": 2.5860143076628446,
+    "peak_training_allocated_bytes": 6164570624,
+    "peak_training_reserved_bytes": 6582960128,
+    "peak_host_rss_bytes": 1719488512,
+    "peak_sampled_process_tree_pss_bytes": 2644388864,
+    "terminal_limitation": "Step is advanced only to exercise the declared terminal loss path; weights and optimizer have only the recorded disposable updates.",
+    "training_config_sha256": "1b928b6ae5cd2630ce10e4df969b9cc570c327fdcfa2cbf343a38bc383a10c0c",
+    "environment": {
+      "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+      "executable": "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+      "packages": {
+        "torch": "2.7.1+cu126",
+        "torchvision": "0.22.1+cu126",
+        "clean-fid": "0.1.35",
+        "numpy": "1.26.4",
+        "Pillow": "12.3.0"
+      }
+    },
+    "gpu": "NVIDIA TITAN RTX, 70, 1845, 6500, 6496, 99",
+    "sampling_timing": {
+      "1": {
+        "batch_size": 32,
+        "measured_batches": 10,
+        "mean_batch_seconds": 0.37792522367089987,
+        "max_batch_seconds": 0.3783426359295845,
+        "network_calls": 12,
+        "seconds_for_95_full_batches_estimate": 35.90289624873549,
+        "limitation": "Disposable weights; excludes PNG writing and FID; no quality score."
+      },
+      "4": {
+        "batch_size": 32,
+        "measured_batches": 10,
+        "mean_batch_seconds": 1.509944529645145,
+        "max_batch_seconds": 1.5104719661176205,
+        "network_calls": 48,
+        "seconds_for_95_full_batches_estimate": 143.44473031628877,
+        "limitation": "Disposable weights; excludes PNG writing and FID; no quality score."
+      }
+    },
+    "peak_sampling_allocated_bytes": 4961907712
+  },
+  "microbatch32_reference": {
+    "mean_update_seconds": 4.130567220263183,
+    "terminal_mean_update_seconds": 4.14261835590005,
+    "peak_training_allocated_bytes": 14201079808
+  },
+  "qualification_gpu_job_seconds": {
+    "microbatch32_and_contracts": 516.6271812710911,
+    "microbatch16_and_contracts": 337.5314083993435,
+    "total": 854.1585896704346
+  },
+  "optimizer_hours_estimate": 28.61397474259138,
+  "conservative_optimizer_hours_for_watchdog": 28.73349230736494,
+  "overhead_hours_allowance": 1.3324459810285934,
+  "timing_and_recovery_fraction": 0.08,
+  "unrounded_watchdog_hours": 32.3812843396494,
+  "training_watchdog_seconds": 118800,
+  "evaluation_pre_margin_seconds_bound": 4212.3864797614515,
+  "evaluation_budget_seconds": 5400,
+  "production_qualification_budget_seconds": 300,
+  "prior_research_gpu_job_seconds": 74553.07565207966,
+  "production_training_config_sha256": "b8b5572d85dc0810c1ba4e973b89766f31422073c50286987034bba3614e681e",
+  "qualification_records": [
+    {
+      "path": "runs/research_s2_qualification_20261001/record.json",
+      "sha256": "bc2c6d415da7a9d85cfa2fea1ed02fca4c31416c81dfa8959e16947d967ed4bb",
+      "selected_sha256": "8c5d0b2af0f722f53ffc938cb3dcc844705c1a7e07ab77e4026bf16e5d325874"
+    },
+    {
+      "path": "runs/research_s2_microbatch16_20261001/record.json",
+      "sha256": "9795239c071a68ee7897d3261ad35b3e8a1be6fb7e2f7a528d3df1c5f10456e0",
+      "selected_sha256": "2cda4aad8688de9fbaed6045cc3d97c5094b3bc12d57471f1a3a5f4085fbee18"
+    }
+  ],
+  "initialization": "scratch at step0 with new optimizer/EMA/RNG/data state; no checkpoint used",
+  "limitation": "Measured short changed-width qualification, not a completed production-memory or latency result. No S2 FID or production updates yet. Qualification used an 18GB allocator target; production retains the strict 20GB guard. Both full qualification costs are included in prior campaign accounting and S2 method cost.",
+  "matched_training_source_sha256": {
+    "train.py": "0939c9075abbad851be5177bb56b0ea58afd98f096420ba4fec2482101703358",
+    "soflow_fastgen/training.py": "a1cbe945fe644b6dc3df05afe79e82d871e107bdf30b091556bd4ff695dd07b7",
+    "soflow_fastgen/models.py": "9c889f9e20a9783f7d9fe503771f617032ea0876001b2a53e74259978e6720cf",
+    "soflow_fastgen/augment.py": "0598dfa8dd88f92301e1a167599068f6777fb51f7d96e3642e65898fe1a283ef",
+    "soflow_fastgen/data.py": "fba5ea4118f5117ebf148b27b3ad288430ae2b091e9f67578046a5a7263bb843",
+    "soflow_fastgen/sampling.py": "c536149529fcf97ef55f73ca244f9fe4f744283ed57df38bcd73a914246c3279"
+  },
+  "changed_training_config_fields": [
+    "architecture",
+    "budget_seconds",
+    "microbatch_size",
+    "run_dir"
+  ]
+}

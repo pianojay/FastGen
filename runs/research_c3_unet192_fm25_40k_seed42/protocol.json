@@ -1,0 +1,87 @@
+{
+  "experiment": "C3-20261004",
+  "authorization_reference": "User: Launch training. Consecutive in-scope scratch experiments under program.md.",
+  "run_dir": "runs/research_c3_unet192_fm25_40k_seed42",
+  "training_config": "configs/research_c3_train.json",
+  "initialization": "scratch",
+  "starting_checkpoint": null,
+  "expected_parameters": 89140419,
+  "expected_steps": 40000,
+  "reference_checkpoint": "runs/research_s3_unet192_40k_seed42/checkpoints/step_040000.pt",
+  "reference_checkpoint_sha256": "9b95652fb5e503b2f877b26fd3652129abcce115bdea526db00ffe1f0daefd4a",
+  "reference_images": "runs/pokemon_unet128_seed42/reference_dev",
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+  "noise_protocol": "cpu-per-draw-stream-v1",
+  "weight_source": "ema",
+  "curve_steps": [
+    20000,
+    30000,
+    40000
+  ],
+  "nfes": [
+    1,
+    4
+  ],
+  "selection_seeds": [
+    3101,
+    3102
+  ],
+  "confirmation_seeds": [
+    4101,
+    4102,
+    4103,
+    4104
+  ],
+  "eval_batch_size": 32,
+  "samples_per_category": 20,
+  "selection_rule": "Final fresh C3 U-Net192 FM25 40k EMA FID must be lower than S3 consistency-only final40k on both paired selection seeds, separately per NFE.",
+  "confirmation_rule": "For each eligible NFE, final C3 40k EMA FID must be lower than S3 final40k on all four paired confirmation seeds; otherwise inconclusive.",
+  "qualification_budget_seconds": 300,
+  "training_budget_seconds": 136800,
+  "evaluation_budget_seconds": 3600,
+  "max_retries": 1,
+  "shutdown_reserve_seconds": 30,
+  "optimizer_hours_estimate": 32.78282704514762,
+  "training_time_rationale": "All40000 fresh updates at measured 2.950454434 seconds/update give 32.782827045 optimizer hours. Match S3 exposure and full curriculum to isolate objective allocation: S3 last10k improved both tracks, so a shorter changing-curriculum proxy cannot settle the final comparison. A longer mixture run would confound horizon before local evidence. The 38h watchdog rounds up the slowest measured mean/last-half/terminal projection (32.954825469h), 8% timing/recovery margin, twice S3 non-update overhead (1.597140121h), and60s shutdown. The full40k horizon never extends.",
+  "evaluation_time_rationale": "At most32 full passes:12 S3 references and20 C3 candidates. Use slowest S3 full passes by NFE ({'1': 50.628866605460644, '4': 109.57534893415868}), C3 slowest qualified95-batch generation ({'1': 20.196620812639594, '4': 78.22712067514658}), and1.5 times the largest S3 full-pass minus qualified-generation estimate (31.671748s) per candidate as an overhead proxy, plus60s startup. Raw 2955.615161s, plus20% margin and round up to 3600s. Includes bounded recovery; this is not pure inference latency.",
+  "reference_training_gpu_job_seconds": 129983.4167425204,
+  "prior_research_gpu_job_seconds": 318340.11305076256,
+  "expected_training_memory_reference_bytes": 7689744896,
+  "training_memory_limit_bytes": 20000000000,
+  "official_score": false,
+  "reference_step": 40000,
+  "pretraining_qualification_gpu_job_seconds": 390.9362122621387,
+  "pretraining_qualification_records": [
+    {
+      "path": "runs/research_c3_qualification_20261004/record.json",
+      "sha256": "6d9ccc94e264ab4977d29e978c90b19325fc3ced133c9a3e391e9b49d575b3b2"
+    },
+    {
+      "path": "runs/research_c3_diagnostic_20261004/record.json",
+      "sha256": "bce979dd0ec42fbc7cc2b4e5670b793c38a09fb3fe345c537fcfff46d59f6029"
+    },
+    {
+      "path": "runs/research_c3_qualification_retry_20261004/record.json",
+      "sha256": "3aed4b614dd49b71ddf6ff973aba067d4e98853cd5cd5f477697e0ccbe32e157",
+      "selected_sha256": "8f9b02dcd6f0d940933c0bc372fac589de6b5f9e7ba127abf6fd76a2337e5975"
+    }
+  ],
+  "prior_research_breakdown": {
+    "B1": 467.662695446983,
+    "S1": 73231.25436696224,
+    "S2_including_qualification": 110375.17134762742,
+    "S3_including_qualification": 133875.0884284638,
+    "C3_pretraining_qualification_including_failure_and_diagnosis": 390.9362122621387
+  },
+  "reference_total_gpu_job_seconds": 133875.0884284638,
+  "microbatch_rationale": "Keep16 at effective batch128, with32 FM and96 consistency examples per update. Full augmentation, accumulation, optimizer and EMA were active. No performance sweep. The only qualification retry corrected a bitwise test; all failed-contract, diagnosis and retry costs remain charged under the original1200s qualification cap. All qualification states are discarded.",
+  "initialization_evidence": "Qualification saved no generative checkpoint. Fresh production directory; no starting checkpoint. Model, optimizer, EMA, RNG and data initialize at zero with the complete40000-step horizon.",
+  "interpretation_rule": "Generation-seed confirmation from one scratch training seed is not training-seed replication. Marginal or conflicting changes remain inconclusive for further scaling; no added seeds until a desired outcome appears.",
+  "next_decision": "A substantive confirmed gain promotes the relevant track and motivates fresh replication or a refined mix. A negative/inconclusive result keeps S3 and redirects to time coverage or a fresh equal-compute recipe; no automatic mixture or horizon increase.",
+  "changed_factor": "25% direct-conditioned flow-matching /75% consistency batch allocation; no guidance, auxiliary network or pretrained generative weights.",
+  "recipe": "First32 examples of each shuffled batch128 use FM at sigmoid(N(-.9,1.6^2)), t>=1e-4; remaining96 use unchanged consistency. Per-example1/128 gradient weight, no extra lambda. Full40k exponential gap1 to1/3200, 1e-4 floor, p=.75 eps=.001, upstream augmentation with matching consistency-branch metadata; fixed RAdam1e-4, EMA warmup from0 cap.9999; seed42 and fresh data state.",
+  "comparison_limitation": "Matches architecture, effective batch, microbatch, total presentations, optimizer/EMA and full consistency schedule. Objective allocation changes RNG consumption and consistency presentations; compute is measured, not matched. One fresh training seed, reused development data and generation-seed confirmation only.",
+  "qualification_failure_count": 1,
+  "qualification_diagnostic_gpu_job_seconds": 6.038456555455923
+}

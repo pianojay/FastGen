@@ -1,0 +1,38 @@
+{
+  "base_git_revision": "cc47661a0b0843f8f1b6cff3a17107a052d18b21",
+  "source_checkout": "/home/user/jw_soflow/SoFlow",
+  "dirty_training_source": true,
+  "source_sha256": {
+    "train.py": "280ff50d312f154501b14607be8234837ba95da85200325bb59f9994d2265af3",
+    "models.py": "64ed242cb83f00af1b534fc81bd1a6394303b1e5a8f8ef16f3a2fd466751d7d6",
+    "unet.py": "4ce1186210ed3eced4248472e2cb7a904b7cbbb64dad9004ee3687eae66ae90c",
+    "augment.py": "0598dfa8dd88f92301e1a167599068f6777fb51f7d96e3642e65898fe1a283ef",
+    "cifar_gpu0.yaml": "7cbd7eac0b53e3ff5d02dd692e2d972b4553477ea01c4547ba49ed1fda440363",
+    "requirements_soflow.txt": "23dcdad99c4c6e779fd3c58517fb85b58cfa63accac27a3de96e558d02130f44"
+  },
+  "evidence_sha256": {
+    "training.log": "2d327d1c148835f57ad4305609b2151978e7737ee8239850847102f10eea6d69",
+    "stop_record.json": "236b8eac8c07e5447084679c4fb7fc240402f332cbfc203d45496516847c7ddd",
+    "microbatch_64.log": "7783fabde754ff94efa7632eb07f0d790ddd180da54ae5662cb022bccdd0f684",
+    "microbatch_128.log": "5a7ab47bb8f340cd9cf6a27c9e17f903ae8b73be54c78c441b14e218f2f5bc0d",
+    "microbatch_results.json": "c6f12734ad3e7b6521e7b6f1192151cc017d1a54644d5a2b9e734bb691695417",
+    "environment.txt": "76bb30cda7b5cc47c2c8a23cba77acf37e0e018fe480353893aa0974a2b860fa",
+    "microbatch_128.yaml": "481e6102a298c578ed65a2de27a3bb1c6468a36f1423be953ecef3a9a4a354ce",
+    "microbatch_64.yaml": "41c4cf042a1a1e8b4d6a3257e7290169e388e396031db18ff213a95990eaa306",
+    "train.patch": "75e369a9ecac5d5b4695a2d8746839a856d6a8b6f05ad87fa7139fafc8542a16",
+    "training_metrics.csv": "6da480de33bd08416569e2305e27a1c56494770dc3ccba253c5745b0c305285d",
+    "measure_cifar_microbatch.py": "f30c46d78a668ad98e9d09935ef7d1b576353f095aaa70822c1623eccd32c09b",
+    "summary.json": "f249e5c7fb14f66cac4748021105961c198ae0402af389bfa7c5c20a423b2618",
+    "microbatch_16.log": "81b92863e579c37e66f0f88ce6ca1bbc61ea2f78a29a3bc852a505cb8ce7700a",
+    "microbatch_256.log": "5006999ff33a6a8631231868a33f7f09a7a0a274933c5e6eaad88140b03dc0fe",
+    "launch_cifar_gpu0.py": "fbede893b8834fd71c3f5e9e6ef8a462a1767a402f4e5f56926c989e686e9d4a",
+    "plot_metrics.py": "3d8e910c8d04adc7ecb506b0ed18c884556c178b53a70e71482a3696b4aea6f3",
+    "microbatch_16.yaml": "b8d872967ae4b5c10f58dd6412065c49d88a825244df0eb6e3a9df78cc47478e",
+    "training-observations.png": "098e3bdc7abeb9cbcbdc1935d236cb68c76034613a5357ef9237a7b30853db86",
+    "train_cifar_gpu0.sh": "897876285e984964d3aff1b6ac21e20e2d4e4d66197a7fbc050ef6fd56f0c9bd",
+    "microbatch_256.yaml": "94f1997f4a727c7e6f891851a307248ff35a121539e59597b871d27b48f27018",
+    "interpreter.txt": "11af4f4bfe5ccec4eca6dac2ca8917678af249d47fdd5009569b4250f0297888",
+    "training-observations.pdf": "236ffee9468e785d3e0b97b6407c93613befbb4dbd2716d5ec175d9da2a0c23f",
+    "cifar_gpu0.yaml": "7cbd7eac0b53e3ff5d02dd692e2d972b4553477ea01c4547ba49ed1fda440363"
+  }
+}

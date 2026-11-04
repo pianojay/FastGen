@@ -1,0 +1,20 @@
+{
+  "protocol_sha256": "f737c2a5ea809a83764ec9e4d2e342997fbe7a19884a45a6ec58853b3b42159e",
+  "source_sha256": "dd51d486b974a8c566f9c5e74650b9b8d0ac2925cd9daaca452ea2c628485d83",
+  "environment_sha256": "234a3af61da6922feb3bc78a5ad0d6656432a87f3581e138c5553443f330888e",
+  "checkpoint_sha256": "9b95652fb5e503b2f877b26fd3652129abcce115bdea526db00ffe1f0daefd4a",
+  "weight_source": "ema",
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+  "nfe": 1,
+  "query_times": [
+    1.0
+  ],
+  "seed": 3101,
+  "noise_protocol": "cpu-per-draw-stream-v1",
+  "batch_size": 32,
+  "category_order": "0..150, each repeated 20 times",
+  "count": 3020,
+  "metric": "development_clean_fid",
+  "official_score": false
+}

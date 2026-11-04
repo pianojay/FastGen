@@ -1,0 +1,16 @@
+{
+  "pid": null,
+  "command": [
+    "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+    "-m",
+    "scripts.qualify_training",
+    "--config",
+    "configs/research_s3_microbatch32_20261002.json",
+    "--probe",
+    "32"
+  ],
+  "started_unix": 1790908184.9093976,
+  "proc_start_ticks": "1069149626",
+  "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+  "returncode": 0
+}

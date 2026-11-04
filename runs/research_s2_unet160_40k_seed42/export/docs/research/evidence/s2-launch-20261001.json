@@ -1,0 +1,103 @@
+{
+  "timestamp": "2026-10-01T04:54:55.058351+09:00",
+  "run_dir": "runs/research_s2_unet160_40k_seed42",
+  "state": "running",
+  "stage": "training",
+  "worker": {
+    "pid": 2529344,
+    "started_unix": 1790797707.838706,
+    "proc_start_ticks": "1058101368",
+    "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21"
+  },
+  "trainer": {
+    "pid": 2530771,
+    "command": [
+      "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+      "train.py",
+      "--config",
+      "configs/research_s2_train.json",
+      "--skip-eval"
+    ],
+    "started_unix": 1790797961.1017976,
+    "proc_start_ticks": "1058127245",
+    "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21"
+  },
+  "prepared_git_commit": "e3657b25e1646a991cde3723496f6016533d0b7a",
+  "source_sha256": "5da02d2816a688ed92d040a54ac5bfddfff9a13172e915767010a683e7fc4d96",
+  "protocol_sha256": "689ee6b767e5c05d71a45187b1172750deb3cfcc5931633ba88ad2c3efd66107",
+  "training_config_sha256": "b8b5572d85dc0810c1ba4e973b89766f31422073c50286987034bba3614e681e",
+  "initial_checkpoint": {
+    "path": "runs/research_s2_unet160_40k_seed42/checkpoints/latest.pt",
+    "sha256": "3b1db93caceb4517a455a97fa579e97ae1c3f0356218f846f7564355742db0a8",
+    "step": 0,
+    "epoch": 0,
+    "cursor": 0,
+    "optimizer_state_entries": 0,
+    "ema_equals_initial_model": true,
+    "schedule_steps": 40000,
+    "parameters": 61934243
+  },
+  "logged_steps": 47,
+  "mean_update_seconds": 2.5828074683296554,
+  "optimizer_seconds_so_far": 121.3919510114938,
+  "peak_training_allocated_bytes_so_far": 6159269888,
+  "peak_host_rss_bytes_so_far": 1761316864,
+  "peak_sampled_process_tree_pss_bytes_so_far": 1849230336,
+  "control_reproduction": [
+    {
+      "nfe": 1,
+      "seed": 3101,
+      "fid": 82.83589745505463,
+      "delta_from_s1": 0.0,
+      "actual_noise_matches": true,
+      "images_sha256_matches": true,
+      "network_calls": 95
+    },
+    {
+      "nfe": 1,
+      "seed": 3102,
+      "fid": 82.56070593786473,
+      "delta_from_s1": 0.0,
+      "actual_noise_matches": true,
+      "images_sha256_matches": true,
+      "network_calls": 95
+    },
+    {
+      "nfe": 4,
+      "seed": 3101,
+      "fid": 29.345477975714914,
+      "delta_from_s1": 0.0,
+      "actual_noise_matches": true,
+      "images_sha256_matches": true,
+      "network_calls": 380
+    },
+    {
+      "nfe": 4,
+      "seed": 3102,
+      "fid": 29.48524673862994,
+      "delta_from_s1": 0.0,
+      "actual_noise_matches": true,
+      "images_sha256_matches": true,
+      "network_calls": 380
+    }
+  ],
+  "completed_stage_gpu_job_seconds": {
+    "qualification": 8.295851157978177,
+    "training": 0.0,
+    "evaluation": 244.84723449125886,
+    "total": 253.14308564923704
+  },
+  "training_budget_snapshot": {
+    "used_seconds": 111.47205004654825,
+    "limit_seconds": 118800
+  },
+  "prior_research_gpu_job_seconds": 74553.07565207966,
+  "retries": 0,
+  "protected_files_verified": true,
+  "official_score": false,
+  "candidate_fid": null,
+  "limitation": "Initial scratch checkpoint and early running snapshot. Final S2 memory, cost and quality remain unmeasured. Pretraining qualification is already included in prior research accounting.",
+  "running_training_job_seconds_estimate_from_supervisor_start": 133.95655345916748,
+  "campaign_gpu_job_seconds_running_estimate": 74940.17529118806,
+  "accounting_note": "The budget-file snapshot is flushed at periodic logging boundaries and can lag logged_steps. The supervisor finalizes the complete training interval at stage exit."
+}

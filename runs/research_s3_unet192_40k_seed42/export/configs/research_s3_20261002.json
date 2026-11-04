@@ -1,0 +1,78 @@
+{
+  "experiment": "S3-20261002",
+  "authorization_reference": "User: Launch training. Consecutive in-scope scratch experiments under program.md.",
+  "run_dir": "runs/research_s3_unet192_40k_seed42",
+  "training_config": "configs/research_s3_train.json",
+  "initialization": "scratch",
+  "starting_checkpoint": null,
+  "expected_parameters": 89140419,
+  "expected_steps": 40000,
+  "reference_checkpoint": "runs/research_s2_unet160_40k_seed42/checkpoints/step_040000.pt",
+  "reference_checkpoint_sha256": "32bf7e04d68750aff505546266d97ba9a4077e17fd68ba911254850473e75a79",
+  "reference_images": "runs/pokemon_unet128_seed42/reference_dev",
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+  "noise_protocol": "cpu-per-draw-stream-v1",
+  "weight_source": "ema",
+  "curve_steps": [
+    20000,
+    30000,
+    40000
+  ],
+  "nfes": [
+    1,
+    4
+  ],
+  "selection_seeds": [
+    3101,
+    3102
+  ],
+  "confirmation_seeds": [
+    4101,
+    4102,
+    4103,
+    4104
+  ],
+  "eval_batch_size": 32,
+  "samples_per_category": 20,
+  "selection_rule": "Final fresh U-Net192 40k FID must be lower than S2 final U-Net160 40k on both paired selection seeds, separately per NFE.",
+  "confirmation_rule": "For each eligible NFE, final U-Net192 40k FID must be lower than S2 final 40k on all four paired confirmation seeds; otherwise inconclusive.",
+  "qualification_budget_seconds": 300,
+  "training_budget_seconds": 144000,
+  "evaluation_budget_seconds": 4500,
+  "max_retries": 1,
+  "shutdown_reserve_seconds": 30,
+  "optimizer_hours_estimate": 34.98204839622809,
+  "training_time_rationale": "All 40000 fresh updates at measured 3.148384356 s/update give 34.982048 optimizer hours. Match S2 exposure and its full curriculum: S2 final 10k reduced FID 17.3%/7.6%, while a shorter or longer width192 horizon lacks a matched completed control. Confirmed width160 gains justify testing 89.14M versus 61.93M parameters, with 21.6% more projected optimizer time than actual S2. The 40h watchdog rounds up the slowest mean/last-half/terminal full estimate (35.172131h), plus 8% timing/recovery margin, twice S2 non-update overhead (1.530971h) and 60s shutdown. This never extends the 40k horizon.",
+  "evaluation_time_rationale": "At most 32 passes: 12 S2 references and 20 S3 candidates (10 each NFE). Use per-NFE slowest measured S2 full passes (66.415/174.229s); S3 slowest qualified 95-batch generation (19.496/77.904s); add 1.5 times S2 largest total-pass minus generation residual (30.784s) per candidate, plus 60s startup. Total 3401.385s, then 20% margin and round to 4500s (75min), inclusive of any bounded recovery.",
+  "reference_training_gpu_job_seconds": 106360.20660679601,
+  "prior_research_gpu_job_seconds": 184850.19226971082,
+  "expected_training_memory_reference_bytes": 7693153792,
+  "training_memory_limit_bytes": 20000000000,
+  "official_score": false,
+  "reference_step": 40000,
+  "pretraining_qualification_gpu_job_seconds": 776.1038596741855,
+  "pretraining_qualification_records": [
+    {
+      "path": "runs/research_s3_qualification_20261002/record.json",
+      "sha256": "ffeb21dc984959b57be62a1acfa96aaaa3f22ecd28f0bcd17357073085ff5791",
+      "selected_sha256": "b12ceac39d6d56e5a0f754b91a270d83257ba6ce3e80b9fac991876ce7d5c06c"
+    },
+    {
+      "path": "runs/research_s3_microbatch32_20261002/record.json",
+      "sha256": "ee237f036de012eb0812ba75dddadfb53af31afe7656f275424347d2d48beb69",
+      "selected_sha256": "960cd49c5f070cdacdb910ce25efedef74869d2931741c2d61e2ac99ad4bf12d"
+    }
+  ],
+  "prior_research_breakdown": {
+    "B1": 467.662695446983,
+    "S1": 73231.25436696224,
+    "S2_including_qualification": 110375.17134762742,
+    "S3_pretraining_qualification": 776.1038596741855
+  },
+  "reference_total_gpu_job_seconds": 110375.17134762742,
+  "microbatch_rationale": "Retain 16 at effective batch 128. Width192 microbatch32 improves mean/terminal timing only 3.11%/3.15%, below the declared 5% selection requirement, while using 13.518GB versus 7.693GB. Full augmentation, accumulation, optimizer and EMA were live in both probes. No further sweep; both costs retained; discard qualification states.",
+  "initialization_evidence": "Qualification saved no generative checkpoint. Fresh production directory, no starting checkpoint; model/optimizer/EMA/RNG/data initialized at zero with a 40000-step horizon.",
+  "interpretation_rule": "Generation-seed confirmation from one scratch training seed is not training-seed replication. Marginal or conflicting changes remain inconclusive for further scaling; no added seeds until a desired outcome appears.",
+  "next_decision": "A substantive confirmed gain promotes the relevant track and supports fresh replication or recipe refinement. A negative/inconclusive result redirects to C3 or a fresh equal-compute smaller-model recipe; no automatic width or horizon extension."
+}

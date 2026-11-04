@@ -1,0 +1,11 @@
+{
+  "state": "completed",
+  "passes": 18,
+  "paired": true,
+  "resources": {
+    "host_rss_bytes": 2671095808,
+    "host_peak_rss_bytes": 2971287552,
+    "allocated_bytes": 2230081536,
+    "reserved_bytes": 3542089728
+  }
+}

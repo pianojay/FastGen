@@ -1,0 +1,205 @@
+{
+  "purpose": "disposable integration smoke; no sample-quality claim",
+  "state": "passed",
+  "source": {
+    "checkpoint": "/home/user/jw_soflow/FastGen-SoFlow/runs/research_s3_unet192_40k_seed42/checkpoints/step_040000.pt",
+    "sha256": "9b95652fb5e503b2f877b26fd3652129abcce115bdea526db00ffe1f0daefd4a",
+    "state_key": "ema",
+    "source_step": 40000
+  },
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "component_config": {
+    "consistency_microbatch": 2,
+    "rho": 0.1,
+    "penalty_beta": 0.1,
+    "flip_probability": 0.25,
+    "generator_lr": 2e-05,
+    "discriminator_lr": 2e-05,
+    "ema_decay": 0.99,
+    "seed": 20261004,
+    "memory_limit_bytes": 20000000000
+  },
+  "parameters": {
+    "generator": 89140419,
+    "discriminator": 28930048
+  },
+  "vendor_commit": "d72cc7d041b42ec8e806021a205ed9349f87c6a4",
+  "optimization_positions": [
+    0,
+    1757,
+    3514,
+    5272,
+    7029,
+    8786,
+    10544,
+    12301
+  ],
+  "categories": [
+    0,
+    21,
+    40,
+    57,
+    76,
+    96,
+    112,
+    132
+  ],
+  "executed_d_updates": 4,
+  "executed_g_updates": 3,
+  "checks": {
+    "fresh_optimizer_and_initial_ema_identity": true,
+    "source_ema_endpoint_identity": true,
+    "d_only_preserves_generator_ema_and_clocks": true,
+    "generator_does_not_accumulate_critic_gradients": true,
+    "exact_next_update_recovery": true,
+    "separate_parameters_and_combined_memory": true,
+    "independent_generator_only_one_and_four_call_loading": true,
+    "protected_files_unchanged": true
+  },
+  "updates": [
+    {
+      "kind": "d",
+      "seconds": 3.375550299882889,
+      "loss": 0.6570179164409637,
+      "adversarial": 0.6568031907081604,
+      "r1": 0.0011097572278231382,
+      "r2": 0.001037243113387376,
+      "real_logit": 0.4751524329185486,
+      "fake_logit": 0.3953656703233719,
+      "grad_norm": 0.7156988978385925,
+      "d_steps": 1,
+      "g_steps": 0
+    },
+    {
+      "kind": "d",
+      "seconds": 3.0125369746237993,
+      "loss": 0.6773602664470673,
+      "adversarial": 0.6771432459354401,
+      "r1": 0.0011003668187186122,
+      "r2": 0.001069838646799326,
+      "real_logit": 0.4906783252954483,
+      "fake_logit": 0.4572792500257492,
+      "grad_norm": 0.5616713762283325,
+      "d_steps": 2,
+      "g_steps": 0
+    },
+    {
+      "kind": "g",
+      "seconds": 1.6250583324581385,
+      "loss_surrogate": 0.011939705815166235,
+      "consistency_mse": 1.222861886024475,
+      "weight": 3.730966180562973,
+      "adversarial_loss": 0.6740989685058594,
+      "clipped_fraction": 0.2359212338924408,
+      "masked_gradient_energy_fraction": 0.20556194335222244,
+      "consistency_grad_norm": 0.9380099773406982,
+      "adversarial_grad_norm": 3.242992877960205,
+      "adversarial_coefficient": 0.028924205899238588,
+      "adversarial_gradient_zero": false,
+      "gradient_cosine": -0.05344295874238014,
+      "grad_norm": 0.9376869797706604,
+      "parameter_update_norm": 1.8818709472887776e-05,
+      "g_steps": 1,
+      "d_steps": 2
+    },
+    {
+      "kind": "d",
+      "seconds": 3.006560916081071,
+      "loss": 0.6571124494075775,
+      "adversarial": 0.6568850874900818,
+      "r1": 0.0011292742565274239,
+      "r2": 0.0011442709947004914,
+      "real_logit": 0.5126130729913712,
+      "fake_logit": 0.42076775431632996,
+      "grad_norm": 0.7855689525604248,
+      "d_steps": 3,
+      "g_steps": 1
+    },
+    {
+      "kind": "g",
+      "seconds": 1.3494191952049732,
+      "loss_surrogate": 0.023941035382449627,
+      "consistency_mse": 0.1326225157827139,
+      "weight": 4.776963591575623,
+      "adversarial_loss": 0.6852719783782959,
+      "clipped_fraction": 0.1235555037856102,
+      "masked_gradient_energy_fraction": 0.0952882207930088,
+      "consistency_grad_norm": 0.5802994966506958,
+      "adversarial_grad_norm": 3.0525407791137695,
+      "adversarial_coefficient": 0.019010376930236817,
+      "adversarial_gradient_zero": false,
+      "gradient_cosine": 0.10126220434904099,
+      "grad_norm": 0.5890117883682251,
+      "parameter_update_norm": 1.1855020454369061e-05,
+      "g_steps": 2,
+      "d_steps": 3
+    },
+    {
+      "kind": "d",
+      "seconds": 3.059653153643012,
+      "loss": 0.6571124494075775,
+      "adversarial": 0.6568850874900818,
+      "r1": 0.0011292742565274239,
+      "r2": 0.0011442709947004914,
+      "real_logit": 0.5126130729913712,
+      "fake_logit": 0.42076775431632996,
+      "grad_norm": 0.7855689525604248,
+      "d_steps": 3,
+      "g_steps": 1
+    },
+    {
+      "kind": "g",
+      "seconds": 1.2681761924177408,
+      "loss_surrogate": 0.023941035382449627,
+      "consistency_mse": 0.1326225157827139,
+      "weight": 4.776963591575623,
+      "adversarial_loss": 0.6852719783782959,
+      "clipped_fraction": 0.1235555037856102,
+      "masked_gradient_energy_fraction": 0.0952882207930088,
+      "consistency_grad_norm": 0.5802994966506958,
+      "adversarial_grad_norm": 3.0525407791137695,
+      "adversarial_coefficient": 0.019010376930236817,
+      "adversarial_gradient_zero": false,
+      "gradient_cosine": 0.10126220434904099,
+      "grad_norm": 0.5890117883682251,
+      "parameter_update_norm": 1.1855020454369061e-05,
+      "g_steps": 2,
+      "d_steps": 3
+    }
+  ],
+  "initial_one_call_clipped_fraction": 0.1768595427274704,
+  "recovery_identity": {
+    "model": "d6ce6ad3d783ad048fd06520dc07b4c3da5505df1741fc9deead578d2e2fe63e",
+    "ema": "2bdae6eb1d88ee3ca17a2dd996a4ca37a59a0d848b529cf42a0ecb689f81102a",
+    "critic": "4966a88aee0c1c502b308fcdd65a8766735bb1f04c4fcb2ac28885cade8451dd",
+    "g_optimizer": "63115bfb02fbe60ef721d10edd901e6e3e64f389b6afebecb25cd6ff0d734871",
+    "d_optimizer": "82146621b531fd775f6aa8aafef7ccc536558e55fb2aa827c61e57dab4960245",
+    "streams": "71ffc39c205adc3db3373d4ab7e6ab533f773a20b271c15cb386d6abbff9e8a8",
+    "counters": [
+      2,
+      3,
+      16,
+      24
+    ]
+  },
+  "resources": {
+    "host_rss_bytes": 2358964224,
+    "host_peak_rss_bytes": 3693711360,
+    "allocated_bytes": 12111966208,
+    "reserved_bytes": 12842958848
+  },
+  "independent_loads": [
+    {
+      "mode": "one_nfe",
+      "parameters": 89140419,
+      "calls": 1,
+      "critic_imported": false
+    },
+    {
+      "mode": "few_nfe",
+      "parameters": 89140419,
+      "calls": 4,
+      "critic_imported": false
+    }
+  ]
+}

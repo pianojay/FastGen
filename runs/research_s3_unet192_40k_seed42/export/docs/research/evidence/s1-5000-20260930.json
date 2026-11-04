@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-09-30T10:29:26+09:00",
+  "run_dir": "runs/research_s1_unet128_40k_seed42",
+  "state": "running",
+  "source_sha256": "92b61fea1e17e4c3c51eb953641612846f1c740ca87b0a3345c791f1e28def3c",
+  "protocol_sha256": "7ac75a6355b9ff6550af4d10aaec3b1d6bb82cde4f8c5dc72280488a72ed5b37",
+  "snapshot_steps": 5000,
+  "image_presentations": 640000,
+  "current_status_step": 5060,
+  "optimizer_seconds": 8612.671334998682,
+  "mean_update_seconds": 1.7225342669997363,
+  "last_1000_mean_update_seconds": 1.7233292455524205,
+  "peak_training_allocated_bytes_so_far": 8610362880,
+  "peak_sampled_process_tree_pss_bytes_so_far": 1967375360,
+  "peak_host_rss_bytes_so_far": 2111864832,
+  "training_budget_file_snapshot": {
+    "used_seconds": 8978.191465392709,
+    "limit_seconds": 79200
+  },
+  "running_training_job_seconds_estimate_from_supervisor_start": 8988.415450572968,
+  "qualification_gpu_job_seconds": 8.398136157542467,
+  "evaluation_gpu_job_seconds": 245.41255946271122,
+  "previous_research_gpu_job_seconds": 467.662695,
+  "campaign_gpu_job_seconds_running_estimate": 9709.88884119322,
+  "retries": 0,
+  "latest_checkpoint_sha256": "6052553c7984c1377e4ad60ed3c4fe02ae2d6ff480d1d3dcab87adff667d2fe1",
+  "sample_panel_5000_files": [
+    "samples/005000/nfe1.png",
+    "samples/005000/nfe2.png",
+    "samples/005000/nfe3.png",
+    "samples/005000/nfe4.png"
+  ],
+  "official_score": false,
+  "candidate_fid": null,
+  "limitation": "Running snapshot. Wall-time estimate includes the current supervisor interval; final stage accounting is pending. No candidate FID or completed-run peak."
+}

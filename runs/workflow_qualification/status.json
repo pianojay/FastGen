@@ -1,0 +1,7 @@
+{
+  "state": "training_complete",
+  "step": 1,
+  "schedule_steps": 1,
+  "reason": "schedule_complete",
+  "elapsed_budget_seconds": 23.07673840224743
+}

@@ -1,0 +1,102 @@
+{
+  "experiment": "B1-20260930",
+  "outcome": "negative_within_tested_selection_scope",
+  "quality_conclusion": "Both candidates have higher development FID on both selection seeds; uniform retained. No candidate qualified for confirmation.",
+  "explanation_conclusion": "These two nearby power schedules do not provide evidence of a useful gain for the frozen 20k checkpoint. Uniform optimality and the cause of remaining errors are unresolved.",
+  "comparisons": {
+    "uniform": {
+      "fids": {
+        "1001": 38.20942258142645,
+        "1002": 37.87025276883588
+      },
+      "mean_fid": 38.03983767513117,
+      "paired_deltas": {
+        "1001": 0.0,
+        "1002": 0.0
+      },
+      "mean_paired_delta": 0.0
+    },
+    "power_0p75": {
+      "fids": {
+        "1001": 38.29601632823346,
+        "1002": 38.14258054678737
+      },
+      "mean_fid": 38.21929843751042,
+      "paired_deltas": {
+        "1001": 0.08659374680701148,
+        "1002": 0.27232777795148877
+      },
+      "mean_paired_delta": 0.17946076237925013
+    },
+    "power_1p25": {
+      "fids": {
+        "1001": 38.56134888517852,
+        "1002": 38.34784334554632
+      },
+      "mean_fid": 38.45459611536242,
+      "paired_deltas": {
+        "1001": 0.3519263037520659,
+        "1002": 0.4775905767104405
+      },
+      "mean_paired_delta": 0.4147584402312532
+    }
+  },
+  "control_sample_sd": 0.23982927445656188,
+  "confirmation": "not_run_no_eligible_candidate",
+  "confirmation_seeds_unused": [
+    2001,
+    2002,
+    2003,
+    2004
+  ],
+  "one_call_incumbent_changed": false,
+  "few_call_incumbent_changed": false,
+  "checkpoint_parameters": 39667843,
+  "generated_images": 18120,
+  "references": 3020,
+  "peak_evaluation_allocated_bytes": 1397920768,
+  "peak_evaluation_reserved_bytes": 2283798528,
+  "pass_seconds": [
+    74.60992210358381,
+    74.78788259625435,
+    74.81725111603737,
+    74.86567655950785,
+    75.30879437737167,
+    75.31958742439747
+  ],
+  "incremental_gpu_job_seconds": 467.662695446983,
+  "inherited_gpu_job_seconds": 36712.117704635486,
+  "total_method_gpu_job_seconds": 37179.78040008247,
+  "stage_seconds": {
+    "qualification": 8.496844356879592,
+    "selection": 459.1658510901034
+  },
+  "failures": 0,
+  "retries": 0,
+  "official_score": false,
+  "audit_seed": 1001,
+  "audit_category_ids": [
+    0,
+    24,
+    35,
+    53,
+    93,
+    128,
+    139,
+    150
+  ],
+  "audit_generated_samples": 96,
+  "audit_references": 32,
+  "audit_manifest_sha256": "04042cab94809f153e43c5b045c56236007a5c2e3f8c943f2c2308a89a653276",
+  "postrun_verification": {
+    "protected_files": 7,
+    "protected_base_model": true,
+    "checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+    "source_sha256": "1768eb7e42b79376f1266c13e13ecb3850be641a052727ca96e03bb37c9e39ed",
+    "all_image_and_noise_fingerprints_verified": true,
+    "child_process_closed": true
+  },
+  "token_expenditure": "unavailable"
+}

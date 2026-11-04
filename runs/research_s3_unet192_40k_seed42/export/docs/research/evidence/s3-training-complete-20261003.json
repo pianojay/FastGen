@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-10-03T23:58:06.915954+09:00",
+  "run_dir": "runs/research_s3_unet192_40k_seed42",
+  "state": "training_complete",
+  "workflow_state_at_audit": "running",
+  "workflow_stage_at_audit": "selection",
+  "updates": 40000,
+  "image_presentations": 5120000,
+  "prepared_git_commit": "e63232ef14479b015d3bb552e73c6c66e7f2f2f2",
+  "source_sha256": "d74384004afceca4dafff0183c11f6eb362a0d996ec5367ac685fab54408180e",
+  "protocol_sha256": "1b8f44056653284d48e7af8f5e7eaea923701d3ea75e5ae9386742d191fa9406",
+  "training_config_sha256": "925eea9dc7c93298dfc62e1dd7559c63701b86929cebea564b2581e8dc45d561",
+  "checkpoint": {
+    "path": "runs/research_s3_unet192_40k_seed42/checkpoints/step_040000.pt",
+    "sha256": "9b95652fb5e503b2f877b26fd3652129abcce115bdea526db00ffe1f0daefd4a",
+    "step": 40000,
+    "epoch": 366,
+    "cursor": 13568,
+    "schedule_steps": 40000,
+    "optimizer_state_entries": 355,
+    "optimizer_tensors_finite": true,
+    "rng_state_present": true,
+    "source_and_partition_match": true,
+    "loaded_ema_parameters": 89140419,
+    "model_and_ema_weights_finite": true
+  },
+  "retained_checkpoint_sha256": {
+    "20000": "8ccf06d7a90a9284b48b647f93568e35739b5b65a72f5bbc58f7b61d1905004c",
+    "30000": "c9aa83e1f113db810220b77adb96bd9cac329cc900f6fbbe1b0bed8087d3f442",
+    "40000": "9b95652fb5e503b2f877b26fd3652129abcce115bdea526db00ffe1f0daefd4a"
+  },
+  "metrics_sha256": "0198613802602c53dd509f1942b8d27e3a621b16589f34638d859b329d40b156",
+  "previous_30000_update_prefix_unchanged": true,
+  "optimizer_seconds": 127108.564524021,
+  "mean_update_seconds": 3.177714113100525,
+  "last_10000_mean_update_seconds": 3.178807331637852,
+  "peak_training_allocated_bytes": 7701405184,
+  "peak_training_reserved_bytes": 8487174144,
+  "peak_host_rss_bytes": 2532368384,
+  "peak_sampled_process_tree_pss_bytes": 2004206592,
+  "training_gpu_job_seconds": 129983.4167425204,
+  "production_qualification_gpu_job_seconds": 8.345878530293703,
+  "pretraining_qualification_gpu_job_seconds": 776.1038596741855,
+  "retries_so_far": 0,
+  "protected_files_verified": true,
+  "official_score": false,
+  "verified_fixed_panels": [
+    {
+      "path": "runs/research_s3_unet192_40k_seed42/samples/040000/nfe1.png",
+      "sha256": "7e4fb86d7eb448a5906fe96fa2535d87824839160f8a8fff4d2713f215e7c79d",
+      "size": [
+        256,
+        672
+      ]
+    },
+    {
+      "path": "runs/research_s3_unet192_40k_seed42/samples/040000/nfe2.png",
+      "sha256": "8794d0db9aefcf6632d3bfb2c5a26867ba27665cfd8fcb93aecb20e7c917cfd4",
+      "size": [
+        256,
+        672
+      ]
+    },
+    {
+      "path": "runs/research_s3_unet192_40k_seed42/samples/040000/nfe3.png",
+      "sha256": "c62b7d52b02533e611d8912933af21f80e0432a3d64c66d920c9492cd33d1184",
+      "size": [
+        256,
+        672
+      ]
+    },
+    {
+      "path": "runs/research_s3_unet192_40k_seed42/samples/040000/nfe4.png",
+      "sha256": "8132df08bb80109182d3f62dcf31dea8fdc40fb711c370e851b29f0f82162b99",
+      "size": [
+        256,
+        672
+      ]
+    }
+  ],
+  "limitation": "This audits completed training only. Paired FID decisions and final campaign accounting require the separate completed-workflow audit.",
+  "visually_inspected_final_panel_nfes": [
+    1,
+    4
+  ],
+  "fixed_panel_observation": "The fixed one-call and four-call panels show recognizable category-dependent forms. Four-call images generally have cleaner boundaries and flatter backgrounds; one-call texture artifacts and distorted details remain. These panels do not establish class accuracy, diversity or absence of memorization."
+}

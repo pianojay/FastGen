@@ -1,0 +1,3 @@
+/home/user/miniconda3/envs/soflow/bin/python
+2.7.1+cu126 /home/user/miniconda3/envs/soflow/lib/python3.10/site-packages/torch/__init__.py
+0.22.1+cu126 /home/user/miniconda3/envs/soflow/lib/python3.10/site-packages/torchvision/__init__.py

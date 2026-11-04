@@ -1,0 +1,56 @@
+{
+  "limit_seconds": 43200,
+  "used_seconds": 14323.03099155426,
+  "jobs": [
+    {
+      "name": "contracts",
+      "gpu": 1,
+      "pid": 4134436,
+      "started": 1791125876.8594246,
+      "watchdog_seconds": 3600,
+      "state": "completed",
+      "ended": 1791125901.9128928,
+      "returncode": 0
+    },
+    {
+      "name": "saturation",
+      "gpu": 1,
+      "pid": 4134725,
+      "started": 1791125901.9158697,
+      "watchdog_seconds": 3600,
+      "state": "completed",
+      "ended": 1791126056.342118,
+      "returncode": 0
+    },
+    {
+      "name": "readiness",
+      "gpu": 2,
+      "pid": 4134726,
+      "started": 1791125901.9182086,
+      "watchdog_seconds": 3600,
+      "state": "completed",
+      "ended": 1791126059.3511655,
+      "returncode": 0
+    },
+    {
+      "name": "d_seed20261004",
+      "gpu": 1,
+      "pid": 4135528,
+      "started": 1791126059.3542984,
+      "watchdog_seconds": 10800,
+      "state": "completed",
+      "ended": 1791133103.044092,
+      "returncode": 0
+    },
+    {
+      "name": "d_seed20261005",
+      "gpu": 2,
+      "pid": 4135529,
+      "started": 1791126059.357056,
+      "watchdog_seconds": 10800,
+      "state": "completed",
+      "ended": 1791133001.7855804,
+      "returncode": 0
+    }
+  ]
+}

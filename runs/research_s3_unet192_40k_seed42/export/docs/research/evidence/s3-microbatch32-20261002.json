@@ -1,0 +1,69 @@
+{
+  "timestamp": "2026-10-02T11:37:47.336867+09:00",
+  "run_dir": "runs/research_s3_microbatch32_20261002",
+  "state": "qualified_but_not_selected",
+  "result": {
+    "initialization": "scratch",
+    "initial_step": 0,
+    "initial_optimizer_entries": 0,
+    "checkpoint_saved": false,
+    "parameters": 89140419,
+    "microbatch": 32,
+    "effective_batch": 128,
+    "eligible": true,
+    "mean_update_seconds": 3.0504225119762123,
+    "median_update_seconds": 3.0570081556215882,
+    "first_half_mean_seconds": 3.0382476775720715,
+    "last_half_mean_seconds": 3.062597346380353,
+    "terminal_mean_update_seconds": 3.0657236877828837,
+    "peak_training_allocated_bytes": 13518345728,
+    "peak_training_reserved_bytes": 14814281728,
+    "peak_host_rss_bytes": 1754456064,
+    "peak_sampled_process_tree_pss_bytes": 3012026368,
+    "terminal_limitation": "Step is advanced only to exercise the declared terminal loss path; weights and optimizer have only the recorded disposable updates.",
+    "training_config_sha256": "c441ae9df533d80582412b3c754d4a96ba922cc5900397e7ed76f72d4665e0c7",
+    "environment": {
+      "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+      "executable": "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+      "packages": {
+        "torch": "2.7.1+cu126",
+        "torchvision": "0.22.1+cu126",
+        "clean-fid": "0.1.35",
+        "numpy": "1.26.4",
+        "Pillow": "12.3.0"
+      }
+    },
+    "gpu": "NVIDIA TITAN RTX, 69, 1845, 6500, 14346, 99",
+    "sampling_timing": {
+      "1": {
+        "batch_size": 32,
+        "measured_batches": 10,
+        "mean_batch_seconds": 0.20514544956386088,
+        "max_batch_seconds": 0.20718134753406048,
+        "network_calls": 12,
+        "seconds_for_95_full_batches_estimate": 19.488817708566785,
+        "limitation": "Disposable weights; excludes PNG writing and FID; no quality score."
+      },
+      "4": {
+        "batch_size": 32,
+        "measured_batches": 10,
+        "mean_batch_seconds": 0.8195732010528445,
+        "max_batch_seconds": 0.8210839312523603,
+        "network_calls": 48,
+        "seconds_for_95_full_batches_estimate": 77.85945410002023,
+        "limitation": "Disposable weights; excludes PNG writing and FID; no quality score."
+      }
+    },
+    "peak_sampling_allocated_bytes": 2218805760
+  },
+  "gpu_job_seconds": 382.28047257475555,
+  "record_sha256": "ee237f036de012eb0812ba75dddadfb53af31afe7656f275424347d2d48beb69",
+  "selected_sha256": "960cd49c5f070cdacdb910ce25efedef74869d2931741c2d61e2ac99ad4bf12d",
+  "mean_improvement_fraction": 0.03111495694869293,
+  "terminal_improvement_fraction": 0.0315174058761265,
+  "production_selected_microbatch": 16,
+  "decision": "Microbatch32 passes resources but neither timing improvement reaches the predeclared 5% requirement; retain16. No further microbatch sweep.",
+  "protected_files_verified": true,
+  "frozen_source_verified": true,
+  "official_score": false
+}

@@ -1,0 +1,16 @@
+{
+  "pid": null,
+  "command": [
+    "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+    "-m",
+    "scripts.evaluate_dev",
+    "--config",
+    "configs/pokemon_local.json",
+    "--checkpoint",
+    "runs/pokemon_unet128_seed42/checkpoints/step_020000.pt",
+    "--seeds",
+    "42",
+    "43"
+  ],
+  "returncode": 0
+}

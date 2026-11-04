@@ -1,0 +1,74 @@
+{
+  "experiment": "B1-20260930",
+  "run_dir": "runs/research_b1_20260930",
+  "baseline_config": "configs/pokemon_local.json",
+  "checkpoint": "runs/pokemon_unet128_seed42/checkpoints/step_020000.pt",
+  "checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "nfe": 4,
+  "eval_batch_size": 32,
+  "samples_per_category": 20,
+  "schedules": [
+    {
+      "name": "uniform",
+      "intermediate_times": [
+        0.75,
+        0.5,
+        0.25
+      ]
+    },
+    {
+      "name": "power_0p75",
+      "intermediate_times": [
+        0.8059274488676564,
+        0.5946035575013605,
+        0.3535533905932738
+      ]
+    },
+    {
+      "name": "power_1p25",
+      "intermediate_times": [
+        0.6979536443265747,
+        0.42044820762685725,
+        0.1767766952966369
+      ]
+    }
+  ],
+  "selection_seeds": [
+    1001,
+    1002
+  ],
+  "confirmation_seeds": [
+    2001,
+    2002,
+    2003,
+    2004
+  ],
+  "budget_seconds": 3600,
+  "stage_seconds": {
+    "qualification": 300,
+    "selection": 1200,
+    "confirmation": 1500
+  },
+  "recovery_seconds": 600,
+  "max_retries": 1,
+  "shutdown_reserve_seconds": 30,
+  "noise_protocol": "cpu-per-draw-stream-v1",
+  "confirmation_rule": "all four paired deltas negative and mean + 3.182446305284263 * sample_sd / sqrt(4) < 0",
+  "diagnostic_categories": [
+    0,
+    24,
+    35,
+    53,
+    93,
+    128,
+    139,
+    150
+  ],
+  "diagnostic_sample_indices": [
+    0,
+    1,
+    2,
+    3
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "steps": 20,
+  "delay_seconds": 1,
+  "checkpoint_every": 5,
+  "cap_seconds": 60
+}

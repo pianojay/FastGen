@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-10-01T04:38:04.020172+09:00",
+  "state": "qualified_microbatch32",
+  "run_dir": "runs/research_s2_qualification_20261001",
+  "gpu_job_seconds": 516.6271812710911,
+  "source_git_commit": "c8f8701957e3f9996860cd8caa1202230eb04bab",
+  "measurement": {
+    "initialization": "scratch",
+    "initial_step": 0,
+    "initial_optimizer_entries": 0,
+    "checkpoint_saved": false,
+    "parameters": 61934243,
+    "microbatch": 32,
+    "effective_batch": 128,
+    "eligible": true,
+    "mean_update_seconds": 4.130567220263183,
+    "median_update_seconds": 4.136098864488304,
+    "first_half_mean_seconds": 4.121252574399113,
+    "last_half_mean_seconds": 4.1398818661272525,
+    "terminal_mean_update_seconds": 4.14261835590005,
+    "peak_training_allocated_bytes": 14201079808,
+    "peak_training_reserved_bytes": 17477664768,
+    "peak_host_rss_bytes": 1784598528,
+    "peak_sampled_process_tree_pss_bytes": 2886208512,
+    "terminal_limitation": "Step is advanced only to exercise the declared terminal loss path; weights and optimizer have only the recorded disposable updates.",
+    "training_config_sha256": "338021be2c14bf8264e36f7d74abbd950f9542b42281778197351729058493c3",
+    "environment": {
+      "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+      "executable": "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+      "packages": {
+        "torch": "2.7.1+cu126",
+        "torchvision": "0.22.1+cu126",
+        "clean-fid": "0.1.35",
+        "numpy": "1.26.4",
+        "Pillow": "12.3.0"
+      }
+    },
+    "gpu": "NVIDIA TITAN RTX, 70, 1845, 6500, 16886, 91",
+    "sampling_timing": {
+      "1": {
+        "batch_size": 32,
+        "measured_batches": 10,
+        "mean_batch_seconds": 0.3779612546786666,
+        "max_batch_seconds": 0.3786487765610218,
+        "network_calls": 12,
+        "seconds_for_95_full_batches_estimate": 35.906319194473326,
+        "limitation": "Disposable weights; excludes PNG writing and FID; no quality score."
+      },
+      "4": {
+        "batch_size": 32,
+        "measured_batches": 10,
+        "mean_batch_seconds": 1.5106630651280284,
+        "max_batch_seconds": 1.5125752594321966,
+        "network_calls": 48,
+        "seconds_for_95_full_batches_estimate": 143.5129911871627,
+        "limitation": "Disposable weights; excludes PNG writing and FID; no quality score."
+      }
+    },
+    "peak_sampling_allocated_bytes": 4961826304
+  },
+  "production_optimizer_hours_if_microbatch32": 45.89519133625759,
+  "production_launched": false,
+  "next": "One separately bounded microbatch-16 comparison at identical effective batch before the full optimizer allocation."
+}

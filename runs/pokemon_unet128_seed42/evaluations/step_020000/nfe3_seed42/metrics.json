@@ -1,0 +1,13 @@
+{
+  "metric": "development_clean_fid",
+  "fid": 40.20094812209754,
+  "nfe": 3,
+  "seed": 42,
+  "count": 3020,
+  "checkpoint_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "official_score": false,
+  "seconds": 61.52078044600785,
+  "peak_allocated_bytes": 1393857536,
+  "peak_reserved_bytes": 2262827008
+}

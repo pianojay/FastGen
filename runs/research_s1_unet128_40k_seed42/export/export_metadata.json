@@ -1,0 +1,137 @@
+{
+  "source_checkpoint_sha256": "b2c48b278dbaf5aebbecff6033a7ef26c68b45cef677b34dbb02f70d2412f688",
+  "step": 40000,
+  "architecture": {
+    "model_channels": 128,
+    "num_blocks": 2,
+    "dropout": 0.1
+  },
+  "models": {
+    "one_nfe": {
+      "parameters": 39667843,
+      "nfe": 1
+    },
+    "few_nfe": {
+      "parameters": 39667843,
+      "nfe": 4
+    }
+  },
+  "official_score": false,
+  "training_provenance": {
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "source_sha256": {
+      "configs/pokemon.json": "b61ce6bf349a2808e47d12769543c8e42e13f0608f10ba59e596e2aef59b26d6",
+      "configs/pokemon_local.json": "34df61487d659bf8ea23cfd16f5cac93a494903e74b322ecfb9eba5b5e7ae794",
+      "configs/protected_files.json": "0e59d5f56900ac57bb214000e5470a922af570cc249bd4fe22a6de60067dcb2d",
+      "configs/research_s1_20260930.json": "b5970a17b0ad8d2a61f298ddafc6ab356122a66a56dca354d0b21f1bb0b4803a",
+      "configs/research_s1_train.json": "f81a002a5ff46208c72c14436adc1bbdbad57a2778e7f60f9d3aaa88c1105ca4",
+      "dataset.py": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+      "download_dataset.py": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+      "evaluate.py": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "model.py": "eaa392676514c2b813e99c6a04544697a885129ed56e121cbe90d8146df1d9b2",
+      "scripts/__init__.py": "72105a03e2a93b8c806b18a623c820ef893b477541edde5b5e9be9ece90eb335",
+      "scripts/bundle.py": "390c5aef60c898711b5778239cd79da06df15979634e9995688f3d362eaef8a4",
+      "scripts/evaluate_dev.py": "bb18c583cf4dc8216dfdaa2ac6643f6e4ebecc88e459d44f29254117d944874c",
+      "scripts/evaluate_snapshot.py": "93e1ed99780cd8f65fdd5bc5353215041b63a4c1e71880cfe8e773679ddd471a",
+      "scripts/export.py": "b0b414f828ddd860cce136b3b0c47c0bfaa7c69d0009e466dbe7554b39f45cf1",
+      "scripts/gallery.py": "573e896f0cf2272ad4ae2e5e1eed5f6e7ca069ff869a2fd442cd9d47ebbe24cc",
+      "scripts/launch.py": "8d5f233cca512cdf0629cfbde14d06101f331536b3432cbd3e73d4cbe5c0510f",
+      "scripts/prepare_data.py": "006355d57a2b9227c52d63f9b0347fbf8591617680022258d640417f18921ecd",
+      "scripts/profile_batch.py": "9568a856bb5b456c0577444b53bac9a984b2b96843c0096473a963e95aee4cb6",
+      "scripts/report.py": "a7334efd62dbe03a36b1cda2f96dfd451080a27eef5f3970987e893fd9ea17f2",
+      "scripts/training_study.py": "a4d36b2c41e1ded06423f492ba1bc2e1106356a086d8af7a41329705b2bb4e0f",
+      "scripts/verify_export.py": "23ee1c017381e678a68dd5ebcab2951c0297c77f3b04e74278e52ced664456e9",
+      "soflow_fastgen/__init__.py": "ce83782f8342c617fe31487a9e25cf7273785070eb6166a1e716ff391bd78505",
+      "soflow_fastgen/augment.py": "0598dfa8dd88f92301e1a167599068f6777fb51f7d96e3642e65898fe1a283ef",
+      "soflow_fastgen/common.py": "a9de4ab4fa6597ffaebe07ed4417ac9658ff96291e497a88879d42317ac4c14f",
+      "soflow_fastgen/data.py": "fba5ea4118f5117ebf148b27b3ad288430ae2b091e9f67578046a5a7263bb843",
+      "soflow_fastgen/evaluation.py": "22635e82a0af534c4b75af27e860f78ff531708b6cf40fdd6399654a5acbc64a",
+      "soflow_fastgen/models.py": "9c889f9e20a9783f7d9fe503771f617032ea0876001b2a53e74259978e6720cf",
+      "soflow_fastgen/paired_evaluation.py": "b7ad455c29beeac4e459a9cfdd11b1640d65ea12062f6c3ccaaf841242f1e19f",
+      "soflow_fastgen/sampling.py": "c536149529fcf97ef55f73ca244f9fe4f744283ed57df38bcd73a914246c3279",
+      "soflow_fastgen/training.py": "a1cbe945fe644b6dc3df05afe79e82d871e107bdf30b091556bd4ff695dd07b7",
+      "soflow_fastgen/training_study.py": "f6fd305272c4739e553bc5413ba84aa4ae3e84eaba3a05e3cc1a775477d3a33b",
+      "soflow_fastgen/unet.py": "c083e2d94b01229ffa8aa792d9d5cb33d7e2ae8a5c14cadef5838ed74777fd0a",
+      "soflow_fastgen/visualize.py": "76c7f303137c4489ef7b2c1fca60ebc0e666108be43b55aa627ea838c7f32903",
+      "tests/test_fastgen.py": "82eecd02cd772e5040ad404d147203698a2e3e7a453b042e6ad4ec3b17215d55",
+      "tests/test_training_study.py": "68048ba58859052442addfb75b902d892f31c5af456a9b40b2d08232ba743d10",
+      "train.py": "0939c9075abbad851be5177bb56b0ea58afd98f096420ba4fec2482101703358"
+    },
+    "git_commit": "1580d103e2db769086311570104d42b4dbcec090",
+    "git_status": ""
+  },
+  "selection": {
+    "few_nfe": 4,
+    "selected_by_development": true,
+    "reason": "Predeclared uniform four-call candidate, confirmed against EXP-1 on both selection and all four reserved confirmation seeds; no NFE 2/3 selection was conducted.",
+    "source_summary": "runs/research_s1_unet128_40k_seed42/result_summary.json",
+    "confirmation": {
+      "1": {
+        "nfe": 1,
+        "seeds": [
+          4101,
+          4102,
+          4103,
+          4104
+        ],
+        "reference_fids": [
+          114.42961983563725,
+          112.01615922753155,
+          112.73260077350204,
+          113.12289934574272
+        ],
+        "candidate_fids": [
+          82.67514569030226,
+          82.62323934317283,
+          81.77252544479506,
+          82.15391150967929
+        ],
+        "reference_mean": 113.07531979560339,
+        "candidate_mean": 82.30620549698736,
+        "paired_deltas": [
+          -31.754474145334996,
+          -29.39291988435872,
+          -30.960075328706978,
+          -30.968987836063434
+        ],
+        "mean_delta": -30.76911429861603,
+        "eligible": null,
+        "outcome": "confirmed_under_protocol",
+        "limitation": "Generation-seed comparison of one training seed on reused development data."
+      },
+      "4": {
+        "nfe": 4,
+        "seeds": [
+          4101,
+          4102,
+          4103,
+          4104
+        ],
+        "reference_fids": [
+          38.64994881218507,
+          37.8847828459468,
+          38.25101553691309,
+          38.34962320988518
+        ],
+        "candidate_fids": [
+          29.56088521307015,
+          29.310285677606885,
+          29.09558954382601,
+          29.664660552174666
+        ],
+        "reference_mean": 38.283842601232536,
+        "candidate_mean": 29.407855246669428,
+        "paired_deltas": [
+          -9.089063599114922,
+          -8.574497168339917,
+          -9.155425993087078,
+          -8.684962657710514
+        ],
+        "mean_delta": -8.875987354563108,
+        "eligible": null,
+        "outcome": "confirmed_under_protocol",
+        "limitation": "Generation-seed comparison of one training seed on reused development data."
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+test_official_checkpoint (test_fastgen.Contracts) ... ok
+test_parameters (test_fastgen.Contracts) ... ok
+test_protected (test_fastgen.Contracts) ... ok
+test_accumulation_of_fixed_objective (test_fastgen.GPUBehavior) ... ok
+test_calls_and_zero_augmentation (test_fastgen.GPUBehavior) ... ok
+test_consistency_branch_conditioning_and_small_gap (test_fastgen.GPUBehavior) ... ok
+test_identity_and_conditioning (test_fastgen.GPUBehavior) ... ok
+test_resume_next_update (test_fastgen.GPUBehavior) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 4.789s
+
+OK

@@ -1,0 +1,20 @@
+{
+  "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+  "executable": "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+  "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+  "user_site_enabled": false,
+  "torch_file": "/home/user/miniconda3/envs/fastgen_soflow/lib/python3.10/site-packages/torch/__init__.py",
+  "torch_cuda": "12.6",
+  "versions": {
+    "torch": "2.7.1+cu126",
+    "torchvision": "0.22.1+cu126",
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0",
+    "clean-fid": "0.1.35",
+    "kagglehub": "1.0.2",
+    "scipy": "1.15.3",
+    "tqdm": "4.70.1",
+    "matplotlib": "3.10.3"
+  },
+  "gpu": "index, uuid, name, memory.total [MiB], driver_version\n0, GPU-e9d30df5-3b84-1a7e-c505-c6fff0a0ce7f, NVIDIA TITAN RTX, 24576 MiB, 580.178.04\n1, GPU-dd35c186-88f4-ac1e-26ae-028adbd8e888, NVIDIA TITAN RTX, 24576 MiB, 580.178.04\n2, GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2, NVIDIA TITAN RTX, 24576 MiB, 580.178.04\n3, GPU-c651701d-9ecd-e23e-13a9-2bc13b838b5d, NVIDIA TITAN RTX, 24576 MiB, 580.178.04\n"
+}

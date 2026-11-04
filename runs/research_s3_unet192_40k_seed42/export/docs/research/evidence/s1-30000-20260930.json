@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-09-30T22:51:41+09:00",
+  "run_dir": "runs/research_s1_unet128_40k_seed42",
+  "state": "running",
+  "source_sha256": "92b61fea1e17e4c3c51eb953641612846f1c740ca87b0a3345c791f1e28def3c",
+  "protocol_sha256": "7ac75a6355b9ff6550af4d10aaec3b1d6bb82cde4f8c5dc72280488a72ed5b37",
+  "snapshot_steps": 30000,
+  "image_presentations": 3840000,
+  "current_status_step": 30050,
+  "retained_checkpoint": {
+    "path": "runs/research_s1_unet128_40k_seed42/checkpoints/step_030000.pt",
+    "sha256": "dfdb74b67f79bed2f5ade03e5c201d80d37d6f2f4492352c608bf2047d802639",
+    "step": 30000,
+    "schedule_steps": 40000,
+    "epoch": 275,
+    "cursor": 3200,
+    "optimizer_state_entries": 355,
+    "inference_parameters": 39667843,
+    "source_and_partition_match": true,
+    "rng_state_present": true
+  },
+  "metrics_prefix_sha256": "da1cd689499763516e38cbf4667d34ec616b8c88e36538fed7681c1d2941507d",
+  "optimizer_seconds": 51692.03849673085,
+  "mean_update_seconds": 1.7230679498910284,
+  "last_10000_mean_update_seconds": 1.7240975779784844,
+  "peak_training_allocated_bytes_so_far": 8611038720,
+  "peak_sampled_process_tree_pss_bytes_so_far": 2053035008,
+  "peak_host_rss_bytes_so_far": 2111864832,
+  "training_budget_file_snapshot": {
+    "used_seconds": 53509.978611860424,
+    "limit_seconds": 79200
+  },
+  "running_training_job_seconds_estimate_from_supervisor_start": 53524.30499839783,
+  "qualification_gpu_job_seconds": 8.398136157542467,
+  "evaluation_gpu_job_seconds": 245.41255946271122,
+  "previous_research_gpu_job_seconds": 467.662695,
+  "campaign_gpu_job_seconds_running_estimate": 54245.77838901808,
+  "retries": 0,
+  "sample_panel_files": [
+    "samples/030000/nfe1.png",
+    "samples/030000/nfe2.png",
+    "samples/030000/nfe3.png",
+    "samples/030000/nfe4.png"
+  ],
+  "official_score": false,
+  "candidate_fid": null,
+  "limitation": "Three-quarter checkpoint of the fresh 40k schedule. Training is running; final accounting, memory peak and candidate FID remain pending."
+}

@@ -1,0 +1,9 @@
+kagglehub
+Pillow
+torch
+torchvision
+clean-fid
+tqdm
+
+# Local reporting; generation uses the official dependencies above.
+matplotlib==3.10.3

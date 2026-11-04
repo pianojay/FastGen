@@ -1,0 +1,29 @@
+<!doctype html><meta charset="utf-8"><title>Pokémon SoFlow</title><style>body{font-family:system-ui;max-width:1100px;margin:30px auto;padding:0 16px}img{max-width:100%;height:auto}pre{white-space:pre-wrap}figure{margin:24px 0}figcaption{color:#42554d;font-size:14px;line-height:1.6}</style><h1>Pokémon SoFlow — local development</h1><p><a href="gallery.html">Browse the sample gallery →</a></p><pre># Pokémon SoFlow local experiment
+
+Environment: local TITAN RTX; KCloud qualification and fresh training are separate.
+
+Status: {&quot;state&quot;: &quot;training_complete&quot;, &quot;step&quot;: 20000, &quot;schedule_steps&quot;: 20000, &quot;reason&quot;: &quot;schedule_complete&quot;, &quot;elapsed_budget_seconds&quot;: 36243.82595201023}
+
+Logged updates: 20000
+
+Development FID (official training-derived holdout; not TA scores):
+
+| Checkpoint | NFE | Seed | FID |
+|---|---:|---:|---:|
+| step_005000 | 1 | 42 | 326.9586 |
+| step_005000 | 4 | 42 | 103.8197 |
+| step_010000 | 1 | 42 | 174.6829 |
+| step_010000 | 4 | 42 | 57.4169 |
+| step_020000 | 1 | 42 | 114.6036 |
+| step_020000 | 1 | 43 | 113.3066 |
+| step_020000 | 2 | 42 | 46.4976 |
+| step_020000 | 2 | 43 | 46.6981 |
+| step_020000 | 3 | 42 | 40.2009 |
+| step_020000 | 3 | 43 | 40.3537 |
+| step_020000 | 4 | 42 | 38.3041 |
+| step_020000 | 4 | 43 | 38.2675 |
+
+Peak training allocation: 8.613 GB.
+Peak parent RSS: 2.094 GB.
+Peak sampled process-tree PSS (including loader workers): 2.120 GB.
+</pre><h2>Training curves</h2><figure><img src="curves.png" alt="Three stacked training plots with raw values, rolling medians and percentile bands"><figcaption>Trends use a centered 201-record rolling window (one record per logged optimizer update); the window shortens at the edges. Green: median; shaded band: local 10th–90th percentiles (observed spread, not a confidence interval). Gray: every raw value, with no clipping or outlier removal. The dashed orange MSE line is the rolling mean, which is more sensitive to spikes. Consistency MSE uses a logarithmic y-axis so both its typical level and large spikes remain visible. The alternative linear-scale figure retains the full raw range. Consistency MSE is a training diagnostic under a changing consistency-gap curriculum, not a fixed validation loss; an increase alone does not establish worsening generation quality.</figcaption></figure><p><a href="curves_linear.png">Open full-range linear-scale curves</a></p><h2>Latest labeled grids</h2><p><img src="samples/020000/nfe1.png"></p><p><img src="samples/020000/nfe2.png"></p><p><img src="samples/020000/nfe3.png"></p><p><img src="samples/020000/nfe4.png"></p>

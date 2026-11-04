@@ -1,0 +1,87 @@
+{
+  "experiment": "B1-20260930",
+  "state": "awaiting_result_assessment",
+  "approval_reference": "User approved prepared B1 experiment on 2026-09-30 in this conversation: Approved.",
+  "protocol_sha256": "f8eb2871e391091585ea2f1bbec732c44f48ce608353bcf01a1c6d0dd5c062dd",
+  "source_sha256": "1768eb7e42b79376f1266c13e13ecb3850be641a052727ca96e03bb37c9e39ed",
+  "prepared_git_commit": "c6acb048518822f765e92e464b7f730b96e40647",
+  "environment": {
+    "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+    "executable": "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "torchvision": "0.22.1+cu126",
+      "clean-fid": "0.1.35",
+      "numpy": "1.26.4",
+      "Pillow": "12.3.0"
+    }
+  },
+  "reference_sha256": "1c926031c13a015673774e50991e881d5a76a63e5b84e44abbc628f9ecc82f71",
+  "parent_checkpoint": "runs/pokemon_unet128_seed42/checkpoints/step_020000.pt",
+  "parent_sha256": "068ae45cd3fee3300cfc0d9089723bf44dfae6678ac9deb4933038db4d736518",
+  "prepared_unix": 1790711099.3414757,
+  "gpu": 1,
+  "budget_seconds": 3600,
+  "inherited_baseline_gpu_job_seconds": 36712.117704635486,
+  "incremental_gpu_job_seconds": 467.662695446983,
+  "attempts": [
+    {
+      "pid": 2066794,
+      "started_unix": 1790711671.070913,
+      "proc_start_ticks": "1049497856",
+      "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+      "stage": "qualification",
+      "command": [
+        "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "retry": false,
+      "used_seconds_before": 0.0,
+      "timeout_seconds": 270,
+      "git_commit": "c41365d4261cea62930f6f4f6e69bbb12719f6c2",
+      "log": "runs/research_b1_20260930/qualification.log",
+      "returncode": 0,
+      "used_seconds_after": 8.496844356879592,
+      "ended_unix": 1790711679.5817366
+    },
+    {
+      "pid": 2067382,
+      "started_unix": 1790711736.1861684,
+      "proc_start_ticks": "1049504392",
+      "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+      "stage": "selection",
+      "command": [
+        "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+        "-m",
+        "scripts.sampling_probe",
+        "--config",
+        "configs/research_b1_20260930.json",
+        "--stage",
+        "selection",
+        "--worker"
+      ],
+      "retry": false,
+      "used_seconds_before": 8.496844356879592,
+      "timeout_seconds": 1170,
+      "git_commit": "c41365d4261cea62930f6f4f6e69bbb12719f6c2",
+      "log": "runs/research_b1_20260930/selection.log",
+      "returncode": 0,
+      "used_seconds_after": 467.662695446983,
+      "ended_unix": 1790712195.3653307
+    }
+  ],
+  "unfinished_job": null,
+  "token_expenditure": "unavailable",
+  "experiment_complete": true,
+  "completed_unix": 1790712352.4556239,
+  "quality_outcome": "negative_within_tested_selection_scope",
+  "confirmation": "not_run_no_eligible_candidate",
+  "result_summary": "runs/research_b1_20260930/result_summary.json",
+  "audit_manifest": "runs/research_b1_20260930/audit/manifest.json",
+  "next_action": "Assess B1 result and next research question; no additional experiment is approved."
+}

@@ -1,0 +1,15 @@
+{
+  "pid": null,
+  "command": [
+    "/home/user/miniconda3/envs/fastgen_soflow/bin/python",
+    "-m",
+    "scripts.evaluate_dev",
+    "--config",
+    "artifacts/workflow_qualification_config.json",
+    "--checkpoint",
+    "runs/workflow_qualification/checkpoints/step_000001.pt",
+    "--seeds",
+    "42"
+  ],
+  "returncode": 0
+}
