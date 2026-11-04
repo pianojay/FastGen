@@ -1,0 +1,16 @@
+{
+  "requested_at": "2026-09-24T21:15:59.585741+09:00",
+  "reason": "User-authorized stop after one-day feasibility assessment; generation-quality benefit is unestablished at this budget.",
+  "launcher_pid": 423732,
+  "signals": [
+    {
+      "pid": 423798,
+      "signal": "SIGTERM",
+      "command": "/home/user/miniconda3/envs/soflow/bin/python -m torch.distributed.run --standalone --nproc-per-node=1 train.py --config cifar_gpu0.yaml"
+    }
+  ],
+  "checkpoints": [
+    "0.pt",
+    "5.pt"
+  ]
+}

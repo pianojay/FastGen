@@ -1,0 +1,3 @@
+[2026-09-24 20:45:24] Logger initialized with world size = 1
+[2026-09-24 20:45:28] Saving checkpoint to ./runs/cifar10_throughput/b256/ckpts/0.pt
+[2026-09-24 20:45:28] Dataset type: CIFAR10, Model type: UNet, Parameters: 55.93 M

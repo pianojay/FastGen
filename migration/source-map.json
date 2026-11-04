@@ -1,0 +1,262 @@
+{
+  "schema": 1,
+  "group": "SoFlow",
+  "archive_branch": "archive/cifar-soflow",
+  "source_head": "cc47661a0b0843f8f1b6cff3a17107a052d18b21",
+  "files": [
+    {
+      "original_path": "SoFlow/AGENTS.md",
+      "git_path": "AGENTS.md",
+      "sha256": "927c65e6e88d93bf058b845c0d8014db8cf12794dd67e02343b5b9e842fb91bb",
+      "bytes": 5337
+    },
+    {
+      "original_path": "SoFlow/LICENSE",
+      "git_path": "LICENSE",
+      "sha256": "6544f31cc9b83c45b193853beb7ff8c7d454e7342d50fc0f9ea06f67cc75549b",
+      "bytes": 1067
+    },
+    {
+      "original_path": "SoFlow/augment.py",
+      "git_path": "augment.py",
+      "sha256": "0598dfa8dd88f92301e1a167599068f6777fb51f7d96e3642e65898fe1a283ef",
+      "bytes": 20333
+    },
+    {
+      "original_path": "SoFlow/cifar.yaml",
+      "git_path": "cifar.yaml",
+      "sha256": "b0ca090fa1ab72fc6f58cd98febfdb4843881253441f3e98b6633abf8335f355",
+      "bytes": 1198
+    },
+    {
+      "original_path": "SoFlow/cifar_gpu0.yaml",
+      "git_path": "cifar_gpu0.yaml",
+      "sha256": "7cbd7eac0b53e3ff5d02dd692e2d972b4553477ea01c4547ba49ed1fda440363",
+      "bytes": 1208
+    },
+    {
+      "original_path": "SoFlow/demo.png",
+      "git_path": "demo.png",
+      "sha256": "008929ea8f0bcb2a8e893f34ac09cac1d6cc6ba076dd23b5f6af1f0680ad88f0",
+      "bytes": 2951070
+    },
+    {
+      "original_path": "SoFlow/dit.py",
+      "git_path": "dit.py",
+      "sha256": "5fda90200ac0284757c978b913bfc28502c648f54a670f742c2b83a9759594a0",
+      "bytes": 15517
+    },
+    {
+      "original_path": "SoFlow/evaluator.py",
+      "git_path": "evaluator.py",
+      "sha256": "0d89d19634bde1ed331a4e18925711a0f52aaa8b935895b957c43c89c0de2547",
+      "bytes": 26284
+    },
+    {
+      "original_path": "SoFlow/imagenet.yaml",
+      "git_path": "imagenet.yaml",
+      "sha256": "231b7aee897220515506af562df3468967b214e1931cda1d9e950f867f2beedb",
+      "bytes": 1252
+    },
+    {
+      "original_path": "SoFlow/inference.py",
+      "git_path": "inference.py",
+      "sha256": "f296e0425bfbfc81a87b05e67b38f0c99208e3b96bc635d21687028b434f02e0",
+      "bytes": 5659
+    },
+    {
+      "original_path": "SoFlow/latent_dataset.py",
+      "git_path": "latent_dataset.py",
+      "sha256": "38ba91d5eaf030674c0325b5eb489c76e136be60957b0de82f7649f6c320a859",
+      "bytes": 7171
+    },
+    {
+      "original_path": "SoFlow/models.py",
+      "git_path": "models.py",
+      "sha256": "64ed242cb83f00af1b534fc81bd1a6394303b1e5a8f8ef16f3a2fd466751d7d6",
+      "bytes": 13711
+    },
+    {
+      "original_path": "SoFlow/readme.md",
+      "git_path": "readme.md",
+      "sha256": "754989b7c78d085beb51fbe49581caea10db081f73154855dcb61b780f27d556",
+      "bytes": 7390
+    },
+    {
+      "original_path": "SoFlow/requirements_soflow.txt",
+      "git_path": "requirements_soflow.txt",
+      "sha256": "23dcdad99c4c6e779fd3c58517fb85b58cfa63accac27a3de96e558d02130f44",
+      "bytes": 289
+    },
+    {
+      "original_path": "SoFlow/requirements_soflow_eval.txt",
+      "git_path": "requirements_soflow_eval.txt",
+      "sha256": "77faab8e2caf92810a9e98211b79cc69e9759e8a595e766e78a790f2d8a4d4ac",
+      "bytes": 40
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_gpu0/config.yaml",
+      "git_path": "runs/cifar10_gpu0/config.yaml",
+      "sha256": "7cbd7eac0b53e3ff5d02dd692e2d972b4553477ea01c4547ba49ed1fda440363",
+      "bytes": 1208
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_gpu0/environment.txt",
+      "git_path": "runs/cifar10_gpu0/environment.txt",
+      "sha256": "76bb30cda7b5cc47c2c8a23cba77acf37e0e018fe480353893aa0974a2b860fa",
+      "bytes": 1276
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_gpu0/interpreter.txt",
+      "git_path": "runs/cifar10_gpu0/interpreter.txt",
+      "sha256": "11af4f4bfe5ccec4eca6dac2ca8917678af249d47fdd5009569b4250f0297888",
+      "bytes": 238
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_gpu0/log.txt",
+      "git_path": "runs/cifar10_gpu0/log.txt",
+      "sha256": "2d327d1c148835f57ad4305609b2151978e7737ee8239850847102f10eea6d69",
+      "bytes": 3524
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_gpu0/stop_record.json",
+      "git_path": "runs/cifar10_gpu0/stop_record.json",
+      "sha256": "236b8eac8c07e5447084679c4fb7fc240402f332cbfc203d45496516847c7ddd",
+      "bytes": 499
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b128/config.yaml",
+      "git_path": "runs/cifar10_throughput/b128/config.yaml",
+      "sha256": "481e6102a298c578ed65a2de27a3bb1c6468a36f1423be953ecef3a9a4a354ce",
+      "bytes": 727
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b128/console.log",
+      "git_path": "runs/cifar10_throughput/b128/console.log",
+      "sha256": "5a7ab47bb8f340cd9cf6a27c9e17f903ae8b73be54c78c441b14e218f2f5bc0d",
+      "bytes": 1430
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b128/log.txt",
+      "git_path": "runs/cifar10_throughput/b128/log.txt",
+      "sha256": "5a7ab47bb8f340cd9cf6a27c9e17f903ae8b73be54c78c441b14e218f2f5bc0d",
+      "bytes": 1430
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b128.yaml",
+      "git_path": "runs/cifar10_throughput/b128.yaml",
+      "sha256": "481e6102a298c578ed65a2de27a3bb1c6468a36f1423be953ecef3a9a4a354ce",
+      "bytes": 727
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b16/config.yaml",
+      "git_path": "runs/cifar10_throughput/b16/config.yaml",
+      "sha256": "b8d872967ae4b5c10f58dd6412065c49d88a825244df0eb6e3a9df78cc47478e",
+      "bytes": 725
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b16/console.log",
+      "git_path": "runs/cifar10_throughput/b16/console.log",
+      "sha256": "81b92863e579c37e66f0f88ce6ca1bbc61ea2f78a29a3bc852a505cb8ce7700a",
+      "bytes": 1422
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b16/log.txt",
+      "git_path": "runs/cifar10_throughput/b16/log.txt",
+      "sha256": "81b92863e579c37e66f0f88ce6ca1bbc61ea2f78a29a3bc852a505cb8ce7700a",
+      "bytes": 1422
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b16.yaml",
+      "git_path": "runs/cifar10_throughput/b16.yaml",
+      "sha256": "b8d872967ae4b5c10f58dd6412065c49d88a825244df0eb6e3a9df78cc47478e",
+      "bytes": 725
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b256/config.yaml",
+      "git_path": "runs/cifar10_throughput/b256/config.yaml",
+      "sha256": "94f1997f4a727c7e6f891851a307248ff35a121539e59597b871d27b48f27018",
+      "bytes": 727
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b256/console.log",
+      "git_path": "runs/cifar10_throughput/b256/console.log",
+      "sha256": "5006999ff33a6a8631231868a33f7f09a7a0a274933c5e6eaad88140b03dc0fe",
+      "bytes": 6847
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b256/log.txt",
+      "git_path": "runs/cifar10_throughput/b256/log.txt",
+      "sha256": "2112ebc4832386f33005eab942da1196c03d6f8fe600304c9ad119e8357518b1",
+      "bytes": 229
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b256.yaml",
+      "git_path": "runs/cifar10_throughput/b256.yaml",
+      "sha256": "94f1997f4a727c7e6f891851a307248ff35a121539e59597b871d27b48f27018",
+      "bytes": 727
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b64/config.yaml",
+      "git_path": "runs/cifar10_throughput/b64/config.yaml",
+      "sha256": "41c4cf042a1a1e8b4d6a3257e7290169e388e396031db18ff213a95990eaa306",
+      "bytes": 725
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b64/console.log",
+      "git_path": "runs/cifar10_throughput/b64/console.log",
+      "sha256": "7783fabde754ff94efa7632eb07f0d790ddd180da54ae5662cb022bccdd0f684",
+      "bytes": 1422
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b64/log.txt",
+      "git_path": "runs/cifar10_throughput/b64/log.txt",
+      "sha256": "7783fabde754ff94efa7632eb07f0d790ddd180da54ae5662cb022bccdd0f684",
+      "bytes": 1422
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/b64.yaml",
+      "git_path": "runs/cifar10_throughput/b64.yaml",
+      "sha256": "41c4cf042a1a1e8b4d6a3257e7290169e388e396031db18ff213a95990eaa306",
+      "bytes": 725
+    },
+    {
+      "original_path": "SoFlow/runs/cifar10_throughput/results.json",
+      "git_path": "runs/cifar10_throughput/results.json",
+      "sha256": "c6f12734ad3e7b6521e7b6f1192151cc017d1a54644d5a2b9e734bb691695417",
+      "bytes": 5448
+    },
+    {
+      "original_path": "SoFlow/scripts/launch_cifar_gpu0.py",
+      "git_path": "scripts/launch_cifar_gpu0.py",
+      "sha256": "fbede893b8834fd71c3f5e9e6ef8a462a1767a402f4e5f56926c989e686e9d4a",
+      "bytes": 589
+    },
+    {
+      "original_path": "SoFlow/scripts/measure_cifar_microbatch.py",
+      "git_path": "scripts/measure_cifar_microbatch.py",
+      "sha256": "f30c46d78a668ad98e9d09935ef7d1b576353f095aaa70822c1623eccd32c09b",
+      "bytes": 2655
+    },
+    {
+      "original_path": "SoFlow/scripts/train_cifar_gpu0.sh",
+      "git_path": "scripts/train_cifar_gpu0.sh",
+      "sha256": "897876285e984964d3aff1b6ac21e20e2d4e4d66197a7fbc050ef6fd56f0c9bd",
+      "bytes": 974
+    },
+    {
+      "original_path": "SoFlow/train.py",
+      "git_path": "train.py",
+      "sha256": "280ff50d312f154501b14607be8234837ba95da85200325bb59f9994d2265af3",
+      "bytes": 30148
+    },
+    {
+      "original_path": "SoFlow/unet.py",
+      "git_path": "unet.py",
+      "sha256": "4ce1186210ed3eced4248472e2cb7a904b7cbbb64dad9004ee3687eae66ae90c",
+      "bytes": 19392
+    }
+  ],
+  "outcome": "Stopped; finite early optimization, no image-quality evaluation. Last logged step 130; recoverable main checkpoint 5. No CIFAR weights retained.",
+  "evidence_review": "Historical report checked; migration hashes/restore verified separately. No scientific rerun."
+}
