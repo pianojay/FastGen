@@ -1,0 +1,9 @@
+{
+  "action": "continue",
+  "quantitative_pass_ema": 115,
+  "quantitative_pass_raw": 71,
+  "reason": "First post-decay audit; quantitative variation persists above collapse threshold, but recognizable diversity unestablished in40 reviewed classes. No acceptance or early-stop condition. Continue unchanged to14k.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790935943.4872062,
+  "reviewed_classes": 40
+}

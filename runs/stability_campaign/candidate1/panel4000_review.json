@@ -1,0 +1,7 @@
+{
+  "decision": "continue_to_frozen_audit",
+  "panel": "panels/004000.png",
+  "review": "Still noise dominated; several classes have coarse colored blobs. No recognizable-diversity claim. OT approximately .30, schedule incomplete.",
+  "review_unix": 1790874123.5102959,
+  "step": 4000
+}

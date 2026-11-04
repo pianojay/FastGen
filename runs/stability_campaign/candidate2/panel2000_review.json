@@ -1,0 +1,7 @@
+{
+  "decision": "continue_to_frozen_audit",
+  "panel": "panels/002000.png",
+  "review": "Noise-dominated EMA samples across displayed classes; no recognizable structure. High-OT phase; no early termination criterion.",
+  "review_unix": 1790888346.3068345,
+  "step": 2000
+}

@@ -1,0 +1,7 @@
+{
+  "decision": "continue_to_frozen_audit",
+  "panel": "panels/008000.png",
+  "review": "Class-colored silhouettes emerging (notably yellow/pink classes), but substantial noise and malformed structure remain. OT reached .1 floor. No acceptance claim; continue to10k all-class audit.",
+  "review_unix": 1790877589.5824993,
+  "step": 8000
+}

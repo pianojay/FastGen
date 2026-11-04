@@ -1,0 +1,9 @@
+{
+  "action": "continue",
+  "quantitative_pass_ema": 148,
+  "quantitative_pass_raw": 134,
+  "reason": "10k quantitative gate passes 134 raw/148 EMA, but recognizable diversity not established in 40 reviewed classes, so at most111 remaining classes could pass versus114 required. Early-stop rule not met: counts exceed15 and this is only the first scheduled audit after OT decay. Continue unchanged to14k.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790895235.6446397,
+  "reviewed_classes": 40
+}

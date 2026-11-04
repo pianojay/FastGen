@@ -1,0 +1,12 @@
+test_gradient_normalizer_reference_and_accumulation (test_objective.ObjectiveTests) ... ok
+test_paired_augmentation (test_objective.ObjectiveTests) ... ok
+test_post_normalization_target_scale (test_objective.ObjectiveTests) ... ok
+test_routing_and_classes (test_objective.ObjectiveTests) ... ok
+test_schedule_units (test_objective.ObjectiveTests) ... ok
+test_signs_ot_and_penalties (test_objective.ObjectiveTests) ... ok
+test_uneven_discriminator_accumulation (test_objective.ObjectiveTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.092s
+
+OK

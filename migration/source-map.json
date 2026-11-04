@@ -1,0 +1,2668 @@
+{
+  "schema": 1,
+  "group": "FastGen-AFM",
+  "archive_branch": "archive/afm",
+  "source_head": "0057ef090c96132ca6a8a7be24180f2c403e4489",
+  "files": [
+    {
+      "original_path": "FastGen-AFM/.gitignore",
+      "git_path": ".gitignore",
+      "sha256": "a7ae036f24b0b57731097bb3be7ca8bdfc28a5f0f7623992305572a7726b4fd1",
+      "bytes": 269
+    },
+    {
+      "original_path": "FastGen-AFM/.orca/.gitignore",
+      "git_path": ".orca/.gitignore",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "bytes": 14
+    },
+    {
+      "original_path": "FastGen-AFM/AGENTS.md",
+      "git_path": "AGENTS.md",
+      "sha256": "eade4b200d973e1249e46193e77f585245d31a8026509bdefecd86630d1ee325",
+      "bytes": 4863
+    },
+    {
+      "original_path": "FastGen-AFM/README.md",
+      "git_path": "README.md",
+      "sha256": "8aae302be3aaeb69f11cc73a63590d6787fce1b02e0a3853219977ba3cc004f3",
+      "bytes": 20277
+    },
+    {
+      "original_path": "FastGen-AFM/README_LOCAL.md",
+      "git_path": "README_LOCAL.md",
+      "sha256": "576bb0308182375a28c7119a8ec9a1b40c4158b6293a24392cf96a565c000700",
+      "bytes": 1803
+    },
+    {
+      "original_path": "FastGen-AFM/THIRD_PARTY.md",
+      "git_path": "THIRD_PARTY.md",
+      "sha256": "c7391c7ec000d74ba28f184afc6f8edf06d99bfb6d5e3f9927b4cf94574f09d3",
+      "bytes": 2425
+    },
+    {
+      "original_path": "FastGen-AFM/afm_fastgen/__init__.py",
+      "git_path": "afm_fastgen/__init__.py",
+      "sha256": "6511f02843935c533f5c43ce06335aa66eb9a68544ca3da4ce52e4152812abc9",
+      "bytes": 72
+    },
+    {
+      "original_path": "FastGen-AFM/afm_fastgen/audit.py",
+      "git_path": "afm_fastgen/audit.py",
+      "sha256": "75731fe0a0902e86b460923581c6ff7776a6a419611619f759bd371657f6b499",
+      "bytes": 6516
+    },
+    {
+      "original_path": "FastGen-AFM/afm_fastgen/common.py",
+      "git_path": "afm_fastgen/common.py",
+      "sha256": "e4d87e000b4546e534a1eadeeb64784fabb77c87cd13e60df2b983dc52b9b62a",
+      "bytes": 6065
+    },
+    {
+      "original_path": "FastGen-AFM/afm_fastgen/data.py",
+      "git_path": "afm_fastgen/data.py",
+      "sha256": "264430c9da8539f9293b49a62a90830e13d610c4001e9f174e287c3e496c4a36",
+      "bytes": 4895
+    },
+    {
+      "original_path": "FastGen-AFM/afm_fastgen/evaluation.py",
+      "git_path": "afm_fastgen/evaluation.py",
+      "sha256": "bdb8a5788957a6ee429fe75d3207b77f6a020ff07765a64b37f008d92c93c82e",
+      "bytes": 5643
+    },
+    {
+      "original_path": "FastGen-AFM/afm_fastgen/losses.py",
+      "git_path": "afm_fastgen/losses.py",
+      "sha256": "ae414ac829671fd1117429f4fcbf8a1891de1169dab1b46b7958453709aac810",
+      "bytes": 4129
+    },
+    {
+      "original_path": "FastGen-AFM/afm_fastgen/models.py",
+      "git_path": "afm_fastgen/models.py",
+      "sha256": "91dbf9f844df4f8a71e1771e137b75dfe8b938ec0908d0d6d9c8f7d9c1abf589",
+      "bytes": 2441
+    },
+    {
+      "original_path": "FastGen-AFM/afm_fastgen/reporting.py",
+      "git_path": "afm_fastgen/reporting.py",
+      "sha256": "e0b6723f5a57a983947fd912310516cbed40968e00be067cfdfb9dfb3f63ebc3",
+      "bytes": 7122
+    },
+    {
+      "original_path": "FastGen-AFM/afm_fastgen/training.py",
+      "git_path": "afm_fastgen/training.py",
+      "sha256": "ff6873c9c53662c21fb32abe819d902aa38eeca386e015275a5d450e8e792e9e",
+      "bytes": 9022
+    },
+    {
+      "original_path": "FastGen-AFM/afm_fastgen/unet.py",
+      "git_path": "afm_fastgen/unet.py",
+      "sha256": "0e5846fe8f03353e546dbc82ce1cf2346478fbf1d9c0447b610d791b6890839b",
+      "bytes": 18732
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/afm_fastgen/__init__.py",
+      "git_path": "artifacts/qualification/export_bundle/afm_fastgen/__init__.py",
+      "sha256": "6511f02843935c533f5c43ce06335aa66eb9a68544ca3da4ce52e4152812abc9",
+      "bytes": 72
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/afm_fastgen/models.py",
+      "git_path": "artifacts/qualification/export_bundle/afm_fastgen/models.py",
+      "sha256": "91dbf9f844df4f8a71e1771e137b75dfe8b938ec0908d0d6d9c8f7d9c1abf589",
+      "bytes": 2441
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/afm_fastgen/unet.py",
+      "git_path": "artifacts/qualification/export_bundle/afm_fastgen/unet.py",
+      "sha256": "0e5846fe8f03353e546dbc82ce1cf2346478fbf1d9c0447b610d791b6890839b",
+      "bytes": 18732
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/check_export.py",
+      "git_path": "artifacts/qualification/export_bundle/check_export.py",
+      "sha256": "3ddaf3e7fe31111c04e9bd8200fed820cca4872b51e437dd39ec8d3207168b4c",
+      "bytes": 1446
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/files.json",
+      "git_path": "artifacts/qualification/export_bundle/files.json",
+      "sha256": "f41454f02e7974f5bd9e75e029d305558bc5decab1d3d37a19674480158449fd",
+      "bytes": 1098
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/licenses/NVIDIA-CC-BY-NC-SA-4.0.txt",
+      "git_path": "artifacts/qualification/export_bundle/licenses/NVIDIA-CC-BY-NC-SA-4.0.txt",
+      "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+      "bytes": 20850
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/loader_check.json",
+      "git_path": "artifacts/qualification/export_bundle/loader_check.json",
+      "sha256": "55d55189ae8599bf10b7b09ff6a94df01951552a2b419855c61c8a2177dc0795",
+      "bytes": 332
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/loader_check.log",
+      "git_path": "artifacts/qualification/export_bundle/loader_check.log",
+      "sha256": "5dff1ed678e08649bcaafdd1a9e150a7bed1d8cd7108fcef216a3dd84dcc6ec0",
+      "bytes": 296
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/model.py",
+      "git_path": "artifacts/qualification/export_bundle/model.py",
+      "sha256": "a7984b5501ca11085d0e25df9a59f18d9d8cbfc7f1a9538a391898160453a093",
+      "bytes": 3578
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/requirements.txt",
+      "git_path": "artifacts/qualification/export_bundle/requirements.txt",
+      "sha256": "e30940e3e890e6e5463f617475b97d7415e73f349fbf4070936aa284f0573eb2",
+      "bytes": 50
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/src/__init__.py",
+      "git_path": "artifacts/qualification/export_bundle/src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/export_bundle/src/utils.py",
+      "git_path": "artifacts/qualification/export_bundle/src/utils.py",
+      "sha256": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f",
+      "bytes": 1027
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/identity.json",
+      "git_path": "artifacts/qualification/identity.json",
+      "sha256": "3224143f64433e1f2fc450105e02a9060fbd9137f68d6f6c3220ca8ccc2cd1b3",
+      "bytes": 1175
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/metrics.jsonl",
+      "git_path": "artifacts/qualification/metrics.jsonl",
+      "sha256": "822382b705c9dc3f68f9e85ff492c37e84645509ec9dd0d06030671a74bff842",
+      "bytes": 10058
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification/qualification.json",
+      "git_path": "artifacts/qualification/qualification.json",
+      "sha256": "cf3c086644bb0a32a155d61218d63e520d7d8031c9d410d1de0226d8b8f8e0f1",
+      "bytes": 2048
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/evaluation_smoke/seed901/metrics.json",
+      "git_path": "artifacts/qualification_micro32/evaluation_smoke/seed901/metrics.json",
+      "sha256": "a7ccb51e920cbb68c4e7ea5abdbe5b4fc894ac00ea9fa8a0b5fb1181081a8246",
+      "bytes": 888
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/evaluation_smoke/summary.json",
+      "git_path": "artifacts/qualification_micro32/evaluation_smoke/summary.json",
+      "sha256": "a76d2329ee5ef71ae5e9fd5121a09144f74a24d7c7e70aeef533e938544efcb5",
+      "bytes": 940
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/afm_fastgen/__init__.py",
+      "git_path": "artifacts/qualification_micro32/export_bundle/afm_fastgen/__init__.py",
+      "sha256": "6511f02843935c533f5c43ce06335aa66eb9a68544ca3da4ce52e4152812abc9",
+      "bytes": 72
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/afm_fastgen/models.py",
+      "git_path": "artifacts/qualification_micro32/export_bundle/afm_fastgen/models.py",
+      "sha256": "91dbf9f844df4f8a71e1771e137b75dfe8b938ec0908d0d6d9c8f7d9c1abf589",
+      "bytes": 2441
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/afm_fastgen/unet.py",
+      "git_path": "artifacts/qualification_micro32/export_bundle/afm_fastgen/unet.py",
+      "sha256": "0e5846fe8f03353e546dbc82ce1cf2346478fbf1d9c0447b610d791b6890839b",
+      "bytes": 18732
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/check_export.py",
+      "git_path": "artifacts/qualification_micro32/export_bundle/check_export.py",
+      "sha256": "3ddaf3e7fe31111c04e9bd8200fed820cca4872b51e437dd39ec8d3207168b4c",
+      "bytes": 1446
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/files.json",
+      "git_path": "artifacts/qualification_micro32/export_bundle/files.json",
+      "sha256": "5996c41e72d0db2d69e38edbf224869bcc2d40d13f401311d6589f61c3660b95",
+      "bytes": 1098
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/licenses/NVIDIA-CC-BY-NC-SA-4.0.txt",
+      "git_path": "artifacts/qualification_micro32/export_bundle/licenses/NVIDIA-CC-BY-NC-SA-4.0.txt",
+      "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+      "bytes": 20850
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/loader_check.json",
+      "git_path": "artifacts/qualification_micro32/export_bundle/loader_check.json",
+      "sha256": "c933af66c606850af8b4aedd86178f8dd1f46db80624b34d9e15fca82d313743",
+      "bytes": 340
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/loader_check.log",
+      "git_path": "artifacts/qualification_micro32/export_bundle/loader_check.log",
+      "sha256": "88415070be073f41c15f713712cc1e13e9d03d7100ac3211ac9923348e515ec6",
+      "bytes": 304
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/model.py",
+      "git_path": "artifacts/qualification_micro32/export_bundle/model.py",
+      "sha256": "a7984b5501ca11085d0e25df9a59f18d9d8cbfc7f1a9538a391898160453a093",
+      "bytes": 3578
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/requirements.txt",
+      "git_path": "artifacts/qualification_micro32/export_bundle/requirements.txt",
+      "sha256": "e30940e3e890e6e5463f617475b97d7415e73f349fbf4070936aa284f0573eb2",
+      "bytes": 50
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/src/__init__.py",
+      "git_path": "artifacts/qualification_micro32/export_bundle/src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/export_bundle/src/utils.py",
+      "git_path": "artifacts/qualification_micro32/export_bundle/src/utils.py",
+      "sha256": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f",
+      "bytes": 1027
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/identity.json",
+      "git_path": "artifacts/qualification_micro32/identity.json",
+      "sha256": "97d767df15d3c47f0ee780849652c92d7d688a490b804394840ccc51689f1ff2",
+      "bytes": 1176
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/metrics.jsonl",
+      "git_path": "artifacts/qualification_micro32/metrics.jsonl",
+      "sha256": "14dee28a1b88a5e761b904c0c0f7809b7aaabbfce405550020eaa6601d4a2d1d",
+      "bytes": 54711
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_micro32/qualification.json",
+      "git_path": "artifacts/qualification_micro32/qualification.json",
+      "sha256": "3bfcfac412a3e812383b88f3b842656ab401f0b27489b58db1045faf3bf9796e",
+      "bytes": 4444
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/qualification_summary.json",
+      "git_path": "artifacts/qualification_summary.json",
+      "sha256": "da694d301d26abe76b1cf67f6031925b1f23e4267d632ba07f4b087e2600db96",
+      "bytes": 9711
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/setup/conda-create.log",
+      "git_path": "artifacts/setup/conda-create.log",
+      "sha256": "e3693b41e422759211f47be64ec44515c8162927689ac3f21cb935aa43237030",
+      "bytes": 2819
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/setup/pip-freeze.txt",
+      "git_path": "artifacts/setup/pip-freeze.txt",
+      "sha256": "e0e51926eade2f83026f5aa29764e17204f842c8aaaa3805b797646990d62a54",
+      "bytes": 944
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/setup/qualification-micro32.log",
+      "git_path": "artifacts/setup/qualification-micro32.log",
+      "sha256": "275788e0da33bf41717fe4902745767ee60ba49e7894795e44778aa1e959de59",
+      "bytes": 78198
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/setup/qualification.log",
+      "git_path": "artifacts/setup/qualification.log",
+      "sha256": "b7cbb7c048ac2f1d87eac30787f93136e90adcda604bc76d8864e1f317bb389d",
+      "bytes": 22548
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/setup/requirements-install.log",
+      "git_path": "artifacts/setup/requirements-install.log",
+      "sha256": "ed6ef025ff9b2600ec9929fa9621d9e3f4e9cb647056e844836a80329182f934",
+      "bytes": 8460
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/setup/torch-install.log",
+      "git_path": "artifacts/setup/torch-install.log",
+      "sha256": "2cc2d099c1218c24a6ca199c01d26159b117d7fee67b3104b1f0fa7d656094e6",
+      "bytes": 9536
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/setup/unit-tests.log",
+      "git_path": "artifacts/setup/unit-tests.log",
+      "sha256": "a1fde9de44c9855f53c55de71bde1de7fb134a75637910bc064204b62807e7af",
+      "bytes": 521
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/calibration/start.json",
+      "git_path": "artifacts/stability/calibration/start.json",
+      "sha256": "f664d69504dc09a442ad478ef92ced131cdf3d14cefabe71b5a17d6b8216b12c",
+      "bytes": 2070
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/calibration/summary.json",
+      "git_path": "artifacts/stability/calibration/summary.json",
+      "sha256": "83b84f98f87692dc7db364cc3c7f2f4e4364b683393e432e6cb0a7f47bce9faa",
+      "bytes": 812
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/candidate2_probe_config.json",
+      "git_path": "artifacts/stability/candidate2_probe_config.json",
+      "sha256": "e8413c267cea1ba9aa0dfd248462e57db9c2adee610597202427f326447d7cd3",
+      "bytes": 1865
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/candidate3_probe_config.json",
+      "git_path": "artifacts/stability/candidate3_probe_config.json",
+      "sha256": "6ef78ae4d70a1119529e68ba88bec22c8dcaf116931e2153beb82afe7ef37383",
+      "bytes": 1892
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/candidate4_probe_config.json",
+      "git_path": "artifacts/stability/candidate4_probe_config.json",
+      "sha256": "f93a1d4d41917faf1cd38429f51c7dc27f0497267a06bef487982022c0d2628d",
+      "bytes": 1978
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/candidate5_probe_config.json",
+      "git_path": "artifacts/stability/candidate5_probe_config.json",
+      "sha256": "db3ed66fcb6d05f948d20ddfdf3bea9424470b0ca663adeea031ff05c2031c83",
+      "bytes": 2005
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/candidate6_probe_config.json",
+      "git_path": "artifacts/stability/candidate6_probe_config.json",
+      "sha256": "489e7825c64ecc287b8a6522f5348722c1636c50d361f89ead38ddbe30a9690a",
+      "bytes": 2108
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/frozen_protocol.log",
+      "git_path": "artifacts/stability/frozen_protocol.log",
+      "sha256": "f8cf79ce87881b25d9f6b158f0673c044344202fa37550a92fbbb47bc2483ccb",
+      "bytes": 2219
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification/failure.json",
+      "git_path": "artifacts/stability/qualification/failure.json",
+      "sha256": "f04b85617b633d7146af5e9e16bcd34e98f8fa2543720f9f7e85bc4689ec8c9c",
+      "bytes": 336
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification/identity.json",
+      "git_path": "artifacts/stability/qualification/identity.json",
+      "sha256": "a2ff22556ad8ae3bd4fdd7630f070752642b158f428b33c517529b9b7b1fe375",
+      "bytes": 1571
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification/metrics.jsonl",
+      "git_path": "artifacts/stability/qualification/metrics.jsonl",
+      "sha256": "e0ca49fef1ee6554834d37f3a8968446bf1be97c7df852ef87c4b833e0756da2",
+      "bytes": 54426
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate2/identity.json",
+      "git_path": "artifacts/stability/qualification_candidate2/identity.json",
+      "sha256": "65b9c884016739a7dbb6a1b6715940161c6f141884e8162023f895c7e90f9f25",
+      "bytes": 2365
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate2/metrics.jsonl",
+      "git_path": "artifacts/stability/qualification_candidate2/metrics.jsonl",
+      "sha256": "ffa3ebbd6cca9802ab2a5b971d350254d2d3ca115bb8e8ff6147eb74f20fef8b",
+      "bytes": 26992
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate2/qualification.json",
+      "git_path": "artifacts/stability/qualification_candidate2/qualification.json",
+      "sha256": "e8d752ad02fea58e6586f4f7158ad0703482c01af4b0a8aa0a9f31efcc3fc090",
+      "bytes": 3468
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate3/identity.json",
+      "git_path": "artifacts/stability/qualification_candidate3/identity.json",
+      "sha256": "82d23a72a77db30204ab37321ba083a2b1815837048908d28350eb85f97eae7c",
+      "bytes": 2392
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate3/metrics.jsonl",
+      "git_path": "artifacts/stability/qualification_candidate3/metrics.jsonl",
+      "sha256": "849d58efb0ab9699bb1237c93d4b4d2bc8ba92f7a0d389c8b23db886bb9674dd",
+      "bytes": 27011
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate3/qualification.json",
+      "git_path": "artifacts/stability/qualification_candidate3/qualification.json",
+      "sha256": "40510faae8de41d9c59acf015e1dd848fb72a8b5b60cf63b553edd51de2a72cb",
+      "bytes": 3500
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate3.log",
+      "git_path": "artifacts/stability/qualification_candidate3.log",
+      "sha256": "b8a7e1462b149ab49151d2c62b5323f56374e7f8c8138c14d3fda8239693c548",
+      "bytes": 29917
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate4/identity.json",
+      "git_path": "artifacts/stability/qualification_candidate4/identity.json",
+      "sha256": "e33937146e1b690a720d4f6d77fef8987b3bcc053be2a571f88e9abc8439f609",
+      "bytes": 2478
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate4/metrics.jsonl",
+      "git_path": "artifacts/stability/qualification_candidate4/metrics.jsonl",
+      "sha256": "1fef3637926bbcbfc180a719dd6e1ffd4f14f5bd0ff056d3f6416aa528dd062c",
+      "bytes": 27098
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate4/qualification.json",
+      "git_path": "artifacts/stability/qualification_candidate4/qualification.json",
+      "sha256": "97e48b7e6c081174f7a939fc6ca9add67c23b9da5c0b3152967d01c3550e64ee",
+      "bytes": 3585
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate4.log",
+      "git_path": "artifacts/stability/qualification_candidate4.log",
+      "sha256": "4162e3054b32288f8ad278e6457defe9b2df9b942a92ee5885a889210254acd0",
+      "bytes": 30089
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate5/identity.json",
+      "git_path": "artifacts/stability/qualification_candidate5/identity.json",
+      "sha256": "0be111e4758f569facaebf00c7494cb7b2cbde096ae155c372df23dd7b5cfd72",
+      "bytes": 2505
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate5/metrics.jsonl",
+      "git_path": "artifacts/stability/qualification_candidate5/metrics.jsonl",
+      "sha256": "74aa63e978fde45657d24a1ebb7b31b826db01bfb9ee46e42edebc781d4a3d28",
+      "bytes": 27065
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate5/qualification.json",
+      "git_path": "artifacts/stability/qualification_candidate5/qualification.json",
+      "sha256": "97b8c33fb950eeb152d3994c9f92157512614a64b5ab1b2fb762484a72756ce0",
+      "bytes": 3613
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate5.log",
+      "git_path": "artifacts/stability/qualification_candidate5.log",
+      "sha256": "8e9665e08275a02a09da9bcad50b3f5a1b4415807e6096b223235856f5344712",
+      "bytes": 30084
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate6/identity.json",
+      "git_path": "artifacts/stability/qualification_candidate6/identity.json",
+      "sha256": "f074aa039fe78fafbfb8d059d5f3dff044453ed0deebb31f7be3eb0c7e3af0a0",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate6/metrics.jsonl",
+      "git_path": "artifacts/stability/qualification_candidate6/metrics.jsonl",
+      "sha256": "0800150c2f1415c613d732eb0120840f0e61326a67b2754762533b27af8f2244",
+      "bytes": 27102
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate6/qualification.json",
+      "git_path": "artifacts/stability/qualification_candidate6/qualification.json",
+      "sha256": "cda5e28d4099247162ae83e5c83202c75c509ee4d7cff7b34d7f82c68972942b",
+      "bytes": 3715
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_candidate6.log",
+      "git_path": "artifacts/stability/qualification_candidate6.log",
+      "sha256": "0f273867d1cb8cc5cd76bb71c18894e04a10b6a51ec5d5ac196ac525a5790a81",
+      "bytes": 30223
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_frozen/identity.json",
+      "git_path": "artifacts/stability/qualification_frozen/identity.json",
+      "sha256": "997916ea9e47845eecbbbea6e284133ec6867c0f0827a6edc0fffc503586af81",
+      "bytes": 1571
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_frozen/metrics.jsonl",
+      "git_path": "artifacts/stability/qualification_frozen/metrics.jsonl",
+      "sha256": "fbaec891f76f8bd96d1adb2aab6c7fa445051ac00193a6b8dc55fc2e3e4a752d",
+      "bytes": 54441
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability/qualification_frozen/qualification.json",
+      "git_path": "artifacts/stability/qualification_frozen/qualification.json",
+      "sha256": "b634e3c9912c010e681878456a12804d0dc4e5e546cd89fa6380a2565a3a83eb",
+      "bytes": 3444
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_audit.log",
+      "git_path": "artifacts/stability_audit.log",
+      "sha256": "49a44d46097a69154cc6f75f74bb08d4747526b345891a5dac40963e7dcb91e8",
+      "bytes": 468
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_candidate1.log",
+      "git_path": "artifacts/stability_candidate1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_candidate2.log",
+      "git_path": "artifacts/stability_candidate2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_candidate3.log",
+      "git_path": "artifacts/stability_candidate3.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_candidate4.log",
+      "git_path": "artifacts/stability_candidate4.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_candidate5.log",
+      "git_path": "artifacts/stability_candidate5.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_candidate5_terminal_recovery.log",
+      "git_path": "artifacts/stability_candidate5_terminal_recovery.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_candidate6.log",
+      "git_path": "artifacts/stability_candidate6.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_qualification.log",
+      "git_path": "artifacts/stability_qualification.log",
+      "sha256": "0d170a9e58771ad450f8375a030d6126d025010aa2cad7fac009145cc4b59797",
+      "bytes": 55327
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_qualification_candidate2.log",
+      "git_path": "artifacts/stability_qualification_candidate2.log",
+      "sha256": "aff32e3c2a93366099849fa815ba58a89c4640b58f3ccc34ef2937d3db719136",
+      "bytes": 29866
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_qualification_frozen.log",
+      "git_path": "artifacts/stability_qualification_frozen.log",
+      "sha256": "48e169e9e75b6da13eab4e4f19978ff30d9ba14ee7531d7c36f756d64be2c344",
+      "bytes": 57245
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/stability_tests.log",
+      "git_path": "artifacts/stability_tests.log",
+      "sha256": "b1f3640e2280fe25d1ceac8b45e76a15bdc00d914d10c486146fa10f03623110",
+      "bytes": 597
+    },
+    {
+      "original_path": "FastGen-AFM/artifacts/supervise.py",
+      "git_path": "artifacts/supervise.py",
+      "sha256": "763e60252fbc12b2b1397594112a9dd946de37e11ba4093240ab8f9ada31e194",
+      "bytes": 1767
+    },
+    {
+      "original_path": "FastGen-AFM/assets/FastGen.pdf",
+      "git_path": "assets/FastGen.pdf",
+      "sha256": "1a9ccc1af4d6513d3eaef28998b6540581bb368399c333a888168f85dc85e6aa",
+      "bytes": 1326452
+    },
+    {
+      "original_path": "FastGen-AFM/assets/representative_samples.png",
+      "git_path": "assets/representative_samples.png",
+      "sha256": "f57aa021d0840177145e241063a1c4c689180c3fc194706c39453c4caa8b3df6",
+      "bytes": 1472342
+    },
+    {
+      "original_path": "FastGen-AFM/configs/baseline.json",
+      "git_path": "configs/baseline.json",
+      "sha256": "51d5289002e6556e9f8d3b59a2473a2c8c828bd4085a073d49005e538f8a66d3",
+      "bytes": 1106
+    },
+    {
+      "original_path": "FastGen-AFM/configs/qualification.json",
+      "git_path": "configs/qualification.json",
+      "sha256": "899237b4b939e9f9791ca408d3fcc6f06d6ed4589cf1a9e9b1c4874074361f69",
+      "bytes": 757
+    },
+    {
+      "original_path": "FastGen-AFM/configs/search_probe.json",
+      "git_path": "configs/search_probe.json",
+      "sha256": "c041c984666421885d2c808ce3afa96b441160fb63cc32b2418ee4d170d957ab",
+      "bytes": 931
+    },
+    {
+      "original_path": "FastGen-AFM/configs/stability_candidate1.json",
+      "git_path": "configs/stability_candidate1.json",
+      "sha256": "f03bf84a3f7dad845d5dd143035c070dd5938707adbccfa953b9a6daa45370ac",
+      "bytes": 1833
+    },
+    {
+      "original_path": "FastGen-AFM/configs/stability_candidate2.json",
+      "git_path": "configs/stability_candidate2.json",
+      "sha256": "f994c92a649b5ddb89059187b581ee6803cb9e38e4f3762743387ff5d19a9d05",
+      "bytes": 1870
+    },
+    {
+      "original_path": "FastGen-AFM/configs/stability_candidate3.json",
+      "git_path": "configs/stability_candidate3.json",
+      "sha256": "eb556a9ec717a1de2342472cad36080094f359b51b1f150235753b4b5dc71549",
+      "bytes": 1897
+    },
+    {
+      "original_path": "FastGen-AFM/configs/stability_candidate4.json",
+      "git_path": "configs/stability_candidate4.json",
+      "sha256": "9a6a37865477e55c34ff232b608988d78acb52a0f2a6d6d25d74a14306514c91",
+      "bytes": 1983
+    },
+    {
+      "original_path": "FastGen-AFM/configs/stability_candidate5.json",
+      "git_path": "configs/stability_candidate5.json",
+      "sha256": "021a5fbb215e745c5e9d251171c23d89c1ed9611037a9738b6cd9d887b15bc3f",
+      "bytes": 2000
+    },
+    {
+      "original_path": "FastGen-AFM/configs/stability_candidate6.json",
+      "git_path": "configs/stability_candidate6.json",
+      "sha256": "04099d57a273f73b00c7897b97bb0046dc5dd82fc88890489f826356e095d64c",
+      "bytes": 2103
+    },
+    {
+      "original_path": "FastGen-AFM/data/pokemon-generation-one-22k/category_to_id.json",
+      "git_path": "data/pokemon-generation-one-22k/category_to_id.json",
+      "sha256": "7c27ec2a15fa4f70b5729319d596d3a80bc528cdeeb02f36b88877a6545b77e8",
+      "bytes": 2656
+    },
+    {
+      "original_path": "FastGen-AFM/data/pokemon-generation-one-22k/train_split.txt",
+      "git_path": "data/pokemon-generation-one-22k/train_split.txt",
+      "sha256": "c4068bdec8c5994fa14887d3335e762dd6a4da1bc6394a6df7fae96d293138c0",
+      "bytes": 703371
+    },
+    {
+      "original_path": "FastGen-AFM/data/pokemon-generation-one-22k/val_split.txt",
+      "git_path": "data/pokemon-generation-one-22k/val_split.txt",
+      "sha256": "6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0",
+      "bytes": 153787
+    },
+    {
+      "original_path": "FastGen-AFM/dataset.py",
+      "git_path": "dataset.py",
+      "sha256": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+      "bytes": 5923
+    },
+    {
+      "original_path": "FastGen-AFM/docs/BASELINE_PLAN.md",
+      "git_path": "docs/BASELINE_PLAN.md",
+      "sha256": "48986ffb41e50cf0020f5149bf7b2de6ddc78b42bd93d14fcfc90e7388eb27fd",
+      "bytes": 16339
+    },
+    {
+      "original_path": "FastGen-AFM/docs/EXPERIMENT_REPORT.md",
+      "git_path": "docs/EXPERIMENT_REPORT.md",
+      "sha256": "04b75845ddfec96e4489549b10df814fee7cffa0c489b7e45d3ae5f12e8f280d",
+      "bytes": 3943
+    },
+    {
+      "original_path": "FastGen-AFM/docs/HANDOFF.md",
+      "git_path": "docs/HANDOFF.md",
+      "sha256": "c68dcc35f790d69bc146f3554cf5e3257108fd10bc543b94fd3a8a54246cbf9f",
+      "bytes": 12523
+    },
+    {
+      "original_path": "FastGen-AFM/docs/IMPLEMENTATION.md",
+      "git_path": "docs/IMPLEMENTATION.md",
+      "sha256": "a70183350e198d62acc58f8adf3734a8c70978ed0fb0dc911fc0c828796c86d8",
+      "bytes": 5424
+    },
+    {
+      "original_path": "FastGen-AFM/docs/STABILITY_REPORT.md",
+      "git_path": "docs/STABILITY_REPORT.md",
+      "sha256": "4b624051830c01b66a6961b5ee91d71acd9d236244a6144f6b912b52a72d3057",
+      "bytes": 6778
+    },
+    {
+      "original_path": "FastGen-AFM/docs/STABILITY_SEARCH.md",
+      "git_path": "docs/STABILITY_SEARCH.md",
+      "sha256": "bfa650a88e0790dc3a6036eb552350860a34e36563cda152942a812040309c3d",
+      "bytes": 15839
+    },
+    {
+      "original_path": "FastGen-AFM/download_dataset.py",
+      "git_path": "download_dataset.py",
+      "sha256": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+      "bytes": 3553
+    },
+    {
+      "original_path": "FastGen-AFM/evaluate.py",
+      "git_path": "evaluate.py",
+      "sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "bytes": 5578
+    },
+    {
+      "original_path": "FastGen-AFM/licenses/NVIDIA-CC-BY-NC-SA-4.0.txt",
+      "git_path": "licenses/NVIDIA-CC-BY-NC-SA-4.0.txt",
+      "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+      "bytes": 20850
+    },
+    {
+      "original_path": "FastGen-AFM/model.py",
+      "git_path": "model.py",
+      "sha256": "a7984b5501ca11085d0e25df9a59f18d9d8cbfc7f1a9538a391898160453a093",
+      "bytes": 3578
+    },
+    {
+      "original_path": "FastGen-AFM/program.md",
+      "git_path": "program.md",
+      "sha256": "4fbe8e589043940716db67726daae93b123b84052121c575423a5d0e5386be90",
+      "bytes": 10616
+    },
+    {
+      "original_path": "FastGen-AFM/requirements.txt",
+      "git_path": "requirements.txt",
+      "sha256": "e30940e3e890e6e5463f617475b97d7415e73f349fbf4070936aa284f0573eb2",
+      "bytes": 50
+    },
+    {
+      "original_path": "FastGen-AFM/resources/campaign_handoff.json",
+      "git_path": "resources/campaign_handoff.json",
+      "sha256": "ef23d969f26f9ede1c72d10358cb5b0ecd2775c357cf4d404fc768b2abcceed1",
+      "bytes": 1246
+    },
+    {
+      "original_path": "FastGen-AFM/resources/campaign_verification.json",
+      "git_path": "resources/campaign_verification.json",
+      "sha256": "8b50def2bd304dc5d6c32f51fd8ba325779f9a06d19abd97ffe5830e8790459d",
+      "bytes": 1689
+    },
+    {
+      "original_path": "FastGen-AFM/resources/development_split.json",
+      "git_path": "resources/development_split.json",
+      "sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "bytes": 310859
+    },
+    {
+      "original_path": "FastGen-AFM/resources/fastgen_afm_requirements.lock",
+      "git_path": "resources/fastgen_afm_requirements.lock",
+      "sha256": "e0e51926eade2f83026f5aa29764e17204f842c8aaaa3805b797646990d62a54",
+      "bytes": 944
+    },
+    {
+      "original_path": "FastGen-AFM/resources/handoff_verification.json",
+      "git_path": "resources/handoff_verification.json",
+      "sha256": "752ef1f4f8c48da7d26169205fcdc9baf19d46b38ac5f4e15716a051221616a0",
+      "bytes": 429
+    },
+    {
+      "original_path": "FastGen-AFM/resources/provenance.json",
+      "git_path": "resources/provenance.json",
+      "sha256": "599915322a549fa12174e0821dd144427e5f4c3d71f557e90c6752786ae1f55a",
+      "bytes": 14098
+    },
+    {
+      "original_path": "FastGen-AFM/resources/stability_audit_protocol.json",
+      "git_path": "resources/stability_audit_protocol.json",
+      "sha256": "dfc9ddef9e97923e9d8c0f22e56605bfed49c6229e2e1fb30083ddc2a1ba1d09",
+      "bytes": 2219
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/first_checkpoint_check.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/first_checkpoint_check.json",
+      "sha256": "5d167166aba58647437d719eade68d276046c4818a27d19ed0fae287cc4175f6",
+      "bytes": 395
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/gpu0_5k_health.txt",
+      "git_path": "runs/afm_unet128_50k_seed20261001/gpu0_5k_health.txt",
+      "sha256": "6fc8ef3df21ef60b7c3230419b02fa842a44e301488f33a166284d52a4ecc639",
+      "bytes": 5300
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/launch.log",
+      "git_path": "runs/afm_unet128_50k_seed20261001/launch.log",
+      "sha256": "2d2f15636db503c068b55583eea8e144357b5b54e09addde1661eaf16733cc14",
+      "bytes": 247982
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/milestone_005000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/milestone_005000.json",
+      "sha256": "d432d9e539eb1e12263cb52ad193c445f491bfd567ce719167a296c9de53e97e",
+      "bytes": 728
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/milestone_010000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/milestone_010000.json",
+      "sha256": "15593fe4ef442e5cbcc384a3bdad4091d81a711a4f7c7a0ce3d21604a3370b43",
+      "bytes": 704
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/panels/step001000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/panels/step001000.json",
+      "sha256": "20de3aff3d15b91a5b5f6d6479ad978c6f1193f51a370745ee033970c43624eb",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/panels/step002000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/panels/step002000.json",
+      "sha256": "c398f18839c16454f38c1111b6c993d77c3edb0df11c5fc13c36a71b1b8366e0",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/panels/step003000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/panels/step003000.json",
+      "sha256": "4eee57817bfbc7d3659383ae980d8ff1abe231623f3ebece11cfb012ebc72f8c",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/panels/step004000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/panels/step004000.json",
+      "sha256": "f8e4a3a41f763f14b5762f53796c0163f19880361067f5b18a1640248a5181af",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/panels/step005000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/panels/step005000.json",
+      "sha256": "d95da966fba865100912b17106dfa3ebcdb0c1255e5614f27b3f12b8bd946155",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/panels/step006000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/panels/step006000.json",
+      "sha256": "7bb6975e63385eaee73bc08a6486015a7e408d1b0d9f8354c6fb6b36e88efbfc",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/panels/step007000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/panels/step007000.json",
+      "sha256": "019cc934c9df328d1f0a21a040422e26320a3fa653f05eb2808209d550a67796",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/panels/step008000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/panels/step008000.json",
+      "sha256": "7826b21ea9312c56567aa19793ceaaceb4dcdd92122b899b07b7305b07afc91c",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/panels/step009000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/panels/step009000.json",
+      "sha256": "e4c43447853ed5e007ec6cf6b4539ff2022a98872869895def1bd3b362d24404",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/panels/step010000.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/panels/step010000.json",
+      "sha256": "6f7f59c8008cf5d0db36a8a885e43a633410658cf4825c3d51b1d627fc381fb9",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/parameters.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/parameters.json",
+      "sha256": "c8618c0969bfb3a7f19e75f676c1328d5ba82d231f2bba01b562c5f9526a5688",
+      "bytes": 56
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/record.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/record.json",
+      "sha256": "3e8b360ae62da1ada740a14f82d6081b7b763608b1308c840066451af7c5db64",
+      "bytes": 3006
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/record_interrupt.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/record_interrupt.json",
+      "sha256": "80f82f54595d6547910036ff96e77a89a95d1a1ea164435fd65c0a244ae3bbdc",
+      "bytes": 2710
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/status.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/status.json",
+      "sha256": "2a0a7b70553c7b044663c7ee777f40957dde26c71d06fe3cd26fded48f363f7d",
+      "bytes": 236
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/status_interrupt.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/status_interrupt.json",
+      "sha256": "92f15c3f592d6e8fd443d13a385d988d4fae0ad7eade83ce5e4032da286042c9",
+      "bytes": 58
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/stop_summary.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/stop_summary.json",
+      "sha256": "e605d7f4267b129d296ec45967f31e4f6ff60b38f5607641808414ae887c1477",
+      "bytes": 3146
+    },
+    {
+      "original_path": "FastGen-AFM/runs/afm_unet128_50k_seed20261001/user_stop.json",
+      "git_path": "runs/afm_unet128_50k_seed20261001/user_stop.json",
+      "sha256": "fc79161d12d54e33b0816cc27ae069227fde68736532ff077a814750a8b9c6ad",
+      "bytes": 1698
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audit_cost.jsonl",
+      "git_path": "runs/stability_campaign/candidate1/audit_cost.jsonl",
+      "sha256": "83222ac5ee62ea7080c3b4488a7dcb48eefbb91e726252bbacf5161a332c06ac",
+      "bytes": 867
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/006000/decision.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/006000/decision.json",
+      "sha256": "cfb019c639d05d66239dfd3d47a1e2e34d30101baa7af07b8f6b50529fe09010",
+      "bytes": 440
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/006000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/006000/quantitative_summary.json",
+      "sha256": "fa42296e851d0a5e806f9062fc6ad12417eb9c121282df3017d575b75fa2a25a",
+      "bytes": 72056
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/006000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/006000/visual_review.json",
+      "sha256": "45fa53227678e3621f4376f61861ebccd6850f3a5f10b48d8eef944be885ceed",
+      "bytes": 3555
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/010000/decision.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/010000/decision.json",
+      "sha256": "5be29a58e83ca365c0dc7b315b8e33da80fa261f926799fe375631214c44641e",
+      "bytes": 444
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/010000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/010000/quantitative_summary.json",
+      "sha256": "90a36a3e3cd7f0bc905b977caab36f5843e989f3a7fa9352172675c4373472a7",
+      "bytes": 71708
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/010000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/010000/visual_review.json",
+      "sha256": "e35c1486af5bca4484314a5040b6708125783c691be2e7e7de05ba068848ed33",
+      "bytes": 6348
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/014000/decision.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/014000/decision.json",
+      "sha256": "8a599d91f5463a7f838f8be670c4857de389c1c6c72f58ff9b5d4481daf60b0f",
+      "bytes": 440
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/014000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/014000/quantitative_summary.json",
+      "sha256": "0996e9aa2f5334a2846c6bf811cb20bbf44a2f619af18fe615d6dad22b63121e",
+      "bytes": 71654
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/014000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/014000/visual_review.json",
+      "sha256": "d67bd37b0cd0e1b1aa5a556b0119260ca1c6af3a9434f143eab43d741e557c60",
+      "bytes": 6390
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/018000/decision.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/018000/decision.json",
+      "sha256": "ed4a5f1a7a0b7723850d1e548de676ee3c4d59243078cedd251501d89c7cf1c5",
+      "bytes": 493
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/018000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/018000/quantitative_summary.json",
+      "sha256": "1e692dcb1cbb48fcd1d012a2c5aae3259cac997bd5671b8ea29570ed08c10e6a",
+      "bytes": 71672
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/audits/018000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate1/audits/018000/visual_review.json",
+      "sha256": "e9a278a3f1c5ed2b435a09b0098f3f69cba745ba5ac8a4130b2a6c6be0e3caf1",
+      "bytes": 6653
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/checkpoint500_check.json",
+      "git_path": "runs/stability_campaign/candidate1/checkpoint500_check.json",
+      "sha256": "64a51831646b4ba3f2b67d3f53ab1a26a5c64734c591ece2fda6dbf6bbb95000",
+      "bytes": 523
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/final.json",
+      "git_path": "runs/stability_campaign/candidate1/final.json",
+      "sha256": "03c095effc6634a5ef80d785c48fb5b7551b7dc3834b645f5964e4419eeb78dc",
+      "bytes": 604
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panel12000_review.json",
+      "git_path": "runs/stability_campaign/candidate1/panel12000_review.json",
+      "sha256": "82cfdf83e15d39a5f5e6b55e0a89a46afc155ada43c5eb2e9e2c2bab8e4d9cc8",
+      "bytes": 286
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panel16000_review.json",
+      "git_path": "runs/stability_campaign/candidate1/panel16000_review.json",
+      "sha256": "2e6710650d44070322cbc039faee19c46e801375a0743cd816c035dc1ed43511",
+      "bytes": 272
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panel2000_review.json",
+      "git_path": "runs/stability_campaign/candidate1/panel2000_review.json",
+      "sha256": "8ef2a5dc84b5f7c47f35add8eff81b28efc4b627d2c042b2259003c37678ea8d",
+      "bytes": 380
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panel4000_review.json",
+      "git_path": "runs/stability_campaign/candidate1/panel4000_review.json",
+      "sha256": "8ca1c11f90275be228d8c9ea2b8a916f1aef476694d5aa7b29c0f5ab033a3ed0",
+      "bytes": 287
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panel8000_review.json",
+      "git_path": "runs/stability_campaign/candidate1/panel8000_review.json",
+      "sha256": "e90f7256d5df3ab0c5ce254965cb2a47a098cb84321b5ebf0acae2c6878a1e61",
+      "bytes": 339
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panels/002000.json",
+      "git_path": "runs/stability_campaign/candidate1/panels/002000.json",
+      "sha256": "c398f18839c16454f38c1111b6c993d77c3edb0df11c5fc13c36a71b1b8366e0",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panels/004000.json",
+      "git_path": "runs/stability_campaign/candidate1/panels/004000.json",
+      "sha256": "f8e4a3a41f763f14b5762f53796c0163f19880361067f5b18a1640248a5181af",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panels/006000.json",
+      "git_path": "runs/stability_campaign/candidate1/panels/006000.json",
+      "sha256": "7bb6975e63385eaee73bc08a6486015a7e408d1b0d9f8354c6fb6b36e88efbfc",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panels/008000.json",
+      "git_path": "runs/stability_campaign/candidate1/panels/008000.json",
+      "sha256": "7826b21ea9312c56567aa19793ceaaceb4dcdd92122b899b07b7305b07afc91c",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panels/010000.json",
+      "git_path": "runs/stability_campaign/candidate1/panels/010000.json",
+      "sha256": "6f7f59c8008cf5d0db36a8a885e43a633410658cf4825c3d51b1d627fc381fb9",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panels/012000.json",
+      "git_path": "runs/stability_campaign/candidate1/panels/012000.json",
+      "sha256": "c3f92bb071108234060caaed0b277e584bf3566d62a0a343f7b0ad936c2abfa7",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panels/014000.json",
+      "git_path": "runs/stability_campaign/candidate1/panels/014000.json",
+      "sha256": "aac347813f787c3cdfb5135f623271a3d2cccc7d13ae0a29f87e0b3614da4340",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panels/016000.json",
+      "git_path": "runs/stability_campaign/candidate1/panels/016000.json",
+      "sha256": "345daa5f66355884b02ec12190cd08f51f39b6fea8a0475ab946b8fa8f5f8d02",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/panels/018000.json",
+      "git_path": "runs/stability_campaign/candidate1/panels/018000.json",
+      "sha256": "b1c5e98e805a29d5011a122ea4df75765ea75dccd368cef1eccff7de8510d600",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/parameters.json",
+      "git_path": "runs/stability_campaign/candidate1/parameters.json",
+      "sha256": "c8618c0969bfb3a7f19e75f676c1328d5ba82d231f2bba01b562c5f9526a5688",
+      "bytes": 56
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/record.json",
+      "git_path": "runs/stability_campaign/candidate1/record.json",
+      "sha256": "573b3dc8c046022a7446ff980b2084bdfb4659833d74cb8f43f83f11e4fa57d4",
+      "bytes": 2878
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/status.json",
+      "git_path": "runs/stability_campaign/candidate1/status.json",
+      "sha256": "cb844428c3e5e64df5da7bc22ad638f0f8e740a25431b24373386543be2479fa",
+      "bytes": 1342
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate1/summary.json",
+      "git_path": "runs/stability_campaign/candidate1/summary.json",
+      "sha256": "a3856893d948cda9daf041ff1885ccf607de98061524e1cd756ec67539226cba",
+      "bytes": 1523
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audit_cost.jsonl",
+      "git_path": "runs/stability_campaign/candidate2/audit_cost.jsonl",
+      "sha256": "3a7e71a19812e14861d9a9305b468be68f6ce012187d2e384086634446a5df27",
+      "bytes": 865
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/006000/decision.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/006000/decision.json",
+      "sha256": "382e7ce7528ee273f4b2e5b28a9461b39ae4123f1aec7c238959f7eb82314162",
+      "bytes": 377
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/006000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/006000/quantitative_summary.json",
+      "sha256": "52f3299601970c23ea8e076417f132f265655cc30fde125d88f03cfc49e85551",
+      "bytes": 71854
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/006000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/006000/visual_review.json",
+      "sha256": "ff597d43394761deb514b1822255e39e1f7a05a73b07c9abe3767e1a6aad84a9",
+      "bytes": 4872
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/010000/decision.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/010000/decision.json",
+      "sha256": "a05fa7bec527e9b60b89b5be501a85ae01c30a39ef00c53e47b07ab9c26dca09",
+      "bytes": 506
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/010000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/010000/quantitative_summary.json",
+      "sha256": "8e619f07fa21d9c674fe8b49ac301efcdf229d987f864ef8cbdbc204883e4129",
+      "bytes": 72077
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/010000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/010000/visual_review.json",
+      "sha256": "55fbc838f23efedbfe83dd2aed5046f417a9bee688681c3d97ad5430c99400af",
+      "bytes": 6658
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/014000/decision.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/014000/decision.json",
+      "sha256": "21b5971df169c3c69b20b78f18bd9bf0542ecaa76d3cda4d6ece418f4109f752",
+      "bytes": 474
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/014000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/014000/quantitative_summary.json",
+      "sha256": "c55dabf7ebed80a0b41eafb68e000b8eed7b4a114a651ae35912780882b6436a",
+      "bytes": 71576
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/014000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/014000/visual_review.json",
+      "sha256": "41f5889898e8dbf19519195d75e2a8b3fe7d0f9653342bb0e2ccf29df84b60d9",
+      "bytes": 6640
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/018000/decision.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/018000/decision.json",
+      "sha256": "f86f61f293b86ca499b3b7d3ec5d7155511205d21688d7648569cccf175a203f",
+      "bytes": 465
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/018000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/018000/quantitative_summary.json",
+      "sha256": "c47debf3a1c16ca14ffa4c1b66674e276076e8837ba3226d12be6f0ed03d7aac",
+      "bytes": 71825
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/audits/018000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate2/audits/018000/visual_review.json",
+      "sha256": "c6349ae5644d092ee352d8cb551d5144a36f26b508c91c4732b5e4b4b842a347",
+      "bytes": 6894
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/final.json",
+      "git_path": "runs/stability_campaign/candidate2/final.json",
+      "sha256": "6d0ffc7fdad0743823717facbfe170b942b8a574835b75b26b6a4eccb5d88594",
+      "bytes": 602
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panel12000_review.json",
+      "git_path": "runs/stability_campaign/candidate2/panel12000_review.json",
+      "sha256": "4cb93987b8988df9f4e73052f781482f6c069059a95a35778599b4d4735c6fd9",
+      "bytes": 353
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panel2000_review.json",
+      "git_path": "runs/stability_campaign/candidate2/panel2000_review.json",
+      "sha256": "468d0c20f21e2f1d2fb87ea69d2aaaa2961a60c985c9a480b6a754cbfe854e01",
+      "bytes": 273
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panel4000_review.json",
+      "git_path": "runs/stability_campaign/candidate2/panel4000_review.json",
+      "sha256": "3372cecd468bf39b702070628d8bb086f28a896faef744836643147c3e0d16a0",
+      "bytes": 368
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panel8000_review.json",
+      "git_path": "runs/stability_campaign/candidate2/panel8000_review.json",
+      "sha256": "da548b56516857e4857e45039a762a9d47717c021cbe0f77fa9b084163f48684",
+      "bytes": 368
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panels/002000.json",
+      "git_path": "runs/stability_campaign/candidate2/panels/002000.json",
+      "sha256": "c398f18839c16454f38c1111b6c993d77c3edb0df11c5fc13c36a71b1b8366e0",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panels/004000.json",
+      "git_path": "runs/stability_campaign/candidate2/panels/004000.json",
+      "sha256": "f8e4a3a41f763f14b5762f53796c0163f19880361067f5b18a1640248a5181af",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panels/006000.json",
+      "git_path": "runs/stability_campaign/candidate2/panels/006000.json",
+      "sha256": "7bb6975e63385eaee73bc08a6486015a7e408d1b0d9f8354c6fb6b36e88efbfc",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panels/008000.json",
+      "git_path": "runs/stability_campaign/candidate2/panels/008000.json",
+      "sha256": "7826b21ea9312c56567aa19793ceaaceb4dcdd92122b899b07b7305b07afc91c",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panels/010000.json",
+      "git_path": "runs/stability_campaign/candidate2/panels/010000.json",
+      "sha256": "6f7f59c8008cf5d0db36a8a885e43a633410658cf4825c3d51b1d627fc381fb9",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panels/012000.json",
+      "git_path": "runs/stability_campaign/candidate2/panels/012000.json",
+      "sha256": "c3f92bb071108234060caaed0b277e584bf3566d62a0a343f7b0ad936c2abfa7",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panels/014000.json",
+      "git_path": "runs/stability_campaign/candidate2/panels/014000.json",
+      "sha256": "aac347813f787c3cdfb5135f623271a3d2cccc7d13ae0a29f87e0b3614da4340",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panels/016000.json",
+      "git_path": "runs/stability_campaign/candidate2/panels/016000.json",
+      "sha256": "345daa5f66355884b02ec12190cd08f51f39b6fea8a0475ab946b8fa8f5f8d02",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/panels/018000.json",
+      "git_path": "runs/stability_campaign/candidate2/panels/018000.json",
+      "sha256": "b1c5e98e805a29d5011a122ea4df75765ea75dccd368cef1eccff7de8510d600",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/parameters.json",
+      "git_path": "runs/stability_campaign/candidate2/parameters.json",
+      "sha256": "c8618c0969bfb3a7f19e75f676c1328d5ba82d231f2bba01b562c5f9526a5688",
+      "bytes": 56
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/record.json",
+      "git_path": "runs/stability_campaign/candidate2/record.json",
+      "sha256": "5489f13f9db881955c27eb53e132ecb40a4b7acbd02ec3b207a32108d223a8b6",
+      "bytes": 2877
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/status.json",
+      "git_path": "runs/stability_campaign/candidate2/status.json",
+      "sha256": "dba4b07166f2709d915f4da5efb94926e9263a4bab7e2f26664bf672db1f7a23",
+      "bytes": 1338
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate2/summary.json",
+      "git_path": "runs/stability_campaign/candidate2/summary.json",
+      "sha256": "bd366b997720a8903215b4b60fa30b5eb00ad43f188ca28c2bb8c6b8ba45283b",
+      "bytes": 1744
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/audit_cost.jsonl",
+      "git_path": "runs/stability_campaign/candidate3/audit_cost.jsonl",
+      "sha256": "3d93df63803c06a6cb30ce1c8e58042cd5e9e72a25e21df1cf823b013d211262",
+      "bytes": 650
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/audits/006000/decision.json",
+      "git_path": "runs/stability_campaign/candidate3/audits/006000/decision.json",
+      "sha256": "01c5b6ae95ce67132a8da5194affdd486da78f6163f2244a52bd961ec99472bf",
+      "bytes": 440
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/audits/006000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate3/audits/006000/quantitative_summary.json",
+      "sha256": "f381e9505da59c274f1d97e012bf2a6a49f63b8f3244a0175f47fc729caf582a",
+      "bytes": 70605
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/audits/006000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate3/audits/006000/visual_review.json",
+      "sha256": "49a9358fd8773606c6d4c8f7a751ff118ca00b3304f874430557eaf414d7309e",
+      "bytes": 6568
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/audits/010000/decision.json",
+      "git_path": "runs/stability_campaign/candidate3/audits/010000/decision.json",
+      "sha256": "776ddfc611401443c923ef0d8f1596cf8fe8b55a8da1054565344e85bbbc1a58",
+      "bytes": 496
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/audits/010000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate3/audits/010000/quantitative_summary.json",
+      "sha256": "0aec7b18d2a31522107e92e6d82ee8cb9ce881e51e3fc0df6b0e8107a225a2ab",
+      "bytes": 70025
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/audits/010000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate3/audits/010000/visual_review.json",
+      "sha256": "40697ba2a37b2d8fa95d0507f61617cb91577bfb1c8d284ff05867af10c13ca4",
+      "bytes": 6970
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/audits/014000/decision.json",
+      "git_path": "runs/stability_campaign/candidate3/audits/014000/decision.json",
+      "sha256": "22986f6a64219a049353076b30b256b92ee372bd0b0a90ffd741b0c78c53cf7b",
+      "bytes": 512
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/audits/014000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate3/audits/014000/quantitative_summary.json",
+      "sha256": "26eb93678c8c9563724cb1c33870387b23cc9aaa8fa9dafd9bf8a00ca4bf6918",
+      "bytes": 70188
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/audits/014000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate3/audits/014000/visual_review.json",
+      "sha256": "c632903c553baba38a7b74538fc73294945839f90aea74c3691e8cdf84163705",
+      "bytes": 7173
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/final.json",
+      "git_path": "runs/stability_campaign/candidate3/final.json",
+      "sha256": "abdca3a127f0d7e653e26586e398d56834710f105f0aca544b17c245efafbfc5",
+      "bytes": 603
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/panel12000_review.json",
+      "git_path": "runs/stability_campaign/candidate3/panel12000_review.json",
+      "sha256": "ac04974eb7102716bcfe3da73c17ee026f0d70ca3070a4925388f3f2ae66f5e0",
+      "bytes": 343
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/panel2000_review.json",
+      "git_path": "runs/stability_campaign/candidate3/panel2000_review.json",
+      "sha256": "e26e0df2e6d5fe22310bc9f5c342877d0772eb8002222b3bce163ee255733ba6",
+      "bytes": 355
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/panel4000_review.json",
+      "git_path": "runs/stability_campaign/candidate3/panel4000_review.json",
+      "sha256": "fe025d76cba4f76c4ffeda58c336f5b8eb46defd3301e666bd29be9a7aaa1f75",
+      "bytes": 354
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/panel8000_review.json",
+      "git_path": "runs/stability_campaign/candidate3/panel8000_review.json",
+      "sha256": "189f5cdf1d985d480d50890f950d5914548a5a5ec29a0e7bd400b9bf95e2bc4b",
+      "bytes": 410
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/panels/002000.json",
+      "git_path": "runs/stability_campaign/candidate3/panels/002000.json",
+      "sha256": "c398f18839c16454f38c1111b6c993d77c3edb0df11c5fc13c36a71b1b8366e0",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/panels/004000.json",
+      "git_path": "runs/stability_campaign/candidate3/panels/004000.json",
+      "sha256": "f8e4a3a41f763f14b5762f53796c0163f19880361067f5b18a1640248a5181af",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/panels/006000.json",
+      "git_path": "runs/stability_campaign/candidate3/panels/006000.json",
+      "sha256": "7bb6975e63385eaee73bc08a6486015a7e408d1b0d9f8354c6fb6b36e88efbfc",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/panels/008000.json",
+      "git_path": "runs/stability_campaign/candidate3/panels/008000.json",
+      "sha256": "7826b21ea9312c56567aa19793ceaaceb4dcdd92122b899b07b7305b07afc91c",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/panels/010000.json",
+      "git_path": "runs/stability_campaign/candidate3/panels/010000.json",
+      "sha256": "6f7f59c8008cf5d0db36a8a885e43a633410658cf4825c3d51b1d627fc381fb9",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/panels/012000.json",
+      "git_path": "runs/stability_campaign/candidate3/panels/012000.json",
+      "sha256": "c3f92bb071108234060caaed0b277e584bf3566d62a0a343f7b0ad936c2abfa7",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/panels/014000.json",
+      "git_path": "runs/stability_campaign/candidate3/panels/014000.json",
+      "sha256": "aac347813f787c3cdfb5135f623271a3d2cccc7d13ae0a29f87e0b3614da4340",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/parameters.json",
+      "git_path": "runs/stability_campaign/candidate3/parameters.json",
+      "sha256": "c8618c0969bfb3a7f19e75f676c1328d5ba82d231f2bba01b562c5f9526a5688",
+      "bytes": 56
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/record.json",
+      "git_path": "runs/stability_campaign/candidate3/record.json",
+      "sha256": "eb30dcbc9a331179dde099630f2d1cc94d28443db51bb6fccc08be798c0c459e",
+      "bytes": 3336
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/status.json",
+      "git_path": "runs/stability_campaign/candidate3/status.json",
+      "sha256": "6b109c655b916fa478566fa491bee193089a4b58d7c9732962d7727db50ac452",
+      "bytes": 1341
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate3/summary.json",
+      "git_path": "runs/stability_campaign/candidate3/summary.json",
+      "sha256": "279912f3a2f79a86d65d80e3596bd94280a50f32ee0c78779eff6960fc8df858",
+      "bytes": 1735
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audit_cost.jsonl",
+      "git_path": "runs/stability_campaign/candidate4/audit_cost.jsonl",
+      "sha256": "db5798575d34fbe40a1afeb1303da9e1a4525737e2ddcbbd2ca93035033e8ff2",
+      "bytes": 867
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/006000/decision.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/006000/decision.json",
+      "sha256": "0348dd5f07568f787b8e3f916ee0159dc1730009ec0daeac6f33a5c96adac3d7",
+      "bytes": 401
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/006000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/006000/quantitative_summary.json",
+      "sha256": "64911d641f066e3167cff6604b865c54c703cf7c48bd35e870cfe0b85e8e3361",
+      "bytes": 72100
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/006000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/006000/visual_review.json",
+      "sha256": "1c3901ce9a21facd5c354630296fef7bb2a7bf710019a5f4502b6cac7890fe29",
+      "bytes": 6485
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/010000/decision.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/010000/decision.json",
+      "sha256": "329d2ba45ed6b2f009067d25f2a7651ec7e21b9ae55f273f0909bf4f58a3dc5a",
+      "bytes": 414
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/010000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/010000/quantitative_summary.json",
+      "sha256": "a460fdf343836adab1ca9f9eca70d15d54f07307f1a8ccb55fb6a3e159527980",
+      "bytes": 71260
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/010000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/010000/visual_review.json",
+      "sha256": "8b5277920aacf1ea99a6e10ff079d044c959b61d9acb12f26d70d1b272b72173",
+      "bytes": 6563
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/014000/decision.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/014000/decision.json",
+      "sha256": "d52ac91bfda206ebeacd8c823857102df7ef5167f529c9bcec2029cecb98f802",
+      "bytes": 432
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/014000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/014000/quantitative_summary.json",
+      "sha256": "ba727e0032a3a1c6713d9b69a4c651095a2ea6fdfb13195244a627a71f31e3f4",
+      "bytes": 70638
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/014000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/014000/visual_review.json",
+      "sha256": "a6ff2332baf54ea8bb8317785d7e6be143f0152f853924a4b5774f5abb3134a1",
+      "bytes": 6657
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/018000/decision.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/018000/decision.json",
+      "sha256": "878d2ebd7293da2836a376c6a974aabf663c2d47ef6f1c2a69540589d3ca59a4",
+      "bytes": 455
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/018000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/018000/quantitative_summary.json",
+      "sha256": "cd796671435dc8e67393c4d11e6cc6cf7fe04a8dd595a81450c51fe223512b17",
+      "bytes": 70137
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/audits/018000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate4/audits/018000/visual_review.json",
+      "sha256": "afff77d19e8dc86db5f93861c88762f53799df93059ce197f1f25e2ac93c2935",
+      "bytes": 6654
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/final.json",
+      "git_path": "runs/stability_campaign/candidate4/final.json",
+      "sha256": "276ad5da4fae3345ee59437dc334585466d49316327539818488cdb56eea03a7",
+      "bytes": 603
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panel2000_review.json",
+      "git_path": "runs/stability_campaign/candidate4/panel2000_review.json",
+      "sha256": "4f273673f2fd9d3e835859316e62c1f053d09d2a3a310639917b46a37e3bd5ec",
+      "bytes": 310
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panel4000_review.json",
+      "git_path": "runs/stability_campaign/candidate4/panel4000_review.json",
+      "sha256": "479651ecc2082adea086a02e22738dcb18ad3bde624700b1382a11b9d3cb1b97",
+      "bytes": 306
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panel8000_review.json",
+      "git_path": "runs/stability_campaign/candidate4/panel8000_review.json",
+      "sha256": "3d9d8f71bfc831c3c07eaebcde25fe4b9157750ebaa29220bde81de02bf435c0",
+      "bytes": 333
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panels/002000.json",
+      "git_path": "runs/stability_campaign/candidate4/panels/002000.json",
+      "sha256": "c398f18839c16454f38c1111b6c993d77c3edb0df11c5fc13c36a71b1b8366e0",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panels/004000.json",
+      "git_path": "runs/stability_campaign/candidate4/panels/004000.json",
+      "sha256": "f8e4a3a41f763f14b5762f53796c0163f19880361067f5b18a1640248a5181af",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panels/006000.json",
+      "git_path": "runs/stability_campaign/candidate4/panels/006000.json",
+      "sha256": "7bb6975e63385eaee73bc08a6486015a7e408d1b0d9f8354c6fb6b36e88efbfc",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panels/008000.json",
+      "git_path": "runs/stability_campaign/candidate4/panels/008000.json",
+      "sha256": "7826b21ea9312c56567aa19793ceaaceb4dcdd92122b899b07b7305b07afc91c",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panels/010000.json",
+      "git_path": "runs/stability_campaign/candidate4/panels/010000.json",
+      "sha256": "6f7f59c8008cf5d0db36a8a885e43a633410658cf4825c3d51b1d627fc381fb9",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panels/012000.json",
+      "git_path": "runs/stability_campaign/candidate4/panels/012000.json",
+      "sha256": "c3f92bb071108234060caaed0b277e584bf3566d62a0a343f7b0ad936c2abfa7",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panels/014000.json",
+      "git_path": "runs/stability_campaign/candidate4/panels/014000.json",
+      "sha256": "aac347813f787c3cdfb5135f623271a3d2cccc7d13ae0a29f87e0b3614da4340",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panels/016000.json",
+      "git_path": "runs/stability_campaign/candidate4/panels/016000.json",
+      "sha256": "345daa5f66355884b02ec12190cd08f51f39b6fea8a0475ab946b8fa8f5f8d02",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/panels/018000.json",
+      "git_path": "runs/stability_campaign/candidate4/panels/018000.json",
+      "sha256": "b1c5e98e805a29d5011a122ea4df75765ea75dccd368cef1eccff7de8510d600",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/parameters.json",
+      "git_path": "runs/stability_campaign/candidate4/parameters.json",
+      "sha256": "c8618c0969bfb3a7f19e75f676c1328d5ba82d231f2bba01b562c5f9526a5688",
+      "bytes": 56
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/record.json",
+      "git_path": "runs/stability_campaign/candidate4/record.json",
+      "sha256": "b0fa7a85cdca24a95b6c072361eabaa04357f7a63c8096c640ff084afdfd49d4",
+      "bytes": 2879
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/status.json",
+      "git_path": "runs/stability_campaign/candidate4/status.json",
+      "sha256": "39ca2a402fa8be71fb2a1c00aa441955959274926626b934438852350bef8cf5",
+      "bytes": 1342
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate4/summary.json",
+      "git_path": "runs/stability_campaign/candidate4/summary.json",
+      "sha256": "770d0f4fa847de95379ff85b000e9a83a0590348c0456aa88884b14b0bfea28c",
+      "bytes": 1717
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audit_cost.jsonl",
+      "git_path": "runs/stability_campaign/candidate5/audit_cost.jsonl",
+      "sha256": "6c493b2ed94905eba76fe091cf3822d31ddeaba5abcf22e0ca5705138ff353d4",
+      "bytes": 878
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/006000/decision.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/006000/decision.json",
+      "sha256": "e6ba3afc8c98b53daf8208545eed9d6f37750f5a18b69dfcd8de431c807cd931",
+      "bytes": 376
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/006000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/006000/quantitative_summary.json",
+      "sha256": "44dfa603ee2063402aba498d502c68d525ebe0ffe96c8d72a072862b511dd8e5",
+      "bytes": 72071
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/006000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/006000/visual_review.json",
+      "sha256": "640d5b35769c80d39b5b47cbf101874c6bdba903b00d40cec127488e350d9622",
+      "bytes": 6553
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/010000/decision.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/010000/decision.json",
+      "sha256": "3cf4616c4b91c76d4fa4f688e5ec641013e484565009df7057d1efbf0ae83042",
+      "bytes": 379
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/010000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/010000/quantitative_summary.json",
+      "sha256": "5baa0723268fced39e321b625a5ffb3c83dc9cbeb46ae4e6def491937c261e77",
+      "bytes": 70905
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/010000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/010000/visual_review.json",
+      "sha256": "14bd9cda3986db0b7e0b357c41204a89a10094b7f7099a85e4f13758f2396c8d",
+      "bytes": 6692
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/014000/decision.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/014000/decision.json",
+      "sha256": "a8e708504fccaca18b738064e9f50fcc3dd1b30669962a76ca9eecad196e3836",
+      "bytes": 504
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/014000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/014000/quantitative_summary.json",
+      "sha256": "cbeb282e20d5bf1c835ec75ea2c31c6e4cf60658fbdad0f81b140fafad2a13bb",
+      "bytes": 69959
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/014000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/014000/visual_review.json",
+      "sha256": "1d3c0372d554013ef517cc1373cdb45c272d9279e6131a683fc5e6471fb51a96",
+      "bytes": 6741
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/018000/decision.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/018000/decision.json",
+      "sha256": "5abb53d8afd2610edb4b99beb1e48af2dd4567f8084fe9d1241690af76b5c656",
+      "bytes": 428
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/018000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/018000/quantitative_summary.json",
+      "sha256": "7a9bc011ca6acf33da3f973cf07d590399abc9b6e8fcdd5266be1cd72e5605a2",
+      "bytes": 69976
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/audits/018000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate5/audits/018000/visual_review.json",
+      "sha256": "3d6c24e0b08ae0519c0bb7c1b39830cc01e637298f6b0b3bedb418cbf8434bee",
+      "bytes": 6924
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/final.json",
+      "git_path": "runs/stability_campaign/candidate5/final.json",
+      "sha256": "0be6bb7d403864d921739ed6130a6874368191cece05453ff23d35ac6b48599f",
+      "bytes": 602
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/panels/002000.json",
+      "git_path": "runs/stability_campaign/candidate5/panels/002000.json",
+      "sha256": "c398f18839c16454f38c1111b6c993d77c3edb0df11c5fc13c36a71b1b8366e0",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/panels/004000.json",
+      "git_path": "runs/stability_campaign/candidate5/panels/004000.json",
+      "sha256": "f8e4a3a41f763f14b5762f53796c0163f19880361067f5b18a1640248a5181af",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/panels/006000.json",
+      "git_path": "runs/stability_campaign/candidate5/panels/006000.json",
+      "sha256": "7bb6975e63385eaee73bc08a6486015a7e408d1b0d9f8354c6fb6b36e88efbfc",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/panels/008000.json",
+      "git_path": "runs/stability_campaign/candidate5/panels/008000.json",
+      "sha256": "7826b21ea9312c56567aa19793ceaaceb4dcdd92122b899b07b7305b07afc91c",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/panels/010000.json",
+      "git_path": "runs/stability_campaign/candidate5/panels/010000.json",
+      "sha256": "6f7f59c8008cf5d0db36a8a885e43a633410658cf4825c3d51b1d627fc381fb9",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/panels/012000.json",
+      "git_path": "runs/stability_campaign/candidate5/panels/012000.json",
+      "sha256": "c3f92bb071108234060caaed0b277e584bf3566d62a0a343f7b0ad936c2abfa7",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/panels/014000.json",
+      "git_path": "runs/stability_campaign/candidate5/panels/014000.json",
+      "sha256": "aac347813f787c3cdfb5135f623271a3d2cccc7d13ae0a29f87e0b3614da4340",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/panels/016000.json",
+      "git_path": "runs/stability_campaign/candidate5/panels/016000.json",
+      "sha256": "345daa5f66355884b02ec12190cd08f51f39b6fea8a0475ab946b8fa8f5f8d02",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/panels/018000.json",
+      "git_path": "runs/stability_campaign/candidate5/panels/018000.json",
+      "sha256": "b1c5e98e805a29d5011a122ea4df75765ea75dccd368cef1eccff7de8510d600",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/parameters.json",
+      "git_path": "runs/stability_campaign/candidate5/parameters.json",
+      "sha256": "c8618c0969bfb3a7f19e75f676c1328d5ba82d231f2bba01b562c5f9526a5688",
+      "bytes": 56
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/record.json",
+      "git_path": "runs/stability_campaign/candidate5/record.json",
+      "sha256": "b0764d5d675195d1823f2eda781388ca96d312b81c2e98c3eedae1d07edba6fe",
+      "bytes": 3660
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/status.json",
+      "git_path": "runs/stability_campaign/candidate5/status.json",
+      "sha256": "313b0be1f0115b91e7e6cfa253d0184aece93bac418d41334d3969ac6ee17187",
+      "bytes": 1351
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate5/summary.json",
+      "git_path": "runs/stability_campaign/candidate5/summary.json",
+      "sha256": "946cd00ba4f5b23a35618c8677dd86bf3a1e14eb2e86ec953e94a56c715ab268",
+      "bytes": 2691
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audit_cost.jsonl",
+      "git_path": "runs/stability_campaign/candidate6/audit_cost.jsonl",
+      "sha256": "79be1b4383c683218da1a1ee4ecf48bd5bf24bfd8180f6496529ccf39aa1379b",
+      "bytes": 878
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/006000/decision.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/006000/decision.json",
+      "sha256": "19f2c908921eb53cdc4d0da907c198a43a98f1143c4a86ded2316e16a6a7f330",
+      "bytes": 307
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/006000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/006000/quantitative_summary.json",
+      "sha256": "378222aa6859034d590130c85f30ffb18570a01e61f07d9cca7e79c98f928c8d",
+      "bytes": 71897
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/006000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/006000/visual_review.json",
+      "sha256": "40b3a708e4f6f3ab1fd1631c3f8c8d1a577c672a4ea0ce9ac9ba51227fc93c0c",
+      "bytes": 6718
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/010000/decision.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/010000/decision.json",
+      "sha256": "b5603241ada105b918975d89d063d5d218c604fa9cd70def1c51f2c6a9f46ce1",
+      "bytes": 357
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/010000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/010000/quantitative_summary.json",
+      "sha256": "028da55ed334840ece63aeaf0e12e6bc9de742ff867a354af8376a5fd4c702a8",
+      "bytes": 70232
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/010000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/010000/visual_review.json",
+      "sha256": "1e37f5116df2cd1ae6aece8ffbf2c90afe541b7abfb1df3149478c60397b2cab",
+      "bytes": 6955
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/014000/decision.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/014000/decision.json",
+      "sha256": "9b1d39039b385e775cb4f848f1f8f3ece5fc4d75e0d3a7f308d71eca175acd64",
+      "bytes": 369
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/014000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/014000/quantitative_summary.json",
+      "sha256": "f94f10edef857a5ef65785615db9b958af64937e5afdd284f2ca69e0418025a3",
+      "bytes": 70018
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/014000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/014000/visual_review.json",
+      "sha256": "e4a1f9610a9882c784c2c8ccde1041ee1ef822cc88fac8db76958552edc882b2",
+      "bytes": 6924
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/018000/decision.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/018000/decision.json",
+      "sha256": "fcd032f6c666967bd8a945963d2c106e5ca50ceef2a06b9a3226ac0add3e131f",
+      "bytes": 384
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/018000/quantitative_summary.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/018000/quantitative_summary.json",
+      "sha256": "88ce1914068243421e453642992d9517915d373e9bc6f98d61703359e0a895bc",
+      "bytes": 70167
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/audits/018000/visual_review.json",
+      "git_path": "runs/stability_campaign/candidate6/audits/018000/visual_review.json",
+      "sha256": "cc7c95357bdfc509bbab7e3368a3e81c0286118e6004050ef355b1cb5dd1b8fc",
+      "bytes": 7061
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/final.json",
+      "git_path": "runs/stability_campaign/candidate6/final.json",
+      "sha256": "0e4abf8f5a48e672736ea819f37b9b4db411b4eb81bdbb889264014c80e4b3e0",
+      "bytes": 609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/panels/002000.json",
+      "git_path": "runs/stability_campaign/candidate6/panels/002000.json",
+      "sha256": "c398f18839c16454f38c1111b6c993d77c3edb0df11c5fc13c36a71b1b8366e0",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/panels/004000.json",
+      "git_path": "runs/stability_campaign/candidate6/panels/004000.json",
+      "sha256": "f8e4a3a41f763f14b5762f53796c0163f19880361067f5b18a1640248a5181af",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/panels/006000.json",
+      "git_path": "runs/stability_campaign/candidate6/panels/006000.json",
+      "sha256": "7bb6975e63385eaee73bc08a6486015a7e408d1b0d9f8354c6fb6b36e88efbfc",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/panels/008000.json",
+      "git_path": "runs/stability_campaign/candidate6/panels/008000.json",
+      "sha256": "7826b21ea9312c56567aa19793ceaaceb4dcdd92122b899b07b7305b07afc91c",
+      "bytes": 2608
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/panels/010000.json",
+      "git_path": "runs/stability_campaign/candidate6/panels/010000.json",
+      "sha256": "6f7f59c8008cf5d0db36a8a885e43a633410658cf4825c3d51b1d627fc381fb9",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/panels/012000.json",
+      "git_path": "runs/stability_campaign/candidate6/panels/012000.json",
+      "sha256": "c3f92bb071108234060caaed0b277e584bf3566d62a0a343f7b0ad936c2abfa7",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/panels/014000.json",
+      "git_path": "runs/stability_campaign/candidate6/panels/014000.json",
+      "sha256": "aac347813f787c3cdfb5135f623271a3d2cccc7d13ae0a29f87e0b3614da4340",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/panels/016000.json",
+      "git_path": "runs/stability_campaign/candidate6/panels/016000.json",
+      "sha256": "345daa5f66355884b02ec12190cd08f51f39b6fea8a0475ab946b8fa8f5f8d02",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/panels/018000.json",
+      "git_path": "runs/stability_campaign/candidate6/panels/018000.json",
+      "sha256": "b1c5e98e805a29d5011a122ea4df75765ea75dccd368cef1eccff7de8510d600",
+      "bytes": 2609
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/parameters.json",
+      "git_path": "runs/stability_campaign/candidate6/parameters.json",
+      "sha256": "c8618c0969bfb3a7f19e75f676c1328d5ba82d231f2bba01b562c5f9526a5688",
+      "bytes": 56
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/record.json",
+      "git_path": "runs/stability_campaign/candidate6/record.json",
+      "sha256": "9d3c778d58b043b62e4801bbdcecd3f92524b8dac14cb140332cec1ac943183c",
+      "bytes": 3196
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/status.json",
+      "git_path": "runs/stability_campaign/candidate6/status.json",
+      "sha256": "f1e8574065bd14aca926ac134bb112401b9e218748d91e7c88e0dba0f4b06639",
+      "bytes": 1345
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/candidate6/summary.json",
+      "git_path": "runs/stability_campaign/candidate6/summary.json",
+      "sha256": "08df165e5a9b2bb2bd1c13887220dc2c7792005af7199736c53e659e0e2e7fc6",
+      "bytes": 1895
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/record.json",
+      "git_path": "runs/stability_campaign/record.json",
+      "sha256": "b602359bcd6106df73fee5e5d475aab2d72d34554f66213fd90bf5dc49e4de3d",
+      "bytes": 33707
+    },
+    {
+      "original_path": "FastGen-AFM/runs/stability_campaign/summary.json",
+      "git_path": "runs/stability_campaign/summary.json",
+      "sha256": "a51db46a4f2dfb3dd7070548f79d5ef5515d7f2513d9f6ba7e047cdd4f937646",
+      "bytes": 5359
+    },
+    {
+      "original_path": "FastGen-AFM/scripts/__init__.py",
+      "git_path": "scripts/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/scripts/audit_baseline.py",
+      "git_path": "scripts/audit_baseline.py",
+      "sha256": "a7be869e1412c48e8bd6b723c71c41b8b4f80011195faadea8b47860fe915336",
+      "bytes": 2702
+    },
+    {
+      "original_path": "FastGen-AFM/scripts/check_export.py",
+      "git_path": "scripts/check_export.py",
+      "sha256": "3ddaf3e7fe31111c04e9bd8200fed820cca4872b51e437dd39ec8d3207168b4c",
+      "bytes": 1446
+    },
+    {
+      "original_path": "FastGen-AFM/scripts/freeze_audit.py",
+      "git_path": "scripts/freeze_audit.py",
+      "sha256": "eac6862abadc79a75cc0f5ff82a67dc788e3eac6bba55573b658c20220540ee2",
+      "bytes": 3149
+    },
+    {
+      "original_path": "FastGen-AFM/scripts/qualify.py",
+      "git_path": "scripts/qualify.py",
+      "sha256": "b3132ab48baf4bb5a8d0126aae88a0372466f75d45532e7ba0fdec8532b4a171",
+      "bytes": 5012
+    },
+    {
+      "original_path": "FastGen-AFM/scripts/run_baseline.py",
+      "git_path": "scripts/run_baseline.py",
+      "sha256": "bac10c84637710adc9dc78a2f6d0afb67a4da1f1207d23f51a5ee6526df37c7d",
+      "bytes": 6929
+    },
+    {
+      "original_path": "FastGen-AFM/scripts/run_search.py",
+      "git_path": "scripts/run_search.py",
+      "sha256": "139da11adb991dd1b001aace898a907bae301856c98a16e14467512bb3d12af7",
+      "bytes": 6283
+    },
+    {
+      "original_path": "FastGen-AFM/src/__init__.py",
+      "git_path": "src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/src/utils.py",
+      "git_path": "src/utils.py",
+      "sha256": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f",
+      "bytes": 1027
+    },
+    {
+      "original_path": "FastGen-AFM/tests/test_objective.py",
+      "git_path": "tests/test_objective.py",
+      "sha256": "d637993a7d63d87d2a7821b2f2a41847bcf889f656f544e100bfab47a493bbe5",
+      "bytes": 5885
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/LICENSE.txt",
+      "git_path": "vendor/adversarial-flow-models/LICENSE.txt",
+      "sha256": "bfd77fc3046faf4acb33226a50d5b4074ae68d0d5b8d1ee655d55da38f65e9e0",
+      "bytes": 1079
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/README.md",
+      "git_path": "vendor/adversarial-flow-models/README.md",
+      "sha256": "350266d86a1d3c7ee6b437fe7aa47975bb5b3cce0e830f534747d7997f471de2",
+      "bytes": 7321
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/__init__.py",
+      "git_path": "vendor/adversarial-flow-models/common/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/accumulator.py",
+      "git_path": "vendor/adversarial-flow-models/common/accumulator.py",
+      "sha256": "e82aa3b741980bccc16b1f7c3de55f54842817a6e831fd8522910706164ed97d",
+      "bytes": 4071
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/config.py",
+      "git_path": "vendor/adversarial-flow-models/common/config.py",
+      "sha256": "6e22a9bcbfc8bef7ac5c69f2b78609c0ccb04c946e2b200fdb97eef13033a93e",
+      "bytes": 3322
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/decorators.py",
+      "git_path": "vendor/adversarial-flow-models/common/decorators.py",
+      "sha256": "1faff18cca094dbe1adf520f943bf6f1639ffbf12c0251a227b8188dc4375d6b",
+      "bytes": 3391
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/distributed.py",
+      "git_path": "vendor/adversarial-flow-models/common/distributed.py",
+      "sha256": "8eab1bf63aaafb3f0c2be5ba3399d747b461856828e962fd2535b6222922f9fe",
+      "bytes": 1991
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/entrypoint.py",
+      "git_path": "vendor/adversarial-flow-models/common/entrypoint.py",
+      "sha256": "b8b9b4da87801153dd6ac22a72ab6abb9e9f786b0f7d5b1b639cc962aef50874",
+      "bytes": 512
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/evaluator.py",
+      "git_path": "vendor/adversarial-flow-models/common/evaluator.py",
+      "sha256": "a9ba709c54af1ddcdabf6d8e0a91d8e889c6903d906c560723358cc3b8a34d80",
+      "bytes": 545
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/fs.py",
+      "git_path": "vendor/adversarial-flow-models/common/fs.py",
+      "sha256": "e650662f5652cdd9bab1515900f87489cb5683842f3fd4fe9fbd806cf2ef50bb",
+      "bytes": 8355
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/gradcapture.py",
+      "git_path": "vendor/adversarial-flow-models/common/gradcapture.py",
+      "sha256": "6d67a818ce6efa3dd06fc3ddb25409a6bd9f989f6690643a082b0cfe9018a226",
+      "bytes": 282
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/logger.py",
+      "git_path": "vendor/adversarial-flow-models/common/logger.py",
+      "sha256": "f83f3ab3106fe2aa5815a717a280572232ac1f1b404b49f7664ed512150e3ba2",
+      "bytes": 772
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/metrics.py",
+      "git_path": "vendor/adversarial-flow-models/common/metrics.py",
+      "sha256": "05e0a409373476071a541d9596f310d87af1cf24b187300f8698c61c1ff863b0",
+      "bytes": 11454
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/partition.py",
+      "git_path": "vendor/adversarial-flow-models/common/partition.py",
+      "sha256": "cb13e64ac5e8147ec960946ec1aed883720de5e816e6b95ce65d3682b10a5020",
+      "bytes": 1927
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/persistence/__init__.py",
+      "git_path": "vendor/adversarial-flow-models/common/persistence/__init__.py",
+      "sha256": "2f4eba3280d0a6adceac918bcf8a102a4994a289a836c849c0ee91c27a8ea350",
+      "bytes": 477
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/persistence/dataclass.py",
+      "git_path": "vendor/adversarial-flow-models/common/persistence/dataclass.py",
+      "sha256": "ee5e77b929a1d2fbd68e834411801d1a3bc608d39f86b94002d5e2f62ca062cf",
+      "bytes": 3146
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/persistence/manager.py",
+      "git_path": "vendor/adversarial-flow-models/common/persistence/manager.py",
+      "sha256": "b036e3a1508a98410dd4ad5bf324f06e1ee005f2ae1acbce932526f8935caef1",
+      "bytes": 9171
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/persistence/mixin.py",
+      "git_path": "vendor/adversarial-flow-models/common/persistence/mixin.py",
+      "sha256": "0e8b2651cf68a5e21fd2c1c6c6b508eaf5543d8858373a8958348cdc1caaff9f",
+      "bytes": 1169
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/persistence/utils.py",
+      "git_path": "vendor/adversarial-flow-models/common/persistence/utils.py",
+      "sha256": "30fc6173b97b3c4f3ce29b587ef1cd0c5ecb0ccd5b687d505e9da46332083708",
+      "bytes": 1190
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/schedules.py",
+      "git_path": "vendor/adversarial-flow-models/common/schedules.py",
+      "sha256": "bd5c76da1904798ff23a0dd84086598dc2f16a4a320ce1eaff7e0f738747c713",
+      "bytes": 6359
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/seed.py",
+      "git_path": "vendor/adversarial-flow-models/common/seed.py",
+      "sha256": "573fb5b50aaff2c18806518ca0b7fc76ff5e6abf8c8594d14b4e1ced16bcb786",
+      "bytes": 655
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/writers/__init__.py",
+      "git_path": "vendor/adversarial-flow-models/common/writers/__init__.py",
+      "sha256": "d37c586144ddebfa852302e842c468367b1bd93218c15fc41273f03af1a7c694",
+      "bytes": 269
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/writers/base.py",
+      "git_path": "vendor/adversarial-flow-models/common/writers/base.py",
+      "sha256": "b2c26f982cadbdde9633dbe2d431c36fd8877e6d8b8c4fe20713136892a19063",
+      "bytes": 2003
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/writers/collection.py",
+      "git_path": "vendor/adversarial-flow-models/common/writers/collection.py",
+      "sha256": "89bac9c44d97211cd3afe053e152d347b19bae458d30e82eb2dddbde7bfc7769",
+      "bytes": 1625
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/writers/mixin.py",
+      "git_path": "vendor/adversarial-flow-models/common/writers/mixin.py",
+      "sha256": "3dbf14a16f6dc77f232d7df1fbdc24698cea612f159b08cb5e0da1ef38571a3b",
+      "bytes": 799
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/writers/utils.py",
+      "git_path": "vendor/adversarial-flow-models/common/writers/utils.py",
+      "sha256": "3b56854758276d602a91cca60adf89b6e998910e1efb0d98c94552b39e01d71c",
+      "bytes": 249
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/common/writers/wandb.py",
+      "git_path": "vendor/adversarial-flow-models/common/writers/wandb.py",
+      "sha256": "cca2954c874b0948eba51213b916234ef61d5d743944023fef6019e42b6683cf",
+      "bytes": 3588
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/data/imagenet.py",
+      "git_path": "vendor/adversarial-flow-models/configs/data/imagenet.py",
+      "sha256": "1953d01868972b572df22c7533bd5961750ce5546792a618a9cee123a77cc8ac",
+      "bytes": 383
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/data/imagenet_offline.py",
+      "git_path": "vendor/adversarial-flow-models/configs/data/imagenet_offline.py",
+      "sha256": "cc7d2abf9f5c08e5f42391ba89d24a43eccd042e512dfb8b1d3b09f2323d038c",
+      "bytes": 395
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/data/t2i.py",
+      "git_path": "vendor/adversarial-flow-models/configs/data/t2i.py",
+      "sha256": "59ea9b87d18a450b7d6f42272fc473cc9b29229db21e016995bd17b795e7f3a4",
+      "bytes": 228
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/generate/afm/generate_1nfe.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/generate/afm/generate_1nfe.yaml",
+      "sha256": "1132fb0fcd419c04eaabffef114e52426b874586719b19216a2cd180d9a89202",
+      "bytes": 475
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/generate/afm/generate_1nfe_112layer.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/generate/afm/generate_1nfe_112layer.yaml",
+      "sha256": "5177c2c4aa3fdb2331a30755fcda6302e1650ab43dc540c1336e616edaf77368",
+      "bytes": 547
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/generate/afm/generate_1nfe_56layer.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/generate/afm/generate_1nfe_56layer.yaml",
+      "sha256": "b1a1a2d7cb8774f95bcc4b12635544dad688fbd06d401e1fee1b313ec47e4a57",
+      "bytes": 583
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/generate/afm/generate_2nfe.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/generate/afm/generate_2nfe.yaml",
+      "sha256": "748d0745f048dcc34e6e40475bc1b077f4eb8410c3e18c22490d44858acdd23a",
+      "bytes": 475
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/generate/afm/generate_4nfe.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/generate/afm/generate_4nfe.yaml",
+      "sha256": "c215ecac72268e3d13a0e0c835f50c2daf4146b73111cf8b34a9bfbd8a2bda19",
+      "bytes": 438
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/generate/cafm/README.md",
+      "git_path": "vendor/adversarial-flow-models/configs/generate/cafm/README.md",
+      "sha256": "a08c90b4a3ecd04c99c2691064e01948d79eb534a97537ec9d91e95359842b5b",
+      "bytes": 318
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/models/afm/dit/b2.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/models/afm/dit/b2.yaml",
+      "sha256": "59c7c433d3c3827a019b5b69a5850b0cd7ff1a3ff2a57940eb90136f7367d470",
+      "bytes": 180
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/models/afm/dit/l2.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/models/afm/dit/l2.yaml",
+      "sha256": "8c5140c7fc00e56489a7c8f3cf2de96d458297ea097a7af5b5bc53b690b8fb1a",
+      "bytes": 181
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/models/afm/dit/m2.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/models/afm/dit/m2.yaml",
+      "sha256": "44716f4a46388057a32ce1ae722793ec7f04499253c41bb543606ed273f54529",
+      "bytes": 181
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/models/afm/dit/vae.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/models/afm/dit/vae.yaml",
+      "sha256": "39b0d49a4d7ae8c76012c6284d7d2abbae3b848760c185a97353b2ea4d8b83e3",
+      "bytes": 432
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/models/afm/dit/xl2.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/models/afm/dit/xl2.yaml",
+      "sha256": "61749a71bf63552e138dd215521f96225e36dd496cf0a948563b94a6238ed049",
+      "bytes": 181
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/models/cafm/jit/h16.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/models/cafm/jit/h16.yaml",
+      "sha256": "8c5d8d7dc55a72c6be151698f57b7ebd033f65e30de49cb6615bf965551e7870",
+      "bytes": 199
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/models/cafm/sit/vae.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/models/cafm/sit/vae.yaml",
+      "sha256": "30f5e316d9214ecd39d10bfce3571dc2b117d920c712c515a1580b15d8a188b1",
+      "bytes": 433
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/models/cafm/sit/xl2.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/models/cafm/sit/xl2.yaml",
+      "sha256": "a1a1559928b65bb7172f2e6f33e29fae7aa546a1cb7b6731f4b3d1f054a7d85a",
+      "bytes": 330
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/afm/train_afm_1nfe.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/afm/train_afm_1nfe.yaml",
+      "sha256": "90def2fe89e41aa544a54c24424d0c2515ea06494c14da9b7fcaa43447b72230",
+      "bytes": 2483
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/afm/train_afm_1nfe_cg.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/afm/train_afm_1nfe_cg.yaml",
+      "sha256": "49207c64a9d57f64bc97d85e08a4bcd77cb9a39b7d7058091ae466b3fa612cb4",
+      "bytes": 2942
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/afm/train_afm_1nfe_deep.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/afm/train_afm_1nfe_deep.yaml",
+      "sha256": "31163376e954e7d53c481834957be69baec130e2979719ea6943681209f514c6",
+      "bytes": 2653
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/afm/train_afm_any_nfe.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/afm/train_afm_any_nfe.yaml",
+      "sha256": "ed4b6350fc7e3ee8594b71c32720797dc397574335a2f96ea49973472e8ba289",
+      "bytes": 2625
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/afm/train_afm_classifier.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/afm/train_afm_classifier.yaml",
+      "sha256": "f036dff499eabeca15e1748c154ee10667e6ce1d1974cda49d7c15e45ca3386c",
+      "bytes": 1227
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/afm/train_afm_multi_nfe.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/afm/train_afm_multi_nfe.yaml",
+      "sha256": "9024f179412a62593fde0ad2012cb98351b8ce2f819b28b169a9a15a5ca4c5fd",
+      "bytes": 2637
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/afm/train_afm_multi_nfe_cg.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/afm/train_afm_multi_nfe_cg.yaml",
+      "sha256": "0b30855496eb2af6961bc0ca3f0b30823e033ef3a9f9d1cda727d05740fd915d",
+      "bytes": 3077
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/cafm/train_cafm_jit.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/cafm/train_cafm_jit.yaml",
+      "sha256": "ecc1ee431e16ac1673d81c0fe6ac0c2a52503fc47e636d3136ce02e4cde3d624",
+      "bytes": 2173
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/cafm/train_cafm_sit.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/cafm/train_cafm_sit.yaml",
+      "sha256": "26a3f75597f6f584932259df14340005d527aba7aa83d98c344903c9374a843f",
+      "bytes": 2284
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/cafm/train_cafm_zimage.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/cafm/train_cafm_zimage.yaml",
+      "sha256": "82f40abfbe5c928b358c6d90bdcb32ca80f240d3c743c0537c26504bf34ce2c8",
+      "bytes": 1332
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/fm/train_fm_jit.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/fm/train_fm_jit.yaml",
+      "sha256": "719c345dd461c4b14bdb719d055ae4fcad614675d87ef143c4e5b57d5ae7b2ac",
+      "bytes": 1605
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/fm/train_fm_sit.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/fm/train_fm_sit.yaml",
+      "sha256": "386c0cba7a652271cc8fc311a1457db9031c08f2f63f6bf2ba263edb05a52365",
+      "bytes": 1706
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/configs/train/fm/train_fm_zimage.yaml",
+      "git_path": "vendor/adversarial-flow-models/configs/train/fm/train_fm_zimage.yaml",
+      "sha256": "02518f1cf82d643102ba197b8d3278b7e7053b4afa5419422ecce4a7019d82a7",
+      "bytes": 1114
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/data/imagenet_resize.py",
+      "git_path": "vendor/adversarial-flow-models/data/imagenet_resize.py",
+      "sha256": "2eafc35cf167cfa4e46fe71c6c57ac6dd2ed44200d804a0dd1b850196272db66",
+      "bytes": 1022
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/data/parquet_imagenet.py",
+      "git_path": "vendor/adversarial-flow-models/data/parquet_imagenet.py",
+      "sha256": "aaf726b3eae635beb9076c22f9d692c5c45c2fb5bff1f5f7f94eb71fbecaec93",
+      "bytes": 1996
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/data/parquet_imagenet_base.py",
+      "git_path": "vendor/adversarial-flow-models/data/parquet_imagenet_base.py",
+      "sha256": "130178df9047aa9e4256a51679a6ce044ce4dbce117fed8bf94ada6191cfb570",
+      "bytes": 3267
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/data/parquet_imagenet_offline.py",
+      "git_path": "vendor/adversarial-flow-models/data/parquet_imagenet_offline.py",
+      "sha256": "1629f474380c4b44870afffa895ad5fa4bec7803d1a6cdc1cdfae4cd4bcfdf80",
+      "bytes": 1817
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/data/parquet_t2i.py",
+      "git_path": "vendor/adversarial-flow-models/data/parquet_t2i.py",
+      "sha256": "8414374e57e1066821ba187f508420fdfc5a6a9ab24321b5abb2591c0c0f314d",
+      "bytes": 6487
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/data/parquet_t2i_base.py",
+      "git_path": "vendor/adversarial-flow-models/data/parquet_t2i_base.py",
+      "sha256": "27ca207628a7b5e36c472cc41e74478bc1ea1038d29aa9cdd906bdf4b0d3ae14",
+      "bytes": 5451
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/data/t2i_transforms.py",
+      "git_path": "vendor/adversarial-flow-models/data/t2i_transforms.py",
+      "sha256": "8fd6702e649a5980678485acfa12e170cd15b0191e10d86aad80c1f5da5fe3a4",
+      "bytes": 1957
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/data/utils.py",
+      "git_path": "vendor/adversarial-flow-models/data/utils.py",
+      "sha256": "f86789d29f6a7648fe6e1e9588e61d66d584f189c83a2b93afb65884d2f55b0c",
+      "bytes": 2200
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/generate.py",
+      "git_path": "vendor/adversarial-flow-models/generate.py",
+      "sha256": "c3cd8c9e4426bac60bd5c8bcf7127bb88c43708456b3bc8a48d901a257cd640d",
+      "bytes": 4592
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/grad_norm.py",
+      "git_path": "vendor/adversarial-flow-models/grad_norm.py",
+      "sha256": "914344b631bc77a96113598a5f6b840676dd19a1b749d1cf1eb61c442738071e",
+      "bytes": 2596
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/main.py",
+      "git_path": "vendor/adversarial-flow-models/main.py",
+      "sha256": "dfe9c6535a0ba0a31fbdc689524c7937243dc110e14675c72d5bf283809f924e",
+      "bytes": 477
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/misc/convert_from_jit_format.py",
+      "git_path": "vendor/adversarial-flow-models/misc/convert_from_jit_format.py",
+      "sha256": "5df588acec1521c19be88b9a8ef6148146051bd1a3e65b852223c9d00c14f346",
+      "bytes": 172
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/misc/convert_to_jit_format.py",
+      "git_path": "vendor/adversarial-flow-models/misc/convert_to_jit_format.py",
+      "sha256": "70608093de040e9a10eb9a838207677c5db6e266065074d452f4a3d4c021267c",
+      "bytes": 198
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/misc/pack_npz.py",
+      "git_path": "vendor/adversarial-flow-models/misc/pack_npz.py",
+      "sha256": "b376fc4a0a3cc21d6833d2f0179d87be300e2a04672e8aec1349fe979c67e3be",
+      "bytes": 647
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/afm/dit/classifier.py",
+      "git_path": "vendor/adversarial-flow-models/models/afm/dit/classifier.py",
+      "sha256": "e86125c188730169c4c4c92450c2f36f425929999131904d0594e22e5b10a9d0",
+      "bytes": 1210
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/afm/dit/discriminator.py",
+      "git_path": "vendor/adversarial-flow-models/models/afm/dit/discriminator.py",
+      "sha256": "6af1ab813b70c6b05fd295d011e2af8cf7c29211ce5ea838b2c7b458a3a90393",
+      "bytes": 1326
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/afm/dit/dit.py",
+      "git_path": "vendor/adversarial-flow-models/models/afm/dit/dit.py",
+      "sha256": "149b1476eee237a214da8e988128692518a37fd65b9881b20e9a430d0325f8eb",
+      "bytes": 203
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/afm/dit/generator.py",
+      "git_path": "vendor/adversarial-flow-models/models/afm/dit/generator.py",
+      "sha256": "039501acd5dd004a3d48bc663217b8d7a3a2888ddd80aabf51af3acc42e8fbeb",
+      "bytes": 1330
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/afm/dit/generator_deep.py",
+      "git_path": "vendor/adversarial-flow-models/models/afm/dit/generator_deep.py",
+      "sha256": "0f83c473f836b6121ac21e0a79f339cfeef1fcd231f49b9b44df1088e253411b",
+      "bytes": 902
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/afm/dit/vae.py",
+      "git_path": "vendor/adversarial-flow-models/models/afm/dit/vae.py",
+      "sha256": "5b7b60b7c63aba6a91e642be7d9628089931e1e718975e66c8568ec3b762a71b",
+      "bytes": 2996
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/jit/discriminator.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/jit/discriminator.py",
+      "sha256": "dc623ac8fb76ea5e7f6bb788a65212aedca3a5fc3e734e15905f2af5b23a0277",
+      "bytes": 1381
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/jit/generator.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/jit/generator.py",
+      "sha256": "2d0f1e3a3d71d09e63c73b0c0bfe77958c32ceb53479d3c970a4dccd658c61ac",
+      "bytes": 390
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/jit/jit.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/jit/jit.py",
+      "sha256": "11a9a0dc2edc5951c06519c280c1f80d5566b52eadf86cf299c45197baea4f99",
+      "bytes": 193
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/jit/utils.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/jit/utils.py",
+      "sha256": "4cc39bc8c096228a478d64b722853cef5077a820e143efa00b393e9039d2bb9a",
+      "bytes": 7617
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/jvp/discriminator.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/jvp/discriminator.py",
+      "sha256": "e69aefb987fe598d83750ca3e46237e41b8e2b3d9157ab5d0f6fc814c1ef0bea",
+      "bytes": 785
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/sit/discriminator.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/sit/discriminator.py",
+      "sha256": "beec29c9ba6b089df473936c817ae28e3d7742c5aad2298b185ee9eaf55d3059",
+      "bytes": 1468
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/sit/generator.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/sit/generator.py",
+      "sha256": "e1322fd396ce759565a4f6a5ddc0ef81337f6f1fa642bb720d2879b2ec96fe07",
+      "bytes": 279
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/sit/sit.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/sit/sit.py",
+      "sha256": "0ae7093b4ebe50868a328fc84f9194cb1c819e0ac57ea39112f6d8c305cf4812",
+      "bytes": 194
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/sit/sit_mod.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/sit/sit_mod.py",
+      "sha256": "4c4d0ee7ae32353ded729fe9dc7411726dec1f3f1231bc45294be1d85414feb1",
+      "bytes": 1927
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/sit/vae.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/sit/vae.py",
+      "sha256": "5b7b60b7c63aba6a91e642be7d9628089931e1e718975e66c8568ec3b762a71b",
+      "bytes": 2996
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/zimage/discriminator.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/zimage/discriminator.py",
+      "sha256": "0d4dc9cb4282ec7cbcf697b385b541f34523429b7032d06aaa5987702ead1151",
+      "bytes": 9384
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/models/cafm/zimage/logit_proj.py",
+      "git_path": "vendor/adversarial-flow-models/models/cafm/zimage/logit_proj.py",
+      "sha256": "eb69d3c783e801fbb314096b8183bce3a8ab81f88fca283570e9d9628a1c2d7b",
+      "bytes": 2404
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/notebooks/adversarial_flow_models.ipynb",
+      "git_path": "vendor/adversarial-flow-models/notebooks/adversarial_flow_models.ipynb",
+      "sha256": "a5bdc4e27e65836c9c43541a23e17ec012949dd6d33137f8a1b8fc6c01766bfd",
+      "bytes": 123740
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/notebooks/continuous_adversarial_flow_models.ipynb",
+      "git_path": "vendor/adversarial-flow-models/notebooks/continuous_adversarial_flow_models.ipynb",
+      "sha256": "330e22c6a5225455c120d237d70778ff0c2fe49f069400308f6241bd2bdb6380",
+      "bytes": 132692
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/requirements_afm.txt",
+      "git_path": "vendor/adversarial-flow-models/requirements_afm.txt",
+      "sha256": "7ba909e5992a39ca333a30b990a6660ed4f62d4860921b391d886a77e334f4f2",
+      "bytes": 360
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/requirements_cafm.txt",
+      "git_path": "vendor/adversarial-flow-models/requirements_cafm.txt",
+      "sha256": "e76e39b5a0e3dc7cc562d6b4483a8f6b80005844e5303f00ef72993b107b98ed",
+      "bytes": 360
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/train_adversarial_flow_classifier.py",
+      "git_path": "vendor/adversarial-flow-models/train_adversarial_flow_classifier.py",
+      "sha256": "ee3948144e4381a482e5584a977b1c90b5ea768d3d6928975b99ab99a0786405",
+      "bytes": 14377
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/train_adversarial_flow_imagenet.py",
+      "git_path": "vendor/adversarial-flow-models/train_adversarial_flow_imagenet.py",
+      "sha256": "d867db63c6fe40a8fe081d699ce0eca1ff1566ef8f32a233f2b260460ee560a3",
+      "bytes": 34470
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/train_continuous_adversarial_flow_imagenet.py",
+      "git_path": "vendor/adversarial-flow-models/train_continuous_adversarial_flow_imagenet.py",
+      "sha256": "1487d6746876f88ddde881e2380682812440038400c427835221e8dfbfb7cf31",
+      "bytes": 29810
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/train_continuous_adversarial_flow_zimage.py",
+      "git_path": "vendor/adversarial-flow-models/train_continuous_adversarial_flow_zimage.py",
+      "sha256": "d95e3da0c31b20703b9d1f3fbc31b30c8fb57e81d0e9cd17877e259335685727",
+      "bytes": 27391
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/train_flow_matching_imagenet.py",
+      "git_path": "vendor/adversarial-flow-models/train_flow_matching_imagenet.py",
+      "sha256": "8475d2389b089d4f9933769d80f50d10e667858f4a5a93981aab19634411abb4",
+      "bytes": 22119
+    },
+    {
+      "original_path": "FastGen-AFM/vendor/adversarial-flow-models/train_flow_matching_zimage.py",
+      "git_path": "vendor/adversarial-flow-models/train_flow_matching_zimage.py",
+      "sha256": "c406bb4cbaf1c8b2788785cc61b2e49bfdad8c4e956d0a494751f52a44cdfb84",
+      "bytes": 22586
+    }
+  ],
+  "outcome": "Baseline stopped; six-recipe stability campaign completed with no qualifying recipe, no confirmation and no trained-model FID benchmark.",
+  "evidence_review": "Historical report checked; migration hashes/restore verified separately. No scientific rerun."
+}

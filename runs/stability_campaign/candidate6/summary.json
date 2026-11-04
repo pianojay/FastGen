@@ -1,0 +1,54 @@
+{
+  "audit_generated_presentations": 24160,
+  "audit_seconds": 338.0883226133883,
+  "checkpoint_sha256": "0caaf185b2928d5b8b96c321d1ee21f9a8f4ac72bb344e6a64048b62f7529ec9",
+  "d_real_presentations": 1152000,
+  "d_updates": 18000,
+  "elapsed_seconds": 28523.631170511246,
+  "g_real_presentations": 1152000,
+  "g_updates": 18000,
+  "generated_presentations": 2304000,
+  "late1000_means": {
+    "cycle_seconds": 1.4975392749682068,
+    "d_adv": 0.5890595742464065,
+    "d_fake_logit": -0.17172128766449168,
+    "d_gradient_norm": 2.6492787473201753,
+    "d_r1": 0.007984933034982532,
+    "d_r2": 0.009585377855459229,
+    "d_real_logit": 0.17838203824544324,
+    "g_adv": 0.9865987549424171,
+    "g_gradient_norm": 0.20399712546914817,
+    "g_ot": 0.05844105605408549,
+    "norm_square_avg": 35.62127231216431
+  },
+  "memory": {
+    "device_bytes": 16145973248,
+    "host_rss_bytes": 2907549696,
+    "peak_allocated_bytes": 14469431808,
+    "peak_reserved_bytes": 15915286528,
+    "tree_pss_bytes": 2891884544
+  },
+  "memory_note": "Allocation/reservation peaks and sampled device/host maxima retained from training status, audits and final record.",
+  "optimizer_seconds": 27683.279184591025,
+  "panel_generated_presentations": 864,
+  "parameters": {
+    "discriminator": 9918657,
+    "generator": 39664771
+  },
+  "protected": {
+    "afm_snapshot": true,
+    "base_Model": true,
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "protected": true
+  },
+  "quantitative_pass_ema": 0,
+  "quantitative_pass_raw": 0,
+  "r1_samples": 288000,
+  "r2_samples": 288000,
+  "recoveries": 0,
+  "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+  "terminal_outcome": "persistent_collapse_not_qualified",
+  "training_discriminator_image_evaluations": 5184000,
+  "visual_classes_reviewed": 40,
+  "visual_diversity_established": 0
+}

@@ -1,0 +1,39 @@
+{
+  "thresholds": {
+    "structure_min": 0.37703512609004974,
+    "low_min": 0.07709237188100815,
+    "nearest_median_min": 0.011056026164442302
+  },
+  "calibration_pass_counts": {
+    "color_copy": 0,
+    "noise_only": 0,
+    "noisy_copy": 0,
+    "real": 120,
+    "repeat": 0,
+    "shift_copy": 0,
+    "small_set_copies": 0
+  },
+  "calibration_classes": 151,
+  "baseline_pass_counts": {
+    "raw": 0,
+    "ema": 0
+  },
+  "controls_sha256": "7d7c51c889ce4806f3377e57432a5339355323d4307f299eed2b87669f100cf7",
+  "historical_audit_sha256": "c3be3ddefb9f3753315a0205f391a85d0b57e1def1f8d6d0cbe556fcc7db0912",
+  "acceptance": {
+    "classes_required": 114,
+    "classes_total": 151,
+    "models_required": [
+      "raw",
+      "ema"
+    ],
+    "draws": "eight common seed18001+class and eight fresh seed audit_seed+step+100000+class; quantitative gate on combined16, record separate halves and require visual recognizability and structural variation on fresh draws",
+    "visual": "Per class >=6/8 recognizable in each half and >=3 distinct pose/shape/composition variants across16, neither texture/color/translation-only nor near copies. Record uncertain as inconclusive/fail. All151 reviewed for acceptance.",
+    "persistence": "same >=114 class intersection in both raw and EMA at two consecutive scheduled audits; confirm at identical two assessment points with independent training/audit seeds",
+    "memorization": "flag near optimization copies; nearest pixel distance is no proof of absence; median novelty gate plus visual neighbor review",
+    "saturation": "Report unclamped range and saturation; clipped-only apparent variation does not qualify"
+  },
+  "early_stop": "After OT decay ends, two consecutive scheduled audits with <=15/151 quantitative-pass classes in BOTH raw and EMA, AND visual review across >=30 classes showing persistent templates or noise-only variation: stop for persistent collapse/nonstructural diversity. Incomplete but improving or ambiguous results continue to full horizon. No stop at first6k audit.",
+  "failure_stop": "Numerical/resource failure immediately; at most2 exact infrastructure recoveries per candidate within original watchdog. User stop terminal.",
+  "no_FID": true
+}

@@ -1,0 +1,52 @@
+{
+  "audit_generated_presentations": 24160,
+  "audit_seconds": 337.7135595344007,
+  "checkpoint_sha256": "65bafcab98067d520a9f5f4d329d0fd0ea1f686f53a13444f9f665b22f09abb7",
+  "d_real_presentations": 576000,
+  "d_updates": 18000,
+  "elapsed_seconds": 15719.564950942993,
+  "g_real_presentations": 576000,
+  "g_updates": 18000,
+  "generated_presentations": 1152000,
+  "late1000_means": {
+    "cycle_seconds": 0.8053849522937089,
+    "d_adv": 0.6329379728436471,
+    "d_fake_logit": -0.07909331656154245,
+    "d_gradient_norm": 4.382114464640617,
+    "d_r1": 0.009924413083004765,
+    "d_r2": 0.011549188027391211,
+    "d_real_logit": 0.09602186613623052,
+    "g_adv": 0.8425177756547928,
+    "g_gradient_norm": 0.24563682870566844,
+    "g_ot": 0.056519438654184344,
+    "norm_square_avg": 16.598491729736327
+  },
+  "memory": {
+    "device_bytes": 8382316544,
+    "host_rss_bytes": 2966339584,
+    "peak_allocated_bytes": 7522096128,
+    "peak_reserved_bytes": 8153726976,
+    "tree_pss_bytes": 2950685696
+  },
+  "optimizer_seconds": 14628.63889635913,
+  "panel_generated_presentations": 864,
+  "parameters": {
+    "discriminator": 9918657,
+    "generator": 39664771
+  },
+  "protected": {
+    "afm_snapshot": true,
+    "base_Model": true,
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "protected": true
+  },
+  "quantitative_pass_ema": 26,
+  "quantitative_pass_raw": 19,
+  "r1_samples": 144000,
+  "r2_samples": 144000,
+  "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+  "terminal_outcome": "not_qualified",
+  "training_discriminator_image_evaluations": 2592000,
+  "visual_classes_reviewed": 40,
+  "visual_diversity_established": 0
+}

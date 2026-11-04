@@ -1,0 +1,10 @@
+{
+  "action": "continue",
+  "post_decay_collapse_streak": 1,
+  "quantitative_pass_ema": 11,
+  "quantitative_pass_raw": 4,
+  "reason": "Recognizable diversity unestablished in40 reviewed classes with strong template repetition. Previous10k quantitative37 raw/102 EMA exceeded collapse threshold, so two consecutive post-decay collapse audits have not occurred. Continue unchanged to declared18k horizon.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790965027.5933764,
+  "reviewed_classes": 40
+}

@@ -1,0 +1,9 @@
+{
+  "d_updates": 65,
+  "estimated_job_seconds": 60.34563183784485,
+  "g_updates": 65,
+  "metrics_cycles": 64,
+  "optimizer_seconds_logged": 45.14125274308026,
+  "partial_recovery_initialization_in_job_cost": true,
+  "reason": "Source edited during probe; exact recovery identity guard correctly refused reload. No candidate trained."
+}

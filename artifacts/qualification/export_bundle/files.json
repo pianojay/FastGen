@@ -1,0 +1,14 @@
+{
+  "afm_fastgen/__init__.py": "6511f02843935c533f5c43ce06335aa66eb9a68544ca3da4ce52e4152812abc9",
+  "afm_fastgen/models.py": "91dbf9f844df4f8a71e1771e137b75dfe8b938ec0908d0d6d9c8f7d9c1abf589",
+  "afm_fastgen/unet.py": "0e5846fe8f03353e546dbc82ce1cf2346478fbf1d9c0447b610d791b6890839b",
+  "check_export.py": "3ddaf3e7fe31111c04e9bd8200fed820cca4872b51e437dd39ec8d3207168b4c",
+  "licenses/NVIDIA-CC-BY-NC-SA-4.0.txt": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+  "loader_check.json": "55d55189ae8599bf10b7b09ff6a94df01951552a2b419855c61c8a2177dc0795",
+  "loader_check.log": "5dff1ed678e08649bcaafdd1a9e150a7bed1d8cd7108fcef216a3dd84dcc6ec0",
+  "model.py": "a7984b5501ca11085d0e25df9a59f18d9d8cbfc7f1a9538a391898160453a093",
+  "one_nfe.pt": "9255ccc51163749fbcca7758d583a0b4c712640399b907ccd575643ecc1a7697",
+  "requirements.txt": "e30940e3e890e6e5463f617475b97d7415e73f349fbf4070936aa284f0573eb2",
+  "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "src/utils.py": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f"
+}

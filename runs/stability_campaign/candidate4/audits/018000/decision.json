@@ -1,0 +1,9 @@
+{
+  "action": "continue",
+  "quantitative_pass_ema": 26,
+  "quantitative_pass_raw": 19,
+  "reason": "Terminal18k audit: no qualifying pair. Recognizable diversity unestablished in40 reviewed classes, so at most111 of151 could qualify. Continue action at exhausted horizon performs export/final accounting with no further training; outcome not qualified.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790942710.7289026,
+  "reviewed_classes": 40
+}

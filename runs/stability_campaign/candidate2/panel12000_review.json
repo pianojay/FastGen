@@ -1,0 +1,8 @@
+{
+  "step": 12000,
+  "model": "ema",
+  "classes_reviewed": 12,
+  "role": "trajectory_only_not_scheduled_acceptance_audit",
+  "finding": "Some silhouettes clearer, notably Psyduck and Snorlax, but anatomy and meaningful pose variation remain unreliable. No qualifying result established. Continue frozen schedule.",
+  "review_unix": 1790896979.3146622
+}

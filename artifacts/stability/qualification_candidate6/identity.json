@@ -1,0 +1,92 @@
+{
+  "config": {
+    "audit_seed": 78001,
+    "audit_updates": [
+      6000,
+      10000,
+      14000,
+      18000
+    ],
+    "augment_probability": 0.0,
+    "batch_size": 64,
+    "center_scale": 0.01,
+    "checkpoint_interval": 500,
+    "cutout_pixels": 16,
+    "d_optimizer": {
+      "betas": [
+        0.0,
+        0.99
+      ],
+      "eps": 1e-08,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "data_root": "/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k",
+    "discriminator": {
+      "channels": 64
+    },
+    "ema_decay": 0.999,
+    "g_optimizer": {
+      "betas": [
+        0.0,
+        0.99
+      ],
+      "eps": 1e-08,
+      "lr": 5e-05,
+      "weight_decay": 0.01
+    },
+    "generator": {
+      "model_channels": 128,
+      "num_blocks": 2
+    },
+    "gp_epsilon": 0.01,
+    "gp_fraction": 0.25,
+    "gp_scale": 0.25,
+    "gradient_clip": 50.0,
+    "gradient_normalization": {
+      "decay": 0.9,
+      "eps": 1e-08,
+      "target_scale": 0.5
+    },
+    "horizon_g_updates": 18000,
+    "hypothesis": "C5 collapsed persistently despite larger batch/smoother Adam moments; late D adversarial loss .661 and real-fake gap .088 stayed near chance on defective templates. Test stronger unoccluded critic feedback by reducing finite-difference R1/R2 coefficient1->.25 and disabling paired translation/cutout augmentation p.5->0, retaining real flips, centering, architecture, optimizer rates, batch64 and nonzero OT floor. C2 weaker GP produced stronger separation but its OT floor differed. Bundled intervention and independent seed do not isolate effects.",
+    "lr_schedule": "constant",
+    "max_recoveries": 2,
+    "microbatch": 64,
+    "optimizer": {
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "eps": 1e-08,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "ot_decay_updates": 8000,
+    "ot_end": 0.05,
+    "ot_start": 0.5,
+    "partition": "resources/development_split.json",
+    "precision": "float32",
+    "primary_checkpoint": "first_persistent_audit_pair",
+    "reference": "candidate5",
+    "run_dir": "artifacts/stability/qualification_candidate6",
+    "sample_interval": 2000,
+    "seed": 77196,
+    "status_interval": 50,
+    "threads": 4,
+    "translate_pixels": 8,
+    "watchdog_seconds": 43200
+  },
+  "process": {
+    "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+    "pid": 3399980,
+    "start_ticks": "1075514209",
+    "uid": 1000
+  },
+  "protected": {
+    "afm_snapshot": true,
+    "base_Model": true,
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "protected": true
+  }
+}

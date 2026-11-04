@@ -1,0 +1,8 @@
+{
+  "step": 12000,
+  "model": "ema",
+  "classes_reviewed": 12,
+  "role": "trajectory_only_not_scheduled_acceptance_audit",
+  "finding": "Nearly identical class templates across independent inputs persist. Sharper edges do not restore meaningful within-class diversity. Continue to14k persistence audit.",
+  "review_unix": 1790924918.6945033
+}

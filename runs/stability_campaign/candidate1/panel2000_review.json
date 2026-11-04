@@ -1,0 +1,8 @@
+{
+  "decision": "continue_to_frozen_audit",
+  "ot_coefficient_approx": 0.4414,
+  "panel": "panels/002000.png",
+  "review": "Pixel noise dominates; coarse class-dependent color structures in a subset of rows; no recognizable structure established. Incomplete learning during high-OT phase; no early-stop criterion evaluated.",
+  "review_unix": 1790872496.9082224,
+  "step": 2000
+}

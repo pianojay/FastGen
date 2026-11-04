@@ -1,0 +1,8 @@
+{
+  "step": 2000,
+  "model": "ema",
+  "classes_reviewed": 12,
+  "role": "trajectory_only_not_scheduled_acceptance_audit",
+  "finding": "Earlier coarse class colors/silhouettes than C2 2k; noisy malformed shapes, no recognizable diversity established. Seed differences limit causal attribution. Continue to6k audit.",
+  "review_unix": 1790916230.8374505
+}

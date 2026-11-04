@@ -1,0 +1,134 @@
+{
+  "checkpoint_seconds": 3.7809733282774687,
+  "config": {
+    "audit_seed": 68001,
+    "audit_updates": [
+      6000,
+      10000,
+      14000,
+      18000
+    ],
+    "augment_probability": 0.5,
+    "batch_size": 64,
+    "center_scale": 0.01,
+    "checkpoint_interval": 500,
+    "cutout_pixels": 16,
+    "d_optimizer": {
+      "betas": [
+        0.0,
+        0.99
+      ],
+      "eps": 1e-08,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "data_root": "/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k",
+    "discriminator": {
+      "channels": 64
+    },
+    "ema_decay": 0.999,
+    "g_optimizer": {
+      "betas": [
+        0.0,
+        0.99
+      ],
+      "eps": 1e-08,
+      "lr": 5e-05,
+      "weight_decay": 0.01
+    },
+    "generator": {
+      "model_channels": 128,
+      "num_blocks": 2
+    },
+    "gp_epsilon": 0.01,
+    "gp_fraction": 0.25,
+    "gp_scale": 1.0,
+    "gradient_clip": 50.0,
+    "gradient_normalization": {
+      "decay": 0.9,
+      "eps": 1e-08,
+      "target_scale": 0.5
+    },
+    "horizon_g_updates": 18000,
+    "hypothesis": "C4 lost quantitative diversity and showed strong raw/EMA palette-background differences despite stronger critic regularization. Test steadier stochastic optimization: double the full execution/effective batch32->64 and increase AdamW beta2 .9->.99 for both networks, retaining learning rates, normalized gradient target and C4 transport/regularization. This bundles sampling and second-moment smoothing; independent seed prevents causal isolation.",
+    "lr_schedule": "constant",
+    "max_recoveries": 2,
+    "microbatch": 64,
+    "optimizer": {
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "eps": 1e-08,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "ot_decay_updates": 8000,
+    "ot_end": 0.05,
+    "ot_start": 0.5,
+    "partition": "resources/development_split.json",
+    "precision": "float32",
+    "primary_checkpoint": "first_persistent_audit_pair",
+    "reference": "candidate4",
+    "run_dir": "artifacts/stability/qualification_candidate5",
+    "sample_interval": 2000,
+    "seed": 77195,
+    "status_interval": 50,
+    "threads": 4,
+    "translate_pixels": 8,
+    "watchdog_seconds": 43200
+  },
+  "d_updates_executed": 34,
+  "disposable_cycles_executed": 34,
+  "duplicate_job_refused": true,
+  "exact_next_cycle_recovery": true,
+  "g_updates_executed": 34,
+  "hard_crash_recovery_tested": false,
+  "mean_warm_cycle_seconds": 1.3164774484932422,
+  "memory": {
+    "device_bytes": 16139681792,
+    "host_rss_bytes": 2155515904,
+    "peak_allocated_bytes": 14472217088,
+    "peak_reserved_bytes": 15908995072,
+    "tree_pss_bytes": 2139871232
+  },
+  "parameters": {
+    "discriminator": 9918657,
+    "generator": 39664771
+  },
+  "real_presentations_executed": 4352,
+  "seconds_before_eval": 61.56471347250044,
+  "total_seconds": 61.5738627538085,
+  "warm_cycle_seconds": [
+    1.0248750280588865,
+    1.0328638069331646,
+    1.0317335985600948,
+    1.0675368197262287,
+    1.1296542882919312,
+    1.1809417996555567,
+    1.2171656787395477,
+    1.2394928932189941,
+    1.2689792644232512,
+    1.285581510514021,
+    1.3018597848713398,
+    1.321980558335781,
+    1.3332479484379292,
+    1.3466067537665367,
+    1.3713285755366087,
+    1.3737580440938473,
+    1.3870777301490307,
+    1.4114800561219454,
+    1.4002823382616043,
+    1.4031509961932898,
+    1.4158525448292494,
+    1.4216085840016603,
+    1.4328141938894987,
+    1.4340784307569265,
+    1.4502089973539114,
+    1.44630216807127,
+    1.4548832699656487,
+    1.4512235671281815,
+    1.4215240683406591,
+    1.436230156570673
+  ]
+}

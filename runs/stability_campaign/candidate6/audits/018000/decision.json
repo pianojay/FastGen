@@ -1,0 +1,5 @@
+{
+  "action": "stop",
+  "reason": "Persistent collapse: raw and EMA each0/151 quantitative classes at consecutive post-decay14k and18k audits; repeated templates in40/40 inspected classes with fresh draws. Frozen collapse criterion met at full18k horizon. Final candidate slot exhausted; none qualified, so no confirmation or further training.",
+  "review_unix": 1791000503.5972824
+}

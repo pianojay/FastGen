@@ -1,0 +1,8 @@
+{
+  "step": 2000,
+  "model": "ema",
+  "classes_reviewed": 12,
+  "role": "trajectory_only_not_scheduled_acceptance_audit",
+  "finding": "Mostly noise; weak coarse structure in a few classes. High OT phase; no recognizable diversity established. Continue frozen schedule.",
+  "review_unix": 1790928772.8680253
+}

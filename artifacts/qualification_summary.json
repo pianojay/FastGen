@@ -1,0 +1,283 @@
+{
+  "cache_matches_official_preprocessing": true,
+  "discarded_d_updates": 80,
+  "discarded_g_updates": 80,
+  "discarded_real_presentations": 5120,
+  "epochs_equivalent_per_stream": 113.80610285226545,
+  "max_recoveries": 2,
+  "planned_optimizer_hours": 10.457831762323622,
+  "planned_presentations_per_stream": 1600000,
+  "planned_real_presentations_total": 3200000,
+  "protected": {
+    "afm_snapshot": true,
+    "base_Model": true,
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "protected": true
+  },
+  "qualification": [
+    {
+      "approx_total_wall_seconds_from_file_times": 85.51531028747559,
+      "checkpoint_seconds": 2.7953255493193865,
+      "config": {
+        "augment_probability": 0.5,
+        "batch_size": 32,
+        "center_scale": 0.01,
+        "cutout_pixels": 16,
+        "data_root": "/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k",
+        "discriminator": {
+          "channels": 64
+        },
+        "ema_decay": 0.999,
+        "eval_batch_size": 32,
+        "generator": {
+          "model_channels": 128,
+          "num_blocks": 2
+        },
+        "gp_epsilon": 0.01,
+        "gp_fraction": 0.25,
+        "gp_scale": 0.25,
+        "gradient_clip": 50.0,
+        "microbatch": 8,
+        "optimizer": {
+          "betas": [
+            0.0,
+            0.9
+          ],
+          "eps": 1e-08,
+          "lr": 0.0001,
+          "weight_decay": 0.01
+        },
+        "ot_decay_updates": 10000,
+        "ot_end": 0.005,
+        "ot_start": 0.2,
+        "partition": "resources/development_split.json",
+        "seed": 7091,
+        "threads": 4,
+        "translate_pixels": 8
+      },
+      "d_updates_executed": 14,
+      "disposable_cycles_executed": 14,
+      "duplicate_job_refused": true,
+      "exact_next_cycle_recovery": true,
+      "g_updates_executed": 14,
+      "generated_smoke_images": 3020,
+      "hard_crash_recovery_tested": false,
+      "mean_warm_cycle_seconds": 0.7067452389746904,
+      "memory": {
+        "device_bytes": 3076521984,
+        "host_rss_bytes": 2084708352,
+        "peak_allocated_bytes": 2665217024,
+        "peak_reserved_bytes": 2847932416,
+        "tree_pss_bytes": 2071845888
+      },
+      "parameters": {
+        "discriminator": 9918657,
+        "generator": 39664771
+      },
+      "real_presentations_executed": 896,
+      "seconds_before_eval": 50.46843979880214,
+      "smoke_completed": false,
+      "termination": "Intentional stop during FID feature extraction to redirect clean-fid hardcoded /tmp cache; training checks and exact recovery passed.",
+      "warm_cycle_seconds": [
+        0.7365604545921087,
+        0.7058592569082975,
+        0.7042951583862305,
+        0.7008948493748903,
+        0.6969812549650669,
+        0.6989594735205173,
+        0.7007686346769333,
+        0.6989067010581493,
+        0.7090546395629644,
+        0.715171966701746
+      ]
+    },
+    {
+      "checkpoint_seconds": 2.7509973775595427,
+      "config": {
+        "augment_probability": 0.5,
+        "batch_size": 32,
+        "center_scale": 0.01,
+        "cutout_pixels": 16,
+        "data_root": "/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k",
+        "discriminator": {
+          "channels": 64
+        },
+        "ema_decay": 0.999,
+        "eval_batch_size": 32,
+        "generator": {
+          "model_channels": 128,
+          "num_blocks": 2
+        },
+        "gp_epsilon": 0.01,
+        "gp_fraction": 0.25,
+        "gp_scale": 0.25,
+        "gradient_clip": 50.0,
+        "microbatch": 32,
+        "optimizer": {
+          "betas": [
+            0.0,
+            0.9
+          ],
+          "eps": 1e-08,
+          "lr": 0.0001,
+          "weight_decay": 0.01
+        },
+        "ot_decay_updates": 10000,
+        "ot_end": 0.005,
+        "ot_start": 0.2,
+        "partition": "resources/development_split.json",
+        "seed": 7091,
+        "threads": 4,
+        "translate_pixels": 8
+      },
+      "d_updates_executed": 66,
+      "disposable_cycles_executed": 66,
+      "duplicate_job_refused": true,
+      "evaluation": [
+        {
+          "checkpoint_sha256": "9255ccc51163749fbcca7758d583a0b4c712640399b907ccd575643ecc1a7697",
+          "count": 3020,
+          "eval_batch_size": 32,
+          "fid": 463.79148443400817,
+          "fid_extractor_sha256": "f58cb9b6ec323ed63459aa4fb441fe750cfe39fafad6da5cb504a16f19e958f4",
+          "memory": {
+            "device_bytes": 2512388096,
+            "host_rss_bytes": 2703638528,
+            "peak_allocated_bytes": 1398790656,
+            "peak_reserved_bytes": 2283798528,
+            "tree_pss_bytes": 2690388992
+          },
+          "metric": "development_clean_fid",
+          "nfe": 1,
+          "noise_protocol": "official generate_samples; CUDA randn each batch",
+          "official_score": false,
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "reference_manifest_sha256": "7d4311ec3e8a1afcf611fbcdb592323faa3592f32b46023c28e90a8fb7f4a823",
+          "samples_per_class": 20,
+          "seconds": 52.8135456815362,
+          "seed": 901,
+          "smoke_only": true
+        }
+      ],
+      "exact_next_cycle_recovery": true,
+      "g_updates_executed": 66,
+      "hard_crash_recovery_tested": false,
+      "loader_check": {
+        "cwd": "/home/user/jw_soflow/FastGen-AFM/artifacts/qualification_micro32/export_bundle",
+        "device": "cuda",
+        "external_project_imports": false,
+        "one_nfe_calls": 1,
+        "output_shape": [
+          3,
+          3,
+          64,
+          64
+        ],
+        "parameters": 39664771,
+        "sample_sha256": "aeac130a07793c3cbbec0f473a4fb12c74f3de79abcc01d3f2485542a671ffbd"
+      },
+      "mean_warm_cycle_seconds": 0.7213508244904299,
+      "memory": {
+        "device_bytes": 8376025088,
+        "host_rss_bytes": 2135375872,
+        "peak_allocated_bytes": 7523963904,
+        "peak_reserved_bytes": 8147435520,
+        "tree_pss_bytes": 2122695680
+      },
+      "parameters": {
+        "discriminator": 9918657,
+        "generator": 39664771
+      },
+      "real_presentations_executed": 4224,
+      "seconds_before_eval": 62.17448442429304,
+      "total_seconds": 121.60626645199955,
+      "warm_cycle_seconds": [
+        0.5432275086641312,
+        0.5486894138157368,
+        0.5590397268533707,
+        0.5834349878132343,
+        0.617382625117898,
+        0.6438265237957239,
+        0.6577258203178644,
+        0.6731374152004719,
+        0.6738942377269268,
+        0.6856715772300959,
+        0.6967341657727957,
+        0.7024839539080858,
+        0.7050771526992321,
+        0.7079884447157383,
+        0.7056594993919134,
+        0.7018826231360435,
+        0.7225993424654007,
+        0.7141061052680016,
+        0.7202249448746443,
+        0.7148917000740767,
+        0.7333912998437881,
+        0.7316356245428324,
+        0.7299216352403164,
+        0.729004954919219,
+        0.7316993121057749,
+        0.7385952454060316,
+        0.7336986176669598,
+        0.7427725289016962,
+        0.7419281508773565,
+        0.7385815996676683,
+        0.7343219351023436,
+        0.7565581481903791,
+        0.7457596994936466,
+        0.7452278807759285,
+        0.7461839523166418,
+        0.755401648581028,
+        0.7411980014294386,
+        0.7491722535341978,
+        0.7522910237312317,
+        0.7492619305849075,
+        0.7541052382439375,
+        0.7482505049556494,
+        0.7520530335605145,
+        0.7551417648792267,
+        0.7514540404081345,
+        0.7489974070340395,
+        0.7540983501821756,
+        0.7463024742901325,
+        0.7505165673792362,
+        0.7573204226791859,
+        0.7563019096851349,
+        0.7272053118795156,
+        0.7567137815058231,
+        0.7570184823125601,
+        0.7582165170460939,
+        0.7746038101613522,
+        0.7509670071303844,
+        0.7650027237832546,
+        0.7554861418902874,
+        0.774590652436018,
+        0.7678191885352135,
+        0.7573025766760111
+      ]
+    }
+  ],
+  "qualification_hours_approx": 0.05753377131652087,
+  "source": {
+    "files": {
+      "afm_fastgen/__init__.py": "6511f02843935c533f5c43ce06335aa66eb9a68544ca3da4ce52e4152812abc9",
+      "afm_fastgen/common.py": "60ec0fcfa120f4fc62c3c9490520bb25c2cdaf7b81d3dee6352f362a8f6c9f29",
+      "afm_fastgen/data.py": "264430c9da8539f9293b49a62a90830e13d610c4001e9f174e287c3e496c4a36",
+      "afm_fastgen/evaluation.py": "bdb8a5788957a6ee429fe75d3207b77f6a020ff07765a64b37f008d92c93c82e",
+      "afm_fastgen/losses.py": "ebbfc67e01ac453fc1d8540119345b59448a3f207fb1bdee4da49cf1e32237a1",
+      "afm_fastgen/models.py": "91dbf9f844df4f8a71e1771e137b75dfe8b938ec0908d0d6d9c8f7d9c1abf589",
+      "afm_fastgen/reporting.py": "e0b6723f5a57a983947fd912310516cbed40968e00be067cfdfb9dfb3f63ebc3",
+      "afm_fastgen/training.py": "d96899f99409aceea3f40d8c3819d03bcdf4f9d53664de7a710674f4a849ca87",
+      "afm_fastgen/unet.py": "0e5846fe8f03353e546dbc82ce1cf2346478fbf1d9c0447b610d791b6890839b",
+      "model.py": "a7984b5501ca11085d0e25df9a59f18d9d8cbfc7f1a9538a391898160453a093",
+      "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scripts/check_export.py": "3ddaf3e7fe31111c04e9bd8200fed820cca4872b51e437dd39ec8d3207168b4c",
+      "scripts/qualify.py": "b3132ab48baf4bb5a8d0126aae88a0372466f75d45532e7ba0fdec8532b4a171",
+      "scripts/run_baseline.py": "bac10c84637710adc9dc78a2f6d0afb67a4da1f1207d23f51a5ee6526df37c7d"
+    },
+    "sha256": "7914989e55eba7820f8a4119b0f0f38fa19750b31a25f9acab1a35810145ceb8"
+  },
+  "steady_cycle_seconds_last32": 0.7529638868873008,
+  "watchdog_seconds": 64800,
+  "wraparound_stream_recovery": true
+}

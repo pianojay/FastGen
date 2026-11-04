@@ -1,0 +1,255 @@
+{
+  "finding": "Noisy color fields and coarse blobs in raw G and EMA across40 reviewed classes. Some raw class-associated palettes are emerging, but recognizable anatomy and pose/shape/composition diversity remain unestablished. Remaining111 classes not visually scored.",
+  "models": [
+    "raw",
+    "ema"
+  ],
+  "per_class": [
+    {
+      "class_id": 0,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 1,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 2,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 3,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 4,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 5,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 6,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 7,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 8,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 9,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 10,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 11,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 12,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 13,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 14,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 15,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 16,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 17,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 18,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 19,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 20,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 21,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 22,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 23,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 24,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 25,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 26,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 27,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 28,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 29,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 70,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 71,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 72,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 73,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 74,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 75,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 76,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 77,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 78,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class_id": 79,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    }
+  ],
+  "recognizable_diverse_classes_established": 0,
+  "review_unix": 1790952353.352823,
+  "reviewed_classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "step": 6000,
+  "unreviewed_classes": 111
+}

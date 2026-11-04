@@ -1,0 +1,8 @@
+{
+  "step": 8000,
+  "model": "ema",
+  "classes_reviewed": 12,
+  "role": "trajectory_only_not_scheduled_acceptance_audit",
+  "finding": "Class-associated colors and coarse silhouettes, but noisy malformed shapes. Recognizable within-class diversity not established. OT reached its planned floor; continue to the frozen 10k audit.",
+  "review_unix": 1790893699.467166
+}

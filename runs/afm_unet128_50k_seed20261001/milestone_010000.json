@@ -1,0 +1,24 @@
+{
+  "D_network_image_evaluations_including_G_steps_and_GP": 1440000,
+  "contiguous_finite_metrics": true,
+  "d_real_presentations": 320000,
+  "d_updates": 10000,
+  "g_real_presentations": 320000,
+  "g_updates": 10000,
+  "generated_presentations": 640000,
+  "last1000_cycle_seconds": 0.8293147531710565,
+  "latest_memory": {
+    "device_bytes": 8382316544,
+    "host_rss_bytes": 2015522816,
+    "peak_allocated_bytes": 7522096128,
+    "peak_reserved_bytes": 8153726976,
+    "tree_pss_bytes": 2002803712
+  },
+  "norm_backwards": 10000,
+  "optimizer_hours": 2.2993355174942147,
+  "ot_coefficient": 0.005,
+  "protected_verified": true,
+  "recovery_attempts": 0,
+  "source_unchanged": true,
+  "step": 10000
+}

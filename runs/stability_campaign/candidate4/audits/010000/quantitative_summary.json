@@ -1,0 +1,2692 @@
+{
+  "raw": {
+    "quantitative_pass_classes": [
+      0,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      13,
+      19,
+      20,
+      24,
+      28,
+      36,
+      39,
+      43,
+      47,
+      50,
+      51,
+      52,
+      54,
+      56,
+      57,
+      58,
+      61,
+      65,
+      67,
+      71,
+      72,
+      73,
+      75,
+      76,
+      77,
+      78,
+      79,
+      81,
+      84,
+      87,
+      88,
+      90,
+      93,
+      95,
+      96,
+      97,
+      99,
+      100,
+      103,
+      104,
+      106,
+      107,
+      109,
+      110,
+      112,
+      113,
+      114,
+      115,
+      116,
+      120,
+      121,
+      122,
+      124,
+      127,
+      128,
+      130,
+      131,
+      133,
+      134,
+      136,
+      145,
+      146,
+      150
+    ],
+    "quantitative_pass_count": 71,
+    "quantiles": {
+      "pixel_pair_mse": [
+        0.13442957401275635,
+        0.22144019603729248,
+        0.385069876909256
+      ],
+      "low_pair_mse": [
+        0.03579384461045265,
+        0.07627139985561371,
+        0.15229953825473785
+      ],
+      "high_pair_mse": [
+        0.09455829113721848,
+        0.14132820069789886,
+        0.23016327619552612
+      ],
+      "structure_pair_mse": [
+        0.33183276653289795,
+        0.6403661370277405,
+        0.9155175685882568
+      ],
+      "structural_near_duplicate_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "saturation": [
+        0.012629191391170025,
+        0.0604248046875,
+        0.1938273161649704
+      ],
+      "noise_sensitivity": [
+        0.09377882815897465,
+        0.1830032910220325,
+        0.3862807294353843
+      ]
+    },
+    "per_class": [
+      {
+        "class": 0,
+        "name": "Abra",
+        "quantitative_pass": true,
+        "structure": 1.1251130104064941,
+        "low": 0.25898686051368713,
+        "nearest_median": 0.44015341997146606
+      },
+      {
+        "class": 1,
+        "name": "Aerodactyl",
+        "quantitative_pass": false,
+        "structure": 0.27535346150398254,
+        "low": 0.03579384461045265,
+        "nearest_median": 0.2963642328977585
+      },
+      {
+        "class": 2,
+        "name": "Alakazam",
+        "quantitative_pass": false,
+        "structure": 0.5587348341941833,
+        "low": 0.07131607830524445,
+        "nearest_median": 0.18041184544563293
+      },
+      {
+        "class": 3,
+        "name": "Arbok",
+        "quantitative_pass": true,
+        "structure": 0.7505769729614258,
+        "low": 0.07988748699426651,
+        "nearest_median": 0.1807921826839447
+      },
+      {
+        "class": 4,
+        "name": "Arcanine",
+        "quantitative_pass": true,
+        "structure": 0.811791181564331,
+        "low": 0.14717943966388702,
+        "nearest_median": 0.3600171059370041
+      },
+      {
+        "class": 5,
+        "name": "Articuno",
+        "quantitative_pass": true,
+        "structure": 1.0808017253875732,
+        "low": 0.21121348440647125,
+        "nearest_median": 0.27837318181991577
+      },
+      {
+        "class": 6,
+        "name": "Beedrill",
+        "quantitative_pass": true,
+        "structure": 0.9756840467453003,
+        "low": 0.11184454709291458,
+        "nearest_median": 0.3300933688879013
+      },
+      {
+        "class": 7,
+        "name": "Bellsprout",
+        "quantitative_pass": false,
+        "structure": 0.3405633568763733,
+        "low": 0.0396018885076046,
+        "nearest_median": 0.2233509123325348
+      },
+      {
+        "class": 8,
+        "name": "Blastoise",
+        "quantitative_pass": true,
+        "structure": 0.6695462465286255,
+        "low": 0.12788714468479156,
+        "nearest_median": 0.29758186638355255
+      },
+      {
+        "class": 9,
+        "name": "Bulbasaur",
+        "quantitative_pass": true,
+        "structure": 0.814500093460083,
+        "low": 0.17234988510608673,
+        "nearest_median": 0.3172011971473694
+      },
+      {
+        "class": 10,
+        "name": "Butterfree",
+        "quantitative_pass": true,
+        "structure": 1.0001654624938965,
+        "low": 0.09532483667135239,
+        "nearest_median": 0.2655782103538513
+      },
+      {
+        "class": 11,
+        "name": "Caterpie",
+        "quantitative_pass": false,
+        "structure": 0.2334519773721695,
+        "low": 0.035142846405506134,
+        "nearest_median": 0.2897367775440216
+      },
+      {
+        "class": 12,
+        "name": "Chansey",
+        "quantitative_pass": false,
+        "structure": 0.5972310304641724,
+        "low": 0.020670654252171516,
+        "nearest_median": 0.11045622453093529
+      },
+      {
+        "class": 13,
+        "name": "Charizard",
+        "quantitative_pass": true,
+        "structure": 0.7869175672531128,
+        "low": 0.09542771428823471,
+        "nearest_median": 0.21265224367380142
+      },
+      {
+        "class": 14,
+        "name": "Charmander",
+        "quantitative_pass": false,
+        "structure": 0.31556954979896545,
+        "low": 0.05758431553840637,
+        "nearest_median": 0.22016572952270508
+      },
+      {
+        "class": 15,
+        "name": "Charmeleon",
+        "quantitative_pass": false,
+        "structure": 0.33183276653289795,
+        "low": 0.04224404692649841,
+        "nearest_median": 0.25393590331077576
+      },
+      {
+        "class": 16,
+        "name": "Clefable",
+        "quantitative_pass": false,
+        "structure": 0.44500377774238586,
+        "low": 0.05067842826247215,
+        "nearest_median": 0.21262842416763306
+      },
+      {
+        "class": 17,
+        "name": "Clefairy",
+        "quantitative_pass": false,
+        "structure": 0.3818070590496063,
+        "low": 0.07370416820049286,
+        "nearest_median": 0.2561418116092682
+      },
+      {
+        "class": 18,
+        "name": "Cloyster",
+        "quantitative_pass": false,
+        "structure": 0.2888568639755249,
+        "low": 0.022792911157011986,
+        "nearest_median": 0.16467184573411942
+      },
+      {
+        "class": 19,
+        "name": "Cubone",
+        "quantitative_pass": true,
+        "structure": 0.6978342533111572,
+        "low": 0.11580309271812439,
+        "nearest_median": 0.29377998411655426
+      },
+      {
+        "class": 20,
+        "name": "Dewgong",
+        "quantitative_pass": true,
+        "structure": 0.962112307548523,
+        "low": 0.08511006087064743,
+        "nearest_median": 0.20978033542633057
+      },
+      {
+        "class": 21,
+        "name": "Diglett",
+        "quantitative_pass": false,
+        "structure": 0.6003724336624146,
+        "low": 0.059335317462682724,
+        "nearest_median": 0.16992983222007751
+      },
+      {
+        "class": 22,
+        "name": "Ditto",
+        "quantitative_pass": false,
+        "structure": 0.38870275020599365,
+        "low": 0.009550760500133038,
+        "nearest_median": 0.11292074248194695
+      },
+      {
+        "class": 23,
+        "name": "Dodrio",
+        "quantitative_pass": false,
+        "structure": 0.8370591402053833,
+        "low": 0.06489302217960358,
+        "nearest_median": 0.2078903540968895
+      },
+      {
+        "class": 24,
+        "name": "Doduo",
+        "quantitative_pass": true,
+        "structure": 0.643632173538208,
+        "low": 0.1118609830737114,
+        "nearest_median": 0.2610850930213928
+      },
+      {
+        "class": 25,
+        "name": "Dragonair",
+        "quantitative_pass": false,
+        "structure": 0.5274417400360107,
+        "low": 0.017556503415107727,
+        "nearest_median": 0.12404798716306686
+      },
+      {
+        "class": 26,
+        "name": "Dragonite",
+        "quantitative_pass": false,
+        "structure": 0.9155175685882568,
+        "low": 0.07598206400871277,
+        "nearest_median": 0.1880282163619995
+      },
+      {
+        "class": 27,
+        "name": "Dratini",
+        "quantitative_pass": false,
+        "structure": 0.48039573431015015,
+        "low": 0.02851986326277256,
+        "nearest_median": 0.12802258878946304
+      },
+      {
+        "class": 28,
+        "name": "Drowzee",
+        "quantitative_pass": true,
+        "structure": 0.7260039448738098,
+        "low": 0.15912877023220062,
+        "nearest_median": 0.3879169225692749
+      },
+      {
+        "class": 29,
+        "name": "Dugtrio",
+        "quantitative_pass": false,
+        "structure": 0.38447895646095276,
+        "low": 0.06474044173955917,
+        "nearest_median": 0.19884071499109268
+      },
+      {
+        "class": 30,
+        "name": "Eevee",
+        "quantitative_pass": false,
+        "structure": 0.6672800779342651,
+        "low": 0.06690321117639542,
+        "nearest_median": 0.18054129928350449
+      },
+      {
+        "class": 31,
+        "name": "Ekans",
+        "quantitative_pass": false,
+        "structure": 0.633037269115448,
+        "low": 0.06323748081922531,
+        "nearest_median": 0.34162625670433044
+      },
+      {
+        "class": 32,
+        "name": "Electabuzz",
+        "quantitative_pass": false,
+        "structure": 0.3675108551979065,
+        "low": 0.07805651426315308,
+        "nearest_median": 0.280484676361084
+      },
+      {
+        "class": 33,
+        "name": "Electrode",
+        "quantitative_pass": false,
+        "structure": 0.5491541028022766,
+        "low": 0.06507771462202072,
+        "nearest_median": 0.23595179617404938
+      },
+      {
+        "class": 34,
+        "name": "Exeggcute",
+        "quantitative_pass": false,
+        "structure": 0.7921202182769775,
+        "low": 0.0397629588842392,
+        "nearest_median": 0.18712644279003143
+      },
+      {
+        "class": 35,
+        "name": "Exeggutor",
+        "quantitative_pass": false,
+        "structure": 0.634069561958313,
+        "low": 0.06143207475543022,
+        "nearest_median": 0.23587018996477127
+      },
+      {
+        "class": 36,
+        "name": "Farfetchd",
+        "quantitative_pass": true,
+        "structure": 0.9935933351516724,
+        "low": 0.09140580892562866,
+        "nearest_median": 0.23127317428588867
+      },
+      {
+        "class": 37,
+        "name": "Fearow",
+        "quantitative_pass": false,
+        "structure": 0.4333791732788086,
+        "low": 0.03036944754421711,
+        "nearest_median": 0.15171589702367783
+      },
+      {
+        "class": 38,
+        "name": "Flareon",
+        "quantitative_pass": false,
+        "structure": 0.3205910623073578,
+        "low": 0.07708485424518585,
+        "nearest_median": 0.2523438036441803
+      },
+      {
+        "class": 39,
+        "name": "Gastly",
+        "quantitative_pass": true,
+        "structure": 0.9885008335113525,
+        "low": 0.4214487075805664,
+        "nearest_median": 0.4986110329627991
+      },
+      {
+        "class": 40,
+        "name": "Gengar",
+        "quantitative_pass": false,
+        "structure": 0.6149153113365173,
+        "low": 0.05236462131142616,
+        "nearest_median": 0.18520496040582657
+      },
+      {
+        "class": 41,
+        "name": "Geodude",
+        "quantitative_pass": false,
+        "structure": 0.15668052434921265,
+        "low": 0.03358731046319008,
+        "nearest_median": 0.34251633286476135
+      },
+      {
+        "class": 42,
+        "name": "Gloom",
+        "quantitative_pass": false,
+        "structure": 0.3566666841506958,
+        "low": 0.06368039548397064,
+        "nearest_median": 0.29487037658691406
+      },
+      {
+        "class": 43,
+        "name": "Golbat",
+        "quantitative_pass": true,
+        "structure": 0.8077647686004639,
+        "low": 0.1944076418876648,
+        "nearest_median": 0.34624843299388885
+      },
+      {
+        "class": 44,
+        "name": "Goldeen",
+        "quantitative_pass": false,
+        "structure": 0.8560869097709656,
+        "low": 0.05674746260046959,
+        "nearest_median": 0.15514936298131943
+      },
+      {
+        "class": 45,
+        "name": "Golduck",
+        "quantitative_pass": false,
+        "structure": 0.4648144543170929,
+        "low": 0.05715560540556908,
+        "nearest_median": 0.23658344149589539
+      },
+      {
+        "class": 46,
+        "name": "Golem",
+        "quantitative_pass": false,
+        "structure": 0.24915163218975067,
+        "low": 0.04636336490511894,
+        "nearest_median": 0.21421244740486145
+      },
+      {
+        "class": 47,
+        "name": "Graveler",
+        "quantitative_pass": true,
+        "structure": 0.739878237247467,
+        "low": 0.11460605263710022,
+        "nearest_median": 0.3392673134803772
+      },
+      {
+        "class": 48,
+        "name": "Grimer",
+        "quantitative_pass": false,
+        "structure": 0.4148346185684204,
+        "low": 0.0701739490032196,
+        "nearest_median": 0.2876582592725754
+      },
+      {
+        "class": 49,
+        "name": "Growlithe",
+        "quantitative_pass": false,
+        "structure": 0.46874698996543884,
+        "low": 0.04745039716362953,
+        "nearest_median": 0.16209905594587326
+      },
+      {
+        "class": 50,
+        "name": "Gyarados",
+        "quantitative_pass": true,
+        "structure": 0.7329798340797424,
+        "low": 0.08249923586845398,
+        "nearest_median": 0.2091028094291687
+      },
+      {
+        "class": 51,
+        "name": "Haunter",
+        "quantitative_pass": true,
+        "structure": 0.7703548073768616,
+        "low": 0.12143895775079727,
+        "nearest_median": 0.28065596520900726
+      },
+      {
+        "class": 52,
+        "name": "Hitmonchan",
+        "quantitative_pass": true,
+        "structure": 0.9385238289833069,
+        "low": 0.09133472293615341,
+        "nearest_median": 0.2895882576704025
+      },
+      {
+        "class": 53,
+        "name": "Hitmonlee",
+        "quantitative_pass": false,
+        "structure": 0.3790092468261719,
+        "low": 0.06283769011497498,
+        "nearest_median": 0.23730817437171936
+      },
+      {
+        "class": 54,
+        "name": "Horsea",
+        "quantitative_pass": true,
+        "structure": 0.6046228408813477,
+        "low": 0.08259957283735275,
+        "nearest_median": 0.2274617850780487
+      },
+      {
+        "class": 55,
+        "name": "Hypno",
+        "quantitative_pass": false,
+        "structure": 0.4754621088504791,
+        "low": 0.06595161557197571,
+        "nearest_median": 0.20559564232826233
+      },
+      {
+        "class": 56,
+        "name": "Ivysaur",
+        "quantitative_pass": true,
+        "structure": 0.4932248294353485,
+        "low": 0.09782024472951889,
+        "nearest_median": 0.21693475544452667
+      },
+      {
+        "class": 57,
+        "name": "Jigglypuff",
+        "quantitative_pass": true,
+        "structure": 0.41371726989746094,
+        "low": 0.15306921303272247,
+        "nearest_median": 0.35978706181049347
+      },
+      {
+        "class": 58,
+        "name": "Jolteon",
+        "quantitative_pass": true,
+        "structure": 0.7060534358024597,
+        "low": 0.13194267451763153,
+        "nearest_median": 0.29008322954177856
+      },
+      {
+        "class": 59,
+        "name": "Jynx",
+        "quantitative_pass": false,
+        "structure": 0.4744051694869995,
+        "low": 0.0497824102640152,
+        "nearest_median": 0.25756023824214935
+      },
+      {
+        "class": 60,
+        "name": "Kabuto",
+        "quantitative_pass": false,
+        "structure": 0.3818150758743286,
+        "low": 0.057072389870882034,
+        "nearest_median": 0.28829482197761536
+      },
+      {
+        "class": 61,
+        "name": "Kabutops",
+        "quantitative_pass": true,
+        "structure": 0.7726499438285828,
+        "low": 0.1154036596417427,
+        "nearest_median": 0.25208963453769684
+      },
+      {
+        "class": 62,
+        "name": "Kadabra",
+        "quantitative_pass": false,
+        "structure": 0.9079244136810303,
+        "low": 0.07612831890583038,
+        "nearest_median": 0.23616138845682144
+      },
+      {
+        "class": 63,
+        "name": "Kakuna",
+        "quantitative_pass": false,
+        "structure": 0.898269772529602,
+        "low": 0.031214704737067223,
+        "nearest_median": 0.22933482378721237
+      },
+      {
+        "class": 64,
+        "name": "Kangaskhan",
+        "quantitative_pass": false,
+        "structure": 0.6727882623672485,
+        "low": 0.07594151794910431,
+        "nearest_median": 0.29776524007320404
+      },
+      {
+        "class": 65,
+        "name": "Kingler",
+        "quantitative_pass": true,
+        "structure": 0.7719623446464539,
+        "low": 0.08420749753713608,
+        "nearest_median": 0.3276363015174866
+      },
+      {
+        "class": 66,
+        "name": "Koffing",
+        "quantitative_pass": false,
+        "structure": 0.6348074674606323,
+        "low": 0.05790669098496437,
+        "nearest_median": 0.16631602495908737
+      },
+      {
+        "class": 67,
+        "name": "Krabby",
+        "quantitative_pass": true,
+        "structure": 0.8247001767158508,
+        "low": 0.11666027456521988,
+        "nearest_median": 0.29446297883987427
+      },
+      {
+        "class": 68,
+        "name": "Lapras",
+        "quantitative_pass": false,
+        "structure": 0.7007309198379517,
+        "low": 0.04947476461529732,
+        "nearest_median": 0.16425269842147827
+      },
+      {
+        "class": 69,
+        "name": "Lickitung",
+        "quantitative_pass": false,
+        "structure": 0.42296668887138367,
+        "low": 0.01811080425977707,
+        "nearest_median": 0.165070578455925
+      },
+      {
+        "class": 70,
+        "name": "Machamp",
+        "quantitative_pass": false,
+        "structure": 0.4105393886566162,
+        "low": 0.05988786742091179,
+        "nearest_median": 0.2096952572464943
+      },
+      {
+        "class": 71,
+        "name": "Machoke",
+        "quantitative_pass": true,
+        "structure": 0.6046522855758667,
+        "low": 0.09388745576143265,
+        "nearest_median": 0.2936102896928787
+      },
+      {
+        "class": 72,
+        "name": "Machop",
+        "quantitative_pass": true,
+        "structure": 0.8267895579338074,
+        "low": 0.11031907796859741,
+        "nearest_median": 0.28386133909225464
+      },
+      {
+        "class": 73,
+        "name": "Magikarp",
+        "quantitative_pass": true,
+        "structure": 0.6404473781585693,
+        "low": 0.14528585970401764,
+        "nearest_median": 0.35175441205501556
+      },
+      {
+        "class": 74,
+        "name": "Magmar",
+        "quantitative_pass": false,
+        "structure": 0.3959147036075592,
+        "low": 0.07033035904169083,
+        "nearest_median": 0.18242991715669632
+      },
+      {
+        "class": 75,
+        "name": "Magnemite",
+        "quantitative_pass": true,
+        "structure": 0.8229010701179504,
+        "low": 0.1063067615032196,
+        "nearest_median": 0.2728963792324066
+      },
+      {
+        "class": 76,
+        "name": "Magneton",
+        "quantitative_pass": true,
+        "structure": 0.8755712509155273,
+        "low": 0.23108892142772675,
+        "nearest_median": 0.37593844532966614
+      },
+      {
+        "class": 77,
+        "name": "Mankey",
+        "quantitative_pass": true,
+        "structure": 0.8385876417160034,
+        "low": 0.09593126177787781,
+        "nearest_median": 0.2355382815003395
+      },
+      {
+        "class": 78,
+        "name": "Marowak",
+        "quantitative_pass": true,
+        "structure": 1.1195356845855713,
+        "low": 0.23781202733516693,
+        "nearest_median": 0.3759121745824814
+      },
+      {
+        "class": 79,
+        "name": "Meowth",
+        "quantitative_pass": true,
+        "structure": 0.8182498812675476,
+        "low": 0.11300981044769287,
+        "nearest_median": 0.2664072513580322
+      },
+      {
+        "class": 80,
+        "name": "Metapod",
+        "quantitative_pass": false,
+        "structure": 0.410895973443985,
+        "low": 0.04194265231490135,
+        "nearest_median": 0.20938996970653534
+      },
+      {
+        "class": 81,
+        "name": "Mew",
+        "quantitative_pass": true,
+        "structure": 0.5292913317680359,
+        "low": 0.12138775736093521,
+        "nearest_median": 0.34882012009620667
+      },
+      {
+        "class": 82,
+        "name": "Mewtwo",
+        "quantitative_pass": false,
+        "structure": 0.3778124153614044,
+        "low": 0.05914042517542839,
+        "nearest_median": 0.3158893436193466
+      },
+      {
+        "class": 83,
+        "name": "Moltres",
+        "quantitative_pass": false,
+        "structure": 0.6403661370277405,
+        "low": 0.0710354745388031,
+        "nearest_median": 0.1854046806693077
+      },
+      {
+        "class": 84,
+        "name": "MrMime",
+        "quantitative_pass": true,
+        "structure": 0.7576929926872253,
+        "low": 0.13716332614421844,
+        "nearest_median": 0.3729240447282791
+      },
+      {
+        "class": 85,
+        "name": "Muk",
+        "quantitative_pass": false,
+        "structure": 0.4949047267436981,
+        "low": 0.06927735358476639,
+        "nearest_median": 0.2534521222114563
+      },
+      {
+        "class": 86,
+        "name": "Nidoking",
+        "quantitative_pass": false,
+        "structure": 0.7879448533058167,
+        "low": 0.0753910169005394,
+        "nearest_median": 0.24357905238866806
+      },
+      {
+        "class": 87,
+        "name": "Nidoqueen",
+        "quantitative_pass": true,
+        "structure": 0.46295425295829773,
+        "low": 0.11242944747209549,
+        "nearest_median": 0.3743758946657181
+      },
+      {
+        "class": 88,
+        "name": "Nidoran-f",
+        "quantitative_pass": true,
+        "structure": 0.793738603591919,
+        "low": 0.15229953825473785,
+        "nearest_median": 0.3203890323638916
+      },
+      {
+        "class": 89,
+        "name": "Nidoran-m",
+        "quantitative_pass": false,
+        "structure": 0.7818455696105957,
+        "low": 0.06840556859970093,
+        "nearest_median": 0.2171512395143509
+      },
+      {
+        "class": 90,
+        "name": "Nidorina",
+        "quantitative_pass": true,
+        "structure": 0.8946772813796997,
+        "low": 0.10437724739313126,
+        "nearest_median": 0.17400621622800827
+      },
+      {
+        "class": 91,
+        "name": "Nidorino",
+        "quantitative_pass": false,
+        "structure": 0.6133068203926086,
+        "low": 0.04015101119875908,
+        "nearest_median": 0.1819506287574768
+      },
+      {
+        "class": 92,
+        "name": "Ninetales",
+        "quantitative_pass": false,
+        "structure": 0.7819257974624634,
+        "low": 0.05005286633968353,
+        "nearest_median": 0.18826019763946533
+      },
+      {
+        "class": 93,
+        "name": "Oddish",
+        "quantitative_pass": true,
+        "structure": 0.738710880279541,
+        "low": 0.2527250647544861,
+        "nearest_median": 0.3614351153373718
+      },
+      {
+        "class": 94,
+        "name": "Omanyte",
+        "quantitative_pass": false,
+        "structure": 0.4174582064151764,
+        "low": 0.04725213721394539,
+        "nearest_median": 0.22790586203336716
+      },
+      {
+        "class": 95,
+        "name": "Omastar",
+        "quantitative_pass": true,
+        "structure": 0.6535493731498718,
+        "low": 0.12363657355308533,
+        "nearest_median": 0.27018989622592926
+      },
+      {
+        "class": 96,
+        "name": "Onix",
+        "quantitative_pass": true,
+        "structure": 1.0488052368164062,
+        "low": 0.19227944314479828,
+        "nearest_median": 0.4255540817975998
+      },
+      {
+        "class": 97,
+        "name": "Paras",
+        "quantitative_pass": true,
+        "structure": 0.8093750476837158,
+        "low": 0.09360563009977341,
+        "nearest_median": 0.2716049998998642
+      },
+      {
+        "class": 98,
+        "name": "Parasect",
+        "quantitative_pass": false,
+        "structure": 0.5691754817962646,
+        "low": 0.04720620438456535,
+        "nearest_median": 0.23454377800226212
+      },
+      {
+        "class": 99,
+        "name": "Persian",
+        "quantitative_pass": true,
+        "structure": 0.5523813366889954,
+        "low": 0.18454815447330475,
+        "nearest_median": 0.4443560391664505
+      },
+      {
+        "class": 100,
+        "name": "Pidgeot",
+        "quantitative_pass": true,
+        "structure": 0.50956791639328,
+        "low": 0.11131072044372559,
+        "nearest_median": 0.3681672215461731
+      },
+      {
+        "class": 101,
+        "name": "Pidgeotto",
+        "quantitative_pass": false,
+        "structure": 0.34825825691223145,
+        "low": 0.07271833717823029,
+        "nearest_median": 0.32654885947704315
+      },
+      {
+        "class": 102,
+        "name": "Pidgey",
+        "quantitative_pass": false,
+        "structure": 0.6780549883842468,
+        "low": 0.07338512688875198,
+        "nearest_median": 0.2371201291680336
+      },
+      {
+        "class": 103,
+        "name": "Pikachu",
+        "quantitative_pass": true,
+        "structure": 0.5175678730010986,
+        "low": 0.09314971417188644,
+        "nearest_median": 0.20784053206443787
+      },
+      {
+        "class": 104,
+        "name": "Pinsir",
+        "quantitative_pass": true,
+        "structure": 0.823115348815918,
+        "low": 0.08852241188287735,
+        "nearest_median": 0.2504020407795906
+      },
+      {
+        "class": 105,
+        "name": "Poliwag",
+        "quantitative_pass": false,
+        "structure": 0.7261660099029541,
+        "low": 0.026295175775885582,
+        "nearest_median": 0.2595301568508148
+      },
+      {
+        "class": 106,
+        "name": "Poliwhirl",
+        "quantitative_pass": true,
+        "structure": 0.3891642391681671,
+        "low": 0.0985022485256195,
+        "nearest_median": 0.3320845067501068
+      },
+      {
+        "class": 107,
+        "name": "Poliwrath",
+        "quantitative_pass": true,
+        "structure": 0.9044756293296814,
+        "low": 0.15212120115756989,
+        "nearest_median": 0.32400885224342346
+      },
+      {
+        "class": 108,
+        "name": "Ponyta",
+        "quantitative_pass": false,
+        "structure": 0.8628667593002319,
+        "low": 0.06995709240436554,
+        "nearest_median": 0.17182638496160507
+      },
+      {
+        "class": 109,
+        "name": "Porygon",
+        "quantitative_pass": true,
+        "structure": 0.5059788227081299,
+        "low": 0.10992174595594406,
+        "nearest_median": 0.24298922717571259
+      },
+      {
+        "class": 110,
+        "name": "Primeape",
+        "quantitative_pass": true,
+        "structure": 1.0406877994537354,
+        "low": 0.08979687839746475,
+        "nearest_median": 0.22744905948638916
+      },
+      {
+        "class": 111,
+        "name": "Psyduck",
+        "quantitative_pass": false,
+        "structure": 0.2855529487133026,
+        "low": 0.03289417549967766,
+        "nearest_median": 0.16945430636405945
+      },
+      {
+        "class": 112,
+        "name": "Raichu",
+        "quantitative_pass": true,
+        "structure": 1.3902113437652588,
+        "low": 0.3529365360736847,
+        "nearest_median": 0.47450169920921326
+      },
+      {
+        "class": 113,
+        "name": "Rapidash",
+        "quantitative_pass": true,
+        "structure": 0.4389094114303589,
+        "low": 0.08422434329986572,
+        "nearest_median": 0.3017414063215256
+      },
+      {
+        "class": 114,
+        "name": "Raticate",
+        "quantitative_pass": true,
+        "structure": 0.5345275402069092,
+        "low": 0.13711191713809967,
+        "nearest_median": 0.3613257110118866
+      },
+      {
+        "class": 115,
+        "name": "Rattata",
+        "quantitative_pass": true,
+        "structure": 0.8668948411941528,
+        "low": 0.10406313091516495,
+        "nearest_median": 0.24462633579969406
+      },
+      {
+        "class": 116,
+        "name": "Rhydon",
+        "quantitative_pass": true,
+        "structure": 0.806559681892395,
+        "low": 0.11769596487283707,
+        "nearest_median": 0.27463044226169586
+      },
+      {
+        "class": 117,
+        "name": "Rhyhorn",
+        "quantitative_pass": false,
+        "structure": 0.45855310559272766,
+        "low": 0.07145369797945023,
+        "nearest_median": 0.24184752255678177
+      },
+      {
+        "class": 118,
+        "name": "Sandshrew",
+        "quantitative_pass": false,
+        "structure": 0.49717977643013,
+        "low": 0.0763336718082428,
+        "nearest_median": 0.2284041792154312
+      },
+      {
+        "class": 119,
+        "name": "Sandslash",
+        "quantitative_pass": false,
+        "structure": 0.4123765230178833,
+        "low": 0.07102315127849579,
+        "nearest_median": 0.2748968005180359
+      },
+      {
+        "class": 120,
+        "name": "Scyther",
+        "quantitative_pass": true,
+        "structure": 0.7284523248672485,
+        "low": 0.13400974869728088,
+        "nearest_median": 0.2170732617378235
+      },
+      {
+        "class": 121,
+        "name": "Seadra",
+        "quantitative_pass": true,
+        "structure": 0.9161499738693237,
+        "low": 0.08405173569917679,
+        "nearest_median": 0.18317794799804688
+      },
+      {
+        "class": 122,
+        "name": "Seaking",
+        "quantitative_pass": true,
+        "structure": 0.797124445438385,
+        "low": 0.12500347197055817,
+        "nearest_median": 0.32434724271297455
+      },
+      {
+        "class": 123,
+        "name": "Seel",
+        "quantitative_pass": false,
+        "structure": 0.6408240795135498,
+        "low": 0.0709872916340828,
+        "nearest_median": 0.22805605828762054
+      },
+      {
+        "class": 124,
+        "name": "Shellder",
+        "quantitative_pass": true,
+        "structure": 0.5301128029823303,
+        "low": 0.08953964710235596,
+        "nearest_median": 0.23309185355901718
+      },
+      {
+        "class": 125,
+        "name": "Slowbro",
+        "quantitative_pass": false,
+        "structure": 0.5333272814750671,
+        "low": 0.03543263301253319,
+        "nearest_median": 0.2047443836927414
+      },
+      {
+        "class": 126,
+        "name": "Slowpoke",
+        "quantitative_pass": false,
+        "structure": 0.18876725435256958,
+        "low": 0.028039611876010895,
+        "nearest_median": 0.187327079474926
+      },
+      {
+        "class": 127,
+        "name": "Snorlax",
+        "quantitative_pass": true,
+        "structure": 1.122044324874878,
+        "low": 0.12083355337381363,
+        "nearest_median": 0.23093119263648987
+      },
+      {
+        "class": 128,
+        "name": "Spearow",
+        "quantitative_pass": true,
+        "structure": 0.7071045637130737,
+        "low": 0.14018285274505615,
+        "nearest_median": 0.36114388704299927
+      },
+      {
+        "class": 129,
+        "name": "Squirtle",
+        "quantitative_pass": false,
+        "structure": 0.23807811737060547,
+        "low": 0.057668428868055344,
+        "nearest_median": 0.268698513507843
+      },
+      {
+        "class": 130,
+        "name": "Starmie",
+        "quantitative_pass": true,
+        "structure": 0.5967782735824585,
+        "low": 0.07737847417593002,
+        "nearest_median": 0.29490478336811066
+      },
+      {
+        "class": 131,
+        "name": "Staryu",
+        "quantitative_pass": true,
+        "structure": 0.49886173009872437,
+        "low": 0.07878673076629639,
+        "nearest_median": 0.30953942239284515
+      },
+      {
+        "class": 132,
+        "name": "Tangela",
+        "quantitative_pass": false,
+        "structure": 0.2613564133644104,
+        "low": 0.04101400449872017,
+        "nearest_median": 0.24406039714813232
+      },
+      {
+        "class": 133,
+        "name": "Tauros",
+        "quantitative_pass": true,
+        "structure": 0.6915080547332764,
+        "low": 0.11180482059717178,
+        "nearest_median": 0.29945994913578033
+      },
+      {
+        "class": 134,
+        "name": "Tentacool",
+        "quantitative_pass": true,
+        "structure": 0.7142381072044373,
+        "low": 0.10114770382642746,
+        "nearest_median": 0.28898748755455017
+      },
+      {
+        "class": 135,
+        "name": "Tentacruel",
+        "quantitative_pass": false,
+        "structure": 0.459997296333313,
+        "low": 0.07627139985561371,
+        "nearest_median": 0.25833895802497864
+      },
+      {
+        "class": 136,
+        "name": "Vaporeon",
+        "quantitative_pass": true,
+        "structure": 0.9592062830924988,
+        "low": 0.16420163214206696,
+        "nearest_median": 0.2863577902317047
+      },
+      {
+        "class": 137,
+        "name": "Venomoth",
+        "quantitative_pass": false,
+        "structure": 0.6689555644989014,
+        "low": 0.03869200870394707,
+        "nearest_median": 0.20706815272569656
+      },
+      {
+        "class": 138,
+        "name": "Venonat",
+        "quantitative_pass": false,
+        "structure": 0.3486141562461853,
+        "low": 0.06079905852675438,
+        "nearest_median": 0.17148733884096146
+      },
+      {
+        "class": 139,
+        "name": "Venusaur",
+        "quantitative_pass": false,
+        "structure": 0.27263641357421875,
+        "low": 0.0840223953127861,
+        "nearest_median": 0.3054426312446594
+      },
+      {
+        "class": 140,
+        "name": "Victreebel",
+        "quantitative_pass": false,
+        "structure": 0.7187314033508301,
+        "low": 0.054739322513341904,
+        "nearest_median": 0.2268729954957962
+      },
+      {
+        "class": 141,
+        "name": "Vileplume",
+        "quantitative_pass": false,
+        "structure": 0.20300261676311493,
+        "low": 0.06565281003713608,
+        "nearest_median": 0.2626328468322754
+      },
+      {
+        "class": 142,
+        "name": "Voltorb",
+        "quantitative_pass": false,
+        "structure": 0.6869885921478271,
+        "low": 0.06613985449075699,
+        "nearest_median": 0.19433316588401794
+      },
+      {
+        "class": 143,
+        "name": "Vulpix",
+        "quantitative_pass": false,
+        "structure": 0.2892162799835205,
+        "low": 0.03694993630051613,
+        "nearest_median": 0.17995910346508026
+      },
+      {
+        "class": 144,
+        "name": "Wartortle",
+        "quantitative_pass": false,
+        "structure": 0.8542834520339966,
+        "low": 0.07484281063079834,
+        "nearest_median": 0.19121050834655762
+      },
+      {
+        "class": 145,
+        "name": "Weedle",
+        "quantitative_pass": true,
+        "structure": 0.6610815525054932,
+        "low": 0.10047172755002975,
+        "nearest_median": 0.257375106215477
+      },
+      {
+        "class": 146,
+        "name": "Weepinbell",
+        "quantitative_pass": true,
+        "structure": 0.602831244468689,
+        "low": 0.08235657960176468,
+        "nearest_median": 0.24532530456781387
+      },
+      {
+        "class": 147,
+        "name": "Weezing",
+        "quantitative_pass": false,
+        "structure": 0.8703674077987671,
+        "low": 0.07143569737672806,
+        "nearest_median": 0.2264106348156929
+      },
+      {
+        "class": 148,
+        "name": "Wigglytuff",
+        "quantitative_pass": false,
+        "structure": 0.48797735571861267,
+        "low": 0.025727033615112305,
+        "nearest_median": 0.20333705097436905
+      },
+      {
+        "class": 149,
+        "name": "Zapdos",
+        "quantitative_pass": false,
+        "structure": 0.25107860565185547,
+        "low": 0.058759529143571854,
+        "nearest_median": 0.22709715366363525
+      },
+      {
+        "class": 150,
+        "name": "Zubat",
+        "quantitative_pass": true,
+        "structure": 0.8331124186515808,
+        "low": 0.2833528220653534,
+        "nearest_median": 0.38041482865810394
+      }
+    ]
+  },
+  "ema": {
+    "quantitative_pass_classes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      23,
+      25,
+      26,
+      27,
+      28,
+      30,
+      31,
+      34,
+      35,
+      37,
+      38,
+      39,
+      40,
+      42,
+      43,
+      44,
+      45,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      64,
+      65,
+      67,
+      68,
+      69,
+      71,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      93,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      103,
+      106,
+      107,
+      108,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      118,
+      119,
+      120,
+      121,
+      122,
+      124,
+      125,
+      127,
+      128,
+      129,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      142,
+      143,
+      146,
+      148,
+      149,
+      150
+    ],
+    "quantitative_pass_count": 115,
+    "quantiles": {
+      "pixel_pair_mse": [
+        0.18469731509685516,
+        0.26910683512687683,
+        0.3915375769138336
+      ],
+      "low_pair_mse": [
+        0.06291774660348892,
+        0.10410374402999878,
+        0.16580592095851898
+      ],
+      "high_pair_mse": [
+        0.1256391406059265,
+        0.16510643064975739,
+        0.22103197872638702
+      ],
+      "structure_pair_mse": [
+        0.5864627361297607,
+        0.910817563533783,
+        1.1803900003433228
+      ],
+      "structural_near_duplicate_fraction": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "saturation": [
+        0.0044352211989462376,
+        0.02022806741297245,
+        0.0582071952521801
+      ],
+      "noise_sensitivity": [
+        0.1669249148108065,
+        0.28157324995845556,
+        0.5046474281698465
+      ]
+    },
+    "per_class": [
+      {
+        "class": 0,
+        "name": "Abra",
+        "quantitative_pass": true,
+        "structure": 0.910817563533783,
+        "low": 0.13003180921077728,
+        "nearest_median": 0.3332120329141617
+      },
+      {
+        "class": 1,
+        "name": "Aerodactyl",
+        "quantitative_pass": true,
+        "structure": 1.0037403106689453,
+        "low": 0.09888958930969238,
+        "nearest_median": 0.2650790363550186
+      },
+      {
+        "class": 2,
+        "name": "Alakazam",
+        "quantitative_pass": true,
+        "structure": 1.0348085165023804,
+        "low": 0.1556789129972458,
+        "nearest_median": 0.2871840000152588
+      },
+      {
+        "class": 3,
+        "name": "Arbok",
+        "quantitative_pass": true,
+        "structure": 0.6016204953193665,
+        "low": 0.0955570638179779,
+        "nearest_median": 0.24777011573314667
+      },
+      {
+        "class": 4,
+        "name": "Arcanine",
+        "quantitative_pass": true,
+        "structure": 0.7682086229324341,
+        "low": 0.15853078663349152,
+        "nearest_median": 0.2880696505308151
+      },
+      {
+        "class": 5,
+        "name": "Articuno",
+        "quantitative_pass": true,
+        "structure": 0.9585557579994202,
+        "low": 0.110496886074543,
+        "nearest_median": 0.23936888575553894
+      },
+      {
+        "class": 6,
+        "name": "Beedrill",
+        "quantitative_pass": false,
+        "structure": 1.1151264905929565,
+        "low": 0.0762854591012001,
+        "nearest_median": 0.28392596542835236
+      },
+      {
+        "class": 7,
+        "name": "Bellsprout",
+        "quantitative_pass": true,
+        "structure": 0.5864627361297607,
+        "low": 0.09751906991004944,
+        "nearest_median": 0.2472423017024994
+      },
+      {
+        "class": 8,
+        "name": "Blastoise",
+        "quantitative_pass": true,
+        "structure": 0.9397985935211182,
+        "low": 0.13250359892845154,
+        "nearest_median": 0.2930290549993515
+      },
+      {
+        "class": 9,
+        "name": "Bulbasaur",
+        "quantitative_pass": true,
+        "structure": 0.45261192321777344,
+        "low": 0.09419014304876328,
+        "nearest_median": 0.3016394376754761
+      },
+      {
+        "class": 10,
+        "name": "Butterfree",
+        "quantitative_pass": false,
+        "structure": 0.6631482243537903,
+        "low": 0.07225892692804337,
+        "nearest_median": 0.2274557650089264
+      },
+      {
+        "class": 11,
+        "name": "Caterpie",
+        "quantitative_pass": true,
+        "structure": 0.5802512168884277,
+        "low": 0.095726877450943,
+        "nearest_median": 0.2689845412969589
+      },
+      {
+        "class": 12,
+        "name": "Chansey",
+        "quantitative_pass": false,
+        "structure": 0.23030294477939606,
+        "low": 0.04886375367641449,
+        "nearest_median": 0.2063654214143753
+      },
+      {
+        "class": 13,
+        "name": "Charizard",
+        "quantitative_pass": true,
+        "structure": 0.7895419597625732,
+        "low": 0.10703627020120621,
+        "nearest_median": 0.29710033535957336
+      },
+      {
+        "class": 14,
+        "name": "Charmander",
+        "quantitative_pass": true,
+        "structure": 0.836254358291626,
+        "low": 0.09354662150144577,
+        "nearest_median": 0.24877266585826874
+      },
+      {
+        "class": 15,
+        "name": "Charmeleon",
+        "quantitative_pass": true,
+        "structure": 1.1443326473236084,
+        "low": 0.13261491060256958,
+        "nearest_median": 0.3181556463241577
+      },
+      {
+        "class": 16,
+        "name": "Clefable",
+        "quantitative_pass": true,
+        "structure": 0.5760169625282288,
+        "low": 0.21385972201824188,
+        "nearest_median": 0.28724972903728485
+      },
+      {
+        "class": 17,
+        "name": "Clefairy",
+        "quantitative_pass": false,
+        "structure": 0.31895363330841064,
+        "low": 0.12200812250375748,
+        "nearest_median": 0.21769902110099792
+      },
+      {
+        "class": 18,
+        "name": "Cloyster",
+        "quantitative_pass": true,
+        "structure": 1.0263603925704956,
+        "low": 0.1620865762233734,
+        "nearest_median": 0.26366715133190155
+      },
+      {
+        "class": 19,
+        "name": "Cubone",
+        "quantitative_pass": true,
+        "structure": 1.35598886013031,
+        "low": 0.10505308955907822,
+        "nearest_median": 0.20019298791885376
+      },
+      {
+        "class": 20,
+        "name": "Dewgong",
+        "quantitative_pass": false,
+        "structure": 0.6731693744659424,
+        "low": 0.058405954390764236,
+        "nearest_median": 0.1696053147315979
+      },
+      {
+        "class": 21,
+        "name": "Diglett",
+        "quantitative_pass": false,
+        "structure": 0.5982193946838379,
+        "low": 0.04557305946946144,
+        "nearest_median": 0.12255570665001869
+      },
+      {
+        "class": 22,
+        "name": "Ditto",
+        "quantitative_pass": false,
+        "structure": 0.3927463889122009,
+        "low": 0.07361263036727905,
+        "nearest_median": 0.19113721698522568
+      },
+      {
+        "class": 23,
+        "name": "Dodrio",
+        "quantitative_pass": true,
+        "structure": 0.8488740921020508,
+        "low": 0.07908360660076141,
+        "nearest_median": 0.21981807798147202
+      },
+      {
+        "class": 24,
+        "name": "Doduo",
+        "quantitative_pass": false,
+        "structure": 1.2700592279434204,
+        "low": 0.05333995446562767,
+        "nearest_median": 0.19226987659931183
+      },
+      {
+        "class": 25,
+        "name": "Dragonair",
+        "quantitative_pass": true,
+        "structure": 0.9969974160194397,
+        "low": 0.13046592473983765,
+        "nearest_median": 0.3108181208372116
+      },
+      {
+        "class": 26,
+        "name": "Dragonite",
+        "quantitative_pass": true,
+        "structure": 0.8343260884284973,
+        "low": 0.11698061972856522,
+        "nearest_median": 0.21948039531707764
+      },
+      {
+        "class": 27,
+        "name": "Dratini",
+        "quantitative_pass": true,
+        "structure": 0.9503225684165955,
+        "low": 0.07776761054992676,
+        "nearest_median": 0.19380737841129303
+      },
+      {
+        "class": 28,
+        "name": "Drowzee",
+        "quantitative_pass": true,
+        "structure": 0.8433734774589539,
+        "low": 0.1198127344250679,
+        "nearest_median": 0.2585487365722656
+      },
+      {
+        "class": 29,
+        "name": "Dugtrio",
+        "quantitative_pass": false,
+        "structure": 0.33682742714881897,
+        "low": 0.1090700700879097,
+        "nearest_median": 0.24321868270635605
+      },
+      {
+        "class": 30,
+        "name": "Eevee",
+        "quantitative_pass": true,
+        "structure": 1.0891858339309692,
+        "low": 0.13817614316940308,
+        "nearest_median": 0.2472136691212654
+      },
+      {
+        "class": 31,
+        "name": "Ekans",
+        "quantitative_pass": true,
+        "structure": 1.152533769607544,
+        "low": 0.22623437643051147,
+        "nearest_median": 0.3503948301076889
+      },
+      {
+        "class": 32,
+        "name": "Electabuzz",
+        "quantitative_pass": false,
+        "structure": 1.0965608358383179,
+        "low": 0.07650106400251389,
+        "nearest_median": 0.31518955528736115
+      },
+      {
+        "class": 33,
+        "name": "Electrode",
+        "quantitative_pass": false,
+        "structure": 0.24475142359733582,
+        "low": 0.10991405695676804,
+        "nearest_median": 0.3210674673318863
+      },
+      {
+        "class": 34,
+        "name": "Exeggcute",
+        "quantitative_pass": true,
+        "structure": 1.0532046556472778,
+        "low": 0.10124077647924423,
+        "nearest_median": 0.20123028010129929
+      },
+      {
+        "class": 35,
+        "name": "Exeggutor",
+        "quantitative_pass": true,
+        "structure": 0.890427827835083,
+        "low": 0.0816250592470169,
+        "nearest_median": 0.26390355825424194
+      },
+      {
+        "class": 36,
+        "name": "Farfetchd",
+        "quantitative_pass": false,
+        "structure": 1.1927618980407715,
+        "low": 0.06608650088310242,
+        "nearest_median": 0.18688705563545227
+      },
+      {
+        "class": 37,
+        "name": "Fearow",
+        "quantitative_pass": true,
+        "structure": 0.9909846782684326,
+        "low": 0.1267959028482437,
+        "nearest_median": 0.19449175894260406
+      },
+      {
+        "class": 38,
+        "name": "Flareon",
+        "quantitative_pass": true,
+        "structure": 1.0195679664611816,
+        "low": 0.10646932572126389,
+        "nearest_median": 0.2527129501104355
+      },
+      {
+        "class": 39,
+        "name": "Gastly",
+        "quantitative_pass": true,
+        "structure": 1.239696741104126,
+        "low": 0.3496815264225006,
+        "nearest_median": 0.38916444778442383
+      },
+      {
+        "class": 40,
+        "name": "Gengar",
+        "quantitative_pass": true,
+        "structure": 0.8465580344200134,
+        "low": 0.12941761314868927,
+        "nearest_median": 0.20657282322645187
+      },
+      {
+        "class": 41,
+        "name": "Geodude",
+        "quantitative_pass": false,
+        "structure": 1.0884497165679932,
+        "low": 0.05374351143836975,
+        "nearest_median": 0.17255599051713943
+      },
+      {
+        "class": 42,
+        "name": "Gloom",
+        "quantitative_pass": true,
+        "structure": 0.6833614706993103,
+        "low": 0.08737019449472427,
+        "nearest_median": 0.3029407560825348
+      },
+      {
+        "class": 43,
+        "name": "Golbat",
+        "quantitative_pass": true,
+        "structure": 1.1186250448226929,
+        "low": 0.15612149238586426,
+        "nearest_median": 0.26941706240177155
+      },
+      {
+        "class": 44,
+        "name": "Goldeen",
+        "quantitative_pass": true,
+        "structure": 1.081536054611206,
+        "low": 0.1038031056523323,
+        "nearest_median": 0.246055468916893
+      },
+      {
+        "class": 45,
+        "name": "Golduck",
+        "quantitative_pass": true,
+        "structure": 0.9461266398429871,
+        "low": 0.0782410129904747,
+        "nearest_median": 0.22284294664859772
+      },
+      {
+        "class": 46,
+        "name": "Golem",
+        "quantitative_pass": false,
+        "structure": 0.6542131900787354,
+        "low": 0.07624184340238571,
+        "nearest_median": 0.19342976808547974
+      },
+      {
+        "class": 47,
+        "name": "Graveler",
+        "quantitative_pass": true,
+        "structure": 0.7204351425170898,
+        "low": 0.0971226692199707,
+        "nearest_median": 0.23903480917215347
+      },
+      {
+        "class": 48,
+        "name": "Grimer",
+        "quantitative_pass": true,
+        "structure": 0.8470889925956726,
+        "low": 0.17031271755695343,
+        "nearest_median": 0.2455720230937004
+      },
+      {
+        "class": 49,
+        "name": "Growlithe",
+        "quantitative_pass": true,
+        "structure": 1.1709853410720825,
+        "low": 0.11436688899993896,
+        "nearest_median": 0.2604135572910309
+      },
+      {
+        "class": 50,
+        "name": "Gyarados",
+        "quantitative_pass": true,
+        "structure": 0.874527633190155,
+        "low": 0.09978128224611282,
+        "nearest_median": 0.26358509063720703
+      },
+      {
+        "class": 51,
+        "name": "Haunter",
+        "quantitative_pass": true,
+        "structure": 0.8807647824287415,
+        "low": 0.15974164009094238,
+        "nearest_median": 0.2814837396144867
+      },
+      {
+        "class": 52,
+        "name": "Hitmonchan",
+        "quantitative_pass": true,
+        "structure": 1.0935877561569214,
+        "low": 0.1418498009443283,
+        "nearest_median": 0.32091735303401947
+      },
+      {
+        "class": 53,
+        "name": "Hitmonlee",
+        "quantitative_pass": true,
+        "structure": 1.171722650527954,
+        "low": 0.0969005823135376,
+        "nearest_median": 0.21813227236270905
+      },
+      {
+        "class": 54,
+        "name": "Horsea",
+        "quantitative_pass": false,
+        "structure": 0.8441382050514221,
+        "low": 0.07049980759620667,
+        "nearest_median": 0.2088719680905342
+      },
+      {
+        "class": 55,
+        "name": "Hypno",
+        "quantitative_pass": true,
+        "structure": 0.9715086817741394,
+        "low": 0.09441464394330978,
+        "nearest_median": 0.23277509957551956
+      },
+      {
+        "class": 56,
+        "name": "Ivysaur",
+        "quantitative_pass": true,
+        "structure": 0.6786395907402039,
+        "low": 0.15739060938358307,
+        "nearest_median": 0.3173884004354477
+      },
+      {
+        "class": 57,
+        "name": "Jigglypuff",
+        "quantitative_pass": true,
+        "structure": 0.5709292888641357,
+        "low": 0.2462916523218155,
+        "nearest_median": 0.36725713312625885
+      },
+      {
+        "class": 58,
+        "name": "Jolteon",
+        "quantitative_pass": true,
+        "structure": 1.1803900003433228,
+        "low": 0.08291852474212646,
+        "nearest_median": 0.24295295029878616
+      },
+      {
+        "class": 59,
+        "name": "Jynx",
+        "quantitative_pass": true,
+        "structure": 0.626267671585083,
+        "low": 0.10997400432825089,
+        "nearest_median": 0.3427760452032089
+      },
+      {
+        "class": 60,
+        "name": "Kabuto",
+        "quantitative_pass": true,
+        "structure": 0.92347651720047,
+        "low": 0.10383180528879166,
+        "nearest_median": 0.24389876425266266
+      },
+      {
+        "class": 61,
+        "name": "Kabutops",
+        "quantitative_pass": true,
+        "structure": 1.0189237594604492,
+        "low": 0.13045066595077515,
+        "nearest_median": 0.25102994590997696
+      },
+      {
+        "class": 62,
+        "name": "Kadabra",
+        "quantitative_pass": true,
+        "structure": 1.1050467491149902,
+        "low": 0.13320769369602203,
+        "nearest_median": 0.2507019266486168
+      },
+      {
+        "class": 63,
+        "name": "Kakuna",
+        "quantitative_pass": false,
+        "structure": 0.7639420628547668,
+        "low": 0.03463875502347946,
+        "nearest_median": 0.19036798179149628
+      },
+      {
+        "class": 64,
+        "name": "Kangaskhan",
+        "quantitative_pass": true,
+        "structure": 1.1347479820251465,
+        "low": 0.12122094631195068,
+        "nearest_median": 0.21294179558753967
+      },
+      {
+        "class": 65,
+        "name": "Kingler",
+        "quantitative_pass": true,
+        "structure": 1.1834659576416016,
+        "low": 0.11354298144578934,
+        "nearest_median": 0.25665365159511566
+      },
+      {
+        "class": 66,
+        "name": "Koffing",
+        "quantitative_pass": false,
+        "structure": 0.8132712244987488,
+        "low": 0.07687988132238388,
+        "nearest_median": 0.18130142241716385
+      },
+      {
+        "class": 67,
+        "name": "Krabby",
+        "quantitative_pass": true,
+        "structure": 1.1070469617843628,
+        "low": 0.10825363546609879,
+        "nearest_median": 0.32306042313575745
+      },
+      {
+        "class": 68,
+        "name": "Lapras",
+        "quantitative_pass": true,
+        "structure": 0.9056919813156128,
+        "low": 0.0916343629360199,
+        "nearest_median": 0.1809723824262619
+      },
+      {
+        "class": 69,
+        "name": "Lickitung",
+        "quantitative_pass": true,
+        "structure": 0.7210588455200195,
+        "low": 0.14436493813991547,
+        "nearest_median": 0.24972201138734818
+      },
+      {
+        "class": 70,
+        "name": "Machamp",
+        "quantitative_pass": false,
+        "structure": 1.0472829341888428,
+        "low": 0.06583327800035477,
+        "nearest_median": 0.21979621797800064
+      },
+      {
+        "class": 71,
+        "name": "Machoke",
+        "quantitative_pass": true,
+        "structure": 1.1576542854309082,
+        "low": 0.13823042809963226,
+        "nearest_median": 0.2687962204217911
+      },
+      {
+        "class": 72,
+        "name": "Machop",
+        "quantitative_pass": false,
+        "structure": 1.0852468013763428,
+        "low": 0.05310783162713051,
+        "nearest_median": 0.16559705138206482
+      },
+      {
+        "class": 73,
+        "name": "Magikarp",
+        "quantitative_pass": true,
+        "structure": 1.1826295852661133,
+        "low": 0.1889597326517105,
+        "nearest_median": 0.3569551259279251
+      },
+      {
+        "class": 74,
+        "name": "Magmar",
+        "quantitative_pass": true,
+        "structure": 1.0927810668945312,
+        "low": 0.1728815883398056,
+        "nearest_median": 0.30495376884937286
+      },
+      {
+        "class": 75,
+        "name": "Magnemite",
+        "quantitative_pass": true,
+        "structure": 1.1844348907470703,
+        "low": 0.07731807231903076,
+        "nearest_median": 0.24592091888189316
+      },
+      {
+        "class": 76,
+        "name": "Magneton",
+        "quantitative_pass": true,
+        "structure": 1.215885043144226,
+        "low": 0.2785640060901642,
+        "nearest_median": 0.3834303617477417
+      },
+      {
+        "class": 77,
+        "name": "Mankey",
+        "quantitative_pass": true,
+        "structure": 0.9226493835449219,
+        "low": 0.09773623943328857,
+        "nearest_median": 0.2287488579750061
+      },
+      {
+        "class": 78,
+        "name": "Marowak",
+        "quantitative_pass": true,
+        "structure": 1.3232309818267822,
+        "low": 0.10869114845991135,
+        "nearest_median": 0.21451111882925034
+      },
+      {
+        "class": 79,
+        "name": "Meowth",
+        "quantitative_pass": true,
+        "structure": 0.670873761177063,
+        "low": 0.10981021076440811,
+        "nearest_median": 0.22601724416017532
+      },
+      {
+        "class": 80,
+        "name": "Metapod",
+        "quantitative_pass": true,
+        "structure": 0.89354407787323,
+        "low": 0.08545307070016861,
+        "nearest_median": 0.20086319744586945
+      },
+      {
+        "class": 81,
+        "name": "Mew",
+        "quantitative_pass": false,
+        "structure": 0.33277374505996704,
+        "low": 0.05865813419222832,
+        "nearest_median": 0.19965579360723495
+      },
+      {
+        "class": 82,
+        "name": "Mewtwo",
+        "quantitative_pass": true,
+        "structure": 0.9033091068267822,
+        "low": 0.14515884220600128,
+        "nearest_median": 0.28186531364917755
+      },
+      {
+        "class": 83,
+        "name": "Moltres",
+        "quantitative_pass": true,
+        "structure": 1.0013269186019897,
+        "low": 0.11098796874284744,
+        "nearest_median": 0.2939707636833191
+      },
+      {
+        "class": 84,
+        "name": "MrMime",
+        "quantitative_pass": true,
+        "structure": 1.0761094093322754,
+        "low": 0.23589611053466797,
+        "nearest_median": 0.34565237164497375
+      },
+      {
+        "class": 85,
+        "name": "Muk",
+        "quantitative_pass": true,
+        "structure": 0.965503454208374,
+        "low": 0.10257095843553543,
+        "nearest_median": 0.2191234827041626
+      },
+      {
+        "class": 86,
+        "name": "Nidoking",
+        "quantitative_pass": true,
+        "structure": 0.7627469301223755,
+        "low": 0.09294870495796204,
+        "nearest_median": 0.2093372941017151
+      },
+      {
+        "class": 87,
+        "name": "Nidoqueen",
+        "quantitative_pass": true,
+        "structure": 0.7927687168121338,
+        "low": 0.1019878163933754,
+        "nearest_median": 0.22634579986333847
+      },
+      {
+        "class": 88,
+        "name": "Nidoran-f",
+        "quantitative_pass": true,
+        "structure": 1.130203127861023,
+        "low": 0.08167069405317307,
+        "nearest_median": 0.16970191895961761
+      },
+      {
+        "class": 89,
+        "name": "Nidoran-m",
+        "quantitative_pass": true,
+        "structure": 1.0383752584457397,
+        "low": 0.2076350897550583,
+        "nearest_median": 0.34669843316078186
+      },
+      {
+        "class": 90,
+        "name": "Nidorina",
+        "quantitative_pass": true,
+        "structure": 0.7658225893974304,
+        "low": 0.0823996514081955,
+        "nearest_median": 0.20015284419059753
+      },
+      {
+        "class": 91,
+        "name": "Nidorino",
+        "quantitative_pass": true,
+        "structure": 0.8864884972572327,
+        "low": 0.14793546497821808,
+        "nearest_median": 0.27846960723400116
+      },
+      {
+        "class": 92,
+        "name": "Ninetales",
+        "quantitative_pass": false,
+        "structure": 0.5381712317466736,
+        "low": 0.06915367394685745,
+        "nearest_median": 0.19961746037006378
+      },
+      {
+        "class": 93,
+        "name": "Oddish",
+        "quantitative_pass": true,
+        "structure": 0.7002601027488708,
+        "low": 0.15334461629390717,
+        "nearest_median": 0.27775241434574127
+      },
+      {
+        "class": 94,
+        "name": "Omanyte",
+        "quantitative_pass": false,
+        "structure": 0.661874532699585,
+        "low": 0.04942222312092781,
+        "nearest_median": 0.1942717805504799
+      },
+      {
+        "class": 95,
+        "name": "Omastar",
+        "quantitative_pass": false,
+        "structure": 0.5530374646186829,
+        "low": 0.06493387371301651,
+        "nearest_median": 0.21353745460510254
+      },
+      {
+        "class": 96,
+        "name": "Onix",
+        "quantitative_pass": true,
+        "structure": 1.3378052711486816,
+        "low": 0.10196298360824585,
+        "nearest_median": 0.2520689517259598
+      },
+      {
+        "class": 97,
+        "name": "Paras",
+        "quantitative_pass": true,
+        "structure": 0.7335525751113892,
+        "low": 0.11087917536497116,
+        "nearest_median": 0.3166174292564392
+      },
+      {
+        "class": 98,
+        "name": "Parasect",
+        "quantitative_pass": true,
+        "structure": 0.9040670394897461,
+        "low": 0.16580592095851898,
+        "nearest_median": 0.32091763615608215
+      },
+      {
+        "class": 99,
+        "name": "Persian",
+        "quantitative_pass": true,
+        "structure": 1.085310459136963,
+        "low": 0.0928487479686737,
+        "nearest_median": 0.19753436744213104
+      },
+      {
+        "class": 100,
+        "name": "Pidgeot",
+        "quantitative_pass": true,
+        "structure": 1.036152720451355,
+        "low": 0.1418808102607727,
+        "nearest_median": 0.19777435809373856
+      },
+      {
+        "class": 101,
+        "name": "Pidgeotto",
+        "quantitative_pass": true,
+        "structure": 0.9371228814125061,
+        "low": 0.09391876310110092,
+        "nearest_median": 0.2112588956952095
+      },
+      {
+        "class": 102,
+        "name": "Pidgey",
+        "quantitative_pass": false,
+        "structure": 1.2369303703308105,
+        "low": 0.051312267780303955,
+        "nearest_median": 0.19597796350717545
+      },
+      {
+        "class": 103,
+        "name": "Pikachu",
+        "quantitative_pass": true,
+        "structure": 0.8218286037445068,
+        "low": 0.11244712024927139,
+        "nearest_median": 0.25244519114494324
+      },
+      {
+        "class": 104,
+        "name": "Pinsir",
+        "quantitative_pass": false,
+        "structure": 0.8640682697296143,
+        "low": 0.06620385497808456,
+        "nearest_median": 0.28534287214279175
+      },
+      {
+        "class": 105,
+        "name": "Poliwag",
+        "quantitative_pass": false,
+        "structure": 0.5890829563140869,
+        "low": 0.024408919736742973,
+        "nearest_median": 0.1856277585029602
+      },
+      {
+        "class": 106,
+        "name": "Poliwhirl",
+        "quantitative_pass": true,
+        "structure": 0.6584246158599854,
+        "low": 0.11318736523389816,
+        "nearest_median": 0.3631541579961777
+      },
+      {
+        "class": 107,
+        "name": "Poliwrath",
+        "quantitative_pass": true,
+        "structure": 1.0322645902633667,
+        "low": 0.10495930165052414,
+        "nearest_median": 0.2547598034143448
+      },
+      {
+        "class": 108,
+        "name": "Ponyta",
+        "quantitative_pass": true,
+        "structure": 0.9388039112091064,
+        "low": 0.15044762194156647,
+        "nearest_median": 0.2723599523305893
+      },
+      {
+        "class": 109,
+        "name": "Porygon",
+        "quantitative_pass": false,
+        "structure": 0.3421432673931122,
+        "low": 0.07463740557432175,
+        "nearest_median": 0.24819427728652954
+      },
+      {
+        "class": 110,
+        "name": "Primeape",
+        "quantitative_pass": true,
+        "structure": 0.5382440686225891,
+        "low": 0.163484588265419,
+        "nearest_median": 0.2940827012062073
+      },
+      {
+        "class": 111,
+        "name": "Psyduck",
+        "quantitative_pass": true,
+        "structure": 1.0768849849700928,
+        "low": 0.09312666207551956,
+        "nearest_median": 0.20153725147247314
+      },
+      {
+        "class": 112,
+        "name": "Raichu",
+        "quantitative_pass": true,
+        "structure": 1.2409594058990479,
+        "low": 0.09065880626440048,
+        "nearest_median": 0.23295249044895172
+      },
+      {
+        "class": 113,
+        "name": "Rapidash",
+        "quantitative_pass": true,
+        "structure": 0.8467528223991394,
+        "low": 0.09089597314596176,
+        "nearest_median": 0.24999046325683594
+      },
+      {
+        "class": 114,
+        "name": "Raticate",
+        "quantitative_pass": true,
+        "structure": 1.000510811805725,
+        "low": 0.08327657729387283,
+        "nearest_median": 0.19432100653648376
+      },
+      {
+        "class": 115,
+        "name": "Rattata",
+        "quantitative_pass": true,
+        "structure": 1.0488637685775757,
+        "low": 0.2149456888437271,
+        "nearest_median": 0.3409838080406189
+      },
+      {
+        "class": 116,
+        "name": "Rhydon",
+        "quantitative_pass": true,
+        "structure": 1.1213558912277222,
+        "low": 0.10974285006523132,
+        "nearest_median": 0.2147379070520401
+      },
+      {
+        "class": 117,
+        "name": "Rhyhorn",
+        "quantitative_pass": false,
+        "structure": 1.0245230197906494,
+        "low": 0.055584266781806946,
+        "nearest_median": 0.18368510901927948
+      },
+      {
+        "class": 118,
+        "name": "Sandshrew",
+        "quantitative_pass": true,
+        "structure": 1.1337226629257202,
+        "low": 0.12199896574020386,
+        "nearest_median": 0.21912242472171783
+      },
+      {
+        "class": 119,
+        "name": "Sandslash",
+        "quantitative_pass": true,
+        "structure": 0.948364794254303,
+        "low": 0.19247649610042572,
+        "nearest_median": 0.2768388092517853
+      },
+      {
+        "class": 120,
+        "name": "Scyther",
+        "quantitative_pass": true,
+        "structure": 1.1163655519485474,
+        "low": 0.12889833748340607,
+        "nearest_median": 0.26289626955986023
+      },
+      {
+        "class": 121,
+        "name": "Seadra",
+        "quantitative_pass": true,
+        "structure": 0.8707878589630127,
+        "low": 0.09763705730438232,
+        "nearest_median": 0.21853039413690567
+      },
+      {
+        "class": 122,
+        "name": "Seaking",
+        "quantitative_pass": true,
+        "structure": 1.5060945749282837,
+        "low": 0.13702093064785004,
+        "nearest_median": 0.34814542531967163
+      },
+      {
+        "class": 123,
+        "name": "Seel",
+        "quantitative_pass": false,
+        "structure": 0.5643265247344971,
+        "low": 0.04487854614853859,
+        "nearest_median": 0.13206497579813004
+      },
+      {
+        "class": 124,
+        "name": "Shellder",
+        "quantitative_pass": true,
+        "structure": 0.9280683994293213,
+        "low": 0.14485467970371246,
+        "nearest_median": 0.2646138370037079
+      },
+      {
+        "class": 125,
+        "name": "Slowbro",
+        "quantitative_pass": true,
+        "structure": 0.882068395614624,
+        "low": 0.10814660042524338,
+        "nearest_median": 0.2345237210392952
+      },
+      {
+        "class": 126,
+        "name": "Slowpoke",
+        "quantitative_pass": false,
+        "structure": 0.6329507231712341,
+        "low": 0.04966532811522484,
+        "nearest_median": 0.2288423851132393
+      },
+      {
+        "class": 127,
+        "name": "Snorlax",
+        "quantitative_pass": true,
+        "structure": 0.9434365034103394,
+        "low": 0.23780286312103271,
+        "nearest_median": 0.38052988052368164
+      },
+      {
+        "class": 128,
+        "name": "Spearow",
+        "quantitative_pass": true,
+        "structure": 0.7692462205886841,
+        "low": 0.15929876267910004,
+        "nearest_median": 0.3203967958688736
+      },
+      {
+        "class": 129,
+        "name": "Squirtle",
+        "quantitative_pass": true,
+        "structure": 0.9217560291290283,
+        "low": 0.09602753072977066,
+        "nearest_median": 0.2126215249300003
+      },
+      {
+        "class": 130,
+        "name": "Starmie",
+        "quantitative_pass": false,
+        "structure": 0.7060173153877258,
+        "low": 0.07114060968160629,
+        "nearest_median": 0.19680918753147125
+      },
+      {
+        "class": 131,
+        "name": "Staryu",
+        "quantitative_pass": true,
+        "structure": 0.7463508248329163,
+        "low": 0.08634104579687119,
+        "nearest_median": 0.2752223312854767
+      },
+      {
+        "class": 132,
+        "name": "Tangela",
+        "quantitative_pass": true,
+        "structure": 1.3169362545013428,
+        "low": 0.09988969564437866,
+        "nearest_median": 0.25985024869441986
+      },
+      {
+        "class": 133,
+        "name": "Tauros",
+        "quantitative_pass": true,
+        "structure": 0.9262645244598389,
+        "low": 0.1541391760110855,
+        "nearest_median": 0.2571060508489609
+      },
+      {
+        "class": 134,
+        "name": "Tentacool",
+        "quantitative_pass": true,
+        "structure": 0.8251740336418152,
+        "low": 0.10410374402999878,
+        "nearest_median": 0.23039034008979797
+      },
+      {
+        "class": 135,
+        "name": "Tentacruel",
+        "quantitative_pass": true,
+        "structure": 1.2030034065246582,
+        "low": 0.1441783756017685,
+        "nearest_median": 0.31588998436927795
+      },
+      {
+        "class": 136,
+        "name": "Vaporeon",
+        "quantitative_pass": true,
+        "structure": 1.0356221199035645,
+        "low": 0.11114081740379333,
+        "nearest_median": 0.2644006311893463
+      },
+      {
+        "class": 137,
+        "name": "Venomoth",
+        "quantitative_pass": true,
+        "structure": 0.8717317581176758,
+        "low": 0.19737125933170319,
+        "nearest_median": 0.3219407647848129
+      },
+      {
+        "class": 138,
+        "name": "Venonat",
+        "quantitative_pass": true,
+        "structure": 0.709845781326294,
+        "low": 0.16823138296604156,
+        "nearest_median": 0.2823280990123749
+      },
+      {
+        "class": 139,
+        "name": "Venusaur",
+        "quantitative_pass": true,
+        "structure": 0.6639935374259949,
+        "low": 0.11568144708871841,
+        "nearest_median": 0.2624375522136688
+      },
+      {
+        "class": 140,
+        "name": "Victreebel",
+        "quantitative_pass": false,
+        "structure": 1.1560568809509277,
+        "low": 0.06505689024925232,
+        "nearest_median": 0.2075066938996315
+      },
+      {
+        "class": 141,
+        "name": "Vileplume",
+        "quantitative_pass": false,
+        "structure": 0.8843063712120056,
+        "low": 0.06697194278240204,
+        "nearest_median": 0.2229805588722229
+      },
+      {
+        "class": 142,
+        "name": "Voltorb",
+        "quantitative_pass": true,
+        "structure": 0.8738983869552612,
+        "low": 0.10408114641904831,
+        "nearest_median": 0.3188759833574295
+      },
+      {
+        "class": 143,
+        "name": "Vulpix",
+        "quantitative_pass": true,
+        "structure": 0.7776920199394226,
+        "low": 0.10770971328020096,
+        "nearest_median": 0.2254098579287529
+      },
+      {
+        "class": 144,
+        "name": "Wartortle",
+        "quantitative_pass": false,
+        "structure": 0.8750224113464355,
+        "low": 0.06291774660348892,
+        "nearest_median": 0.17542652040719986
+      },
+      {
+        "class": 145,
+        "name": "Weedle",
+        "quantitative_pass": false,
+        "structure": 0.6506040096282959,
+        "low": 0.0661071315407753,
+        "nearest_median": 0.2767189294099808
+      },
+      {
+        "class": 146,
+        "name": "Weepinbell",
+        "quantitative_pass": true,
+        "structure": 1.050384283065796,
+        "low": 0.09128475934267044,
+        "nearest_median": 0.19722142070531845
+      },
+      {
+        "class": 147,
+        "name": "Weezing",
+        "quantitative_pass": false,
+        "structure": 0.8591127991676331,
+        "low": 0.05297771096229553,
+        "nearest_median": 0.1715599074959755
+      },
+      {
+        "class": 148,
+        "name": "Wigglytuff",
+        "quantitative_pass": true,
+        "structure": 0.8004971742630005,
+        "low": 0.12257895618677139,
+        "nearest_median": 0.2269507795572281
+      },
+      {
+        "class": 149,
+        "name": "Zapdos",
+        "quantitative_pass": true,
+        "structure": 0.90171879529953,
+        "low": 0.0826946273446083,
+        "nearest_median": 0.2500549778342247
+      },
+      {
+        "class": 150,
+        "name": "Zubat",
+        "quantitative_pass": true,
+        "structure": 1.0012873411178589,
+        "low": 0.15930624306201935,
+        "nearest_median": 0.30066435039043427
+      }
+    ]
+  }
+}

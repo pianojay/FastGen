@@ -1,0 +1,78 @@
+{
+  "audit_seed": 58001,
+  "audit_updates": [
+    6000,
+    10000,
+    14000,
+    18000
+  ],
+  "augment_probability": 0.5,
+  "batch_size": 32,
+  "center_scale": 0.01,
+  "checkpoint_interval": 500,
+  "cutout_pixels": 16,
+  "d_optimizer": {
+    "betas": [
+      0.0,
+      0.9
+    ],
+    "eps": 1e-08,
+    "lr": 0.0001,
+    "weight_decay": 0.01
+  },
+  "data_root": "/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k",
+  "discriminator": {
+    "channels": 64
+  },
+  "ema_decay": 0.999,
+  "g_optimizer": {
+    "betas": [
+      0.0,
+      0.9
+    ],
+    "eps": 1e-08,
+    "lr": 5e-05,
+    "weight_decay": 0.01
+  },
+  "generator": {
+    "model_channels": 128,
+    "num_blocks": 2
+  },
+  "gp_epsilon": 0.01,
+  "gp_fraction": 0.25,
+  "gp_scale": 1.0,
+  "gradient_clip": 50.0,
+  "gradient_normalization": {
+    "decay": 0.9,
+    "eps": 1e-08,
+    "target_scale": 0.5
+  },
+  "horizon_g_updates": 18000,
+  "hypothesis": "C2 retained noisy variation at OT floor.1; C3 floor.02 collapsed persistently with rapidly changing raw templates. Test an intermediate retained transport floor.05 together with fourfold stronger finite-difference R1/R2 (GP.25->1) to smooth critic directions while allowing more structure learning than C2. Keep C2 OT start.5,8k decay and optimizer rates. Bundled intervention and independent seed do not isolate individual effects.",
+  "lr_schedule": "constant",
+  "max_recoveries": 2,
+  "microbatch": 32,
+  "optimizer": {
+    "betas": [
+      0.0,
+      0.9
+    ],
+    "eps": 1e-08,
+    "lr": 0.0001,
+    "weight_decay": 0.01
+  },
+  "ot_decay_updates": 8000,
+  "ot_end": 0.05,
+  "ot_start": 0.5,
+  "partition": "resources/development_split.json",
+  "precision": "float32",
+  "primary_checkpoint": "first_persistent_audit_pair",
+  "reference": "candidate2",
+  "run_dir": "runs/stability_campaign/candidate4",
+  "sample_interval": 2000,
+  "seed": 77194,
+  "status_interval": 50,
+  "threads": 4,
+  "translate_pixels": 8,
+  "watchdog_seconds": 28800
+}

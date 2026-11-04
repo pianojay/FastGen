@@ -1,0 +1,22 @@
+{
+  "step": 5000,
+  "g_updates": 5000,
+  "d_updates": 5000,
+  "g_real_presentations": 160000,
+  "d_real_presentations": 160000,
+  "generated_presentations": 320000,
+  "D_network_image_evaluations_including_G_steps_and_GP": 720000,
+  "optimizer_hours": 1.1427168976034348,
+  "last1000_cycle_seconds": 0.8179974512886256,
+  "contiguous_finite_metrics": true,
+  "recovery_attempts": 0,
+  "latest_memory": {
+    "device_bytes": 8382316544,
+    "host_rss_bytes": 1995726848,
+    "peak_allocated_bytes": 7522096128,
+    "peak_reserved_bytes": 8153726976,
+    "tree_pss_bytes": 1983009792
+  },
+  "metrics_jsonl": "runs/afm_unet128_50k_seed20261001/metrics.jsonl",
+  "panel": "runs/afm_unet128_50k_seed20261001/panels/step005000.png"
+}

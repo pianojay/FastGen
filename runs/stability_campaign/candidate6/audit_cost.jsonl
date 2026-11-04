@@ -1,0 +1,4 @@
+{"memory": {"device_bytes": 16145973248, "host_rss_bytes": 2856992768, "peak_allocated_bytes": 14469431808, "peak_reserved_bytes": 15915286528, "tree_pss_bytes": 2841309184}, "seconds": 86.07032165676355, "step": 6000}
+{"memory": {"device_bytes": 16145973248, "host_rss_bytes": 2892046336, "peak_allocated_bytes": 14469431808, "peak_reserved_bytes": 15915286528, "tree_pss_bytes": 2876362752}, "seconds": 83.12164648063481, "step": 10000}
+{"memory": {"device_bytes": 16145973248, "host_rss_bytes": 2907549696, "peak_allocated_bytes": 14469431808, "peak_reserved_bytes": 15915286528, "tree_pss_bytes": 2891884544}, "seconds": 85.86629232764244, "step": 14000}
+{"memory": {"device_bytes": 16145973248, "host_rss_bytes": 2901024768, "peak_allocated_bytes": 14469431808, "peak_reserved_bytes": 15915286528, "tree_pss_bytes": 2885359616}, "seconds": 83.0300621483475, "step": 18000}

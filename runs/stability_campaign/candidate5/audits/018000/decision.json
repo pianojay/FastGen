@@ -1,0 +1,10 @@
+{
+  "action": "stop",
+  "post_decay_collapse_streak": 2,
+  "quantitative_pass_ema": 4,
+  "quantitative_pass_raw": 1,
+  "reason": "Declared18k horizon reached without qualification. Quantitative collapse gate and template repetition persist from14k to18k; two consecutive post-decay audits meet frozen persistent-collapse rule.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790971593.5534265,
+  "reviewed_classes": 40
+}

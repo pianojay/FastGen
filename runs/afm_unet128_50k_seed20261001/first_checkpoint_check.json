@@ -1,0 +1,12 @@
+{
+  "checkpoint_sha256": "f103ec603e7fd859032290f164cc07273de2b2ad74ec9832f6d62ed3d372e701",
+  "d_updates": 500,
+  "g_updates": 500,
+  "normalization_backwards": 500,
+  "optimizer_states_present": true,
+  "real_presentations_per_stream": 16000,
+  "source_sha256": "7914989e55eba7820f8a4119b0f0f38fa19750b31a25f9acab1a35810145ceb8",
+  "step": 500,
+  "stream_cursor": 1941,
+  "stream_epochs": 1
+}

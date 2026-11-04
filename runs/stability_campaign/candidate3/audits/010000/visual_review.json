@@ -1,0 +1,256 @@
+{
+  "finding": "All40 inspected classes show nearly identical within-class composition across independent draws, including fresh draws. Some recognizable details emerge (e.g. Arbok, Bellsprout), but meaningful variation is absent. Residual changes largely texture/noise and tiny deformations. Full151 quantitative counts0 raw/EMA. First post-decay collapse audit; persistence still requires14k.",
+  "models": [
+    "raw",
+    "ema"
+  ],
+  "per_class": [
+    {
+      "class_id": 0,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 1,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 2,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 3,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 4,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 5,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 6,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 7,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 8,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 9,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 10,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 11,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 12,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 13,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 14,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 15,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 16,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 17,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 18,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 19,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 20,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 21,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 22,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 23,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 24,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 25,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 26,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 27,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 28,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 29,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 70,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 71,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 72,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 73,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 74,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 75,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 76,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 77,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 78,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    },
+    {
+      "class_id": 79,
+      "ema": "repeated_template_no_meaningful_diversity",
+      "raw": "repeated_template_no_meaningful_diversity"
+    }
+  ],
+  "persistent_template_classes_in_this_audit": 40,
+  "recognizable_diverse_classes_established": 0,
+  "review_unix": 1790923189.6647875,
+  "reviewed_classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "step": 10000,
+  "unreviewed_classes": 111
+}

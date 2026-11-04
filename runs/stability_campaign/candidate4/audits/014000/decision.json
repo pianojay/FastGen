@@ -1,0 +1,9 @@
+{
+  "action": "continue",
+  "quantitative_pass_ema": 54,
+  "quantitative_pass_raw": 59,
+  "reason": "Recognizable diversity remains unestablished in40 reviewed classes. Two consecutive post-decay audits satisfying the frozen <=15 raw AND EMA quantitative collapse gate have not occurred. Continue unchanged to declared18k horizon.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790939300.9647985,
+  "reviewed_classes": 40
+}

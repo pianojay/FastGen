@@ -1,0 +1,9 @@
+{
+  "action": "continue",
+  "quantitative_pass_ema": 143,
+  "quantitative_pass_raw": 80,
+  "reason": "14k quantitative gate passes80 raw/143 EMA; raw fails114-class acceptance threshold, and recognizable diversity not established in40 inspected classes. Frozen early-stop requires two post-decay audits <=15 passes in both models; not met. Continue unchanged to terminal18k.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790898686.35825,
+  "reviewed_classes": 40
+}

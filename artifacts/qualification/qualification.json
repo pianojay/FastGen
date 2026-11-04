@@ -1,0 +1,76 @@
+{
+  "checkpoint_seconds": 2.7953255493193865,
+  "config": {
+    "augment_probability": 0.5,
+    "batch_size": 32,
+    "center_scale": 0.01,
+    "cutout_pixels": 16,
+    "data_root": "/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k",
+    "discriminator": {
+      "channels": 64
+    },
+    "ema_decay": 0.999,
+    "eval_batch_size": 32,
+    "generator": {
+      "model_channels": 128,
+      "num_blocks": 2
+    },
+    "gp_epsilon": 0.01,
+    "gp_fraction": 0.25,
+    "gp_scale": 0.25,
+    "gradient_clip": 50.0,
+    "microbatch": 8,
+    "optimizer": {
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "eps": 1e-08,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "ot_decay_updates": 10000,
+    "ot_end": 0.005,
+    "ot_start": 0.2,
+    "partition": "resources/development_split.json",
+    "seed": 7091,
+    "threads": 4,
+    "translate_pixels": 8
+  },
+  "d_updates_executed": 14,
+  "disposable_cycles_executed": 14,
+  "duplicate_job_refused": true,
+  "exact_next_cycle_recovery": true,
+  "g_updates_executed": 14,
+  "hard_crash_recovery_tested": false,
+  "mean_warm_cycle_seconds": 0.7067452389746904,
+  "memory": {
+    "device_bytes": 3076521984,
+    "host_rss_bytes": 2084708352,
+    "peak_allocated_bytes": 2665217024,
+    "peak_reserved_bytes": 2847932416,
+    "tree_pss_bytes": 2071845888
+  },
+  "parameters": {
+    "discriminator": 9918657,
+    "generator": 39664771
+  },
+  "real_presentations_executed": 896,
+  "seconds_before_eval": 50.46843979880214,
+  "warm_cycle_seconds": [
+    0.7365604545921087,
+    0.7058592569082975,
+    0.7042951583862305,
+    0.7008948493748903,
+    0.6969812549650669,
+    0.6989594735205173,
+    0.7007686346769333,
+    0.6989067010581493,
+    0.7090546395629644,
+    0.715171966701746
+  ],
+  "termination": "Intentional stop during FID feature extraction to redirect clean-fid hardcoded /tmp cache; training checks and exact recovery passed.",
+  "smoke_completed": false,
+  "approx_total_wall_seconds_from_file_times": 85.51531028747559,
+  "generated_smoke_images": 3020
+}

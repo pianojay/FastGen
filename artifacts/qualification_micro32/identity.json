@@ -1,0 +1,51 @@
+{
+  "config": {
+    "augment_probability": 0.5,
+    "batch_size": 32,
+    "center_scale": 0.01,
+    "cutout_pixels": 16,
+    "data_root": "/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k",
+    "discriminator": {
+      "channels": 64
+    },
+    "ema_decay": 0.999,
+    "eval_batch_size": 32,
+    "generator": {
+      "model_channels": 128,
+      "num_blocks": 2
+    },
+    "gp_epsilon": 0.01,
+    "gp_fraction": 0.25,
+    "gp_scale": 0.25,
+    "gradient_clip": 50.0,
+    "microbatch": 32,
+    "optimizer": {
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "eps": 1e-08,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "ot_decay_updates": 10000,
+    "ot_end": 0.005,
+    "ot_start": 0.2,
+    "partition": "resources/development_split.json",
+    "seed": 7091,
+    "threads": 4,
+    "translate_pixels": 8
+  },
+  "process": {
+    "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+    "pid": 2766230,
+    "start_ticks": "1063140121",
+    "uid": 1000
+  },
+  "protected": {
+    "afm_snapshot": true,
+    "base_Model": true,
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "protected": true
+  }
+}

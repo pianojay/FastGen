@@ -1,0 +1,8 @@
+{
+  "step": 8000,
+  "model": "ema",
+  "classes_reviewed": 12,
+  "role": "trajectory_only_not_scheduled_acceptance_audit",
+  "finding": "Class-associated silhouettes emerging but noisy and anatomically unreliable; recognizable diversity not established. OT floor reached; continue to10k audit.",
+  "review_unix": 1790933925.3820543
+}

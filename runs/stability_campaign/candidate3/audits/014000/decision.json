@@ -1,0 +1,10 @@
+{
+  "action": "stop",
+  "post_decay_collapse_streak": 2,
+  "quantitative_pass_ema": 0,
+  "quantitative_pass_raw": 0,
+  "reason": "Frozen persistent-collapse early-stop rule satisfied: after OT decay at8k, consecutive10k and14k audits have0/151 quantitative-pass classes in both raw G and EMA (<=15), with40 classes visually showing repeated templates at both audits (>=30). Stop candidate3 at14k; not qualified.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790926708.925515,
+  "reviewed_classes": 40
+}

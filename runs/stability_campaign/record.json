@@ -1,0 +1,833 @@
+{
+  "additional_qualifications": [
+    {
+      "candidate": 2,
+      "d_updates": 34,
+      "evidence": "artifacts/stability/qualification_candidate2/qualification.json",
+      "g_updates": 34,
+      "seconds": 37.28364693932235
+    },
+    {
+      "candidate": 3,
+      "d_updates": 34,
+      "evidence": "artifacts/stability/qualification_candidate3/qualification.json",
+      "g_updates": 34,
+      "seconds": 35.080183608457446
+    },
+    {
+      "candidate": 4,
+      "d_updates": 34,
+      "evidence": "artifacts/stability/qualification_candidate4/qualification.json",
+      "g_updates": 34,
+      "seconds": 36.83654476329684
+    },
+    {
+      "candidate": 5,
+      "d_updates": 34,
+      "g_updates": 34,
+      "path": "artifacts/stability/qualification_candidate5/qualification.json",
+      "real_presentations": 4352,
+      "seconds": 61.5738627538085
+    },
+    {
+      "candidate": 6,
+      "d_updates": 34,
+      "g_updates": 34,
+      "path": "artifacts/stability/qualification_candidate6/qualification.json",
+      "real_presentations": 4352,
+      "seconds": 59.383612452074885
+    }
+  ],
+  "calibration": "artifacts/stability/calibration",
+  "calibration_seconds": 149.74327550455928,
+  "closed_unix": 1791000707.636036,
+  "completed_candidates": 6,
+  "completed_confirmations": 0,
+  "cumulative_gpu_job_seconds": 128893.40674402751,
+  "cumulative_run_seconds": 128392.08335232735,
+  "current_process": null,
+  "current_run": null,
+  "disposable_d_updates": 131,
+  "disposable_g_updates": 131,
+  "failed_probe_seconds": 60.34563183784485,
+  "historical_baseline_hours_excluded_from_new_cost": 2.4538947033028427,
+  "max_candidates": 6,
+  "max_confirmations": 1,
+  "outcome": "no_qualifying_recipe",
+  "pending_decision": null,
+  "pretraining_elapsed_seconds": 508.7068946361542,
+  "protected": {
+    "afm_snapshot": true,
+    "base_Model": true,
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "protected": true
+  },
+  "protocol_sha256": "dfc9ddef9e97923e9d8c0f22e56605bfed49c6229e2e1fb30083ddc2a1ba1d09",
+  "qualification": "artifacts/stability/qualification_frozen/qualification.json",
+  "qualification_seconds": 61.07663384079933,
+  "runs": [
+    {
+      "attempt_seconds": 15629.171012878418,
+      "audits": [
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate1/audits/006000/decision.json",
+          "quantitative_pass_ema": 146,
+          "quantitative_pass_raw": 141,
+          "step": 6000,
+          "visual_classes_reviewed": 30,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate1/audits/010000/decision.json",
+          "quantitative_pass_ema": 145,
+          "quantitative_pass_raw": 97,
+          "step": 10000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate1/audits/014000/decision.json",
+          "quantitative_pass_ema": 147,
+          "quantitative_pass_raw": 84,
+          "step": 14000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "horizon_not_qualified",
+          "quantitative_pass_ema": 138,
+          "quantitative_pass_raw": 99,
+          "step": 18000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        }
+      ],
+      "config": "configs/stability_candidate1.json",
+      "config_sha256": "f03bf84a3f7dad845d5dd143035c070dd5938707adbccfa953b9a6daa45370ac",
+      "d_updates": 18000,
+      "final": {
+        "audit_generated_presentations": 24160,
+        "audit_seconds": 335.0101549178362,
+        "checkpoint_sha256": "5ad5fac06c835cf7dd1a8da2418c389012f4129ff14be5c3a3f29fd8f0a28056",
+        "d_real_presentations": 576000,
+        "d_updates": 18000,
+        "elapsed_seconds": 15629.171012878418,
+        "g_real_presentations": 576000,
+        "g_updates": 18000,
+        "generated_presentations": 1152000,
+        "late1000_means": {
+          "cycle_seconds": 0.8234876400902867,
+          "d_adv": 0.6604363859295845,
+          "d_fake_logit": -0.042546870588324966,
+          "d_real_logit": 0.055064750373363495,
+          "g_adv": 0.7800809792280197,
+          "g_ot": 0.10882625202834606
+        },
+        "memory": {
+          "device_bytes": 8382316544,
+          "host_rss_bytes": 2880643072,
+          "peak_allocated_bytes": 7522096128,
+          "peak_reserved_bytes": 8153726976,
+          "tree_pss_bytes": 2864970752
+        },
+        "optimizer_seconds": 14793.998457707465,
+        "panel_generated_presentations": 864,
+        "parameters": {
+          "discriminator": 9918657,
+          "generator": 39664771
+        },
+        "protected": {
+          "afm_snapshot": true,
+          "base_Model": true,
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "protected": true
+        },
+        "quantitative_pass_ema": 138,
+        "quantitative_pass_raw": 99,
+        "r1_samples": 144000,
+        "r2_samples": 144000,
+        "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+        "terminal_outcome": "not_qualified",
+        "training_discriminator_image_evaluations": 2592000,
+        "visual_classes_reviewed": 40,
+        "visual_diversity_established": 0
+      },
+      "g_updates": 18000,
+      "horizon_g_updates": 18000,
+      "hypothesis": "Historical G adversarial gradient dominated OT ~26x on one diagnostic batch. Preserve source dependence with higher transport floor and reduce post-normalization adversarial scale; slow both optimizers, especially D, to reduce rapid critic-driven template convergence.",
+      "kind": "candidate",
+      "outcome": "not_qualified",
+      "recoveries": 0,
+      "run_dir": "runs/stability_campaign/candidate1",
+      "seed": 2026100201,
+      "slot": 1,
+      "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+      "state": "completed",
+      "summary": "runs/stability_campaign/candidate1/summary.json",
+      "watchdog_seconds": 28800
+    },
+    {
+      "attempt_seconds": 27546.08957195282,
+      "audits": [
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate2/audits/006000/decision.json",
+          "quantitative_pass_ema": 124,
+          "quantitative_pass_raw": 138,
+          "step": 6000,
+          "visual_classes_reviewed": 30,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate2/audits/010000/decision.json",
+          "quantitative_pass_ema": 148,
+          "quantitative_pass_raw": 134,
+          "step": 10000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate2/audits/014000/decision.json",
+          "quantitative_pass_ema": 143,
+          "quantitative_pass_raw": 80,
+          "step": 14000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "horizon_not_qualified",
+          "quantitative_pass_ema": 140,
+          "quantitative_pass_raw": 112,
+          "step": 18000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        }
+      ],
+      "config": "configs/stability_candidate2.json",
+      "config_sha256": "f994c92a649b5ddb89059187b581ee6803cb9e38e4f3762743387ff5d19a9d05",
+      "d_updates": 18000,
+      "final": {
+        "audit_generated_presentations": 24160,
+        "audit_seconds": 331.6341350842267,
+        "checkpoint_sha256": "3be0027ef6fc8c6da42348756b56d3b90c5dd4ccd538d451df078bbb6849d951",
+        "d_real_presentations": 576000,
+        "d_updates": 18000,
+        "elapsed_seconds": 27546.08957195282,
+        "g_real_presentations": 576000,
+        "g_updates": 18000,
+        "generated_presentations": 1152000,
+        "late1000_means": {
+          "cycle_seconds": 0.8212214814443142,
+          "d_adv": 0.3811104965507984,
+          "d_fake_logit": -0.635176382202655,
+          "d_real_logit": 0.6504546069912612,
+          "g_adv": 1.7575437039732933,
+          "g_ot": 0.09421373489499092
+        },
+        "memory": {
+          "device_bytes": 8382316544,
+          "host_rss_bytes": 2878894080,
+          "peak_allocated_bytes": 7522096128,
+          "peak_reserved_bytes": 8153726976,
+          "tree_pss_bytes": 2865111040
+        },
+        "optimizer_seconds": 14770.55322881788,
+        "overhead_note": "Includes checkpointing, panels, initialization, exports and prolonged agent review wait at terminal audit; no extra training during wait.",
+        "panel_generated_presentations": 864,
+        "parameters": {
+          "discriminator": 9918657,
+          "generator": 39664771
+        },
+        "protected": {
+          "afm_snapshot": true,
+          "base_Model": true,
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "protected": true
+        },
+        "quantitative_pass_ema": 140,
+        "quantitative_pass_raw": 112,
+        "r1_samples": 144000,
+        "r2_samples": 144000,
+        "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+        "terminal_outcome": "not_qualified",
+        "training_discriminator_image_evaluations": 2592000,
+        "unallocated_to_optimizer_or_audit_seconds": 12443.902208050713,
+        "visual_classes_reviewed": 40,
+        "visual_diversity_established": 0
+      },
+      "g_updates": 18000,
+      "horizon_g_updates": 18000,
+      "hypothesis": "C1 retained input sensitivity but failed recognizable structure; late D relativistic loss remained near chance on visibly poor samples. Raise D LR fivefold to test critic learning speed/directions while retaining C1 source-noise transport and G settings. This does not claim a change in post-normalized gradient target.",
+      "kind": "candidate",
+      "outcome": "not_qualified",
+      "qualification": "artifacts/stability/qualification_candidate2/qualification.json",
+      "recipe_difference": {
+        "d_optimizer.lr": {
+          "from": 2e-05,
+          "to": 0.0001
+        }
+      },
+      "recoveries": 0,
+      "reference": "candidate1",
+      "run_dir": "runs/stability_campaign/candidate2",
+      "seed": 2026100202,
+      "slot": 2,
+      "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+      "state": "completed",
+      "summary": "runs/stability_campaign/candidate2/summary.json",
+      "watchdog_seconds": 28800
+    },
+    {
+      "attempt_seconds": 12281.640414953232,
+      "audits": [
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate3/audits/006000/decision.json",
+          "quantitative_pass_ema": 63,
+          "quantitative_pass_raw": 41,
+          "step": 6000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate3/audits/010000/decision.json",
+          "post_decay_collapse_streak": 1,
+          "quantitative_pass_ema": 0,
+          "quantitative_pass_raw": 0,
+          "step": 10000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "stop_persistent_collapse",
+          "post_decay_collapse_streak": 2,
+          "quantitative_pass_ema": 0,
+          "quantitative_pass_raw": 0,
+          "step": 14000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        }
+      ],
+      "config": "configs/stability_candidate3.json",
+      "config_sha256": "eb556a9ec717a1de2342472cad36080094f359b51b1f150235753b4b5dc71549",
+      "d_updates": 14000,
+      "final": {
+        "audit_generated_presentations": 18120,
+        "audit_seconds": 252.4457261543721,
+        "checkpoint_sha256": "cce4a1c5e510df5ea00f1a6338a01127a03954e32e1caf11204e15a32fc7e98e",
+        "d_real_presentations": 448000,
+        "d_updates": 14000,
+        "elapsed_seconds": 12281.640414953232,
+        "g_real_presentations": 448000,
+        "g_updates": 14000,
+        "generated_presentations": 896000,
+        "late1000_means": {
+          "cycle_seconds": 0.820796118972823,
+          "d_adv": 0.6054437480568886,
+          "d_fake_logit": -0.14509950013831258,
+          "d_gradient_norm": 3.7567372274398805,
+          "d_r1": 0.0076156252949149345,
+          "d_r2": 0.007260132620751392,
+          "d_real_logit": 0.15467448703758419,
+          "g_adv": 0.9625510286092758,
+          "g_gradient_norm": 0.3071534942984581,
+          "g_ot": 0.024520651945844293,
+          "norm_square_avg": 58.166139499664304
+        },
+        "memory": {
+          "device_bytes": 8382316544,
+          "host_rss_bytes": 2946134016,
+          "peak_allocated_bytes": 7522096128,
+          "peak_reserved_bytes": 8153726976,
+          "tree_pss_bytes": 2930469888
+        },
+        "optimizer_seconds": 11586.039630388841,
+        "panel_generated_presentations": 672,
+        "parameters": {
+          "discriminator": 9918657,
+          "generator": 39664771
+        },
+        "protected": {
+          "afm_snapshot": true,
+          "base_Model": true,
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "protected": true
+        },
+        "quantitative_pass_ema": 0,
+        "quantitative_pass_raw": 0,
+        "r1_samples": 112000,
+        "r2_samples": 112000,
+        "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+        "terminal_outcome": "persistent_collapse_not_qualified",
+        "training_discriminator_image_evaluations": 2016000,
+        "visual_classes_reviewed": 40,
+        "visual_diversity_established": 0
+      },
+      "g_updates": 14000,
+      "horizon_g_updates": 18000,
+      "hypothesis": "C2 faster critic separated real/fake but retained noisy malformed outputs and unstable raw palettes. Test whether transport remains too strong for structure learning by reducing the full OT schedule fivefold (.5->.1 becomes .1->.02 over the same8k updates), retaining a nonzero floor and all other C2 training settings. Seed uncertainty remains.",
+      "kind": "candidate",
+      "outcome": "persistent_collapse_not_qualified",
+      "qualification": "artifacts/stability/qualification_candidate3/qualification.json",
+      "recipe_difference": {
+        "ot_end": {
+          "from": 0.1,
+          "to": 0.02
+        },
+        "ot_start": {
+          "from": 0.5,
+          "to": 0.1
+        }
+      },
+      "recoveries": 0,
+      "reference": "candidate2",
+      "run_dir": "runs/stability_campaign/candidate3",
+      "seed": 2026100203,
+      "slot": 3,
+      "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+      "state": "stopped",
+      "summary": "runs/stability_campaign/candidate3/summary.json",
+      "watchdog_seconds": 28800
+    },
+    {
+      "attempt_seconds": 15719.564950942993,
+      "audits": [
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate4/audits/006000/decision.json",
+          "quantitative_pass_ema": 151,
+          "quantitative_pass_raw": 140,
+          "step": 6000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate4/audits/010000/decision.json",
+          "quantitative_pass_ema": 115,
+          "quantitative_pass_raw": 71,
+          "step": 10000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate4/audits/014000/decision.json",
+          "quantitative_pass_ema": 54,
+          "quantitative_pass_raw": 59,
+          "step": 14000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "horizon_not_qualified",
+          "evidence": "runs/stability_campaign/candidate4/audits/018000/decision.json",
+          "quantitative_pass_ema": 26,
+          "quantitative_pass_raw": 19,
+          "step": 18000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        }
+      ],
+      "config": "configs/stability_candidate4.json",
+      "config_sha256": "9a6a37865477e55c34ff232b608988d78acb52a0f2a6d6d25d74a14306514c91",
+      "d_updates": 18000,
+      "final": {
+        "audit_generated_presentations": 24160,
+        "audit_seconds": 337.7135595344007,
+        "checkpoint_sha256": "65bafcab98067d520a9f5f4d329d0fd0ea1f686f53a13444f9f665b22f09abb7",
+        "d_real_presentations": 576000,
+        "d_updates": 18000,
+        "elapsed_seconds": 15719.564950942993,
+        "g_real_presentations": 576000,
+        "g_updates": 18000,
+        "generated_presentations": 1152000,
+        "late1000_means": {
+          "cycle_seconds": 0.8053849522937089,
+          "d_adv": 0.6329379728436471,
+          "d_fake_logit": -0.07909331656154245,
+          "d_gradient_norm": 4.382114464640617,
+          "d_r1": 0.009924413083004765,
+          "d_r2": 0.011549188027391211,
+          "d_real_logit": 0.09602186613623052,
+          "g_adv": 0.8425177756547928,
+          "g_gradient_norm": 0.24563682870566844,
+          "g_ot": 0.056519438654184344,
+          "norm_square_avg": 16.598491729736327
+        },
+        "memory": {
+          "device_bytes": 8382316544,
+          "host_rss_bytes": 2966339584,
+          "peak_allocated_bytes": 7522096128,
+          "peak_reserved_bytes": 8153726976,
+          "tree_pss_bytes": 2950685696
+        },
+        "optimizer_seconds": 14628.63889635913,
+        "panel_generated_presentations": 864,
+        "parameters": {
+          "discriminator": 9918657,
+          "generator": 39664771
+        },
+        "protected": {
+          "afm_snapshot": true,
+          "base_Model": true,
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "protected": true
+        },
+        "quantitative_pass_ema": 26,
+        "quantitative_pass_raw": 19,
+        "r1_samples": 144000,
+        "r2_samples": 144000,
+        "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+        "terminal_outcome": "not_qualified",
+        "training_discriminator_image_evaluations": 2592000,
+        "visual_classes_reviewed": 40,
+        "visual_diversity_established": 0
+      },
+      "g_updates": 18000,
+      "horizon_g_updates": 18000,
+      "hypothesis": "C2 retained noisy variation at OT floor.1; C3 floor.02 collapsed persistently with rapidly changing raw templates. Test an intermediate retained transport floor.05 together with fourfold stronger finite-difference R1/R2 (GP.25->1) to smooth critic directions while allowing more structure learning than C2. Keep C2 OT start.5,8k decay and optimizer rates. Bundled intervention and independent seed do not isolate individual effects.",
+      "kind": "candidate",
+      "outcome": "not_qualified",
+      "qualification": "artifacts/stability/qualification_candidate4/qualification.json",
+      "recipe_difference": {
+        "gp_scale": {
+          "from": 0.25,
+          "to": 1.0
+        },
+        "ot_end": {
+          "from": 0.1,
+          "to": 0.05
+        }
+      },
+      "recoveries": 0,
+      "reference": "candidate2",
+      "run_dir": "runs/stability_campaign/candidate4",
+      "seed": 2026100204,
+      "slot": 4,
+      "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+      "state": "completed",
+      "summary": "runs/stability_campaign/candidate4/summary.json",
+      "watchdog_seconds": 28800
+    },
+    {
+      "attempt_seconds": 28691.98623108864,
+      "audits": [
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate5/audits/006000/decision.json",
+          "quantitative_pass_ema": 151,
+          "quantitative_pass_raw": 139,
+          "step": 6000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate5/audits/010000/decision.json",
+          "quantitative_pass_ema": 102,
+          "quantitative_pass_raw": 37,
+          "step": 10000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate5/audits/014000/decision.json",
+          "post_decay_collapse_streak": 1,
+          "quantitative_pass_ema": 11,
+          "quantitative_pass_raw": 4,
+          "step": 14000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "persistent_collapse_at_horizon",
+          "evidence": "runs/stability_campaign/candidate5/audits/018000/decision.json",
+          "post_decay_collapse_streak": 2,
+          "quantitative_pass_ema": 4,
+          "quantitative_pass_raw": 1,
+          "step": 18000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        }
+      ],
+      "config": "configs/stability_candidate5.json",
+      "config_sha256": "021a5fbb215e745c5e9d251171c23d89c1ed9611037a9738b6cd9d887b15bc3f",
+      "d_updates": 18000,
+      "final": {
+        "audit_generated_presentations": 24160,
+        "audit_seconds": 335.24439497478306,
+        "checkpoint_sha256": "40b373043de40e58d4658fcab02a44e42c67d164104a40c91c4c64c2ad006f08",
+        "d_real_presentations": 1152000,
+        "d_updates": 18000,
+        "elapsed_seconds": 28691.98623108864,
+        "g_real_presentations": 1152000,
+        "g_updates": 18000,
+        "generated_presentations": 2304000,
+        "late1000_means": {
+          "cycle_seconds": 1.5974670119117946,
+          "d_adv": 0.6610300196409226,
+          "d_fake_logit": -0.041287200462073084,
+          "d_gradient_norm": 2.2546530441641806,
+          "d_r1": 0.0051720735551207325,
+          "d_r2": 0.005953207975020632,
+          "d_real_logit": 0.04709166545374319,
+          "g_adv": 0.7707085281610488,
+          "g_gradient_norm": 0.2017527049407363,
+          "g_ot": 0.05940966746583581,
+          "norm_square_avg": 7.217788709163666
+        },
+        "memory": {
+          "device_bytes": 16145973248,
+          "host_rss_bytes": 2891812864,
+          "peak_allocated_bytes": 14469431808,
+          "peak_reserved_bytes": 15915286528,
+          "tree_pss_bytes": 2876169216
+        },
+        "memory_note": "Maxima of retained training status and audit measurements, preserving original training allocation peaks across export-only recovery; host/device fields are sampled maxima, not continuous process maxima.",
+        "optimizer_seconds": 27781.864325735718,
+        "panel_generated_presentations": 864,
+        "parameters": {
+          "discriminator": 9918657,
+          "generator": 39664771
+        },
+        "protected": {
+          "afm_snapshot": true,
+          "base_Model": true,
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "protected": true
+        },
+        "quantitative_pass_ema": 4,
+        "quantitative_pass_raw": 1,
+        "r1_samples": 288000,
+        "r2_samples": 288000,
+        "recoveries": 1,
+        "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+        "terminal_outcome": "persistent_collapse_not_qualified",
+        "terminalization_incident": {
+          "cause": "unknown; no recorded user stop or watchdog exception",
+          "charged_first_attempt_seconds_through_detection": 28674.24999809265,
+          "completed_g_updates": 18000,
+          "exit_code": 143,
+          "last_persisted_elapsed_seconds": 28524.835327386856,
+          "observed_unix": 1790971670.6822922,
+          "recovery_scope": "Exact18k checkpoint reload and export only; no optimizer updates or audit replay. Original12h watchdog retained.",
+          "signal": "SIGTERM"
+        },
+        "terminalization_memory": {
+          "device_bytes": 985661440,
+          "host_rss_bytes": 1059082240,
+          "peak_allocated_bytes": 770589184,
+          "peak_reserved_bytes": 809500672,
+          "tree_pss_bytes": 1043630080
+        },
+        "training_discriminator_image_evaluations": 5184000,
+        "visual_classes_reviewed": 40,
+        "visual_diversity_established": 0
+      },
+      "g_updates": 18000,
+      "horizon_g_updates": 18000,
+      "hypothesis": "C4 lost quantitative diversity and showed strong raw/EMA palette-background differences despite stronger critic regularization. Test steadier stochastic optimization: double the full execution/effective batch32->64 and increase AdamW beta2 .9->.99 for both networks, retaining learning rates, normalized gradient target and C4 transport/regularization. This bundles sampling and second-moment smoothing; independent seed prevents causal isolation.",
+      "kind": "candidate",
+      "outcome": "persistent_collapse_not_qualified",
+      "qualification": "artifacts/stability/qualification_candidate5/qualification.json",
+      "recipe_difference": {
+        "batch_size": {
+          "from": 32,
+          "to": 64
+        },
+        "d_optimizer.betas": {
+          "from": [
+            0,
+            0.9
+          ],
+          "to": [
+            0,
+            0.99
+          ]
+        },
+        "g_optimizer.betas": {
+          "from": [
+            0,
+            0.9
+          ],
+          "to": [
+            0,
+            0.99
+          ]
+        },
+        "microbatch": {
+          "from": 32,
+          "to": 64
+        }
+      },
+      "recoveries": 1,
+      "reference": "candidate4",
+      "run_dir": "runs/stability_campaign/candidate5",
+      "seed": 2026100205,
+      "slot": 5,
+      "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+      "state": "completed",
+      "summary": "runs/stability_campaign/candidate5/summary.json",
+      "watchdog_seconds": 43200
+    },
+    {
+      "attempt_seconds": 28523.631170511246,
+      "audits": [
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate6/audits/006000/decision.json",
+          "post_decay_collapse_streak": 0,
+          "quantitative_pass_ema": 151,
+          "quantitative_pass_raw": 115,
+          "step": 6000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate6/audits/010000/decision.json",
+          "post_decay_collapse_streak": 0,
+          "quantitative_pass_ema": 47,
+          "quantitative_pass_raw": 8,
+          "step": 10000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "continue",
+          "evidence": "runs/stability_campaign/candidate6/audits/014000/decision.json",
+          "post_decay_collapse_streak": 1,
+          "quantitative_pass_ema": 0,
+          "quantitative_pass_raw": 0,
+          "step": 14000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        },
+        {
+          "decision": "stop",
+          "evidence": "runs/stability_campaign/candidate6/audits/018000/decision.json",
+          "post_decay_collapse_streak": 2,
+          "quantitative_pass_ema": 0,
+          "quantitative_pass_raw": 0,
+          "step": 18000,
+          "visual_classes_reviewed": 40,
+          "visual_pass_reviewed": 0
+        }
+      ],
+      "config": "configs/stability_candidate6.json",
+      "config_sha256": "04099d57a273f73b00c7897b97bb0046dc5dd82fc88890489f826356e095d64c",
+      "d_updates": 18000,
+      "final_summary": {
+        "audit_generated_presentations": 24160,
+        "audit_seconds": 338.0883226133883,
+        "checkpoint_sha256": "0caaf185b2928d5b8b96c321d1ee21f9a8f4ac72bb344e6a64048b62f7529ec9",
+        "d_real_presentations": 1152000,
+        "d_updates": 18000,
+        "elapsed_seconds": 28523.631170511246,
+        "g_real_presentations": 1152000,
+        "g_updates": 18000,
+        "generated_presentations": 2304000,
+        "late1000_means": {
+          "cycle_seconds": 1.4975392749682068,
+          "d_adv": 0.5890595742464065,
+          "d_fake_logit": -0.17172128766449168,
+          "d_gradient_norm": 2.6492787473201753,
+          "d_r1": 0.007984933034982532,
+          "d_r2": 0.009585377855459229,
+          "d_real_logit": 0.17838203824544324,
+          "g_adv": 0.9865987549424171,
+          "g_gradient_norm": 0.20399712546914817,
+          "g_ot": 0.05844105605408549,
+          "norm_square_avg": 35.62127231216431
+        },
+        "memory": {
+          "device_bytes": 16145973248,
+          "host_rss_bytes": 2907549696,
+          "peak_allocated_bytes": 14469431808,
+          "peak_reserved_bytes": 15915286528,
+          "tree_pss_bytes": 2891884544
+        },
+        "memory_note": "Allocation/reservation peaks and sampled device/host maxima retained from training status, audits and final record.",
+        "optimizer_seconds": 27683.279184591025,
+        "panel_generated_presentations": 864,
+        "parameters": {
+          "discriminator": 9918657,
+          "generator": 39664771
+        },
+        "protected": {
+          "afm_snapshot": true,
+          "base_Model": true,
+          "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+          "protected": true
+        },
+        "quantitative_pass_ema": 0,
+        "quantitative_pass_raw": 0,
+        "r1_samples": 288000,
+        "r2_samples": 288000,
+        "recoveries": 0,
+        "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+        "terminal_outcome": "persistent_collapse_not_qualified",
+        "training_discriminator_image_evaluations": 5184000,
+        "visual_classes_reviewed": 40,
+        "visual_diversity_established": 0
+      },
+      "g_updates": 18000,
+      "horizon_g_updates": 18000,
+      "hypothesis": "C5 collapsed persistently despite larger batch/smoother Adam moments; late D adversarial loss .661 and real-fake gap .088 stayed near chance on defective templates. Test stronger unoccluded critic feedback by reducing finite-difference R1/R2 coefficient1->.25 and disabling paired translation/cutout augmentation p.5->0, retaining real flips, centering, architecture, optimizer rates, batch64 and nonzero OT floor. C2 weaker GP produced stronger separation but its OT floor differed. Bundled intervention and independent seed do not isolate effects.",
+      "kind": "candidate",
+      "qualification": "artifacts/stability/qualification_candidate6/qualification.json",
+      "recipe_difference": {
+        "augment_probability": {
+          "from": 0.5,
+          "to": 0.0
+        },
+        "gp_scale": {
+          "from": 1.0,
+          "to": 0.25
+        }
+      },
+      "recoveries": 0,
+      "reference": "candidate5",
+      "run_dir": "runs/stability_campaign/candidate6",
+      "seed": 2026100206,
+      "slot": 6,
+      "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+      "state": "stopped",
+      "watchdog_seconds": 43200
+    }
+  ],
+  "source": {
+    "files": {
+      "afm_fastgen/__init__.py": "6511f02843935c533f5c43ce06335aa66eb9a68544ca3da4ce52e4152812abc9",
+      "afm_fastgen/audit.py": "75731fe0a0902e86b460923581c6ff7776a6a419611619f759bd371657f6b499",
+      "afm_fastgen/common.py": "e4d87e000b4546e534a1eadeeb64784fabb77c87cd13e60df2b983dc52b9b62a",
+      "afm_fastgen/data.py": "264430c9da8539f9293b49a62a90830e13d610c4001e9f174e287c3e496c4a36",
+      "afm_fastgen/evaluation.py": "bdb8a5788957a6ee429fe75d3207b77f6a020ff07765a64b37f008d92c93c82e",
+      "afm_fastgen/losses.py": "ae414ac829671fd1117429f4fcbf8a1891de1169dab1b46b7958453709aac810",
+      "afm_fastgen/models.py": "91dbf9f844df4f8a71e1771e137b75dfe8b938ec0908d0d6d9c8f7d9c1abf589",
+      "afm_fastgen/reporting.py": "e0b6723f5a57a983947fd912310516cbed40968e00be067cfdfb9dfb3f63ebc3",
+      "afm_fastgen/training.py": "ff6873c9c53662c21fb32abe819d902aa38eeca386e015275a5d450e8e792e9e",
+      "afm_fastgen/unet.py": "0e5846fe8f03353e546dbc82ce1cf2346478fbf1d9c0447b610d791b6890839b",
+      "model.py": "a7984b5501ca11085d0e25df9a59f18d9d8cbfc7f1a9538a391898160453a093",
+      "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scripts/audit_baseline.py": "a7be869e1412c48e8bd6b723c71c41b8b4f80011195faadea8b47860fe915336",
+      "scripts/check_export.py": "3ddaf3e7fe31111c04e9bd8200fed820cca4872b51e437dd39ec8d3207168b4c",
+      "scripts/freeze_audit.py": "eac6862abadc79a75cc0f5ff82a67dc788e3eac6bba55573b658c20220540ee2",
+      "scripts/qualify.py": "b3132ab48baf4bb5a8d0126aae88a0372466f75d45532e7ba0fdec8532b4a171",
+      "scripts/run_baseline.py": "bac10c84637710adc9dc78a2f6d0afb67a4da1f1207d23f51a5ee6526df37c7d",
+      "scripts/run_search.py": "139da11adb991dd1b001aace898a907bae301856c98a16e14467512bb3d12af7"
+    },
+    "sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4"
+  },
+  "started_unix": 1790870207.2519646,
+  "state": "completed",
+  "summary": "runs/stability_campaign/summary.json"
+}

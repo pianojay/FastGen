@@ -1,0 +1,9 @@
+{
+  "action": "continue",
+  "quantitative_pass_ema": 63,
+  "quantitative_pass_raw": 41,
+  "reason": "First6k audit and OT decay incomplete. Quantitative41 raw/63 EMA below114 required; recognizable diversity unestablished in40 inspected classes. Frozen early-stop cannot apply at first audit and counts exceed15. Continue unchanged to10k.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790919702.8405166,
+  "reviewed_classes": 40
+}

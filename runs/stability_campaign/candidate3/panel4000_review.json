@@ -1,0 +1,8 @@
+{
+  "step": 4000,
+  "model": "ema",
+  "classes_reviewed": 12,
+  "role": "trajectory_only_not_scheduled_acceptance_audit",
+  "finding": "Somewhat clearer colored silhouettes; poor facial features and anatomy. Noise-input variation visible but recognizable pose/shape diversity not established. Continue to6k audit.",
+  "review_unix": 1790917896.6975513
+}

@@ -1,0 +1,9 @@
+{
+  "action": "continue",
+  "quantitative_pass_ema": 146,
+  "quantitative_pass_raw": 141,
+  "reason": "First scheduled audit: no persistence evidence and OT decay incomplete. Quantitative pass141 raw/146 EMA, but 0/30 visually inspected classes establishes recognizable diversity. No frozen stop criterion holds. Continue unchanged to10k.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790875870.4873393,
+  "reviewed_classes": 30
+}

@@ -1,0 +1,57 @@
+{
+  "attempts": [
+    {
+      "elapsed_seconds": 27543.46839404106,
+      "process": {
+        "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+        "pid": 2984456,
+        "start_ticks": "1066988806",
+        "uid": 1000
+      },
+      "resume": false,
+      "start_unix": 1790886580.1958814
+    }
+  ],
+  "created_unix": 1790886580.195592,
+  "d_updates": 18000,
+  "decision": {
+    "action": "horizon",
+    "reason": "Frozen horizon reached"
+  },
+  "g_updates": 18000,
+  "identity": {
+    "config_sha256": "f994c92a649b5ddb89059187b581ee6803cb9e38e4f3762743387ff5d19a9d05",
+    "protected": {
+      "afm_snapshot": true,
+      "base_Model": true,
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "protected": true
+    },
+    "source": {
+      "files": {
+        "afm_fastgen/__init__.py": "6511f02843935c533f5c43ce06335aa66eb9a68544ca3da4ce52e4152812abc9",
+        "afm_fastgen/audit.py": "75731fe0a0902e86b460923581c6ff7776a6a419611619f759bd371657f6b499",
+        "afm_fastgen/common.py": "e4d87e000b4546e534a1eadeeb64784fabb77c87cd13e60df2b983dc52b9b62a",
+        "afm_fastgen/data.py": "264430c9da8539f9293b49a62a90830e13d610c4001e9f174e287c3e496c4a36",
+        "afm_fastgen/evaluation.py": "bdb8a5788957a6ee429fe75d3207b77f6a020ff07765a64b37f008d92c93c82e",
+        "afm_fastgen/losses.py": "ae414ac829671fd1117429f4fcbf8a1891de1169dab1b46b7958453709aac810",
+        "afm_fastgen/models.py": "91dbf9f844df4f8a71e1771e137b75dfe8b938ec0908d0d6d9c8f7d9c1abf589",
+        "afm_fastgen/reporting.py": "e0b6723f5a57a983947fd912310516cbed40968e00be067cfdfb9dfb3f63ebc3",
+        "afm_fastgen/training.py": "ff6873c9c53662c21fb32abe819d902aa38eeca386e015275a5d450e8e792e9e",
+        "afm_fastgen/unet.py": "0e5846fe8f03353e546dbc82ce1cf2346478fbf1d9c0447b610d791b6890839b",
+        "model.py": "a7984b5501ca11085d0e25df9a59f18d9d8cbfc7f1a9538a391898160453a093",
+        "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "scripts/audit_baseline.py": "a7be869e1412c48e8bd6b723c71c41b8b4f80011195faadea8b47860fe915336",
+        "scripts/check_export.py": "3ddaf3e7fe31111c04e9bd8200fed820cca4872b51e437dd39ec8d3207168b4c",
+        "scripts/freeze_audit.py": "eac6862abadc79a75cc0f5ff82a67dc788e3eac6bba55573b658c20220540ee2",
+        "scripts/qualify.py": "b3132ab48baf4bb5a8d0126aae88a0372466f75d45532e7ba0fdec8532b4a171",
+        "scripts/run_baseline.py": "bac10c84637710adc9dc78a2f6d0afb67a4da1f1207d23f51a5ee6526df37c7d",
+        "scripts/run_search.py": "139da11adb991dd1b001aace898a907bae301856c98a16e14467512bb3d12af7"
+      },
+      "sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4"
+    }
+  },
+  "pending_audit": "/home/user/jw_soflow/FastGen-AFM/runs/stability_campaign/candidate2/audits/018000",
+  "recoveries": 0,
+  "state": "completed"
+}

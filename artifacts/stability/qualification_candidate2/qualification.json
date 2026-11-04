@@ -1,0 +1,134 @@
+{
+  "checkpoint_seconds": 2.6935595646500587,
+  "config": {
+    "audit_seed": 38001,
+    "audit_updates": [
+      6000,
+      10000,
+      14000,
+      18000
+    ],
+    "augment_probability": 0.5,
+    "batch_size": 32,
+    "center_scale": 0.01,
+    "checkpoint_interval": 500,
+    "cutout_pixels": 16,
+    "d_optimizer": {
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "eps": 1e-08,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "data_root": "/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k",
+    "discriminator": {
+      "channels": 64
+    },
+    "ema_decay": 0.999,
+    "g_optimizer": {
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "eps": 1e-08,
+      "lr": 5e-05,
+      "weight_decay": 0.01
+    },
+    "generator": {
+      "model_channels": 128,
+      "num_blocks": 2
+    },
+    "gp_epsilon": 0.01,
+    "gp_fraction": 0.25,
+    "gp_scale": 0.25,
+    "gradient_clip": 50.0,
+    "gradient_normalization": {
+      "decay": 0.9,
+      "eps": 1e-08,
+      "target_scale": 0.5
+    },
+    "horizon_g_updates": 18000,
+    "hypothesis": "C1 retained input sensitivity but failed recognizable structure; late D relativistic loss remained near chance on visibly poor samples. Raise D LR fivefold to test critic learning speed/directions while retaining C1 source-noise transport and G settings. This does not claim a change in post-normalized gradient target.",
+    "lr_schedule": "constant",
+    "max_recoveries": 2,
+    "microbatch": 32,
+    "optimizer": {
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "eps": 1e-08,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "ot_decay_updates": 8000,
+    "ot_end": 0.1,
+    "ot_start": 0.5,
+    "partition": "resources/development_split.json",
+    "precision": "float32",
+    "primary_checkpoint": "first_persistent_audit_pair",
+    "reference": "candidate1",
+    "run_dir": "runs/stability_campaign/candidate2",
+    "sample_interval": 1000,
+    "seed": 77192,
+    "status_interval": 50,
+    "threads": 4,
+    "translate_pixels": 8,
+    "watchdog_seconds": 28800
+  },
+  "d_updates_executed": 34,
+  "disposable_cycles_executed": 34,
+  "duplicate_job_refused": true,
+  "exact_next_cycle_recovery": true,
+  "g_updates_executed": 34,
+  "hard_crash_recovery_tested": false,
+  "mean_warm_cycle_seconds": 0.6409592678149542,
+  "memory": {
+    "device_bytes": 8376025088,
+    "host_rss_bytes": 2075332608,
+    "peak_allocated_bytes": 7523963904,
+    "peak_reserved_bytes": 8147435520,
+    "tree_pss_bytes": 2059716608
+  },
+  "parameters": {
+    "discriminator": 9918657,
+    "generator": 39664771
+  },
+  "real_presentations_executed": 2176,
+  "seconds_before_eval": 37.27617274969816,
+  "total_seconds": 37.28364693932235,
+  "warm_cycle_seconds": [
+    0.5427477825433016,
+    0.5438353288918734,
+    0.5453994106501341,
+    0.5456870216876268,
+    0.5471793301403522,
+    0.5465597044676542,
+    0.5490399450063705,
+    0.5646978076547384,
+    0.5826600063592196,
+    0.6012984476983547,
+    0.6189133208245039,
+    0.6246123258024454,
+    0.6429817546159029,
+    0.6445657256990671,
+    0.6624746192246675,
+    0.661104841157794,
+    0.6742913834750652,
+    0.6701470147818327,
+    0.685463460162282,
+    0.6842981409281492,
+    0.6942258477210999,
+    0.6978567652404308,
+    0.697589747607708,
+    0.70354038849473,
+    0.7050103191286325,
+    0.7134999334812164,
+    0.716437941417098,
+    0.71970035135746,
+    0.7179595846682787,
+    0.7249997835606337
+  ]
+}

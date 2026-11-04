@@ -1,0 +1,103 @@
+{
+  "classes": [
+    {
+      "category": 9,
+      "class": "Bulbasaur",
+      "reference_paths": [
+        "PokemonData/Bulbasaur/00000022.png",
+        "PokemonData/Bulbasaur/00000023.jpg"
+      ]
+    },
+    {
+      "category": 14,
+      "class": "Charmander",
+      "reference_paths": [
+        "PokemonData/Charmander/00000030.png",
+        "PokemonData/Charmander/00000031.png"
+      ]
+    },
+    {
+      "category": 129,
+      "class": "Squirtle",
+      "reference_paths": [
+        "PokemonData/Squirtle/00000024.png",
+        "PokemonData/Squirtle/00000025.png"
+      ]
+    },
+    {
+      "category": 103,
+      "class": "Pikachu",
+      "reference_paths": [
+        "PokemonData/Pikachu/00000030.jpg",
+        "PokemonData/Pikachu/00000031.png"
+      ]
+    },
+    {
+      "category": 30,
+      "class": "Eevee",
+      "reference_paths": [
+        "PokemonData/Eevee/083-133Eevee_LG.png",
+        "PokemonData/Eevee/084-133Eevee_Quest.png"
+      ]
+    },
+    {
+      "category": 57,
+      "class": "Jigglypuff",
+      "reference_paths": [
+        "PokemonData/Jigglypuff/22065f3a6ded42848b3772180b97e3f2.jpg",
+        "PokemonData/Jigglypuff/25003cc8265a45b08cdeed1ac329d1b5.jpg"
+      ]
+    },
+    {
+      "category": 111,
+      "class": "Psyduck",
+      "reference_paths": [
+        "PokemonData/Psyduck/3e526ae2c1244d8585fb8743a82fe061.jpg",
+        "PokemonData/Psyduck/43903993a522497bbab113ca4beddd73.jpg"
+      ]
+    },
+    {
+      "category": 40,
+      "class": "Gengar",
+      "reference_paths": [
+        "PokemonData/Gengar/2c98a8450a2442448d61f77add3b248f.jpg",
+        "PokemonData/Gengar/2cfd7b7260c949bbabd624b266681290.jpg"
+      ]
+    },
+    {
+      "category": 127,
+      "class": "Snorlax",
+      "reference_paths": [
+        "PokemonData/Snorlax/2bf7a07614a34814844163839c5493e6.jpg",
+        "PokemonData/Snorlax/305da8d7456a4c81802a52193ec32d1c.jpg"
+      ]
+    },
+    {
+      "category": 73,
+      "class": "Magikarp",
+      "reference_paths": [
+        "PokemonData/Magikarp/59c928d4b8fc40f48d4c575927517880.jpg",
+        "PokemonData/Magikarp/5f357a76840748f2af4a007712690331.jpg"
+      ]
+    },
+    {
+      "category": 26,
+      "class": "Dragonite",
+      "reference_paths": [
+        "PokemonData/Dragonite/3a6276bac30240ebaa199e25cf4b99a7.jpg",
+        "PokemonData/Dragonite/3c8449b73d73468791e30540ea807b02.jpg"
+      ]
+    },
+    {
+      "category": 82,
+      "class": "Mewtwo",
+      "reference_paths": [
+        "PokemonData/Mewtwo/00000032.jpg",
+        "PokemonData/Mewtwo/00000037.jpeg"
+      ]
+    }
+  ],
+  "samples_per_class": 8,
+  "seed": 941,
+  "step": 3000
+}

@@ -1,0 +1,9 @@
+{
+  "action": "continue",
+  "quantitative_pass_ema": 140,
+  "quantitative_pass_raw": 112,
+  "reason": "Terminal18k horizon exhausted; not qualified. Quantitative112 raw/140 EMA, raw below114 required. Recognizable diversity not established in40 inspected classes, and no qualifying consecutive pair. Continue at terminal horizon exits loop without further updates.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790914119.656911,
+  "reviewed_classes": 40
+}

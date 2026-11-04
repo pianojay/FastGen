@@ -1,0 +1,134 @@
+{
+  "checkpoint_seconds": 2.6419646441936493,
+  "config": {
+    "audit_seed": 48001,
+    "audit_updates": [
+      6000,
+      10000,
+      14000,
+      18000
+    ],
+    "augment_probability": 0.5,
+    "batch_size": 32,
+    "center_scale": 0.01,
+    "checkpoint_interval": 500,
+    "cutout_pixels": 16,
+    "d_optimizer": {
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "eps": 1e-08,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "data_root": "/home/user/jw_soflow/FastGen-SoFlow/data/pokemon-generation-one-22k",
+    "discriminator": {
+      "channels": 64
+    },
+    "ema_decay": 0.999,
+    "g_optimizer": {
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "eps": 1e-08,
+      "lr": 5e-05,
+      "weight_decay": 0.01
+    },
+    "generator": {
+      "model_channels": 128,
+      "num_blocks": 2
+    },
+    "gp_epsilon": 0.01,
+    "gp_fraction": 0.25,
+    "gp_scale": 0.25,
+    "gradient_clip": 50.0,
+    "gradient_normalization": {
+      "decay": 0.9,
+      "eps": 1e-08,
+      "target_scale": 0.5
+    },
+    "horizon_g_updates": 18000,
+    "hypothesis": "C2 faster critic separated real/fake but retained noisy malformed outputs and unstable raw palettes. Test whether transport remains too strong for structure learning by reducing the full OT schedule fivefold (.5->.1 becomes .1->.02 over the same8k updates), retaining a nonzero floor and all other C2 training settings. Seed uncertainty remains.",
+    "lr_schedule": "constant",
+    "max_recoveries": 2,
+    "microbatch": 32,
+    "optimizer": {
+      "betas": [
+        0.0,
+        0.9
+      ],
+      "eps": 1e-08,
+      "lr": 0.0001,
+      "weight_decay": 0.01
+    },
+    "ot_decay_updates": 8000,
+    "ot_end": 0.02,
+    "ot_start": 0.1,
+    "partition": "resources/development_split.json",
+    "precision": "float32",
+    "primary_checkpoint": "first_persistent_audit_pair",
+    "reference": "candidate2",
+    "run_dir": "runs/stability_campaign/candidate3",
+    "sample_interval": 2000,
+    "seed": 77193,
+    "status_interval": 50,
+    "threads": 4,
+    "translate_pixels": 8,
+    "watchdog_seconds": 28800
+  },
+  "d_updates_executed": 34,
+  "disposable_cycles_executed": 34,
+  "duplicate_job_refused": true,
+  "exact_next_cycle_recovery": true,
+  "g_updates_executed": 34,
+  "hard_crash_recovery_tested": false,
+  "mean_warm_cycle_seconds": 0.5743354611719648,
+  "memory": {
+    "device_bytes": 8376025088,
+    "host_rss_bytes": 2075729920,
+    "peak_allocated_bytes": 7523963904,
+    "peak_reserved_bytes": 8147435520,
+    "tree_pss_bytes": 2060076032
+  },
+  "parameters": {
+    "discriminator": 9918657,
+    "generator": 39664771
+  },
+  "real_presentations_executed": 2176,
+  "seconds_before_eval": 35.07525128684938,
+  "total_seconds": 35.080183608457446,
+  "warm_cycle_seconds": [
+    0.5341228134930134,
+    0.5382204689085484,
+    0.5359921827912331,
+    0.5386831928044558,
+    0.5389905273914337,
+    0.5392589177936316,
+    0.5397910457104445,
+    0.538502773270011,
+    0.5440161172300577,
+    0.5409445762634277,
+    0.5424514878541231,
+    0.5477751977741718,
+    0.5464364141225815,
+    0.5487921517342329,
+    0.5441895704716444,
+    0.5486005991697311,
+    0.5661847423762083,
+    0.5689047053456306,
+    0.5773580372333527,
+    0.5822231601923704,
+    0.59974704682827,
+    0.5941411312669516,
+    0.607030475512147,
+    0.6420328170061111,
+    0.6418419685214758,
+    0.6321620438247919,
+    0.6322053521871567,
+    0.6369905322790146,
+    0.6388796251267195,
+    0.6435941606760025
+  ]
+}

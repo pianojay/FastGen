@@ -1,0 +1,10 @@
+{
+  "action": "continue",
+  "post_decay_collapse_streak": 1,
+  "quantitative_pass_ema": 0,
+  "quantitative_pass_raw": 0,
+  "reason": "First post-decay collapse audit:0/151 quantitative-pass classes raw and EMA; repeated templates in40 inspected classes. Frozen early-stop requires two consecutive post-decay audits <=15 in both models, not yet met. Continue unchanged to14k to test persistence.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790923189.6654608,
+  "reviewed_classes": 40
+}

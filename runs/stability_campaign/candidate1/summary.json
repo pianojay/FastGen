@@ -1,0 +1,47 @@
+{
+  "audit_generated_presentations": 24160,
+  "audit_seconds": 335.0101549178362,
+  "checkpoint_sha256": "5ad5fac06c835cf7dd1a8da2418c389012f4129ff14be5c3a3f29fd8f0a28056",
+  "d_real_presentations": 576000,
+  "d_updates": 18000,
+  "elapsed_seconds": 15629.171012878418,
+  "g_real_presentations": 576000,
+  "g_updates": 18000,
+  "generated_presentations": 1152000,
+  "late1000_means": {
+    "cycle_seconds": 0.8234876400902867,
+    "d_adv": 0.6604363859295845,
+    "d_fake_logit": -0.042546870588324966,
+    "d_real_logit": 0.055064750373363495,
+    "g_adv": 0.7800809792280197,
+    "g_ot": 0.10882625202834606
+  },
+  "memory": {
+    "device_bytes": 8382316544,
+    "host_rss_bytes": 2880643072,
+    "peak_allocated_bytes": 7522096128,
+    "peak_reserved_bytes": 8153726976,
+    "tree_pss_bytes": 2864970752
+  },
+  "optimizer_seconds": 14793.998457707465,
+  "panel_generated_presentations": 864,
+  "parameters": {
+    "discriminator": 9918657,
+    "generator": 39664771
+  },
+  "protected": {
+    "afm_snapshot": true,
+    "base_Model": true,
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "protected": true
+  },
+  "quantitative_pass_ema": 138,
+  "quantitative_pass_raw": 99,
+  "r1_samples": 144000,
+  "r2_samples": 144000,
+  "source_sha256": "21794dd236b89871e683ef0b6651af0c532319a767ce5b4204b7311bd865e9e4",
+  "terminal_outcome": "not_qualified",
+  "training_discriminator_image_evaluations": 2592000,
+  "visual_classes_reviewed": 40,
+  "visual_diversity_established": 0
+}

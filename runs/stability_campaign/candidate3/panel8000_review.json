@@ -1,0 +1,8 @@
+{
+  "step": 8000,
+  "model": "ema",
+  "classes_reviewed": 12,
+  "role": "trajectory_only_not_scheduled_acceptance_audit",
+  "finding": "Cleaner outputs but increasingly repeated class composition across noise, particularly Bulbasaur, Squirtle, Pikachu and Snorlax. Stronger collapse concern; not an early-stop decision. OT floor reached. Continue frozen audit schedule.",
+  "review_unix": 1790921435.0495837
+}

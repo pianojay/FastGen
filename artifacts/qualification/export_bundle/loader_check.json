@@ -1,0 +1,14 @@
+{
+  "one_nfe_calls": 1,
+  "parameters": 39664771,
+  "cwd": "/home/user/jw_soflow/FastGen-AFM/artifacts/qualification/export_bundle",
+  "device": "cuda",
+  "sample_sha256": "aeac130a07793c3cbbec0f473a4fb12c74f3de79abcc01d3f2485542a671ffbd",
+  "output_shape": [
+    3,
+    3,
+    64,
+    64
+  ],
+  "external_project_imports": false
+}

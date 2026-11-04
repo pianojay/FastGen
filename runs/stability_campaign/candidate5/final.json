@@ -1,0 +1,21 @@
+{
+  "checkpoint_sha256": "40b373043de40e58d4658fcab02a44e42c67d164104a40c91c4c64c2ad006f08",
+  "d_real_presentations": 1152000,
+  "d_updates": 18000,
+  "elapsed_seconds": 28691.98623108864,
+  "g_real_presentations": 1152000,
+  "g_updates": 18000,
+  "generated_presentations": 2304000,
+  "memory": {
+    "device_bytes": 985661440,
+    "host_rss_bytes": 1059082240,
+    "peak_allocated_bytes": 770589184,
+    "peak_reserved_bytes": 809500672,
+    "tree_pss_bytes": 1043630080
+  },
+  "optimizer_seconds": 27781.864325735718,
+  "parameters": {
+    "discriminator": 9918657,
+    "generator": 39664771
+  }
+}

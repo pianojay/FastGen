@@ -1,0 +1,5 @@
+{
+  "action": "continue",
+  "reason": "6k first audit: quantitative115/151 raw and151/151 EMA, but recognizable diversity not established in40 inspected classes. OT decay is incomplete; no persistence or early-stop criterion is met. Continue to predeclared10k audit.",
+  "review_unix": 1790981689.6672184
+}

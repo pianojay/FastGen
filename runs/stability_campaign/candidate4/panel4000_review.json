@@ -1,0 +1,8 @@
+{
+  "step": 4000,
+  "model": "ema",
+  "classes_reviewed": 12,
+  "role": "trajectory_only_not_scheduled_acceptance_audit",
+  "finding": "Noise dominates; coarse color patterns in a few classes. No recognizable diversity established. Continue frozen6k audit schedule.",
+  "review_unix": 1790930410.2228289
+}

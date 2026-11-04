@@ -1,0 +1,36 @@
+{
+  "process": {
+    "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+    "pid": 2901002,
+    "start_ticks": "1065351499",
+    "uid": 1000
+  },
+  "protected": {
+    "afm_snapshot": true,
+    "base_Model": true,
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "protected": true
+  },
+  "source": {
+    "files": {
+      "afm_fastgen/__init__.py": "6511f02843935c533f5c43ce06335aa66eb9a68544ca3da4ce52e4152812abc9",
+      "afm_fastgen/audit.py": "c36a9e061c40f5dcd8a687181dbe62c3833ed05d42061398c6a32efa296182b0",
+      "afm_fastgen/common.py": "e4d87e000b4546e534a1eadeeb64784fabb77c87cd13e60df2b983dc52b9b62a",
+      "afm_fastgen/data.py": "264430c9da8539f9293b49a62a90830e13d610c4001e9f174e287c3e496c4a36",
+      "afm_fastgen/evaluation.py": "bdb8a5788957a6ee429fe75d3207b77f6a020ff07765a64b37f008d92c93c82e",
+      "afm_fastgen/losses.py": "ebbfc67e01ac453fc1d8540119345b59448a3f207fb1bdee4da49cf1e32237a1",
+      "afm_fastgen/models.py": "91dbf9f844df4f8a71e1771e137b75dfe8b938ec0908d0d6d9c8f7d9c1abf589",
+      "afm_fastgen/reporting.py": "e0b6723f5a57a983947fd912310516cbed40968e00be067cfdfb9dfb3f63ebc3",
+      "afm_fastgen/training.py": "d96899f99409aceea3f40d8c3819d03bcdf4f9d53664de7a710674f4a849ca87",
+      "afm_fastgen/unet.py": "0e5846fe8f03353e546dbc82ce1cf2346478fbf1d9c0447b610d791b6890839b",
+      "model.py": "a7984b5501ca11085d0e25df9a59f18d9d8cbfc7f1a9538a391898160453a093",
+      "scripts/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scripts/audit_baseline.py": "a7be869e1412c48e8bd6b723c71c41b8b4f80011195faadea8b47860fe915336",
+      "scripts/check_export.py": "3ddaf3e7fe31111c04e9bd8200fed820cca4872b51e437dd39ec8d3207168b4c",
+      "scripts/qualify.py": "b3132ab48baf4bb5a8d0126aae88a0372466f75d45532e7ba0fdec8532b4a171",
+      "scripts/run_baseline.py": "bac10c84637710adc9dc78a2f6d0afb67a4da1f1207d23f51a5ee6526df37c7d"
+    },
+    "sha256": "7030d07b09061c0f5621b58992af083e12ea472288bf554864aa94f13ec1d105"
+  },
+  "start_unix": 1790870207.2519646
+}

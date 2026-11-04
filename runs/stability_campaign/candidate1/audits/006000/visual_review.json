@@ -1,0 +1,195 @@
+{
+  "audit_seconds": 85.00510285049677,
+  "finding": "Sampled classes show input-dependent noisy blobs and coarse class colors, without enough recognizable samples to meet the visual gate. Quantitative diversity is not semantic diversity.",
+  "models": [
+    "raw",
+    "ema"
+  ],
+  "per_class": [
+    {
+      "class": 0,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 1,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 2,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 3,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 4,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 5,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 6,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 7,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 8,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 9,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 20,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 21,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 22,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 23,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 24,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 25,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 26,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 27,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 28,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 29,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 70,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 71,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 72,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 73,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 74,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 75,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 76,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 77,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 78,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    },
+    {
+      "class": 79,
+      "ema": "not_recognizable",
+      "raw": "not_recognizable"
+    }
+  ],
+  "recognizable_diverse_classes_established": 0,
+  "reviewed_classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "step": 6000,
+  "unreviewed_classes": 121
+}

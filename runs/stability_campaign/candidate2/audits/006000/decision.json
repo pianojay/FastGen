@@ -1,0 +1,9 @@
+{
+  "action": "continue",
+  "quantitative_pass_ema": 124,
+  "quantitative_pass_raw": 138,
+  "reason": "First6k audit, OT phase incomplete; quantitative138 raw/124 EMA, but recognizable diversity0/30 inspected. No persistence or early-stop condition; continue unchanged to10k.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790891765.4097648,
+  "reviewed_classes": 30
+}

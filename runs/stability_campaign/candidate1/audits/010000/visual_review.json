@@ -1,0 +1,254 @@
+{
+  "finding": "Class-colored but noisy/malformed shapes; no reviewed class meets6/8 recognizability and meaningful shape variation. Raw shapes/backgrounds often template-like; EMA preserves more low-frequency variation.",
+  "models": [
+    "raw",
+    "ema"
+  ],
+  "per_class": [
+    {
+      "class": 0,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 1,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 2,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 3,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 4,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 5,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 6,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 7,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 8,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 9,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 10,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 11,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 12,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 13,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 14,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 15,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 16,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 17,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 18,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 19,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 20,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 21,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 22,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 23,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 24,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 25,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 26,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 27,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 28,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 29,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 70,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 71,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 72,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 73,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 74,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 75,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 76,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 77,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 78,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    },
+    {
+      "class": 79,
+      "ema": "recognizable_diversity_not_established",
+      "raw": "recognizable_diversity_not_established"
+    }
+  ],
+  "recognizable_diverse_classes_established": 0,
+  "reviewed_classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "step": 10000,
+  "unreviewed_classes": 111
+}

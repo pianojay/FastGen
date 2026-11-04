@@ -1,0 +1,7 @@
+{
+  "decision": "complete_frozen_18000_horizon",
+  "panel": "panels/016000.png",
+  "review": "Some clearer class-colored silhouettes, but substantial noise/malformed shapes persist. No recognizable-diversity claim.",
+  "review_unix": 1790884636.7922843,
+  "step": 16000
+}

@@ -1,0 +1,9 @@
+{
+  "action": "continue",
+  "quantitative_pass_ema": 147,
+  "quantitative_pass_raw": 84,
+  "reason": "Raw quantitative84/151 below114 acceptance; EMA147/151. Recognizable diversity0/40 inspected; remainder unreviewed. Both exceed15 quantitative passes, so declared persistent-collapse stop rule does not apply. Complete frozen18k horizon.",
+  "recognizable_reviewed_pass": 0,
+  "review_unix": 1790882889.5379212,
+  "reviewed_classes": 40
+}

@@ -1,0 +1,51 @@
+{
+  "requested_unix": 1790857072.83861,
+  "reason": "Explicit user stop: suspected GAN mode collapse; no endpoint quality evaluation authorized after this stop.",
+  "process": {
+    "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+    "pid": 2769157,
+    "start_ticks": "1063175408",
+    "uid": 1000
+  },
+  "status_before_stop": {
+    "attempt": 1,
+    "attempt_seconds": 8589.923441750929,
+    "cycle_seconds": 0.8318894952535629,
+    "d_adv": 0.5398784875869751,
+    "d_center": 0.008304829709231853,
+    "d_fake_logit": -0.1489706039428711,
+    "d_gradient_norm": 2.524826765060425,
+    "d_r1": 0.0028124379459768534,
+    "d_r2": 0.0062673380598425865,
+    "d_real_logit": 0.3177698850631714,
+    "d_real_presentations": 328000,
+    "d_seconds": 0.2731442525982857,
+    "d_updates": 10250,
+    "elapsed_watchdog_seconds": 8589.933011293411,
+    "fake_outside_unit_fraction": 0.06918080896139145,
+    "g_adv": 0.8848444819450378,
+    "g_fake_logit": 0.052083924412727356,
+    "g_gradient_norm": 0.8230026960372925,
+    "g_ot": 0.006527342833578587,
+    "g_real_logit": 0.2868417799472809,
+    "g_real_presentations": 328000,
+    "g_seconds": 0.5587429888546467,
+    "g_updates": 10250,
+    "generated_presentations": 656000,
+    "gp_samples": 8,
+    "memory": {
+      "device_bytes": 8382316544,
+      "host_rss_bytes": 2015522816,
+      "peak_allocated_bytes": 7522096128,
+      "peak_reserved_bytes": 8153726976,
+      "tree_pss_bytes": 2002805760
+    },
+    "norm_backwards": 10250,
+    "norm_square_avg": 47.702816009521484,
+    "optimizer_seconds_total": 8483.442246042192,
+    "ot_coefficient": 0.005,
+    "state": "training",
+    "step": 10250,
+    "unix_time": 1790857035.7814088
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "checkpoint_step": 10000,
+  "gpu0_released": true,
+  "reason": "Strong qualitative suspicion of within-class GAN mode collapse; explicit user stop.",
+  "state": "stopped_by_user",
+  "step": 10294,
+  "summary": "stop_summary.json"
+}
