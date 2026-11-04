@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "repository": "pianojay/FastGen",
+  "tag": "migration-2026-11-04",
+  "template_revision": "739fd3fcafaebca25e69950876c82de83abc8c3a",
+  "assets": [
+    {
+      "asset": "cifar-soflow-evidence.tar.gz",
+      "bytes": 3036934,
+      "sha256": "e759cff70908845559a817a9cbf18d6d9783999f5b3482d856c37e74b6a17465",
+      "files": 43,
+      "raw_bytes": 3411561,
+      "kind": "evidence"
+    },
+    {
+      "asset": "soflow-evidence.tar.gz",
+      "bytes": 62163445,
+      "sha256": "319537d9c868320c3e66bf2c79a77197295506cbff63b423333c3d9cfe51ec1e",
+      "files": 2143,
+      "raw_bytes": 152668111,
+      "kind": "evidence"
+    },
+    {
+      "asset": "afm-evidence.tar.gz",
+      "bytes": 167496363,
+      "sha256": "302f1b29d83cb5d5927827c5ab2656f8d96c7c84d51fb747a3f2d8f867390675",
+      "files": 560,
+      "raw_bytes": 283625433,
+      "kind": "evidence"
+    },
+    {
+      "asset": "sid-dit-evidence.tar.gz",
+      "bytes": 87356006,
+      "sha256": "1c262c59fb98d2ab6b80e6794f7554b46b9c30c26363c224116b7696ea91b7cc",
+      "files": 640,
+      "raw_bytes": 135484540,
+      "kind": "evidence"
+    },
+    {
+      "asset": "exploration-evidence.tar.gz",
+      "bytes": 87895708,
+      "sha256": "241f6216567a2a92b835d0c78476eae4c7aee98a6993b554c4189650589bfe56",
+      "files": 745,
+      "raw_bytes": 178091008,
+      "kind": "evidence"
+    },
+    {
+      "asset": "peer-sida-evidence.tar.gz",
+      "bytes": 237763,
+      "sha256": "606b9390b5539e7f09d0271be7fcb6455e6d8883b0504b26ba14c003c93c0e57",
+      "files": 21,
+      "raw_bytes": 986624,
+      "kind": "evidence"
+    },
+    {
+      "asset": "inventory.json",
+      "bytes": 2860355,
+      "sha256": "1133091b0e065854aa71b6aa69917793ef5069e2a2d2232155168b671350f62e",
+      "kind": "inventory"
+    },
+    {
+      "asset": "soflow-s3-one_nfe.ckpt",
+      "bytes": 356696109,
+      "sha256": "d03a959d0117a7d34ce3b82929e7b816becd3cd97199e7423cdc92ba299819c5",
+      "kind": "parameters"
+    },
+    {
+      "asset": "soflow-s3-few_nfe.ckpt",
+      "bytes": 356696109,
+      "sha256": "fc6337a046f6a1272ffa2f0afe92ca1c7b514f642032ecdb83aec99baf5d400b",
+      "kind": "parameters"
+    },
+    {
+      "asset": "peer-sida-one_nfe.ckpt",
+      "bytes": 247492073,
+      "sha256": "7134046f1654da72ad3d7905ef1e2762d87b5eaa0840947aece32eac6be958ee",
+      "kind": "parameters"
+    },
+    {
+      "asset": "peer-sida-few_nfe.ckpt",
+      "bytes": 386443625,
+      "sha256": "2246bfc0054026a95f7ecc4b1f54c99f896c75b9d514f9f4a24c5653345a5690",
+      "kind": "parameters"
+    }
+  ],
+  "parameter_bytes": 1347327916,
+  "total_listed_asset_bytes": 1758374490,
+  "state": "frozen asset inventory; publication and restore verification are recorded separately"
+}

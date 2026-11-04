@@ -1,0 +1,74 @@
+{
+  "SoFlow": {
+    "head": "cc47661a0b0843f8f1b6cff3a17107a052d18b21",
+    "refs": [
+      "refs/heads/main cc47661a0b0843f8f1b6cff3a17107a052d18b21"
+    ],
+    "status": "M readme.md\n M train.py\n?? AGENTS.md\n?? CIFAR10/\n?? __pycache__/\n?? cifar_gpu0.yaml\n?? runs/\n?? scripts/",
+    "remotes": [
+      "origin\thttps://github.com/zlab-princeton/SoFlow.git (fetch)",
+      "origin\thttps://github.com/zlab-princeton/SoFlow.git (push)"
+    ],
+    "shallow": true
+  },
+  "FastGen-SoFlow": {
+    "head": "d6ea8dcda6a3d5fe7914d690525b480bc0c0a075",
+    "refs": [
+      "refs/heads/codex/soflow-ayf-integration d6ea8dcda6a3d5fe7914d690525b480bc0c0a075",
+      "refs/heads/main e3f5120000cd91037017d86f23993492195101a5",
+      "refs/heads/research/c3-scratch-fm25-20261004 53882e7ef8fe901b6a3a89bef23a7df946bc68b4",
+      "refs/heads/research/s1-scratch-40k-20260930 7f46227e0746d28d45b96079a2ac17867f7e9810",
+      "refs/heads/research/s2-scratch-unet160-20261001 b19e0555f6f807d960a85025d86ff3ca7061a065",
+      "refs/heads/research/s3-scratch-unet192-20261002 c9a65b8e2abea553fdc681b7ecac3f4ffffe96b4",
+      "refs/heads/soflow-pokemon deed05b092138e04d27a2ee8086b13d30afefe24"
+    ],
+    "status": "",
+    "remotes": [
+      "origin\thttps://github.com/pianojay/fastgen-soflow.git (fetch)",
+      "origin\thttps://github.com/pianojay/fastgen-soflow.git (push)",
+      "upstream\thttps://github.com/KAIST-Visual-AI-Group/AIC313-Project-FastGen.git (fetch)",
+      "upstream\thttps://github.com/KAIST-Visual-AI-Group/AIC313-Project-FastGen.git (push)"
+    ],
+    "shallow": false
+  },
+  "FastGen-AFM": {
+    "head": "0057ef090c96132ca6a8a7be24180f2c403e4489",
+    "refs": [
+      "refs/heads/main 0057ef090c96132ca6a8a7be24180f2c403e4489"
+    ],
+    "status": "",
+    "remotes": [
+      "origin\thttps://github.com/pianojay/fastgen-afm.git (fetch)",
+      "origin\thttps://github.com/pianojay/fastgen-afm.git (push)",
+      "upstream\thttps://github.com/KAIST-Visual-AI-Group/AIC313-Project-FastGen.git (fetch)",
+      "upstream\thttps://github.com/KAIST-Visual-AI-Group/AIC313-Project-FastGen.git (push)"
+    ],
+    "shallow": false
+  },
+  "FastGen-SiD-DiT": {
+    "head": "0e116ded7b75251c23438deda98b1a33da8da958",
+    "refs": [
+      "refs/heads/main 0e116ded7b75251c23438deda98b1a33da8da958"
+    ],
+    "status": "",
+    "remotes": [
+      "origin\thttps://github.com/pianojay/fastgen-sid-dit.git (fetch)",
+      "origin\thttps://github.com/pianojay/fastgen-sid-dit.git (push)",
+      "upstream\thttps://github.com/KAIST-Visual-AI-Group/AIC313-Project-FastGen.git (fetch)",
+      "upstream\thttps://github.com/KAIST-Visual-AI-Group/AIC313-Project-FastGen.git (push)"
+    ],
+    "shallow": false
+  },
+  "exploration": {
+    "head": "3ccf3261495bd144bf844b7f298d10406b53117a",
+    "refs": [
+      "refs/heads/main 3ccf3261495bd144bf844b7f298d10406b53117a"
+    ],
+    "status": "?? .gitignore\n?? eda/\n?? transfer_aug/",
+    "remotes": [
+      "origin\thttps://github.com/KAIST-Visual-AI-Group/AIC313-Project-FastGen (fetch)",
+      "origin\thttps://github.com/KAIST-Visual-AI-Group/AIC313-Project-FastGen (push)"
+    ],
+    "shallow": false
+  }
+}

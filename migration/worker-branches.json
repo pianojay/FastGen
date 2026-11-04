@@ -1,0 +1,68 @@
+[
+  {
+    "group": "SoFlow",
+    "slug": "cifar-soflow",
+    "branch": "archive/cifar-soflow",
+    "commit": "561396e885e27f76dd412e377aef5031ee0ae847",
+    "source_head": "cc47661a0b0843f8f1b6cff3a17107a052d18b21",
+    "worktree": "/tmp/fastgen-migration-20261104-r9ke4ced/master/workers/FastGen/cifar-soflow",
+    "git_files": 42,
+    "outcome": "Stopped; finite early optimization, no image-quality evaluation. Last logged step 130; recoverable main checkpoint 5. No CIFAR weights retained.",
+    "report": "https://github.com/pianojay/FastGen/blob/archive/soflow/docs/soflow-cifar10/EXPERIMENT_REPORT.md"
+  },
+  {
+    "group": "FastGen-SoFlow",
+    "slug": "soflow",
+    "branch": "archive/soflow",
+    "commit": "f3b413505df78d4ce7f35b09764daf900052a116",
+    "source_head": "d6ea8dcda6a3d5fe7914d690525b480bc0c0a075",
+    "worktree": "/tmp/fastgen-migration-20261104-r9ke4ced/master/workers/FastGen/soflow",
+    "git_files": 1448,
+    "outcome": "S3 remains the retained local incumbent: confirmation development FID 66.9684 / 25.0072 at one/four calls. The later matched adversarial pilot did not improve S3. No official challenge score or training-seed replication is claimed.",
+    "report": "docs/RESEARCH_LOG.md"
+  },
+  {
+    "group": "FastGen-AFM",
+    "slug": "afm",
+    "branch": "archive/afm",
+    "commit": "0951be5ea7b9f7dd828c97553715dbe7f0909695",
+    "source_head": "0057ef090c96132ca6a8a7be24180f2c403e4489",
+    "worktree": "/tmp/fastgen-migration-20261104-r9ke4ced/master/workers/FastGen/afm",
+    "git_files": 443,
+    "outcome": "Baseline stopped; six-recipe stability campaign completed with no qualifying recipe, no confirmation and no trained-model FID benchmark.",
+    "report": "docs/STABILITY_REPORT.md"
+  },
+  {
+    "group": "FastGen-SiD-DiT",
+    "slug": "sid-dit",
+    "branch": "archive/sid-dit",
+    "commit": "65d70e496eeffc0b427cc32b59a2e7bc88c230b5",
+    "source_head": "0e116ded7b75251c23438deda98b1a33da8da958",
+    "worktree": "/tmp/fastgen-migration-20261104-r9ke4ced/master/workers/FastGen/sid-dit",
+    "git_files": 517,
+    "outcome": "Teacher and eight students completed. SiDA improved the tested one-call arm but degraded the two-/three-/four-call comparisons. One training realization per arm.",
+    "report": "docs/RESULTS.md"
+  },
+  {
+    "group": "exploration",
+    "slug": "exploration",
+    "branch": "archive/exploration",
+    "commit": "67cf7fb0f27571beea41b3b17a2a6ca55b2681b7",
+    "source_head": "3ccf3261495bd144bf844b7f298d10406b53117a",
+    "worktree": "/tmp/fastgen-migration-20261104-r9ke4ced/master/workers/FastGen/exploration",
+    "git_files": 521,
+    "outcome": "Related independent master-worker study, not retrospectively subordinate to the FastGen coordinator. EDA and six transfer studies completed; no useful SiDA augmentation or generative FID improvement was established.",
+    "report": "transfer_aug/MASTER.md"
+  },
+  {
+    "group": "fastgen_zip",
+    "slug": "peer-sida",
+    "branch": "archive/peer-sida",
+    "commit": "e7309c619f883c857b3d7d2bd69efa6eaa12c0db",
+    "source_head": null,
+    "worktree": "/tmp/fastgen-migration-20261104-r9ke4ced/master/workers/FastGen/peer-sida",
+    "git_files": 21,
+    "outcome": "Externally supplied source/checkpoint copy. README method and training claims remain attributed to the peer; original training logs and write-up were not supplied. Migration validates bytes and CPU inference only.",
+    "report": "README.md"
+  }
+]

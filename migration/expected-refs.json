@@ -1,0 +1,22 @@
+{
+  "historical": {
+    "refs/heads/history/soflow/codex/soflow-ayf-integration": "d6ea8dcda6a3d5fe7914d690525b480bc0c0a075",
+    "refs/heads/history/soflow/main": "e3f5120000cd91037017d86f23993492195101a5",
+    "refs/heads/history/soflow/research/c3-scratch-fm25-20261004": "53882e7ef8fe901b6a3a89bef23a7df946bc68b4",
+    "refs/heads/history/soflow/research/s1-scratch-40k-20260930": "7f46227e0746d28d45b96079a2ac17867f7e9810",
+    "refs/heads/history/soflow/research/s2-scratch-unet160-20261001": "b19e0555f6f807d960a85025d86ff3ca7061a065",
+    "refs/heads/history/soflow/research/s3-scratch-unet192-20261002": "c9a65b8e2abea553fdc681b7ecac3f4ffffe96b4",
+    "refs/heads/history/soflow/soflow-pokemon": "deed05b092138e04d27a2ee8086b13d30afefe24",
+    "refs/heads/history/afm/main": "0057ef090c96132ca6a8a7be24180f2c403e4489",
+    "refs/heads/history/sid-dit/main": "0e116ded7b75251c23438deda98b1a33da8da958",
+    "refs/heads/history/exploration/main": "3ccf3261495bd144bf844b7f298d10406b53117a"
+  },
+  "archives": {
+    "refs/heads/archive/cifar-soflow": "561396e885e27f76dd412e377aef5031ee0ae847",
+    "refs/heads/archive/soflow": "f3b413505df78d4ce7f35b09764daf900052a116",
+    "refs/heads/archive/afm": "0951be5ea7b9f7dd828c97553715dbe7f0909695",
+    "refs/heads/archive/sid-dit": "65d70e496eeffc0b427cc32b59a2e7bc88c230b5",
+    "refs/heads/archive/exploration": "67cf7fb0f27571beea41b3b17a2a6ca55b2681b7",
+    "refs/heads/archive/peer-sida": "e7309c619f883c857b3d7d2bd69efa6eaa12c0db"
+  }
+}
