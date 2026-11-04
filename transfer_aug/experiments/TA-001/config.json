@@ -1,0 +1,44 @@
+{
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "assignment_start_utc": "2026-10-07T11:51:00+00:00",
+  "bundle_manifest_sha256": "46d27966191a14746aa8ec212509aefb0c46b905de0e674947e9b2e094203bda",
+  "cohort_sha256": "da15bf04c3281a170e18ffc6116a298366d0287356c1ba19c6765027be7b5a6c",
+  "common_protocol_sha256": "1be27b900ee25ad95aed707427fb047e2456c122c6a0d2c4cf1feaa02fe51425",
+  "contract_revision": 1,
+  "contract_sha256": "0c57c5f6e23c269957c4bd18287fca6a8b959c3af5594efae19f9b85162ab7b3",
+  "display": "np.rint(np.clip(raw,0,1)*255).astype(uint8)",
+  "donor_arm": "intra",
+  "dtype": "float64",
+  "experiment_id": "TA-001",
+  "inverse_matrix": "np.linalg.inv of forward matrix",
+  "matrix_RGB_to_XYZ": [
+    [
+      0.4124564,
+      0.3575761,
+      0.1804375
+    ],
+    [
+      0.2126729,
+      0.7151522,
+      0.072175
+    ],
+    [
+      0.0193339,
+      0.119192,
+      0.9503041
+    ]
+  ],
+  "source_adaptation": "Donor/content std ratio; true float CIELAB; mean-only fallback; no Lab clipping; no OpenCV.",
+  "std_ddof": 0,
+  "std_fallback_threshold": 1e-06,
+  "white_D65": [
+    0.95047,
+    1.0,
+    1.08883
+  ]
+}

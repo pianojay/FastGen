@@ -1,0 +1,1204 @@
+{
+  "review_method": "Small unblinded AI visual review by the implementation worker, direct inspection of all nine contact sheets; no human panel or class-accuracy measurement.",
+  "reviewed_representative_examples": 64,
+  "reviewed_representative_translations": 32,
+  "reviewed_representative_identity_controls": 32,
+  "reviewed_tail_examples": 8,
+  "reviewed_sheets": [
+    "representative_D0_1.png",
+    "representative_D0_2.png",
+    "representative_D0_3.png",
+    "representative_D0_4.png",
+    "representative_D1_1.png",
+    "representative_D1_2.png",
+    "representative_D1_3.png",
+    "representative_D1_4.png",
+    "tails.png"
+  ],
+  "observations": [
+    {
+      "sheet": "representative_D0_1.png",
+      "row": 1,
+      "domain": "D0",
+      "path": "PokemonData/Butterfree/811d90692780433eba8a88e6f7fe68bc.jpg",
+      "category": "Butterfree",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Wing/body layout remains source-like; darker doubled wing lines and speckle introduce uncertain fine markings.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_1.png",
+      "row": 2,
+      "domain": "D0",
+      "path": "PokemonData/Butterfree/Butterfree14.jpg",
+      "category": "Butterfree",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Wing silhouette and central body remain; saturation and dark outline increase, with softened fine details.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_1.png",
+      "row": 3,
+      "domain": "D0",
+      "path": "PokemonData/Clefable/5992ce3d207f4472b89cfc033208ddda.jpg",
+      "category": "Clefable",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Large source outlines remain but red/orange edging and foreground-background color bleeding alter markings.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_1.png",
+      "row": 4,
+      "domain": "D0",
+      "path": "PokemonData/Clefable/Clefable18.jpg",
+      "category": "Clefable",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Pose remains visible; stronger orange highlights and dark edging change the face and body shading.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_1.png",
+      "row": 5,
+      "domain": "D0",
+      "path": "PokemonData/Clefairy/Clefairy25.jpg",
+      "category": "Clefairy",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Source figure layout remains; background becomes much darker/stronger green with thick black outlines.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_1.png",
+      "row": 6,
+      "domain": "D0",
+      "path": "PokemonData/Clefairy/Clefairy40.jpg",
+      "category": "Clefairy",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Photographic toy scene remains broadly recognizable; contrast darkening and texture changes affect facial detail.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_1.png",
+      "row": 7,
+      "domain": "D0",
+      "path": "PokemonData/Cubone/7ccc09c54c7345a6a640d0c3dfbec13b.jpg",
+      "category": "Cubone",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Card/object layout remains; background and skull edges strongly darken, small text/detail is uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_1.png",
+      "row": 8,
+      "domain": "D0",
+      "path": "PokemonData/Cubone/Cubone40.jpg",
+      "category": "Cubone",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Toy and street layout remain; strong shadow darkening and rough edge texture alter appearance.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_2.png",
+      "row": 1,
+      "domain": "D0",
+      "path": "PokemonData/Dratini/Dratini36.jpg",
+      "category": "Dratini",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Pale background changes to black. Serpentine outline remains, but bright halo, stronger color and altered face detail reduce fidelity.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_2.png",
+      "row": 2,
+      "domain": "D0",
+      "path": "PokemonData/Dratini/Dratini46.jpg",
+      "category": "Dratini",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Serpentine pose remains; pale card background becomes strongly saturated orange/red with thickened edges.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_2.png",
+      "row": 3,
+      "domain": "D0",
+      "path": "PokemonData/Dugtrio/Dugtrio16.jpg",
+      "category": "Dugtrio",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Three-head layout remains approximately visible, but gray bodies become glossy black/blue and facial markings are uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_2.png",
+      "row": 4,
+      "domain": "D0",
+      "path": "PokemonData/Dugtrio/Dugtrio69.jpg",
+      "category": "Dugtrio",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Group shape remains; yellow/black contrast intensifies and fine face/body detail is uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_2.png",
+      "row": 5,
+      "domain": "D0",
+      "path": "PokemonData/Exeggcute/6192611f57e846eeb191ba5859cd19d9.jpg",
+      "category": "Exeggcute",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Egg-group placement remains; facial outlines thicken and surface/background texture appears.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_2.png",
+      "row": 6,
+      "domain": "D0",
+      "path": "PokemonData/Exeggcute/Exeggcute47.jpg",
+      "category": "Exeggcute",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Checker/pale background changes to black; egg group remains with strong halos and changed facial detail.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_2.png",
+      "row": 7,
+      "domain": "D0",
+      "path": "PokemonData/Gyarados/Gyarados78.jpg",
+      "category": "Gyarados",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "White background changes to black; serpentine silhouette remains but thin appendages and markings are uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_2.png",
+      "row": 8,
+      "domain": "D0",
+      "path": "PokemonData/Gyarados/fcc725422e05470dbe712580210a1611.jpg",
+      "category": "Gyarados",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Pose remains but blue background becomes pale and body darkens; complex small anatomy is uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_3.png",
+      "row": 1,
+      "domain": "D0",
+      "path": "PokemonData/Ivysaur/Ivysaur41.jpg",
+      "category": "Ivysaur",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Body/flower layout remains; deep leaf shadows, heavier outlines and saturated bud alter markings.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_3.png",
+      "row": 2,
+      "domain": "D0",
+      "path": "PokemonData/Ivysaur/Ivysaur82.jpg",
+      "category": "Ivysaur",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Body/leaf silhouette remains; leaf turns near-black and skin darkens; facial/skin details change.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_3.png",
+      "row": 3,
+      "domain": "D0",
+      "path": "PokemonData/Poliwag/976e0e50333c4e51a381e93c53351229.jpg",
+      "category": "Poliwag",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Round creature/card layout remains, with heavy outlines and textured/color-shifted surroundings; fine anatomy uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_3.png",
+      "row": 4,
+      "domain": "D0",
+      "path": "PokemonData/Poliwag/Poliwag76.jpg",
+      "category": "Poliwag",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Round body/tail layout remains; gray background becomes dark brown and smooth planes gain bright texture.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_3.png",
+      "row": 5,
+      "domain": "D0",
+      "path": "PokemonData/Primeape/Primeape25.jpg",
+      "category": "Primeape",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Raised-arm layout remains; thick dark edges and facial shading alter fine details.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_3.png",
+      "row": 6,
+      "domain": "D0",
+      "path": "PokemonData/Primeape/Primeape47.jpg",
+      "category": "Primeape",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Pose remains; background shifts darker and body highlights blur, making fine limbs/face uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_3.png",
+      "row": 7,
+      "domain": "D0",
+      "path": "PokemonData/Seaking/8c40fd80f4e240aba555f8970e29ca68.jpg",
+      "category": "Seaking",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Fish/card layout remains but pale background gains strong dark specks, edging and increased texture.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_3.png",
+      "row": 8,
+      "domain": "D0",
+      "path": "PokemonData/Seaking/Seaking43.jpg",
+      "category": "Seaking",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Fish pose remains; darker contours and rougher surface texture affect detailed markings.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_4.png",
+      "row": 1,
+      "domain": "D0",
+      "path": "PokemonData/Shellder/Shellder31.jpg",
+      "category": "Shellder",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Round shell layout remains; dark background is preserved/darkened, body color and rim highlights change.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_4.png",
+      "row": 2,
+      "domain": "D0",
+      "path": "PokemonData/Shellder/Shellder43.jpg",
+      "category": "Shellder",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Shell contour remains; strong blue/dark contrast and extra texture alter shell markings.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_4.png",
+      "row": 3,
+      "domain": "D0",
+      "path": "PokemonData/Tentacool/7979c97c87c64f1fabd74b4ecba2abac.jpg",
+      "category": "Tentacool",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Head/tentacle layout remains; tentacles become much darker and head surface gains textured lines.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_4.png",
+      "row": 4,
+      "domain": "D0",
+      "path": "PokemonData/Tentacool/Tentacool20.jpg",
+      "category": "Tentacool",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "White background changes to black; bright head and thin tentacle outlines remain but solid limb detail is lost/uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_4.png",
+      "row": 5,
+      "domain": "D0",
+      "path": "PokemonData/Venusaur/Venusaur45.jpg",
+      "category": "Venusaur",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Large body/flower structure remains; shading darkens and surface texture alters small markings.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_4.png",
+      "row": 6,
+      "domain": "D0",
+      "path": "PokemonData/Venusaur/bf07f75c99234eecaf99073220bb59d5.jpg",
+      "category": "Venusaur",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Frontal body/flower layout remains; leaf and mouth shading darken substantially and fine lines are uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_4.png",
+      "row": 7,
+      "domain": "D0",
+      "path": "PokemonData/Weepinbell/97452e407c7b470b9fc3b2616e2354e5.jpg",
+      "category": "Weepinbell",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Open-mouth form remains; green scene gets darker/textured and face/leaf boundaries roughen.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D0_4.png",
+      "row": 8,
+      "domain": "D0",
+      "path": "PokemonData/Weepinbell/Weepinbell70.jpg",
+      "category": "Weepinbell",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Open-mouth form remains; thick mouth edging and textured yellow/green surfaces alter the clean source shading.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_1.png",
+      "row": 1,
+      "domain": "D1",
+      "path": "PokemonData/Butterfree/Butterfree40.jpg",
+      "category": "Butterfree",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Black background and wing/body layout largely remain; mild color shifts/edge softening alter small details.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_1.png",
+      "row": 2,
+      "domain": "D1",
+      "path": "PokemonData/Butterfree/Butterfree44.jpg",
+      "category": "Butterfree",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Wing silhouette and dark frame remain; stronger body coloring and small line changes visible.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_1.png",
+      "row": 3,
+      "domain": "D1",
+      "path": "PokemonData/Clefable/2d0d2f3a132d406abb0874c06342ee73.jpg",
+      "category": "Clefable",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Pink figure retains pose, but highlights wash out much facial/body detail; exact facial fidelity uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_1.png",
+      "row": 4,
+      "domain": "D1",
+      "path": "PokemonData/Clefable/Clefable72.jpg",
+      "category": "Clefable",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Pose remains with pale highlights and heavier outlines; fine face details soften.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_1.png",
+      "row": 5,
+      "domain": "D1",
+      "path": "PokemonData/Clefairy/40b9e9ad15284eb385262713f71e9990.jpg",
+      "category": "Clefairy",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Pose and black background remain; brighter body shading and some fine-line distortion visible.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_1.png",
+      "row": 6,
+      "domain": "D1",
+      "path": "PokemonData/Clefairy/Clefairy17.jpg",
+      "category": "Clefairy",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Pose and black background remain; heavier shading/outline alters small face and limb details.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_1.png",
+      "row": 7,
+      "domain": "D1",
+      "path": "PokemonData/Cubone/9d86a9f09bde4407b1d55dcf4cb430fe.jpg",
+      "category": "Cubone",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Card layout remains; slight palette/contrast change and soft small markings.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_1.png",
+      "row": 8,
+      "domain": "D1",
+      "path": "PokemonData/Cubone/Cubone13.jpg",
+      "category": "Cubone",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Sprite-like pose remains; orange/bone colors shift with thicker dark edging.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_2.png",
+      "row": 1,
+      "domain": "D1",
+      "path": "PokemonData/Dratini/Dratini17.jpg",
+      "category": "Dratini",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Serpentine form and blue scene remain; small contour/color changes with fine details uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_2.png",
+      "row": 2,
+      "domain": "D1",
+      "path": "PokemonData/Dratini/Dratini37.jpg",
+      "category": "Dratini",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Curling pose remains; body/background lighten and outlines deepen.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_2.png",
+      "row": 3,
+      "domain": "D1",
+      "path": "PokemonData/Dugtrio/6c2d9495c3354341ad86713b66017920.jpg",
+      "category": "Dugtrio",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Group arrangement remains; pink/yellow tones and edges shift slightly.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_2.png",
+      "row": 4,
+      "domain": "D1",
+      "path": "PokemonData/Dugtrio/e73bb16bc2c6457c97994dae827eaf7d.jpg",
+      "category": "Dugtrio",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Three-head outline remains; brown shading and face edges change modestly.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_2.png",
+      "row": 5,
+      "domain": "D1",
+      "path": "PokemonData/Exeggcute/76b20bb1256a4f32bbbd38c333b84f61.jpg",
+      "category": "Exeggcute",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Egg/card layout remains; highlights and background tones shift, small markings soften.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_2.png",
+      "row": 6,
+      "domain": "D1",
+      "path": "PokemonData/Exeggcute/Exeggcute57.jpg",
+      "category": "Exeggcute",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Egg outline and black background remain; facial lines and shell shading alter.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_2.png",
+      "row": 7,
+      "domain": "D1",
+      "path": "PokemonData/Gyarados/Gyarados57.jpg",
+      "category": "Gyarados",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Open-mouth/card scene remains; color and contrast changes, fine anatomical details uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_2.png",
+      "row": 8,
+      "domain": "D1",
+      "path": "PokemonData/Gyarados/Gyarados65.jpg",
+      "category": "Gyarados",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Thin red serpentine silhouette and black background remain; small appendage fidelity uncertain at64px.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_3.png",
+      "row": 1,
+      "domain": "D1",
+      "path": "PokemonData/Ivysaur/6231456343bc47cea782f5903a7b0513.jpg",
+      "category": "Ivysaur",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Plant/body composition remains; modest color/outline changes, some small markings altered.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_3.png",
+      "row": 2,
+      "domain": "D1",
+      "path": "PokemonData/Ivysaur/Ivysaur20.jpg",
+      "category": "Ivysaur",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Frontal plant/body form remains with slightly changed green shading and outlines.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_3.png",
+      "row": 3,
+      "domain": "D1",
+      "path": "PokemonData/Poliwag/Poliwag101.jpg",
+      "category": "Poliwag",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Round body and spiral remain; blue becomes more saturated/purple and spiral line thickness changes.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_3.png",
+      "row": 4,
+      "domain": "D1",
+      "path": "PokemonData/Poliwag/de6278c9be65464894b85f43afbbe426.jpg",
+      "category": "Poliwag",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Round pose and spiral remain; small color/contour changes on body and background.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_3.png",
+      "row": 5,
+      "domain": "D1",
+      "path": "PokemonData/Primeape/Primeape6.jpg",
+      "category": "Primeape",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Pose/background layout remains; body highlights/face become smoother and somewhat washed out.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_3.png",
+      "row": 6,
+      "domain": "D1",
+      "path": "PokemonData/Primeape/cbc70975639047e99edfb924fcf71561.jpg",
+      "category": "Primeape",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Raised-arm pose remains; brighter body/face and dark edge changes make fine expression uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_3.png",
+      "row": 7,
+      "domain": "D1",
+      "path": "PokemonData/Seaking/Seaking48.jpg",
+      "category": "Seaking",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Fish pose and spotted fin remain; heavier edge/color treatment modifies spots.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_3.png",
+      "row": 8,
+      "domain": "D1",
+      "path": "PokemonData/Seaking/Seaking58.jpg",
+      "category": "Seaking",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Fish outline remains; stronger orange/black contours and subtle fin-line changes.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_4.png",
+      "row": 1,
+      "domain": "D1",
+      "path": "PokemonData/Shellder/Shellder7.jpg",
+      "category": "Shellder",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Toy shape and scene remain; slight blue/purple and tongue color changes, softer face edges.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_4.png",
+      "row": 2,
+      "domain": "D1",
+      "path": "PokemonData/Shellder/a7518e8b0deb41d0a0e983e9f04942a4.jpg",
+      "category": "Shellder",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Shell/tongue drawing remains; outlines thicken and colors shift subtly.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_4.png",
+      "row": 3,
+      "domain": "D1",
+      "path": "PokemonData/Tentacool/Tentacool29.jpg",
+      "category": "Tentacool",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Thin tentacles and black scene remain; bright head/line softness makes small anatomy uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_4.png",
+      "row": 4,
+      "domain": "D1",
+      "path": "PokemonData/Tentacool/Tentacool59.jpg",
+      "category": "Tentacool",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Head and tentacle positions remain; neighboring cropped object persists, fine lines soften.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_4.png",
+      "row": 5,
+      "domain": "D1",
+      "path": "PokemonData/Venusaur/Venusaur44.jpg",
+      "category": "Venusaur",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Circular object scene remains; tiny central figure is too small for confident anatomy/identity judgment.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_4.png",
+      "row": 6,
+      "domain": "D1",
+      "path": "PokemonData/Venusaur/b9d19187c6b4450f8fe7371a89bb4c9e.jpg",
+      "category": "Venusaur",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Card layout persists, but tiny text/figure details are blurred and cannot support confident identity judgment.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_4.png",
+      "row": 7,
+      "domain": "D1",
+      "path": "PokemonData/Weepinbell/Weepinbell35.jpg",
+      "category": "Weepinbell",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Plant/face layout remains; modest brightening and dark outlines change fine markings.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "representative_D1_4.png",
+      "row": 8,
+      "domain": "D1",
+      "path": "PokemonData/Weepinbell/Weepinbell52.jpg",
+      "category": "Weepinbell",
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "observation": "Leaf/body form and dark background remain; shading/edge changes visible.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source, initial,1000,5000,10000,final"
+    },
+    {
+      "sheet": "tails.png",
+      "row": 1,
+      "domain": "D0",
+      "path": "PokemonData/Persian/Persian53.jpg",
+      "category": "Persian",
+      "rgb_rms": 0.9204915574867091,
+      "observation": "White background becomes black; tiny source silhouette persists but facial/ear detail blurs and fidelity is uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source,final,nearest same-class D1 optimization (pixel neighbor, not semantic match)"
+    },
+    {
+      "sheet": "tails.png",
+      "row": 2,
+      "domain": "D0",
+      "path": "PokemonData/Machoke/Machoke58.jpg",
+      "category": "Machoke",
+      "rgb_rms": 0.874647452931344,
+      "observation": "White background becomes black; muscular silhouette persists but body/face details become softened and mottled.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source,final,nearest same-class D1 optimization (pixel neighbor, not semantic match)"
+    },
+    {
+      "sheet": "tails.png",
+      "row": 3,
+      "domain": "D0",
+      "path": "PokemonData/Drowzee/Drowzee19.jpg",
+      "category": "Drowzee",
+      "rgb_rms": 0.8633379174038424,
+      "observation": "White background becomes black; body outline remains but face and hand detail wash out.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source,final,nearest same-class D1 optimization (pixel neighbor, not semantic match)"
+    },
+    {
+      "sheet": "tails.png",
+      "row": 4,
+      "domain": "D0",
+      "path": "PokemonData/Geodude/Geodude32.jpg",
+      "category": "Geodude",
+      "rgb_rms": 0.8465317973047792,
+      "observation": "White background becomes black; solid arms become hollow curved bright outlines and face detail disappears: substantial anatomy/marking damage.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source,final,nearest same-class D1 optimization (pixel neighbor, not semantic match)"
+    },
+    {
+      "sheet": "tails.png",
+      "row": 5,
+      "domain": "D0",
+      "path": "PokemonData/Meowth/Meowth10.jpg",
+      "category": "Meowth",
+      "rgb_rms": 0.8293974665742172,
+      "observation": "White background becomes black; upright outline remains with halos and major loss/alteration of facial detail.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source,final,nearest same-class D1 optimization (pixel neighbor, not semantic match)"
+    },
+    {
+      "sheet": "tails.png",
+      "row": 6,
+      "domain": "D0",
+      "path": "PokemonData/Tentacool/Tentacool20.jpg",
+      "category": "Tentacool",
+      "rgb_rms": 0.8196267332883244,
+      "observation": "White background becomes black; tentacles become thin bright traces with lost solid shading and altered head marks.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source,final,nearest same-class D1 optimization (pixel neighbor, not semantic match)"
+    },
+    {
+      "sheet": "tails.png",
+      "row": 7,
+      "domain": "D0",
+      "path": "PokemonData/Golbat/Golbat18.jpg",
+      "category": "Golbat",
+      "rgb_rms": 0.8104760710606137,
+      "observation": "White background becomes black; wings and mouth remain broadly placed but wing edges/texture change and a stray upper mark appears.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source,final,nearest same-class D1 optimization (pixel neighbor, not semantic match)"
+    },
+    {
+      "sheet": "tails.png",
+      "row": 8,
+      "domain": "D0",
+      "path": "PokemonData/Arcanine/Arcanine48.jpg",
+      "category": "Arcanine",
+      "rgb_rms": 0.8099738265422557,
+      "observation": "White background becomes black; reclining outline remains but many stripes disappear and face/limb details become uncertain.",
+      "identity_judgment": "Broad source correspondence assessed descriptively; no semantic class verification. Fine-detail uncertainties are noted.",
+      "reviewed_columns": "source,final,nearest same-class D1 optimization (pixel neighbor, not semantic match)"
+    }
+  ],
+  "overall": {
+    "representative_translations": "Broad source layouts usually remain visible, with stronger contrast, dark thick contours, altered colors, halos/speckle and uncertain small markings. Four of32 representative translations visibly change pale/white/checker backgrounds to black (Dratini36,Exeggcute47,Gyarados78,Tentacool20).",
+    "identity_controls": "Generally smaller visual changes than translations, but not exact identities: color/highlight changes, softened or thickened edges and small marking distortion remain. Tiny Venusaur/card details are uncertain.",
+    "high_change_tails": "All eight deliberately selected largest-RMS translations replace white backgrounds with black. Broad outlines often remain; Geodude loses solid arm/face structure and Arcanine loses stripes. Facial/limb fidelity in several others is uncertain.",
+    "milestones": "Initial outputs are colored noise. Early updates recover broad source structure; later milestones change palettes/contrast and sometimes switch backgrounds. No monotonic quality or convergence claim follows.",
+    "interpretation": "The appearance projection shifts strongly toward D1, but background replacement and marking damage violate the desired invariants in visible cases. This is not evidence of safe augmentation or lower generative FID.",
+    "limitations": "Representatives are32 translation sources/32 descriptive identity controls in16 fixed classes; tails are outcome-selected and may overlap representatives. Small unblinded AI judgments are not population prevalence or class accuracy."
+  }
+}

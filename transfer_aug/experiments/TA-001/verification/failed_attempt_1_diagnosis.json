@@ -1,0 +1,25 @@
+{
+  "cause": "Direct population mean summation cancellation in nearly constant synthetic Lab source, amplified by donor/source std scaling. Mathematical formula unchanged; use shifted moments for numerical stability.",
+  "fixture_errors": [
+    {
+      "alpha": 0.0,
+      "mean_error": 0.0,
+      "std_error": 0.0
+    },
+    {
+      "alpha": 0.25,
+      "mean_error": 7.993669726147346e-09,
+      "std_error": 3.1086244689504383e-15
+    },
+    {
+      "alpha": 0.5,
+      "mean_error": 1.5987218660029612e-08,
+      "std_error": 4.884981308350689e-15
+    },
+    {
+      "alpha": 1.0,
+      "mean_error": 3.197442310920451e-08,
+      "std_error": 1.1546319456101628e-14
+    }
+  ]
+}

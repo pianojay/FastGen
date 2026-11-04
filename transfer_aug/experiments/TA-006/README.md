@@ -1,0 +1,13 @@
+# TA-006 StarGAN v2 preparation
+
+Pinned source: https://github.com/clovaai/stargan-v2/tree/875b70a150609e8a678ed8482562e7074cdce7e5 . Upstream CC BY-NC 4.0 license is preserved in `LICENSE.upstream`.
+
+`model.py` contains unchanged upstream architectural classes. `losses.py` contains unchanged upstream loss functions and EMA operation. `build_sources.py` reproducibly extracts them from the local pinned audit cache. Removed runtime imports prevent FAN, pretrained metric, dataset-loader, or external checkpoint execution. A minimal local `munch.py` replaces the unavailable attribute-dictionary dependency without installing packages. The exact pinned `upstream_utils.py` was retrieved only to verify `he_init`; it is not imported/executed.
+
+The RGB64 width rule starts at256 channels and caps512. Generator has two downsampling blocks, two bottleneck blocks, symmetric AdaIN decode, and linear RGB output (no tanh). Mapping latent16→style64 has domain heads for two appearance groups; style encoder and discriminator have separate domain heads. FAN and high-pass are disabled. Every trainable Conv/Linear receives pinned He-normal initialization. EMA G/F/E begin as exact post-initialization copies; this deliberately corrects upstream's pre-initialization EMA copy order. No pretrained state or feature losses.
+
+Losses exactly retain upstream non-saturating logistic adversarial loss, R1 coefficient1, style reconstruction1, cycle1, diversity2×(1−completed_iterations/20000). Each iteration performs D-latent, D-reference, G-latent (updates G/F/E), and G-reference (updates G only), then EMA beta.999. Second diversity output is detached. Mapping Adam LR1e-6; G/E/D LR1e-4, betas(0,.99), weight decay1e-4. Float beta zero is a PyTorch2.7 compatibility conversion.
+
+`StarGAN64(device)` provides `step(x, source_domain, [reference1,reference2], target_domain, optional_latents)`, `counts()`, atomic `checkpoint(path,sampler)`, and `restore(path,sampler)`. `.nets` and `.ema` expose named modules; `.updates` tracks complete four-phase iterations. Sampler uniformly draws a class/source domain, then an input and two distinct opposite-domain same-class references; flips are independent. Pixel bundle adaptation and GPU budget/lease execution await the final master contract.
+
+CPU synthetic verification uses full architecture with batch1, not the planned training batch8. It checks exact upstream AST parity, shapes/domain routing, latent/reference sensitivity, second-branch gradient detach, finite four-phase losses/R1, optimizer participation, EMA formula and initialization, and bit-exact checkpoint next-step recovery including model/EMA/optimizer/RNG/sampler. CPU setup cannot establish GPU memory qualification or augmentation quality.

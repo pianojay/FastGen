@@ -1,0 +1,10 @@
+{
+  "pid": 1130183,
+  "uuid": "GPU-dd35c186-88f4-ac1e-26ae-028adbd8e888",
+  "lease": "/home/user/jw_soflow/FastGen-SoFlow/runs/gpu_1.lock",
+  "inode": 110257311,
+  "acquired_utc": "2026-10-07T16:42:56.190577+00:00",
+  "inventory": "0, GPU-e9d30df5-3b84-1a7e-c505-c6fff0a0ce7f\n1, GPU-dd35c186-88f4-ac1e-26ae-028adbd8e888\n2, GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2\n3, GPU-c651701d-9ecd-e23e-13a9-2bc13b838b5d\n",
+  "occupancy": "",
+  "released_utc": "2026-10-07T17:51:43.437283+00:00"
+}

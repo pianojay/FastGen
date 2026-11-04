@@ -1,0 +1,308 @@
+{
+  "Lab_fixtures": [
+    {
+      "alpha": 0.0,
+      "fallback_channels": [
+        true,
+        true,
+        true
+      ],
+      "finite": true,
+      "fixture": "constant",
+      "mean_error": 0.0,
+      "source_std": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "std_error": 0.0
+    },
+    {
+      "alpha": 0.25,
+      "fallback_channels": [
+        true,
+        true,
+        true
+      ],
+      "finite": true,
+      "fixture": "constant",
+      "mean_error": 0.0,
+      "source_std": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "std_error": 0.0
+    },
+    {
+      "alpha": 0.5,
+      "fallback_channels": [
+        true,
+        true,
+        true
+      ],
+      "finite": true,
+      "fixture": "constant",
+      "mean_error": 0.0,
+      "source_std": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "std_error": 0.0
+    },
+    {
+      "alpha": 1.0,
+      "fallback_channels": [
+        true,
+        true,
+        true
+      ],
+      "finite": true,
+      "fixture": "constant",
+      "mean_error": 0.0,
+      "source_std": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "std_error": 0.0
+    },
+    {
+      "alpha": 0.0,
+      "fallback_channels": [
+        true,
+        true,
+        true
+      ],
+      "finite": true,
+      "fixture": "near_constant_below_threshold",
+      "mean_error": 0.0,
+      "source_std": [
+        5.77491241460892e-09,
+        5.77491241033398e-09,
+        5.774912410457424e-09
+      ],
+      "std_error": 0.0
+    },
+    {
+      "alpha": 0.25,
+      "fallback_channels": [
+        true,
+        true,
+        true
+      ],
+      "finite": true,
+      "fixture": "near_constant_below_threshold",
+      "mean_error": 0.0,
+      "source_std": [
+        5.77491241460892e-09,
+        5.77491241033398e-09,
+        5.774912410457424e-09
+      ],
+      "std_error": 3.8762097094541153e-19
+    },
+    {
+      "alpha": 0.5,
+      "fallback_channels": [
+        true,
+        true,
+        true
+      ],
+      "finite": true,
+      "fixture": "near_constant_below_threshold",
+      "mean_error": 0.0,
+      "source_std": [
+        5.77491241460892e-09,
+        5.77491241033398e-09,
+        5.774912410457424e-09
+      ],
+      "std_error": 7.782355085276525e-19
+    },
+    {
+      "alpha": 1.0,
+      "fallback_channels": [
+        true,
+        true,
+        true
+      ],
+      "finite": true,
+      "fixture": "near_constant_below_threshold",
+      "mean_error": 0.0,
+      "source_std": [
+        5.77491241460892e-09,
+        5.77491241033398e-09,
+        5.774912410457424e-09
+      ],
+      "std_error": 1.2299331984438717e-18
+    },
+    {
+      "alpha": 0.0,
+      "fallback_channels": [
+        false,
+        false,
+        false
+      ],
+      "finite": true,
+      "fixture": "near_constant_above_threshold",
+      "mean_error": 0.0,
+      "source_std": [
+        5.7749124105532805e-06,
+        5.774912410557269e-06,
+        5.77491241055764e-06
+      ],
+      "std_error": 0.0
+    },
+    {
+      "alpha": 0.25,
+      "fallback_channels": [
+        false,
+        false,
+        false
+      ],
+      "finite": true,
+      "fixture": "near_constant_above_threshold",
+      "mean_error": 6.483702463810914e-14,
+      "source_std": [
+        5.7749124105532805e-06,
+        5.774912410557269e-06,
+        5.77491241055764e-06
+      ],
+      "std_error": 5.995204332975845e-15
+    },
+    {
+      "alpha": 0.5,
+      "fallback_channels": [
+        false,
+        false,
+        false
+      ],
+      "finite": true,
+      "fixture": "near_constant_above_threshold",
+      "mean_error": 1.2967404927621828e-13,
+      "source_std": [
+        5.7749124105532805e-06,
+        5.774912410557269e-06,
+        5.77491241055764e-06
+      ],
+      "std_error": 8.881784197001252e-15
+    },
+    {
+      "alpha": 1.0,
+      "fallback_channels": [
+        false,
+        false,
+        false
+      ],
+      "finite": true,
+      "fixture": "near_constant_above_threshold",
+      "mean_error": 4.192202140984591e-13,
+      "source_std": [
+        5.7749124105532805e-06,
+        5.774912410557269e-06,
+        5.77491241055764e-06
+      ],
+      "std_error": 1.2434497875801753e-14
+    }
+  ],
+  "RGB_fixtures": [
+    {
+      "alpha": 0.0,
+      "finite": true,
+      "fixture": "constant_rgb",
+      "source_Lab_std": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "alpha": 0.25,
+      "finite": true,
+      "fixture": "constant_rgb",
+      "source_Lab_std": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "finite": true,
+      "fixture": "constant_rgb",
+      "source_Lab_std": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "finite": true,
+      "fixture": "constant_rgb",
+      "source_Lab_std": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "alpha": 0.0,
+      "finite": true,
+      "fixture": "near_constant_rgb",
+      "source_Lab_std": [
+        6.010202749467759e-09,
+        2.853952102116618e-14,
+        1.1097401108186913e-14
+      ]
+    },
+    {
+      "alpha": 0.25,
+      "finite": true,
+      "fixture": "near_constant_rgb",
+      "source_Lab_std": [
+        6.010202749467759e-09,
+        2.853952102116618e-14,
+        1.1097401108186913e-14
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "finite": true,
+      "fixture": "near_constant_rgb",
+      "source_Lab_std": [
+        6.010202749467759e-09,
+        2.853952102116618e-14,
+        1.1097401108186913e-14
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "finite": true,
+      "fixture": "near_constant_rgb",
+      "source_Lab_std": [
+        6.010202749467759e-09,
+        2.853952102116618e-14,
+        1.1097401108186913e-14
+      ]
+    }
+  ],
+  "alpha0_uint8_and_float_exact_count": 604,
+  "cohort_degenerate_Lab_channels": 1,
+  "known_Lab_anchor_max_error": 4.040358885504247e-05,
+  "pass": true,
+  "pre_inverse_max_mean_error": 5.3859139370615594e-12,
+  "pre_inverse_max_std_error": 2.589928271845565e-12,
+  "roundtrip_cohort_max_abs_rgb": 1.1525502774389906e-14,
+  "roundtrip_palette_max_abs_rgb": 2.9591877608037276e-08,
+  "seconds": 9.724826626479626,
+  "self_donor_count": 1812,
+  "self_donor_max_abs_rgb": 1.1525502774389906e-14,
+  "self_donor_max_exported_LSB": 0.0,
+  "thresholds": {
+    "Lab_moments": 1e-08,
+    "roundtrip_rgb": 1e-06,
+    "self_donor_LSB": 1,
+    "self_donor_rgb": 1e-06
+  }
+}

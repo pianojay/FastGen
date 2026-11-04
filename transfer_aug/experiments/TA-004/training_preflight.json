@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-10-07T15:14:17.031438+00:00",
+  "contract_sha256": "1f296b91bb75055d8604d5f1e6dae9f8897343406eee3c88c5a4408869c2da36",
+  "input_hashes": {
+    "freeze.py": "d4c681f53fa067beca96e7f855c57a203f37a5f645942b6d4725457353e17c43",
+    "manifest.json": "a15a783934fb636acc7d141d3becdffea049f0082718c0a1e931bc094df18093",
+    "pixels_uint8.npy": "411c174959b83e2521e77ce3a3fa9e5b426c306a46361f8ba0804dd90de31a12"
+  },
+  "all_A1": true,
+  "diagnostic_exclusion": true,
+  "all_pixel_hashes_verified": true,
+  "source_hashes_verified": true,
+  "code_hashes": {
+    "verify_setup.py": "5f3bab9a14348c25c437a848763328703fa3d5605dac385abcdbd49587679cfe",
+    "cut64.py": "51b26aaa457458d56edd8dfd2ac91d5a857320a22d9d6739199af71522ee3e70",
+    "train.py": "876f126dae01826e119be1e5763aedb4fd9c7d0557a7823950d9809560dcc768",
+    "build_sources.py": "ab42e249b40abfb41a33b6af40c48bf23173095112e299068534278b00bc3695",
+    "networks.py": "d82f4c9ce74ab955af61bb5f064a63224bf05388c2f40df86df21728a004e28f",
+    "finalize_setup.py": "f12cfbae1480ebf754857f55f889d6777a2e809a87b7401ccf9b03d7a646176e"
+  }
+}

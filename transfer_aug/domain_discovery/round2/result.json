@@ -1,0 +1,54 @@
+{
+  "candidate_manifest_sha256": "d6a99c722a46a873a02cc1cf15bac54ca2e56a5ea4c6395ca6a18f499bcbff7f",
+  "commands": [
+    "bash transfer_aug/run_python.sh transfer_aug/domain_discovery/round2/analyze.py",
+    "bash transfer_aug/run_python.sh transfer_aug/domain_discovery/round2/verify_and_regenerate.py",
+    "bash transfer_aug/run_python.sh transfer_aug/domain_discovery/round2/finalize.py"
+  ],
+  "contract_sha256": "e99cfd0a8c510b3e216dc8f24f01c2c05afe7ba927e02feedf4f05b92de1d758",
+  "counts": {
+    "a1": 14059,
+    "categories": 151,
+    "excluded": 1072,
+    "totals": {
+      "holdout": 604,
+      "optimize": 7950,
+      "unused": 4433
+    },
+    "unique": 12987
+  },
+  "cross_class_duplicate_groups": 6,
+  "experiment_id": "appearance-domain-round2",
+  "findings": "Class-balanced PC1 provides reproducible contrast/edge/background separation with mixed media and content confounding; supports a bounded statistical-domain pilot, not a semantic style claim.",
+  "global_train_holdout_pixel_overlap": 0,
+  "limitations": [
+    "A1-only auxiliary holdout; not independent confirmation",
+    "128 fixed review images cover 16 of 151 categories",
+    "Cross-class duplicate labels persist; five pairs optimize in one domain and one pair unused",
+    "No training, pretrained features, GPU, FID or augmentation effectiveness claim",
+    "Exact-pixel deduplication does not remove near-duplicate images"
+  ],
+  "minimum_optimization_per_class_domain": 6,
+  "pc1_explained_variance": 0.2703923486508089,
+  "per_domain_holdout": 302,
+  "per_domain_optimization": 3975,
+  "proof_paths": {
+    "DEFINITIONS.md": "transfer_aug/domain_discovery/round2/DEFINITIONS.md",
+    "counts.json": "transfer_aug/domain_discovery/round2/counts.json",
+    "cross_class_duplicates.json": "transfer_aug/domain_discovery/round2/cross_class_duplicates.json",
+    "domain_manifest.json": "transfer_aug/domain_discovery/round2/domain_manifest.json",
+    "domain_measurements.json": "transfer_aug/domain_discovery/round2/domain_measurements.json",
+    "duplicate_exclusions.json": "transfer_aug/domain_discovery/round2/duplicate_exclusions.json",
+    "pca.json": "transfer_aug/domain_discovery/round2/pca.json",
+    "regeneration.json": "transfer_aug/domain_discovery/round2/regeneration.json",
+    "resource_usage.json": "transfer_aug/domain_discovery/round2/resource_usage.json",
+    "review_selection.json": "transfer_aug/domain_discovery/round2/review_selection.json",
+    "scores.csv": "transfer_aug/domain_discovery/round2/scores.csv",
+    "verification.json": "transfer_aug/domain_discovery/round2/verification.json",
+    "visual_review.json": "transfer_aug/domain_discovery/round2/visual_review.json"
+  },
+  "recommendation": "ready",
+  "revision": 1,
+  "status": "complete",
+  "training_applied": false
+}

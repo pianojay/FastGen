@@ -1,0 +1,10 @@
+{
+  "experiment_id": "TA-004",
+  "stage": "completed",
+  "scientific_status": "completed",
+  "owned_pid": null,
+  "updated_at": "2026-10-07T16:21:21.401188+00:00",
+  "updates": 20000,
+  "gpu_seconds": 3702.2395655866712,
+  "result": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/result.json"
+}

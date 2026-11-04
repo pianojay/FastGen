@@ -1,0 +1,20 @@
+[
+  ".gitignore",
+  "LICENSE.txt",
+  "README.md",
+  "color_transfer/__init__.py",
+  "color_transfer/__init__.pyc",
+  "docs/images/autumn_fallingwater.png",
+  "docs/images/sunset_ocean.png",
+  "docs/images/woods_storm.png",
+  "example.py",
+  "images/autumn.jpg",
+  "images/fallingwater.jpg",
+  "images/ocean_day.jpg",
+  "images/ocean_sunset.jpg",
+  "images/storm.jpg",
+  "images/woods.jpg",
+  "requeriments.txt",
+  "setup.cfg",
+  "setup.py"
+]

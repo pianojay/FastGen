@@ -1,0 +1,5 @@
+{
+  "timestamp": "2026-10-07T16:43:16.839618+00:00",
+  "gpu_seconds": 3.8126150723546743,
+  "traceback": "Traceback (most recent call last):\n  File \"/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/train.py\", line 69, in main\n    for i in range(20):loss=m.step(*batch(sampler));status(qualification_iterations=i+1,last_loss=loss)\n  File \"/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/stargan64.py\", line 50, in step\n    loss,terms=loss_fn(self.nets,self.args,x,y,yt,**kw)\n  File \"/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/losses.py\", line 21, in compute_d_loss\n    loss_reg = r1_reg(out, x_real)\n  File \"/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/losses.py\", line 105, in r1_reg\n    reg = 0.5 * grad_dout2.view(batch_size, -1).sum(1).mean(0)\nRuntimeError: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.\n"
+}

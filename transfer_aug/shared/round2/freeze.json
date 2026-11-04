@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "D0": {
+      "diagnostic": 302,
+      "optimization": 3975
+    },
+    "D1": {
+      "diagnostic": 302,
+      "optimization": 3975
+    }
+  },
+  "domain_artifact_manifest_sha256": "7d565ce1e2214c8a10a89ae77033ddf8b3a2a7d9a73838c3cc4b3898a8465b70",
+  "domain_manifest_sha256": "d6a99c722a46a873a02cc1cf15bac54ca2e56a5ea4c6395ca6a18f499bcbff7f",
+  "files": {
+    "freeze.py": "d4c681f53fa067beca96e7f855c57a203f37a5f645942b6d4725457353e17c43",
+    "manifest.json": "a15a783934fb636acc7d141d3becdffea049f0082718c0a1e931bc094df18093",
+    "pixels_uint8.npy": "411c174959b83e2521e77ce3a3fa9e5b426c306a46361f8ba0804dd90de31a12"
+  },
+  "note": "A1 diagnostic images excluded from optimization, but included in domain discovery; not independent validation.",
+  "records": 8554
+}

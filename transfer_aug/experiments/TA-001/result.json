@@ -1,0 +1,154 @@
+{
+  "artifact_entries_canonical_sha256": "30b74b80a7b54704f6489d686d3325b2833a3146685bb571ea8dfdf2fed7c46c",
+  "artifact_manifest_sha256": "5ffd3bdbf1da88007d5c0a184f1c7a345abb0d8c708a6db28e692aaab05197bc",
+  "bundle_manifest_sha256": "46d27966191a14746aa8ec212509aefb0c46b905de0e674947e9b2e094203bda",
+  "checks": {
+    "all_outputs_exact_recomputation": {
+      "pass": true,
+      "proof": "verification/determinism.json"
+    },
+    "all_required_sheets_actually_viewed": {
+      "pass": true,
+      "proof": "visual_inspection.json"
+    },
+    "artifact_hashes": {
+      "pass": true,
+      "proof": "verification/artifact_hashes_verified.json"
+    },
+    "counts_review_coverage_and_finite_arrays": {
+      "pass": true,
+      "proof": "verification/acceptance.json"
+    },
+    "frozen_and_protected_integrity_after": {
+      "pass": true,
+      "proof": "verification/integrity_final.json"
+    },
+    "frozen_and_protected_integrity_before": {
+      "pass": true,
+      "proof": "verification/integrity_before.json"
+    },
+    "numerical_acceptance": {
+      "pass": true,
+      "proof": "verification/numerical_checks.json"
+    },
+    "resource_budget": {
+      "pass": true,
+      "proof": "verification/resources_final.json"
+    },
+    "zero_variance_exception_documented": {
+      "pass": true,
+      "proof": "verification/degenerate_channels.json"
+    }
+  },
+  "cohort_sha256": "da15bf04c3281a170e18ffc6116a298366d0287356c1ba19c6765027be7b5a6c",
+  "common_protocol_sha256": "1be27b900ee25ad95aed707427fb047e2456c122c6a0d2c4cf1feaa02fe51425",
+  "completed_control_output_count": 604,
+  "completed_output_count": 2416,
+  "completed_representative_review_count": 48,
+  "completed_review_count": 56,
+  "completed_sheet_count": 24,
+  "completed_tail_review_count": 8,
+  "completed_transformed_output_count": 1812,
+  "completed_utc": "2026-10-07T12:05:44.580510+00:00",
+  "contract_revision": 1,
+  "contract_sha256": "0c57c5f6e23c269957c4bd18287fca6a8b959c3af5594efae19f9b85162ab7b3",
+  "evidence": {
+    "acceptance": "verification/acceptance.json",
+    "array_layout": "arrays/layout.json",
+    "commands": "commands.json",
+    "condition_metrics": "condition_metrics.json",
+    "config": "config.json",
+    "determinism": "verification/determinism.json",
+    "display_pngs": "png",
+    "environment": "environment.json",
+    "failed_attempt_diagnosis": "verification/failed_attempt_1_diagnosis.json",
+    "failed_attempt_implementation": "verification/failed_attempt_1_implementation.py",
+    "failed_attempt_log": "verification/failed_attempt_1.log",
+    "gallery": "gallery.html",
+    "hash_verification": "verification/artifact_hashes_verified.json",
+    "hashes": "artifact_manifest.json",
+    "implementation": "run_experiment.py",
+    "implementation_notes": "IMPLEMENTATION.md",
+    "input_integrity_after": "verification/integrity_final.json",
+    "input_integrity_before": "verification/integrity_before.json",
+    "numerical_verification": "verification/numerical_checks.json",
+    "per_output_metrics": "per_output_metrics.csv",
+    "raw_numeric_arrays": "arrays/raw_rgb.npy",
+    "representative_sheets": "sheets/representative",
+    "resources": "verification/resources_final.json",
+    "review_rows": "visual_review.csv",
+    "summary": "SUMMARY.md",
+    "tail_selection": "tail_selection.json",
+    "tail_sheets": "sheets/tail",
+    "visual_inspection": "visual_inspection.json"
+  },
+  "evidence_notes": {
+    "no_recipe_selected": true,
+    "path_base": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-001",
+    "recompute_scope": "Deterministic experiment artifacts are recalculated and matched without rewriting successful outputs. Timestamped runtime/provenance and subjective visual judgments are not deterministic image outputs.",
+    "visual_review_method": "All 24 actual PNG sheets opened with tools.view_image, then 56 per-output labels transcribed. Controls and donor columns supply comparison context; only contracted transformed outputs receive review rows."
+  },
+  "expected_control_output_count": 604,
+  "expected_output_count": 2416,
+  "expected_representative_review_count": 48,
+  "expected_review_count": 56,
+  "expected_sheet_count": 24,
+  "expected_tail_review_count": 8,
+  "expected_transformed_output_count": 1812,
+  "experiment_id": "TA-001",
+  "implementation_sha256": "8b0aa252d01c80e09d9b9880cc5d0d59af8a7fd16a2ca5e1dc5ba2543d1a7bde",
+  "key_findings": [
+    "Pre-inverse Lab moments follow the contracted interpolation: maximum mean/std errors 5.39e-12/2.59e-12. One near-achromatic b channel (Venusaur 139_3) uses the mean-only fallback, so its donor std is intentionally not matched.",
+    "At alpha 0.25/0.5/1.0, median clipped-float RMS changes are 0.06191/0.11564/0.21800 and median strict out-of-gamut scalar fractions are 0.00594/0.02714/0.09363.",
+    "At alpha 1, postclip Lab mean-to-donor distance median/p95 is 1.5904/8.2431; std-to-donor distance is 2.2825/11.8132. Mathematical pre-inverse alignment does not imply realizable post-gamut matching.",
+    "Strict clipping count alone is not visual severity. Tail Mewtwo 082_3 has clipped fraction 0.61947, RMS 0.00649 and max excursion 0.01239 (small real overshoot, not roundoff); its appearance is nearly unchanged. Dewgong 020_0 has fraction 0.45768, RMS 0.38414, excursion 0.11569 and visible loss of white-body detail. Frozen tail ranking is unchanged.",
+    "At alpha 1, maximum-excursion median/p95 is 0.42579/3.33252; the largest raw excursion is 22.45183 on Rhyhorn 117_1. Extreme excursions and broad clipping need not occur on the same outputs.",
+    "Unblinded representative identity-retained judgments are 15/16, 15/16 and 12/16 by increasing strength; all other identity labels are uncertain. Alpha-1 anatomy/markings are retained/uncertain/disrupted in 7/7/2 outputs; background shifts are widespread.",
+    "Direct inspection finds lost Primeape eye contrast, saturated flat Tentacool head colors, and source-dependent washout/darkening. Some card sources are too blurred for confident identity or fine-anatomy judgment.",
+    "All 2416 raw outputs and PNGs, metrics, selected tails, 24 contact sheets and gallery reproduce exactly. Alpha-0 controls are exact; all 1812 self-donor exports match within zero LSB."
+  ],
+  "limitations": [
+    "A1-only 64-pixel direct transforms; no A2/B image analysis, training, classifier, discriminator test or FID calculation.",
+    "Visual labels are unblinded AI comparisons for 48 representative and eight selected outputs, not measured category accuracy or evidence of augmentation utility.",
+    "Whole-image statistics mix background and foreground; no segmentation control or causal background ablation was performed.",
+    "CIELAB D65 float64 implementation adapts the pinned community method rather than bitwise reproducing OpenCV uint8 Lab or its default inverse ratio.",
+    "Source blur, card clutter and nearest-neighbor display limit fine anatomy/marking assessment. Clipping fraction, boundary and high-frequency measures are descriptive, not ground-truth artifact labels.",
+    "The 1e-6 degeneracy threshold is sensitive for nearly achromatic channels: Venusaur 139_3 a std is 1.90e-6 and b std 7.61e-7 with the documented matrix. The frozen branch rule was followed without adjusting the threshold.",
+    "Peak host RSS is the maximum of measured successful processes; the first test-only failed attempt and short diagnostics were not independently sampled. Conservative elapsed wall time includes the full assignment.",
+    "One synthetic fixture initially failed due to mean-summation cancellation; original code/log/diagnosis are preserved. Shifted population-moment reduction fixed it without changing the mathematical contract."
+  ],
+  "resources": {
+    "device": "cpu",
+    "elapsed_accounting_basis": "Conservative contract-freeze bound immediately before dispatch; includes implementation, failed attempt, generation, inspection, recomputation and reporting. Exact spawn timestamp was not persisted.",
+    "elapsed_accounting_start_utc": "2026-10-07T11:51:24.356912+00:00",
+    "elapsed_budget_seconds": 7200,
+    "elapsed_seconds": 858.501548,
+    "failed_attempt_accounted_in_wall_budget": true,
+    "failed_attempt_elapsed_seconds": 11.001387514173985,
+    "failed_attempts": 1,
+    "finalization_process_seconds_at_record": 2.020068636164069,
+    "gpu_memory_bytes": 0,
+    "gpu_reserved_memory_bytes": 0,
+    "gpu_seconds": 0,
+    "historical_status_start_note": "Earlier status/config used an approximate 11:51:00 bound; this final record uses the master-provided 11:51:24.356912 freeze bound.",
+    "parameters": 0,
+    "peak_host_memory_bytes": 417677312,
+    "peak_host_memory_measurement": "Maximum measured per-process ru_maxrss across successful generation, recomputation and finalization. The first test-only failed attempt and short read-only diagnostic processes were not independently RSS-sampled.",
+    "recorded_utc": "2026-10-07T12:05:42.858460+00:00",
+    "stage_timing_proofs": [
+      "verification/numerical_checks.json",
+      "verification/resources_generate.json",
+      "verification/resources_recompute.json",
+      "verification/integrity_before.json",
+      "verification/integrity_after_generation.json",
+      "verification/integrity_after.json"
+    ],
+    "successful_generation_process_seconds": 35.78708811663091,
+    "successful_recompute_process_seconds": 24.33471366390586,
+    "thread_limit_per_worker": 2,
+    "training_applicable": false
+  },
+  "status": "completed",
+  "training_applicable": false,
+  "viewed_sheet_count": 24
+}

@@ -1,0 +1,11 @@
+{
+  "protected_files_unchanged": true,
+  "B_neighbor_rows": 3020,
+  "B_exact_match_count": 343,
+  "max_exact_match_feature_distance": 0.001990780141748364,
+  "nonzero_exact_match_feature_distances": 3,
+  "note": "340 duplicate queries have zero feature distance; three differ by at most 0.002 despite pixel identity. Float32 batch/JIT execution can introduce small numerical differences; duplicate flags use pixel hashes, not a distance threshold.",
+  "actual_exported_pixel_unique_groups": 18678,
+  "actual_exported_B_matches_A": 343,
+  "cluster_assignment_count": 20099
+}

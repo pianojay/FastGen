@@ -1,0 +1,48 @@
+{
+  "dtype": "float64",
+  "order": "C",
+  "unclipped": true,
+  "source_order": "../../shared/cohort_v1/cohort.json rows",
+  "intra.npy": [
+    604,
+    4,
+    3,
+    64,
+    64,
+    3
+  ],
+  "inter.npy": [
+    604,
+    4,
+    3,
+    64,
+    64,
+    3
+  ],
+  "control.npy": [
+    604,
+    64,
+    64,
+    3
+  ],
+  "axis_names": [
+    "source",
+    "radius",
+    "alpha",
+    "height",
+    "width",
+    "RGB"
+  ],
+  "radii": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "alphas": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "display": "np.rint(np.clip(raw,0,1)*255).astype(np.uint8)"
+}

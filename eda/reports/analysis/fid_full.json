@@ -1,0 +1,9 @@
+{
+  "FID_A_B": 15.710899046863517,
+  "cleanfid_reference": 15.710899046864995,
+  "absolute_implementation_difference": 1.4779288903810084e-12,
+  "self_FID_B_B": 0.0,
+  "n_A": 17079,
+  "n_B": 3020,
+  "dimensions": 2048
+}

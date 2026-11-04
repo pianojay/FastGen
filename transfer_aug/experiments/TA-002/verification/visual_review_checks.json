@@ -1,0 +1,141 @@
+{
+  "pass": true,
+  "representative_count": 384,
+  "tail_count": 8,
+  "sheets_actually_inspected": [
+    "sheets/010_0_intra.png",
+    "sheets/010_0_inter.png",
+    "sheets/016_0_intra.png",
+    "sheets/016_0_inter.png",
+    "sheets/017_0_intra.png",
+    "sheets/017_0_inter.png",
+    "sheets/019_0_intra.png",
+    "sheets/019_0_inter.png",
+    "sheets/027_0_intra.png",
+    "sheets/027_0_inter.png",
+    "sheets/029_0_intra.png",
+    "sheets/029_0_inter.png",
+    "sheets/034_0_intra.png",
+    "sheets/034_0_inter.png",
+    "sheets/050_0_intra.png",
+    "sheets/050_0_inter.png",
+    "sheets/056_0_intra.png",
+    "sheets/056_0_inter.png",
+    "sheets/105_0_intra.png",
+    "sheets/105_0_inter.png",
+    "sheets/110_0_intra.png",
+    "sheets/110_0_inter.png",
+    "sheets/122_0_intra.png",
+    "sheets/122_0_inter.png",
+    "sheets/124_0_intra.png",
+    "sheets/124_0_inter.png",
+    "sheets/134_0_intra.png",
+    "sheets/134_0_inter.png",
+    "sheets/139_0_intra.png",
+    "sheets/139_0_inter.png",
+    "sheets/146_0_intra.png",
+    "sheets/146_0_inter.png",
+    "sheets/tails_intra.png",
+    "sheets/tails_inter.png"
+  ],
+  "counts": {
+    "intra": {
+      "representative": {
+        "count": 192,
+        "recognizable_identity": {
+          "retained": 179,
+          "disrupted": 0,
+          "uncertain": 13
+        },
+        "anatomy_markings": {
+          "retained": 121,
+          "disrupted": 15,
+          "uncertain": 56
+        },
+        "background_contamination": {
+          "none": 0,
+          "visible": 176,
+          "uncertain": 16
+        },
+        "artifacts": {
+          "none": 60,
+          "visible": 88,
+          "uncertain": 44
+        }
+      },
+      "tail": {
+        "count": 4,
+        "recognizable_identity": {
+          "retained": 4,
+          "disrupted": 0,
+          "uncertain": 0
+        },
+        "anatomy_markings": {
+          "retained": 4,
+          "disrupted": 0,
+          "uncertain": 0
+        },
+        "background_contamination": {
+          "none": 4,
+          "visible": 0,
+          "uncertain": 0
+        },
+        "artifacts": {
+          "none": 4,
+          "visible": 0,
+          "uncertain": 0
+        }
+      }
+    },
+    "inter": {
+      "representative": {
+        "count": 192,
+        "recognizable_identity": {
+          "retained": 176,
+          "disrupted": 0,
+          "uncertain": 16
+        },
+        "anatomy_markings": {
+          "retained": 110,
+          "disrupted": 33,
+          "uncertain": 49
+        },
+        "background_contamination": {
+          "none": 2,
+          "visible": 175,
+          "uncertain": 15
+        },
+        "artifacts": {
+          "none": 61,
+          "visible": 83,
+          "uncertain": 48
+        }
+      },
+      "tail": {
+        "count": 4,
+        "recognizable_identity": {
+          "retained": 4,
+          "disrupted": 0,
+          "uncertain": 0
+        },
+        "anatomy_markings": {
+          "retained": 1,
+          "disrupted": 1,
+          "uncertain": 2
+        },
+        "background_contamination": {
+          "none": 2,
+          "visible": 2,
+          "uncertain": 0
+        },
+        "artifacts": {
+          "none": 2,
+          "visible": 2,
+          "uncertain": 0
+        }
+      }
+    }
+  },
+  "manual_source": "visual_judgments_manual.json",
+  "uncertainty_policy": "Judgments are relative to visible input at 64px; no classifier, class correctness, training utility or FID inferred."
+}

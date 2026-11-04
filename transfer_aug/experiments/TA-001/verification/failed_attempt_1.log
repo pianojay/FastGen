@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-001/run_experiment.py", line 471, in <module>
+    generate_or_recompute(args.mode)
+  File "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-001/run_experiment.py", line 364, in generate_or_recompute
+    numerical_checks(content,donor)
+  File "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-001/run_experiment.py", line 231, in numerical_checks
+    assert me <= 1e-8 and se <= 1e-8 and np.isfinite(raw).all()
+AssertionError

@@ -1,0 +1,37 @@
+{
+  "status": "accepted",
+  "accepted_utc": "2026-10-07T22:26:27.495397+00:00",
+  "scope": "Master checked concise handoffs, contract/data/evaluation identity, counts, resources and proof references. A targeted report-only correction aligned floating clipping metrics; worker verification confirms unchanged model outputs and tail selections. Low-level artifact checks and direct image review remain worker-owned.",
+  "experiments": [
+    {
+      "experiment_id": "TA-005",
+      "status": "accepted",
+      "result_sha256": "0c10e87d97bd9fdb77816c30c4aef535c2e51c680c4d37a3991fafec1076e040",
+      "proof_references_resolved": 28,
+      "completed_updates": 20000,
+      "final_outputs": 5436,
+      "framework_parameters": 46594716,
+      "parameter_cap_exception": false,
+      "gpu_seconds": 4127.4507937431335,
+      "peak_allocated_bytes": 1970377728,
+      "gpu_lease_released": true
+    },
+    {
+      "experiment_id": "TA-006",
+      "status": "accepted",
+      "result_sha256": "a77cce827ed4c9fc12512cf4348d7183254e66e7fc4dfeea6005fcb0b3ea5b1d",
+      "proof_references_resolved": 18,
+      "completed_updates": 20000,
+      "final_outputs": 5436,
+      "framework_parameters": 131065096,
+      "parameter_cap_exception": true,
+      "gpu_seconds": 19971.622154407203,
+      "peak_allocated_bytes": 12704201728,
+      "gpu_lease_released": true
+    }
+  ],
+  "final_outputs": 10872,
+  "review_sheets": 44,
+  "protected_input_verification": "Both worker proofs passed; master independently rehashed frozen shared bundles.",
+  "gpu_seconds": 24099.072948150337
+}

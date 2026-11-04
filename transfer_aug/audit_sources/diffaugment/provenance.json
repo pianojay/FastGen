@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/mit-han-lab/data-efficient-gans",
+  "revision": "0b6339510be1e3859d360cbf464d0a425514a6b4",
+  "license": {
+    "key": "bsd-2-clause",
+    "name": "BSD 2-Clause \"Simplified\" License",
+    "spdx_id": "BSD-2-Clause",
+    "url": "https://api.github.com/licenses/bsd-2-clause",
+    "node_id": "MDc6TGljZW5zZTQ="
+  },
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/mit-han-lab/data-efficient-gans/0b6339510be1e3859d360cbf464d0a425514a6b4/README.md",
+      "status": 200,
+      "bytes": 8415,
+      "sha256": "2a3969f9ca625e462888436283d603e0c89180eb84f72605ac992e38ea625b79"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/mit-han-lab/data-efficient-gans/0b6339510be1e3859d360cbf464d0a425514a6b4/LICENSE",
+      "status": 404
+    },
+    "DiffAugment_pytorch.py": {
+      "url": "https://raw.githubusercontent.com/mit-han-lab/data-efficient-gans/0b6339510be1e3859d360cbf464d0a425514a6b4/DiffAugment_pytorch.py",
+      "status": 200,
+      "bytes": 3038,
+      "sha256": "d61fed24900fea3be17e3cd10d8880f895905732fd53f1f9b3013673b36fa0e2"
+    },
+    "LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/mit-han-lab/data-efficient-gans/0b6339510be1e3859d360cbf464d0a425514a6b4/LICENSE.txt",
+      "status": 200,
+      "sha256": "c66f64661fc6123063af62f2e94f6949ab2fe2afb061cd2f25a11f0806f1b36d",
+      "bytes": 1366
+    }
+  }
+}

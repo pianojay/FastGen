@@ -1,0 +1,7 @@
+{
+  "descriptors_PCA": "Quantized uint8 viewing outputs using np.rint(clip((raw+1)*127.5,0,255)); frozen descriptors and class means/scales/PC1 unchanged.",
+  "rgb_rms": "Raw generated float mapped to [0,1], compared with source uint8/255, RMS over all RGB channels/pixels.",
+  "nearest_target_rms": "Raw generated float mapped to [0,1], minimum RMS to each same-class D1 optimization uint8/255 image.",
+  "edge_change": "Difference in frozen neighbor_gradient descriptor on quantized viewing output versus source.",
+  "tails": "Eight largest raw-float source/output RGB RMS among D0_to_D1 translations, ties direction then source path. Identity controls excluded from tail-selection population."
+}

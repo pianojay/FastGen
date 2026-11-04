@@ -1,0 +1,24 @@
+{
+  "status": "completed",
+  "updates": 20000,
+  "final_output_count": 5436,
+  "expected_count": 5436,
+  "representative_replay_exact": true,
+  "representative_replay_count": 512,
+  "input_hashes_after": {
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round2/freeze.py": "d4c681f53fa067beca96e7f855c57a203f37a5f645942b6d4725457353e17c43",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round2/manifest.json": "a15a783934fb636acc7d141d3becdffea049f0082718c0a1e931bc094df18093",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round2/pixels_uint8.npy": "411c174959b83e2521e77ce3a3fa9e5b426c306a46361f8ba0804dd90de31a12",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round3/evaluation_manifest.json": "c341c5ace1b11337318aeaf9aef70dc2bb98b7216b1da0e2bc453f68e55f6efb",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round3/freeze_evaluation.py": "e6205db0dd718c424290045a3aa1135c94afc92f0b0b3f6b60c2fa87b1eadc98",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round3/munit_latent.npy": "4443df87e3b2da83744b32f5ba3e51508d23de4ebdf8befe81e55994a86181c3",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round3/stargan_latent.npy": "f3d2c62aac494425bf3fe97ae1ecb39ff38571ca44d70f4dcffd656d8a5f5903"
+  },
+  "peak_allocated_bytes": 12704201728,
+  "peak_reserved_bytes": 19541262336,
+  "gpu_seconds_before_release": 19968.392953354865,
+  "final_checkpoint_sha256": "4c4cca43a3e45b57eb7d3d1f105c88e4eb904ad2d21fe2181fed08ae742b6f2c",
+  "gpu_uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2",
+  "trace_source_count": 32,
+  "finite_self_controls": true
+}

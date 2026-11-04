@@ -1,0 +1,43 @@
+{
+  "repository": "https://github.com/clovaai/stargan-v2",
+  "revision": "875b70a150609e8a678ed8482562e7074cdce7e5",
+  "license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/clovaai/stargan-v2/875b70a150609e8a678ed8482562e7074cdce7e5/README.md",
+      "status": 200,
+      "bytes": 10638,
+      "sha256": "0d879703fd5c0c675c3d1f380fbe610332e93459ff4a0b8d009d6fc152b7e7ae"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/clovaai/stargan-v2/875b70a150609e8a678ed8482562e7074cdce7e5/LICENSE",
+      "status": 200,
+      "bytes": 19407,
+      "sha256": "c363be4fe1e1736782dd2fad3b49054726879271c956f0dd62d669bb734ee2a1"
+    },
+    "core/model.py": {
+      "url": "https://raw.githubusercontent.com/clovaai/stargan-v2/875b70a150609e8a678ed8482562e7074cdce7e5/core/model.py",
+      "status": 200,
+      "bytes": 10735,
+      "sha256": "5778fd921f71d693c9783616619beb6c48f19c13d74de80dcfefcaff208b4175"
+    },
+    "core/solver.py": {
+      "url": "https://raw.githubusercontent.com/clovaai/stargan-v2/875b70a150609e8a678ed8482562e7074cdce7e5/core/solver.py",
+      "status": 200,
+      "bytes": 11173,
+      "sha256": "5d9100491149aa22e29f91f91e036a06ca4d7bd0066cc275a085fcf8b2065fff"
+    },
+    "main.py": {
+      "url": "https://raw.githubusercontent.com/clovaai/stargan-v2/875b70a150609e8a678ed8482562e7074cdce7e5/main.py",
+      "status": 200,
+      "bytes": 8918,
+      "sha256": "443762939fbca2597a14143f02c61e4617ff4eeaf420ce8e9d2bb76e61ff74ad"
+    }
+  }
+}

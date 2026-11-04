@@ -1,0 +1,27 @@
+{
+  "accounting_note": "Measured extraction+regeneration+verification+latest finalization total excludes two earlier brief finalization passes and shell/image-tool overhead. Conservative charged CPU allowance is 120 seconds for all local work; below 3600-second contract cap.",
+  "budget_cpu_hours": 1,
+  "conservative_charged_cpu_seconds": 120,
+  "finalization_process_cpu_seconds": 2.511907338,
+  "first_execution": {
+    "cpu_seconds": 35.521189127999996,
+    "gpu_hours": 0,
+    "models_loaded": false,
+    "threads": 2,
+    "wall_seconds": 35.45017600059509
+  },
+  "gpu_hours": 0,
+  "models_loaded": false,
+  "regeneration_and_verification_wall_seconds": 36.0819730758667,
+  "second_execution": {
+    "cpu_seconds": 32.194650121,
+    "gpu_hours": 0,
+    "models_loaded": false,
+    "threads": 2,
+    "wall_seconds": 32.07082962989807
+  },
+  "threads": 2,
+  "total_analysis_cpu_seconds": 67.715839249,
+  "total_recorded_cpu_seconds": 74.278666986,
+  "verification_process_cpu_seconds": 4.050920399
+}

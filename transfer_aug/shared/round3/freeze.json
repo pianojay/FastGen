@@ -1,0 +1,20 @@
+{
+  "all_references_A1_optimization": true,
+  "all_sources_A1_diagnostic": true,
+  "files": {
+    "evaluation_manifest.json": "c341c5ace1b11337318aeaf9aef70dc2bb98b7216b1da0e2bc453f68e55f6efb",
+    "freeze_evaluation.py": "e6205db0dd718c424290045a3aa1135c94afc92f0b0b3f6b60c2fa87b1eadc98",
+    "munit_latent.npy": "4443df87e3b2da83744b32f5ba3e51508d23de4ebdf8befe81e55994a86181c3",
+    "stargan_latent.npy": "f3d2c62aac494425bf3fe97ae1ecb39ff38571ca44d70f4dcffd656d8a5f5903"
+  },
+  "latent_outputs": 2416,
+  "reference_outputs": 2416,
+  "regeneration_exact": true,
+  "representative_sources": 64,
+  "schema": 1,
+  "self_controls": 604,
+  "source_bundle_manifest_sha256": "a15a783934fb636acc7d141d3becdffea049f0082718c0a1e931bc094df18093",
+  "source_bundle_pixels_sha256": "411c174959b83e2521e77ce3a3fa9e5b426c306a46361f8ba0804dd90de31a12",
+  "sources": 604,
+  "total_final_outputs_per_method": 5436
+}

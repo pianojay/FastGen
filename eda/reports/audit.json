@@ -1,0 +1,178 @@
+{
+  "categories": 151,
+  "category_total_variation_A_B": 0.07006784599343369,
+  "counts": {
+    "A": 17079,
+    "A1": 14059,
+    "A2": 3020,
+    "B": 3020
+  },
+  "decode_errors": [],
+  "duplicates": {
+    "rgb64_sha256": {
+      "B_files_with_A_match": 343,
+      "cross_A1_A2_groups": 0,
+      "cross_A_B_groups": 343,
+      "duplicate_groups": 1416,
+      "redundant_files": 1421
+    },
+    "rgb_sha256": {
+      "B_files_with_A_match": 343,
+      "cross_A1_A2_groups": 0,
+      "cross_A_B_groups": 343,
+      "duplicate_groups": 1416,
+      "redundant_files": 1421
+    },
+    "sha256": {
+      "B_files_with_A_match": 343,
+      "cross_A1_A2_groups": 0,
+      "cross_A_B_groups": 343,
+      "duplicate_groups": 1415,
+      "redundant_files": 1420
+    }
+  },
+  "formats": {
+    "JPEG": 18616,
+    "PNG": 1483
+  },
+  "largest_category_differences": [
+    {
+      "A": 183,
+      "A1": 163,
+      "A2": 20,
+      "B": 20,
+      "category": "Pikachu",
+      "category_id": 103,
+      "p_A": 0.010714913051115405,
+      "p_B": 0.006622516556291391,
+      "p_B_minus_p_A": -0.004092396494824014
+    },
+    {
+      "A": 46,
+      "A1": 26,
+      "A2": 20,
+      "B": 20,
+      "category": "Nidoran-f",
+      "category_id": 88,
+      "p_A": 0.0026933661221382986,
+      "p_B": 0.006622516556291391,
+      "p_B_minus_p_A": 0.003929150434153092
+    },
+    {
+      "A": 173,
+      "A1": 153,
+      "A2": 20,
+      "B": 20,
+      "category": "Gengar",
+      "category_id": 40,
+      "p_A": 0.010129398676737515,
+      "p_B": 0.006622516556291391,
+      "p_B_minus_p_A": -0.003506882120446124
+    },
+    {
+      "A": 167,
+      "A1": 147,
+      "A2": 20,
+      "B": 20,
+      "category": "Gyarados",
+      "category_id": 50,
+      "p_A": 0.009778090052110779,
+      "p_B": 0.006622516556291391,
+      "p_B_minus_p_A": -0.003155573495819388
+    },
+    {
+      "A": 64,
+      "A1": 44,
+      "A2": 20,
+      "B": 20,
+      "category": "Nidoran-m",
+      "category_id": 89,
+      "p_A": 0.0037472919960185023,
+      "p_B": 0.006622516556291391,
+      "p_B_minus_p_A": 0.0028752245602728884
+    },
+    {
+      "A": 66,
+      "A1": 46,
+      "A2": 20,
+      "B": 20,
+      "category": "Ekans",
+      "category_id": 31,
+      "p_A": 0.0038643948708940805,
+      "p_B": 0.006622516556291391,
+      "p_B_minus_p_A": 0.00275812168539731
+    },
+    {
+      "A": 69,
+      "A1": 49,
+      "A2": 20,
+      "B": 20,
+      "category": "Beedrill",
+      "category_id": 6,
+      "p_A": 0.004040049183207448,
+      "p_B": 0.006622516556291391,
+      "p_B_minus_p_A": 0.002582467373083943
+    },
+    {
+      "A": 155,
+      "A1": 135,
+      "A2": 20,
+      "B": 20,
+      "category": "Vaporeon",
+      "category_id": 136,
+      "p_A": 0.00907547280285731,
+      "p_B": 0.006622516556291391,
+      "p_B_minus_p_A": -0.002452956246565919
+    },
+    {
+      "A": 73,
+      "A1": 53,
+      "A2": 20,
+      "B": 20,
+      "category": "Rattata",
+      "category_id": 115,
+      "p_A": 0.004274254932958604,
+      "p_B": 0.006622516556291391,
+      "p_B_minus_p_A": 0.0023482616233327864
+    },
+    {
+      "A": 153,
+      "A1": 133,
+      "A2": 20,
+      "B": 20,
+      "category": "Charmander",
+      "category_id": 14,
+      "p_A": 0.008958369927981732,
+      "p_B": 0.006622516556291391,
+      "p_B_minus_p_A": -0.0023358533716903414
+    }
+  ],
+  "missing": [],
+  "modes": {
+    "L": 5,
+    "P": 1,
+    "RGB": 20093
+  },
+  "per_category_count_range": {
+    "A": [
+      46,
+      183
+    ],
+    "A1": [
+      26,
+      163
+    ],
+    "A2": [
+      20,
+      20
+    ],
+    "B": [
+      20,
+      20
+    ]
+  },
+  "protected_files_unchanged": true,
+  "readable_images": 20099,
+  "remaining_transparency": 0,
+  "unlisted_files": []
+}

@@ -1,0 +1,42 @@
+{
+  "status": "accepted_for_training",
+  "acceptance_scope": "Master reviewed summaries and structured records; workers own low-level verification and visual inspection.",
+  "domain_result_sha256": "b9194352b91feae3bee4cf6536c15bee8831df34cbda903b81516297ceb3e6db",
+  "domain_manifest_sha256": "d6a99c722a46a873a02cc1cf15bac54ca2e56a5ea4c6395ca6a18f499bcbff7f",
+  "checks": {
+    "domain:DEFINITIONS.md": true,
+    "domain:counts.json": true,
+    "domain:cross_class_duplicates.json": true,
+    "domain:domain_manifest.json": true,
+    "domain:domain_measurements.json": true,
+    "domain:duplicate_exclusions.json": true,
+    "domain:pca.json": true,
+    "domain:regeneration.json": true,
+    "domain:resource_usage.json": true,
+    "domain:review_selection.json": true,
+    "domain:scores.csv": true,
+    "domain:verification.json": true,
+    "domain:visual_review.json": true,
+    "TA-003:cpu_checks.json": true,
+    "TA-003:proof_cpu.log": true,
+    "TA-003:test_setup.py": true,
+    "TA-003:setup_hashes.json": true,
+    "TA-003:README.md": true,
+    "TA-003:upstream_provenance.json": true,
+    "TA-003:UPSTREAM_LICENSE": true,
+    "TA-004:verification.json": true,
+    "TA-004:synthetic_checkpoint.pt": true,
+    "TA-004:cut64.py": true,
+    "TA-004:networks.py": true,
+    "TA-004:build_sources.py": true,
+    "TA-004:verify_setup.py": true,
+    "TA-004:LICENSE.upstream": true,
+    "TA-004:SETUP_SUMMARY.md": true,
+    "TA-004:setup_hashes.json": true
+  },
+  "setup_result_sha256": {
+    "TA-003": "a0fb4d1c38c161a470502c3ee5587419ec11fa35748726d97ea83068bf0dee8b",
+    "TA-004": "40244f3612c4e9acdc2e3ae7a2eacbde823acd293b51b8da87944fc6cbac9ac1"
+  },
+  "shared_freeze_sha256": "5778c0dcbdfef661c0490be628b52541a4a26b7bb316ef232ed5dfa9b5a630df"
+}

@@ -1,0 +1,82 @@
+initialize network with normal
+initialize network with normal
+{
+  "status": "passed",
+  "checks": {
+    "sampler_batch16_rgb64": true,
+    "sampler_excludes_diagnostic": true,
+    "sampler_same_class_unpaired": true,
+    "independent_flip_decisions": true,
+    "uniform_class_rng": true,
+    "reject_non_A1": true,
+    "reject_manifest_hash": true,
+    "registered_parameter_cap": true,
+    "normalization_exact": true,
+    "no_dropout": true,
+    "upstream_generator_exact": true,
+    "upstream_discriminator_exact": true,
+    "generator_shape_range_finite": true,
+    "patch_shape_finite": true,
+    "convolutional_receptive_field_34": true,
+    "replay_fill_detach": true,
+    "replay_rng_restore": true,
+    "replay_returns_historical": true,
+    "replay_default_capacity50": true,
+    "all_gradients_finite_nonzero": true,
+    "losses_finite": true,
+    "all_global_rng_exact_recovery": true,
+    "sampler_exact_recovery": true,
+    "optimizer_model_pool_exact_recovery": true,
+    "resumed_losses_exact": true,
+    "schedule_boundaries": true,
+    "reject_checkpoint_contract_mismatch": true,
+    "evaluation_finite": true,
+    "no_cuda_initialized": true
+  },
+  "check_count": 29,
+  "parameters": {
+    "G01": 7837699,
+    "G10": 7837699,
+    "D0": 662977,
+    "D1": 662977,
+    "total": 17001352
+  },
+  "losses_first_synthetic_step": {
+    "gan01": 1.6383299827575684,
+    "gan10": 1.6875301599502563,
+    "cycle0": 6.948248863220215,
+    "cycle1": 6.283963203430176,
+    "identity1": 3.2033510208129883,
+    "identity0": 3.46917724609375,
+    "d0": 1.1439416408538818,
+    "d1": 1.1674163341522217,
+    "lr": 0.0002,
+    "update": 1
+  },
+  "recovery": {
+    "expected_state_sha256": "4787f1ceee617d94e6d9f8aae36649f6d8f3e7e27ed205c25bce151f026f2973",
+    "actual_state_sha256": "4787f1ceee617d94e6d9f8aae36649f6d8f3e7e27ed205c25bce151f026f2973",
+    "checkpoint_sha256": "8457d44f20e75a585b6836a49971bc3f4c729056ca65382869703c505ed1017e"
+  },
+  "synthetic_optimizer_calls": 3,
+  "nominal_batch_size": 16,
+  "test_optimizer_batch_size": 1,
+  "class_rng_counts": {
+    "0": 2011,
+    "1": 1970,
+    "2": 2019
+  },
+  "discriminator_convolutional_receptive_field": 34,
+  "discriminator_output_shape": [
+    1,
+    1,
+    14,
+    14
+  ],
+  "elapsed_seconds": 9.015883445739746,
+  "peak_host_memory_bytes": 1183358976,
+  "gpu_seconds": 0,
+  "cuda_initialized": false,
+  "torch_version": "2.7.1+cu126",
+  "numpy_version": "1.26.4"
+}

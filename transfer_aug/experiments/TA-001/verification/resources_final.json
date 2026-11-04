@@ -1,0 +1,31 @@
+{
+  "device": "cpu",
+  "elapsed_accounting_basis": "Conservative contract-freeze bound immediately before dispatch; includes implementation, failed attempt, generation, inspection, recomputation and reporting. Exact spawn timestamp was not persisted.",
+  "elapsed_accounting_start_utc": "2026-10-07T11:51:24.356912+00:00",
+  "elapsed_budget_seconds": 7200,
+  "elapsed_seconds": 858.501548,
+  "failed_attempt_accounted_in_wall_budget": true,
+  "failed_attempt_elapsed_seconds": 11.001387514173985,
+  "failed_attempts": 1,
+  "finalization_process_seconds_at_record": 2.020068636164069,
+  "gpu_memory_bytes": 0,
+  "gpu_reserved_memory_bytes": 0,
+  "gpu_seconds": 0,
+  "historical_status_start_note": "Earlier status/config used an approximate 11:51:00 bound; this final record uses the master-provided 11:51:24.356912 freeze bound.",
+  "parameters": 0,
+  "peak_host_memory_bytes": 417677312,
+  "peak_host_memory_measurement": "Maximum measured per-process ru_maxrss across successful generation, recomputation and finalization. The first test-only failed attempt and short read-only diagnostic processes were not independently RSS-sampled.",
+  "recorded_utc": "2026-10-07T12:05:42.858460+00:00",
+  "stage_timing_proofs": [
+    "verification/numerical_checks.json",
+    "verification/resources_generate.json",
+    "verification/resources_recompute.json",
+    "verification/integrity_before.json",
+    "verification/integrity_after_generation.json",
+    "verification/integrity_after.json"
+  ],
+  "successful_generation_process_seconds": 35.78708811663091,
+  "successful_recompute_process_seconds": 24.33471366390586,
+  "thread_limit_per_worker": 2,
+  "training_applicable": false
+}

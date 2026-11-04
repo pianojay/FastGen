@@ -1,0 +1,36 @@
+{
+  "repository": "https://github.com/sunshineatnoon/PytorchWCT",
+  "revision": "ee9d813020155cbb5c6e3937290cff3650f6ce8e",
+  "files": {
+    "modelsNIPS.py": {
+      "url": "https://raw.githubusercontent.com/sunshineatnoon/PytorchWCT/ee9d813020155cbb5c6e3937290cff3650f6ce8e/modelsNIPS.py",
+      "status": 200,
+      "bytes": 30153,
+      "sha256": "c0ff12f981ce77fdeed8e057517197b6de47c845cf65f419a2d0b8caadf4642c"
+    },
+    "util.py": {
+      "url": "https://raw.githubusercontent.com/sunshineatnoon/PytorchWCT/ee9d813020155cbb5c6e3937290cff3650f6ce8e/util.py",
+      "status": 200,
+      "bytes": 3121,
+      "sha256": "9036c22afa72277ec5a637f6d7f174e6a94f7ec442baed555abfda2027c5ff73"
+    },
+    "WCT.py": {
+      "url": "https://raw.githubusercontent.com/sunshineatnoon/PytorchWCT/ee9d813020155cbb5c6e3937290cff3650f6ce8e/WCT.py",
+      "status": 200,
+      "bytes": 4658,
+      "sha256": "7210ddeb46299c10cde27abdcee44c764b5a92cad8b61198637911d573d9d793"
+    },
+    "Readme.md": {
+      "url": "https://raw.githubusercontent.com/sunshineatnoon/PytorchWCT/ee9d813020155cbb5c6e3937290cff3650f6ce8e/Readme.md",
+      "status": 200,
+      "bytes": 1777,
+      "sha256": "594424a911fd571472969d61086d69a5379985351c121e57fd34c3534e32bfdf"
+    },
+    "LICENSE.md": {
+      "url": "https://raw.githubusercontent.com/sunshineatnoon/PytorchWCT/ee9d813020155cbb5c6e3937290cff3650f6ce8e/LICENSE.md",
+      "status": 200,
+      "bytes": 1073,
+      "sha256": "1c5f32ed7a27f263c4c4d5e46c732564bda047a569960ab1a9ec1ac4dd68bed2"
+    }
+  }
+}

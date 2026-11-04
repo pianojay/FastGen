@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "checks": {
+    "parameter_cap": true,
+    "upstream_networks_byte_identical": true,
+    "initializer_matches_pinned_helper": true,
+    "three_scale_64_valid": true,
+    "content_style_decode_reencode_shapes": true,
+    "style_code_effect_mean_absolute": 0.22466270625591278,
+    "finite_full_width_D_G_backward_and_optimizer_step": true,
+    "all_four_components_receive_nonzero_gradients": true,
+    "checkpoint_next_step_parameters_optimizer_scheduler_sampler_rng_bitexact": true,
+    "stepLR_constant_in_pilot": true,
+    "checkpoint_contract_rejection": true
+  },
+  "parameters": {
+    "G0": 15026187,
+    "G1": 15026187,
+    "D0": 8271171,
+    "D1": 8271171,
+    "total": 46594716
+  },
+  "discriminator_shapes": [
+    [
+      1,
+      1,
+      4,
+      4
+    ],
+    [
+      1,
+      1,
+      2,
+      2
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "synthetic_optimizer_steps": 3,
+  "batch_size_verified": 1,
+  "gpu_used": false,
+  "dataset_training": false,
+  "cpu_seconds": 15.911024501547217,
+  "loss_step1": {
+    "d0": 3.0154027938842773,
+    "d1": 2.9860172271728516,
+    "recon0": 5.903862953186035,
+    "recon1": 6.725638389587402,
+    "style0": 0.8125814199447632,
+    "style1": 0.8230195641517639,
+    "content0": 2.3588643074035645,
+    "content1": 2.3621859550476074,
+    "gan0": 2.936432361602783,
+    "gan1": 2.854151964187622,
+    "update": 1,
+    "lr": 0.0001
+  }
+}

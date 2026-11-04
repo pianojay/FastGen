@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/leongatys/PytorchNeuralStyleTransfer",
+  "revision": "be6c8e2b35568669a5a0ac10b66c912207ad355d",
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/leongatys/PytorchNeuralStyleTransfer/be6c8e2b35568669a5a0ac10b66c912207ad355d/README.md",
+      "status": 200,
+      "bytes": 654,
+      "sha256": "6b28a9c112fa13b8bc01c2e840bb550b27904035d3981b4f8fbed2ba950febbf"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/leongatys/PytorchNeuralStyleTransfer/be6c8e2b35568669a5a0ac10b66c912207ad355d/LICENSE",
+      "status": 200,
+      "bytes": 1067,
+      "sha256": "fa28021b4c86f9bb0d94429f0ef68e586e46fdbba69721012738eaef1c99a9a3"
+    },
+    "NeuralStyleTransfer.ipynb": {
+      "url": "https://raw.githubusercontent.com/leongatys/PytorchNeuralStyleTransfer/be6c8e2b35568669a5a0ac10b66c912207ad355d/NeuralStyleTransfer.ipynb",
+      "status": 200,
+      "bytes": 2266822,
+      "sha256": "7d20c18c657c4a0a1fabd00b073c5e458038c3a03edbd8775862190e8cee42a7"
+    }
+  }
+}

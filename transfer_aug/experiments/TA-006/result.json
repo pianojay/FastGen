@@ -1,0 +1,76 @@
+{
+  "experiment_id": "TA-006",
+  "contract_revision": 1,
+  "contract_sha256": "9eb5c9897b358f0d0c7ab24d724b292752038fa3124e0296856eb8d817ca4813",
+  "protocol_sha256": "75937769254ab5634618d104d97b0e51c4b1bf20128e02c1566eeffa32d6a8f2",
+  "evaluation_manifest_sha256": "c341c5ace1b11337318aeaf9aef70dc2bb98b7216b1da0e2bc453f68e55f6efb",
+  "source_revision": "875b70a150609e8a678ed8482562e7074cdce7e5",
+  "status": "completed",
+  "training_applicable": true,
+  "completed_iterations": 20000,
+  "maximum_iterations": 20000,
+  "final_outputs": 5436,
+  "reference_outputs": 2416,
+  "latent_outputs": 2416,
+  "self_controls": 604,
+  "parameters": {
+    "generator": 32634883,
+    "mapping_network": 2438272,
+    "style_encoder": 20327808,
+    "discriminator": 20263170,
+    "generator_ema": 32634883,
+    "mapping_network_ema": 2438272,
+    "style_encoder_ema": 20327808
+  },
+  "framework_total_parameters": 131065096,
+  "parameter_exception": "Authorized StarGAN v2-only exception; outside normal100M cap",
+  "resources": {
+    "gpu_uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2",
+    "gpu_seconds": 19971.622154407203,
+    "gpu_hours": 5.547672820668668,
+    "peak_allocated_bytes": 12704201728,
+    "peak_reserved_bytes": 19541262336,
+    "lease_released": true
+  },
+  "checks": {
+    "final_arrays_finite": true,
+    "all_5436_pngs_match_raw_quantization": true,
+    "input_hashes_unchanged": true,
+    "protected_hashes_unchanged": true,
+    "lease_observed_released": true,
+    "gpu_recovery_exact": true,
+    "representative512_replay_exact": true,
+    "visual_inspection_complete": true
+  },
+  "proof_paths": {
+    "SUMMARY.md": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/SUMMARY.md",
+    "qualification.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/qualification.json",
+    "verification.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/verification.json",
+    "final_verification.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/final_verification.json",
+    "training_preflight.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/training_preflight.json",
+    "training_complete.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/training_complete.json",
+    "gpu_resource_ledger.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/gpu_resource_ledger.json",
+    "measurements.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/measurements.json",
+    "source_level_metrics.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/source_level_metrics.json",
+    "aggregate_metrics.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/aggregate_metrics.json",
+    "diversity.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/diversity.json",
+    "tails.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/tails.json",
+    "visual_review.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/visual_review.json",
+    "review_inventory.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/review_inventory.json",
+    "output_hashes.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/output_hashes.json",
+    "gallery.html": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/gallery.html",
+    "commands.txt": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/commands.txt",
+    "metric_correction.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-006/metric_correction.json"
+  },
+  "incidents": [
+    "Initial GPU qualification stopped before updates because noncontiguous input was incompatible with upstream R1 view; loader made contiguous NCHW. Failed3.8137seconds included.",
+    "Report-only correction removed PNG quantization from clipped source RMS and pairwise diversity; tail membership/order unchanged."
+  ],
+  "limitations": [
+    "A1 diagnostic subset participated in domain discovery; not independent validation.",
+    "Statistical appearance groups are not art-style labels.",
+    "Pixel diversity is not semantic diversity or identity accuracy.",
+    "No A2/B, external pretrained representation, SiDA training or FID improvement test.",
+    "AI visual review is small, unblinded and descriptive."
+  ]
+}

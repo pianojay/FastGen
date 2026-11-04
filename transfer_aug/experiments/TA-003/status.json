@@ -1,0 +1,10 @@
+{
+  "stage": "completed",
+  "status": "completed",
+  "completed_updates": 20000,
+  "completed_outputs": 604,
+  "completed_review_sheets": 9,
+  "cumulative_gpu_seconds": 3706.564811229706,
+  "gpu_lease_released": true,
+  "utc": "2026-10-07T16:21:16.357137+00:00"
+}

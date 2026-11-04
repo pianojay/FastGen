@@ -1,0 +1,7 @@
+{
+  "start_unix": 1791373884.5969105,
+  "initial_pid": 4,
+  "budget_seconds": 7200,
+  "script_execution_start_unix": 1791374146.1138842,
+  "wall_start_basis": "Conservative pre-dispatch bound: contract freeze mtime provided by master; includes implementation time."
+}

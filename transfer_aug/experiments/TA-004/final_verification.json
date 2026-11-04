@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "finite_float_arrays": true,
+  "arrays_shape": [
+    302,
+    64,
+    64,
+    3
+  ],
+  "translation_count": 302,
+  "identity_control_count": 302,
+  "all_604_png_hashes_and_quantized_pixels_verified": true,
+  "max_source_score_reproduction_error": 1.7763568394002505e-15,
+  "all_handoff_proof_paths_resolve": true,
+  "gpu_lease_observed_free": true
+}

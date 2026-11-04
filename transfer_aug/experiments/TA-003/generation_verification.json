@@ -1,0 +1,14 @@
+{
+  "final_update": 20000,
+  "outputs": 604,
+  "reproduced_review_outputs": 64,
+  "quantized_reproduction_exact": true,
+  "all_outputs_finite": true,
+  "milestones": {
+    "0": "initial",
+    "1000": "1000",
+    "5000": "5000",
+    "10000": "10000",
+    "20000": "final"
+  }
+}

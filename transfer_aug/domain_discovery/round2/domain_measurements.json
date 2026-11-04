@@ -1,0 +1,36 @@
+{
+  "D0": {
+    "class_balanced_descriptor_means": {
+      "border_difference": 0.08601588758309096,
+      "high_frequency_fraction": 0.04623320906236217,
+      "laplacian_energy": 0.018161843954998563,
+      "luminance_entropy": 0.6518104987420226,
+      "luminance_mean": 0.6948549109282978,
+      "luminance_std": 0.1563152744036068,
+      "near_black": 0.001345052132773334,
+      "near_white": 0.20989596344389042,
+      "neighbor_gradient": 0.03015444018505755,
+      "saturation_mean": 0.273147647426416,
+      "saturation_std": 0.17918609765659904
+    },
+    "n": 4277,
+    "score_mean": -1.7269251993646262
+  },
+  "D1": {
+    "class_balanced_descriptor_means": {
+      "border_difference": 0.2009458872060087,
+      "high_frequency_fraction": 0.04538700760876168,
+      "laplacian_energy": 0.05083568430149625,
+      "luminance_entropy": 0.7452362754685877,
+      "luminance_mean": 0.4836147410815239,
+      "luminance_std": 0.2687568386115693,
+      "near_black": 0.17190372127236628,
+      "near_white": 0.10794578991099257,
+      "neighbor_gradient": 0.054005671415844336,
+      "saturation_mean": 0.3102053066269106,
+      "saturation_std": 0.2481674296202111
+    },
+    "n": 4277,
+    "score_mean": 1.9554573326323226
+  }
+}

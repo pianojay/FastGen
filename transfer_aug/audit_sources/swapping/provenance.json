@@ -1,0 +1,204 @@
+{
+  "repository": "https://github.com/taesungp/swapping-autoencoder-pytorch",
+  "revision": "6baa180f1184ee79a6b967f9d80ee0e02a979ac7",
+  "files": {
+    "LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/LICENSE.txt",
+      "status": 200,
+      "bytes": 3558,
+      "sha256": "2046c20089050c58a43428774f4418ba2df3c8fa37472f749580e83bf8897c8f"
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/README.md",
+      "status": 200,
+      "bytes": 11585,
+      "sha256": "4180aacd06c60e2d966170015b714d1269f3baafa825e01a10ecdad023d308f2"
+    },
+    "experiments/__init__.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/__init__.py",
+      "status": 200,
+      "bytes": 762,
+      "sha256": "907712b6e2204328ef03d1718f709204e775924e86fca0baed7e3984630f9698"
+    },
+    "experiments/__main__.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/__main__.py",
+      "status": 200,
+      "bytes": 4161,
+      "sha256": "165633458eb94e702f2519b6ab2218f08c568abd0cc31f6e5a1d5914c35f1a2a"
+    },
+    "experiments/afhq_pretrained_launcher.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/afhq_pretrained_launcher.py",
+      "status": 200,
+      "bytes": 2601,
+      "sha256": "ba8c7792fb3318bb64bc5b95bd1c297af01f9da0a1de0c88c5effbb54283010e"
+    },
+    "experiments/bedroom_launcher.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/bedroom_launcher.py",
+      "status": 200,
+      "bytes": 1447,
+      "sha256": "cd1ebc318bfb7fdf57335e3e2f895fb6c8919b571cb44644396762b7dfb36913"
+    },
+    "experiments/bedroom_pretrained_launcher.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/bedroom_pretrained_launcher.py",
+      "status": 200,
+      "bytes": 1440,
+      "sha256": "2076f9646680d67ea867d931bf0575e346c8fc75854a7d604c31b6b5563d99f7"
+    },
+    "experiments/church_launcher.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/church_launcher.py",
+      "status": 200,
+      "bytes": 1452,
+      "sha256": "1f0926c5e90c09f397ccf5e2f90466ec5a9b7de9d33bb1d31caba358f1d856f1"
+    },
+    "experiments/church_pretrained_launcher.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/church_pretrained_launcher.py",
+      "status": 200,
+      "bytes": 2119,
+      "sha256": "df9b37fb7149d73e3e668c2fb1b3d51429070fbf15edbeb421c0057d81c8749c"
+    },
+    "experiments/ffhq1024_pretrained_launcher.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/ffhq1024_pretrained_launcher.py",
+      "status": 200,
+      "bytes": 2587,
+      "sha256": "c2e2e3224d707b7adb920c2e89259a351d595b9e09fe876f3d17a115e50886d8"
+    },
+    "experiments/ffhq512_pretrained_launcher.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/ffhq512_pretrained_launcher.py",
+      "status": 200,
+      "bytes": 1424,
+      "sha256": "67b1cd1169475a9cd675cdfe416e525c05ea2286493c0c9d9da59f48255ad002"
+    },
+    "experiments/ffhq_launcher.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/ffhq_launcher.py",
+      "status": 200,
+      "bytes": 2252,
+      "sha256": "543ac61b7d2c23e08a9c9db1b23a279efae3d851258e879406e788251d6ac492"
+    },
+    "experiments/mountain_launcher.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/mountain_launcher.py",
+      "status": 200,
+      "bytes": 1580,
+      "sha256": "ac37e8217a51d88e823219348032f8a4ad52f2654323cc89014bebb0ea07a7c3"
+    },
+    "experiments/mountain_pretrained_launcher.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/mountain_pretrained_launcher.py",
+      "status": 200,
+      "bytes": 3320,
+      "sha256": "79000fa7e132ea6ca95d9344991627172fb9a16a9477b83628c73db20d20264e"
+    },
+    "experiments/tmux_launcher.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/tmux_launcher.py",
+      "status": 200,
+      "bytes": 9086,
+      "sha256": "fb308f3fec3c048c2d33da7591b6dea7b59a0fd01c6cca0c20b9606d11bee6dc"
+    },
+    "models/__init__.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/__init__.py",
+      "status": 200,
+      "bytes": 4408,
+      "sha256": "b4f02244c30143f6d73df89d35bf4f25e5caba68d478732f570eddbf4467198d"
+    },
+    "models/base_model.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/base_model.py",
+      "status": 200,
+      "bytes": 5592,
+      "sha256": "f7baecfff6d555488aaaf7df5e9c6d80a2170ef895dab4f4873d0111108cf1b7"
+    },
+    "models/networks/__init__.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/__init__.py",
+      "status": 200,
+      "bytes": 1489,
+      "sha256": "bfd9a3b013d0fed1ac310fe22a112dc74bf086dcbae58b652a46b59680714be0"
+    },
+    "models/networks/base_network.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/base_network.py",
+      "status": 200,
+      "bytes": 2215,
+      "sha256": "33c07e02f4aa8d07ced51e6966a425aa0c13857b685470571b5a14241645371f"
+    },
+    "models/networks/classifier.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/classifier.py",
+      "status": 200,
+      "bytes": 1057,
+      "sha256": "a664b8287e9736a4b566de86f714a26e4ee8a93d2fd0922f71fcbb1ad2f91d2d"
+    },
+    "models/networks/discriminator.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/discriminator.py",
+      "status": 200,
+      "bytes": 966,
+      "sha256": "5389055129c709e93102c9275f30a20b1e708c23744343919d0a6da6edbd38e4"
+    },
+    "models/networks/encoder.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/encoder.py",
+      "status": 200,
+      "bytes": 4372,
+      "sha256": "5a059500d7964969bc7adefe8ea60e12185f1747d95f0d16dc54d53c84400f58"
+    },
+    "models/networks/generator.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/generator.py",
+      "status": 200,
+      "bytes": 6887,
+      "sha256": "c8d31a71e5956e53d2dd44faadea7fce395d3589ddd5ab23bab95cd59102c705"
+    },
+    "models/networks/inception.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/inception.py",
+      "status": 200,
+      "bytes": 12171,
+      "sha256": "d0be513e1c961cfe309f466f057b9b775f4bef3df4782801d7cc6b57ce9e2c1c"
+    },
+    "models/networks/loss.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/loss.py",
+      "status": 200,
+      "bytes": 5486,
+      "sha256": "b4ee3ef8eb4aa6935feacf3d70a52d59e359891a58e27a3e3d8492c3d95b9447"
+    },
+    "models/networks/patch_discriminator.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/patch_discriminator.py",
+      "status": 200,
+      "bytes": 6803,
+      "sha256": "a886122242d5c8d9a4878ee0f1f1684bac51c27c2e588c554c52a4ca92164e7d"
+    },
+    "models/networks/pyramidnet.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/pyramidnet.py",
+      "status": 200,
+      "bytes": 8901,
+      "sha256": "c65e719f79fda8e2963d3549a5437364bf7bd656598d5e181b41fd7e6408bf18"
+    },
+    "models/networks/stylegan2_layers.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/stylegan2_layers.py",
+      "status": 200,
+      "bytes": 22492,
+      "sha256": "2bb9f9e798bee049020f335e2da79f20fed57178be07c08f9b0df0caf4fe6673"
+    },
+    "models/networks/stylegan2_op/__init__.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/stylegan2_op/__init__.py",
+      "status": 200,
+      "bytes": 89,
+      "sha256": "d3bdebb6b1ea35ab8e7dd14af32919f11ae630ab9154d4c84f839397b98b2bf6"
+    },
+    "models/networks/stylegan2_op/fused_act.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/stylegan2_op/fused_act.py",
+      "status": 200,
+      "bytes": 2933,
+      "sha256": "bf00baa057078cd5fa4044dc86101ca95bc482d10ccaf544b89c4c0da8a2532a"
+    },
+    "models/networks/stylegan2_op/upfirdn2d.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/stylegan2_op/upfirdn2d.py",
+      "status": 200,
+      "bytes": 6496,
+      "sha256": "228c5fb1ef64d08db2380a0e3c5af40dccbd757f634a759a07d33f1b586120ec"
+    },
+    "models/swapping_autoencoder_model.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/swapping_autoencoder_model.py",
+      "status": 200,
+      "bytes": 10396,
+      "sha256": "71df763244ea5b17c55d93384595c37dccb04386802f00a9d407a72e31b83e7f"
+    },
+    "options/__init__.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/options/__init__.py",
+      "status": 200,
+      "bytes": 8816,
+      "sha256": "e1fcdbfafb69110303904ef43af6bbc88b4c83f7ca5bb199511ccde42e44ded9"
+    }
+  }
+}

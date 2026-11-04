@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "updates": 20000,
+  "seed_reset_after_qualification": true,
+  "production_draws": 320000,
+  "peak_allocated_bytes": 2196792320,
+  "peak_reserved_bytes": 2466250752,
+  "gpu_seconds_before_generation": 3701.7238059043884,
+  "parameter_counts": {
+    "G01": 7837699,
+    "G10": 7837699,
+    "D0": 662977,
+    "D1": 662977,
+    "total": 17001352
+  }
+}

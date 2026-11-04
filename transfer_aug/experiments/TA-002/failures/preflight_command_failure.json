@@ -1,0 +1,6 @@
+{
+  "command": "python - <<PY (cohort schema inspection)",
+  "exit_code": 127,
+  "error": "/bin/bash: line 1: python: command not found",
+  "resolution": "Used authorized bash transfer_aug/run_python.sh thereafter; no data generation attempted by failed command."
+}

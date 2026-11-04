@@ -1,0 +1,7 @@
+{
+  "frozen_contracts_unchanged": true,
+  "cohort_partition_and_sampling_checks": true,
+  "pixel_cache_path_alignment_verified": true,
+  "final_handoffs": [],
+  "scope": "Master checks compact contract/summary/evidence metadata. Detailed numerical/image/output verification is delegated to workers."
+}

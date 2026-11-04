@@ -1,0 +1,11 @@
+{
+  "finite": true,
+  "max_imaginary_residual": 4.99260678750242e-16,
+  "outside_mask_raw_max_abs": 4.547473508864641e-13,
+  "inside_amplitude_max_abs_error": 4.547473508864641e-13,
+  "pass": true,
+  "outputs": 15100,
+  "transformed_outputs": 14496,
+  "controls": 604,
+  "seconds": 88.99272394180298
+}

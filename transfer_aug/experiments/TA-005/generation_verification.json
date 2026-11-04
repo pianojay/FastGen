@@ -1,0 +1,12 @@
+{
+  "final_outputs": 5436,
+  "translations": 4832,
+  "self_controls": 604,
+  "reference_outputs": 2416,
+  "latent_outputs": 2416,
+  "reproduced_outputs": 512,
+  "quantized_reproduction_exact": true,
+  "all_finite": true,
+  "milestone_translations": 320,
+  "one_source_inference_grouping": true
+}

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "pairs": 1024,
+  "classes_observed": 151,
+  "unequal_flip_decisions": 500,
+  "checkpoint_sampler_replay_exact": true,
+  "pixel_hashes_verified": 8554,
+  "optimization_only": true,
+  "same_class_unpaired": true
+}

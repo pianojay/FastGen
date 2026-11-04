@@ -1,0 +1,149 @@
+{
+  "repository": "https://github.com/KaiyangZhou/mixstyle-release",
+  "revision": "16f7cf1fe2c7b1b3c660c72b32817ebb0545397a",
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/README.md",
+      "status": 200,
+      "bytes": 7742,
+      "sha256": "4e1c47996e57c6b2a6198e21b0b97fa120280a972c4440012cb21d4f334a0654"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/LICENSE",
+      "status": 200,
+      "bytes": 1069,
+      "sha256": "9bde51e4e2576a3000837af592db45586f693a83893e8fa2f9b718534462cebe"
+    },
+    "mixstyle.py": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/mixstyle.py",
+      "status": 404
+    },
+    "imcls/README.md": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/README.md",
+      "status": 200,
+      "bytes": 2753,
+      "sha256": "ac0f8a3dfa6ee66b7a605efff293ed449091bf93973f1c17123c4bb0227ca04d"
+    },
+    "imcls/configs/datasets/msda_pacs.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/datasets/msda_pacs.yaml",
+      "status": 200,
+      "sha256": "5cd616c56a13b8d3cf31ed9381f9dbf4456120bc745123fc4b340619fd0275f8",
+      "bytes": 181
+    },
+    "imcls/configs/datasets/ssdg_officehome.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/datasets/ssdg_officehome.yaml",
+      "status": 200,
+      "sha256": "308d0ff0f5a7271b907025fd0eb3c2cbcda10cf6420e2f6083b572846589bc6b",
+      "bytes": 207
+    },
+    "imcls/configs/datasets/ssdg_pacs.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/datasets/ssdg_pacs.yaml",
+      "status": 200,
+      "sha256": "cbf3ae2ce1fc6c463c1c1902897d9399407454dfb437915bb1565aae5d033407",
+      "bytes": 200
+    },
+    "imcls/configs/trainers/mixstyle/office_home_dg_crossdomain.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/office_home_dg_crossdomain.yaml",
+      "status": 200,
+      "sha256": "9bf2ffa82c871e1df5e55089bf0dd93ab74cc027ef1964996f59a4b057780249",
+      "bytes": 259
+    },
+    "imcls/configs/trainers/mixstyle/office_home_dg_random.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/office_home_dg_random.yaml",
+      "status": 200,
+      "sha256": "80ceb82f8859583f1154a992a37799dac1c778f0504d07fa20ee27dba9db382f",
+      "bytes": 201
+    },
+    "imcls/configs/trainers/mixstyle/pacs_crossdomain.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/pacs_crossdomain.yaml",
+      "status": 200,
+      "sha256": "9bf2ffa82c871e1df5e55089bf0dd93ab74cc027ef1964996f59a4b057780249",
+      "bytes": 259
+    },
+    "imcls/configs/trainers/mixstyle/pacs_random.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/pacs_random.yaml",
+      "status": 200,
+      "sha256": "80ceb82f8859583f1154a992a37799dac1c778f0504d07fa20ee27dba9db382f",
+      "bytes": 201
+    },
+    "imcls/configs/trainers/mixstyle/ssdg_officehome.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/ssdg_officehome.yaml",
+      "status": 200,
+      "sha256": "2a5fd7284ad4696f6027e696827ef5d3f229d7055fbf3b3218c601f93e9b266b",
+      "bytes": 161
+    },
+    "imcls/configs/trainers/mixstyle/ssdg_pacs.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/ssdg_pacs.yaml",
+      "status": 200,
+      "sha256": "2a5fd7284ad4696f6027e696827ef5d3f229d7055fbf3b3218c601f93e9b266b",
+      "bytes": 161
+    },
+    "imcls/configs/trainers/semimixstyle/msda_pacs.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/semimixstyle/msda_pacs.yaml",
+      "status": 200,
+      "sha256": "30a52d87fbe87f9a0290a1c21fc469ab162e1c01c6c6b8ab07d66b1afe31fa72",
+      "bytes": 374
+    },
+    "imcls/configs/trainers/semimixstyle/ssdg_officehome.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/semimixstyle/ssdg_officehome.yaml",
+      "status": 200,
+      "sha256": "80ccbfd7b59928da2346ba88aae312d2f909105823da257609680087ff3ea759",
+      "bytes": 409
+    },
+    "imcls/configs/trainers/semimixstyle/ssdg_pacs.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/semimixstyle/ssdg_pacs.yaml",
+      "status": 200,
+      "sha256": "2b9c193e4eac3fa167bc2b9ec4e419cdf9942efa554ccbb888efbb73d8113747",
+      "bytes": 408
+    },
+    "imcls/configs/trainers/semimixstyle/visda17.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/semimixstyle/visda17.yaml",
+      "status": 200,
+      "sha256": "dc505c35931690ecce8723338682016e53bc20505004584c66ab9c2702d88f9b",
+      "bytes": 500
+    },
+    "imcls/trainers/semimixstyle.py": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/trainers/semimixstyle.py",
+      "status": 200,
+      "sha256": "1db83cfda19242d45bc4d1a844db63bfa9df1d021e19114f8b5e965ce233138a",
+      "bytes": 4835
+    },
+    "reid/cfgs/cfg_osnet.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/reid/cfgs/cfg_osnet.yaml",
+      "status": 200,
+      "sha256": "9bb566e26d356a7f1ffc7a89c33a2aa6db7c1c1fbcd2fe28db01e7882f1644b3",
+      "bytes": 607
+    },
+    "reid/cfgs/cfg_osnet_domprior.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/reid/cfgs/cfg_osnet_domprior.yaml",
+      "status": 200,
+      "sha256": "0321e055bc15b260f3be87d72dadf98d5c5a28eeaa9675513dd6b7bbfd49e68c",
+      "bytes": 689
+    },
+    "reid/cfgs/cfg_r50.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/reid/cfgs/cfg_r50.yaml",
+      "status": 200,
+      "sha256": "3ae8337d15c9336ee0246c02f4c8680ad7632084e010e0b0e95c514849c46910",
+      "bytes": 621
+    },
+    "reid/cfgs/cfg_r50_domprior.yaml": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/reid/cfgs/cfg_r50_domprior.yaml",
+      "status": 200,
+      "sha256": "994fc5341bbe04d58c666bf22a68b804d8f6ee783d3c62ecf37c1b51bd6fdfb9",
+      "bytes": 703
+    },
+    "reid/models/mixstyle.py": {
+      "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/reid/models/mixstyle.py",
+      "status": 200,
+      "sha256": "908c25e605f047f460477cb72ccdeef66439646ef5a0b4cef9c0a46df54107ef",
+      "bytes": 3127
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "database": "https://app.notion.com/p/0ae2f14e59fa4642941c642c00fe984d",
+  "published": "2026-10-07",
+  "schema_changed": false,
+  "numbering": "EDA-# in Title; existing automatic Experiment ID preserved",
+  "pages": [
+    {
+      "id": "3f2f3544-6091-81e6-b42b-c6b9713b831f",
+      "url": "https://app.notion.com/p/3f2f3544609181e6b42bc6b9713b831f?pvs=204",
+      "properties": {
+        "Title": "EDA-1 — FID and sample-size controls",
+        "Challenge": "FastGen 2026",
+        "Status": "Completed"
+      }
+    },
+    {
+      "id": "3f2f3544-6091-81af-904d-cf58c91646be",
+      "url": "https://app.notion.com/p/3f2f3544609181af904dcf58c91646be?pvs=204",
+      "properties": {
+        "Title": "EDA-2 — PCA directions of visual variation",
+        "Challenge": "FastGen 2026",
+        "Status": "Completed"
+      }
+    },
+    {
+      "id": "3f2f3544-6091-81b5-8d64-db15694f78aa",
+      "url": "https://app.notion.com/p/3f2f3544609181b58d64db15694f78aa?pvs=204",
+      "properties": {
+        "Title": "EDA-3 — Nearest neighbors and individual coverage",
+        "Challenge": "FastGen 2026",
+        "Status": "Completed"
+      }
+    },
+    {
+      "id": "3f2f3544-6091-81a4-9fed-c06e9ca829d3",
+      "url": "https://app.notion.com/p/3f2f3544609181a49fedc06e9ca829d3?pvs=204",
+      "properties": {
+        "Title": "EDA-4 — Cluster composition and mode proportions",
+        "Challenge": "FastGen 2026",
+        "Status": "Completed"
+      }
+    },
+    {
+      "id": "3f2f3544-6091-810e-a9f2-d84bde31a3b1",
+      "url": "https://app.notion.com/p/3f2f35446091810ea9f2d84bde31a3b1?pvs=204",
+      "properties": {
+        "Title": "EDA-5 — Split ordering and metadata audit",
+        "Challenge": "FastGen 2026",
+        "Status": "Completed"
+      }
+    },
+    {
+      "id": "3f2f3544-6091-8117-b3a4-fbcce99c1968",
+      "url": "https://app.notion.com/p/3f2f354460918117b3a4fbcce99c1968?pvs=204",
+      "properties": {
+        "Title": "EDA-6 — Image properties and augmentation hypotheses",
+        "Challenge": "FastGen 2026",
+        "Status": "Completed"
+      }
+    },
+    {
+      "id": "3f2f3544-6091-81ec-a616-f69e1f6471ae",
+      "url": "https://app.notion.com/p/3f2f3544609181eca616f69e1f6471ae?pvs=204",
+      "properties": {
+        "Title": "EDA-7 — Exact duplicate overlap and FID sensitivity",
+        "Challenge": "FastGen 2026",
+        "Status": "Completed"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "experiment_id": "TA-003",
+  "contract_revision": 1,
+  "status": "preparation_completed",
+  "training_status": "awaiting_final_contract",
+  "training_applicable": true,
+  "training_executed": false,
+  "setup_contract_sha256": "419a8e3372082d6b48ed657f80ec3f5886a5d57ee857bfcda4fc8d657978df3c",
+  "upstream_revision": "2a7afba2895d52556dd5dfe07e8555ef657ced6f",
+  "parameters": {
+    "G01": 7837699,
+    "G10": 7837699,
+    "D0": 662977,
+    "D1": 662977,
+    "total": 17001352
+  },
+  "checks_passed": 29,
+  "checks_expected": 29,
+  "completed_utc": "2026-10-07T15:04:36.351071+00:00",
+  "device": "cpu",
+  "gpu_seconds": 0,
+  "gpu_peak_allocated_bytes": 0,
+  "cpu_test_seconds": 9.015883445739746,
+  "peak_host_memory_bytes": 1183358976,
+  "synthetic_optimizer_calls": 3,
+  "nominal_batch_size": 16,
+  "test_optimizer_batch_size": 1,
+  "proof_paths": [
+    "proof/cpu_checks.json",
+    "proof_cpu.log",
+    "test_setup.py",
+    "setup_hashes.json",
+    "README.md",
+    "upstream_provenance.json",
+    "UPSTREAM_LICENSE"
+  ],
+  "blockers": [
+    "Final numbered training contract and frozen shared domain manifest not yet provided.",
+    "GPU lease/budget/checkpoint/evaluation orchestration awaits final contract."
+  ],
+  "limitations": [
+    "CPU synthetic tests only; no cohort optimization or GPU profiling.",
+    "Batch16 optimizer memory/runtime and CUDA checkpoint recovery not qualified.",
+    "No training-quality, class-preservation, augmentation-utility or FID claim."
+  ],
+  "manifest_proposal": {
+    "top_level": "records",
+    "fields": [
+      "path",
+      "sha256",
+      "partition",
+      "class_id",
+      "domain",
+      "role"
+    ]
+  },
+  "learning_rate_endpoint": "1-based 1..10000 constant; 10001..20000 linearly decays to zero at update 20000",
+  "implementation_sha256": {
+    "engine.py": "87add5c7b410a51b7cfe0ab66dbe99a3beed202e396b0427e038e78d1b9880db",
+    "networks.py": "1dc0f9b725b31f7400b9ef568530d42ed7e9311834e4952ca4801d094f248e93",
+    "test_setup.py": "5d3b8c148fecdee1a385a429b33a9568ec907e7a92072503c11fc60e1b080c2e"
+  }
+}

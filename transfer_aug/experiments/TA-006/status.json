@@ -1,0 +1,12 @@
+{
+  "stage": "completed",
+  "experiment_id": "TA-006",
+  "updates": 20000,
+  "final_outputs": 5436,
+  "timestamp": "2026-10-07T22:21:49.315680+00:00",
+  "gpu_seconds": 19971.622154407203,
+  "lease_released": true,
+  "cpu_report": "completed",
+  "direct_visual_review": "completed",
+  "result": "result.json"
+}

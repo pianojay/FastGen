@@ -1,0 +1,23 @@
+{
+  "count": 1,
+  "note": "Fallback preserves content std in the degenerate channel; nonzero donor std is intentionally not realizable by mean shift alone.",
+  "rows": [
+    {
+      "category": "Venusaur",
+      "channels": [
+        "b"
+      ],
+      "content_std": [
+        13.12915892398486,
+        1.9025959756665028e-06,
+        7.610383910335811e-07
+      ],
+      "donor_std": [
+        19.450863788769954,
+        18.42354904117534,
+        24.516142126239604
+      ],
+      "sample_id": "139_3"
+    }
+  ]
+}

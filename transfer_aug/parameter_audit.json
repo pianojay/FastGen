@@ -1,0 +1,104 @@
+{
+  "scope": "Static source-derived counts. No upstream execution, model creation, weights, forward passes, or GPU use.",
+  "revisions": {
+    "color": "6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f",
+    "adain_original": "6d8ac287f35010faf8feece4047bfe86c8c007d0",
+    "mixstyle": "16f7cf1fe2c7b1b3c660c72b32817ebb0545397a",
+    "fda": "b9a0cdf0bcc9b787c00e39df73eda5673706f219",
+    "adain_pytorch": "47950d0e6656a95a80a4b105c4c0f58d38ef785c",
+    "cyclegan": "2a7afba2895d52556dd5dfe07e8555ef657ced6f",
+    "wct": "55f37178fd737d9b4989b1c609ad639afcfbb5c6",
+    "cut": "b3ac297708dfb6f7589d04662277e53c0d579c27",
+    "diffaugment": "0b6339510be1e3859d360cbf464d0a425514a6b4",
+    "munit": "a82e222bc359892bd0f522d7a0f1573f3ec4a485",
+    "starganv2": "875b70a150609e8a678ed8482562e7074cdce7e5",
+    "gatys": "be6c8e2b35568669a5a0ac10b66c912207ad355d",
+    "wct_pytorch": "ee9d813020155cbb5c6e3937290cff3650f6ce8e",
+    "swapping": "6baa180f1184ee79a6b967f9d80ee0e02a979ac7"
+  },
+  "adain_pytorch": {
+    "encoder_through_relu4_1": 3505740,
+    "decoder": 3505219,
+    "full_vgg_conv_object_in_file": 20024396,
+    "active_encoder_plus_decoder": 7010959
+  },
+  "wct_pytorch_separate_five_encoders_and_decoders": {
+    "encoder1": 1804,
+    "decoder1": 1731,
+    "encoder2": 112588,
+    "decoder2": 112451,
+    "encoder3": 555340,
+    "decoder3": 555075,
+    "encoder4": 3505740,
+    "decoder4": 3505219,
+    "encoder5": 12944972,
+    "decoder5": 12944451,
+    "total": 34239371
+  },
+  "vgg19": {
+    "through_conv5_1": 12944960,
+    "all_convolution_layers": 20024384,
+    "classification_head": 123642856
+  },
+  "cyclegan_rgb_ngf64_instance_norm": {
+    "generator_9blocks": 11378179,
+    "generator_6blocks": 7837699,
+    "discriminator_3layers": 2764737,
+    "two_G_two_D_sum": 28285832
+  },
+  "cut_rgb_ngf64_instance_norm_antialias": {
+    "generator_9blocks": 11378179,
+    "discriminator_3layers": 2764737,
+    "five_patch_MLPs": 560384,
+    "sum": 14703300,
+    "MLP_input_channels": [
+      3,
+      128,
+      256,
+      256,
+      256
+    ]
+  },
+  "munit_edges2handbags_config": {
+    "style_encoder": 2764936,
+    "content_encoder": 5385856,
+    "decoder": 5754627,
+    "adain_parameter_MLP": 1120768,
+    "one_generator": 15026187,
+    "one_multiscale_discriminator": 8271171,
+    "two_G_two_D_sum": 46594716,
+    "vgg_w": 0
+  },
+  "starganv2_AFHQ_256_3domains_hpf0": {
+    "generator": 33892995,
+    "mapping": 3259072,
+    "style_encoder": 20949760,
+    "discriminator": 20852803,
+    "four_components_sum_no_ema": 78954630,
+    "released_solver_with_registered_EMA_copies": 137056457,
+    "reference_inference_generator_plus_style_encoder": 54842755
+  },
+  "starganv2_mechanical_64_3domains_hpf0": {
+    "generator": 32634883,
+    "mapping": 3259072,
+    "style_encoder": 20360640,
+    "discriminator": 20263683,
+    "four_components_sum_no_ema": 76518278,
+    "released_solver_with_registered_EMA_copies": 132772873,
+    "reference_inference_generator_plus_style_encoder": 52995523
+  },
+  "starganv2_mapping_if_151domains": 124737472,
+  "swapping_autoencoder_church_256_default_capacity": {
+    "encoder": 30584872,
+    "generator": 25064743,
+    "image_discriminator": 28859521,
+    "patch_discriminator": 24522145,
+    "inference_E_plus_G": 55649615,
+    "four_components_sum_no_ema": 109031281
+  },
+  "mixstyle_incremental_parameters": 0,
+  "mixstyle_ResNet18_7class_standard_count": 11180103,
+  "fda_transfer_parameters": 0,
+  "reinhard_transfer_parameters": 0,
+  "diffaugment_incremental_parameters": 0
+}

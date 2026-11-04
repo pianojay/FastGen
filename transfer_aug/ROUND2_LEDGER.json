@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "round": "learned-transfer-round2",
+  "status": "completed",
+  "authorization": "User requested CycleGAN/CUT next, then MUNIT/StarGAN v2; approved A1-only appearance-domain discovery; waived StarGAN v2 parameter cap for now.",
+  "started_utc": "2026-10-07T15:00:43.177625+00:00",
+  "domain_preparation": {
+    "worker": "/root/round2_domains",
+    "contract": "domain_discovery/round2/CONTRACT_v1.md",
+    "status": "accepted",
+    "contract_sha256": "e99cfd0a8c510b3e216dc8f24f01c2c05afe7ba927e02feedf4f05b92de1d758",
+    "manifest_sha256": "d6a99c722a46a873a02cc1cf15bac54ca2e56a5ea4c6395ca6a18f499bcbff7f"
+  },
+  "experiments": [
+    {
+      "experiment_id": "TA-003",
+      "method": "CycleGAN",
+      "worker": "/root/ta003_cyclegan",
+      "gpu": 1,
+      "gpu_budget_seconds": 28800,
+      "status": "completed",
+      "setup_contract": "experiments/TA-003/SETUP_CONTRACT_v1.md",
+      "setup_contract_sha256": "419a8e3372082d6b48ed657f80ec3f5886a5d57ee857bfcda4fc8d657978df3c",
+      "setup_contract_revision": 1,
+      "training_dispatched": true,
+      "contract": "experiments/TA-003/CONTRACT_v1.md",
+      "contract_sha256": "046c4419cd02754456f9d94e53e90a1f00fa2b1bc3d541f777ffd1aa5eca6d05",
+      "dispatch_utc": "2026-10-07T15:10:52.793764+00:00",
+      "shared_protocol_sha256": "ae9323b66e4969f87f000d08d0227cc6770e9f1377bc7f62deb6c92e39409c94",
+      "qualification": "passed",
+      "qualification_peak_allocated_bytes": 2196792320,
+      "training_updates_completed": 20000,
+      "gpu_stage_completed": true,
+      "result": "experiments/TA-003/result.json",
+      "result_sha256": "222a2b44bd7005e1444625e92078b50a8b619c2b6ba032cc2e1cbef69236d561",
+      "gpu_seconds": 3706.564811229706,
+      "peak_allocated_bytes": 2196792320,
+      "framework_parameters": 17001352
+    },
+    {
+      "experiment_id": "TA-004",
+      "method": "CUT",
+      "worker": "/root/ta004_cut",
+      "gpu": 2,
+      "gpu_budget_seconds": 28800,
+      "status": "completed",
+      "setup_contract": "experiments/TA-004/SETUP_CONTRACT_v2.md",
+      "setup_contract_sha256": "48d2c28533af0a7e591605f459c7c71bcbd5e4d8c7bb9ef8be5df8b81a365a82",
+      "setup_contract_revision": 2,
+      "training_dispatched": true,
+      "superseded_setup_contracts": [
+        {
+          "path": "experiments/TA-004/SETUP_CONTRACT_v1.md",
+          "sha256": "aedd8990a57a21748796138ead87a1d9412ec7a57be3ca8fedd259d6dd78d5c3",
+          "reason": "Corrected receptive field to include retained antialias blur filters."
+        }
+      ],
+      "contract": "experiments/TA-004/CONTRACT_v1.md",
+      "contract_sha256": "1f296b91bb75055d8604d5f1e6dae9f8897343406eee3c88c5a4408869c2da36",
+      "dispatch_utc": "2026-10-07T15:10:52.794103+00:00",
+      "shared_protocol_sha256": "ae9323b66e4969f87f000d08d0227cc6770e9f1377bc7f62deb6c92e39409c94",
+      "qualification": "passed",
+      "qualification_peak_allocated_bytes": 2569035776,
+      "training_updates_completed": 20000,
+      "gpu_stage_completed": true,
+      "result": "experiments/TA-004/result.json",
+      "result_sha256": "ae47633902731aa8f5bdfea9dcc44052d4e544a7e58ea00413dd100ebdce0f98",
+      "gpu_seconds": 3702.2395655866712,
+      "peak_allocated_bytes": 2569035776,
+      "framework_parameters": 9061060
+    }
+  ],
+  "queued": [
+    {
+      "experiment_id": "TA-005",
+      "method": "MUNIT",
+      "status": "not_dispatched"
+    },
+    {
+      "experiment_id": "TA-006",
+      "method": "StarGAN v2",
+      "status": "not_dispatched",
+      "parameter_cap_exception": "Explicit user waiver for exploratory research; report actual full count. All other limits remain."
+    }
+  ],
+  "shared_freeze_sha256": "5778c0dcbdfef661c0490be628b52541a4a26b7bb316ef232ed5dfa9b5a630df",
+  "updated_utc": "2026-10-07T16:16:23.847351+00:00",
+  "completed_utc": "2026-10-07T16:22:31.382039+00:00",
+  "comparison_report": "ROUND2_REPORT.md",
+  "subsequent_round_ledger": "ROUND3_LEDGER.json"
+}

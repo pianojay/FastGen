@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TA-004 CUT: reviewed diagnostic outputs</title>
+<style>body{max-width:1100px;margin:32px auto;padding:0 20px;font:16px/1.55 system-ui,sans-serif;color:#20252b;background:#fafafa}h1,h2{line-height:1.2}nav a{margin-right:18px}figure{margin:28px 0}img{display:block;max-width:100%;height:auto;border:1px solid #bbb}figcaption{margin:8px 0;color:#47505a}a{color:#155ba4}.note{padding:16px;background:#eef1f4;border-left:4px solid #667788}</style>
+</head>
+<body>
+<h1>TA-004 CUT: reviewed diagnostic outputs</h1>
+<p>Scratch-trained D0→D1 translation, final checkpoint at 20,000 updates. Median appearance-score shift: <strong>+3.1752</strong>; median RGB RMS change: <strong>0.18055</strong> on a [0,1] scale. A shift in this fixed statistical projection does not establish successful style transfer or preservation of identity.</p>
+<nav><a href="#translations">Translations</a><a href="#identity">Identity controls</a><a href="#tails">Selected tails</a><a href="SUMMARY.md">Summary</a><a href="result.json">Structured result</a><a href="visual_review.json">Review record</a></nav>
+<p class="note">Small, unblinded AI review: 32 representative translations, 32 target-identity controls, and eight separately selected high-change translation tails. Broad layouts often persist, but background replacement and marking damage occur. Fine anatomy/identity judgments can be uncertain. Diagnostics participated in domain discovery and are not independent validation. No class-accuracy, convergence, generative-FID, or downstream-usefulness claim.</p>
+<section id="translations"><h2>Representative D0→D1 translations</h2>
+<p>Both diagnostic sources in each of 16 fixed categories. Columns: source, initial, 1,000, 5,000, 10,000, and final updates. Four of these 32 final examples visibly change pale backgrounds to black; contour, color, and fine-marking changes are also visible.</p>
+<figure><a href="sheets/representative_D0_1.png"><img src="sheets/representative_D0_1.png" alt="Translation representatives, page 1"></a><figcaption>Translation page 1: Butterfree, Clefable, Clefairy, Cubone.</figcaption></figure>
+<figure><a href="sheets/representative_D0_2.png"><img src="sheets/representative_D0_2.png" alt="Translation representatives, page 2"></a><figcaption>Translation page 2: Dratini, Dugtrio, Exeggcute, Gyarados.</figcaption></figure>
+<figure><a href="sheets/representative_D0_3.png"><img src="sheets/representative_D0_3.png" alt="Translation representatives, page 3"></a><figcaption>Translation page 3: Ivysaur, Poliwag, Primeape, Seaking.</figcaption></figure>
+<figure><a href="sheets/representative_D0_4.png"><img src="sheets/representative_D0_4.png" alt="Translation representatives, page 4"></a><figcaption>Translation page 4: Shellder, Tentacool, Venusaur, Weepinbell.</figcaption></figure>
+</section>
+<section id="identity"><h2>Representative D1 identity controls</h2>
+<p>The same generator applied to target-domain inputs. These 32 controls are separate from translated representatives; identity PatchNCE does not guarantee identity. Across all 302 controls, median RGB RMS is 0.08990. Columns use the same checkpoints.</p>
+<figure><a href="sheets/representative_D1_1.png"><img src="sheets/representative_D1_1.png" alt="Target identity controls, page 1"></a><figcaption>Identity-control page 1.</figcaption></figure>
+<figure><a href="sheets/representative_D1_2.png"><img src="sheets/representative_D1_2.png" alt="Target identity controls, page 2"></a><figcaption>Identity-control page 2.</figcaption></figure>
+<figure><a href="sheets/representative_D1_3.png"><img src="sheets/representative_D1_3.png" alt="Target identity controls, page 3"></a><figcaption>Identity-control page 3.</figcaption></figure>
+<figure><a href="sheets/representative_D1_4.png"><img src="sheets/representative_D1_4.png" alt="Target identity controls, page 4"></a><figcaption>Identity-control page 4. Tiny card/figure details are uncertain.</figcaption></figure>
+</section>
+<section id="tails"><h2>Eight selected high-change translation tails</h2>
+<p>Largest raw-float source/output RGB RMS among the 302 translations, with deterministic ties. Tails are outcome-selected, may overlap representatives, and do not estimate population failure prevalence. All eight replace white backgrounds with black; visible arm/face damage in Geodude and stripe loss in Arcanine illustrate invariant failures.</p>
+<figure><a href="sheets/tails.png"><img src="sheets/tails.png" alt="Eight largest RGB RMS translation tails"></a><figcaption>Columns: source, final output, nearest same-class D1 optimization image by pixel RMS. Pixel proximity is not a semantic match or copying test.</figcaption></figure>
+</section>
+<p><a href="metric_conventions.json">Metric conventions</a> · <a href="measurements.csv">Per-image measurements</a> · <a href="final_verification.json">Output verification</a>. CUT has one-directional, contrastive objectives; comparisons with CycleGAN should use D0→D1 as the common direction.</p>
+</body></html>

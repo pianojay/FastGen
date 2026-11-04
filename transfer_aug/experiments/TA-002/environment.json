@@ -1,0 +1,18 @@
+{
+  "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+  "executable": "/home/user/jw_soflow/exploration/.conda/eda/bin/python",
+  "numpy": "1.26.4",
+  "pillow": "12.3.0",
+  "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+  "threads": {
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2"
+  },
+  "CUDA_VISIBLE_DEVICES": "",
+  "training_applicable": false,
+  "parameters": 0,
+  "GPU_seconds": 0,
+  "device": "cpu",
+  "reference_sha256": "165c60e0e96ed4b357550089b499086f562458248f3cec5796d5151f080b8b4d"
+}

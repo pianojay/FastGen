@@ -1,0 +1,17 @@
+{
+  "experiment": "TA-003",
+  "limit_seconds": 28800,
+  "sessions": [
+    {
+      "pid": 1097683,
+      "uuid": "GPU-dd35c186-88f4-ac1e-26ae-028adbd8e888",
+      "started_epoch": 1791386039.2876675,
+      "started_utc": "2026-10-07T15:13:59.287673+00:00",
+      "elapsed_seconds": 3706.564811229706,
+      "ended_epoch": 1791389745.8524897,
+      "last_utc": "2026-10-07T16:15:45.852480+00:00",
+      "closure": "normal_finally"
+    }
+  ],
+  "cumulative_gpu_seconds": 3706.564811229706
+}

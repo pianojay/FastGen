@@ -1,0 +1,65 @@
+{
+  "experiment_id": "TA-006",
+  "status": "setup_completed",
+  "setup_contract_sha256": "88e8d644d6c75d723bd44896c926713a787486264693d4bd9a1743922c11fdef",
+  "upstream_revision": "875b70a150609e8a678ed8482562e7074cdce7e5",
+  "parameters": {
+    "generator": 32634883,
+    "mapping_network": 2438272,
+    "style_encoder": 20327808,
+    "discriminator": 20263170,
+    "generator_ema": 32634883,
+    "mapping_network_ema": 2438272,
+    "style_encoder_ema": 20327808
+  },
+  "framework_total_parameters": 131065096,
+  "trainable_parameters": 75664133,
+  "outside_normal_parameter_cap": true,
+  "parameter_exception": "User waived StarGAN v2 100M cap only.",
+  "checks": {
+    "ema_initial_exact": true,
+    "tensor_shapes": true,
+    "mapping_domain_head": true,
+    "encoder_domain_head": true,
+    "discriminator_domain_head": true,
+    "latent_sensitivity": true,
+    "reference_style_sensitivity": true,
+    "diversity_second_branch_detached": true,
+    "first_style_branch_gradient": true,
+    "ema_formula": true,
+    "optimizer_participation_D_latent": true,
+    "optimizer_participation_D_reference": true,
+    "optimizer_participation_G_latent": true,
+    "optimizer_participation_G_reference": true,
+    "all_four_phase_losses_finite": true,
+    "r1_finite": true,
+    "exact_next_step_model_ema": true,
+    "exact_next_step_losses": true,
+    "exact_sampler_recovery": true,
+    "exact_rng_recovery": true,
+    "upstream_ast_exact_model.py": true,
+    "upstream_ast_exact_losses.py": true
+  },
+  "resources": {
+    "gpu_seconds": 0,
+    "cpu_verification_seconds": 71.78932224400342,
+    "cpu_batch_size": 1,
+    "gpu_batch8_memory_qualified": false
+  },
+  "training_performed": false,
+  "api": "StarGAN64(device); step(x,y,[ref1,ref2],yt,zs=None); checkpoint(path,sampler); restore(path,sampler); .nets/.ema; Sampler(domains)",
+  "proof_paths": {
+    "summary": "SETUP_SUMMARY.md",
+    "verification": "verification.json",
+    "log": "verify_setup.log",
+    "source_adaptation": "source_adaptation.json",
+    "implementation_hashes": "setup_hashes.json",
+    "documentation": "README.md"
+  },
+  "blockers": [],
+  "limitations": [
+    "GPU memory/time qualification pending final contract.",
+    "Synthetic sensitivity is not learned appearance diversity.",
+    "Unbounded RGB outputs require preserved floating outputs and clipping diagnostics."
+  ]
+}

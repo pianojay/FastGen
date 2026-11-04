@@ -1,0 +1,11 @@
+{
+  "experiment_id": "TA-002",
+  "status": "completed",
+  "stage": "handoff_complete",
+  "updated_unix": 1791374964.6627805,
+  "elapsed_seconds": 1080.0658705234528,
+  "completed_output_count": 15100,
+  "completed_review_count": 392,
+  "completed_sheet_count": 34,
+  "result": "result.json"
+}

@@ -1,0 +1,5 @@
+{
+  "timestamp": "2026-10-07T15:13:45.063997+00:00",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/train.py\", line 81, in main\n    assert torch.cuda.device_count()==1 and str(torch.cuda.get_device_properties(0).uuid)==UUID\nAssertionError\n",
+  "gpu_seconds": 0.4896966218948364
+}

@@ -1,0 +1,47 @@
+{
+  "repository": "https://github.com/NVlabs/MUNIT",
+  "revision": "a82e222bc359892bd0f522d7a0f1573f3ec4a485",
+  "license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/README.md",
+      "status": 200,
+      "bytes": 2153,
+      "sha256": "06ee9915067193ad069ef5ada4ff70b7e2cf2536cdf4097c2c5add506590e6e9"
+    },
+    "LICENSE.md": {
+      "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/LICENSE.md",
+      "status": 200,
+      "bytes": 19129,
+      "sha256": "051131b5ef3596dad9bf0cffee19c248ff9751596a86b25c70f0cd82d6f6d713"
+    },
+    "networks.py": {
+      "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/networks.py",
+      "status": 200,
+      "bytes": 23069,
+      "sha256": "bf8bf5dead288d663018ecd2fdfd0da28c85286c7c1cb3b78a837a5c6ecf68b6"
+    },
+    "trainer.py": {
+      "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/trainer.py",
+      "status": 200,
+      "bytes": 19914,
+      "sha256": "6cfee99a62749619f06edbb13da1fa382816a77097275ca7cb888798cebfba8c"
+    },
+    "configs/edges2handbags_folder.yaml": {
+      "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/configs/edges2handbags_folder.yaml",
+      "status": 200,
+      "bytes": 3169,
+      "sha256": "05b9749b9c89424e802b000090573552b3958f7909e643546eb4c198484c497c"
+    },
+    "configs/afhq.yaml": {
+      "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/configs/afhq.yaml",
+      "status": 404
+    }
+  }
+}

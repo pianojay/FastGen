@@ -1,0 +1,10 @@
+{
+  "elapsed_seconds": 831.3837888240814,
+  "process_peak_host_memory_bytes": 54317056,
+  "user_cpu_seconds": 1.556733,
+  "system_cpu_seconds": 0.31915,
+  "device": "cpu",
+  "threads": 2,
+  "parameters": 0,
+  "GPU_seconds": 0
+}

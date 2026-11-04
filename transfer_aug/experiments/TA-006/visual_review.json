@@ -1,0 +1,2222 @@
+{
+  "reviewer": "worker AI, small unblinded direct visual inspection",
+  "timestamp_utc": "2026-10-07T22:24:54.450425+00:00",
+  "all_required_sheets_inspected": true,
+  "sheet_count": 22,
+  "representative_source_count": 64,
+  "representative_generated_outputs_reviewed": 576,
+  "tail_source_count": 8,
+  "tail_generated_outputs_reviewed": 72,
+  "tail_representative_overlap": 3,
+  "milestone_source_count": 32,
+  "milestone_translation_count": 320,
+  "sheets": [
+    "representative_01.png",
+    "representative_02.png",
+    "representative_03.png",
+    "representative_04.png",
+    "representative_05.png",
+    "representative_06.png",
+    "representative_07.png",
+    "representative_08.png",
+    "representative_09.png",
+    "representative_10.png",
+    "representative_11.png",
+    "representative_12.png",
+    "representative_13.png",
+    "representative_14.png",
+    "representative_15.png",
+    "representative_16.png",
+    "tails_1.png",
+    "tails_2.png",
+    "trace_1.png",
+    "trace_2.png",
+    "trace_3.png",
+    "trace_4.png"
+  ],
+  "representative_reviews": [
+    {
+      "source_id": 20,
+      "category": "Butterfree",
+      "source_path": "PokemonData/Butterfree/811d90692780433eba8a88e6f7fe68bc.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Wing outlines remain suggestive, but body/face and wing markings are reconstructed incorrectly; latent palettes become yellow/green and cluttered."
+    },
+    {
+      "source_id": 21,
+      "category": "Butterfree",
+      "source_path": "PokemonData/Butterfree/Butterfree14.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Butterfly-like silhouette persists, with new circular wing marks and altered body proportions; self-control already changes the toy-like source."
+    },
+    {
+      "source_id": 32,
+      "category": "Clefable",
+      "source_path": "PokemonData/Clefable/5992ce3d207f4472b89cfc033208ddda.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Reference colors/backgrounds follow donors, while torso/face lines and limbs shift; latent outputs include saturated blue/purple and partially erased forms."
+    },
+    {
+      "source_id": 33,
+      "category": "Clefable",
+      "source_path": "PokemonData/Clefable/Clefable18.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Rounded body stays recognizable as the source motif, but face, ears and limbs mutate; latent colors/backgrounds vary strongly."
+    },
+    {
+      "source_id": 34,
+      "category": "Clefairy",
+      "source_path": "PokemonData/Clefairy/Clefairy25.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Curl/limbs and body outline are warped; self-control loses the original sprite structure. Latent variants include near-silhouette loss."
+    },
+    {
+      "source_id": 35,
+      "category": "Clefairy",
+      "source_path": "PokemonData/Clefairy/Clefairy40.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Reference variants retain pinkish palette but add/reshape limbs and face; latent variants become blue or dark silhouettes."
+    },
+    {
+      "source_id": 38,
+      "category": "Cubone",
+      "source_path": "PokemonData/Cubone/7ccc09c54c7345a6a640d0c3dfbec13b.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Skull-like head motif persists, but skull openings, body texture and setting change; latent colors are not conservative."
+    },
+    {
+      "source_id": 39,
+      "category": "Cubone",
+      "source_path": "PokemonData/Cubone/Cubone40.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Source pose is roughly retained, but face/mask and protrusions alter. Reference backgrounds are copied in broad appearance; latent output can erase body."
+    },
+    {
+      "source_id": 54,
+      "category": "Dratini",
+      "source_path": "PokemonData/Dratini/Dratini36.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Small curled shape becomes a bulky folded form; donor colors transfer with substantial face/body deformation."
+    },
+    {
+      "source_id": 55,
+      "category": "Dratini",
+      "source_path": "PokemonData/Dratini/Dratini46.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Long neck pose remains only approximately; face/outline and backdrop change, with some latent outputs strongly obscured."
+    },
+    {
+      "source_id": 58,
+      "category": "Dugtrio",
+      "source_path": "PokemonData/Dugtrio/Dugtrio16.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Three-head organization is weakened or merged; reference colors and backgrounds transfer, but faces and rock base are rebuilt."
+    },
+    {
+      "source_id": 59,
+      "category": "Dugtrio",
+      "source_path": "PokemonData/Dugtrio/Dugtrio69.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Clustered head silhouette persists loosely, with distorted head boundaries and faces; latent variants add aggressive colors and texture."
+    },
+    {
+      "source_id": 68,
+      "category": "Exeggcute",
+      "source_path": "PokemonData/Exeggcute/6192611f57e846eeb191ba5859cd19d9.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Egg group count/boundaries and faces change; latent variants include a dark almost-empty body and unrelated colors."
+    },
+    {
+      "source_id": 69,
+      "category": "Exeggcute",
+      "source_path": "PokemonData/Exeggcute/Exeggcute47.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Grouped circular layout remains, but facial arrangement and individual eggs merge; donor influence does not preserve markings."
+    },
+    {
+      "source_id": 100,
+      "category": "Gyarados",
+      "source_path": "PokemonData/Gyarados/Gyarados78.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Serpentine contour remains approximate, but jaw, belly segmentation and fins change; latent outputs become unrelated colors."
+    },
+    {
+      "source_id": 101,
+      "category": "Gyarados",
+      "source_path": "PokemonData/Gyarados/fcc725422e05470dbe712580210a1611.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Reference black/blue settings transfer clearly; fish/dragon outline is heavily reshaped, with face and belly damage."
+    },
+    {
+      "source_id": 112,
+      "category": "Ivysaur",
+      "source_path": "PokemonData/Ivysaur/Ivysaur41.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Plant/bulb and body merge into a distorted radial form even in self-control; latent variants amplify contour distortion."
+    },
+    {
+      "source_id": 113,
+      "category": "Ivysaur",
+      "source_path": "PokemonData/Ivysaur/Ivysaur82.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Head silhouette partially survives but flower/leaves and face details collapse; references change palette/background and latent colors vary widely."
+    },
+    {
+      "source_id": 210,
+      "category": "Poliwag",
+      "source_path": "PokemonData/Poliwag/976e0e50333c4e51a381e93c53351229.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Spiral/eye and tail structure are displaced or missing; outputs resemble reconstructed fish shapes more than faithful source renderings."
+    },
+    {
+      "source_id": 211,
+      "category": "Poliwag",
+      "source_path": "PokemonData/Poliwag/Poliwag76.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Simple low-poly ball becomes a new detailed creature-like form; identity preservation is especially uncertain."
+    },
+    {
+      "source_id": 220,
+      "category": "Primeape",
+      "source_path": "PokemonData/Primeape/Primeape25.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Raised-arm motif remains, but face and limbs are reconfigured; latent variants are saturated and visibly nonconservative."
+    },
+    {
+      "source_id": 221,
+      "category": "Primeape",
+      "source_path": "PokemonData/Primeape/Primeape47.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Standing pose roughly survives; reference arms/legs and facial features differ. Latent outputs distort proportions and palette."
+    },
+    {
+      "source_id": 244,
+      "category": "Seaking",
+      "source_path": "PokemonData/Seaking/8c40fd80f4e240aba555f8970e29ca68.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Tiny fish is expanded into a differently shaped object with altered fins/markings; latent variants include silhouettes and clutter."
+    },
+    {
+      "source_id": 245,
+      "category": "Seaking",
+      "source_path": "PokemonData/Seaking/Seaking43.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Rounded body persists but fins, eye and mouth move; reference palettes/backgrounds transfer while latent variants become unrelated colors."
+    },
+    {
+      "source_id": 248,
+      "category": "Shellder",
+      "source_path": "PokemonData/Shellder/Shellder31.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Shell opening/face/tongue region is restructured; reference broad purple palette stays, latent colors change drastically."
+    },
+    {
+      "source_id": 249,
+      "category": "Shellder",
+      "source_path": "PokemonData/Shellder/Shellder43.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Shell-like outline remains but interior/edges are redrawn and tongue information lost; latent outputs can become mostly blank contrasting shapes."
+    },
+    {
+      "source_id": 268,
+      "category": "Tentacool",
+      "source_path": "PokemonData/Tentacool/7979c97c87c64f1fabd74b4ecba2abac.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Head and tentacles change shape, jewels become eye-like patterns; source geometry is altered even with self-style."
+    },
+    {
+      "source_id": 269,
+      "category": "Tentacool",
+      "source_path": "PokemonData/Tentacool/Tentacool20.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Hanging layout remains but head/eye proportions and tentacles differ; latent colors/backgrounds alter identity cues."
+    },
+    {
+      "source_id": 278,
+      "category": "Venusaur",
+      "source_path": "PokemonData/Venusaur/Venusaur45.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Flower/leaf structure and face are largely lost; body becomes a generic folded shape and latent outputs include severe disappearance."
+    },
+    {
+      "source_id": 279,
+      "category": "Venusaur",
+      "source_path": "PokemonData/Venusaur/bf07f75c99234eecaf99073220bb59d5.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Central body and plant silhouette deform; references follow donor colors but not anatomical details, latent palettes diverge strongly."
+    },
+    {
+      "source_id": 292,
+      "category": "Weepinbell",
+      "source_path": "PokemonData/Weepinbell/97452e407c7b470b9fc3b2616e2354e5.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Large open mouth is relocated/reshaped and leaves become limb-like; donor scenes/palettes transfer but markings/anatomy do not stay fixed."
+    },
+    {
+      "source_id": 293,
+      "category": "Weepinbell",
+      "source_path": "PokemonData/Weepinbell/Weepinbell70.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Mouth/eyes and side leaves are substantially reinterpreted; latent variants display color variation with distorted face."
+    },
+    {
+      "source_id": 322,
+      "category": "Butterfree",
+      "source_path": "PokemonData/Butterfree/Butterfree40.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Butterfly changes toward an upright winged shape with shifted body/face; pale target backgrounds and donor palettes transfer."
+    },
+    {
+      "source_id": 323,
+      "category": "Butterfree",
+      "source_path": "PokemonData/Butterfree/Butterfree44.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Wing silhouette remains but patterns/body are replaced by smooth colored regions; references and latent outputs alter facial cues."
+    },
+    {
+      "source_id": 334,
+      "category": "Clefable",
+      "source_path": "PokemonData/Clefable/2d0d2f3a132d406abb0874c06342ee73.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Pink silhouette roughly remains under references, but face/torso lines disappear; latent colors often become brown, white or yellow."
+    },
+    {
+      "source_id": 335,
+      "category": "Clefable",
+      "source_path": "PokemonData/Clefable/Clefable72.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Source outline is partially retained, yet belly/face details wash out or deform; several references nearly erase internal structure."
+    },
+    {
+      "source_id": 336,
+      "category": "Clefairy",
+      "source_path": "PokemonData/Clefairy/40b9e9ad15284eb385262713f71e9990.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Facial features and ears are shifted/erased; latent variants strongly recolor foreground/background and distort the body."
+    },
+    {
+      "source_id": 337,
+      "category": "Clefairy",
+      "source_path": "PokemonData/Clefairy/Clefairy17.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Similar source is reconstructed with altered ears/body and face; pale reference output does not preserve the original markings."
+    },
+    {
+      "source_id": 340,
+      "category": "Cubone",
+      "source_path": "PokemonData/Cubone/9d86a9f09bde4407b1d55dcf4cb430fe.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Skull/face and body transform into an uncertain simplified shape; target white backgrounds remove source setting, latent colors alter class cues."
+    },
+    {
+      "source_id": 341,
+      "category": "Cubone",
+      "source_path": "PokemonData/Cubone/Cubone13.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Skull and eye shape change; toy-like broad outline survives some references while latent blues/yellows alter palette."
+    },
+    {
+      "source_id": 356,
+      "category": "Dratini",
+      "source_path": "PokemonData/Dratini/Dratini17.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Coiled creature becomes a rounded distorted form; face/neck detail is lost despite donor palette following."
+    },
+    {
+      "source_id": 357,
+      "category": "Dratini",
+      "source_path": "PokemonData/Dratini/Dratini37.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Coil is loosely preserved but head/neck and inner outline shift; some reference outputs become a washed-out silhouette."
+    },
+    {
+      "source_id": 360,
+      "category": "Dugtrio",
+      "source_path": "PokemonData/Dugtrio/6c2d9495c3354341ad86713b66017920.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Three-head motif survives more clearly than many cases, but faces/mouths and base geometry shift; latent colors vary strongly."
+    },
+    {
+      "source_id": 361,
+      "category": "Dugtrio",
+      "source_path": "PokemonData/Dugtrio/e73bb16bc2c6457c97994dae827eaf7d.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Grouped heads remain approximately; mouth/eye positions and body subdivisions change, including in self-control."
+    },
+    {
+      "source_id": 370,
+      "category": "Exeggcute",
+      "source_path": "PokemonData/Exeggcute/76b20bb1256a4f32bbbd38c333b84f61.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Multiple eggs fuse into a new elongated blob-like structure; recognizable identity is highly uncertain across both arms."
+    },
+    {
+      "source_id": 371,
+      "category": "Exeggcute",
+      "source_path": "PokemonData/Exeggcute/Exeggcute57.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Central face motif remains weakly, but egg boundaries and facial placement change; donor backgrounds/colors transfer."
+    },
+    {
+      "source_id": 402,
+      "category": "Gyarados",
+      "source_path": "PokemonData/Gyarados/Gyarados57.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Large open mouth and segmented body are lost; translated shape is a different curled object with donor-like backgrounds."
+    },
+    {
+      "source_id": 403,
+      "category": "Gyarados",
+      "source_path": "PokemonData/Gyarados/Gyarados65.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Thin serpentine sprite becomes a rounded fish/tadpole-like form. Black-to-pale background replacement also drives large RMS."
+    },
+    {
+      "source_id": 414,
+      "category": "Ivysaur",
+      "source_path": "PokemonData/Ivysaur/6231456343bc47cea782f5903a7b0513.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Face and bulb/leaf details change markedly; reference and latent colors/backgrounds vary while partial spatial layout persists."
+    },
+    {
+      "source_id": 415,
+      "category": "Ivysaur",
+      "source_path": "PokemonData/Ivysaur/Ivysaur20.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Frontal body silhouette survives, but face and plant/bulb details distort in self, reference and latent outputs."
+    },
+    {
+      "source_id": 512,
+      "category": "Poliwag",
+      "source_path": "PokemonData/Poliwag/Poliwag101.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Round-body motif survives, but spiral becomes a malformed circular feature and eyes move; latent palettes differ strongly."
+    },
+    {
+      "source_id": 513,
+      "category": "Poliwag",
+      "source_path": "PokemonData/Poliwag/de6278c9be65464894b85f43afbbe426.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Fish/tail layout remains, but spiral, facial details and fins change; target backgrounds and colors replace source appearance."
+    },
+    {
+      "source_id": 522,
+      "category": "Primeape",
+      "source_path": "PokemonData/Primeape/Primeape6.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Raised arms/body motif survives loosely, but face becomes a blank/altered region and hands/body edges warp."
+    },
+    {
+      "source_id": 523,
+      "category": "Primeape",
+      "source_path": "PokemonData/Primeape/cbc70975639047e99edfb924fcf71561.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Rounded outline remains, with altered mouth/eyes and limb details; reference scenes/palettes transfer and latent colors differ."
+    },
+    {
+      "source_id": 546,
+      "category": "Seaking",
+      "source_path": "PokemonData/Seaking/Seaking48.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Fish eye/fins and body shape deform; black/white/color regions shift beyond a simple rendering change."
+    },
+    {
+      "source_id": 547,
+      "category": "Seaking",
+      "source_path": "PokemonData/Seaking/Seaking58.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Fish body becomes elongated and fin/markings are lost or detached; target backgrounds and palettes substantially change."
+    },
+    {
+      "source_id": 550,
+      "category": "Shellder",
+      "source_path": "PokemonData/Shellder/Shellder7.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Shell and protruding face remain approximate, but eyes/tongue and outline change; latent outputs strongly alter colors."
+    },
+    {
+      "source_id": 551,
+      "category": "Shellder",
+      "source_path": "PokemonData/Shellder/a7518e8b0deb41d0a0e983e9f04942a4.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Shell/tongue motif remains weakly while eyes and shell edges warp; dark references obscure structure and latent colors change."
+    },
+    {
+      "source_id": 570,
+      "category": "Tentacool",
+      "source_path": "PokemonData/Tentacool/Tentacool29.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Long tentacle layout remains but head becomes face-like and legs fuse/change; identity cues are uncertain despite layout retention."
+    },
+    {
+      "source_id": 571,
+      "category": "Tentacool",
+      "source_path": "PokemonData/Tentacool/Tentacool59.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Dangling silhouette survives, but jewel/face regions and tentacle structure alter; self-control is also visibly changed."
+    },
+    {
+      "source_id": 580,
+      "category": "Venusaur",
+      "source_path": "PokemonData/Venusaur/Venusaur44.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Circular enclosing object remains, but the small inner Pokemon becomes unrecognizable and recolored; preserving the boundary is insufficient."
+    },
+    {
+      "source_id": 581,
+      "category": "Venusaur",
+      "source_path": "PokemonData/Venusaur/b9d19187c6b4450f8fe7371a89bb4c9e.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Card layout and creature anatomy collapse into layered blocks; reference colors transfer while latent forms/backgrounds differ radically."
+    },
+    {
+      "source_id": 594,
+      "category": "Weepinbell",
+      "source_path": "PokemonData/Weepinbell/Weepinbell35.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Head/leaf motif is partially recognizable, but mouth changes to a closed circular snout and eyes alter; latent palettes depart from source."
+    },
+    {
+      "source_id": 595,
+      "category": "Weepinbell",
+      "source_path": "PokemonData/Weepinbell/Weepinbell52.jpg",
+      "reviewed_arms": {
+        "reference_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "latent_variants": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "self_control": true
+      },
+      "recognizable_identity": "uncertain",
+      "anatomy_markings": "visible_changes",
+      "background_contamination": "visible_donor_or_latent_background_changes",
+      "plausible_augmentation": "not_established",
+      "notes": "Source face/mouth and leaf geometry transform into an elongated new shape; both arms change background and anatomy."
+    }
+  ],
+  "tail_reviews": [
+    {
+      "source_id": 403,
+      "reason": "largest_raw_source_RMS",
+      "arm": "reference",
+      "variant": 3,
+      "metric": 0.8963312123396762,
+      "representative_overlap": true,
+      "source_path": "PokemonData/Gyarados/Gyarados65.jpg",
+      "observation": "Thin serpentine sprite becomes a rounded fish/tadpole-like form. Black-to-pale background replacement also drives large RMS.",
+      "recognizable_identity": "uncertain",
+      "plausible_augmentation": "not_established"
+    },
+    {
+      "source_id": 456,
+      "reason": "largest_raw_source_RMS",
+      "arm": "reference",
+      "variant": 1,
+      "metric": 0.881626610540407,
+      "representative_overlap": false,
+      "source_path": "PokemonData/Mankey/Mankey3.jpg",
+      "observation": "Small upright creature outline remains only roughly; facial/limb proportions change. Black-to-white replacement contributes strongly to the RMS tail.",
+      "recognizable_identity": "uncertain",
+      "plausible_augmentation": "not_established"
+    },
+    {
+      "source_id": 82,
+      "reason": "largest_raw_source_RMS",
+      "arm": "latent",
+      "variant": 3,
+      "metric": 0.8785698286912677,
+      "representative_overlap": false,
+      "source_path": "PokemonData/Geodude/Geodude32.jpg",
+      "observation": "Raised-arm rock motif remains, but face/hands and contours change. Background reversal and saturation dominate several variants.",
+      "recognizable_identity": "uncertain",
+      "plausible_augmentation": "not_established"
+    },
+    {
+      "source_id": 590,
+      "reason": "largest_raw_source_RMS",
+      "arm": "reference",
+      "variant": 3,
+      "metric": 0.8749513112126522,
+      "representative_overlap": false,
+      "source_path": "PokemonData/Wartortle/Wartortle31.jpg",
+      "observation": "Broad upright pose survives some references, with head, belly and limbs changed. Black-to-white replacement helps explain high RMS.",
+      "recognizable_identity": "uncertain",
+      "plausible_augmentation": "not_established"
+    },
+    {
+      "source_id": 415,
+      "reason": "smallest_clipped_latent_diversity",
+      "metric": 0.19569173303753684,
+      "representative_overlap": true,
+      "source_path": "PokemonData/Ivysaur/Ivysaur20.jpg",
+      "observation": "Frontal body silhouette survives, but face and plant/bulb details distort in self, reference and latent outputs.",
+      "recognizable_identity": "uncertain",
+      "plausible_augmentation": "not_established"
+    },
+    {
+      "source_id": 363,
+      "reason": "smallest_clipped_latent_diversity",
+      "metric": 0.21565129132114946,
+      "representative_overlap": false,
+      "source_path": "PokemonData/Eevee/Eevee73.jpg",
+      "observation": "Lowest-relative diversity still includes clear blue/orange/yellow recoloring and face changes; it is not an exact-collapse example.",
+      "recognizable_identity": "uncertain",
+      "plausible_augmentation": "not_established"
+    },
+    {
+      "source_id": 420,
+      "reason": "smallest_clipped_latent_diversity",
+      "metric": 0.21708924489879747,
+      "representative_overlap": false,
+      "source_path": "PokemonData/Jynx/8cfedafc7162431282eceac38334fa12.jpg",
+      "observation": "Dress/hair silhouette roughly persists but eyes, face and hair detail change; even relatively low-diversity latent variants remain differently colored.",
+      "recognizable_identity": "uncertain",
+      "plausible_augmentation": "not_established"
+    },
+    {
+      "source_id": 571,
+      "reason": "smallest_clipped_latent_diversity",
+      "metric": 0.21719890796832664,
+      "representative_overlap": true,
+      "source_path": "PokemonData/Tentacool/Tentacool59.jpg",
+      "observation": "Dangling silhouette survives, but jewel/face regions and tentacle structure alter; self-control is also visibly changed.",
+      "recognizable_identity": "uncertain",
+      "plausible_augmentation": "not_established"
+    }
+  ],
+  "milestone_reviews": [
+    {
+      "source_id": 20,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Wing outlines remain suggestive, but body/face and wing markings are reconstructed incorrectly; latent palettes become yellow/green and cluttered."
+    },
+    {
+      "source_id": 32,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Reference colors/backgrounds follow donors, while torso/face lines and limbs shift; latent outputs include saturated blue/purple and partially erased forms."
+    },
+    {
+      "source_id": 34,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Curl/limbs and body outline are warped; self-control loses the original sprite structure. Latent variants include near-silhouette loss."
+    },
+    {
+      "source_id": 38,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Skull-like head motif persists, but skull openings, body texture and setting change; latent colors are not conservative."
+    },
+    {
+      "source_id": 54,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Small curled shape becomes a bulky folded form; donor colors transfer with substantial face/body deformation."
+    },
+    {
+      "source_id": 58,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Three-head organization is weakened or merged; reference colors and backgrounds transfer, but faces and rock base are rebuilt."
+    },
+    {
+      "source_id": 68,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Egg group count/boundaries and faces change; latent variants include a dark almost-empty body and unrelated colors."
+    },
+    {
+      "source_id": 100,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Serpentine contour remains approximate, but jaw, belly segmentation and fins change; latent outputs become unrelated colors."
+    },
+    {
+      "source_id": 112,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Plant/bulb and body merge into a distorted radial form even in self-control; latent variants amplify contour distortion."
+    },
+    {
+      "source_id": 210,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Spiral/eye and tail structure are displaced or missing; outputs resemble reconstructed fish shapes more than faithful source renderings."
+    },
+    {
+      "source_id": 220,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Raised-arm motif remains, but face and limbs are reconfigured; latent variants are saturated and visibly nonconservative."
+    },
+    {
+      "source_id": 244,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Tiny fish is expanded into a differently shaped object with altered fins/markings; latent variants include silhouettes and clutter."
+    },
+    {
+      "source_id": 248,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Shell opening/face/tongue region is restructured; reference broad purple palette stays, latent colors change drastically."
+    },
+    {
+      "source_id": 268,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Head and tentacles change shape, jewels become eye-like patterns; source geometry is altered even with self-style."
+    },
+    {
+      "source_id": 278,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Flower/leaf structure and face are largely lost; body becomes a generic folded shape and latent outputs include severe disappearance."
+    },
+    {
+      "source_id": 292,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Large open mouth is relocated/reshaped and leaves become limb-like; donor scenes/palettes transfer but markings/anatomy do not stay fixed."
+    },
+    {
+      "source_id": 322,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Butterfly changes toward an upright winged shape with shifted body/face; pale target backgrounds and donor palettes transfer."
+    },
+    {
+      "source_id": 334,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Pink silhouette roughly remains under references, but face/torso lines disappear; latent colors often become brown, white or yellow."
+    },
+    {
+      "source_id": 336,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Facial features and ears are shifted/erased; latent variants strongly recolor foreground/background and distort the body."
+    },
+    {
+      "source_id": 340,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Skull/face and body transform into an uncertain simplified shape; target white backgrounds remove source setting, latent colors alter class cues."
+    },
+    {
+      "source_id": 356,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Coiled creature becomes a rounded distorted form; face/neck detail is lost despite donor palette following."
+    },
+    {
+      "source_id": 360,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Three-head motif survives more clearly than many cases, but faces/mouths and base geometry shift; latent colors vary strongly."
+    },
+    {
+      "source_id": 370,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Multiple eggs fuse into a new elongated blob-like structure; recognizable identity is highly uncertain across both arms."
+    },
+    {
+      "source_id": 402,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Large open mouth and segmented body are lost; translated shape is a different curled object with donor-like backgrounds."
+    },
+    {
+      "source_id": 414,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Face and bulb/leaf details change markedly; reference and latent colors/backgrounds vary while partial spatial layout persists."
+    },
+    {
+      "source_id": 512,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Round-body motif survives, but spiral becomes a malformed circular feature and eyes move; latent palettes differ strongly."
+    },
+    {
+      "source_id": 522,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Raised arms/body motif survives loosely, but face becomes a blank/altered region and hands/body edges warp."
+    },
+    {
+      "source_id": 546,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Fish eye/fins and body shape deform; black/white/color regions shift beyond a simple rendering change."
+    },
+    {
+      "source_id": 550,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Shell and protruding face remain approximate, but eyes/tongue and outline change; latent outputs strongly alter colors."
+    },
+    {
+      "source_id": 570,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Long tentacle layout remains but head becomes face-like and legs fuse/change; identity cues are uncertain despite layout retention."
+    },
+    {
+      "source_id": 580,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Circular enclosing object remains, but the small inner Pokemon becomes unrecognizable and recolored; preserving the boundary is insufficient."
+    },
+    {
+      "source_id": 594,
+      "milestones": [
+        "initial",
+        "1000",
+        "5000",
+        "10000",
+        "final"
+      ],
+      "arms": [
+        "reference0",
+        "latent0"
+      ],
+      "observation": "Initial colorful noise and1000-step blur give way to structured but distorted shapes by5000;10000/final sharpen contours without establishing preserved anatomy. Final-specific observation: Head/leaf motif is partially recognizable, but mouth changes to a closed circular snout and eyes alter; latent palettes depart from source."
+    }
+  ],
+  "overall_observations": [
+    "Reference outputs visibly follow donor palette and background, but transfer is entangled with faces, markings and shape changes.",
+    "Latent outputs exhibit strong visible variation including species-associated recoloring, background replacement, clutter and distorted forms.",
+    "Self-style controls also change details, showing a reconstruction/preservation limitation beyond cross-domain styling.",
+    "Largest RMS tails include strong background inversion; low-diversity tails still vary visibly and are not exact-collapse evidence."
+  ],
+  "limits": [
+    "These labels are descriptive observations, not class accuracy or a prevalence estimate.",
+    "Source identity is uncertain without independent verification; no semantic-diversity, FID or augmentation-benefit claim.",
+    "Milestones were inspected descriptively; final checkpoint was fixed by iteration count, not selected for appearance."
+  ]
+}

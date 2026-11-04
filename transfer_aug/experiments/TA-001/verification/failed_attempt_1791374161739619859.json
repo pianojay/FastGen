@@ -1,0 +1,5 @@
+{
+  "mode": "generate",
+  "timestamp_utc": "2026-10-07T11:56:01.738743+00:00",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-001/run_experiment.py\", line 471, in <module>\n    generate_or_recompute(args.mode)\n  File \"/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-001/run_experiment.py\", line 364, in generate_or_recompute\n    numerical_checks(content,donor)\n  File \"/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-001/run_experiment.py\", line 231, in numerical_checks\n    assert me <= 1e-8 and se <= 1e-8 and np.isfinite(raw).all()\nAssertionError\n"
+}

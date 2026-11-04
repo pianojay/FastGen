@@ -1,0 +1,591 @@
+{
+  "review_method": "Small unblinded AI direct visual review, not class accuracy or prevalence estimate",
+  "reviewed_utc": "2026-10-07T17:58:06.723613+00:00",
+  "sheets": [
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_00.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        20,
+        21,
+        32,
+        33
+      ],
+      "directly_inspected": true,
+      "sha256": "65260affdf2649cc9a3ea883235b4a20a5d4533109158178cb2964610ce9c074",
+      "observations": [
+        "Butterfree20: reference follows light/dark donor backgrounds but smears wing markings; latent variants bend wings/body into unrelated colored shapes.",
+        "Butterfree21: broad bilateral outline remains in reference outputs, with eye/wing detail lost; latent variants recolor and deform the body.",
+        "Clefable32: reference retains rough drawn outline under streaked backgrounds; sampled styles break facial/body details.",
+        "Clefable33: reference retains rounded pose but washes face; latent colors and outlines are strongly distorted."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_01.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        34,
+        35,
+        38,
+        39
+      ],
+      "directly_inspected": true,
+      "sha256": "ae92a92785a1aab70fb889f04a363c1073b2c7a55834c38886d9f83f22dc2285",
+      "observations": [
+        "Clefairy34: reference gains glow/streaks and background replacement; latent versions lose pink identity cues and facial structure.",
+        "Clefairy35: reference partly keeps plush pose; latent variants become fragmented purple/orange regions and identity is uncertain.",
+        "Cubone38: skull eye locations sometimes remain in reference arm, but high-contrast halos and palette shifts dominate; latent morphology unstable.",
+        "Cubone39: reference roughly retains upright pose and follows donor background colors; fine skull/body detail erased, latent silhouettes distorted."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_02.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        54,
+        55,
+        58,
+        59
+      ],
+      "directly_inspected": true,
+      "sha256": "b2ecb4ec8cb976dfc37b9b54476cdf9903bdd9e982f4ebcd14a91b9ec039523c",
+      "observations": [
+        "Dratini54: reference keeps curl outline but glows/smears; one latent is a purple blob rather than a clear Dratini.",
+        "Dratini55: reference retains serpentine layout but replaces card/background colors; latent variants alter outline and face.",
+        "Dugtrio58: reference mounds turn blue and faces disappear; latent versions vary strongly between pale blobs and dark masses.",
+        "Dugtrio59: reference preserves rough three-part arrangement only; streaking obscures faces, latent variation changes structure."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_03.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        68,
+        69,
+        100,
+        101
+      ],
+      "directly_inspected": true,
+      "sha256": "00348089f03ac616a5875a5741706f2bab8a51873074ac3a15dc196ce8f1aec5",
+      "observations": [
+        "Exeggcute68: reference preserves egg arrangement weakly, donor dark backgrounds change contrast; latent variants lose faces and egg boundaries.",
+        "Exeggcute69: reference partly preserves cluster but burns highlights; latent faces/palette become unrelated rounded forms.",
+        "Gyarados100: reference retains long curved body under blue/white wash; latent can become an unrecognizable pale segmented shape.",
+        "Gyarados101: black-background donor styles darken the original; reference anatomy is blurred and latent body geometry changes substantially."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_04.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        112,
+        113,
+        210,
+        211
+      ],
+      "directly_inspected": true,
+      "sha256": "137aff8c19cfa114b00d4ac39483410d8b0e68ebb64fc629fd95477eb0c57212",
+      "observations": [
+        "Ivysaur112: broad bud/body placement persists in reference arm but bud changes pink to orange; latent body and legs become different shapes.",
+        "Ivysaur113: reference maintains pose and donor-dependent background, with noisy contours; latent erases facial/leaf details.",
+        "Poliwag210: reference keeps approximate round head but busy halos cover features; latent body/tail become unclear.",
+        "Poliwag211: reference and latent preserve rough ball-tail outline while inversion/black regions hide anatomy; semantic identity uncertain."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_05.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        220,
+        221,
+        244,
+        245
+      ],
+      "directly_inspected": true,
+      "sha256": "7724691a7d51477a7293acbb0b5229535bea3ebbacf0c25302fb566f75db700b",
+      "observations": [
+        "Primeape220: reference keeps squat outline and dark/light donor background but face is washed out; latent recolors and remakes body.",
+        "Primeape221: reference broad action pose remains but limbs lose separation; latent anatomy is unstable.",
+        "Seaking244: reference retains small fish location under colored backgrounds; latent creates larger unrelated rounded forms.",
+        "Seaking245: reference partially preserves fish outline and donor background tone; latent markedly distorts fins and markings."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_06.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        248,
+        249,
+        268,
+        269
+      ],
+      "directly_inspected": true,
+      "sha256": "49f1fb85b90f39cbc4b8d9b243e0f5530e307aacf0bb8c18f124fb44ea321d88",
+      "observations": [
+        "Shellder248: reference mouth-band outline remains but color and details change; latent shell forms have unnatural palettes and changed mouths.",
+        "Shellder249: reference retains blue shell slant with heavy texture; latent outline and tongue become hard to recognize.",
+        "Tentacool268: reference preserves tall head layout but adds glow and washes tentacles; latent produces distorted pink/brown masses.",
+        "Tentacool269: reference clearly follows blue versus black backgrounds but fine anatomy degrades; latent strongly changes head and tentacle shapes."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_07.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        278,
+        279,
+        292,
+        293
+      ],
+      "directly_inspected": true,
+      "sha256": "1498a4d76a3d0a219f40d0d24117d8d8a52ddcd57483ea7c19d7c7b4645d678b",
+      "observations": [
+        "Venusaur278: reference broad plant/body layout remains in noisy dark variants; latent variants replace body and flower shapes.",
+        "Venusaur279: reference retains a rough central pyramid silhouette; latent variants vary shape/palette with uncertain identity.",
+        "Weepinbell292: reference retains mouth position but outlines become gritty and background switches; latent loses class-specific leaf/mouth appearance.",
+        "Weepinbell293: reference recognizable only coarsely, while latent versions are differently colored distorted blobs."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_08.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        322,
+        323,
+        334,
+        335
+      ],
+      "directly_inspected": true,
+      "sha256": "a694c36a9aa5f43b1c906a08d52cf777fa57386814fae65abad064dad2db2238",
+      "observations": [
+        "Butterfree322: reference keeps wing pose but washes white wings and replaces background; latent changes color and wing detail.",
+        "Butterfree323: donor palettes tint wings, but boundaries are washed or smeared; latent changes body/wing patterns substantially.",
+        "Clefable334: reference gives pale pink silhouette but removes face/body interiors; latent creates hollow outlines or color-shifted blobs.",
+        "Clefable335: reference silhouette recognizable with damaged markings; latent changes body proportions and colors."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_09.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        336,
+        337,
+        340,
+        341
+      ],
+      "directly_inspected": true,
+      "sha256": "d3b59a68c85e4b7d828024fe38a0619f32ae892e8068d9cd3670be77d648d2ee",
+      "observations": [
+        "Clefairy336: reference broadly recognizable but bright areas/face lose detail; latent includes detached-looking yellow fragments.",
+        "Clefairy337: reference retains face arrangement weakly under donor palette; latent changes background and washes or warps anatomy.",
+        "Cubone340: reference removes scene background and retains only a small rough figure; latent often becomes a blob or bright multicolor body.",
+        "Cubone341: reference background hue follows donor and skull outline sometimes remains; latent recolors and changes face/body."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_10.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        356,
+        357,
+        360,
+        361
+      ],
+      "directly_inspected": true,
+      "sha256": "55644e3a004dc033dc29a1da13ba8f93f65109b2adf63101057de8a7e0e789bc",
+      "observations": [
+        "Dratini356: reference can nearly erase the serpent in white output or tint it lavender; latent substantially alters color and outline.",
+        "Dratini357: reference retains curve but background/palette vary; latent turns the animal red/orange and changes structure.",
+        "Dugtrio360: reference preserves mound grouping but weakens faces; latent visibly changes mound count/separation and colors.",
+        "Dugtrio361: even self-reconstruction darkens detail; reference replaces background and textures; latent identities uncertain."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_11.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        370,
+        371,
+        402,
+        403
+      ],
+      "directly_inspected": true,
+      "sha256": "0cb3ab511eb407586fd89e5f45fc9ddd684a9bded7e4b2be8b1bb1924aaea8cd",
+      "observations": [
+        "Exeggcute370: reference retains only rough cluster contour with faces washed away; latent often removes much of the cluster.",
+        "Exeggcute371: reference round egg grouping remains coarsely, latent often becomes a single rounded object.",
+        "Gyarados402: reference removes complex background and loses fine body details; some latent variants shrink to a simple blob.",
+        "Gyarados403: reference keeps long curve with white/blue donor background; latent retains only a coarse curled shape with different colors."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_12.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        414,
+        415,
+        512,
+        513
+      ],
+      "directly_inspected": true,
+      "sha256": "a94abf6b10a0f35ae09718d3f16b5e88885dc14339f95d2022c0fae9f39d49dd",
+      "observations": [
+        "Ivysaur414: reference donor backgrounds/palettes follow visibly, but face and leaf markings become distorted; latent includes fragmented body forms.",
+        "Ivysaur415: bud/leaf horizontal layout remains with pale hollow body in reference arm; latent recolors and deforms body.",
+        "Poliwag512: reference partly retains spiral/head but shape is altered; latent may nearly erase the character.",
+        "Poliwag513: reference usually whitens background and breaks spiral/body details; latent variants retain similarly pale fragmented silhouettes."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_13.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        522,
+        523,
+        546,
+        547
+      ],
+      "directly_inspected": true,
+      "sha256": "3969444706f270e72d8c594473cfb30cafbe81bd3a9f22d1549a8fb06cc41d9d",
+      "observations": [
+        "Primeape522: reference changes background as donor and reduces the creature to a rounded form; latent limbs/face not reliably preserved.",
+        "Primeape523: reference changes pose-like contours and colors despite rough layout; latent variants become varied blobs.",
+        "Seaking546: donor background and palette dominate both arms; fins and class markings become texture.",
+        "Seaking547: reference keeps an approximate fish outline in some variants but loses fine fins; latent fish identity unclear."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_14.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        550,
+        551,
+        570,
+        571
+      ],
+      "directly_inspected": true,
+      "sha256": "8ec6ba16d67d1aeec318d587c496d003888e0bc2f02b2fa1e5f278ef6c88d9a7",
+      "observations": [
+        "Shellder550: reference keeps approximate low shell/tongue placement but eye detail vanishes; latent changes the creature into orange/red forms.",
+        "Shellder551: reference becomes swirled background-plus-outline, with tongue/eye obscured; latent anatomy and colors unstable.",
+        "Tentacool570: tall silhouette/tentacles remain in reference arm but internal details are smeared; latent variations alter head/tentacle geometry.",
+        "Tentacool571: reference follows blue versus pale donor backgrounds; one variant changes head proportions strongly and latent colors/shape are unstable."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/representative_15.png",
+      "kind": "representative",
+      "source_eval_indices": [
+        580,
+        581,
+        594,
+        595
+      ],
+      "directly_inspected": true,
+      "sha256": "646abe8de19ddcb8ed28ef5cb427b8c811e430d405ce3c16fc4b13841e6d10f5",
+      "observations": [
+        "Venusaur580: glass-sphere background geometry persists, but central Pok\u00e9mon is obscured; latent changes central form/palette.",
+        "Venusaur581: reference blends character into donor-colored scene; latent loses recognizable flower/body arrangement.",
+        "Weepinbell594: reference mouth/body placement partly remains but scene becomes color fields; latent class identity uncertain.",
+        "Weepinbell595: reference retains leaf-mouth silhouette with donor background replacement; latent generally resembles a different bent shape."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/tails_00.png",
+      "kind": "tail",
+      "source_eval_indices": [
+        199,
+        143,
+        269,
+        403
+      ],
+      "directly_inspected": true,
+      "sha256": "8c806fe87e61290e05cc0b8289618ff2c642fe7a3a71d8074edc2064dda70366",
+      "observations": [
+        "Persian199: extreme RMS is dominated by white-to-black/colored background replacement, while small character details are damaged.",
+        "Machoke143: white-to-dark transfer dominates large RMS; reference body glows/loses details and sampled versions change anatomy.",
+        "Tentacool269: representative overlap; large RMS follows white-to-black background transfer, with recognizable tentacle layout only partly retained.",
+        "Gyarados403: representative overlap; black-to-white background replacement dominates large RMS; curved silhouette survives only coarsely."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/tails_01.png",
+      "kind": "tail",
+      "source_eval_indices": [
+        310,
+        510,
+        513,
+        307
+      ],
+      "directly_inspected": true,
+      "sha256": "82d8dfd262f9441f9bc3784d45e0351309550b66a58f5d71bc2a20a8a42dc6a6",
+      "observations": [
+        "Arcanine310: low latent diversity accompanies mostly white backgrounds and fragmented outlines, not reliable identity preservation.",
+        "Pinsir510: low latent diversity still contains changed colors/shape; foreground details are strongly simplified against white.",
+        "Poliwag513: representative overlap; low diversity variants are similarly washed-out, with damaged spiral/body.",
+        "Alakazam307: low diversity includes pale background and similar bent blobs; limbs/spoons/face are not reliably retained."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "generally closer to original than translations, with smoothing/detail loss"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/milestones_00.png",
+      "kind": "milestone",
+      "source_eval_indices": [
+        20,
+        32,
+        34,
+        38,
+        54,
+        58,
+        68,
+        100
+      ],
+      "directly_inspected": true,
+      "sha256": "f428d45f4b3a7dd47493aee233dfbbaad860528795eccfe1122a786934f49d9f",
+      "observations": [
+        "D0\u2192D1 first eight fixed sources: random initial texture becomes coarse content-following reference output by1000\u20135000; later outputs remain streaked or overcontrasted. Latent texture becomes structured distorted shapes, not reliably preserved characters. No checkpoint chosen."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "not shown on milestone sheet"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/milestones_01.png",
+      "kind": "milestone",
+      "source_eval_indices": [
+        112,
+        210,
+        220,
+        244,
+        248,
+        268,
+        278,
+        292
+      ],
+      "directly_inspected": true,
+      "sha256": "7d42cb736a0c33e2f6e70afd4051ac2d82713b169b62cba0ff0592a6ed8a2557",
+      "observations": [
+        "D0\u2192D1 remaining eight sources: reference pose/outline appears early but faces and markings remain blurred/glowing at20000; sampled styles evolve from noise toward different colored blobs and outlines. No monotonic quality or convergence conclusion."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "not shown on milestone sheet"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/milestones_02.png",
+      "kind": "milestone",
+      "source_eval_indices": [
+        322,
+        334,
+        336,
+        340,
+        356,
+        360,
+        370,
+        402
+      ],
+      "directly_inspected": true,
+      "sha256": "4de28c05b40bcfaac67ea4dcc8981163ab4208c15941ce829b16111c7fa6f9af",
+      "observations": [
+        "D1\u2192D0 first eight sources: reference coarse figures emerge and backgrounds lighten; later outputs still erase parts and fine details. Latent variants become cleaner blobs but often remain semantically ambiguous."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "not shown on milestone sheet"
+      }
+    },
+    {
+      "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-005/eda/milestones_03.png",
+      "kind": "milestone",
+      "source_eval_indices": [
+        414,
+        512,
+        522,
+        546,
+        550,
+        570,
+        580,
+        594
+      ],
+      "directly_inspected": true,
+      "sha256": "4086836cb66b93477ce6ed61faa345a3b92838198b1d9473d142ec2cf3e16c11",
+      "observations": [
+        "D1\u2192D0 remaining eight sources: reference forms sharpen somewhat relative to1000 while palette/background replacement and detail loss persist; final latent variants still distort identities. Descriptive trajectory only, no quality-based selection."
+      ],
+      "rubric": {
+        "recognizable_identity": "mixed; often uncertain after translation, especially Gaussian-style outputs",
+        "anatomy_markings": "visible losses or deformations in displayed variants",
+        "background_contamination": "donor-dependent backgrounds/palettes frequently transferred; latent backgrounds vary strongly",
+        "artifacts": "blur, halos, streaked textures or overbright/empty regions observed",
+        "plausible_variation": "not established; variation frequently destructive",
+        "self_control": "not shown on milestone sheet"
+      }
+    }
+  ],
+  "representative_sources": 64,
+  "representative_translations": 512,
+  "representative_self_controls": 64,
+  "tail_sources": 8,
+  "milestone_sources": 32,
+  "milestone_translations": 320,
+  "all_reference_donors_displayed": true,
+  "uncertain_label_allowed": true,
+  "overall": "Reference outputs often follow donor background and palette while damaging details; Gaussian styles offer larger pixel variation but frequently destroy recognizable identity. Self reconstruction is much closer. No readiness for augmentation established."
+}

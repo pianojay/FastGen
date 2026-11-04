@@ -1,0 +1,110 @@
+{
+  "fid_baselines": {
+    "file_upload_id": "3f2f3544-6091-81aa-940b-00b2a315b4a9",
+    "filename": "fid_baselines.png",
+    "content_type": "image/png",
+    "content_length": 159754,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-81aa-940b-00b2a315b4a9",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-81aa-940b-00b2a315b4a9\"></image>"
+  },
+  "pca_scatter": {
+    "file_upload_id": "3f2f3544-6091-8192-bdd6-00b215b4e9c7",
+    "filename": "pca_scatter.png",
+    "content_type": "image/png",
+    "content_length": 723438,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-8192-bdd6-00b215b4e9c7",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-8192-bdd6-00b215b4e9c7\"></image>"
+  },
+  "pca_distributions": {
+    "file_upload_id": "3f2f3544-6091-8182-8937-00b2095f2683",
+    "filename": "pca_distributions.png",
+    "content_type": "image/png",
+    "content_length": 153001,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-8182-8937-00b2095f2683",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-8182-8937-00b2095f2683\"></image>"
+  },
+  "pca_endpoints": {
+    "file_upload_id": "3f2f3544-6091-8161-8a21-00b280891f47",
+    "filename": "pca_endpoints.png",
+    "content_type": "image/png",
+    "content_length": 812309,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-8161-8a21-00b280891f47",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-8161-8a21-00b280891f47\"></image>"
+  },
+  "neighbor_distributions": {
+    "file_upload_id": "3f2f3544-6091-81aa-af91-00b260b3f6a4",
+    "filename": "neighbor_distributions.png",
+    "content_type": "image/png",
+    "content_length": 93292,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-81aa-af91-00b260b3f6a4",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-81aa-af91-00b260b3f6a4\"></image>"
+  },
+  "neighbor_tail_1": {
+    "file_upload_id": "3f2f3544-6091-81b0-8e44-00b2f5eb4825",
+    "filename": "neighbor_tail_1.png",
+    "content_type": "image/png",
+    "content_length": 1370110,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-81b0-8e44-00b2f5eb4825",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-81b0-8e44-00b2f5eb4825\"></image>"
+  },
+  "neighbor_tail_3": {
+    "file_upload_id": "3f2f3544-6091-81f4-b4d5-00b25777eef6",
+    "filename": "neighbor_tail_3.png",
+    "content_type": "image/png",
+    "content_length": 1095633,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-81f4-b4d5-00b25777eef6",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-81f4-b4d5-00b25777eef6\"></image>"
+  },
+  "cluster_composition": {
+    "file_upload_id": "3f2f3544-6091-8190-8814-00b2fdb4b190",
+    "filename": "cluster_composition.png",
+    "content_type": "image/png",
+    "content_length": 51950,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-8190-8814-00b2fdb4b190",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-8190-8814-00b2fdb4b190\"></image>"
+  },
+  "cluster_01_k32_19": {
+    "file_upload_id": "3f2f3544-6091-81e3-80e2-00b2dcd3a008",
+    "filename": "cluster_01_k32_19.png",
+    "content_type": "image/png",
+    "content_length": 271820,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-81e3-80e2-00b2dcd3a008",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-81e3-80e2-00b2dcd3a008\"></image>"
+  },
+  "cluster_05_k32_9": {
+    "file_upload_id": "3f2f3544-6091-81d1-9e19-00b244abde8f",
+    "filename": "cluster_05_k32_9.png",
+    "content_type": "image/png",
+    "content_length": 484112,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-81d1-9e19-00b244abde8f",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-81d1-9e19-00b244abde8f\"></image>"
+  },
+  "cluster_06_k32_3": {
+    "file_upload_id": "3f2f3544-6091-81cf-97e5-00b200cc5b52",
+    "filename": "cluster_06_k32_3.png",
+    "content_type": "image/png",
+    "content_length": 266505,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-81cf-97e5-00b200cc5b52",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-81cf-97e5-00b200cc5b52\"></image>"
+  },
+  "image_properties": {
+    "file_upload_id": "3f2f3544-6091-810b-ab45-00b24cb3eea9",
+    "filename": "image_properties.png",
+    "content_type": "image/png",
+    "content_length": 155562,
+    "status": "uploaded",
+    "markdown_source": "file-upload://3f2f3544-6091-810b-ab45-00b24cb3eea9",
+    "suggested_markdown": "<image src=\"file-upload://3f2f3544-6091-810b-ab45-00b24cb3eea9\"></image>"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "qualification_updates": 20,
+  "recovery_optimizer_calls": 2,
+  "seconds_20_updates": 4.701631339266896,
+  "seconds_per_update": 0.2350815669633448,
+  "peak_allocated_bytes": 2196792320,
+  "peak_reserved_bytes": 2466250752,
+  "parameter_counts": {
+    "G01": 7837699,
+    "G10": 7837699,
+    "D0": 662977,
+    "D1": 662977,
+    "total": 17001352
+  },
+  "gpu_recovery_exact": true,
+  "recovery_state_sha256": "72868a03f06779ad3158d63708c4ef868cbdca4ec7f2881f1a9edcfd35147f1b",
+  "first_loss": {
+    "gan01": 1.5754156112670898,
+    "gan10": 1.719235897064209,
+    "cycle0": 8.052942276000977,
+    "cycle1": 7.79338264465332,
+    "identity1": 3.9037394523620605,
+    "identity0": 3.9954781532287598,
+    "d0": 1.1080907583236694,
+    "d1": 1.0824893712997437,
+    "lr": 0.0002,
+    "update": 1
+  },
+  "last_loss": {
+    "gan01": 0.36585578322410583,
+    "gan10": 0.6384021043777466,
+    "cycle0": 3.9628005027770996,
+    "cycle1": 4.864175796508789,
+    "identity1": 2.208784818649292,
+    "identity0": 1.8646085262298584,
+    "d0": 0.4741082191467285,
+    "d1": 0.3413468599319458,
+    "lr": 0.0002,
+    "update": 20
+  },
+  "device_name": "NVIDIA TITAN RTX",
+  "uuid": "GPU-dd35c186-88f4-ac1e-26ae-028adbd8e888",
+  "torch_version": "2.7.1+cu126",
+  "cuda_version": "12.6"
+}

@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/naoto0804/pytorch-AdaIN",
+  "revision": "47950d0e6656a95a80a4b105c4c0f58d38ef785c",
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/naoto0804/pytorch-AdaIN/47950d0e6656a95a80a4b105c4c0f58d38ef785c/README.md",
+      "status": 200,
+      "bytes": 2705,
+      "sha256": "8b363ae63547d6065909f0868f07092df25156a9122bc858d24c4522f2527eed"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/naoto0804/pytorch-AdaIN/47950d0e6656a95a80a4b105c4c0f58d38ef785c/LICENSE",
+      "status": 200,
+      "bytes": 1068,
+      "sha256": "cac60b351360e641823e739fa9701bc22dc0547d300d1c54c4a0c040fc6e6e2b"
+    },
+    "net.py": {
+      "url": "https://raw.githubusercontent.com/naoto0804/pytorch-AdaIN/47950d0e6656a95a80a4b105c4c0f58d38ef785c/net.py",
+      "status": 200,
+      "bytes": 5274,
+      "sha256": "2932117288166139afd648a4db790d717c211a10328c8dc9df3380b958a41c17"
+    },
+    "train.py": {
+      "url": "https://raw.githubusercontent.com/naoto0804/pytorch-AdaIN/47950d0e6656a95a80a4b105c4c0f58d38ef785c/train.py",
+      "status": 200,
+      "bytes": 4539,
+      "sha256": "b06d89f7d5919c63882c3c32a8b007edb9df6f3ed46a927adc527bb0d90a042e"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "repository": "https://github.com/Yijunmaverick/UniversalStyleTransfer",
+  "revision": "55f37178fd737d9b4989b1c609ad639afcfbb5c6",
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/README.md",
+      "status": 200,
+      "bytes": 7565,
+      "sha256": "95e0f780deee3928de83aba46e8ae6494a240701e46ec7856e018f477ef000ec"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/LICENSE",
+      "status": 404
+    },
+    "models.py": {
+      "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/models.py",
+      "status": 404
+    },
+    "util.py": {
+      "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/util.py",
+      "status": 404
+    },
+    "WCT.py": {
+      "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/WCT.py",
+      "status": 404
+    },
+    "LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/LICENSE.txt",
+      "status": 200,
+      "sha256": "fe507c0a99c3d0808cee9c7f185b61fb22be51c0c388c143a2d2496f736926ac",
+      "bytes": 1065
+    },
+    "test_adain.lua": {
+      "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/test_adain.lua",
+      "status": 200,
+      "sha256": "ae88de38c9ee432e5b43a669be2767f5f8ce1c91554b55c201b643a186cdc51e",
+      "bytes": 8797
+    },
+    "test_wct.lua": {
+      "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/test_wct.lua",
+      "status": 200,
+      "sha256": "c8372a857c6e58d215f4017f6fcb9dc4c0cb5ce0cacb31191485be02664510dc",
+      "bytes": 14304
+    },
+    "test_wct_interpolation2.lua": {
+      "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/test_wct_interpolation2.lua",
+      "status": 200,
+      "sha256": "d31953d8b45fad658c7351b08f78b7416bf60bcee3a739d52a5535d8b205f511",
+      "bytes": 9824
+    },
+    "test_wct_mask.lua": {
+      "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/test_wct_mask.lua",
+      "status": 200,
+      "sha256": "2b3d68660a4364837978d89f3438c7def7e47b2bf61f8af613cdeff6c8f5f410",
+      "bytes": 9770
+    }
+  }
+}

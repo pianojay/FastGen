@@ -1,0 +1,8 @@
+{
+  "archive_bytes": 1411596001,
+  "archive_files": 20099,
+  "archive_sha256": "95f195b3dbb040ade51b8fbba5231b07e6debbc07498470208284766bde4142d",
+  "preprocessing": "Supplied download_dataset.py compositor, on independent local files",
+  "source": "https://www.kaggle.com/api/v1/datasets/download/bhawks/pokemon-generation-one-22k",
+  "transparency_composited_count": 1476
+}

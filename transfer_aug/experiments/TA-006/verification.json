@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "checks": {
+    "ema_initial_exact": true,
+    "tensor_shapes": true,
+    "mapping_domain_head": true,
+    "encoder_domain_head": true,
+    "discriminator_domain_head": true,
+    "latent_sensitivity": true,
+    "reference_style_sensitivity": true,
+    "diversity_second_branch_detached": true,
+    "first_style_branch_gradient": true,
+    "ema_formula": true,
+    "optimizer_participation_D_latent": true,
+    "optimizer_participation_D_reference": true,
+    "optimizer_participation_G_latent": true,
+    "optimizer_participation_G_reference": true,
+    "all_four_phase_losses_finite": true,
+    "r1_finite": true,
+    "exact_next_step_model_ema": true,
+    "exact_next_step_losses": true,
+    "exact_sampler_recovery": true,
+    "exact_rng_recovery": true,
+    "upstream_ast_exact_model.py": true,
+    "upstream_ast_exact_losses.py": true
+  },
+  "counts": {
+    "generator": 32634883,
+    "mapping_network": 2438272,
+    "style_encoder": 20327808,
+    "discriminator": 20263170,
+    "generator_ema": 32634883,
+    "mapping_network_ema": 2438272,
+    "style_encoder_ema": 20327808
+  },
+  "total_parameters": 131065096,
+  "trainable_parameters": 75664133,
+  "outside_normal_100M_limit": true,
+  "optimizer_phase_evidence": [
+    {
+      "phase": "D_latent",
+      "steps": {
+        "generator": 0,
+        "mapping_network": 0,
+        "style_encoder": 0,
+        "discriminator": 1
+      }
+    },
+    {
+      "phase": "D_reference",
+      "steps": {
+        "generator": 0,
+        "mapping_network": 0,
+        "style_encoder": 0,
+        "discriminator": 2
+      }
+    },
+    {
+      "phase": "G_latent",
+      "steps": {
+        "generator": 1,
+        "mapping_network": 1,
+        "style_encoder": 1,
+        "discriminator": 2
+      }
+    },
+    {
+      "phase": "G_reference",
+      "steps": {
+        "generator": 2,
+        "mapping_network": 1,
+        "style_encoder": 1,
+        "discriminator": 2
+      }
+    }
+  ],
+  "cpu_seconds": 71.78932224400342,
+  "gpu_seconds": 0,
+  "cpu_batch_size": 1,
+  "synthetic_complete_iterations": 3,
+  "losses": {
+    "lambda_ds": 2.0,
+    "D_latent/real": 0.5527854561805725,
+    "D_latent/fake": 0.642891526222229,
+    "D_latent/reg": 0.005051848012953997,
+    "D_reference/real": 0.005208861082792282,
+    "D_reference/fake": 5.7220458984375e-06,
+    "D_reference/reg": 0.006429946981370449,
+    "G_latent/adv": 15.391129493713379,
+    "G_latent/sty": 1.5927352905273438,
+    "G_latent/ds": 0.7421369552612305,
+    "G_latent/cyc": 1.0851235389709473,
+    "G_reference/adv": 8.86050796508789,
+    "G_reference/sty": 0.6222240328788757,
+    "G_reference/ds": 0.223347470164299,
+    "G_reference/cyc": 1.111179232597351
+  },
+  "recovery_digests": [
+    "d6f80c1817ba8e71eb8e0507ede5b719ef10150377484845493235b8cb815ae0",
+    "d6f80c1817ba8e71eb8e0507ede5b719ef10150377484845493235b8cb815ae0"
+  ]
+}

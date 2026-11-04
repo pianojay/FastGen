@@ -1,0 +1,1221 @@
+{
+  "a1": 14059,
+  "categories": 151,
+  "excluded": 1072,
+  "per_class": {
+    "Abra": {
+      "D0_holdout": 2,
+      "D0_optimize": 20,
+      "D1_holdout": 2,
+      "D1_optimize": 20,
+      "middle": 23,
+      "unique": 67
+    },
+    "Aerodactyl": {
+      "D0_holdout": 2,
+      "D0_optimize": 20,
+      "D1_holdout": 2,
+      "D1_optimize": 20,
+      "middle": 23,
+      "unique": 67
+    },
+    "Alakazam": {
+      "D0_holdout": 2,
+      "D0_optimize": 31,
+      "D1_holdout": 2,
+      "D1_optimize": 31,
+      "middle": 34,
+      "unique": 100
+    },
+    "Arbok": {
+      "D0_holdout": 2,
+      "D0_optimize": 29,
+      "D1_holdout": 2,
+      "D1_optimize": 29,
+      "middle": 32,
+      "unique": 94
+    },
+    "Arcanine": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 25,
+      "unique": 75
+    },
+    "Articuno": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 27,
+      "unique": 81
+    },
+    "Beedrill": {
+      "D0_holdout": 2,
+      "D0_optimize": 10,
+      "D1_holdout": 2,
+      "D1_optimize": 10,
+      "middle": 14,
+      "unique": 38
+    },
+    "Bellsprout": {
+      "D0_holdout": 2,
+      "D0_optimize": 20,
+      "D1_holdout": 2,
+      "D1_optimize": 20,
+      "middle": 23,
+      "unique": 67
+    },
+    "Blastoise": {
+      "D0_holdout": 2,
+      "D0_optimize": 17,
+      "D1_holdout": 2,
+      "D1_optimize": 17,
+      "middle": 20,
+      "unique": 58
+    },
+    "Bulbasaur": {
+      "D0_holdout": 2,
+      "D0_optimize": 17,
+      "D1_holdout": 2,
+      "D1_optimize": 17,
+      "middle": 21,
+      "unique": 59
+    },
+    "Butterfree": {
+      "D0_holdout": 2,
+      "D0_optimize": 21,
+      "D1_holdout": 2,
+      "D1_optimize": 21,
+      "middle": 23,
+      "unique": 69
+    },
+    "Caterpie": {
+      "D0_holdout": 2,
+      "D0_optimize": 20,
+      "D1_holdout": 2,
+      "D1_optimize": 20,
+      "middle": 22,
+      "unique": 66
+    },
+    "Chansey": {
+      "D0_holdout": 2,
+      "D0_optimize": 27,
+      "D1_holdout": 2,
+      "D1_optimize": 27,
+      "middle": 31,
+      "unique": 89
+    },
+    "Charizard": {
+      "D0_holdout": 2,
+      "D0_optimize": 27,
+      "D1_holdout": 2,
+      "D1_optimize": 27,
+      "middle": 31,
+      "unique": 89
+    },
+    "Charmander": {
+      "D0_holdout": 2,
+      "D0_optimize": 40,
+      "D1_holdout": 2,
+      "D1_optimize": 40,
+      "middle": 44,
+      "unique": 128
+    },
+    "Charmeleon": {
+      "D0_holdout": 2,
+      "D0_optimize": 13,
+      "D1_holdout": 2,
+      "D1_optimize": 13,
+      "middle": 17,
+      "unique": 47
+    },
+    "Clefable": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 27,
+      "unique": 81
+    },
+    "Clefairy": {
+      "D0_holdout": 2,
+      "D0_optimize": 19,
+      "D1_holdout": 2,
+      "D1_optimize": 19,
+      "middle": 21,
+      "unique": 63
+    },
+    "Cloyster": {
+      "D0_holdout": 2,
+      "D0_optimize": 22,
+      "D1_holdout": 2,
+      "D1_optimize": 22,
+      "middle": 25,
+      "unique": 73
+    },
+    "Cubone": {
+      "D0_holdout": 2,
+      "D0_optimize": 24,
+      "D1_holdout": 2,
+      "D1_optimize": 24,
+      "middle": 27,
+      "unique": 79
+    },
+    "Dewgong": {
+      "D0_holdout": 2,
+      "D0_optimize": 20,
+      "D1_holdout": 2,
+      "D1_optimize": 20,
+      "middle": 24,
+      "unique": 68
+    },
+    "Diglett": {
+      "D0_holdout": 2,
+      "D0_optimize": 28,
+      "D1_holdout": 2,
+      "D1_optimize": 28,
+      "middle": 30,
+      "unique": 90
+    },
+    "Ditto": {
+      "D0_holdout": 2,
+      "D0_optimize": 18,
+      "D1_holdout": 2,
+      "D1_optimize": 18,
+      "middle": 20,
+      "unique": 60
+    },
+    "Dodrio": {
+      "D0_holdout": 2,
+      "D0_optimize": 19,
+      "D1_holdout": 2,
+      "D1_optimize": 19,
+      "middle": 23,
+      "unique": 65
+    },
+    "Doduo": {
+      "D0_holdout": 2,
+      "D0_optimize": 24,
+      "D1_holdout": 2,
+      "D1_optimize": 24,
+      "middle": 28,
+      "unique": 80
+    },
+    "Dragonair": {
+      "D0_holdout": 2,
+      "D0_optimize": 27,
+      "D1_holdout": 2,
+      "D1_optimize": 27,
+      "middle": 30,
+      "unique": 88
+    },
+    "Dragonite": {
+      "D0_holdout": 2,
+      "D0_optimize": 29,
+      "D1_holdout": 2,
+      "D1_optimize": 29,
+      "middle": 32,
+      "unique": 94
+    },
+    "Dratini": {
+      "D0_holdout": 2,
+      "D0_optimize": 18,
+      "D1_holdout": 2,
+      "D1_optimize": 18,
+      "middle": 20,
+      "unique": 60
+    },
+    "Drowzee": {
+      "D0_holdout": 2,
+      "D0_optimize": 19,
+      "D1_holdout": 2,
+      "D1_optimize": 19,
+      "middle": 22,
+      "unique": 64
+    },
+    "Dugtrio": {
+      "D0_holdout": 2,
+      "D0_optimize": 26,
+      "D1_holdout": 2,
+      "D1_optimize": 26,
+      "middle": 30,
+      "unique": 86
+    },
+    "Eevee": {
+      "D0_holdout": 2,
+      "D0_optimize": 35,
+      "D1_holdout": 2,
+      "D1_optimize": 35,
+      "middle": 39,
+      "unique": 113
+    },
+    "Ekans": {
+      "D0_holdout": 2,
+      "D0_optimize": 12,
+      "D1_holdout": 2,
+      "D1_optimize": 12,
+      "middle": 16,
+      "unique": 44
+    },
+    "Electabuzz": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 25,
+      "unique": 75
+    },
+    "Electrode": {
+      "D0_holdout": 2,
+      "D0_optimize": 29,
+      "D1_holdout": 2,
+      "D1_optimize": 29,
+      "middle": 32,
+      "unique": 94
+    },
+    "Exeggcute": {
+      "D0_holdout": 2,
+      "D0_optimize": 20,
+      "D1_holdout": 2,
+      "D1_optimize": 20,
+      "middle": 22,
+      "unique": 66
+    },
+    "Exeggutor": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 27,
+      "unique": 77
+    },
+    "Farfetchd": {
+      "D0_holdout": 2,
+      "D0_optimize": 27,
+      "D1_holdout": 2,
+      "D1_optimize": 27,
+      "middle": 31,
+      "unique": 89
+    },
+    "Fearow": {
+      "D0_holdout": 2,
+      "D0_optimize": 27,
+      "D1_holdout": 2,
+      "D1_optimize": 27,
+      "middle": 30,
+      "unique": 88
+    },
+    "Flareon": {
+      "D0_holdout": 2,
+      "D0_optimize": 32,
+      "D1_holdout": 2,
+      "D1_optimize": 32,
+      "middle": 34,
+      "unique": 102
+    },
+    "Gastly": {
+      "D0_holdout": 2,
+      "D0_optimize": 33,
+      "D1_holdout": 2,
+      "D1_optimize": 33,
+      "middle": 37,
+      "unique": 107
+    },
+    "Gengar": {
+      "D0_holdout": 2,
+      "D0_optimize": 43,
+      "D1_holdout": 2,
+      "D1_optimize": 43,
+      "middle": 47,
+      "unique": 137
+    },
+    "Geodude": {
+      "D0_holdout": 2,
+      "D0_optimize": 26,
+      "D1_holdout": 2,
+      "D1_optimize": 26,
+      "middle": 29,
+      "unique": 85
+    },
+    "Gloom": {
+      "D0_holdout": 2,
+      "D0_optimize": 34,
+      "D1_holdout": 2,
+      "D1_optimize": 34,
+      "middle": 37,
+      "unique": 109
+    },
+    "Golbat": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 33,
+      "unique": 97
+    },
+    "Goldeen": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 34,
+      "unique": 98
+    },
+    "Golduck": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 27,
+      "unique": 81
+    },
+    "Golem": {
+      "D0_holdout": 2,
+      "D0_optimize": 29,
+      "D1_holdout": 2,
+      "D1_optimize": 29,
+      "middle": 32,
+      "unique": 94
+    },
+    "Graveler": {
+      "D0_holdout": 2,
+      "D0_optimize": 21,
+      "D1_holdout": 2,
+      "D1_optimize": 21,
+      "middle": 24,
+      "unique": 70
+    },
+    "Grimer": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 33,
+      "unique": 97
+    },
+    "Growlithe": {
+      "D0_holdout": 2,
+      "D0_optimize": 38,
+      "D1_holdout": 2,
+      "D1_optimize": 38,
+      "middle": 40,
+      "unique": 120
+    },
+    "Gyarados": {
+      "D0_holdout": 2,
+      "D0_optimize": 43,
+      "D1_holdout": 2,
+      "D1_optimize": 43,
+      "middle": 46,
+      "unique": 136
+    },
+    "Haunter": {
+      "D0_holdout": 2,
+      "D0_optimize": 24,
+      "D1_holdout": 2,
+      "D1_optimize": 24,
+      "middle": 26,
+      "unique": 78
+    },
+    "Hitmonchan": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 26,
+      "unique": 76
+    },
+    "Hitmonlee": {
+      "D0_holdout": 2,
+      "D0_optimize": 24,
+      "D1_holdout": 2,
+      "D1_optimize": 24,
+      "middle": 28,
+      "unique": 80
+    },
+    "Horsea": {
+      "D0_holdout": 2,
+      "D0_optimize": 27,
+      "D1_holdout": 2,
+      "D1_optimize": 27,
+      "middle": 29,
+      "unique": 87
+    },
+    "Hypno": {
+      "D0_holdout": 2,
+      "D0_optimize": 26,
+      "D1_holdout": 2,
+      "D1_optimize": 26,
+      "middle": 30,
+      "unique": 86
+    },
+    "Ivysaur": {
+      "D0_holdout": 2,
+      "D0_optimize": 29,
+      "D1_holdout": 2,
+      "D1_optimize": 29,
+      "middle": 32,
+      "unique": 94
+    },
+    "Jigglypuff": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 27,
+      "unique": 81
+    },
+    "Jolteon": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 33,
+      "unique": 97
+    },
+    "Jynx": {
+      "D0_holdout": 2,
+      "D0_optimize": 32,
+      "D1_holdout": 2,
+      "D1_optimize": 32,
+      "middle": 34,
+      "unique": 102
+    },
+    "Kabuto": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 28,
+      "unique": 82
+    },
+    "Kabutops": {
+      "D0_holdout": 2,
+      "D0_optimize": 21,
+      "D1_holdout": 2,
+      "D1_optimize": 21,
+      "middle": 25,
+      "unique": 71
+    },
+    "Kadabra": {
+      "D0_holdout": 2,
+      "D0_optimize": 36,
+      "D1_holdout": 2,
+      "D1_optimize": 36,
+      "middle": 40,
+      "unique": 116
+    },
+    "Kakuna": {
+      "D0_holdout": 2,
+      "D0_optimize": 20,
+      "D1_holdout": 2,
+      "D1_optimize": 20,
+      "middle": 22,
+      "unique": 66
+    },
+    "Kangaskhan": {
+      "D0_holdout": 2,
+      "D0_optimize": 24,
+      "D1_holdout": 2,
+      "D1_optimize": 24,
+      "middle": 28,
+      "unique": 80
+    },
+    "Kingler": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 26,
+      "unique": 76
+    },
+    "Koffing": {
+      "D0_holdout": 2,
+      "D0_optimize": 24,
+      "D1_holdout": 2,
+      "D1_optimize": 24,
+      "middle": 28,
+      "unique": 80
+    },
+    "Krabby": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 33,
+      "unique": 97
+    },
+    "Lapras": {
+      "D0_holdout": 2,
+      "D0_optimize": 32,
+      "D1_holdout": 2,
+      "D1_optimize": 32,
+      "middle": 36,
+      "unique": 104
+    },
+    "Lickitung": {
+      "D0_holdout": 2,
+      "D0_optimize": 29,
+      "D1_holdout": 2,
+      "D1_optimize": 29,
+      "middle": 31,
+      "unique": 93
+    },
+    "Machamp": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 26,
+      "unique": 76
+    },
+    "Machoke": {
+      "D0_holdout": 2,
+      "D0_optimize": 21,
+      "D1_holdout": 2,
+      "D1_optimize": 21,
+      "middle": 25,
+      "unique": 71
+    },
+    "Machop": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 26,
+      "unique": 76
+    },
+    "Magikarp": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 29,
+      "unique": 83
+    },
+    "Magmar": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 25,
+      "unique": 75
+    },
+    "Magnemite": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 27,
+      "unique": 77
+    },
+    "Magneton": {
+      "D0_holdout": 2,
+      "D0_optimize": 18,
+      "D1_holdout": 2,
+      "D1_optimize": 18,
+      "middle": 22,
+      "unique": 62
+    },
+    "Mankey": {
+      "D0_holdout": 2,
+      "D0_optimize": 39,
+      "D1_holdout": 2,
+      "D1_optimize": 39,
+      "middle": 41,
+      "unique": 123
+    },
+    "Marowak": {
+      "D0_holdout": 2,
+      "D0_optimize": 18,
+      "D1_holdout": 2,
+      "D1_optimize": 18,
+      "middle": 21,
+      "unique": 61
+    },
+    "Meowth": {
+      "D0_holdout": 2,
+      "D0_optimize": 26,
+      "D1_holdout": 2,
+      "D1_optimize": 26,
+      "middle": 29,
+      "unique": 85
+    },
+    "Metapod": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 33,
+      "unique": 97
+    },
+    "Mew": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 33,
+      "unique": 97
+    },
+    "Mewtwo": {
+      "D0_holdout": 2,
+      "D0_optimize": 39,
+      "D1_holdout": 2,
+      "D1_optimize": 39,
+      "middle": 43,
+      "unique": 125
+    },
+    "Moltres": {
+      "D0_holdout": 2,
+      "D0_optimize": 28,
+      "D1_holdout": 2,
+      "D1_optimize": 28,
+      "middle": 31,
+      "unique": 91
+    },
+    "MrMime": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 27,
+      "unique": 81
+    },
+    "Muk": {
+      "D0_holdout": 2,
+      "D0_optimize": 32,
+      "D1_holdout": 2,
+      "D1_optimize": 32,
+      "middle": 36,
+      "unique": 104
+    },
+    "Nidoking": {
+      "D0_holdout": 2,
+      "D0_optimize": 38,
+      "D1_holdout": 2,
+      "D1_optimize": 38,
+      "middle": 40,
+      "unique": 120
+    },
+    "Nidoqueen": {
+      "D0_holdout": 2,
+      "D0_optimize": 33,
+      "D1_holdout": 2,
+      "D1_optimize": 33,
+      "middle": 36,
+      "unique": 106
+    },
+    "Nidoran-f": {
+      "D0_holdout": 2,
+      "D0_optimize": 6,
+      "D1_holdout": 2,
+      "D1_optimize": 6,
+      "middle": 10,
+      "unique": 26
+    },
+    "Nidoran-m": {
+      "D0_holdout": 2,
+      "D0_optimize": 12,
+      "D1_holdout": 2,
+      "D1_optimize": 12,
+      "middle": 16,
+      "unique": 44
+    },
+    "Nidorina": {
+      "D0_holdout": 2,
+      "D0_optimize": 27,
+      "D1_holdout": 2,
+      "D1_optimize": 27,
+      "middle": 29,
+      "unique": 87
+    },
+    "Nidorino": {
+      "D0_holdout": 2,
+      "D0_optimize": 35,
+      "D1_holdout": 2,
+      "D1_optimize": 35,
+      "middle": 37,
+      "unique": 111
+    },
+    "Ninetales": {
+      "D0_holdout": 2,
+      "D0_optimize": 22,
+      "D1_holdout": 2,
+      "D1_optimize": 22,
+      "middle": 25,
+      "unique": 73
+    },
+    "Oddish": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 25,
+      "unique": 75
+    },
+    "Omanyte": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 27,
+      "unique": 77
+    },
+    "Omastar": {
+      "D0_holdout": 2,
+      "D0_optimize": 22,
+      "D1_holdout": 2,
+      "D1_optimize": 22,
+      "middle": 24,
+      "unique": 72
+    },
+    "Onix": {
+      "D0_holdout": 2,
+      "D0_optimize": 20,
+      "D1_holdout": 2,
+      "D1_optimize": 20,
+      "middle": 22,
+      "unique": 66
+    },
+    "Paras": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 33,
+      "unique": 97
+    },
+    "Parasect": {
+      "D0_holdout": 2,
+      "D0_optimize": 21,
+      "D1_holdout": 2,
+      "D1_optimize": 21,
+      "middle": 23,
+      "unique": 69
+    },
+    "Persian": {
+      "D0_holdout": 2,
+      "D0_optimize": 20,
+      "D1_holdout": 2,
+      "D1_optimize": 20,
+      "middle": 23,
+      "unique": 67
+    },
+    "Pidgeot": {
+      "D0_holdout": 2,
+      "D0_optimize": 36,
+      "D1_holdout": 2,
+      "D1_optimize": 36,
+      "middle": 39,
+      "unique": 115
+    },
+    "Pidgeotto": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 29,
+      "unique": 83
+    },
+    "Pidgey": {
+      "D0_holdout": 2,
+      "D0_optimize": 28,
+      "D1_holdout": 2,
+      "D1_optimize": 28,
+      "middle": 31,
+      "unique": 91
+    },
+    "Pikachu": {
+      "D0_holdout": 2,
+      "D0_optimize": 49,
+      "D1_holdout": 2,
+      "D1_optimize": 49,
+      "middle": 52,
+      "unique": 154
+    },
+    "Pinsir": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 27,
+      "unique": 77
+    },
+    "Poliwag": {
+      "D0_holdout": 2,
+      "D0_optimize": 37,
+      "D1_holdout": 2,
+      "D1_optimize": 37,
+      "middle": 41,
+      "unique": 119
+    },
+    "Poliwhirl": {
+      "D0_holdout": 2,
+      "D0_optimize": 36,
+      "D1_holdout": 2,
+      "D1_optimize": 36,
+      "middle": 40,
+      "unique": 116
+    },
+    "Poliwrath": {
+      "D0_holdout": 2,
+      "D0_optimize": 28,
+      "D1_holdout": 2,
+      "D1_optimize": 28,
+      "middle": 31,
+      "unique": 91
+    },
+    "Ponyta": {
+      "D0_holdout": 2,
+      "D0_optimize": 33,
+      "D1_holdout": 2,
+      "D1_optimize": 33,
+      "middle": 35,
+      "unique": 105
+    },
+    "Porygon": {
+      "D0_holdout": 2,
+      "D0_optimize": 22,
+      "D1_holdout": 2,
+      "D1_optimize": 22,
+      "middle": 24,
+      "unique": 72
+    },
+    "Primeape": {
+      "D0_holdout": 2,
+      "D0_optimize": 37,
+      "D1_holdout": 2,
+      "D1_optimize": 37,
+      "middle": 41,
+      "unique": 119
+    },
+    "Psyduck": {
+      "D0_holdout": 2,
+      "D0_optimize": 38,
+      "D1_holdout": 2,
+      "D1_optimize": 38,
+      "middle": 42,
+      "unique": 122
+    },
+    "Raichu": {
+      "D0_holdout": 2,
+      "D0_optimize": 31,
+      "D1_holdout": 2,
+      "D1_optimize": 31,
+      "middle": 33,
+      "unique": 99
+    },
+    "Rapidash": {
+      "D0_holdout": 2,
+      "D0_optimize": 34,
+      "D1_holdout": 2,
+      "D1_optimize": 34,
+      "middle": 38,
+      "unique": 110
+    },
+    "Raticate": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 26,
+      "unique": 76
+    },
+    "Rattata": {
+      "D0_holdout": 2,
+      "D0_optimize": 14,
+      "D1_holdout": 2,
+      "D1_optimize": 14,
+      "middle": 18,
+      "unique": 50
+    },
+    "Rhydon": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 29,
+      "unique": 83
+    },
+    "Rhyhorn": {
+      "D0_holdout": 2,
+      "D0_optimize": 21,
+      "D1_holdout": 2,
+      "D1_optimize": 21,
+      "middle": 23,
+      "unique": 69
+    },
+    "Sandshrew": {
+      "D0_holdout": 2,
+      "D0_optimize": 21,
+      "D1_holdout": 2,
+      "D1_optimize": 21,
+      "middle": 24,
+      "unique": 70
+    },
+    "Sandslash": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 32,
+      "unique": 96
+    },
+    "Scyther": {
+      "D0_holdout": 2,
+      "D0_optimize": 32,
+      "D1_holdout": 2,
+      "D1_optimize": 32,
+      "middle": 34,
+      "unique": 102
+    },
+    "Seadra": {
+      "D0_holdout": 2,
+      "D0_optimize": 22,
+      "D1_holdout": 2,
+      "D1_optimize": 22,
+      "middle": 26,
+      "unique": 74
+    },
+    "Seaking": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 27,
+      "unique": 77
+    },
+    "Seel": {
+      "D0_holdout": 2,
+      "D0_optimize": 29,
+      "D1_holdout": 2,
+      "D1_optimize": 29,
+      "middle": 31,
+      "unique": 93
+    },
+    "Shellder": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 32,
+      "unique": 96
+    },
+    "Slowbro": {
+      "D0_holdout": 2,
+      "D0_optimize": 27,
+      "D1_holdout": 2,
+      "D1_optimize": 27,
+      "middle": 29,
+      "unique": 87
+    },
+    "Slowpoke": {
+      "D0_holdout": 2,
+      "D0_optimize": 22,
+      "D1_holdout": 2,
+      "D1_optimize": 22,
+      "middle": 24,
+      "unique": 72
+    },
+    "Snorlax": {
+      "D0_holdout": 2,
+      "D0_optimize": 31,
+      "D1_holdout": 2,
+      "D1_optimize": 31,
+      "middle": 33,
+      "unique": 99
+    },
+    "Spearow": {
+      "D0_holdout": 2,
+      "D0_optimize": 22,
+      "D1_holdout": 2,
+      "D1_optimize": 22,
+      "middle": 25,
+      "unique": 73
+    },
+    "Squirtle": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 26,
+      "unique": 76
+    },
+    "Starmie": {
+      "D0_holdout": 2,
+      "D0_optimize": 22,
+      "D1_holdout": 2,
+      "D1_optimize": 22,
+      "middle": 26,
+      "unique": 74
+    },
+    "Staryu": {
+      "D0_holdout": 2,
+      "D0_optimize": 23,
+      "D1_holdout": 2,
+      "D1_optimize": 23,
+      "middle": 25,
+      "unique": 75
+    },
+    "Tangela": {
+      "D0_holdout": 2,
+      "D0_optimize": 29,
+      "D1_holdout": 2,
+      "D1_optimize": 29,
+      "middle": 33,
+      "unique": 95
+    },
+    "Tauros": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 27,
+      "unique": 81
+    },
+    "Tentacool": {
+      "D0_holdout": 2,
+      "D0_optimize": 29,
+      "D1_holdout": 2,
+      "D1_optimize": 29,
+      "middle": 33,
+      "unique": 95
+    },
+    "Tentacruel": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 27,
+      "unique": 81
+    },
+    "Vaporeon": {
+      "D0_holdout": 2,
+      "D0_optimize": 40,
+      "D1_holdout": 2,
+      "D1_optimize": 40,
+      "middle": 43,
+      "unique": 127
+    },
+    "Venomoth": {
+      "D0_holdout": 2,
+      "D0_optimize": 22,
+      "D1_holdout": 2,
+      "D1_optimize": 22,
+      "middle": 26,
+      "unique": 74
+    },
+    "Venonat": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 34,
+      "unique": 98
+    },
+    "Venusaur": {
+      "D0_holdout": 2,
+      "D0_optimize": 24,
+      "D1_holdout": 2,
+      "D1_optimize": 24,
+      "middle": 27,
+      "unique": 79
+    },
+    "Victreebel": {
+      "D0_holdout": 2,
+      "D0_optimize": 33,
+      "D1_holdout": 2,
+      "D1_optimize": 33,
+      "middle": 36,
+      "unique": 106
+    },
+    "Vileplume": {
+      "D0_holdout": 2,
+      "D0_optimize": 29,
+      "D1_holdout": 2,
+      "D1_optimize": 29,
+      "middle": 31,
+      "unique": 93
+    },
+    "Voltorb": {
+      "D0_holdout": 2,
+      "D0_optimize": 36,
+      "D1_holdout": 2,
+      "D1_optimize": 36,
+      "middle": 40,
+      "unique": 116
+    },
+    "Vulpix": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 27,
+      "unique": 81
+    },
+    "Wartortle": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 33,
+      "unique": 97
+    },
+    "Weedle": {
+      "D0_holdout": 2,
+      "D0_optimize": 16,
+      "D1_holdout": 2,
+      "D1_optimize": 16,
+      "middle": 19,
+      "unique": 55
+    },
+    "Weepinbell": {
+      "D0_holdout": 2,
+      "D0_optimize": 28,
+      "D1_holdout": 2,
+      "D1_optimize": 28,
+      "middle": 31,
+      "unique": 91
+    },
+    "Weezing": {
+      "D0_holdout": 2,
+      "D0_optimize": 25,
+      "D1_holdout": 2,
+      "D1_optimize": 25,
+      "middle": 28,
+      "unique": 82
+    },
+    "Wigglytuff": {
+      "D0_holdout": 2,
+      "D0_optimize": 38,
+      "D1_holdout": 2,
+      "D1_optimize": 38,
+      "middle": 41,
+      "unique": 121
+    },
+    "Zapdos": {
+      "D0_holdout": 2,
+      "D0_optimize": 30,
+      "D1_holdout": 2,
+      "D1_optimize": 30,
+      "middle": 33,
+      "unique": 97
+    },
+    "Zubat": {
+      "D0_holdout": 2,
+      "D0_optimize": 17,
+      "D1_holdout": 2,
+      "D1_optimize": 17,
+      "middle": 21,
+      "unique": 59
+    }
+  },
+  "totals": {
+    "holdout": 604,
+    "optimize": 7950,
+    "unused": 4433
+  },
+  "unique": 12987
+}

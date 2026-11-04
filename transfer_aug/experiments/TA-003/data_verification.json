@@ -1,0 +1,25 @@
+{
+  "sampled_pairs_tested": 2048,
+  "all_pairs_optimization_only": true,
+  "same_class_unpaired_different_domain": true,
+  "classes_observed": 151,
+  "opposite_flip_decisions": 1025,
+  "counts": {
+    "D0_optimization": 3975,
+    "D0_diagnostic": 302,
+    "D1_optimization": 3975,
+    "D1_diagnostic": 302
+  },
+  "all_cached_pixel_hashes_verified": true,
+  "optimization_diagnostic_pixel_hash_overlap": 0,
+  "checkpoint1000": {
+    "update": 1000,
+    "sampler_draws": 16000,
+    "replay_counts": [
+      50,
+      50
+    ],
+    "all_adam_steps": 1000,
+    "contract_bound": true
+  }
+}

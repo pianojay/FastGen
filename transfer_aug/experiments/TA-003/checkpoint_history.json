@@ -1,0 +1,127 @@
+[
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "4e0ef8b4cf696faf97646d150230550afc051a1886574c06100093cd10e27c19",
+    "update": 1000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/1000.pt",
+    "sha256": "03cdc71fad2746313af08e9456896e9bb7246b6148cf9b3f228e0e5eb3afdcfb",
+    "update": 1000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "f9c5b287cc55ffd16245d7613e12f0fdd2c4ba578e843d40a003043318418487",
+    "update": 2000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "024590ae1f76944e8b1a126251d89e92b4dbd79408c4ba08d97173ba06ecc8be",
+    "update": 3000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "e420e12ce07adfe6787cc029d84a707e029068d9e5fae93567015649193eca77",
+    "update": 4000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "045310721df3f07dcab204d85ca9328fc28b4c0bf952c70fea8885969e5ad236",
+    "update": 5000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/5000.pt",
+    "sha256": "5e433a4842b4986bd20de8d64f201f0668597a599aaba2483b4352543def1076",
+    "update": 5000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "9997d4010cc2771d8f681d4c66592e2dc9f9d7296a7122f72ade4ae0e12b9cd7",
+    "update": 6000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "3a0c6af7f22535e92d9ec57618ff9802cb7871d5164e2b455711a8f8a5f90934",
+    "update": 7000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "b485f5cb06ee4c7b02c803792ae86511292fc8af00d0b7bc077e2fcf079e2bb7",
+    "update": 8000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "113db2b4c5fbe9f7910063481c5669d40d4ab1b42198a48ef6faea7cb51ed76e",
+    "update": 9000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "d507af88c76796d294f59b3de4ea7d8bf8da5d0463dc88283836a9fec79f451a",
+    "update": 10000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/10000.pt",
+    "sha256": "520cde24139b70fe671014bc4d65eb12686799a26a60c1087d1da630d45d973d",
+    "update": 10000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "127dae6be05d281797156a2b05299a1ff3f96b51fa35258b8ed06449241a5b5f",
+    "update": 11000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "02e013a39b8fbaa5332264e25e33e12fd6b7ab25a78c0ec228621be519ddf7f5",
+    "update": 12000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "2f69d0814fa6ddf7200f9ffe11b7a7c590db7add28c2370f781905360a6e2336",
+    "update": 13000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "50933966b84209aaf9cb78a85913d6e474de86f8a21873d58b632fd0970b3058",
+    "update": 14000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "2d5443c1c4040f73a480d2bbb9289165f4883d10434170c97c89ad7a0fc20a41",
+    "update": 15000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "f3fa0d6599bdbd21a2b31e270a466f6597173decb4b560ea2743dfa4e462b953",
+    "update": 16000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "4cdb6bc7457dc121b588d45676feefa6f31980bb49d58e6e60ec30c5f3d561de",
+    "update": 17000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "59c59c9e2a638d1ffd04f59d22d356ee5e0c9a9fcdbc3e1c5146a619998b1fe0",
+    "update": 18000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "b561471b60b5b9f24d1c26950694c4b789f8463a996a530e44621a57a22ab655",
+    "update": 19000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "c937122bc05f3421d8f1b4fd27b6914d2af7ccd3eb8061493cf9475bf345ea27",
+    "update": 20000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/latest.pt",
+    "sha256": "c937122bc05f3421d8f1b4fd27b6914d2af7ccd3eb8061493cf9475bf345ea27",
+    "update": 20000
+  },
+  {
+    "path": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-003/checkpoints/final.pt",
+    "sha256": "b05eeffdd8807f322722a8bd3374dc0cda1a7717390f3df12c30e7fec9a15e7d",
+    "update": 20000
+  }
+]

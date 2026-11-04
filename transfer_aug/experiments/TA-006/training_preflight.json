@@ -1,0 +1,27 @@
+{
+  "contract": "9eb5c9897b358f0d0c7ab24d724b292752038fa3124e0296856eb8d817ca4813",
+  "frozen": {
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round2/freeze.py": "d4c681f53fa067beca96e7f855c57a203f37a5f645942b6d4725457353e17c43",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round2/manifest.json": "a15a783934fb636acc7d141d3becdffea049f0082718c0a1e931bc094df18093",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round2/pixels_uint8.npy": "411c174959b83e2521e77ce3a3fa9e5b426c306a46361f8ba0804dd90de31a12",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round3/evaluation_manifest.json": "c341c5ace1b11337318aeaf9aef70dc2bb98b7216b1da0e2bc453f68e55f6efb",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round3/freeze_evaluation.py": "e6205db0dd718c424290045a3aa1135c94afc92f0b0b3f6b60c2fa87b1eadc98",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round3/munit_latent.npy": "4443df87e3b2da83744b32f5ba3e51508d23de4ebdf8befe81e55994a86181c3",
+    "/home/user/jw_soflow/exploration/transfer_aug/shared/round3/stargan_latent.npy": "f3d2c62aac494425bf3fe97ae1ecb39ff38571ca44d70f4dcffd656d8a5f5903"
+  },
+  "A1_only": true,
+  "all_pixels_verified": true,
+  "source_verified": true,
+  "implementation": {
+    "verify_setup.py": "60ea361189b4c9f5ea937856fac7dcb0b219814008c4023e9ee0bd78098a932b",
+    "stargan64.py": "f7702161057a02385425ebef3e572e0e1b8e7d22efc19b2282d9e5393d5ded4f",
+    "train.py": "a1c72bc0942551e9956138185ade8b83b55fd6f1e98a59ca3897e578dfe84a0f",
+    "losses.py": "051186b6f4c005896dd7f33ecc2656f144bdefa195055c9f9bb541fdb2ee4e49",
+    "munch.py": "4c4a4c5b4f21c100f640459366898b3479d1af3666a92996051aae6ca5e4da8e",
+    "upstream_utils.py": "021af24f386b8ab9f3d0bcaa520c8569b279967d95f4c4d2a1a450a20b339f62",
+    "model.py": "3e9d7c26d909fd74fba2bc79eacf86722f4d6c1d627c687307b23843d8766ec7",
+    "build_sources.py": "83b56c47f57b10aaf0544a587caf6ed051bfd1943bc2df82916896a4335fba36",
+    "finalize_setup.py": "a175157986782123777d86fe56dcfb22747742f5f8a823b714a84d9645bca6a0"
+  },
+  "timestamp": "2026-10-07T16:43:35.954381+00:00"
+}

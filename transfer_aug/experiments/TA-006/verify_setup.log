@@ -1,0 +1,24 @@
+{'generator': 32634883, 'mapping_network': 2438272, 'style_encoder': 20327808, 'discriminator': 20263170, 'generator_ema': 32634883, 'mapping_network_ema': 2438272, 'style_encoder_ema': 20327808}
+ema_initial_exact
+tensor_shapes
+mapping_domain_head
+encoder_domain_head
+discriminator_domain_head
+latent_sensitivity
+reference_style_sensitivity
+diversity_second_branch_detached
+first_style_branch_gradient
+ema_formula
+optimizer_participation_D_latent
+optimizer_participation_D_reference
+optimizer_participation_G_latent
+optimizer_participation_G_reference
+all_four_phase_losses_finite
+r1_finite
+exact_next_step_model_ema
+exact_next_step_losses
+exact_sampler_recovery
+exact_rng_recovery
+upstream_ast_exact_model.py
+upstream_ast_exact_losses.py
+DONE 71.78932224400342

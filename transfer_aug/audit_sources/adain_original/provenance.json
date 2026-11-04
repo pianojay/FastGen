@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/xunhuang1995/AdaIN-style",
+  "revision": "6d8ac287f35010faf8feece4047bfe86c8c007d0",
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/xunhuang1995/AdaIN-style/6d8ac287f35010faf8feece4047bfe86c8c007d0/README.md",
+      "status": 200,
+      "bytes": 8909,
+      "sha256": "3502580dbc2c1125b2aeaf5dffd85eae88ec494b7b2b61c4552d4ebfa466d18e"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/xunhuang1995/AdaIN-style/6d8ac287f35010faf8feece4047bfe86c8c007d0/LICENSE",
+      "status": 200,
+      "bytes": 1066,
+      "sha256": "cd76d2a07bb768a40d5ea792d53f3aa0cc3af4fa4fbeb71b76e61d7797456a13"
+    },
+    "train.lua": {
+      "url": "https://raw.githubusercontent.com/xunhuang1995/AdaIN-style/6d8ac287f35010faf8feece4047bfe86c8c007d0/train.lua",
+      "status": 200,
+      "bytes": 11740,
+      "sha256": "6481e188eed4aec85dc7da5ed8680f46d0d1979025816b99ce8c28603a6a239f"
+    },
+    "models/decoder.lua": {
+      "url": "https://raw.githubusercontent.com/xunhuang1995/AdaIN-style/6d8ac287f35010faf8feece4047bfe86c8c007d0/models/decoder.lua",
+      "status": 404
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# Cached upstream evidence; durable URLs and hashes live in source_manifest.json.
+audit_sources/
+.cache/
+# Reproducible numeric/image artifacts stay local; contracts, summaries and
+# compact verification records remain eligible for version control.
+shared/cohort_v1/*.npy
+shared/cohort_v1/source_stat_snapshot.json
+experiments/*/artifacts/
+experiments/*/outputs/
+experiments/*/raw/
+experiments/*/images/
+experiments/*/sheets/
+experiments/*/visualizations/
+experiments/*/png/
+experiments/**/*.npy
+experiments/**/*.png
+
+shared/round2/*.npy
+experiments/**/*.pt
+experiments/**/*.pth
+
+shared/round3/*.npy

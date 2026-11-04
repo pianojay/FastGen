@@ -1,0 +1,21 @@
+{
+  "outputs": 604,
+  "representative_sources": 64,
+  "tail_sources": 8,
+  "representative_sheets": 8,
+  "tail_sheets": 1,
+  "tail_representative_overlap": 1,
+  "tail_direction_counts": {
+    "D0_D1": 5,
+    "D1_D0": 3
+  },
+  "source_score_max_error": 1.7763568394002505e-15,
+  "diagnostic_only": true,
+  "optimization_diagnostic_pixel_overlap": 0,
+  "output_ranges_finite": true,
+  "cross_direction_quantized_duplicate_excess": 0,
+  "clipping_definition": "outside [-1,1] before display; quantized endpoints counted separately, not clipping",
+  "descriptor_space": "quantized display RGB uint8 using frozen analyze.py definitions; RGB RMS/cycle/identity measured on raw generated float mapped to [0,1]",
+  "projection": "frozen class-centered residual-RMS-scaled PC1; statistical appearance axis, not style or quality",
+  "elapsed_cpu_report_seconds": 18.46488904953003
+}

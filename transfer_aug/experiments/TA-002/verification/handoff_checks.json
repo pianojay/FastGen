@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "outputs": 15100,
+  "transformed": 14496,
+  "controls": 604,
+  "controls_raw_and_display_byte_exact": true,
+  "condition_rows": 25,
+  "representative_reviews": 384,
+  "tail_reviews": 8,
+  "sheets": 34,
+  "raw_shape_dtype_valid": true,
+  "review_coverage_valid": true,
+  "all_prior_checks_pass": true
+}

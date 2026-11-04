@@ -1,0 +1,22 @@
+Preprocessing verified: {'samples': 30, 'pixel_exact_to_official_export': True, 'tensor_exact_to_cleanfid_loader': True}
+Features 1024/20099 elapsed=11.1s
+Features 2048/20099 elapsed=17.5s
+Features 3072/20099 elapsed=22.6s
+Features 4096/20099 elapsed=28.4s
+Features 5120/20099 elapsed=33.6s
+Features 6144/20099 elapsed=38.9s
+Features 7168/20099 elapsed=44.5s
+Features 8192/20099 elapsed=50.2s
+Features 9216/20099 elapsed=55.9s
+Features 10240/20099 elapsed=60.8s
+Features 11264/20099 elapsed=65.8s
+Features 12288/20099 elapsed=71.5s
+Features 13312/20099 elapsed=77.0s
+Features 14336/20099 elapsed=82.7s
+Features 15360/20099 elapsed=89.1s
+Features 16384/20099 elapsed=94.6s
+Features 17408/20099 elapsed=100.3s
+Features 18432/20099 elapsed=104.3s
+Features 19456/20099 elapsed=108.9s
+Features 20099/20099 elapsed=111.6s
+Feature extraction complete

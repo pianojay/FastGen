@@ -1,0 +1,856 @@
+{
+  "color": {
+    "repository": "https://github.com/jrosebr1/color_transfer",
+    "revision": "6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/README.md",
+        "status": 200,
+        "bytes": 1521,
+        "sha256": "ee19a5a7157aa8ec158cf7d578a1ca191605579110236cc98d34a8928e384812"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/LICENSE",
+        "status": 404
+      },
+      "color_transfer/color_transfer.py": {
+        "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/color_transfer/color_transfer.py",
+        "status": 404
+      },
+      "LICENSE.txt": {
+        "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/LICENSE.txt",
+        "status": 200,
+        "sha256": "e650c745629806ea19bc9c97d79b245bce69380d87f751a33d5877fd19fd54fe",
+        "bytes": 1112
+      },
+      "color_transfer/__init__.py": {
+        "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/color_transfer/__init__.py",
+        "status": 200,
+        "sha256": "51ed90fd02e2bfd96790506621dea1ac883733e878b3f298a9a536815122a99a",
+        "bytes": 4775
+      },
+      "example.py": {
+        "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/example.py",
+        "status": 200,
+        "sha256": "39a79341322cc90150c21996ff53850d2ddb64973d40fee7bd4ff71ff5b9f399",
+        "bytes": 2081
+      },
+      "setup.py": {
+        "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/setup.py",
+        "status": 200,
+        "sha256": "28618a27ff9ea5c00630482c322caa46226d045f71d762f867e558ae1eb8c75f",
+        "bytes": 574
+      }
+    }
+  },
+  "adain_original": {
+    "repository": "https://github.com/xunhuang1995/AdaIN-style",
+    "revision": "6d8ac287f35010faf8feece4047bfe86c8c007d0",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/xunhuang1995/AdaIN-style/6d8ac287f35010faf8feece4047bfe86c8c007d0/README.md",
+        "status": 200,
+        "bytes": 8909,
+        "sha256": "3502580dbc2c1125b2aeaf5dffd85eae88ec494b7b2b61c4552d4ebfa466d18e"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/xunhuang1995/AdaIN-style/6d8ac287f35010faf8feece4047bfe86c8c007d0/LICENSE",
+        "status": 200,
+        "bytes": 1066,
+        "sha256": "cd76d2a07bb768a40d5ea792d53f3aa0cc3af4fa4fbeb71b76e61d7797456a13"
+      },
+      "train.lua": {
+        "url": "https://raw.githubusercontent.com/xunhuang1995/AdaIN-style/6d8ac287f35010faf8feece4047bfe86c8c007d0/train.lua",
+        "status": 200,
+        "bytes": 11740,
+        "sha256": "6481e188eed4aec85dc7da5ed8680f46d0d1979025816b99ce8c28603a6a239f"
+      },
+      "models/decoder.lua": {
+        "url": "https://raw.githubusercontent.com/xunhuang1995/AdaIN-style/6d8ac287f35010faf8feece4047bfe86c8c007d0/models/decoder.lua",
+        "status": 404
+      }
+    }
+  },
+  "mixstyle": {
+    "repository": "https://github.com/KaiyangZhou/mixstyle-release",
+    "revision": "16f7cf1fe2c7b1b3c660c72b32817ebb0545397a",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/README.md",
+        "status": 200,
+        "bytes": 7742,
+        "sha256": "4e1c47996e57c6b2a6198e21b0b97fa120280a972c4440012cb21d4f334a0654"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/LICENSE",
+        "status": 200,
+        "bytes": 1069,
+        "sha256": "9bde51e4e2576a3000837af592db45586f693a83893e8fa2f9b718534462cebe"
+      },
+      "mixstyle.py": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/mixstyle.py",
+        "status": 404
+      },
+      "imcls/README.md": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/README.md",
+        "status": 200,
+        "bytes": 2753,
+        "sha256": "ac0f8a3dfa6ee66b7a605efff293ed449091bf93973f1c17123c4bb0227ca04d"
+      },
+      "imcls/configs/datasets/msda_pacs.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/datasets/msda_pacs.yaml",
+        "status": 200,
+        "sha256": "5cd616c56a13b8d3cf31ed9381f9dbf4456120bc745123fc4b340619fd0275f8",
+        "bytes": 181
+      },
+      "imcls/configs/datasets/ssdg_officehome.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/datasets/ssdg_officehome.yaml",
+        "status": 200,
+        "sha256": "308d0ff0f5a7271b907025fd0eb3c2cbcda10cf6420e2f6083b572846589bc6b",
+        "bytes": 207
+      },
+      "imcls/configs/datasets/ssdg_pacs.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/datasets/ssdg_pacs.yaml",
+        "status": 200,
+        "sha256": "cbf3ae2ce1fc6c463c1c1902897d9399407454dfb437915bb1565aae5d033407",
+        "bytes": 200
+      },
+      "imcls/configs/trainers/mixstyle/office_home_dg_crossdomain.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/office_home_dg_crossdomain.yaml",
+        "status": 200,
+        "sha256": "9bf2ffa82c871e1df5e55089bf0dd93ab74cc027ef1964996f59a4b057780249",
+        "bytes": 259
+      },
+      "imcls/configs/trainers/mixstyle/office_home_dg_random.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/office_home_dg_random.yaml",
+        "status": 200,
+        "sha256": "80ceb82f8859583f1154a992a37799dac1c778f0504d07fa20ee27dba9db382f",
+        "bytes": 201
+      },
+      "imcls/configs/trainers/mixstyle/pacs_crossdomain.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/pacs_crossdomain.yaml",
+        "status": 200,
+        "sha256": "9bf2ffa82c871e1df5e55089bf0dd93ab74cc027ef1964996f59a4b057780249",
+        "bytes": 259
+      },
+      "imcls/configs/trainers/mixstyle/pacs_random.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/pacs_random.yaml",
+        "status": 200,
+        "sha256": "80ceb82f8859583f1154a992a37799dac1c778f0504d07fa20ee27dba9db382f",
+        "bytes": 201
+      },
+      "imcls/configs/trainers/mixstyle/ssdg_officehome.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/ssdg_officehome.yaml",
+        "status": 200,
+        "sha256": "2a5fd7284ad4696f6027e696827ef5d3f229d7055fbf3b3218c601f93e9b266b",
+        "bytes": 161
+      },
+      "imcls/configs/trainers/mixstyle/ssdg_pacs.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/mixstyle/ssdg_pacs.yaml",
+        "status": 200,
+        "sha256": "2a5fd7284ad4696f6027e696827ef5d3f229d7055fbf3b3218c601f93e9b266b",
+        "bytes": 161
+      },
+      "imcls/configs/trainers/semimixstyle/msda_pacs.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/semimixstyle/msda_pacs.yaml",
+        "status": 200,
+        "sha256": "30a52d87fbe87f9a0290a1c21fc469ab162e1c01c6c6b8ab07d66b1afe31fa72",
+        "bytes": 374
+      },
+      "imcls/configs/trainers/semimixstyle/ssdg_officehome.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/semimixstyle/ssdg_officehome.yaml",
+        "status": 200,
+        "sha256": "80ccbfd7b59928da2346ba88aae312d2f909105823da257609680087ff3ea759",
+        "bytes": 409
+      },
+      "imcls/configs/trainers/semimixstyle/ssdg_pacs.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/semimixstyle/ssdg_pacs.yaml",
+        "status": 200,
+        "sha256": "2b9c193e4eac3fa167bc2b9ec4e419cdf9942efa554ccbb888efbb73d8113747",
+        "bytes": 408
+      },
+      "imcls/configs/trainers/semimixstyle/visda17.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/configs/trainers/semimixstyle/visda17.yaml",
+        "status": 200,
+        "sha256": "dc505c35931690ecce8723338682016e53bc20505004584c66ab9c2702d88f9b",
+        "bytes": 500
+      },
+      "imcls/trainers/semimixstyle.py": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/imcls/trainers/semimixstyle.py",
+        "status": 200,
+        "sha256": "1db83cfda19242d45bc4d1a844db63bfa9df1d021e19114f8b5e965ce233138a",
+        "bytes": 4835
+      },
+      "reid/cfgs/cfg_osnet.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/reid/cfgs/cfg_osnet.yaml",
+        "status": 200,
+        "sha256": "9bb566e26d356a7f1ffc7a89c33a2aa6db7c1c1fbcd2fe28db01e7882f1644b3",
+        "bytes": 607
+      },
+      "reid/cfgs/cfg_osnet_domprior.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/reid/cfgs/cfg_osnet_domprior.yaml",
+        "status": 200,
+        "sha256": "0321e055bc15b260f3be87d72dadf98d5c5a28eeaa9675513dd6b7bbfd49e68c",
+        "bytes": 689
+      },
+      "reid/cfgs/cfg_r50.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/reid/cfgs/cfg_r50.yaml",
+        "status": 200,
+        "sha256": "3ae8337d15c9336ee0246c02f4c8680ad7632084e010e0b0e95c514849c46910",
+        "bytes": 621
+      },
+      "reid/cfgs/cfg_r50_domprior.yaml": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/reid/cfgs/cfg_r50_domprior.yaml",
+        "status": 200,
+        "sha256": "994fc5341bbe04d58c666bf22a68b804d8f6ee783d3c62ecf37c1b51bd6fdfb9",
+        "bytes": 703
+      },
+      "reid/models/mixstyle.py": {
+        "url": "https://raw.githubusercontent.com/KaiyangZhou/mixstyle-release/16f7cf1fe2c7b1b3c660c72b32817ebb0545397a/reid/models/mixstyle.py",
+        "status": 200,
+        "sha256": "908c25e605f047f460477cb72ccdeef66439646ef5a0b4cef9c0a46df54107ef",
+        "bytes": 3127
+      }
+    }
+  },
+  "fda": {
+    "repository": "https://github.com/YanchaoYang/FDA",
+    "revision": "b9a0cdf0bcc9b787c00e39df73eda5673706f219",
+    "license": null,
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/YanchaoYang/FDA/b9a0cdf0bcc9b787c00e39df73eda5673706f219/README.md",
+        "status": 200,
+        "bytes": 4174,
+        "sha256": "ed9273a1769d4c2b6b657444e1f51c9db919c7c6d328472cf94cf390afc0ddf2"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/YanchaoYang/FDA/b9a0cdf0bcc9b787c00e39df73eda5673706f219/LICENSE",
+        "status": 404
+      },
+      "utils/__init__.py": {
+        "url": "https://raw.githubusercontent.com/YanchaoYang/FDA/b9a0cdf0bcc9b787c00e39df73eda5673706f219/utils/__init__.py",
+        "status": 200,
+        "bytes": 3181,
+        "sha256": "165c60e0e96ed4b357550089b499086f562458248f3cec5796d5151f080b8b4d"
+      },
+      "FDA_demo.py": {
+        "url": "https://raw.githubusercontent.com/YanchaoYang/FDA/b9a0cdf0bcc9b787c00e39df73eda5673706f219/FDA_demo.py",
+        "status": 200,
+        "bytes": 682,
+        "sha256": "285ff684e8451c5440dc7bcb2652bb1a7cf8d2b74776a414fdb7aeca796441e8"
+      },
+      "train.py": {
+        "url": "https://raw.githubusercontent.com/YanchaoYang/FDA/b9a0cdf0bcc9b787c00e39df73eda5673706f219/train.py",
+        "status": 200,
+        "bytes": 5306,
+        "sha256": "a60bb6eab067c12375ef69a1ceacdf8d04b314916e5d9f957c0613531779dbbc"
+      }
+    }
+  },
+  "adain_pytorch": {
+    "repository": "https://github.com/naoto0804/pytorch-AdaIN",
+    "revision": "47950d0e6656a95a80a4b105c4c0f58d38ef785c",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/naoto0804/pytorch-AdaIN/47950d0e6656a95a80a4b105c4c0f58d38ef785c/README.md",
+        "status": 200,
+        "bytes": 2705,
+        "sha256": "8b363ae63547d6065909f0868f07092df25156a9122bc858d24c4522f2527eed"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/naoto0804/pytorch-AdaIN/47950d0e6656a95a80a4b105c4c0f58d38ef785c/LICENSE",
+        "status": 200,
+        "bytes": 1068,
+        "sha256": "cac60b351360e641823e739fa9701bc22dc0547d300d1c54c4a0c040fc6e6e2b"
+      },
+      "net.py": {
+        "url": "https://raw.githubusercontent.com/naoto0804/pytorch-AdaIN/47950d0e6656a95a80a4b105c4c0f58d38ef785c/net.py",
+        "status": 200,
+        "bytes": 5274,
+        "sha256": "2932117288166139afd648a4db790d717c211a10328c8dc9df3380b958a41c17"
+      },
+      "train.py": {
+        "url": "https://raw.githubusercontent.com/naoto0804/pytorch-AdaIN/47950d0e6656a95a80a4b105c4c0f58d38ef785c/train.py",
+        "status": 200,
+        "bytes": 4539,
+        "sha256": "b06d89f7d5919c63882c3c32a8b007edb9df6f3ed46a927adc527bb0d90a042e"
+      }
+    }
+  },
+  "cyclegan": {
+    "repository": "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix",
+    "revision": "2a7afba2895d52556dd5dfe07e8555ef657ced6f",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/junyanz/pytorch-CycleGAN-and-pix2pix/2a7afba2895d52556dd5dfe07e8555ef657ced6f/README.md",
+        "status": 200,
+        "bytes": 16743,
+        "sha256": "cac0247153ef3bbcaea17c1707d774a124359a98e9c9f1b4f2a8a7be4051fc7b"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/junyanz/pytorch-CycleGAN-and-pix2pix/2a7afba2895d52556dd5dfe07e8555ef657ced6f/LICENSE",
+        "status": 200,
+        "bytes": 3565,
+        "sha256": "5474d910fc756107f149fb5ea08e557364d1607acda4e79a03b8e8f7a6279593"
+      },
+      "models/networks.py": {
+        "url": "https://raw.githubusercontent.com/junyanz/pytorch-CycleGAN-and-pix2pix/2a7afba2895d52556dd5dfe07e8555ef657ced6f/models/networks.py",
+        "status": 200,
+        "bytes": 26800,
+        "sha256": "2bfcb7adb19f7b7ff6fd8dd76e313200acf000e96784b920658a62e1a11fc04f"
+      },
+      "models/cycle_gan_model.py": {
+        "url": "https://raw.githubusercontent.com/junyanz/pytorch-CycleGAN-and-pix2pix/2a7afba2895d52556dd5dfe07e8555ef657ced6f/models/cycle_gan_model.py",
+        "status": 200,
+        "bytes": 10381,
+        "sha256": "9d21fe213927a7965b57d3a0e29f2633f490ba8d8de57ab839975510a8cf08dd"
+      }
+    }
+  },
+  "wct": {
+    "repository": "https://github.com/Yijunmaverick/UniversalStyleTransfer",
+    "revision": "55f37178fd737d9b4989b1c609ad639afcfbb5c6",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/README.md",
+        "status": 200,
+        "bytes": 7565,
+        "sha256": "95e0f780deee3928de83aba46e8ae6494a240701e46ec7856e018f477ef000ec"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/LICENSE",
+        "status": 404
+      },
+      "models.py": {
+        "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/models.py",
+        "status": 404
+      },
+      "util.py": {
+        "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/util.py",
+        "status": 404
+      },
+      "WCT.py": {
+        "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/WCT.py",
+        "status": 404
+      },
+      "LICENSE.txt": {
+        "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/LICENSE.txt",
+        "status": 200,
+        "sha256": "fe507c0a99c3d0808cee9c7f185b61fb22be51c0c388c143a2d2496f736926ac",
+        "bytes": 1065
+      },
+      "test_adain.lua": {
+        "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/test_adain.lua",
+        "status": 200,
+        "sha256": "ae88de38c9ee432e5b43a669be2767f5f8ce1c91554b55c201b643a186cdc51e",
+        "bytes": 8797
+      },
+      "test_wct.lua": {
+        "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/test_wct.lua",
+        "status": 200,
+        "sha256": "c8372a857c6e58d215f4017f6fcb9dc4c0cb5ce0cacb31191485be02664510dc",
+        "bytes": 14304
+      },
+      "test_wct_interpolation2.lua": {
+        "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/test_wct_interpolation2.lua",
+        "status": 200,
+        "sha256": "d31953d8b45fad658c7351b08f78b7416bf60bcee3a739d52a5535d8b205f511",
+        "bytes": 9824
+      },
+      "test_wct_mask.lua": {
+        "url": "https://raw.githubusercontent.com/Yijunmaverick/UniversalStyleTransfer/55f37178fd737d9b4989b1c609ad639afcfbb5c6/test_wct_mask.lua",
+        "status": 200,
+        "sha256": "2b3d68660a4364837978d89f3438c7def7e47b2bf61f8af613cdeff6c8f5f410",
+        "bytes": 9770
+      }
+    }
+  },
+  "cut": {
+    "repository": "https://github.com/taesungp/contrastive-unpaired-translation",
+    "revision": "b3ac297708dfb6f7589d04662277e53c0d579c27",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/README.md",
+        "status": 200,
+        "bytes": 14076,
+        "sha256": "c64dc766229737f7c48b1f82fff5df330913082dd7f8e338baaf996af12e7247"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/LICENSE",
+        "status": 200,
+        "bytes": 11199,
+        "sha256": "4136d26774a0a0fdcf3f4c0e1140f19279565d41df764c64cc75c0283e6f5249"
+      },
+      "models/networks.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/models/networks.py",
+        "status": 200,
+        "bytes": 60639,
+        "sha256": "0fb3a0c27c66b9b4a1635cb4856afeb54d2828f6389a0bb33376f3a87c82cae7"
+      },
+      "models/cut_model.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/models/cut_model.py",
+        "status": 200,
+        "bytes": 10228,
+        "sha256": "04a4b5e410233c8845bfbf1e6e8097ffdd757ea769d63e78263e0cd74658f672"
+      },
+      "models/patchnce.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/models/patchnce.py",
+        "status": 200,
+        "bytes": 2319,
+        "sha256": "2bd50b34679786219a4d5c5858a3a277b0fd4467cc49b05d37a2041cb5f7f678"
+      },
+      "options/base_options.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/options/base_options.py",
+        "status": 200,
+        "sha256": "e778879da92aa30581bf3760f66a0ea09e71cfcebe226c931f1aa93b30d1b0a8",
+        "bytes": 9720
+      }
+    }
+  },
+  "diffaugment": {
+    "repository": "https://github.com/mit-han-lab/data-efficient-gans",
+    "revision": "0b6339510be1e3859d360cbf464d0a425514a6b4",
+    "license": {
+      "key": "bsd-2-clause",
+      "name": "BSD 2-Clause \"Simplified\" License",
+      "spdx_id": "BSD-2-Clause",
+      "url": "https://api.github.com/licenses/bsd-2-clause",
+      "node_id": "MDc6TGljZW5zZTQ="
+    },
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/mit-han-lab/data-efficient-gans/0b6339510be1e3859d360cbf464d0a425514a6b4/README.md",
+        "status": 200,
+        "bytes": 8415,
+        "sha256": "2a3969f9ca625e462888436283d603e0c89180eb84f72605ac992e38ea625b79"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/mit-han-lab/data-efficient-gans/0b6339510be1e3859d360cbf464d0a425514a6b4/LICENSE",
+        "status": 404
+      },
+      "DiffAugment_pytorch.py": {
+        "url": "https://raw.githubusercontent.com/mit-han-lab/data-efficient-gans/0b6339510be1e3859d360cbf464d0a425514a6b4/DiffAugment_pytorch.py",
+        "status": 200,
+        "bytes": 3038,
+        "sha256": "d61fed24900fea3be17e3cd10d8880f895905732fd53f1f9b3013673b36fa0e2"
+      },
+      "LICENSE.txt": {
+        "url": "https://raw.githubusercontent.com/mit-han-lab/data-efficient-gans/0b6339510be1e3859d360cbf464d0a425514a6b4/LICENSE.txt",
+        "status": 200,
+        "sha256": "c66f64661fc6123063af62f2e94f6949ab2fe2afb061cd2f25a11f0806f1b36d",
+        "bytes": 1366
+      }
+    }
+  },
+  "munit": {
+    "repository": "https://github.com/NVlabs/MUNIT",
+    "revision": "a82e222bc359892bd0f522d7a0f1573f3ec4a485",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/README.md",
+        "status": 200,
+        "bytes": 2153,
+        "sha256": "06ee9915067193ad069ef5ada4ff70b7e2cf2536cdf4097c2c5add506590e6e9"
+      },
+      "LICENSE.md": {
+        "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/LICENSE.md",
+        "status": 200,
+        "bytes": 19129,
+        "sha256": "051131b5ef3596dad9bf0cffee19c248ff9751596a86b25c70f0cd82d6f6d713"
+      },
+      "networks.py": {
+        "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/networks.py",
+        "status": 200,
+        "bytes": 23069,
+        "sha256": "bf8bf5dead288d663018ecd2fdfd0da28c85286c7c1cb3b78a837a5c6ecf68b6"
+      },
+      "trainer.py": {
+        "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/trainer.py",
+        "status": 200,
+        "bytes": 19914,
+        "sha256": "6cfee99a62749619f06edbb13da1fa382816a77097275ca7cb888798cebfba8c"
+      },
+      "configs/edges2handbags_folder.yaml": {
+        "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/configs/edges2handbags_folder.yaml",
+        "status": 200,
+        "bytes": 3169,
+        "sha256": "05b9749b9c89424e802b000090573552b3958f7909e643546eb4c198484c497c"
+      },
+      "configs/afhq.yaml": {
+        "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/configs/afhq.yaml",
+        "status": 404
+      }
+    }
+  },
+  "starganv2": {
+    "repository": "https://github.com/clovaai/stargan-v2",
+    "revision": "875b70a150609e8a678ed8482562e7074cdce7e5",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/clovaai/stargan-v2/875b70a150609e8a678ed8482562e7074cdce7e5/README.md",
+        "status": 200,
+        "bytes": 10638,
+        "sha256": "0d879703fd5c0c675c3d1f380fbe610332e93459ff4a0b8d009d6fc152b7e7ae"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/clovaai/stargan-v2/875b70a150609e8a678ed8482562e7074cdce7e5/LICENSE",
+        "status": 200,
+        "bytes": 19407,
+        "sha256": "c363be4fe1e1736782dd2fad3b49054726879271c956f0dd62d669bb734ee2a1"
+      },
+      "core/model.py": {
+        "url": "https://raw.githubusercontent.com/clovaai/stargan-v2/875b70a150609e8a678ed8482562e7074cdce7e5/core/model.py",
+        "status": 200,
+        "bytes": 10735,
+        "sha256": "5778fd921f71d693c9783616619beb6c48f19c13d74de80dcfefcaff208b4175"
+      },
+      "core/solver.py": {
+        "url": "https://raw.githubusercontent.com/clovaai/stargan-v2/875b70a150609e8a678ed8482562e7074cdce7e5/core/solver.py",
+        "status": 200,
+        "bytes": 11173,
+        "sha256": "5d9100491149aa22e29f91f91e036a06ca4d7bd0066cc275a085fcf8b2065fff"
+      },
+      "main.py": {
+        "url": "https://raw.githubusercontent.com/clovaai/stargan-v2/875b70a150609e8a678ed8482562e7074cdce7e5/main.py",
+        "status": 200,
+        "bytes": 8918,
+        "sha256": "443762939fbca2597a14143f02c61e4617ff4eeaf420ce8e9d2bb76e61ff74ad"
+      }
+    }
+  },
+  "gatys": {
+    "repository": "https://github.com/leongatys/PytorchNeuralStyleTransfer",
+    "revision": "be6c8e2b35568669a5a0ac10b66c912207ad355d",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "files": {
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/leongatys/PytorchNeuralStyleTransfer/be6c8e2b35568669a5a0ac10b66c912207ad355d/README.md",
+        "status": 200,
+        "bytes": 654,
+        "sha256": "6b28a9c112fa13b8bc01c2e840bb550b27904035d3981b4f8fbed2ba950febbf"
+      },
+      "LICENSE": {
+        "url": "https://raw.githubusercontent.com/leongatys/PytorchNeuralStyleTransfer/be6c8e2b35568669a5a0ac10b66c912207ad355d/LICENSE",
+        "status": 200,
+        "bytes": 1067,
+        "sha256": "fa28021b4c86f9bb0d94429f0ef68e586e46fdbba69721012738eaef1c99a9a3"
+      },
+      "NeuralStyleTransfer.ipynb": {
+        "url": "https://raw.githubusercontent.com/leongatys/PytorchNeuralStyleTransfer/be6c8e2b35568669a5a0ac10b66c912207ad355d/NeuralStyleTransfer.ipynb",
+        "status": 200,
+        "bytes": 2266822,
+        "sha256": "7d20c18c657c4a0a1fabd00b073c5e458038c3a03edbd8775862190e8cee42a7"
+      }
+    }
+  },
+  "wct_pytorch": {
+    "repository": "https://github.com/sunshineatnoon/PytorchWCT",
+    "revision": "ee9d813020155cbb5c6e3937290cff3650f6ce8e",
+    "files": {
+      "modelsNIPS.py": {
+        "url": "https://raw.githubusercontent.com/sunshineatnoon/PytorchWCT/ee9d813020155cbb5c6e3937290cff3650f6ce8e/modelsNIPS.py",
+        "status": 200,
+        "bytes": 30153,
+        "sha256": "c0ff12f981ce77fdeed8e057517197b6de47c845cf65f419a2d0b8caadf4642c"
+      },
+      "util.py": {
+        "url": "https://raw.githubusercontent.com/sunshineatnoon/PytorchWCT/ee9d813020155cbb5c6e3937290cff3650f6ce8e/util.py",
+        "status": 200,
+        "bytes": 3121,
+        "sha256": "9036c22afa72277ec5a637f6d7f174e6a94f7ec442baed555abfda2027c5ff73"
+      },
+      "WCT.py": {
+        "url": "https://raw.githubusercontent.com/sunshineatnoon/PytorchWCT/ee9d813020155cbb5c6e3937290cff3650f6ce8e/WCT.py",
+        "status": 200,
+        "bytes": 4658,
+        "sha256": "7210ddeb46299c10cde27abdcee44c764b5a92cad8b61198637911d573d9d793"
+      },
+      "Readme.md": {
+        "url": "https://raw.githubusercontent.com/sunshineatnoon/PytorchWCT/ee9d813020155cbb5c6e3937290cff3650f6ce8e/Readme.md",
+        "status": 200,
+        "bytes": 1777,
+        "sha256": "594424a911fd571472969d61086d69a5379985351c121e57fd34c3534e32bfdf"
+      },
+      "LICENSE.md": {
+        "url": "https://raw.githubusercontent.com/sunshineatnoon/PytorchWCT/ee9d813020155cbb5c6e3937290cff3650f6ce8e/LICENSE.md",
+        "status": 200,
+        "bytes": 1073,
+        "sha256": "1c5f32ed7a27f263c4c4d5e46c732564bda047a569960ab1a9ec1ac4dd68bed2"
+      }
+    }
+  },
+  "swapping": {
+    "repository": "https://github.com/taesungp/swapping-autoencoder-pytorch",
+    "revision": "6baa180f1184ee79a6b967f9d80ee0e02a979ac7",
+    "files": {
+      "LICENSE.txt": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/LICENSE.txt",
+        "status": 200,
+        "bytes": 3558,
+        "sha256": "2046c20089050c58a43428774f4418ba2df3c8fa37472f749580e83bf8897c8f"
+      },
+      "README.md": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/README.md",
+        "status": 200,
+        "bytes": 11585,
+        "sha256": "4180aacd06c60e2d966170015b714d1269f3baafa825e01a10ecdad023d308f2"
+      },
+      "experiments/__init__.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/__init__.py",
+        "status": 200,
+        "bytes": 762,
+        "sha256": "907712b6e2204328ef03d1718f709204e775924e86fca0baed7e3984630f9698"
+      },
+      "experiments/__main__.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/__main__.py",
+        "status": 200,
+        "bytes": 4161,
+        "sha256": "165633458eb94e702f2519b6ab2218f08c568abd0cc31f6e5a1d5914c35f1a2a"
+      },
+      "experiments/afhq_pretrained_launcher.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/afhq_pretrained_launcher.py",
+        "status": 200,
+        "bytes": 2601,
+        "sha256": "ba8c7792fb3318bb64bc5b95bd1c297af01f9da0a1de0c88c5effbb54283010e"
+      },
+      "experiments/bedroom_launcher.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/bedroom_launcher.py",
+        "status": 200,
+        "bytes": 1447,
+        "sha256": "cd1ebc318bfb7fdf57335e3e2f895fb6c8919b571cb44644396762b7dfb36913"
+      },
+      "experiments/bedroom_pretrained_launcher.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/bedroom_pretrained_launcher.py",
+        "status": 200,
+        "bytes": 1440,
+        "sha256": "2076f9646680d67ea867d931bf0575e346c8fc75854a7d604c31b6b5563d99f7"
+      },
+      "experiments/church_launcher.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/church_launcher.py",
+        "status": 200,
+        "bytes": 1452,
+        "sha256": "1f0926c5e90c09f397ccf5e2f90466ec5a9b7de9d33bb1d31caba358f1d856f1"
+      },
+      "experiments/church_pretrained_launcher.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/church_pretrained_launcher.py",
+        "status": 200,
+        "bytes": 2119,
+        "sha256": "df9b37fb7149d73e3e668c2fb1b3d51429070fbf15edbeb421c0057d81c8749c"
+      },
+      "experiments/ffhq1024_pretrained_launcher.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/ffhq1024_pretrained_launcher.py",
+        "status": 200,
+        "bytes": 2587,
+        "sha256": "c2e2e3224d707b7adb920c2e89259a351d595b9e09fe876f3d17a115e50886d8"
+      },
+      "experiments/ffhq512_pretrained_launcher.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/ffhq512_pretrained_launcher.py",
+        "status": 200,
+        "bytes": 1424,
+        "sha256": "67b1cd1169475a9cd675cdfe416e525c05ea2286493c0c9d9da59f48255ad002"
+      },
+      "experiments/ffhq_launcher.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/ffhq_launcher.py",
+        "status": 200,
+        "bytes": 2252,
+        "sha256": "543ac61b7d2c23e08a9c9db1b23a279efae3d851258e879406e788251d6ac492"
+      },
+      "experiments/mountain_launcher.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/mountain_launcher.py",
+        "status": 200,
+        "bytes": 1580,
+        "sha256": "ac37e8217a51d88e823219348032f8a4ad52f2654323cc89014bebb0ea07a7c3"
+      },
+      "experiments/mountain_pretrained_launcher.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/mountain_pretrained_launcher.py",
+        "status": 200,
+        "bytes": 3320,
+        "sha256": "79000fa7e132ea6ca95d9344991627172fb9a16a9477b83628c73db20d20264e"
+      },
+      "experiments/tmux_launcher.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/experiments/tmux_launcher.py",
+        "status": 200,
+        "bytes": 9086,
+        "sha256": "fb308f3fec3c048c2d33da7591b6dea7b59a0fd01c6cca0c20b9606d11bee6dc"
+      },
+      "models/__init__.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/__init__.py",
+        "status": 200,
+        "bytes": 4408,
+        "sha256": "b4f02244c30143f6d73df89d35bf4f25e5caba68d478732f570eddbf4467198d"
+      },
+      "models/base_model.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/base_model.py",
+        "status": 200,
+        "bytes": 5592,
+        "sha256": "f7baecfff6d555488aaaf7df5e9c6d80a2170ef895dab4f4873d0111108cf1b7"
+      },
+      "models/networks/__init__.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/__init__.py",
+        "status": 200,
+        "bytes": 1489,
+        "sha256": "bfd9a3b013d0fed1ac310fe22a112dc74bf086dcbae58b652a46b59680714be0"
+      },
+      "models/networks/base_network.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/base_network.py",
+        "status": 200,
+        "bytes": 2215,
+        "sha256": "33c07e02f4aa8d07ced51e6966a425aa0c13857b685470571b5a14241645371f"
+      },
+      "models/networks/classifier.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/classifier.py",
+        "status": 200,
+        "bytes": 1057,
+        "sha256": "a664b8287e9736a4b566de86f714a26e4ee8a93d2fd0922f71fcbb1ad2f91d2d"
+      },
+      "models/networks/discriminator.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/discriminator.py",
+        "status": 200,
+        "bytes": 966,
+        "sha256": "5389055129c709e93102c9275f30a20b1e708c23744343919d0a6da6edbd38e4"
+      },
+      "models/networks/encoder.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/encoder.py",
+        "status": 200,
+        "bytes": 4372,
+        "sha256": "5a059500d7964969bc7adefe8ea60e12185f1747d95f0d16dc54d53c84400f58"
+      },
+      "models/networks/generator.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/generator.py",
+        "status": 200,
+        "bytes": 6887,
+        "sha256": "c8d31a71e5956e53d2dd44faadea7fce395d3589ddd5ab23bab95cd59102c705"
+      },
+      "models/networks/inception.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/inception.py",
+        "status": 200,
+        "bytes": 12171,
+        "sha256": "d0be513e1c961cfe309f466f057b9b775f4bef3df4782801d7cc6b57ce9e2c1c"
+      },
+      "models/networks/loss.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/loss.py",
+        "status": 200,
+        "bytes": 5486,
+        "sha256": "b4ee3ef8eb4aa6935feacf3d70a52d59e359891a58e27a3e3d8492c3d95b9447"
+      },
+      "models/networks/patch_discriminator.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/patch_discriminator.py",
+        "status": 200,
+        "bytes": 6803,
+        "sha256": "a886122242d5c8d9a4878ee0f1f1684bac51c27c2e588c554c52a4ca92164e7d"
+      },
+      "models/networks/pyramidnet.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/pyramidnet.py",
+        "status": 200,
+        "bytes": 8901,
+        "sha256": "c65e719f79fda8e2963d3549a5437364bf7bd656598d5e181b41fd7e6408bf18"
+      },
+      "models/networks/stylegan2_layers.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/stylegan2_layers.py",
+        "status": 200,
+        "bytes": 22492,
+        "sha256": "2bb9f9e798bee049020f335e2da79f20fed57178be07c08f9b0df0caf4fe6673"
+      },
+      "models/networks/stylegan2_op/__init__.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/stylegan2_op/__init__.py",
+        "status": 200,
+        "bytes": 89,
+        "sha256": "d3bdebb6b1ea35ab8e7dd14af32919f11ae630ab9154d4c84f839397b98b2bf6"
+      },
+      "models/networks/stylegan2_op/fused_act.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/stylegan2_op/fused_act.py",
+        "status": 200,
+        "bytes": 2933,
+        "sha256": "bf00baa057078cd5fa4044dc86101ca95bc482d10ccaf544b89c4c0da8a2532a"
+      },
+      "models/networks/stylegan2_op/upfirdn2d.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/networks/stylegan2_op/upfirdn2d.py",
+        "status": 200,
+        "bytes": 6496,
+        "sha256": "228c5fb1ef64d08db2380a0e3c5af40dccbd757f634a759a07d33f1b586120ec"
+      },
+      "models/swapping_autoencoder_model.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/models/swapping_autoencoder_model.py",
+        "status": 200,
+        "bytes": 10396,
+        "sha256": "71df763244ea5b17c55d93384595c37dccb04386802f00a9d407a72e31b83e7f"
+      },
+      "options/__init__.py": {
+        "url": "https://raw.githubusercontent.com/taesungp/swapping-autoencoder-pytorch/6baa180f1184ee79a6b967f9d80ee0e02a979ac7/options/__init__.py",
+        "status": 200,
+        "bytes": 8816,
+        "sha256": "e1fcdbfafb69110303904ef43af6bbc88b4c83f7ca5bb199511ccde42e44ded9"
+      }
+    }
+  }
+}

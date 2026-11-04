@@ -1,0 +1,309 @@
+{
+  "experiment_id": "TA-004",
+  "contract_revision": 1,
+  "status": "completed",
+  "contract_sha256": "1f296b91bb75055d8604d5f1e6dae9f8897343406eee3c88c5a4408869c2da36",
+  "protocol_sha256": "ae9323b66e4969f87f000d08d0227cc6770e9f1377bc7f62deb6c92e39409c94",
+  "setup_contract_revision": 2,
+  "input_hashes": {
+    "manifest.json": "a15a783934fb636acc7d141d3becdffea049f0082718c0a1e931bc094df18093",
+    "pixels_uint8.npy": "411c174959b83e2521e77ce3a3fa9e5b426c306a46361f8ba0804dd90de31a12"
+  },
+  "training_applicable": true,
+  "training_performed": true,
+  "initialized_from_scratch": true,
+  "completed_updates": 20000,
+  "maximum_updates": 20000,
+  "qualification_updates": 22,
+  "batch_size": 16,
+  "framework_parameters": 9061060,
+  "parameter_counts": {
+    "G": 7837699,
+    "D": 662977,
+    "F": 560384
+  },
+  "direction": "D0_to_D1",
+  "completed_translation_count": 302,
+  "expected_translation_count": 302,
+  "completed_target_identity_count": 302,
+  "expected_target_identity_count": 302,
+  "total_final_saved_outputs": 604,
+  "reviewed_representative_examples": 64,
+  "reviewed_representative_translations": 32,
+  "reviewed_representative_identity_controls": 32,
+  "reviewed_tail_examples": 8,
+  "device_uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2",
+  "gpu_seconds": 3702.2395655866712,
+  "gpu_hours": 1.028399879329631,
+  "gpu_budget_seconds": 28800,
+  "peak_allocated_bytes": 2569035776,
+  "peak_reserved_bytes": 3472883712,
+  "gpu_lease_released": true,
+  "checks": {
+    "A1_only": true,
+    "diagnostic_exclusion": true,
+    "source_hashes": true,
+    "finite_gradients_losses": true,
+    "exact_gpu_checkpoint_recovery": true,
+    "deterministic_review_regeneration": true,
+    "input_integrity_after": true,
+    "all_required_sheets_directly_reviewed": true,
+    "memory_budget": true,
+    "time_budget": true
+  },
+  "metrics": {
+    "D0_to_D1": {
+      "source_score": {
+        "mean": -1.757170208279975,
+        "median": -1.6492746866582244,
+        "min": -5.004653304266253,
+        "max": -0.4051536266806652,
+        "p05": -3.1498217046889203,
+        "p95": -0.7862391778069988
+      },
+      "output_score": {
+        "mean": 1.7739118805520797,
+        "median": 1.5700777608522394,
+        "min": -1.6184262065852877,
+        "max": 6.610113459616061,
+        "p05": -0.17788330949094616,
+        "p95": 4.280568880646427
+      },
+      "score_shift": {
+        "mean": 3.5310820888320547,
+        "median": 3.1751969215839897,
+        "min": 0.7527288544842925,
+        "max": 9.983054828411879,
+        "p05": 1.5257165841075946,
+        "p95": 6.6701694337034425
+      },
+      "rgb_rms": {
+        "mean": 0.2721123116990962,
+        "median": 0.18055089371776742,
+        "min": 0.08211963566549547,
+        "max": 0.9204915574867091,
+        "p05": 0.1177791102610937,
+        "p95": 0.7842820349617755
+      },
+      "edge_change": {
+        "mean": 0.027248754674653163,
+        "median": 0.026044079131652655,
+        "min": -0.0009698558590102574,
+        "max": 0.06730225461017741,
+        "p05": 0.010562193408613443,
+        "p95": 0.0485461312344382
+      },
+      "out_of_range_fraction": {
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "p05": 0.0,
+        "p95": 0.0
+      },
+      "quantized_boundary_fraction": {
+        "mean": 0.08159982710747792,
+        "median": 0.007853190104166668,
+        "min": 0.0,
+        "max": 0.4972330729166667,
+        "p05": 0.0,
+        "p95": 0.43492431640624996
+      },
+      "nearest_target_rms": {
+        "mean": 0.3118923881354968,
+        "median": 0.3122469841213319,
+        "min": 0.18138541893765076,
+        "max": 0.45573520596505535,
+        "p05": 0.24502179681813363,
+        "p95": 0.38453887498200057
+      },
+      "target_optimization_score_mean": {
+        "mean": 1.9579325862020385,
+        "median": 1.8914928321017457,
+        "min": 1.2910759572100357,
+        "max": 3.1020685793542566,
+        "p05": 1.4580441832414757,
+        "p95": 2.6019180220673648
+      },
+      "target_score_percentile": {
+        "mean": 0.4682828993176039,
+        "median": 0.5,
+        "min": 0.0,
+        "max": 1.0,
+        "p05": 0.0,
+        "p95": 0.9582427536231884
+      },
+      "positive_score_shift_fraction": 1.0,
+      "exact_duplicate_excess": 0,
+      "count": 302,
+      "mean_descriptor_changes": {
+        "luminance_mean": -0.17900579401594546,
+        "luminance_std": 0.10519563336662514,
+        "saturation_mean": 0.07087075939005903,
+        "saturation_std": 0.0717283821263447,
+        "near_white": -0.08429076340024834,
+        "near_black": 0.11892558723096026,
+        "neighbor_gradient": 0.027248754674653167,
+        "laplacian_energy": 0.03078694966745902,
+        "luminance_entropy": 0.16184423940485837,
+        "high_frequency_fraction": -0.0010074861965413602,
+        "border_difference": 0.09286574507595521
+      }
+    },
+    "D1_identity": {
+      "source_score": {
+        "mean": 2.026845915700863,
+        "median": 1.7618645487759719,
+        "min": 0.14083058964963288,
+        "max": 5.552096978142551,
+        "p05": 0.5001762933552398,
+        "p95": 4.543025259373674
+      },
+      "output_score": {
+        "mean": 2.2829546688245066,
+        "median": 2.2175586354154087,
+        "min": 0.29477966254824306,
+        "max": 5.82238749770847,
+        "p05": 1.0156420277813056,
+        "p95": 3.6742237063874303
+      },
+      "score_shift": {
+        "mean": 0.2561087531236432,
+        "median": 0.2318509279305192,
+        "min": -3.427604503044829,
+        "max": 5.031160635456238,
+        "p05": -1.3438442656694494,
+        "p95": 1.8090370507476612
+      },
+      "rgb_rms": {
+        "mean": 0.09849095525050874,
+        "median": 0.08989841536972557,
+        "min": 0.04352463864881166,
+        "max": 0.7540404584995175,
+        "p05": 0.053323362941046934,
+        "p95": 0.14836193739429324
+      },
+      "edge_change": {
+        "mean": 0.0030019519422467295,
+        "median": 0.0030978187733426733,
+        "min": -0.03197632031979458,
+        "max": 0.03150994504746342,
+        "p05": -0.010339337228641441,
+        "p95": 0.01631219404081075
+      },
+      "out_of_range_fraction": {
+        "mean": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "p05": 0.0,
+        "p95": 0.0
+      },
+      "quantized_boundary_fraction": {
+        "mean": 0.008108109564707505,
+        "median": 0.00016276041666666666,
+        "min": 0.0,
+        "max": 0.4003092447916667,
+        "p05": 0.0,
+        "p95": 0.028845214843749988
+      },
+      "nearest_target_rms": {
+        "mean": 0.26223454049672656,
+        "median": 0.29195458719015466,
+        "min": 0.05180525123715888,
+        "max": 0.4669802310659351,
+        "p05": 0.08319222850921744,
+        "p95": 0.38256219554698206
+      },
+      "target_optimization_score_mean": {
+        "mean": 1.9579325862020385,
+        "median": 1.8914928321017457,
+        "min": 1.2910759572100357,
+        "max": 3.1020685793542566,
+        "p05": 1.4580441832414757,
+        "p95": 2.6019180220673648
+      },
+      "target_score_percentile": {
+        "mean": 0.6162897473333663,
+        "median": 0.6333333333333333,
+        "min": 0.0,
+        "max": 1.0,
+        "p05": 0.18674418604651163,
+        "p95": 0.9285714285714286
+      },
+      "positive_score_shift_fraction": 0.6158940397350994,
+      "exact_duplicate_excess": 0,
+      "count": 302,
+      "mean_descriptor_changes": {
+        "luminance_mean": -0.03925742857119308,
+        "luminance_std": 0.01712174270977534,
+        "saturation_mean": 0.08897520395127984,
+        "saturation_std": 0.005206675715761896,
+        "near_white": -0.022712353838990066,
+        "near_black": 0.015665420633278145,
+        "neighbor_gradient": 0.00300195194224673,
+        "laplacian_energy": -0.013701620726749826,
+        "luminance_entropy": 0.0731840053514925,
+        "high_frequency_fraction": -0.01786048686180842,
+        "border_difference": 0.014957928990083892
+      }
+    }
+  },
+  "visual_findings": {
+    "representative_translations": "Broad source layouts usually remain visible, with stronger contrast, dark thick contours, altered colors, halos/speckle and uncertain small markings. Four of32 representative translations visibly change pale/white/checker backgrounds to black (Dratini36,Exeggcute47,Gyarados78,Tentacool20).",
+    "identity_controls": "Generally smaller visual changes than translations, but not exact identities: color/highlight changes, softened or thickened edges and small marking distortion remain. Tiny Venusaur/card details are uncertain.",
+    "high_change_tails": "All eight deliberately selected largest-RMS translations replace white backgrounds with black. Broad outlines often remain; Geodude loses solid arm/face structure and Arcanine loses stripes. Facial/limb fidelity in several others is uncertain.",
+    "milestones": "Initial outputs are colored noise. Early updates recover broad source structure; later milestones change palettes/contrast and sometimes switch backgrounds. No monotonic quality or convergence claim follows.",
+    "interpretation": "The appearance projection shifts strongly toward D1, but background replacement and marking damage violate the desired invariants in visible cases. This is not evidence of safe augmentation or lower generative FID.",
+    "limitations": "Representatives are32 translation sources/32 descriptive identity controls in16 fixed classes; tails are outcome-selected and may overlap representatives. Small unblinded AI judgments are not population prevalence or class accuracy."
+  },
+  "proof_paths": {
+    "SETUP_SUMMARY.md": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/SETUP_SUMMARY.md",
+    "setup_result.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/setup_result.json",
+    "verification.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/verification.json",
+    "training_preflight.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/training_preflight.json",
+    "qualification.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/qualification.json",
+    "training_complete.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/training_complete.json",
+    "final_verification.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/final_verification.json",
+    "lr_verification.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/lr_verification.json",
+    "gpu_resource_ledger.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/gpu_resource_ledger.json",
+    "losses.jsonl": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/losses.jsonl",
+    "measurements.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/measurements.json",
+    "measurements.csv": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/measurements.csv",
+    "metric_conventions.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/metric_conventions.json",
+    "aggregate_metrics.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/aggregate_metrics.json",
+    "outputs/associations.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/outputs/associations.json",
+    "output_hashes.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/output_hashes.json",
+    "review_inventory.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/review_inventory.json",
+    "visual_review.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/visual_review.json",
+    "tails.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/tails.json",
+    "commands.txt": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/commands.txt",
+    "final.pt": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/final.pt",
+    "initial.pt": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/initial.pt",
+    "latest.pt": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/latest.pt",
+    "SUMMARY.md": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/SUMMARY.md",
+    "gallery.html": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/gallery.html",
+    "sheets/representative_D0_1.png": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/sheets/representative_D0_1.png",
+    "sheets/representative_D0_2.png": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/sheets/representative_D0_2.png",
+    "sheets/representative_D0_3.png": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/sheets/representative_D0_3.png",
+    "sheets/representative_D0_4.png": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/sheets/representative_D0_4.png",
+    "sheets/representative_D1_1.png": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/sheets/representative_D1_1.png",
+    "sheets/representative_D1_2.png": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/sheets/representative_D1_2.png",
+    "sheets/representative_D1_3.png": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/sheets/representative_D1_3.png",
+    "sheets/representative_D1_4.png": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/sheets/representative_D1_4.png",
+    "sheets/tails.png": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/sheets/tails.png",
+    "implementation_hashes.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/implementation_hashes.json",
+    "handoff_hashes.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/handoff_hashes.json"
+  },
+  "limitations": [
+    "A1 diagnostics participated in appearance-domain discovery and are not independent validation.",
+    "Appearance score is a fixed statistical projection, not style or semantic quality.",
+    "No classifier, class-accuracy, generative FID, downstream usefulness, or convergence claim.",
+    "CUT is one-directional with identity PatchNCE; objectives and coverage differ from CycleGAN."
+  ],
+  "operational_incidents": [
+    "Initial preflight rejected Torch UUID formatting without GPU- prefix before training; corrected comparison and retained conservative time charge."
+  ],
+  "review_method": "Small unblinded AI visual review; representatives and selected high-change tails are separate descriptive populations.",
+  "final_checkpoint_sha256": "86dcb625ac70f100ad10559883360cc607fdcc7a1432c24e64c5619efdf84d05"
+}

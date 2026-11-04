@@ -1,0 +1,22 @@
+{
+  "frozen_contracts_unchanged": true,
+  "cohort_partition_and_sampling_checks": true,
+  "pixel_cache_path_alignment_verified": true,
+  "final_handoffs": [
+    {
+      "experiment_id": "TA-001",
+      "status": "completed",
+      "result_sha256": "70a31c278f26c13fbcdcd9e5a9c8d738bff1e9dcc4f714177d8c170a66bbc959",
+      "summary_sha256": "659e006100df7f28ac68ba903bdfde27d777f06d5c9118e096dc7ec3c500182e",
+      "evidence_references_checked": 28
+    },
+    {
+      "experiment_id": "TA-002",
+      "status": "completed",
+      "result_sha256": "f57a89e19af957a878b2712ff0513178911d38a8ec2ff0701ceb2ef9d3fecad5",
+      "summary_sha256": "3fa9f4c695f38d70db0883b9790a19d2f92e63c0b3f5d93e921b402adba26c14",
+      "evidence_references_checked": 21
+    }
+  ],
+  "scope": "Master checks compact contract/summary/evidence metadata. Detailed numerical/image/output verification is delegated to workers."
+}

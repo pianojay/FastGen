@@ -1,0 +1,13 @@
+{
+  "experiment_id": "TA-005",
+  "status": "accepted",
+  "result_sha256": "0c10e87d97bd9fdb77816c30c4aef535c2e51c680c4d37a3991fafec1076e040",
+  "proof_references_resolved": 28,
+  "completed_updates": 20000,
+  "final_outputs": 5436,
+  "framework_parameters": 46594716,
+  "parameter_cap_exception": false,
+  "gpu_seconds": 4127.4507937431335,
+  "peak_allocated_bytes": 1970377728,
+  "gpu_lease_released": true
+}

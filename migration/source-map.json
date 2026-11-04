@@ -1,0 +1,3136 @@
+{
+  "schema": 1,
+  "group": "exploration",
+  "archive_branch": "archive/exploration",
+  "source_head": "3ccf3261495bd144bf844b7f298d10406b53117a",
+  "files": [
+    {
+      "original_path": "exploration/.gitignore",
+      "git_path": ".gitignore",
+      "sha256": "546b8df55740ddd611c0e544f34efabcf61d7fc86c851d7bf3df93e7f34f4587",
+      "bytes": 173
+    },
+    {
+      "original_path": "exploration/.orca/.gitignore",
+      "git_path": ".orca/.gitignore",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "bytes": 14
+    },
+    {
+      "original_path": "exploration/README.md",
+      "git_path": "README.md",
+      "sha256": "8aae302be3aaeb69f11cc73a63590d6787fce1b02e0a3853219977ba3cc004f3",
+      "bytes": 20277
+    },
+    {
+      "original_path": "exploration/assets/FastGen.pdf",
+      "git_path": "assets/FastGen.pdf",
+      "sha256": "1a9ccc1af4d6513d3eaef28998b6540581bb368399c333a888168f85dc85e6aa",
+      "bytes": 1326452
+    },
+    {
+      "original_path": "exploration/assets/representative_samples.png",
+      "git_path": "assets/representative_samples.png",
+      "sha256": "f57aa021d0840177145e241063a1c4c689180c3fc194706c39453c4caa8b3df6",
+      "bytes": 1472342
+    },
+    {
+      "original_path": "exploration/data/pokemon-generation-one-22k/category_to_id.json",
+      "git_path": "data/pokemon-generation-one-22k/category_to_id.json",
+      "sha256": "7c27ec2a15fa4f70b5729319d596d3a80bc528cdeeb02f36b88877a6545b77e8",
+      "bytes": 2656
+    },
+    {
+      "original_path": "exploration/data/pokemon-generation-one-22k/train_split.txt",
+      "git_path": "data/pokemon-generation-one-22k/train_split.txt",
+      "sha256": "c4068bdec8c5994fa14887d3335e762dd6a4da1bc6394a6df7fae96d293138c0",
+      "bytes": 703371
+    },
+    {
+      "original_path": "exploration/data/pokemon-generation-one-22k/val_split.txt",
+      "git_path": "data/pokemon-generation-one-22k/val_split.txt",
+      "sha256": "6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0",
+      "bytes": 153787
+    },
+    {
+      "original_path": "exploration/dataset.py",
+      "git_path": "dataset.py",
+      "sha256": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+      "bytes": 5923
+    },
+    {
+      "original_path": "exploration/download_dataset.py",
+      "git_path": "download_dataset.py",
+      "sha256": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+      "bytes": 3553
+    },
+    {
+      "original_path": "exploration/eda/README.md",
+      "git_path": "eda/README.md",
+      "sha256": "75eabd3f44cbb9df2f0df28ffb1316ceaa840d39eac3acf74c92dc0e2eb30c24",
+      "bytes": 16919
+    },
+    {
+      "original_path": "exploration/eda/REPORT.md",
+      "git_path": "eda/REPORT.md",
+      "sha256": "5e90b20e4766a742531603d8d30c066481d6c7ba50368dd4f3604fe31169f3dd",
+      "bytes": 14508
+    },
+    {
+      "original_path": "exploration/eda/analyze_features.py",
+      "git_path": "eda/analyze_features.py",
+      "sha256": "113bbb96d02f9410d5db33314d7b6d6fd7458bbb008ef19464c21a620ed736be",
+      "bytes": 14317
+    },
+    {
+      "original_path": "exploration/eda/analyze_neighbors.py",
+      "git_path": "eda/analyze_neighbors.py",
+      "sha256": "83af661e718829181d566961c40381c5f3d143cbcbd591e1c5bbaeb8cf0ab0b1",
+      "bytes": 9739
+    },
+    {
+      "original_path": "exploration/eda/build_report.py",
+      "git_path": "eda/build_report.py",
+      "sha256": "0ec26b0988c1f3c17e27028c55cf58a11af4383a45ede26f3c77c55c24c3a576",
+      "bytes": 18470
+    },
+    {
+      "original_path": "exploration/eda/check_environment.py",
+      "git_path": "eda/check_environment.py",
+      "sha256": "b59bd28b7c456e418faac6884f263c67dd8820be278972adce80c5e86e6e829d",
+      "bytes": 4051
+    },
+    {
+      "original_path": "exploration/eda/common.py",
+      "git_path": "eda/common.py",
+      "sha256": "0cdd7f319997a0de015422b1a31f7a2e1fddb387b4aa7a740c4d796d7f5f6d85",
+      "bytes": 5226
+    },
+    {
+      "original_path": "exploration/eda/compile_notion_reports.py",
+      "git_path": "eda/compile_notion_reports.py",
+      "sha256": "e8b52df5e85c26b9fde87d541bacf9765ac1418b99640d007c3ebcaab6ef3be6",
+      "bytes": 24703
+    },
+    {
+      "original_path": "exploration/eda/enrich_results.py",
+      "git_path": "eda/enrich_results.py",
+      "sha256": "0563602b596925551656fe504a6b5294f29b0411e9ad649043d95442fe34e865",
+      "bytes": 5110
+    },
+    {
+      "original_path": "exploration/eda/extract_features.py",
+      "git_path": "eda/extract_features.py",
+      "sha256": "55da043d3ade3b7e9ed9bf863bea60465e31554e221b2c2bf130f00e5e9fdf7a",
+      "bytes": 5638
+    },
+    {
+      "original_path": "exploration/eda/features/metadata.json",
+      "git_path": "eda/features/metadata.json",
+      "sha256": "1468b560c9d507f59887a029ba2b5cde1ad9707b73df75c776eb45918772e57e",
+      "bytes": 3240
+    },
+    {
+      "original_path": "exploration/eda/plot_audit.py",
+      "git_path": "eda/plot_audit.py",
+      "sha256": "e88a7d592f03989038785f05b400489d71d9259a8a792f66d92f6ebeff58e341",
+      "bytes": 1734
+    },
+    {
+      "original_path": "exploration/eda/prepare.py",
+      "git_path": "eda/prepare.py",
+      "sha256": "66f22ca6b13ed59a60b6c4036268f58c8a3e33ecf5089cc24facaded0bd32b1d",
+      "bytes": 8613
+    },
+    {
+      "original_path": "exploration/eda/prepare_sampling.py",
+      "git_path": "eda/prepare_sampling.py",
+      "sha256": "10c036e81fbe4502f83fab98207477f60541cf03e22dac04ff2085f1fa89cc76",
+      "bytes": 2342
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/cluster_sampling_baselines.csv",
+      "git_path": "eda/reports/analysis/cluster_sampling_baselines.csv",
+      "sha256": "1254b3f2973b0962aebac64adccdb1e48d59ce859d6f7ebc19220f94dcb96482",
+      "bytes": 7327
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/cluster_summary.json",
+      "git_path": "eda/reports/analysis/cluster_summary.json",
+      "sha256": "458adc67b25312b936e955d3d03744382a329dd2b0a6fc168de2e0f8f1e61ae9",
+      "bytes": 2140
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/clusters_k16.csv",
+      "git_path": "eda/reports/analysis/clusters_k16.csv",
+      "sha256": "a68d6fb445f41eef72ddcf48f8feef70c0d67904904dabfd9bb3d6afe8acf12c",
+      "bytes": 5391
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/clusters_k32.csv",
+      "git_path": "eda/reports/analysis/clusters_k32.csv",
+      "sha256": "8db2e0b9e32f7b728bb1bf46e323d72a6e0f946c16f27eb4ced631ce0c0a8ed0",
+      "bytes": 10666
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/clusters_k64.csv",
+      "git_path": "eda/reports/analysis/clusters_k64.csv",
+      "sha256": "77a474587e53e42e2049f41e8c31acbe7e4021ac6ccb2753144b3999e8eeab5a",
+      "bytes": 21201
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/completion.json",
+      "git_path": "eda/reports/analysis/completion.json",
+      "sha256": "01cff54b49b80830084c822d61feb4f5eb6bb47b4a6ca2d42916903f33451983",
+      "bytes": 1101
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/cpu_analysis.log",
+      "git_path": "eda/reports/analysis/cpu_analysis.log",
+      "sha256": "92ff1e65abb4759f0356ff7aaf9e87e159475ac3805fb6a6b89f86b9051cc5f1",
+      "bytes": 3744
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/enrichment.log",
+      "git_path": "eda/reports/analysis/enrichment.log",
+      "sha256": "520be48b29e05f2defc4c35cc733cfda95cf952628b9de1c84ac24d028ed1495",
+      "bytes": 1259
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/extraction.log",
+      "git_path": "eda/reports/analysis/extraction.log",
+      "sha256": "dab4396868a97d6927489a03b81dcd996439871b3139f554096220623c4c4a6d",
+      "bytes": 844
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/fid_duplicate_sensitivity.csv",
+      "git_path": "eda/reports/analysis/fid_duplicate_sensitivity.csv",
+      "sha256": "ff7b60e2593887fd25c60d6b081e6bad2df463c31466b5129a25d6b41d163c8f",
+      "bytes": 2154
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/fid_full.json",
+      "git_path": "eda/reports/analysis/fid_full.json",
+      "sha256": "326a9a735a78e666d0adae1927bca6eaf9df361994fd7c6902c2f49b5d162f74",
+      "bytes": 220
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/fid_repeats.csv",
+      "git_path": "eda/reports/analysis/fid_repeats.csv",
+      "sha256": "aee026bc5799423d7aee015fcf3d758b10b3449c76cc8d024b4da379e8a6de49",
+      "bytes": 3490
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/fid_summary.json",
+      "git_path": "eda/reports/analysis/fid_summary.json",
+      "sha256": "302ee4f8228df74f8625b72d6630b43585f46a9b018834fe5f99a0809895f6e6",
+      "bytes": 3216
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/gallery.html",
+      "git_path": "eda/reports/analysis/gallery.html",
+      "sha256": "819520ce75de0e77e7e4472f29665b8faa10133d03a60ea930f333994d031aeb",
+      "bytes": 4020
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/gpu_job.json",
+      "git_path": "eda/reports/analysis/gpu_job.json",
+      "sha256": "6dded4db72caad114f59964c8ad0d1d0aa45160c2552d89d339fed11cf1e8813",
+      "bytes": 110
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/image_properties_summary.json",
+      "git_path": "eda/reports/analysis/image_properties_summary.json",
+      "sha256": "c3847a5d697ad64ad79f40b6162ef899b36406b424c3eb391eec1f1b8bfcd3df",
+      "bytes": 3617
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/metadata_shift.json",
+      "git_path": "eda/reports/analysis/metadata_shift.json",
+      "sha256": "a90aaf2382686d3211c4b0b9d5e50ba26f1a876f2ec66cea19feed0a5bbfeeb8",
+      "bytes": 725
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/neighbor_category_summary.csv",
+      "git_path": "eda/reports/analysis/neighbor_category_summary.csv",
+      "sha256": "0ad58eecc53d39bc55a89053d25412fbdf7bd4adb00108ea70dd3575b65d19eb",
+      "bytes": 8021
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/neighbor_gallery_comparisons.csv",
+      "git_path": "eda/reports/analysis/neighbor_gallery_comparisons.csv",
+      "sha256": "d5a78451fe90273db84e130ef02d32d3f0f4daa53c84e549d595a9fbf14a26b1",
+      "bytes": 2500
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/neighbor_summary.json",
+      "git_path": "eda/reports/analysis/neighbor_summary.json",
+      "sha256": "efcc379003c94a29213c30b92a0d8b87edeb9787b995a59c4792c3c1a340cc64",
+      "bytes": 4447
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/neighbors.log",
+      "git_path": "eda/reports/analysis/neighbors.log",
+      "sha256": "0065b64a2d9b2d3c18197e11c47f5b7ebb6ae8d21d8b1df7c748acebc2937882",
+      "bytes": 27
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/pca_cluster_complete.json",
+      "git_path": "eda/reports/analysis/pca_cluster_complete.json",
+      "sha256": "ddb2f70345624b88d54fc4c2a1b73669cce7ad7e1b2a17a69dfd0ecdf783ac79",
+      "bytes": 198
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/pca_effects.csv",
+      "git_path": "eda/reports/analysis/pca_effects.csv",
+      "sha256": "793a42413ced9a7f070f1edeaad6905c3a38a9145921e472fed497ada764a58f",
+      "bytes": 916
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/pca_property_correlations.csv",
+      "git_path": "eda/reports/analysis/pca_property_correlations.csv",
+      "sha256": "d0e0349087b26142c26ee5736a9ccadfbf6a2dc737667bd1bfbf981a12f51d6c",
+      "bytes": 2911
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/pca_summary.json",
+      "git_path": "eda/reports/analysis/pca_summary.json",
+      "sha256": "4950a0290977f2b161fccfd996520653d5ed57ae8c00e7291591db4b6e9d88a8",
+      "bytes": 1796
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/pca_within_category.csv",
+      "git_path": "eda/reports/analysis/pca_within_category.csv",
+      "sha256": "2c4b7151000e3ce62d66b293b44a10c79a8f4d64a9c171aa2aba7e8d541a6b4d",
+      "bytes": 32019
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/split_order_audit.csv",
+      "git_path": "eda/reports/analysis/split_order_audit.csv",
+      "sha256": "21c3585623f8db615d6f423b5027eb9cb540671822e0146ec6be228c73172776",
+      "bytes": 14311
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/validation.json",
+      "git_path": "eda/reports/analysis/validation.json",
+      "sha256": "62d148141bc76c3d9b01c0a108aac2d56db6e2460e49908b5818085f4199c1e3",
+      "bytes": 574
+    },
+    {
+      "original_path": "exploration/eda/reports/analysis/white_fraction_by_category.csv",
+      "git_path": "eda/reports/analysis/white_fraction_by_category.csv",
+      "sha256": "8674e20cb39b6309bc8beeed5a00a6c15cd1a4f5b8198b0ab97c8ee64d47c76d",
+      "bytes": 7904
+    },
+    {
+      "original_path": "exploration/eda/reports/audit.json",
+      "git_path": "eda/reports/audit.json",
+      "sha256": "ddb0a5930cee978ec5d8ce28f17273ee53bebedd18d0f133fdeefd897ba89d58",
+      "bytes": 3699
+    },
+    {
+      "original_path": "exploration/eda/reports/category_composition.csv",
+      "git_path": "eda/reports/category_composition.csv",
+      "sha256": "4ca75976d2b1be52e44866f074e9c45a436bc4bf564b742cd933106283977c9b",
+      "bytes": 13661
+    },
+    {
+      "original_path": "exploration/eda/reports/notion_publication.json",
+      "git_path": "eda/reports/notion_publication.json",
+      "sha256": "edc1b84818458041f7dfeff9adfbe59b42cbfd62a4d7c6b7b4349866c96cfadf",
+      "bytes": 2416
+    },
+    {
+      "original_path": "exploration/eda/reports/notion_report_drafts.json",
+      "git_path": "eda/reports/notion_report_drafts.json",
+      "sha256": "665160d097d80ed438a68f0e77595451621b6e7bfe4041052b48d58a468ffd3b",
+      "bytes": 25872
+    },
+    {
+      "original_path": "exploration/eda/reports/notion_upload_results.json",
+      "git_path": "eda/reports/notion_upload_results.json",
+      "sha256": "b12791cc85de80c13bffb89355fd0ac0c3e824d6db834e924e97a1746eb9949e",
+      "bytes": 4798
+    },
+    {
+      "original_path": "exploration/eda/reports/notion_verified_content.json",
+      "git_path": "eda/reports/notion_verified_content.json",
+      "sha256": "b235b890ccab68e82c276673267995469472960bca9370b274a37dbcda00a5b8",
+      "bytes": 38922
+    },
+    {
+      "original_path": "exploration/eda/reports/preparation.log",
+      "git_path": "eda/reports/preparation.log",
+      "sha256": "6e0ff98858fd194b56ea8fa141878764fd37ef2da7d5b480da5befb9ff3dbd89",
+      "bytes": 3965
+    },
+    {
+      "original_path": "exploration/eda/resources/A2.txt",
+      "git_path": "eda/resources/A2.txt",
+      "sha256": "b77de093a007b38f13d0d9291ee99753b4a3939b353eb4557d452ea4591244fa",
+      "bytes": 122351
+    },
+    {
+      "original_path": "exploration/eda/resources/B.txt",
+      "git_path": "eda/resources/B.txt",
+      "sha256": "6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0",
+      "bytes": 153787
+    },
+    {
+      "original_path": "exploration/eda/resources/download.json",
+      "git_path": "eda/resources/download.json",
+      "sha256": "f95419371a57e14e6d99150e20d87514d90d90d2cd467746d55eca5d823058f9",
+      "bytes": 376
+    },
+    {
+      "original_path": "exploration/eda/resources/eda-environment.lock.txt",
+      "git_path": "eda/resources/eda-environment.lock.txt",
+      "sha256": "ed4926346d2b6bc9886a4857756598dde845085906b1d3b61b70cdee6e37bfaa",
+      "bytes": 1479
+    },
+    {
+      "original_path": "exploration/eda/resources/environment.json",
+      "git_path": "eda/resources/environment.json",
+      "sha256": "d53769e0dc06bd2a26cadbe294d4310ca759559cc484b27cfbf1ca952dd1cd7f",
+      "bytes": 564
+    },
+    {
+      "original_path": "exploration/eda/resources/provenance.json",
+      "git_path": "eda/resources/provenance.json",
+      "sha256": "643acb4e8f892db9cd0282512e76edb514e5ea3408784437385c6d3df4ae5505",
+      "bytes": 1509
+    },
+    {
+      "original_path": "exploration/eda/resources/qualified_environment.json",
+      "git_path": "eda/resources/qualified_environment.json",
+      "sha256": "f921e9e7aac9b92229a55154fee8f8cb613542971b965b3f32d0eadf59b52fb8",
+      "bytes": 2146
+    },
+    {
+      "original_path": "exploration/eda/resources/soflow-reference-freeze.txt",
+      "git_path": "eda/resources/soflow-reference-freeze.txt",
+      "sha256": "c2739c2217c5b48d3bf9dc74a03f4e625ef75e61b8408ffb91f1c3997a0d9c93",
+      "bytes": 1405
+    },
+    {
+      "original_path": "exploration/eda/resources/soflow-reference-requirements.txt",
+      "git_path": "eda/resources/soflow-reference-requirements.txt",
+      "sha256": "8830e1992f41c12b5cd15c33514630b41c3f94fd8ae860d898b8b3723e550a10",
+      "bytes": 212
+    },
+    {
+      "original_path": "exploration/eda/run_python.sh",
+      "git_path": "eda/run_python.sh",
+      "sha256": "c36a41df8c529dbe7e76896daf3d137ba23fe9d4afb2415e4b3bafeabf83e82c",
+      "bytes": 481
+    },
+    {
+      "original_path": "exploration/evaluate.py",
+      "git_path": "evaluate.py",
+      "sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "bytes": 5578
+    },
+    {
+      "original_path": "exploration/model.py",
+      "git_path": "model.py",
+      "sha256": "c4cadfacb550ade39beb041b5d6e7460d6c2a08917c457ae71f05fe3e33ed1a9",
+      "bytes": 3169
+    },
+    {
+      "original_path": "exploration/requirements.txt",
+      "git_path": "requirements.txt",
+      "sha256": "e30940e3e890e6e5463f617475b97d7415e73f349fbf4070936aa284f0573eb2",
+      "bytes": 50
+    },
+    {
+      "original_path": "exploration/src/__init__.py",
+      "git_path": "src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "exploration/src/utils.py",
+      "git_path": "src/utils.py",
+      "sha256": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f",
+      "bytes": 1027
+    },
+    {
+      "original_path": "exploration/transfer_aug/.gitignore",
+      "git_path": "transfer_aug/.gitignore",
+      "sha256": "6de7cff38207ed068cc4b3edb3b012b89a9383bbdb2d16ae5c7e6990ae156cba",
+      "bytes": 600
+    },
+    {
+      "original_path": "exploration/transfer_aug/AGENTS.md",
+      "git_path": "transfer_aug/AGENTS.md",
+      "sha256": "d050184ff1be195bb2e547e2811b917efd1717c9c7f5f3bd7ff8f3bbe4e10a96",
+      "bytes": 274
+    },
+    {
+      "original_path": "exploration/transfer_aug/EXPERIMENT_LEDGER.json",
+      "git_path": "transfer_aug/EXPERIMENT_LEDGER.json",
+      "sha256": "656b40a9eb935f22990efd9d1ecb54303bbceacba5bdaabd9d7a031507242383",
+      "bytes": 2750
+    },
+    {
+      "original_path": "exploration/transfer_aug/EXPERIMENT_TEMPLATE.md",
+      "git_path": "transfer_aug/EXPERIMENT_TEMPLATE.md",
+      "sha256": "96beb10ea81caff053eabc5595231fa0c716441f45e62bb81c7be86113bcaebc",
+      "bytes": 4202
+    },
+    {
+      "original_path": "exploration/transfer_aug/FIRST_WAVE_REPORT.md",
+      "git_path": "transfer_aug/FIRST_WAVE_REPORT.md",
+      "sha256": "eb02cc16744747794e43dee559cc3d82e951416da99812fdca40d048ae9a678c",
+      "bytes": 9038
+    },
+    {
+      "original_path": "exploration/transfer_aug/MASTER.md",
+      "git_path": "transfer_aug/MASTER.md",
+      "sha256": "b66d2c1aa3e341856351e327318342bcc83e76fd995bb93e6c30178b1085bea4",
+      "bytes": 7483
+    },
+    {
+      "original_path": "exploration/transfer_aug/METHODOLOGY_AUDIT.md",
+      "git_path": "transfer_aug/METHODOLOGY_AUDIT.md",
+      "sha256": "9daaeadfcdeb106731870ad23ea2f983860d9e005049717ed425e69267007be9",
+      "bytes": 21732
+    },
+    {
+      "original_path": "exploration/transfer_aug/README.md",
+      "git_path": "transfer_aug/README.md",
+      "sha256": "b17b545d601ecb16beba696978d28b1078ce768d71c03ecd253bb7804dd06962",
+      "bytes": 5745
+    },
+    {
+      "original_path": "exploration/transfer_aug/RESEARCH_LOG.md",
+      "git_path": "transfer_aug/RESEARCH_LOG.md",
+      "sha256": "f78e9a4d56ce55759fc969855d9377266f3d5a6e814cbba0ae6896a2dfca1c41",
+      "bytes": 15188
+    },
+    {
+      "original_path": "exploration/transfer_aug/RESEARCH_PLAN.md",
+      "git_path": "transfer_aug/RESEARCH_PLAN.md",
+      "sha256": "1a699734c21fcaf1a52c6d3ffc74070c695a5d3945055514a5969664c82e295f",
+      "bytes": 8641
+    },
+    {
+      "original_path": "exploration/transfer_aug/ROUND2_DESIGN.md",
+      "git_path": "transfer_aug/ROUND2_DESIGN.md",
+      "sha256": "5c8e41e8d1af6417875f70972dfaa0054f0e8222d2d57620a4ecce6b82608ae9",
+      "bytes": 3535
+    },
+    {
+      "original_path": "exploration/transfer_aug/ROUND2_LEDGER.json",
+      "git_path": "transfer_aug/ROUND2_LEDGER.json",
+      "sha256": "28e74e9bfb62641a66b0bf61bcfea63856d2160514f2b364dda7d67e5d84efbe",
+      "bytes": 3948
+    },
+    {
+      "original_path": "exploration/transfer_aug/ROUND2_REPORT.md",
+      "git_path": "transfer_aug/ROUND2_REPORT.md",
+      "sha256": "60195595230c616313af30f621eec383a896b3371352c975633a16f1449554f6",
+      "bytes": 5664
+    },
+    {
+      "original_path": "exploration/transfer_aug/ROUND3_DESIGN.md",
+      "git_path": "transfer_aug/ROUND3_DESIGN.md",
+      "sha256": "7de1afbb1803a80c536f32da1b58960fef1e14c946edff2048b3bcef6055f931",
+      "bytes": 3326
+    },
+    {
+      "original_path": "exploration/transfer_aug/ROUND3_LEDGER.json",
+      "git_path": "transfer_aug/ROUND3_LEDGER.json",
+      "sha256": "e925ccd7ed8c49ba86e58fc6939017445f21bcfe51c7542eb30e4d0c5cc7f7ce",
+      "bytes": 3102
+    },
+    {
+      "original_path": "exploration/transfer_aug/ROUND3_REPORT.md",
+      "git_path": "transfer_aug/ROUND3_REPORT.md",
+      "sha256": "47431db5bc5a151fce62802c71dcab8493051dd921bc8c03ead155151e4c3c54",
+      "bytes": 6558
+    },
+    {
+      "original_path": "exploration/transfer_aug/SOURCE_REGISTRY.md",
+      "git_path": "transfer_aug/SOURCE_REGISTRY.md",
+      "sha256": "009d6d7f9e9f3ea1b2029f2b528f2604e809c2867c64c15a763490741a910f65",
+      "bytes": 9459
+    },
+    {
+      "original_path": "exploration/transfer_aug/STUDY_INTERPRETATIONS.md",
+      "git_path": "transfer_aug/STUDY_INTERPRETATIONS.md",
+      "sha256": "826af41a288a02547a6c2c30558b37c14725c23a57bc3fe264b0059bec76045e",
+      "bytes": 4939
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/adain_original/LICENSE",
+      "git_path": "transfer_aug/audit_sources/adain_original/LICENSE",
+      "sha256": "cd76d2a07bb768a40d5ea792d53f3aa0cc3af4fa4fbeb71b76e61d7797456a13",
+      "bytes": 1066
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/adain_original/README.md",
+      "git_path": "transfer_aug/audit_sources/adain_original/README.md",
+      "sha256": "3502580dbc2c1125b2aeaf5dffd85eae88ec494b7b2b61c4552d4ebfa466d18e",
+      "bytes": 8909
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/adain_original/provenance.json",
+      "git_path": "transfer_aug/audit_sources/adain_original/provenance.json",
+      "sha256": "5e444b31019e0469d80699157c676d7025aa3c36f1281f8d826f7d089f6bd8aa",
+      "bytes": 1329
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/adain_pytorch/LICENSE",
+      "git_path": "transfer_aug/audit_sources/adain_pytorch/LICENSE",
+      "sha256": "cac60b351360e641823e739fa9701bc22dc0547d300d1c54c4a0c040fc6e6e2b",
+      "bytes": 1068
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/adain_pytorch/README.md",
+      "git_path": "transfer_aug/audit_sources/adain_pytorch/README.md",
+      "sha256": "8b363ae63547d6065909f0868f07092df25156a9122bc858d24c4522f2527eed",
+      "bytes": 2705
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/adain_pytorch/net.py",
+      "git_path": "transfer_aug/audit_sources/adain_pytorch/net.py",
+      "sha256": "2932117288166139afd648a4db790d717c211a10328c8dc9df3380b958a41c17",
+      "bytes": 5274
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/adain_pytorch/provenance.json",
+      "git_path": "transfer_aug/audit_sources/adain_pytorch/provenance.json",
+      "sha256": "c227db00881a555ed5af416400930ef980a3cef7aed42616f5e2f38e3e288a02",
+      "bytes": 1402
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/adain_pytorch/train.py",
+      "git_path": "transfer_aug/audit_sources/adain_pytorch/train.py",
+      "sha256": "b06d89f7d5919c63882c3c32a8b007edb9df6f3ed46a927adc527bb0d90a042e",
+      "bytes": 4539
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/color/LICENSE.txt",
+      "git_path": "transfer_aug/audit_sources/color/LICENSE.txt",
+      "sha256": "e650c745629806ea19bc9c97d79b245bce69380d87f751a33d5877fd19fd54fe",
+      "bytes": 1112
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/color/README.md",
+      "git_path": "transfer_aug/audit_sources/color/README.md",
+      "sha256": "ee19a5a7157aa8ec158cf7d578a1ca191605579110236cc98d34a8928e384812",
+      "bytes": 1521
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/color/color_transfer/__init__.py",
+      "git_path": "transfer_aug/audit_sources/color/color_transfer/__init__.py",
+      "sha256": "51ed90fd02e2bfd96790506621dea1ac883733e878b3f298a9a536815122a99a",
+      "bytes": 4775
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/color/example.py",
+      "git_path": "transfer_aug/audit_sources/color/example.py",
+      "sha256": "39a79341322cc90150c21996ff53850d2ddb64973d40fee7bd4ff71ff5b9f399",
+      "bytes": 2081
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/color/provenance.json",
+      "git_path": "transfer_aug/audit_sources/color/provenance.json",
+      "sha256": "53853c9bd6e320a3789aa4dd0fa358bde441d06bc7bd3751831b1740b486c6bf",
+      "bytes": 2111
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/color/setup.py",
+      "git_path": "transfer_aug/audit_sources/color/setup.py",
+      "sha256": "28618a27ff9ea5c00630482c322caa46226d045f71d762f867e558ae1eb8c75f",
+      "bytes": 574
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/color/tree.json",
+      "git_path": "transfer_aug/audit_sources/color/tree.json",
+      "sha256": "96469c332277e0c5c5bd92e1a0d59a54f61db2b1e291fa74370d1c0f5daf2531",
+      "bytes": 441
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cut/LICENSE",
+      "git_path": "transfer_aug/audit_sources/cut/LICENSE",
+      "sha256": "4136d26774a0a0fdcf3f4c0e1140f19279565d41df764c64cc75c0283e6f5249",
+      "bytes": 11199
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cut/README.md",
+      "git_path": "transfer_aug/audit_sources/cut/README.md",
+      "sha256": "c64dc766229737f7c48b1f82fff5df330913082dd7f8e338baaf996af12e7247",
+      "bytes": 14076
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cut/models/cut_model.py",
+      "git_path": "transfer_aug/audit_sources/cut/models/cut_model.py",
+      "sha256": "04a4b5e410233c8845bfbf1e6e8097ffdd757ea769d63e78263e0cd74658f672",
+      "bytes": 10228
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cut/models/networks.py",
+      "git_path": "transfer_aug/audit_sources/cut/models/networks.py",
+      "sha256": "0fb3a0c27c66b9b4a1635cb4856afeb54d2828f6389a0bb33376f3a87c82cae7",
+      "bytes": 60639
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cut/models/patchnce.py",
+      "git_path": "transfer_aug/audit_sources/cut/models/patchnce.py",
+      "sha256": "2bd50b34679786219a4d5c5858a3a277b0fd4467cc49b05d37a2041cb5f7f678",
+      "bytes": 2319
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cut/options/base_options.py",
+      "git_path": "transfer_aug/audit_sources/cut/options/base_options.py",
+      "sha256": "e778879da92aa30581bf3760f66a0ea09e71cfcebe226c931f1aa93b30d1b0a8",
+      "bytes": 9720
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cut/provenance.json",
+      "git_path": "transfer_aug/audit_sources/cut/provenance.json",
+      "sha256": "6a1861ee0ab6a121e408d55402de60946bdf0aa06b798a85d3bad4e015a9c83f",
+      "bytes": 2147
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cut/tree.json",
+      "git_path": "transfer_aug/audit_sources/cut/tree.json",
+      "sha256": "74ae138f034cf5ba24836371239a30c734f64f9ae69b3a239d0239cb31818f5e",
+      "bytes": 1810
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cyclegan/LICENSE",
+      "git_path": "transfer_aug/audit_sources/cyclegan/LICENSE",
+      "sha256": "5474d910fc756107f149fb5ea08e557364d1607acda4e79a03b8e8f7a6279593",
+      "bytes": 3565
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cyclegan/README.md",
+      "git_path": "transfer_aug/audit_sources/cyclegan/README.md",
+      "sha256": "cac0247153ef3bbcaea17c1707d774a124359a98e9c9f1b4f2a8a7be4051fc7b",
+      "bytes": 16743
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cyclegan/models/cycle_gan_model.py",
+      "git_path": "transfer_aug/audit_sources/cyclegan/models/cycle_gan_model.py",
+      "sha256": "9d21fe213927a7965b57d3a0e29f2633f490ba8d8de57ab839975510a8cf08dd",
+      "bytes": 10381
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cyclegan/models/networks.py",
+      "git_path": "transfer_aug/audit_sources/cyclegan/models/networks.py",
+      "sha256": "2bfcb7adb19f7b7ff6fd8dd76e313200acf000e96784b920658a62e1a11fc04f",
+      "bytes": 26800
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/cyclegan/provenance.json",
+      "git_path": "transfer_aug/audit_sources/cyclegan/provenance.json",
+      "sha256": "e90ec265b5abf9db4ca7092d4a10e8370537de776383fa8fe5c1764db8ac7051",
+      "bytes": 1499
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/diffaugment/DiffAugment_pytorch.py",
+      "git_path": "transfer_aug/audit_sources/diffaugment/DiffAugment_pytorch.py",
+      "sha256": "d61fed24900fea3be17e3cd10d8880f895905732fd53f1f9b3013673b36fa0e2",
+      "bytes": 3038
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/diffaugment/LICENSE.txt",
+      "git_path": "transfer_aug/audit_sources/diffaugment/LICENSE.txt",
+      "sha256": "c66f64661fc6123063af62f2e94f6949ab2fe2afb061cd2f25a11f0806f1b36d",
+      "bytes": 1366
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/diffaugment/README.md",
+      "git_path": "transfer_aug/audit_sources/diffaugment/README.md",
+      "sha256": "2a3969f9ca625e462888436283d603e0c89180eb84f72605ac992e38ea625b79",
+      "bytes": 8415
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/diffaugment/provenance.json",
+      "git_path": "transfer_aug/audit_sources/diffaugment/provenance.json",
+      "sha256": "4e68400ae2c692b745ef327a649fe82f702578a26c9afc4fcd12e5e826ad9ed2",
+      "bytes": 1426
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/diffaugment/tree.json",
+      "git_path": "transfer_aug/audit_sources/diffaugment/tree.json",
+      "sha256": "5ef2bfbd9aa8a3d363174c4b857a6bb3b3fef011f923e1ed76d3bc916e1eb92f",
+      "bytes": 14588
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/fda/FDA_demo.py",
+      "git_path": "transfer_aug/audit_sources/fda/FDA_demo.py",
+      "sha256": "285ff684e8451c5440dc7bcb2652bb1a7cf8d2b74776a414fdb7aeca796441e8",
+      "bytes": 682
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/fda/README.md",
+      "git_path": "transfer_aug/audit_sources/fda/README.md",
+      "sha256": "ed9273a1769d4c2b6b657444e1f51c9db919c7c6d328472cf94cf390afc0ddf2",
+      "bytes": 4174
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/fda/provenance.json",
+      "git_path": "transfer_aug/audit_sources/fda/provenance.json",
+      "sha256": "28661fdbfa09332a567dd3ffac5a4b08025faa49f7c7c3e3fbbea0590e49c1b7",
+      "bytes": 1398
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/fda/train.py",
+      "git_path": "transfer_aug/audit_sources/fda/train.py",
+      "sha256": "a60bb6eab067c12375ef69a1ceacdf8d04b314916e5d9f957c0613531779dbbc",
+      "bytes": 5306
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/fda/tree.json",
+      "git_path": "transfer_aug/audit_sources/fda/tree.json",
+      "sha256": "49fcf78f980e477163bfc16c2e2e3e3d7f84a9258ad29438214848e2e9fb8d01",
+      "bytes": 928
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/fda/utils/__init__.py",
+      "git_path": "transfer_aug/audit_sources/fda/utils/__init__.py",
+      "sha256": "165c60e0e96ed4b357550089b499086f562458248f3cec5796d5151f080b8b4d",
+      "bytes": 3181
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/gatys/LICENSE",
+      "git_path": "transfer_aug/audit_sources/gatys/LICENSE",
+      "sha256": "fa28021b4c86f9bb0d94429f0ef68e586e46fdbba69721012738eaef1c99a9a3",
+      "bytes": 1067
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/gatys/README.md",
+      "git_path": "transfer_aug/audit_sources/gatys/README.md",
+      "sha256": "6b28a9c112fa13b8bc01c2e840bb550b27904035d3981b4f8fbed2ba950febbf",
+      "bytes": 654
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/gatys/provenance.json",
+      "git_path": "transfer_aug/audit_sources/gatys/provenance.json",
+      "sha256": "cd5effb445bcca1ae9c796a9157fa7995280c6f656881061830b2a770c3b14cb",
+      "bytes": 1220
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/manifest.json",
+      "git_path": "transfer_aug/audit_sources/manifest.json",
+      "sha256": "f5d5f2a50d2f5ee403141855751e609f3e66eb3e8f30651d59520266590ad341",
+      "bytes": 41368
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/LICENSE",
+      "git_path": "transfer_aug/audit_sources/mixstyle/LICENSE",
+      "sha256": "9bde51e4e2576a3000837af592db45586f693a83893e8fa2f9b718534462cebe",
+      "bytes": 1069
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/README.md",
+      "git_path": "transfer_aug/audit_sources/mixstyle/README.md",
+      "sha256": "4e1c47996e57c6b2a6198e21b0b97fa120280a972c4440012cb21d4f334a0654",
+      "bytes": 7742
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/README.md",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/README.md",
+      "sha256": "ac0f8a3dfa6ee66b7a605efff293ed449091bf93973f1c17123c4bb0227ca04d",
+      "bytes": 2753
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/datasets/msda_pacs.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/datasets/msda_pacs.yaml",
+      "sha256": "5cd616c56a13b8d3cf31ed9381f9dbf4456120bc745123fc4b340619fd0275f8",
+      "bytes": 181
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/datasets/ssdg_officehome.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/datasets/ssdg_officehome.yaml",
+      "sha256": "308d0ff0f5a7271b907025fd0eb3c2cbcda10cf6420e2f6083b572846589bc6b",
+      "bytes": 207
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/datasets/ssdg_pacs.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/datasets/ssdg_pacs.yaml",
+      "sha256": "cbf3ae2ce1fc6c463c1c1902897d9399407454dfb437915bb1565aae5d033407",
+      "bytes": 200
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/office_home_dg_crossdomain.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/office_home_dg_crossdomain.yaml",
+      "sha256": "9bf2ffa82c871e1df5e55089bf0dd93ab74cc027ef1964996f59a4b057780249",
+      "bytes": 259
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/office_home_dg_random.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/office_home_dg_random.yaml",
+      "sha256": "80ceb82f8859583f1154a992a37799dac1c778f0504d07fa20ee27dba9db382f",
+      "bytes": 201
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/pacs_crossdomain.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/pacs_crossdomain.yaml",
+      "sha256": "9bf2ffa82c871e1df5e55089bf0dd93ab74cc027ef1964996f59a4b057780249",
+      "bytes": 259
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/pacs_random.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/pacs_random.yaml",
+      "sha256": "80ceb82f8859583f1154a992a37799dac1c778f0504d07fa20ee27dba9db382f",
+      "bytes": 201
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/ssdg_officehome.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/ssdg_officehome.yaml",
+      "sha256": "2a5fd7284ad4696f6027e696827ef5d3f229d7055fbf3b3218c601f93e9b266b",
+      "bytes": 161
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/ssdg_pacs.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/mixstyle/ssdg_pacs.yaml",
+      "sha256": "2a5fd7284ad4696f6027e696827ef5d3f229d7055fbf3b3218c601f93e9b266b",
+      "bytes": 161
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/semimixstyle/msda_pacs.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/semimixstyle/msda_pacs.yaml",
+      "sha256": "30a52d87fbe87f9a0290a1c21fc469ab162e1c01c6c6b8ab07d66b1afe31fa72",
+      "bytes": 374
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/semimixstyle/ssdg_officehome.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/semimixstyle/ssdg_officehome.yaml",
+      "sha256": "80ccbfd7b59928da2346ba88aae312d2f909105823da257609680087ff3ea759",
+      "bytes": 409
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/semimixstyle/ssdg_pacs.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/semimixstyle/ssdg_pacs.yaml",
+      "sha256": "2b9c193e4eac3fa167bc2b9ec4e419cdf9942efa554ccbb888efbb73d8113747",
+      "bytes": 408
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/semimixstyle/visda17.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/configs/trainers/semimixstyle/visda17.yaml",
+      "sha256": "dc505c35931690ecce8723338682016e53bc20505004584c66ab9c2702d88f9b",
+      "bytes": 500
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/imcls/trainers/semimixstyle.py",
+      "git_path": "transfer_aug/audit_sources/mixstyle/imcls/trainers/semimixstyle.py",
+      "sha256": "1db83cfda19242d45bc4d1a844db63bfa9df1d021e19114f8b5e965ce233138a",
+      "bytes": 4835
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/provenance.json",
+      "git_path": "transfer_aug/audit_sources/mixstyle/provenance.json",
+      "sha256": "b811971a0bcdb0110673af25c7276bf59481eb92cf2d15d1dd1194665b7f56d2",
+      "bytes": 7934
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/reid/cfgs/cfg_osnet.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/reid/cfgs/cfg_osnet.yaml",
+      "sha256": "9bb566e26d356a7f1ffc7a89c33a2aa6db7c1c1fbcd2fe28db01e7882f1644b3",
+      "bytes": 607
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/reid/cfgs/cfg_osnet_domprior.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/reid/cfgs/cfg_osnet_domprior.yaml",
+      "sha256": "0321e055bc15b260f3be87d72dadf98d5c5a28eeaa9675513dd6b7bbfd49e68c",
+      "bytes": 689
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/reid/cfgs/cfg_r50.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/reid/cfgs/cfg_r50.yaml",
+      "sha256": "3ae8337d15c9336ee0246c02f4c8680ad7632084e010e0b0e95c514849c46910",
+      "bytes": 621
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/reid/cfgs/cfg_r50_domprior.yaml",
+      "git_path": "transfer_aug/audit_sources/mixstyle/reid/cfgs/cfg_r50_domprior.yaml",
+      "sha256": "994fc5341bbe04d58c666bf22a68b804d8f6ee783d3c62ecf37c1b51bd6fdfb9",
+      "bytes": 703
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/reid/models/mixstyle.py",
+      "git_path": "transfer_aug/audit_sources/mixstyle/reid/models/mixstyle.py",
+      "sha256": "908c25e605f047f460477cb72ccdeef66439646ef5a0b4cef9c0a46df54107ef",
+      "bytes": 3127
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/mixstyle/tree.json",
+      "git_path": "transfer_aug/audit_sources/mixstyle/tree.json",
+      "sha256": "d3c74ac8ec91e1457f3db43f1c4ac377ca929e9c911e08e6f4065582162053ae",
+      "bytes": 29804
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/munit/LICENSE.md",
+      "git_path": "transfer_aug/audit_sources/munit/LICENSE.md",
+      "sha256": "051131b5ef3596dad9bf0cffee19c248ff9751596a86b25c70f0cd82d6f6d713",
+      "bytes": 19129
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/munit/README.md",
+      "git_path": "transfer_aug/audit_sources/munit/README.md",
+      "sha256": "06ee9915067193ad069ef5ada4ff70b7e2cf2536cdf4097c2c5add506590e6e9",
+      "bytes": 2153
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/munit/configs/edges2handbags_folder.yaml",
+      "git_path": "transfer_aug/audit_sources/munit/configs/edges2handbags_folder.yaml",
+      "sha256": "05b9749b9c89424e802b000090573552b3958f7909e643546eb4c198484c497c",
+      "bytes": 3169
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/munit/networks.py",
+      "git_path": "transfer_aug/audit_sources/munit/networks.py",
+      "sha256": "bf8bf5dead288d663018ecd2fdfd0da28c85286c7c1cb3b78a837a5c6ecf68b6",
+      "bytes": 23069
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/munit/provenance.json",
+      "git_path": "transfer_aug/audit_sources/munit/provenance.json",
+      "sha256": "c64d8dd662ea35e5417697f3f2b1e080bd6b8e9a4ace7a83a26c93f652df0901",
+      "bytes": 1832
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/munit/trainer.py",
+      "git_path": "transfer_aug/audit_sources/munit/trainer.py",
+      "sha256": "6cfee99a62749619f06edbb13da1fa382816a77097275ca7cb888798cebfba8c",
+      "bytes": 19914
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/starganv2/LICENSE",
+      "git_path": "transfer_aug/audit_sources/starganv2/LICENSE",
+      "sha256": "c363be4fe1e1736782dd2fad3b49054726879271c956f0dd62d669bb734ee2a1",
+      "bytes": 19407
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/starganv2/README.md",
+      "git_path": "transfer_aug/audit_sources/starganv2/README.md",
+      "sha256": "0d879703fd5c0c675c3d1f380fbe610332e93459ff4a0b8d009d6fc152b7e7ae",
+      "bytes": 10638
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/starganv2/core/model.py",
+      "git_path": "transfer_aug/audit_sources/starganv2/core/model.py",
+      "sha256": "5778fd921f71d693c9783616619beb6c48f19c13d74de80dcfefcaff208b4175",
+      "bytes": 10735
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/starganv2/core/solver.py",
+      "git_path": "transfer_aug/audit_sources/starganv2/core/solver.py",
+      "sha256": "5d9100491149aa22e29f91f91e036a06ca4d7bd0066cc275a085fcf8b2065fff",
+      "bytes": 11173
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/starganv2/main.py",
+      "git_path": "transfer_aug/audit_sources/starganv2/main.py",
+      "sha256": "443762939fbca2597a14143f02c61e4617ff4eeaf420ce8e9d2bb76e61ff74ad",
+      "bytes": 8918
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/starganv2/provenance.json",
+      "git_path": "transfer_aug/audit_sources/starganv2/provenance.json",
+      "sha256": "4a09358bb4cf8661d361ad17df3f9c1634e1da4e7bee7a1d2d29d8c32dcfa458",
+      "bytes": 1645
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/LICENSE.txt",
+      "git_path": "transfer_aug/audit_sources/swapping/LICENSE.txt",
+      "sha256": "2046c20089050c58a43428774f4418ba2df3c8fa37472f749580e83bf8897c8f",
+      "bytes": 3558
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/README.md",
+      "git_path": "transfer_aug/audit_sources/swapping/README.md",
+      "sha256": "4180aacd06c60e2d966170015b714d1269f3baafa825e01a10ecdad023d308f2",
+      "bytes": 11585
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/__init__.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/__init__.py",
+      "sha256": "907712b6e2204328ef03d1718f709204e775924e86fca0baed7e3984630f9698",
+      "bytes": 762
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/__main__.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/__main__.py",
+      "sha256": "165633458eb94e702f2519b6ab2218f08c568abd0cc31f6e5a1d5914c35f1a2a",
+      "bytes": 4161
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/afhq_pretrained_launcher.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/afhq_pretrained_launcher.py",
+      "sha256": "ba8c7792fb3318bb64bc5b95bd1c297af01f9da0a1de0c88c5effbb54283010e",
+      "bytes": 2601
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/bedroom_launcher.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/bedroom_launcher.py",
+      "sha256": "cd1ebc318bfb7fdf57335e3e2f895fb6c8919b571cb44644396762b7dfb36913",
+      "bytes": 1447
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/bedroom_pretrained_launcher.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/bedroom_pretrained_launcher.py",
+      "sha256": "2076f9646680d67ea867d931bf0575e346c8fc75854a7d604c31b6b5563d99f7",
+      "bytes": 1440
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/church_launcher.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/church_launcher.py",
+      "sha256": "1f0926c5e90c09f397ccf5e2f90466ec5a9b7de9d33bb1d31caba358f1d856f1",
+      "bytes": 1452
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/church_pretrained_launcher.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/church_pretrained_launcher.py",
+      "sha256": "df9b37fb7149d73e3e668c2fb1b3d51429070fbf15edbeb421c0057d81c8749c",
+      "bytes": 2119
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/ffhq1024_pretrained_launcher.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/ffhq1024_pretrained_launcher.py",
+      "sha256": "c2e2e3224d707b7adb920c2e89259a351d595b9e09fe876f3d17a115e50886d8",
+      "bytes": 2587
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/ffhq512_pretrained_launcher.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/ffhq512_pretrained_launcher.py",
+      "sha256": "67b1cd1169475a9cd675cdfe416e525c05ea2286493c0c9d9da59f48255ad002",
+      "bytes": 1424
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/ffhq_launcher.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/ffhq_launcher.py",
+      "sha256": "543ac61b7d2c23e08a9c9db1b23a279efae3d851258e879406e788251d6ac492",
+      "bytes": 2252
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/mountain_launcher.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/mountain_launcher.py",
+      "sha256": "ac37e8217a51d88e823219348032f8a4ad52f2654323cc89014bebb0ea07a7c3",
+      "bytes": 1580
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/mountain_pretrained_launcher.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/mountain_pretrained_launcher.py",
+      "sha256": "79000fa7e132ea6ca95d9344991627172fb9a16a9477b83628c73db20d20264e",
+      "bytes": 3320
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/experiments/tmux_launcher.py",
+      "git_path": "transfer_aug/audit_sources/swapping/experiments/tmux_launcher.py",
+      "sha256": "fb308f3fec3c048c2d33da7591b6dea7b59a0fd01c6cca0c20b9606d11bee6dc",
+      "bytes": 9086
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/__init__.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/__init__.py",
+      "sha256": "b4f02244c30143f6d73df89d35bf4f25e5caba68d478732f570eddbf4467198d",
+      "bytes": 4408
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/base_model.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/base_model.py",
+      "sha256": "f7baecfff6d555488aaaf7df5e9c6d80a2170ef895dab4f4873d0111108cf1b7",
+      "bytes": 5592
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/__init__.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/__init__.py",
+      "sha256": "bfd9a3b013d0fed1ac310fe22a112dc74bf086dcbae58b652a46b59680714be0",
+      "bytes": 1489
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/base_network.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/base_network.py",
+      "sha256": "33c07e02f4aa8d07ced51e6966a425aa0c13857b685470571b5a14241645371f",
+      "bytes": 2215
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/classifier.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/classifier.py",
+      "sha256": "a664b8287e9736a4b566de86f714a26e4ee8a93d2fd0922f71fcbb1ad2f91d2d",
+      "bytes": 1057
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/discriminator.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/discriminator.py",
+      "sha256": "5389055129c709e93102c9275f30a20b1e708c23744343919d0a6da6edbd38e4",
+      "bytes": 966
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/encoder.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/encoder.py",
+      "sha256": "5a059500d7964969bc7adefe8ea60e12185f1747d95f0d16dc54d53c84400f58",
+      "bytes": 4372
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/generator.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/generator.py",
+      "sha256": "c8d31a71e5956e53d2dd44faadea7fce395d3589ddd5ab23bab95cd59102c705",
+      "bytes": 6887
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/inception.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/inception.py",
+      "sha256": "d0be513e1c961cfe309f466f057b9b775f4bef3df4782801d7cc6b57ce9e2c1c",
+      "bytes": 12171
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/loss.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/loss.py",
+      "sha256": "b4ee3ef8eb4aa6935feacf3d70a52d59e359891a58e27a3e3d8492c3d95b9447",
+      "bytes": 5486
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/patch_discriminator.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/patch_discriminator.py",
+      "sha256": "a886122242d5c8d9a4878ee0f1f1684bac51c27c2e588c554c52a4ca92164e7d",
+      "bytes": 6803
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/pyramidnet.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/pyramidnet.py",
+      "sha256": "c65e719f79fda8e2963d3549a5437364bf7bd656598d5e181b41fd7e6408bf18",
+      "bytes": 8901
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/stylegan2_layers.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/stylegan2_layers.py",
+      "sha256": "2bb9f9e798bee049020f335e2da79f20fed57178be07c08f9b0df0caf4fe6673",
+      "bytes": 22492
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/stylegan2_op/__init__.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/stylegan2_op/__init__.py",
+      "sha256": "d3bdebb6b1ea35ab8e7dd14af32919f11ae630ab9154d4c84f839397b98b2bf6",
+      "bytes": 89
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/stylegan2_op/fused_act.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/stylegan2_op/fused_act.py",
+      "sha256": "bf00baa057078cd5fa4044dc86101ca95bc482d10ccaf544b89c4c0da8a2532a",
+      "bytes": 2933
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/networks/stylegan2_op/upfirdn2d.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/networks/stylegan2_op/upfirdn2d.py",
+      "sha256": "228c5fb1ef64d08db2380a0e3c5af40dccbd757f634a759a07d33f1b586120ec",
+      "bytes": 6496
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/models/swapping_autoencoder_model.py",
+      "git_path": "transfer_aug/audit_sources/swapping/models/swapping_autoencoder_model.py",
+      "sha256": "71df763244ea5b17c55d93384595c37dccb04386802f00a9d407a72e31b83e7f",
+      "bytes": 10396
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/options/__init__.py",
+      "git_path": "transfer_aug/audit_sources/swapping/options/__init__.py",
+      "sha256": "e1fcdbfafb69110303904ef43af6bbc88b4c83f7ca5bb199511ccde42e44ded9",
+      "bytes": 8816
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/swapping/provenance.json",
+      "git_path": "transfer_aug/audit_sources/swapping/provenance.json",
+      "sha256": "bb51c2750250e48adbed833a788d7db2dee98f2fe6985faacd1927b2567a10ae",
+      "bytes": 11141
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/wct/LICENSE.txt",
+      "git_path": "transfer_aug/audit_sources/wct/LICENSE.txt",
+      "sha256": "fe507c0a99c3d0808cee9c7f185b61fb22be51c0c388c143a2d2496f736926ac",
+      "bytes": 1065
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/wct/README.md",
+      "git_path": "transfer_aug/audit_sources/wct/README.md",
+      "sha256": "95e0f780deee3928de83aba46e8ae6494a240701e46ec7856e018f477ef000ec",
+      "bytes": 7565
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/wct/provenance.json",
+      "git_path": "transfer_aug/audit_sources/wct/provenance.json",
+      "sha256": "b85178bba6d0b7526ae03a626bc60fbc0c982e5401f31f7ef2bac8a6d6cb477a",
+      "bytes": 2852
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/wct/tree.json",
+      "git_path": "transfer_aug/audit_sources/wct/tree.json",
+      "sha256": "662eaf55a34b2ff054123f29614a3a5f323352e368cbb21ad95fb60e46446a1b",
+      "bytes": 1308
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/wct_pytorch/LICENSE.md",
+      "git_path": "transfer_aug/audit_sources/wct_pytorch/LICENSE.md",
+      "sha256": "1c5f32ed7a27f263c4c4d5e46c732564bda047a569960ab1a9ec1ac4dd68bed2",
+      "bytes": 1073
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/wct_pytorch/Readme.md",
+      "git_path": "transfer_aug/audit_sources/wct_pytorch/Readme.md",
+      "sha256": "594424a911fd571472969d61086d69a5379985351c121e57fd34c3534e32bfdf",
+      "bytes": 1777
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/wct_pytorch/WCT.py",
+      "git_path": "transfer_aug/audit_sources/wct_pytorch/WCT.py",
+      "sha256": "7210ddeb46299c10cde27abdcee44c764b5a92cad8b61198637911d573d9d793",
+      "bytes": 4658
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/wct_pytorch/modelsNIPS.py",
+      "git_path": "transfer_aug/audit_sources/wct_pytorch/modelsNIPS.py",
+      "sha256": "c0ff12f981ce77fdeed8e057517197b6de47c845cf65f419a2d0b8caadf4642c",
+      "bytes": 30153
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/wct_pytorch/provenance.json",
+      "git_path": "transfer_aug/audit_sources/wct_pytorch/provenance.json",
+      "sha256": "e6263611222d7e651adc2206e6386daf8b5a97b0d03dcfb3b2177750f9a949c4",
+      "bytes": 1532
+    },
+    {
+      "original_path": "exploration/transfer_aug/audit_sources/wct_pytorch/util.py",
+      "git_path": "transfer_aug/audit_sources/wct_pytorch/util.py",
+      "sha256": "9036c22afa72277ec5a637f6d7f174e6a94f7ec442baed555abfda2027c5ff73",
+      "bytes": 3121
+    },
+    {
+      "original_path": "exploration/transfer_aug/count_audit_parameters.py",
+      "git_path": "transfer_aug/count_audit_parameters.py",
+      "sha256": "b74f427a8645b238c15470ebcec187d6c8a69dfcca8371c205934fc697940423",
+      "bytes": 7475
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/CONTRACT_v1.md",
+      "git_path": "transfer_aug/domain_discovery/round2/CONTRACT_v1.md",
+      "sha256": "e99cfd0a8c510b3e216dc8f24f01c2c05afe7ba927e02feedf4f05b92de1d758",
+      "bytes": 3886
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/DEFINITIONS.md",
+      "git_path": "transfer_aug/domain_discovery/round2/DEFINITIONS.md",
+      "sha256": "5805f387bf6dec2ed0bc1a33703f8ad441b90887f0073945b432a6d7175be607",
+      "bytes": 3111
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/SUMMARY.md",
+      "git_path": "transfer_aug/domain_discovery/round2/SUMMARY.md",
+      "sha256": "4ed647ffc040bcd49871b27f4b48aadb3c14e29a32fe0ded6df074df33f8f71a",
+      "bytes": 2339
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/analyze.py",
+      "git_path": "transfer_aug/domain_discovery/round2/analyze.py",
+      "sha256": "3148078b9790796891e1a30ae620f1d094d19bd6c15e5c5c7a62acbf08e76091",
+      "bytes": 8409
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/artifact_manifest.json",
+      "git_path": "transfer_aug/domain_discovery/round2/artifact_manifest.json",
+      "sha256": "7d565ce1e2214c8a10a89ae77033ddf8b3a2a7d9a73838c3cc4b3898a8465b70",
+      "bytes": 3854
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/check_handoff.py",
+      "git_path": "transfer_aug/domain_discovery/round2/check_handoff.py",
+      "sha256": "f98f9ecdbad75db6c0ffa63006137a939f09a7d3efc155cfe91a89a69ccb7ed8",
+      "bytes": 1226
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/counts.json",
+      "git_path": "transfer_aug/domain_discovery/round2/counts.json",
+      "sha256": "27fad97f414c7472df61dc0dac0b0df5c5f253d2a9834761c919d30b21ed5768",
+      "bytes": 24262
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/cross_class_duplicates.json",
+      "git_path": "transfer_aug/domain_discovery/round2/cross_class_duplicates.json",
+      "sha256": "3ddb786d1376daa38837bd36088999d067ded7768f24a5f59bbe220bef94f06d",
+      "bytes": 2584
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/domain_measurements.json",
+      "git_path": "transfer_aug/domain_discovery/round2/domain_measurements.json",
+      "sha256": "10b5b6cbaf69c4e029f565988060fa7b71f897147a49c591e6254762fd34b03b",
+      "bytes": 1238
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/finalize.py",
+      "git_path": "transfer_aug/domain_discovery/round2/finalize.py",
+      "sha256": "673344fbd5f8db70d3f91b9ed0d482a53fe24dfca60651c4f1ff77f6f4806dd0",
+      "bytes": 8786
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/pca.json",
+      "git_path": "transfer_aug/domain_discovery/round2/pca.json",
+      "sha256": "93eaf17e1a0c2ee98674bd351df782937ea87acfd9746dda4850897851d920c9",
+      "bytes": 49474
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/regeneration.json",
+      "git_path": "transfer_aug/domain_discovery/round2/regeneration.json",
+      "sha256": "ae4559b3d978839aac60a004e52c3595e1505f6629148f2b9d2ba1adefea1d79",
+      "bytes": 1347
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/resource_usage.json",
+      "git_path": "transfer_aug/domain_discovery/round2/resource_usage.json",
+      "sha256": "47004003da11c3b228a3446556f8a61dcc3b41a7b97c3ec8090e300d85b0e570",
+      "bytes": 1004
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/result.json",
+      "git_path": "transfer_aug/domain_discovery/round2/result.json",
+      "sha256": "b9194352b91feae3bee4cf6536c15bee8831df34cbda903b81516297ceb3e6db",
+      "bytes": 2793
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/review_selection.json",
+      "git_path": "transfer_aug/domain_discovery/round2/review_selection.json",
+      "sha256": "f534bbfa2e4fa81aa9f1afb8e43184bf095c1368f7768278dc47a0e189750831",
+      "bytes": 28506
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/verification.json",
+      "git_path": "transfer_aug/domain_discovery/round2/verification.json",
+      "sha256": "a1db89ed83edaf6ec6a65d153be8e6c58e0798c27edc76461dd8a91e7016811d",
+      "bytes": 2077
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/verify_and_regenerate.py",
+      "git_path": "transfer_aug/domain_discovery/round2/verify_and_regenerate.py",
+      "sha256": "6f653204b522bff736b32b9f286cf11375ea806e7fe0412fc506dfe2fc897af5",
+      "bytes": 2773
+    },
+    {
+      "original_path": "exploration/transfer_aug/domain_discovery/round2/visual_review.json",
+      "git_path": "transfer_aug/domain_discovery/round2/visual_review.json",
+      "sha256": "59be295777d8af761594f5a29658c6d61d04b58f614b98b22ea359ad17734fef",
+      "bytes": 2821
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/CONTRACT_v1.md",
+      "git_path": "transfer_aug/experiments/TA-001/CONTRACT_v1.md",
+      "sha256": "0c57c5f6e23c269957c4bd18287fca6a8b959c3af5594efae19f9b85162ab7b3",
+      "bytes": 3322
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/IMPLEMENTATION.md",
+      "git_path": "transfer_aug/experiments/TA-001/IMPLEMENTATION.md",
+      "sha256": "46ab27370eaa77138f342295620d125795ce21012c381361e32561192427a236",
+      "bytes": 3347
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/SUMMARY.md",
+      "git_path": "transfer_aug/experiments/TA-001/SUMMARY.md",
+      "sha256": "659e006100df7f28ac68ba903bdfde27d777f06d5c9118e096dc7ec3c500182e",
+      "bytes": 2820
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/arrays/layout.json",
+      "git_path": "transfer_aug/experiments/TA-001/arrays/layout.json",
+      "sha256": "9df7e5c9f92581613aca3a5f18d295fc0c03404b19dcf2b5843deebbfc4503fa",
+      "bytes": 351
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/commands.json",
+      "git_path": "transfer_aug/experiments/TA-001/commands.json",
+      "sha256": "bb2bc3c234e349921b4933dafdd5219d02a0b634f6d0a96844167f49abe2577e",
+      "bytes": 1968
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/condition_metrics.json",
+      "git_path": "transfer_aug/experiments/TA-001/condition_metrics.json",
+      "sha256": "647c0dd9f17903e11614bad714553237e0f808f86544a2aef7b7d9b30fa71e7e",
+      "bytes": 8976
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/config.json",
+      "git_path": "transfer_aug/experiments/TA-001/config.json",
+      "sha256": "47d941d41ee5f84fd0d0fc0097e63a9b2e19b18a46aa3f28722d20327584586b",
+      "bytes": 1139
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/environment.json",
+      "git_path": "transfer_aug/experiments/TA-001/environment.json",
+      "sha256": "ec21fca9f28d28107948aeb284e18a0ab67bbe487badd7555e4f04c871c4a0fc",
+      "bytes": 519
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/finalize.py",
+      "git_path": "transfer_aug/experiments/TA-001/finalize.py",
+      "sha256": "d9512be3848849587615774495804b224b86bd2656928a4ae603c0011ceddc9d",
+      "bytes": 15493
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/gallery.html",
+      "git_path": "transfer_aug/experiments/TA-001/gallery.html",
+      "sha256": "978bd40b9670340b6b0b98a8dec1b78076d006689a206d456219968964e58535",
+      "bytes": 4443
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/generate.log",
+      "git_path": "transfer_aug/experiments/TA-001/generate.log",
+      "sha256": "7b8e6161e07e0fefbaabe233154410e8a9c323c09ccc718151a991a2986bdd19",
+      "bytes": 625
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/handoff_sha256.json",
+      "git_path": "transfer_aug/experiments/TA-001/handoff_sha256.json",
+      "sha256": "fb844d5ccef767538662595a84307db43067505945a1e744916a529b01529111",
+      "bytes": 268
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/recompute.log",
+      "git_path": "transfer_aug/experiments/TA-001/recompute.log",
+      "sha256": "97039b337fd5c71897c38d2fe6082587aa4c009b60afd0a9bd9b0aa54ee89cec",
+      "bytes": 630
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/record_visual_review.py",
+      "git_path": "transfer_aug/experiments/TA-001/record_visual_review.py",
+      "sha256": "f70a28bb7a31ccf3b95e5dfcd17258c47726f373a7714b11af02fd3e935ad63a",
+      "bytes": 10675
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/result.json",
+      "git_path": "transfer_aug/experiments/TA-001/result.json",
+      "sha256": "70a31c278f26c13fbcdcd9e5a9c8d738bff1e9dcc4f714177d8c170a66bbc959",
+      "bytes": 9577
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/run_experiment.py",
+      "git_path": "transfer_aug/experiments/TA-001/run_experiment.py",
+      "sha256": "8b0aa252d01c80e09d9b9880cc5d0d59af8a7fd16a2ca5e1dc5ba2543d1a7bde",
+      "bytes": 23083
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/status.json",
+      "git_path": "transfer_aug/experiments/TA-001/status.json",
+      "sha256": "310f537513da1f03403ed605a0d8c4e3afee05bedabbf03b22c0c85b0431c6e7",
+      "bytes": 390
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/tail_selection.json",
+      "git_path": "transfer_aug/experiments/TA-001/tail_selection.json",
+      "sha256": "2f460ad5329bd13dc5ae7a0238a39a620a92e23de9f0dc693e4af65ba487ed7f",
+      "bytes": 7879
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/acceptance.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/acceptance.json",
+      "sha256": "f1ffd8c345b3644c04b2ebd212c079bd5bad03f14b0057d4945e5a280c32f911",
+      "bytes": 621
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/artifact_hashes_verified.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/artifact_hashes_verified.json",
+      "sha256": "fc9933459ef533617fdf697b0018e651ccd4ca2056f65dfe70f827edb28d1d61",
+      "bytes": 335
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/degenerate_channels.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/degenerate_channels.json",
+      "sha256": "1635ec190202dde5d4c39d65d73d381e98ac5d0a0ff29f8e55d7ad6bab9daee5",
+      "bytes": 519
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/determinism.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/determinism.json",
+      "sha256": "77a3a2dd8c4f13a63cd05a3303ba2625cb9cb0c3c49c7e9990cba372e8fb9be4",
+      "bytes": 356
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/failed_attempt_1.log",
+      "git_path": "transfer_aug/experiments/TA-001/verification/failed_attempt_1.log",
+      "sha256": "acf7bf34a9259786bcca1566990bd59ac2b8921256086f144919d72e2d92fc3d",
+      "bytes": 553
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/failed_attempt_1791374161739619859.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/failed_attempt_1791374161739619859.json",
+      "sha256": "0a065754e59df1d3a0fe813a14eafd384dda0921cc14e8cc0fe28b12fdab46f9",
+      "bytes": 666
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/failed_attempt_1_diagnosis.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/failed_attempt_1_diagnosis.json",
+      "sha256": "8c5d8d55bcba6a63dabcbc1585ef9043b0d949f4de254b16641ce6856c249044",
+      "bytes": 682
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/failed_attempt_1_implementation.py",
+      "git_path": "transfer_aug/experiments/TA-001/verification/failed_attempt_1_implementation.py",
+      "sha256": "51770c8ea6ecb9d183aa9e0661b8f226b00d4b4cc8a7e1e3c63f590cfdf295e0",
+      "bytes": 22858
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/integrity_after.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/integrity_after.json",
+      "sha256": "5fdf72ddad376f38d6100879a77ad1dd932d083ce034b0ac20f02bec07ab94d4",
+      "bytes": 198560
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/integrity_after_generation.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/integrity_after_generation.json",
+      "sha256": "3bf09b5e133cee4d606b5b4cee8bd5d612a67270af9859acb878e8cd645c24e4",
+      "bytes": 198559
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/integrity_before.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/integrity_before.json",
+      "sha256": "a60f04a3d43c868c048c6a64fb2fc1ec1cb56b8d69143e98d8a807724da95105",
+      "bytes": 198560
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/integrity_final.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/integrity_final.json",
+      "sha256": "b237f5cb5c68cd88d3ce8588f2bfb259e08b60a44ef1407c9c3675f2c7b8ddec",
+      "bytes": 198560
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/integrity_recompute_before.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/integrity_recompute_before.json",
+      "sha256": "d298912bf385aae814c9cceb4b27a12af3021039c59db3e987a855f71f470619",
+      "bytes": 198560
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/numerical_checks.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/numerical_checks.json",
+      "sha256": "21cb48986031126ff4fc72f8f1f20d9657e61d2595525c4f87ddbf632eba82f1",
+      "bytes": 6368
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/resources_final.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/resources_final.json",
+      "sha256": "4f1646060864e43648782dbed8e7eee62665ed85b8317df272dec5941659dd16",
+      "bytes": 1678
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/resources_generate.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/resources_generate.json",
+      "sha256": "edefc3a7e6b17c362b8037f01b8037f8212b0f5aafb0f6e800560292936d483f",
+      "bytes": 400
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/verification/resources_recompute.json",
+      "git_path": "transfer_aug/experiments/TA-001/verification/resources_recompute.json",
+      "sha256": "675736b0359c00f666735409f5e7b4a53c10eaa685f1b2c002ec12ca1d6b821b",
+      "bytes": 404
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/visual_inspection.json",
+      "git_path": "transfer_aug/experiments/TA-001/visual_inspection.json",
+      "sha256": "44f1dffa2f2e1e9e32fd3cf3709cce49f7c910e5112efcd49f68741d0d43981a",
+      "bytes": 9685
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-001/visual_review.csv",
+      "git_path": "transfer_aug/experiments/TA-001/visual_review.csv",
+      "sha256": "77a1ba06e9078630c71a42e1ef763c588ab6f91187124cfd8e72c10489957cb3",
+      "bytes": 12115
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/CONTRACT_v1.md",
+      "git_path": "transfer_aug/experiments/TA-002/CONTRACT_v1.md",
+      "sha256": "366e4ac85810d4b1c0e850f972c9175f4a550ced13f982c1c6c0910f3801e905",
+      "bytes": 3398
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/REPRODUCE.md",
+      "git_path": "transfer_aug/experiments/TA-002/REPRODUCE.md",
+      "sha256": "60be9e29c231bc30c4a45020e2bfbf82cad59b4afc40783cc8582dabf15f5889",
+      "bytes": 3386
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/SUMMARY.md",
+      "git_path": "transfer_aug/experiments/TA-002/SUMMARY.md",
+      "sha256": "3fa9f4c695f38d70db0883b9790a19d2f92e63c0b3f5d93e921b402adba26c14",
+      "bytes": 2690
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/append_reviews.py",
+      "git_path": "transfer_aug/experiments/TA-002/append_reviews.py",
+      "sha256": "d84682e94a69884f65402110c8a4ff815261faea5988a9b542c15e2f70bf5bcf",
+      "bytes": 794
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/commands.jsonl",
+      "git_path": "transfer_aug/experiments/TA-002/commands.jsonl",
+      "sha256": "ce0646ecc79f7f595c655b8bb334e945b29a9eccc16308ff4be96bebe1515cd6",
+      "bytes": 1453
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/condition_metrics.csv",
+      "git_path": "transfer_aug/experiments/TA-002/condition_metrics.csv",
+      "sha256": "9ade73a2c27b931451d70145fc7596f3f4cc45b1b4b2a3be60d5b92e377d982c",
+      "bytes": 16390
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/condition_metrics.json",
+      "git_path": "transfer_aug/experiments/TA-002/condition_metrics.json",
+      "sha256": "809f2da56941c8a10d03527cd81b0600c410ca079387e28e889da4c632d7324b",
+      "bytes": 44281
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/config.json",
+      "git_path": "transfer_aug/experiments/TA-002/config.json",
+      "sha256": "835069b0bba144623fe8d2fe39f1528d73eabbb28b0ace6ca906225554d32db3",
+      "bytes": 1023
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/environment.json",
+      "git_path": "transfer_aug/experiments/TA-002/environment.json",
+      "sha256": "9f3c5e7f17d529f98f8f032c0ba94731e685c6d4177555ae77b37ca236f41229",
+      "bytes": 595
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/execution.log",
+      "git_path": "transfer_aug/experiments/TA-002/execution.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/failures/preflight_command_failure.json",
+      "git_path": "transfer_aug/experiments/TA-002/failures/preflight_command_failure.json",
+      "sha256": "d3c212242950ba267cb269d39e007221d6c76b121dd28a05b8fab3e4c9486bb4",
+      "bytes": 266
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/finalize.py",
+      "git_path": "transfer_aug/experiments/TA-002/finalize.py",
+      "sha256": "f74209d062180596b6ce349f36f1fdefdebacd1e78ab12fc004610451ec49786",
+      "bytes": 15074
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/gallery.html",
+      "git_path": "transfer_aug/experiments/TA-002/gallery.html",
+      "sha256": "532a9e8d30bd1351b85a359e8d7d1a25252c98a62f51cb3b33286242aaaf9be9",
+      "bytes": 5441
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/integrity_after.log",
+      "git_path": "transfer_aug/experiments/TA-002/integrity_after.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/raw/layout.json",
+      "git_path": "transfer_aug/experiments/TA-002/raw/layout.json",
+      "sha256": "3544ec061ec1e3fd967db47b914042498476329eb51bd70fb02ede892deed3de",
+      "bytes": 567
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/recompute.log",
+      "git_path": "transfer_aug/experiments/TA-002/recompute.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/resources.json",
+      "git_path": "transfer_aug/experiments/TA-002/resources.json",
+      "sha256": "843b1077a8ec3a8e3a1ae8759bd091a258a537a4819218674abf1dff58fe27fb",
+      "bytes": 1299
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/resources_all.json",
+      "git_path": "transfer_aug/experiments/TA-002/resources_all.json",
+      "sha256": "ef1478488246235c2d3612e4cd2b7d9c88dc0d6c8c0ca2888fab08d642af6371",
+      "bytes": 234
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/resources_integrity_after.json",
+      "git_path": "transfer_aug/experiments/TA-002/resources_integrity_after.json",
+      "sha256": "2ff9efd56df9239382a24d7e6ebbc8519d218176ee839932bac04c8ab0bf5e18",
+      "bytes": 228
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/resources_recompute.json",
+      "git_path": "transfer_aug/experiments/TA-002/resources_recompute.json",
+      "sha256": "c3342128e67805c105491860672064d9cbae02d00c3d76365027ce5c8decc3cb",
+      "bytes": 234
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/result.json",
+      "git_path": "transfer_aug/experiments/TA-002/result.json",
+      "sha256": "f57a89e19af957a878b2712ff0513178911d38a8ec2ff0701ceb2ef9d3fecad5",
+      "bytes": 7255
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/review.log",
+      "git_path": "transfer_aug/experiments/TA-002/review.log",
+      "sha256": "56203c5288af95c4391282c30d4127b9e5c7ac217d932e879a950e352652450c",
+      "bytes": 1927
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/review.py",
+      "git_path": "transfer_aug/experiments/TA-002/review.py",
+      "sha256": "1abbeb389cd6fadcd053e47f7f0785c4d665fe34f228e357b982987168b27875",
+      "bytes": 3716
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/run.py",
+      "git_path": "transfer_aug/experiments/TA-002/run.py",
+      "sha256": "3c815b19b7a62e431c5fd52fa1f7c7264d7dbb649e04f686b117c21ef4dc3aef",
+      "bytes": 19810
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/session.json",
+      "git_path": "transfer_aug/experiments/TA-002/session.json",
+      "sha256": "dd805d31fefb535096285f45126d42ff04d0ec015f432161ac9c2b0cd9350f31",
+      "bytes": 268
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/status.json",
+      "git_path": "transfer_aug/experiments/TA-002/status.json",
+      "sha256": "79258492452b97a2ceddb2e6afbe912d4704c9f014be347825e3a8ff01813264",
+      "bytes": 293
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/supplemental_checks.py",
+      "git_path": "transfer_aug/experiments/TA-002/supplemental_checks.py",
+      "sha256": "4917a4c14c7bf767b168f3f49069c2fc972fe8717c71bafba6eaf4001a466d82",
+      "bytes": 2623
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/tail_selection.json",
+      "git_path": "transfer_aug/experiments/TA-002/tail_selection.json",
+      "sha256": "369224cbebddb3e50c6fbf8383f8a50540156cc7a0a0f076e7249e2fd3bfdc2e",
+      "bytes": 8162
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/verification/determinism.json",
+      "git_path": "transfer_aug/experiments/TA-002/verification/determinism.json",
+      "sha256": "906624d4794c40c4e95bf2b55013a133efb169db8d57c8d06f1a26e422e79b0a",
+      "bytes": 326
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/verification/generation_checks.json",
+      "git_path": "transfer_aug/experiments/TA-002/verification/generation_checks.json",
+      "sha256": "b6a34172e5a63bd7b4a10a11280a3544dbf16728062d86d6b342aefae70baa95",
+      "bytes": 302
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/verification/handoff_checks.json",
+      "git_path": "transfer_aug/experiments/TA-002/verification/handoff_checks.json",
+      "sha256": "ce7822b8585e725815a250f924c48a4c311684988220ab6233b8719c7a167856",
+      "bytes": 322
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/verification/integrity_after.json",
+      "git_path": "transfer_aug/experiments/TA-002/verification/integrity_after.json",
+      "sha256": "a60b4d87acaef0bb37457e93ca687a138e48f53bc74c7b0c9241751a09165af9",
+      "bytes": 201371
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/verification/integrity_before.json",
+      "git_path": "transfer_aug/experiments/TA-002/verification/integrity_before.json",
+      "sha256": "86ee195e10b5c9aadcd7717d11c02067147f3adc2cd22e9f1ec64b715e5cbf3a",
+      "bytes": 201371
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/verification/numerical_checks.json",
+      "git_path": "transfer_aug/experiments/TA-002/verification/numerical_checks.json",
+      "sha256": "982fefcd7ae9843a5afb0fbe58d59ae895e230bf2a3ca5822d93b6e0b64c3412",
+      "bytes": 29311
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/verification/supplemental_checks.json",
+      "git_path": "transfer_aug/experiments/TA-002/verification/supplemental_checks.json",
+      "sha256": "e630ef298fe8b52868d1a7cdab0f2875f36b2f50595788ad76835dad663b0027",
+      "bytes": 11982
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/verification/visual_review_checks.json",
+      "git_path": "transfer_aug/experiments/TA-002/verification/visual_review_checks.json",
+      "sha256": "1658bb3f5576b2cfca1ce7cda2b32c2561edb20421f2183e8ac865caa1988810",
+      "bytes": 3455
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/visual_judgments_manual.json",
+      "git_path": "transfer_aug/experiments/TA-002/visual_judgments_manual.json",
+      "sha256": "73527aa9f8e779cd38bd7d5a266cf973ce78065c6863605b173f0a7087e11974",
+      "bytes": 34294
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/visual_reviews.csv",
+      "git_path": "transfer_aug/experiments/TA-002/visual_reviews.csv",
+      "sha256": "63e9e6db01816ef7e7856218cf587ba7c52ee7f67e5abab6b4d2b69937cd4eb9",
+      "bytes": 133579
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-002/visual_reviews.json",
+      "git_path": "transfer_aug/experiments/TA-002/visual_reviews.json",
+      "sha256": "69e4160114532d4c73dacc1bdb8f59e29e272cededf059b5f939a6b566e21692",
+      "bytes": 245547
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/CONTRACT_v1.md",
+      "git_path": "transfer_aug/experiments/TA-003/CONTRACT_v1.md",
+      "sha256": "046c4419cd02754456f9d94e53e90a1f00fa2b1bc3d541f777ffd1aa5eca6d05",
+      "bytes": 1166
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/README.md",
+      "git_path": "transfer_aug/experiments/TA-003/README.md",
+      "sha256": "84fe6e71fbc71f0459b89d2815951b1072283bc8e8176f22b3489c70cb871b50",
+      "bytes": 3872
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/SETUP_CONTRACT_v1.md",
+      "git_path": "transfer_aug/experiments/TA-003/SETUP_CONTRACT_v1.md",
+      "sha256": "419a8e3372082d6b48ed657f80ec3f5886a5d57ee857bfcda4fc8d657978df3c",
+      "bytes": 2338
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/SETUP_SUMMARY.md",
+      "git_path": "transfer_aug/experiments/TA-003/SETUP_SUMMARY.md",
+      "sha256": "ee54e877c389c14a40fade8e9d15def14bf9c2bc45d0310e50ffbc3d3574c2c1",
+      "bytes": 2196
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/SUMMARY.md",
+      "git_path": "transfer_aug/experiments/TA-003/SUMMARY.md",
+      "sha256": "8bd61cc247d649359870cc5b1a0a48c3257f504213f44174c17926056eecefaa",
+      "bytes": 3034
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/TRAINING_README.md",
+      "git_path": "transfer_aug/experiments/TA-003/TRAINING_README.md",
+      "sha256": "da7975c79ca41fcdd9942829d0c7e53035828bac2759b0b9d1265001f1010ba7",
+      "bytes": 1935
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/audit_data.py",
+      "git_path": "transfer_aug/experiments/TA-003/audit_data.py",
+      "sha256": "41ec2d233f9b1218c10a4a7c2c092905b28594bce0d80ef6aa457dedb3aa8130",
+      "bytes": 1670
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/checkpoint_history.json",
+      "git_path": "transfer_aug/experiments/TA-003/checkpoint_history.json",
+      "sha256": "99124933a2206feba7d4be4c006a74c047e1980aec8e1fa5f2dff31c4f633b3b",
+      "bytes": 5311
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/data_verification.json",
+      "git_path": "transfer_aug/experiments/TA-003/data_verification.json",
+      "sha256": "0fbb02c8b8dbe0776b04e3b993ac4ee393d5b8fecc8bb5948e568053eb6ce123",
+      "bytes": 586
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/eda/aggregate.json",
+      "git_path": "transfer_aug/experiments/TA-003/eda/aggregate.json",
+      "sha256": "a79d246e2b1df1fbbeeebad102fe32c7076fed2f988ee112576b117399137a44",
+      "bytes": 13931
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/eda/sheet_manifest.json",
+      "git_path": "transfer_aug/experiments/TA-003/eda/sheet_manifest.json",
+      "sha256": "ff44b9673550ca7276022565b62b7496c97ba9442ce1db621c5c4a7e0a790b7a",
+      "bytes": 7000
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/eda/tail_selection.json",
+      "git_path": "transfer_aug/experiments/TA-003/eda/tail_selection.json",
+      "sha256": "eb6baa93f1113cf94f7fc9ae34128992a4d4bc0a26fe895638d42cbd57b4b0b2",
+      "bytes": 47690
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/eda/verification.json",
+      "git_path": "transfer_aug/experiments/TA-003/eda/verification.json",
+      "sha256": "6450b5f493523c170e5a8a6966148bf42f66ef44685479d1344c2816d1219364",
+      "bytes": 873
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/engine.py",
+      "git_path": "transfer_aug/experiments/TA-003/engine.py",
+      "sha256": "87add5c7b410a51b7cfe0ab66dbe99a3beed202e396b0427e038e78d1b9880db",
+      "bytes": 9986
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/finalize.py",
+      "git_path": "transfer_aug/experiments/TA-003/finalize.py",
+      "sha256": "90cfcd88bea9bada5cfd61fd369597fd284c69f63eea66c9634dd15428f23984",
+      "bytes": 5223
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/gallery.html",
+      "git_path": "transfer_aug/experiments/TA-003/gallery.html",
+      "sha256": "e76445d6c5a4426042a8084a95cd8eccc5f91f6e37d317635882a5026d81e571",
+      "bytes": 1116
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/generation_verification.json",
+      "git_path": "transfer_aug/experiments/TA-003/generation_verification.json",
+      "sha256": "4f1fa5e301656c9bece7a70a4f4f327222ea3e441d6df243c7ec0e30304fcc3f",
+      "bytes": 277
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/gpu_ledger.json",
+      "git_path": "transfer_aug/experiments/TA-003/gpu_ledger.json",
+      "sha256": "6cf78dc18c7f04c615c59525c8dd562a900c37f29e0a1e83b12b01f32e6d30ee",
+      "bytes": 488
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/gpu_run.log",
+      "git_path": "transfer_aug/experiments/TA-003/gpu_run.log",
+      "sha256": "356280dea7c60c2a96d1cf49cf32254a45a838cb7053c72ea2780b0c9d9556ef",
+      "bytes": 93
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/input_integrity_after.json",
+      "git_path": "transfer_aug/experiments/TA-003/input_integrity_after.json",
+      "sha256": "8ea42d9f67460817a59296d9a3e3396a6c70a873d9c9bed1fbdd10795b1c97f1",
+      "bytes": 91
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/lease_ownership.json",
+      "git_path": "transfer_aug/experiments/TA-003/lease_ownership.json",
+      "sha256": "2740db841902e4fe48493600d6627ab54b93818a7a8e9b7d5315dd1f4f9a8742",
+      "bytes": 435
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/networks.py",
+      "git_path": "transfer_aug/experiments/TA-003/networks.py",
+      "sha256": "1dc0f9b725b31f7400b9ef568530d42ed7e9311834e4952ca4801d094f248e93",
+      "bytes": 9839
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/output_hashes.json",
+      "git_path": "transfer_aug/experiments/TA-003/output_hashes.json",
+      "sha256": "dae7e92f0b7e1b3c3a1e0a3993cf916542b5af298db5cb7dff120164d7296d48",
+      "bytes": 65917
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/outputs/review_manifest.json",
+      "git_path": "transfer_aug/experiments/TA-003/outputs/review_manifest.json",
+      "sha256": "e778ca1d990c4b5b175ecb4efaed82c8ce082067211565ed1b85004597a95a22",
+      "bytes": 28721
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/preflight.json",
+      "git_path": "transfer_aug/experiments/TA-003/preflight.json",
+      "sha256": "d211324bee1e58ea041421377789e1fe5cff31c113e3d9a43947732f1289d1ba",
+      "bytes": 682
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/proof/cpu_checks.json",
+      "git_path": "transfer_aug/experiments/TA-003/proof/cpu_checks.json",
+      "sha256": "ef7840e8f3e8d6b112ac5e1833b787161c9fd2d6467d09d6a20e6839339cb9e9",
+      "bytes": 2373
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/proof/invalid_manifest.json",
+      "git_path": "transfer_aug/experiments/TA-003/proof/invalid_manifest.json",
+      "sha256": "e4fc22fc4a15cbe9b8410897012344f5acac00d08e183a024060b426e4a30f80",
+      "bytes": 3356
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/proof/synthetic_manifest.json",
+      "git_path": "transfer_aug/experiments/TA-003/proof/synthetic_manifest.json",
+      "sha256": "22e872fe84d75e0168de4b22250ae004da8ed1cf9b323d6287f4b669cbdac8c4",
+      "bytes": 3962
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/proof_cpu.log",
+      "git_path": "transfer_aug/experiments/TA-003/proof_cpu.log",
+      "sha256": "754722eed411b43e3103ff84ffbce5146269478a6a9fd22dcd909fb287f8d487",
+      "bytes": 2435
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/qualification.json",
+      "git_path": "transfer_aug/experiments/TA-003/qualification.json",
+      "sha256": "da5a66a28c7dda601ca526c1e015f71e142a0f175da7732bacd7df0b87760359",
+      "bytes": 1299
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/report.log",
+      "git_path": "transfer_aug/experiments/TA-003/report.log",
+      "sha256": "d6a5803c3f4773d6d610a22a08f794b15e375391fcbd721b698d48eef386e867",
+      "bytes": 102
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/report.py",
+      "git_path": "transfer_aug/experiments/TA-003/report.py",
+      "sha256": "d9f4fb613616be6fc287e94a04d5e896ecece455af4831e752f42469f4169397",
+      "bytes": 10487
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/result.json",
+      "git_path": "transfer_aug/experiments/TA-003/result.json",
+      "sha256": "222a2b44bd7005e1444625e92078b50a8b619c2b6ba032cc2e1cbef69236d561",
+      "bytes": 22951
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/run_configuration.json",
+      "git_path": "transfer_aug/experiments/TA-003/run_configuration.json",
+      "sha256": "8b5eb7411c34ab850d7cec33ed7566ae9d6241fdf16f7bb9203ff6d58e8dce1f",
+      "bytes": 1467
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/runner.py",
+      "git_path": "transfer_aug/experiments/TA-003/runner.py",
+      "sha256": "d2d5ac50c78965ddc5b9e7a4019083acff5570700600010f6b67e09cbee27aa2",
+      "bytes": 15926
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/setup_hashes.json",
+      "git_path": "transfer_aug/experiments/TA-003/setup_hashes.json",
+      "sha256": "5c8bb1c8e6cceae723d846e41487847adaa2abdd0ec6023b7bab20c895c2968b",
+      "bytes": 2403
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/setup_result.json",
+      "git_path": "transfer_aug/experiments/TA-003/setup_result.json",
+      "sha256": "a0fb4d1c38c161a470502c3ee5587419ec11fa35748726d97ea83068bf0dee8b",
+      "bytes": 2071
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/status.json",
+      "git_path": "transfer_aug/experiments/TA-003/status.json",
+      "sha256": "34b40603b3733b164494c5f5726b30c835dc83d38e6d54f2ccb4fcb6747c3045",
+      "bytes": 264
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/test_setup.py",
+      "git_path": "transfer_aug/experiments/TA-003/test_setup.py",
+      "sha256": "5d3b8c148fecdee1a385a429b33a9568ec907e7a92072503c11fc60e1b080c2e",
+      "bytes": 8233
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/training_complete.json",
+      "git_path": "transfer_aug/experiments/TA-003/training_complete.json",
+      "sha256": "d2fef1e8c95ab2b34547274221660bc2571c56166b7b03a3dc317f1b1a641e9b",
+      "bytes": 377
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/upstream_provenance.json",
+      "git_path": "transfer_aug/experiments/TA-003/upstream_provenance.json",
+      "sha256": "e90ec265b5abf9db4ca7092d4a10e8370537de776383fa8fe5c1764db8ac7051",
+      "bytes": 1499
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/visual_review.json",
+      "git_path": "transfer_aug/experiments/TA-003/visual_review.json",
+      "sha256": "365eb963e5444a1a3b67d2a1d57eff621d2d21d80e075d89baf3d7757ebee2d2",
+      "bytes": 48473
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-003/write_review.py",
+      "git_path": "transfer_aug/experiments/TA-003/write_review.py",
+      "sha256": "6f537aedf4de6a8fd5874e9e657efe3a5b8ee2834bfc28d64da85344c11565bb",
+      "bytes": 12333
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/CONTRACT_v1.md",
+      "git_path": "transfer_aug/experiments/TA-004/CONTRACT_v1.md",
+      "sha256": "1f296b91bb75055d8604d5f1e6dae9f8897343406eee3c88c5a4408869c2da36",
+      "bytes": 1120
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/LICENSE.upstream",
+      "git_path": "transfer_aug/experiments/TA-004/LICENSE.upstream",
+      "sha256": "4136d26774a0a0fdcf3f4c0e1140f19279565d41df764c64cc75c0283e6f5249",
+      "bytes": 11199
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/SETUP_CONTRACT_v1.md",
+      "git_path": "transfer_aug/experiments/TA-004/SETUP_CONTRACT_v1.md",
+      "sha256": "aedd8990a57a21748796138ead87a1d9412ec7a57be3ca8fedd259d6dd78d5c3",
+      "bytes": 2404
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/SETUP_CONTRACT_v2.md",
+      "git_path": "transfer_aug/experiments/TA-004/SETUP_CONTRACT_v2.md",
+      "sha256": "48d2c28533af0a7e591605f459c7c71bcbd5e4d8c7bb9ef8be5df8b81a365a82",
+      "bytes": 2741
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/SETUP_SUMMARY.md",
+      "git_path": "transfer_aug/experiments/TA-004/SETUP_SUMMARY.md",
+      "sha256": "6914a3fa94078f875d3aecab10da1275bdfacd9fd89b6657865baeb32d57293d",
+      "bytes": 2275
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/SUMMARY.md",
+      "git_path": "transfer_aug/experiments/TA-004/SUMMARY.md",
+      "sha256": "a4c5d39bf7ebbffa6babe720b29199c008df1c2ccc990ff9488f670b385860b7",
+      "bytes": 2923
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/aggregate_metrics.json",
+      "git_path": "transfer_aug/experiments/TA-004/aggregate_metrics.json",
+      "sha256": "768a4a26f04d5662aabcfed4a591704c88d02b52530a51f4b7ab66eac37e152d",
+      "bytes": 5781
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/build_sources.py",
+      "git_path": "transfer_aug/experiments/TA-004/build_sources.py",
+      "sha256": "ab42e249b40abfb41a33b6af40c48bf23173095112e299068534278b00bc3695",
+      "bytes": 1126
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/commands.txt",
+      "git_path": "transfer_aug/experiments/TA-004/commands.txt",
+      "sha256": "bfbcb65acae56cb364df803b1bbce4e0bbfd5cba60c4924a5379e831f12c3ceb",
+      "bytes": 650
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/cut64.py",
+      "git_path": "transfer_aug/experiments/TA-004/cut64.py",
+      "sha256": "51b26aaa457458d56edd8dfd2ac91d5a857320a22d9d6739199af71522ee3e70",
+      "bytes": 6074
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/failure.json",
+      "git_path": "transfer_aug/experiments/TA-004/failure.json",
+      "sha256": "bd28a28d10e0c57f84913d8f921af0e36d037762d2f8caaf9a592528471a42d0",
+      "bytes": 363
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/final_verification.json",
+      "git_path": "transfer_aug/experiments/TA-004/final_verification.json",
+      "sha256": "1a75032dfb6e9704e18053f61fad2ef4040d571111e2799fe45db87c886b894a",
+      "bytes": 376
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/finalize_result.py",
+      "git_path": "transfer_aug/experiments/TA-004/finalize_result.py",
+      "sha256": "ce7367ade49b02665a2890351b0c747d7d39fc5e2e266738756c7176bce7fbfd",
+      "bytes": 5010
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/finalize_setup.py",
+      "git_path": "transfer_aug/experiments/TA-004/finalize_setup.py",
+      "sha256": "f12cfbae1480ebf754857f55f889d6777a2e809a87b7401ccf9b03d7a646176e",
+      "bytes": 2623
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/gallery.html",
+      "git_path": "transfer_aug/experiments/TA-004/gallery.html",
+      "sha256": "5fe21561bfb1953b0f24c9402e678a42c3ec096f39d5dbca92d9a21724621719",
+      "bytes": 5136
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/gpu_resource_ledger.json",
+      "git_path": "transfer_aug/experiments/TA-004/gpu_resource_ledger.json",
+      "sha256": "863492459f674a7ef6459087580125863d338f3f2353ab89a64da702b61eb004",
+      "bytes": 835
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/handoff_hashes.json",
+      "git_path": "transfer_aug/experiments/TA-004/handoff_hashes.json",
+      "sha256": "a830cb0e1401b387ba32c2869d4a5bf96f9e37b006473f75496104a9a9f6d925",
+      "bytes": 3198
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/implementation_hashes.json",
+      "git_path": "transfer_aug/experiments/TA-004/implementation_hashes.json",
+      "sha256": "66306dcf70d2b7d63fff62263f7040f1d875d47f5cc966fd6e760c879fb1688d",
+      "bytes": 875
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/losses.jsonl",
+      "git_path": "transfer_aug/experiments/TA-004/losses.jsonl",
+      "sha256": "1fce5ea01cefb4537ef2e7e35f9d56f4fa7fee662bd895188bbab63bd072dabf",
+      "bytes": 209800
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/lr_verification.json",
+      "git_path": "transfer_aug/experiments/TA-004/lr_verification.json",
+      "sha256": "8020b438c5a1aca2c1c1c39b964eee3df8e75feb30c194dd26a542a80daff8b9",
+      "bytes": 161
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/measurements.csv",
+      "git_path": "transfer_aug/experiments/TA-004/measurements.csv",
+      "sha256": "3717252e705a420e706969dcb01d5f44c446de3a08f78959f29fe4b2ab040e15",
+      "bytes": 197898
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/metric_conventions.json",
+      "git_path": "transfer_aug/experiments/TA-004/metric_conventions.json",
+      "sha256": "df9129c0b946efbb36231ecdcd5f04742da9f01218a6b3a18d51ed7bdda59967",
+      "bytes": 699
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/networks.py",
+      "git_path": "transfer_aug/experiments/TA-004/networks.py",
+      "sha256": "d82f4c9ce74ab955af61bb5f064a63224bf05388c2f40df86df21728a004e28f",
+      "bytes": 18472
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/output_hashes.json",
+      "git_path": "transfer_aug/experiments/TA-004/output_hashes.json",
+      "sha256": "8c4e30acca92d8fad824b83cc9f2c1d680c8075c8727911acd845a028f77e20a",
+      "bytes": 66426
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/outputs/review_D0_rows.json",
+      "git_path": "transfer_aug/experiments/TA-004/outputs/review_D0_rows.json",
+      "sha256": "8a27ac2a7b4245db55412bb38a87afe74da312aca27fbdf1de4913fe01fc7736",
+      "bytes": 13526
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/outputs/review_D1_rows.json",
+      "git_path": "transfer_aug/experiments/TA-004/outputs/review_D1_rows.json",
+      "sha256": "e90548f122a22e49dec69291e7bfd930478ab1b06c4de3e3f00d8208818d033a",
+      "bytes": 13517
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/qualification.json",
+      "git_path": "transfer_aug/experiments/TA-004/qualification.json",
+      "sha256": "ab78659deace8baebfc658448d5dd68899b6be130db1fa120eb9a8c07a447445",
+      "bytes": 1128
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/report.log",
+      "git_path": "transfer_aug/experiments/TA-004/report.log",
+      "sha256": "768a4a26f04d5662aabcfed4a591704c88d02b52530a51f4b7ab66eac37e152d",
+      "bytes": 5781
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/report.py",
+      "git_path": "transfer_aug/experiments/TA-004/report.py",
+      "sha256": "85cd9f7ab88c472c9001c8753a9b9b8d8c728e848b87cddfbf17e16b3c701b4d",
+      "bytes": 7615
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/result.json",
+      "git_path": "transfer_aug/experiments/TA-004/result.json",
+      "sha256": "ae47633902731aa8f5bdfea9dcc44052d4e544a7e58ea00413dd100ebdce0f98",
+      "bytes": 14703
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/review_inventory.json",
+      "git_path": "transfer_aug/experiments/TA-004/review_inventory.json",
+      "sha256": "a2aace6252f7db59f149bbba1ba7ee0c6bb732e573b8b8747355ebea65838701",
+      "bytes": 18657
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/setup_hashes.json",
+      "git_path": "transfer_aug/experiments/TA-004/setup_hashes.json",
+      "sha256": "9c0abb2e7331df922fafe48fbedfc75ed0364dc6e1020f34d13c428792fe9770",
+      "bytes": 3148
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/setup_result.json",
+      "git_path": "transfer_aug/experiments/TA-004/setup_result.json",
+      "sha256": "40244f3612c4e9acdc2e3ae7a2eacbde823acd293b51b8da87944fc6cbac9ac1",
+      "bytes": 3510
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/status.json",
+      "git_path": "transfer_aug/experiments/TA-004/status.json",
+      "sha256": "1ceb00ab7d37b3a98de47d6ee7dc50b609286c27e4d2166cfdb9d5527fdeb76f",
+      "bytes": 314
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/tails.json",
+      "git_path": "transfer_aug/experiments/TA-004/tails.json",
+      "sha256": "c0b735906849ba200b6cc1c4e7ead7b9d462b693ea55916811953c725a6b5109",
+      "bytes": 18651
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/train.log",
+      "git_path": "transfer_aug/experiments/TA-004/train.log",
+      "sha256": "6d730c1d7e38e65c300d66f784b956b68f7a61059a7bfa2ea03bcf27e4b76f47",
+      "bytes": 352
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/train.py",
+      "git_path": "transfer_aug/experiments/TA-004/train.py",
+      "sha256": "876f126dae01826e119be1e5763aedb4fd9c7d0557a7823950d9809560dcc768",
+      "bytes": 12064
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/training_complete.json",
+      "git_path": "transfer_aug/experiments/TA-004/training_complete.json",
+      "sha256": "f46e9f1ba4ed26b793ecb09de1f98f40bff7c8954ffdf2c575474d71d4a23f81",
+      "bytes": 1413
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/training_preflight.json",
+      "git_path": "transfer_aug/experiments/TA-004/training_preflight.json",
+      "sha256": "f8d502dcca6dfa57d290f7e3814f8cebbf8ce982eee335e2967f98051b3ab363",
+      "bytes": 1108
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/verification.json",
+      "git_path": "transfer_aug/experiments/TA-004/verification.json",
+      "sha256": "f226f3b38f0435f91dd2b5cb0c4532f54d2f25a7d3fb76418aff7bca2177c303",
+      "bytes": 4824
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/verify_final.py",
+      "git_path": "transfer_aug/experiments/TA-004/verify_final.py",
+      "sha256": "7b1cced5cab71961458f4d7c8be55dad51e1661ea41fc6d7954f9eb5b91225f4",
+      "bytes": 1530
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/verify_setup.py",
+      "git_path": "transfer_aug/experiments/TA-004/verify_setup.py",
+      "sha256": "5f3bab9a14348c25c437a848763328703fa3d5605dac385abcdbd49587679cfe",
+      "bytes": 4293
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/visual_review.json",
+      "git_path": "transfer_aug/experiments/TA-004/visual_review.json",
+      "sha256": "e87dba14404fc2dcd1016331c8256661548f8e7eb07492ef7b2b03e3ff6f1c26",
+      "bytes": 47741
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-004/write_review.py",
+      "git_path": "transfer_aug/experiments/TA-004/write_review.py",
+      "sha256": "c167e32b8b98409f3ae9003d5b74a5ecab4a720fbf7571bd7ef86793c7d51dc8",
+      "bytes": 10300
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/COMMANDS.md",
+      "git_path": "transfer_aug/experiments/TA-005/COMMANDS.md",
+      "sha256": "e3ed59ba9d55f4f98af9ea589044215e0daec39afd7f96d6614fce9df36998e9",
+      "bytes": 1794
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/CONTRACT_v1.md",
+      "git_path": "transfer_aug/experiments/TA-005/CONTRACT_v1.md",
+      "sha256": "8ab1115ed4c9554ed47027b76d4c3cba58d6d22f3351a78146e8ddd0fc9cf75c",
+      "bytes": 1450
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/LICENSE.upstream",
+      "git_path": "transfer_aug/experiments/TA-005/LICENSE.upstream",
+      "sha256": "051131b5ef3596dad9bf0cffee19c248ff9751596a86b25c70f0cd82d6f6d713",
+      "bytes": 19129
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/SETUP_CONTRACT_v1.md",
+      "git_path": "transfer_aug/experiments/TA-005/SETUP_CONTRACT_v1.md",
+      "sha256": "045526507a7364844b31b5aefcadf363ee6639b1368286f8c0f97b3ff366f1f9",
+      "bytes": 3019
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/SETUP_SUMMARY.md",
+      "git_path": "transfer_aug/experiments/TA-005/SETUP_SUMMARY.md",
+      "sha256": "cfa1c43a91a4c21fea5166fb5a7dc2deb8a190be81012eda307355dd255d1e13",
+      "bytes": 2424
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/SUMMARY.md",
+      "git_path": "transfer_aug/experiments/TA-005/SUMMARY.md",
+      "sha256": "fbbd5ca2d843298724de122f456c82e582e5416e835f9c14277a0b4e194aab73",
+      "bytes": 2547
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/WORKER_STATE.md",
+      "git_path": "transfer_aug/experiments/TA-005/WORKER_STATE.md",
+      "sha256": "1fcc0f3a20d5e32297fcfe9bb693228aad8304832eb78cffe9d7dc1a1b4647c5",
+      "bytes": 410
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/checkpoint_history.json",
+      "git_path": "transfer_aug/experiments/TA-005/checkpoint_history.json",
+      "sha256": "8fd12e86cb99c12cbf16203b3b167e7ea87bd32c895702e662d6bce8739606c8",
+      "bytes": 5311
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/data.py",
+      "git_path": "transfer_aug/experiments/TA-005/data.py",
+      "sha256": "6f7d35e82828aec8330f74797b3a2c8aaa84996d11215f8d2e9a76f45e4b3dfb",
+      "bytes": 2861
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/data_verification.json",
+      "git_path": "transfer_aug/experiments/TA-005/data_verification.json",
+      "sha256": "b230f5b8d8918997135aa58827237f1a4205c7fe9cc0e0fa0813064526c93250",
+      "bytes": 238
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/eda/aggregate.json",
+      "git_path": "transfer_aug/experiments/TA-005/eda/aggregate.json",
+      "sha256": "9864f9fa6e4b2ec417126c20680f0c5576851fc0ff1ba6bcb80667ecdabdc03c",
+      "bytes": 25663
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/eda/sheet_manifest.json",
+      "git_path": "transfer_aug/experiments/TA-005/eda/sheet_manifest.json",
+      "sha256": "2e42105452a9d000b63ea9996a4dffa7cf08a9aae6b66b698a9da8cf5ccaef8b",
+      "bytes": 4990
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/eda/tail_selection.json",
+      "git_path": "transfer_aug/experiments/TA-005/eda/tail_selection.json",
+      "sha256": "f039b975ced5246979bc3c3d385008de57237a7984b62fcf824fac4bdc22f04d",
+      "bytes": 1901
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/eda/verification.json",
+      "git_path": "transfer_aug/experiments/TA-005/eda/verification.json",
+      "sha256": "cece8f8b1b1c820e912ee650fa0f7ecc8d04bc8cbf367dc6389c8850eae45aeb",
+      "bytes": 591
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/engine.py",
+      "git_path": "transfer_aug/experiments/TA-005/engine.py",
+      "sha256": "c3123fe839596ea016b39b7b30be229a6bf2b9804c08ec434b7b865f2ffc1b97",
+      "bytes": 5730
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/finalize.py",
+      "git_path": "transfer_aug/experiments/TA-005/finalize.py",
+      "sha256": "717ffb1c9e19c8dabb55d044280990de45d8c079df2ffffce3715d289f91f353",
+      "bytes": 4745
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/gallery.html",
+      "git_path": "transfer_aug/experiments/TA-005/gallery.html",
+      "sha256": "83bfcd633db40c2da92b7a713906d6e0e72cd1b7aae7a06df0f7d01b80ad704f",
+      "bytes": 2120
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/generation.py",
+      "git_path": "transfer_aug/experiments/TA-005/generation.py",
+      "sha256": "cb2a51e4e682a03fa3d7c8f66c42856fa70a15a03370d05b93fe460028a26c07",
+      "bytes": 3895
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/generation_verification.json",
+      "git_path": "transfer_aug/experiments/TA-005/generation_verification.json",
+      "sha256": "aab032c3a96bc6ba5e0d1fad0254ff30587f14f5e434826104df37d1ba879bb2",
+      "bytes": 296
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/gpu_ledger.json",
+      "git_path": "transfer_aug/experiments/TA-005/gpu_ledger.json",
+      "sha256": "5610db0db5c586af76400f22aff51b6975526ded26952b065e1ce6b9bf26bfc5",
+      "bytes": 490
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/gpu_run.log",
+      "git_path": "transfer_aug/experiments/TA-005/gpu_run.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/incidents.json",
+      "git_path": "transfer_aug/experiments/TA-005/incidents.json",
+      "sha256": "e1e9b2c7f94bd89b3e70c45d591993052549205ce9993a17863590977682b64c",
+      "bytes": 1626
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/input_integrity_after.json",
+      "git_path": "transfer_aug/experiments/TA-005/input_integrity_after.json",
+      "sha256": "8ea42d9f67460817a59296d9a3e3396a6c70a873d9c9bed1fbdd10795b1c97f1",
+      "bytes": 91
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/lease_ownership.json",
+      "git_path": "transfer_aug/experiments/TA-005/lease_ownership.json",
+      "sha256": "8f5d8705400dccb2ab45ab14a9fc165234de350362f685f797a095af88e5be99",
+      "bytes": 489
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/networks.py",
+      "git_path": "transfer_aug/experiments/TA-005/networks.py",
+      "sha256": "bf8bf5dead288d663018ecd2fdfd0da28c85286c7c1cb3b78a837a5c6ecf68b6",
+      "bytes": 23069
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/outputs/milestone_manifest.json",
+      "git_path": "transfer_aug/experiments/TA-005/outputs/milestone_manifest.json",
+      "sha256": "3f2fc1c1a29c7a639821de757c3d996525a743ac8a8ae30dd348a73cdbac4afd",
+      "bytes": 441
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/preflight.json",
+      "git_path": "transfer_aug/experiments/TA-005/preflight.json",
+      "sha256": "5d31c04f00393d07da26488ffea611b7bf8926acae06d200f02f5ac90c0895d8",
+      "bytes": 1130
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/protected_integrity.py",
+      "git_path": "transfer_aug/experiments/TA-005/protected_integrity.py",
+      "sha256": "7939e60540d4c7111333a0d17851b3edd3b8f2822ae3a7d966ff598433aac1fd",
+      "bytes": 638
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/protected_integrity_after.json",
+      "git_path": "transfer_aug/experiments/TA-005/protected_integrity_after.json",
+      "sha256": "1d7b7b134b34ac2609177594a42bf3d9e92396b3efa6ed53581afad7f40e02ae",
+      "bytes": 1637
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/protected_integrity_before.json",
+      "git_path": "transfer_aug/experiments/TA-005/protected_integrity_before.json",
+      "sha256": "1d7b7b134b34ac2609177594a42bf3d9e92396b3efa6ed53581afad7f40e02ae",
+      "bytes": 1637
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/qualification.json",
+      "git_path": "transfer_aug/experiments/TA-005/qualification.json",
+      "sha256": "634ec8404f2874328569bb22d03eb53fbeecd26083c939b500fc2b871b4753b4",
+      "bytes": 1424
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/report.log",
+      "git_path": "transfer_aug/experiments/TA-005/report.log",
+      "sha256": "cd98fe3402778aa6026e7d9943764acdf2858c6d52c04a4c34c0b881cdabb6e6",
+      "bytes": 20
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/report.py",
+      "git_path": "transfer_aug/experiments/TA-005/report.py",
+      "sha256": "d7c6f2e5fe9a0a9721448d05d427556b981393061a70dcec61b9ea56a8d39c58",
+      "bytes": 11341
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/report_corrections/clipped_float_v1/aggregate.json",
+      "git_path": "transfer_aug/experiments/TA-005/report_corrections/clipped_float_v1/aggregate.json",
+      "sha256": "e3506eb4dd74a4bfd38399dba57988e2b01818d3b724d2d0e9e561b4b6446bb5",
+      "bytes": 25667
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/report_corrections/clipped_float_v1/report.log",
+      "git_path": "transfer_aug/experiments/TA-005/report_corrections/clipped_float_v1/report.log",
+      "sha256": "cd98fe3402778aa6026e7d9943764acdf2858c6d52c04a4c34c0b881cdabb6e6",
+      "bytes": 20
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/report_corrections/clipped_float_v1/result.json",
+      "git_path": "transfer_aug/experiments/TA-005/report_corrections/clipped_float_v1/result.json",
+      "sha256": "8c14e5567fe18b6a6a4fc385b9f4c628aa717d8e2db338cd63beaa0e6819b2de",
+      "bytes": 31052
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/report_corrections/clipped_float_v1/tail_selection.json",
+      "git_path": "transfer_aug/experiments/TA-005/report_corrections/clipped_float_v1/tail_selection.json",
+      "sha256": "a767b4aa4be40d0f45572fe24874a80d6e9832ba726711bde5c201e5176a0af3",
+      "bytes": 1902
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/report_corrections/clipped_float_v1/verification.json",
+      "git_path": "transfer_aug/experiments/TA-005/report_corrections/clipped_float_v1/verification.json",
+      "sha256": "a3a0093af755ee28442dbdf7a0a94295269edd737a677369fa74f35a593e2cd7",
+      "bytes": 698
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/result.json",
+      "git_path": "transfer_aug/experiments/TA-005/result.json",
+      "sha256": "0c10e87d97bd9fdb77816c30c4aef535c2e51c680c4d37a3991fafec1076e040",
+      "bytes": 31239
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/runner.py",
+      "git_path": "transfer_aug/experiments/TA-005/runner.py",
+      "sha256": "a59a41b4d010c7578850c68344f83aae6d94fac644c1b52ac17ca804a267155e",
+      "bytes": 10421
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/setup_checks.log",
+      "git_path": "transfer_aug/experiments/TA-005/setup_checks.log",
+      "sha256": "0969da4fcd3d0be2abb0c657631d4b795dc1afa28d3f39c7b0079437924f8747",
+      "bytes": 1429
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/setup_result.json",
+      "git_path": "transfer_aug/experiments/TA-005/setup_result.json",
+      "sha256": "9c531156543fa100f030d7f71a232615b4213f6178c9af8c44672b41a37269dd",
+      "bytes": 2863
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/status.json",
+      "git_path": "transfer_aug/experiments/TA-005/status.json",
+      "sha256": "76c317248522bc31e4310b22f34dac8e3ef25239bc44fdc68d7e56d0b29d4b1e",
+      "bytes": 267
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/training_complete.json",
+      "git_path": "transfer_aug/experiments/TA-005/training_complete.json",
+      "sha256": "7c6c5f27fce430dedf0cbcca4d8acb5b1891bcb4fa84e017d30380624ac1962b",
+      "bytes": 379
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/upstream_utils.py",
+      "git_path": "transfer_aug/experiments/TA-005/upstream_utils.py",
+      "sha256": "174bffa7473d88ee91e0c21ed7e0ed626cd83d31e6db1be993b98addc3af1836",
+      "bytes": 19599
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/verification.json",
+      "git_path": "transfer_aug/experiments/TA-005/verification.json",
+      "sha256": "0969da4fcd3d0be2abb0c657631d4b795dc1afa28d3f39c7b0079437924f8747",
+      "bytes": 1429
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/verify_clipped_correction.py",
+      "git_path": "transfer_aug/experiments/TA-005/verify_clipped_correction.py",
+      "sha256": "46ac6a558bc5be9750007c482eab95913f37511fa50807d0241f753983b771c6",
+      "bytes": 2588
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/verify_data.py",
+      "git_path": "transfer_aug/experiments/TA-005/verify_data.py",
+      "sha256": "659bbdcb8ed582df6da1361e22c702b29cbd76548a0ce806552bb397fd811dba",
+      "bytes": 984
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/verify_setup.py",
+      "git_path": "transfer_aug/experiments/TA-005/verify_setup.py",
+      "sha256": "8b98abd5ad200d63189147521e19878a69d64d9e21dc8543ab1e1774dbc6ce76",
+      "bytes": 4399
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/visual_review.json",
+      "git_path": "transfer_aug/experiments/TA-005/visual_review.json",
+      "sha256": "7f3d960422f3e6726a4094ba3f58b48d175718eaca073b1e90e7c485909052cc",
+      "bytes": 34399
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-005/write_review.py",
+      "git_path": "transfer_aug/experiments/TA-005/write_review.py",
+      "sha256": "79c3263ae9ea4e89aa394ee1f3e4c1da0238b699f56cf78dfed0627bbb61471d",
+      "bytes": 12999
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/CONTRACT_v1.md",
+      "git_path": "transfer_aug/experiments/TA-006/CONTRACT_v1.md",
+      "sha256": "9eb5c9897b358f0d0c7ab24d724b292752038fa3124e0296856eb8d817ca4813",
+      "bytes": 1600
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/LICENSE.upstream",
+      "git_path": "transfer_aug/experiments/TA-006/LICENSE.upstream",
+      "sha256": "c363be4fe1e1736782dd2fad3b49054726879271c956f0dd62d669bb734ee2a1",
+      "bytes": 19407
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/README.md",
+      "git_path": "transfer_aug/experiments/TA-006/README.md",
+      "sha256": "fe6f74bc86018b86a0a6f17ebbc92af05291b401732a33a5e124fff73729ffcf",
+      "bytes": 2750
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/SETUP_CONTRACT_v1.md",
+      "git_path": "transfer_aug/experiments/TA-006/SETUP_CONTRACT_v1.md",
+      "sha256": "88e8d644d6c75d723bd44896c926713a787486264693d4bd9a1743922c11fdef",
+      "bytes": 3412
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/SETUP_SUMMARY.md",
+      "git_path": "transfer_aug/experiments/TA-006/SETUP_SUMMARY.md",
+      "sha256": "acfbe080ade022546d06a129d4a09c2f1d64d821c0f091fd6fdc912931470d49",
+      "bytes": 1878
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/SUMMARY.md",
+      "git_path": "transfer_aug/experiments/TA-006/SUMMARY.md",
+      "sha256": "2f9b6793b2c6debb1f1d4cf02bdda392922f9a9cd4dab544e4fd5e8ff1b4f068",
+      "bytes": 2893
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/after_training.py",
+      "git_path": "transfer_aug/experiments/TA-006/after_training.py",
+      "sha256": "ca09096fbec265ee6c9188b02b0e541fa993ca6b5954011ebcc7e65dd10584d8",
+      "bytes": 940
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/aggregate_metrics.json",
+      "git_path": "transfer_aug/experiments/TA-006/aggregate_metrics.json",
+      "sha256": "1a52ff8931052b1a89d0b558119f78cc3e8055996826ad31acbcf6db4c07496d",
+      "bytes": 20282
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/build_sources.py",
+      "git_path": "transfer_aug/experiments/TA-006/build_sources.py",
+      "sha256": "83b56c47f57b10aaf0544a587caf6ed051bfd1943bc2df82916896a4335fba36",
+      "bytes": 904
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/commands.txt",
+      "git_path": "transfer_aug/experiments/TA-006/commands.txt",
+      "sha256": "7e2f0f5c80ea78bb90d104ad4848cda47a4866c7bfbec98e4b26970c659f228d",
+      "bytes": 572
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/cpu_report_complete.json",
+      "git_path": "transfer_aug/experiments/TA-006/cpu_report_complete.json",
+      "sha256": "5a2ef908435dcc10960608d342c97df0e7a26bb7de4639771e2c7c4b2e7b207a",
+      "bytes": 75
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/failure.json",
+      "git_path": "transfer_aug/experiments/TA-006/failure.json",
+      "sha256": "9500f9de8a274fbc2a242c5b60698b4fab6d7ba92072b5c491d4be2572b8fd97",
+      "bytes": 1013
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/final_verification.json",
+      "git_path": "transfer_aug/experiments/TA-006/final_verification.json",
+      "sha256": "b51903b72b8e78750725017791fe9f59ad7e098cd0da5fb7f32ae4a2cbfd028a",
+      "bytes": 2051
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/finalize.log",
+      "git_path": "transfer_aug/experiments/TA-006/finalize.log",
+      "sha256": "a77cce827ed4c9fc12512cf4348d7183254e66e7fc4dfeea6005fcb0b3ea5b1d",
+      "bytes": 4401
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/finalize.py",
+      "git_path": "transfer_aug/experiments/TA-006/finalize.py",
+      "sha256": "80c67b3795dd28b9d2a7e88226e6bed9dda73755a15090868759764d70dbb525",
+      "bytes": 4600
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/finalize_setup.py",
+      "git_path": "transfer_aug/experiments/TA-006/finalize_setup.py",
+      "sha256": "a175157986782123777d86fe56dcfb22747742f5f8a823b714a84d9645bca6a0",
+      "bytes": 1649
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/gallery.html",
+      "git_path": "transfer_aug/experiments/TA-006/gallery.html",
+      "sha256": "084fcfb6ce25d58d30c8fe2b5b72202d476a6a1f67cf4ba9efe07caff60d6daf",
+      "bytes": 1992
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/gpu_resource_ledger.json",
+      "git_path": "transfer_aug/experiments/TA-006/gpu_resource_ledger.json",
+      "sha256": "daa1f185891646c48ac161250e134f3cfcaf4b90c1c54643fddc390815fc9180",
+      "bytes": 596
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/handoff_hashes.json",
+      "git_path": "transfer_aug/experiments/TA-006/handoff_hashes.json",
+      "sha256": "bc42c3a0f6b4cbbbb90a6996bffe8b2ed288c8fdaeb61599f83509d906606675",
+      "bytes": 4085
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/losses.py",
+      "git_path": "transfer_aug/experiments/TA-006/losses.py",
+      "sha256": "051186b6f4c005896dd7f33ecc2656f144bdefa195055c9f9bb541fdb2ee4e49",
+      "bytes": 3618
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/metric_conventions.json",
+      "git_path": "transfer_aug/experiments/TA-006/metric_conventions.json",
+      "sha256": "bc87e49b6eae6152f3a6abae30ae3a2872c400aa411396aa3311926ed59f3bb8",
+      "bytes": 702
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/metric_correction.json",
+      "git_path": "transfer_aug/experiments/TA-006/metric_correction.json",
+      "sha256": "efbaaecf459a53dc5164a258d969cc07167e36a31a9a6c2ef7da7addcbedc9f8",
+      "bytes": 859
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/metric_correction_before.json",
+      "git_path": "transfer_aug/experiments/TA-006/metric_correction_before.json",
+      "sha256": "a7667aee8f34ea07c119e84726af0066f03479cc04b7e6efc4e2b80155959ad9",
+      "bytes": 23673
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/model.py",
+      "git_path": "transfer_aug/experiments/TA-006/model.py",
+      "sha256": "3e9d7c26d909fd74fba2bc79eacf86722f4d6c1d627c687307b23843d8766ec7",
+      "bytes": 9587
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/munch.py",
+      "git_path": "transfer_aug/experiments/TA-006/munch.py",
+      "sha256": "4c4a4c5b4f21c100f640459366898b3479d1af3666a92996051aae6ca5e4da8e",
+      "bytes": 277
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/outputs/trace_indices.json",
+      "git_path": "transfer_aug/experiments/TA-006/outputs/trace_indices.json",
+      "sha256": "546a096edf9e4ab0c0f089c3cd782252d6ee0a1cdd796b26c7c9ab94e923d8b4",
+      "bytes": 220
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/protected_before.json",
+      "git_path": "transfer_aug/experiments/TA-006/protected_before.json",
+      "sha256": "0c3a020d119d8ccb22cb1312c083f71a087f820827b0d5b3b75a8786d7dec881",
+      "bytes": 1567
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/qualification.json",
+      "git_path": "transfer_aug/experiments/TA-006/qualification.json",
+      "sha256": "8c27e537e71747917c9882080bc8f4b7ddba9d7223cf28f7dc326a598478503d",
+      "bytes": 791
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/report.log",
+      "git_path": "transfer_aug/experiments/TA-006/report.log",
+      "sha256": "fc05b43c5c49b5c6ed9007c88265bc5d14e6add821da3529d0b4d4161c65e893",
+      "bytes": 91
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/report.py",
+      "git_path": "transfer_aug/experiments/TA-006/report.py",
+      "sha256": "683b99fc76ac0c20b66eff62b18196cffb1c5b196c2d46e2a6b26ab5baaa67f8",
+      "bytes": 10640
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/result.json",
+      "git_path": "transfer_aug/experiments/TA-006/result.json",
+      "sha256": "a77cce827ed4c9fc12512cf4348d7183254e66e7fc4dfeea6005fcb0b3ea5b1d",
+      "bytes": 4401
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/review_inventory.json",
+      "git_path": "transfer_aug/experiments/TA-006/review_inventory.json",
+      "sha256": "25cab4a7c3ee82b233fa11b5f37b750d973707afadf4e25e2aa4afa02d92a943",
+      "bytes": 19399
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/setup_hashes.json",
+      "git_path": "transfer_aug/experiments/TA-006/setup_hashes.json",
+      "sha256": "12fe3bef938d1558008f0c411260935888024c3b3424d320ac9b32c006416b18",
+      "bytes": 1151
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/setup_result.json",
+      "git_path": "transfer_aug/experiments/TA-006/setup_result.json",
+      "sha256": "6d2e451cb58498c0b03271464820d2e7abc11cebf90693005791ada77935fa19",
+      "bytes": 2360
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/source_adaptation.json",
+      "git_path": "transfer_aug/experiments/TA-006/source_adaptation.json",
+      "sha256": "541e0ce9376416f13f21d3bbf2f59cab494ac5140c70f4e214a5ba7aeb25fefc",
+      "bytes": 487
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/stargan64.py",
+      "git_path": "transfer_aug/experiments/TA-006/stargan64.py",
+      "sha256": "f7702161057a02385425ebef3e572e0e1b8e7d22efc19b2282d9e5393d5ded4f",
+      "bytes": 4865
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/status.json",
+      "git_path": "transfer_aug/experiments/TA-006/status.json",
+      "sha256": "7e89bc67da4e782d4ae3415af0ba91b62b49bb20561f9b26d09925ff788fb0b8",
+      "bytes": 310
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/tails.json",
+      "git_path": "transfer_aug/experiments/TA-006/tails.json",
+      "sha256": "ef69aa53f6c9e8b9093ba687e30daaf8e9fcbd5dad0893c0aa94bdb5d4ca606d",
+      "bytes": 1810
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/train.log",
+      "git_path": "transfer_aug/experiments/TA-006/train.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/train.py",
+      "git_path": "transfer_aug/experiments/TA-006/train.py",
+      "sha256": "a1c72bc0942551e9956138185ade8b83b55fd6f1e98a59ca3897e578dfe84a0f",
+      "bytes": 10310
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/training_complete.json",
+      "git_path": "transfer_aug/experiments/TA-006/training_complete.json",
+      "sha256": "48bf59ca5a1bf9a2ec746d447b81209808429eb59dcc285fd9bfc28ddd49220e",
+      "bytes": 1623
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/training_preflight.json",
+      "git_path": "transfer_aug/experiments/TA-006/training_preflight.json",
+      "sha256": "5bd7b7dc352a710ccd2b3ee6ab454c484f2c370fd8fa8bf0a65f65558c8a58e9",
+      "bytes": 2119
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/upstream_utils.py",
+      "git_path": "transfer_aug/experiments/TA-006/upstream_utils.py",
+      "sha256": "021af24f386b8ab9f3d0bcaa520c8569b279967d95f4c4d2a1a450a20b339f62",
+      "bytes": 9744
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/verification.json",
+      "git_path": "transfer_aug/experiments/TA-006/verification.json",
+      "sha256": "482b42135fcc33a51e8222dd6fb20615fb91d550b4931c75bc47a2169e5901bd",
+      "bytes": 2871
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/verify_metric_conventions.py",
+      "git_path": "transfer_aug/experiments/TA-006/verify_metric_conventions.py",
+      "sha256": "814f0bf52269c36666abab8f4be4a2e52a823314025f3ae36866ee2a1d59505c",
+      "bytes": 2584
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/verify_setup.log",
+      "git_path": "transfer_aug/experiments/TA-006/verify_setup.log",
+      "sha256": "b09a40e2b6b8ab7d6499537d9430fb54e12b5601860da0903f095c5921c56d28",
+      "bytes": 762
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/verify_setup.py",
+      "git_path": "transfer_aug/experiments/TA-006/verify_setup.py",
+      "sha256": "60ea361189b4c9f5ea937856fac7dcb0b219814008c4023e9ee0bd78098a932b",
+      "bytes": 4885
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/visual_review.json",
+      "git_path": "transfer_aug/experiments/TA-006/visual_review.json",
+      "sha256": "28873c70eac64a736a8cd01538bbc36ca539db3bc3009e8967c9d818089c147c",
+      "bytes": 71543
+    },
+    {
+      "original_path": "exploration/transfer_aug/experiments/TA-006/write_review.py",
+      "git_path": "transfer_aug/experiments/TA-006/write_review.py",
+      "sha256": "9b028b2bac651cbadf7bceeb8dc1eb47d42d273add8b727844b45d16886ea3b5",
+      "bytes": 12205
+    },
+    {
+      "original_path": "exploration/transfer_aug/fetch_audit_details.py",
+      "git_path": "transfer_aug/fetch_audit_details.py",
+      "sha256": "148530a0ea5050cbddccf3a6302673501159a197beb92a1f7b2c04b442c05682",
+      "bytes": 3023
+    },
+    {
+      "original_path": "exploration/transfer_aug/fetch_audit_sources.py",
+      "git_path": "transfer_aug/fetch_audit_sources.py",
+      "sha256": "610db9be425ca5a3dd24024fd3fdab0fb0e3e986965c94fe839df3886b201c2a",
+      "bytes": 3223
+    },
+    {
+      "original_path": "exploration/transfer_aug/parameter_audit.json",
+      "git_path": "transfer_aug/parameter_audit.json",
+      "sha256": "921bd799d35888d6a534d439b7da839e4bda841818f5046084fe71e17887e76a",
+      "bytes": 3522
+    },
+    {
+      "original_path": "exploration/transfer_aug/prepare_cohort.py",
+      "git_path": "transfer_aug/prepare_cohort.py",
+      "sha256": "9873748e236be21e5ff3300fa8f69db48d2b2fe19add8c4c69292c0c272d44fc",
+      "bytes": 6685
+    },
+    {
+      "original_path": "exploration/transfer_aug/restore_audit_sources.py",
+      "git_path": "transfer_aug/restore_audit_sources.py",
+      "sha256": "983e999eeb98bdaa011256fe0d9c336c928e0f5252fcf15c3bc5622fcf982097",
+      "bytes": 1684
+    },
+    {
+      "original_path": "exploration/transfer_aug/run_python.sh",
+      "git_path": "transfer_aug/run_python.sh",
+      "sha256": "4943edc34c1ed3a706fd79f30f393e4781cb328ea8ba23107ab3d16a5369c5a6",
+      "bytes": 647
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/PROTOCOL_V1.md",
+      "git_path": "transfer_aug/shared/PROTOCOL_V1.md",
+      "sha256": "1be27b900ee25ad95aed707427fb047e2456c122c6a0d2c4cf1feaa02fe51425",
+      "bytes": 5562
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/cohort_v1/manifest.json",
+      "git_path": "transfer_aug/shared/cohort_v1/manifest.json",
+      "sha256": "46d27966191a14746aa8ec212509aefb0c46b905de0e674947e9b2e094203bda",
+      "bytes": 2332
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/dispatch_preflight.json",
+      "git_path": "transfer_aug/shared/dispatch_preflight.json",
+      "sha256": "65855c4925851a46808c880ba6660eb7ab93ee5311ba23aa2aa736270768969a",
+      "bytes": 302
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/handoff_acceptance.json",
+      "git_path": "transfer_aug/shared/handoff_acceptance.json",
+      "sha256": "2895daa2e8875b66964261a0b2e04d90d5be2cf3c38a12700c194ec836a77513",
+      "bytes": 900
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/round2/TRAINING_PROTOCOL_v1.md",
+      "git_path": "transfer_aug/shared/round2/TRAINING_PROTOCOL_v1.md",
+      "sha256": "ae9323b66e4969f87f000d08d0227cc6770e9f1377bc7f62deb6c92e39409c94",
+      "bytes": 6498
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/round2/freeze.json",
+      "git_path": "transfer_aug/shared/round2/freeze.json",
+      "sha256": "5778c0dcbdfef661c0490be628b52541a4a26b7bb316ef232ed5dfa9b5a630df",
+      "bytes": 790
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/round2/freeze.py",
+      "git_path": "transfer_aug/shared/round2/freeze.py",
+      "sha256": "d4c681f53fa067beca96e7f855c57a203f37a5f645942b6d4725457353e17c43",
+      "bytes": 1920
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/round2/handoff_acceptance.json",
+      "git_path": "transfer_aug/shared/round2/handoff_acceptance.json",
+      "sha256": "68dcee1df134ec9ca84596eb077a2542bf4f1cb8d453f9093d1d357b8e1c5bc8",
+      "bytes": 1071
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/round2/preparation_acceptance.json",
+      "git_path": "transfer_aug/shared/round2/preparation_acceptance.json",
+      "sha256": "5fc626e25a9a61176ebabe37876cbcab159fcbf7726e5ae1432a4d70a6b420a5",
+      "bytes": 1756
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/round3/TA-005_acceptance.json",
+      "git_path": "transfer_aug/shared/round3/TA-005_acceptance.json",
+      "sha256": "4771ce10b0cd2ec937b881f67467b0b6cc9306514a301ed36ce72fe32d1c4821",
+      "bytes": 410
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/round3/TRAINING_PROTOCOL_v1.md",
+      "git_path": "transfer_aug/shared/round3/TRAINING_PROTOCOL_v1.md",
+      "sha256": "75937769254ab5634618d104d97b0e51c4b1bf20128e02c1566eeffa32d6a8f2",
+      "bytes": 9151
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/round3/freeze.json",
+      "git_path": "transfer_aug/shared/round3/freeze.json",
+      "sha256": "06a11aac6366cbc9cc03dcc305a81e143bf50c7661cbd56c6dea2fee8ae64cdb",
+      "bytes": 901
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/round3/freeze_evaluation.py",
+      "git_path": "transfer_aug/shared/round3/freeze_evaluation.py",
+      "sha256": "e6205db0dd718c424290045a3aa1135c94afc92f0b0b3f6b60c2fa87b1eadc98",
+      "bytes": 3107
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/round3/handoff_acceptance.json",
+      "git_path": "transfer_aug/shared/round3/handoff_acceptance.json",
+      "sha256": "3efc463a5fcb821117a85d3249c799f53a4a89c6c14e234ec7dbe6aafe8063b3",
+      "bytes": 1570
+    },
+    {
+      "original_path": "exploration/transfer_aug/shared/round3/preparation_acceptance.json",
+      "git_path": "transfer_aug/shared/round3/preparation_acceptance.json",
+      "sha256": "1248667fdc2237a5a0542a2d33e3331d985804fa5605c5545dc6a31e7758965f",
+      "bytes": 690
+    },
+    {
+      "original_path": "exploration/transfer_aug/source_manifest.json",
+      "git_path": "transfer_aug/source_manifest.json",
+      "sha256": "4962238246780d2af4ba51e57539ddab44a2a85817793622f4250432f8a87fe6",
+      "bytes": 41369
+    },
+    {
+      "original_path": "exploration/transfer_aug/verify_dispatch.py",
+      "git_path": "transfer_aug/verify_dispatch.py",
+      "sha256": "13e522e53127764cca7fbb31007e6278120c0cc5ed84cc576dec71f8676156d5",
+      "bytes": 5493
+    }
+  ],
+  "outcome": "Related independent master-worker study, not retrospectively subordinate to the FastGen coordinator. EDA and six transfer studies completed; no useful SiDA augmentation or generative FID improvement was established.",
+  "evidence_review": "Historical report checked; migration hashes/restore verified separately. No scientific rerun."
+}

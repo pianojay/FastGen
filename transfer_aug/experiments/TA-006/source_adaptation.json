@@ -1,0 +1,11 @@
+{
+  "commit": "875b70a150609e8a678ed8482562e7074cdce7e5",
+  "changes": [
+    "Model classes copied verbatim; removed FAN import and upstream build_model factory.",
+    "Loss functions and moving_average copied verbatim; removed runtime imports/Solver which invoke pretrained evaluation."
+  ],
+  "source_sha256": {
+    "solver.py": "5d9100491149aa22e29f91f91e036a06ca4d7bd0066cc275a085fcf8b2065fff",
+    "model.py": "5778fd921f71d693c9783616619beb6c48f19c13d74de80dcfefcaff208b4175"
+  }
+}

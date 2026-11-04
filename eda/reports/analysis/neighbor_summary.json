@@ -1,0 +1,133 @@
+{
+  "B_to_A": {
+    "min": 0.0,
+    "p25": 3.6177209929167584,
+    "median": 8.81975792142894,
+    "p75": 11.401699563616276,
+    "p90": 12.868704003173608,
+    "p95": 13.800725710576014,
+    "p99": 15.230183577014232,
+    "max": 17.23392504680368
+  },
+  "B_to_A_excluding_exact_matched_queries": {
+    "min": 0.1770717360883814,
+    "p25": 5.141235042148427,
+    "median": 9.604039997145206,
+    "p75": 11.67572196987757,
+    "p90": 13.057511252152315,
+    "p95": 13.916852078482533,
+    "p99": 15.299578678556715,
+    "max": 17.23392504680368
+  },
+  "B_to_A_same_category": {
+    "min": 0.0,
+    "p25": 3.6321611135435514,
+    "median": 8.883359793950003,
+    "p75": 11.732517220975334,
+    "p90": 13.437251013784842,
+    "p95": 14.435621173574932,
+    "p99": 16.15883780698956,
+    "max": 19.1569592927158
+  },
+  "B_to_A_cosine": {
+    "min": 0.0,
+    "p25": 0.014743044972090915,
+    "median": 0.08982643118961106,
+    "p75": 0.1479949249478481,
+    "p90": 0.18071801001339047,
+    "p95": 0.19653671526922767,
+    "p99": 0.22546355068740573,
+    "max": 0.31441936987590285
+  },
+  "A_to_B": {
+    "min": 0.0,
+    "p25": 11.208082396624768,
+    "median": 12.917064302620464,
+    "p75": 14.410976425152883,
+    "p90": 15.680556566723677,
+    "p95": 16.460444042080493,
+    "p99": 17.894536158295182,
+    "max": 21.862730360397855
+  },
+  "A_leave_one_out": {
+    "min": 0.0,
+    "p25": 3.5167040235940994,
+    "median": 10.087087175134755,
+    "p75": 12.725227562789815,
+    "p90": 14.318878886678291,
+    "p95": 15.211979898562126,
+    "p99": 16.77404424092615,
+    "max": 19.89100024313584
+  },
+  "A_leave_one_out_excluding_own_duplicate_group": {
+    "min": 0.034851798688525185,
+    "p25": 6.172049046439036,
+    "median": 11.067041229326602,
+    "p75": 13.04257399152669,
+    "p90": 14.496158248143265,
+    "p95": 15.365618017874064,
+    "p99": 16.8730235042643,
+    "max": 19.89100024313584
+  },
+  "B_exact_matched_count": 343,
+  "same_category_first_neighbor_rate": 0.8241721854304636,
+  "gallery_control_median_difference": {
+    "min": -1.4274489134775905,
+    "p25": -1.2396753175707516,
+    "median": -1.1767045475958628,
+    "p75": -1.1062288416615793,
+    "p90": -1.0750735052796463,
+    "p95": -1.0651795042866197,
+    "p99": -1.0201939290766096,
+    "max": -1.0089475352741069
+  },
+  "fixed_A2_to_A1": {
+    "min": 0.18483093879972462,
+    "p25": 7.582239678834731,
+    "median": 11.623301796740527,
+    "p75": 13.402158496318979,
+    "p90": 14.735959535654125,
+    "p95": 15.587041693899188,
+    "p99": 17.10392702677805,
+    "max": 19.89100024313584
+  },
+  "fixed_B_to_A1": {
+    "min": 0.0,
+    "p25": 4.570626617228109,
+    "median": 9.765518361811955,
+    "p75": 11.935639255015317,
+    "p90": 13.325802798345068,
+    "p95": 14.156471481227813,
+    "p99": 15.57946507428159,
+    "max": 17.23392504680368
+  },
+  "numerical_check_queries": 32,
+  "numerical_check_atol": 1e-08,
+  "tail_B_paths": [
+    "PokemonData/Zapdos/00e5ca5e91ca4f44be3d3d2383f96779.jpg",
+    "PokemonData/Clefairy/196bd52a0089460ba32cb58eb89f52fe.jpg",
+    "PokemonData/Pinsir/1f0b86155a044145ad1bd54de99a3de2.jpg",
+    "PokemonData/Diglett/03af4fdc12d84ac78b047dca27fb5019.jpg",
+    "PokemonData/Vileplume/2a7f1b0db47c407fb1644eba16da8107.jpg",
+    "PokemonData/Golduck/1afc1def08214839984a364b859a30ad.jpg",
+    "PokemonData/Zubat/10ad73300d104be29e778438a7784abf.jpg",
+    "PokemonData/Diglett/0cb353b6b18845a4a67af4c9c8032abd.jpg",
+    "PokemonData/Kabutops/2a172f0ba22749e1a199c63bd7b2df45.jpg",
+    "PokemonData/Nidoran-f/Nidoran-f17.jpg",
+    "PokemonData/Aerodactyl/263b3cb088e5448e99335fbda8f73ee7.jpg",
+    "PokemonData/Weepinbell/4b4e27fd0dfe49a093a115b8e1053abf.jpg",
+    "PokemonData/Graveler/159-HOME075.png",
+    "PokemonData/Persian/297b88086fef420e8c922b2c591e0f89.jpg",
+    "PokemonData/Ivysaur/15bcf01c70264520acc14e0152720020.jpg",
+    "PokemonData/Zubat/0a5caf0755b843deab9272d1c38bef7e.jpg",
+    "PokemonData/Marowak/4d6817e8e5cd464cbb50d042da4945aa.jpg",
+    "PokemonData/Dugtrio/2d5e46eee7f148a7aa176e86e943fb4f.jpg",
+    "PokemonData/Tentacool/3f4d8f83b5904d98ad7808e7cedf003c.jpg",
+    "PokemonData/Haunter/21c25b0dd2e5489a80606b56a01353ae.jpg",
+    "PokemonData/Hitmonlee/060-106Hitmonlee_alternate.png",
+    "PokemonData/Raticate/1af1596a7cc244df8cc37faac20f7286.jpg",
+    "PokemonData/Electrode/144fea14a364493b8c1ef9d4fcad871f.jpg",
+    "PokemonData/Graveler/004-075Graveler_Dream_2.png"
+  ],
+  "seconds": 2.7419332042336464
+}

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "iterations": 20,
+  "extra_recovery_iterations": 2,
+  "batch_size": 8,
+  "seconds": 18.60991752706468,
+  "seconds_per_iteration": 0.930495876353234,
+  "projected_20000_seconds": 18609.91752706468,
+  "peak_allocated_bytes": 10695597568,
+  "peak_reserved_bytes": 19518193664,
+  "parameters": {
+    "generator": 32634883,
+    "mapping_network": 2438272,
+    "style_encoder": 20327808,
+    "discriminator": 20263170,
+    "generator_ema": 32634883,
+    "mapping_network_ema": 2438272,
+    "style_encoder_ema": 20327808
+  },
+  "total_parameters": 131065096,
+  "exact_gpu_recovery": true,
+  "recovery_digest": "038716e53781e6dbd1f3236f8327b912ddd3683a111295b76dd76ecaa6d50988",
+  "gpu_uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2",
+  "reset_before_production": true
+}

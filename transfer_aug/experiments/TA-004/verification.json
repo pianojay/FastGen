@@ -1,0 +1,247 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "torch_version": "2.7.1+cu126",
+  "generator_output_shape": [
+    2,
+    3,
+    64,
+    64
+  ],
+  "discriminator_output_shape": [
+    2,
+    1,
+    14,
+    14
+  ],
+  "feature_mapping": [
+    {
+      "index": 0,
+      "module": "ReflectionPad2d",
+      "shape": [
+        2,
+        3,
+        70,
+        70
+      ]
+    },
+    {
+      "index": 4,
+      "module": "Conv2d",
+      "shape": [
+        2,
+        128,
+        64,
+        64
+      ]
+    },
+    {
+      "index": 8,
+      "module": "Conv2d",
+      "shape": [
+        2,
+        256,
+        32,
+        32
+      ]
+    },
+    {
+      "index": 12,
+      "module": "ResnetBlock",
+      "shape": [
+        2,
+        256,
+        16,
+        16
+      ]
+    },
+    {
+      "index": 16,
+      "module": "ResnetBlock",
+      "shape": [
+        2,
+        256,
+        16,
+        16
+      ]
+    }
+  ],
+  "parameter_counts": {
+    "G": 7837699,
+    "D": 662977,
+    "F": 560384
+  },
+  "framework_parameters": 9061060,
+  "nce_only_gradient_abs_sums": {
+    "G": 37314.7578125,
+    "F": 1309.24755859375
+  },
+  "checks": {
+    "finite_outputs": true,
+    "per_image_negatives_reference": true,
+    "other_image_key_invariance": true,
+    "stopped_keys": true,
+    "G_F_nonzero_nce_gradients": true,
+    "all_optimizer_states_present": true,
+    "checkpoint_exact_next_step_rng_sampler_weights": true,
+    "no_cuda_initialization": true
+  },
+  "initial_synthetic_losses": {
+    "D": 1.4122250080108643,
+    "G": 7.9562835693359375,
+    "GAN": 0.9878798723220825,
+    "NCE": 7.025370121002197,
+    "NCE_identity": 6.911437034606934
+  },
+  "recovery_reference": {
+    "draws": [
+      {
+        "class": "c0",
+        "D0": "a1",
+        "D1": "b0",
+        "flip_D0": false,
+        "flip_D1": false
+      },
+      {
+        "class": "c0",
+        "D0": "a0",
+        "D1": "b0",
+        "flip_D0": false,
+        "flip_D1": true
+      },
+      {
+        "class": "c0",
+        "D0": "a0",
+        "D1": "b0",
+        "flip_D0": false,
+        "flip_D1": true
+      },
+      {
+        "class": "c0",
+        "D0": "a1",
+        "D1": "b0",
+        "flip_D0": true,
+        "flip_D1": true
+      },
+      {
+        "class": "c0",
+        "D0": "a1",
+        "D1": "b0",
+        "flip_D0": false,
+        "flip_D1": true
+      },
+      {
+        "class": "c1",
+        "D0": "a2",
+        "D1": "b1",
+        "flip_D0": false,
+        "flip_D1": false
+      },
+      {
+        "class": "c0",
+        "D0": "a0",
+        "D1": "b0",
+        "flip_D0": true,
+        "flip_D1": true
+      },
+      {
+        "class": "c0",
+        "D0": "a0",
+        "D1": "b0",
+        "flip_D0": false,
+        "flip_D1": true
+      }
+    ],
+    "rng": [
+      0.29218819771226845,
+      0.6492537450385302,
+      0.15477681159973145
+    ],
+    "losses": {
+      "D": 0.6946626901626587,
+      "G": 6.802253246307373,
+      "GAN": 0.4494185149669647,
+      "NCE": 6.584229469299316,
+      "NCE_identity": 6.1214399337768555
+    },
+    "parameter_sha256": "41cbe23016c275672e5785b2e9941cf021d0074b0868a9a86de872f7e809ebe1"
+  },
+  "recovery_actual": {
+    "draws": [
+      {
+        "class": "c0",
+        "D0": "a1",
+        "D1": "b0",
+        "flip_D0": false,
+        "flip_D1": false
+      },
+      {
+        "class": "c0",
+        "D0": "a0",
+        "D1": "b0",
+        "flip_D0": false,
+        "flip_D1": true
+      },
+      {
+        "class": "c0",
+        "D0": "a0",
+        "D1": "b0",
+        "flip_D0": false,
+        "flip_D1": true
+      },
+      {
+        "class": "c0",
+        "D0": "a1",
+        "D1": "b0",
+        "flip_D0": true,
+        "flip_D1": true
+      },
+      {
+        "class": "c0",
+        "D0": "a1",
+        "D1": "b0",
+        "flip_D0": false,
+        "flip_D1": true
+      },
+      {
+        "class": "c1",
+        "D0": "a2",
+        "D1": "b1",
+        "flip_D0": false,
+        "flip_D1": false
+      },
+      {
+        "class": "c0",
+        "D0": "a0",
+        "D1": "b0",
+        "flip_D0": true,
+        "flip_D1": true
+      },
+      {
+        "class": "c0",
+        "D0": "a0",
+        "D1": "b0",
+        "flip_D0": false,
+        "flip_D1": true
+      }
+    ],
+    "rng": [
+      0.29218819771226845,
+      0.6492537450385302,
+      0.15477681159973145
+    ],
+    "losses": {
+      "D": 0.6946626901626587,
+      "G": 6.802253246307373,
+      "GAN": 0.4494185149669647,
+      "NCE": 6.584229469299316,
+      "NCE_identity": 6.1214399337768555
+    },
+    "parameter_sha256": "41cbe23016c275672e5785b2e9941cf021d0074b0868a9a86de872f7e809ebe1"
+  },
+  "discriminator_nominal_local_receptive_field": 40,
+  "receptive_field_note": "Conv/filter support only; instance normalization couples spatial sites.",
+  "elapsed_seconds": 10.446825062856078,
+  "peak_host_rss_bytes": 1233625088,
+  "gpu_seconds": 0
+}

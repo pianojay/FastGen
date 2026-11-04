@@ -1,0 +1,30 @@
+{
+  "mode": "generate",
+  "pass": true,
+  "outputs": 2416,
+  "tails": [
+    "082_3",
+    "104_3",
+    "018_2",
+    "128_1",
+    "013_1",
+    "020_0",
+    "093_0",
+    "086_2"
+  ],
+  "resources": {
+    "device": "cpu",
+    "parameters": 0,
+    "gpu_seconds": 0,
+    "gpu_memory_bytes": 0,
+    "peak_host_memory_bytes": 326307840,
+    "process_elapsed_seconds": 35.78708811663091,
+    "stage_timings": {
+      "generation_metrics_png_seconds": 21.689370749518275
+    },
+    "cpu_user_seconds": 34.840522,
+    "cpu_system_seconds": 1.1080160000000001,
+    "completed_utc": "2026-10-07T11:57:07.269758+00:00",
+    "pid": 3
+  }
+}

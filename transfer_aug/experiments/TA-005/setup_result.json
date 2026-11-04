@@ -1,0 +1,61 @@
+{
+  "experiment_id": "TA-005",
+  "status": "setup_complete",
+  "training_applicable": true,
+  "dataset_training": false,
+  "gpu_used": false,
+  "contract_sha256": "045526507a7364844b31b5aefcadf363ee6639b1368286f8c0f97b3ff366f1f9",
+  "source_commit": "a82e222bc359892bd0f522d7a0f1573f3ec4a485",
+  "parameters": {
+    "G0": 15026187,
+    "G1": 15026187,
+    "D0": 8271171,
+    "D1": 8271171,
+    "total": 46594716
+  },
+  "checks": {
+    "parameter_cap": true,
+    "upstream_networks_byte_identical": true,
+    "initializer_matches_pinned_helper": true,
+    "three_scale_64_valid": true,
+    "content_style_decode_reencode_shapes": true,
+    "style_code_effect_mean_absolute": 0.22466270625591278,
+    "finite_full_width_D_G_backward_and_optimizer_step": true,
+    "all_four_components_receive_nonzero_gradients": true,
+    "checkpoint_next_step_parameters_optimizer_scheduler_sampler_rng_bitexact": true,
+    "stepLR_constant_in_pilot": true,
+    "checkpoint_contract_rejection": true
+  },
+  "cpu_seconds": 15.911024501547217,
+  "blockers": [],
+  "pending": [
+    "GPU batch8 allocation/runtime qualification",
+    "final contract-bound runner and EDA"
+  ],
+  "proof_paths": {
+    "verification.json": "transfer_aug/experiments/TA-005/verification.json",
+    "data_verification.json": "transfer_aug/experiments/TA-005/data_verification.json",
+    "setup_checks.log": "transfer_aug/experiments/TA-005/setup_checks.log",
+    "verify_setup.py": "transfer_aug/experiments/TA-005/verify_setup.py",
+    "verify_data.py": "transfer_aug/experiments/TA-005/verify_data.py",
+    "SETUP_SUMMARY.md": "transfer_aug/experiments/TA-005/SETUP_SUMMARY.md"
+  },
+  "implementation_hashes": {
+    "verify_setup.py": "8b98abd5ad200d63189147521e19878a69d64d9e21dc8543ab1e1774dbc6ce76",
+    "verify_data.py": "659bbdcb8ed582df6da1361e22c702b29cbd76548a0ce806552bb397fd811dba",
+    "data.py": "6f7d35e82828aec8330f74797b3a2c8aaa84996d11215f8d2e9a76f45e4b3dfb",
+    "upstream_utils.py": "174bffa7473d88ee91e0c21ed7e0ed626cd83d31e6db1be993b98addc3af1836",
+    "networks.py": "bf8bf5dead288d663018ecd2fdfd0da28c85286c7c1cb3b78a837a5c6ecf68b6",
+    "engine.py": "c3123fe839596ea016b39b7b30be229a6bf2b9804c08ec434b7b865f2ffc1b97"
+  },
+  "source_hashes": {
+    "networks.py": "bf8bf5dead288d663018ecd2fdfd0da28c85286c7c1cb3b78a837a5c6ecf68b6",
+    "trainer.py": "6cfee99a62749619f06edbb13da1fa382816a77097275ca7cb888798cebfba8c",
+    "configs/edges2handbags_folder.yaml": "05b9749b9c89424e802b000090573552b3958f7909e643546eb4c198484c497c"
+  },
+  "fetched_helper": {
+    "url": "https://raw.githubusercontent.com/NVlabs/MUNIT/a82e222bc359892bd0f522d7a0f1573f3ec4a485/utils.py",
+    "sha256": "174bffa7473d88ee91e0c21ed7e0ed626cd83d31e6db1be993b98addc3af1836"
+  },
+  "runner_interface": "TRANSFER_AUG_GPU=1 bash transfer_aug/run_python.sh transfer_aug/experiments/TA-005/runner.py --stage all"
+}

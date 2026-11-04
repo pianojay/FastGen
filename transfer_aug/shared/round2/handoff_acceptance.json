@@ -1,0 +1,28 @@
+{
+  "status": "accepted",
+  "accepted_utc": "2026-10-07T16:22:31.382039+00:00",
+  "scope": "Master checked compact worker handoffs, contract/input identity, completion, resource limits and resolving proof references. Worker-owned low-level checks and direct visual reviews were not repeated.",
+  "experiments": [
+    {
+      "experiment_id": "TA-003",
+      "status": "accepted",
+      "result_sha256": "222a2b44bd7005e1444625e92078b50a8b619c2b6ba032cc2e1cbef69236d561",
+      "proof_references_resolved": 23,
+      "gpu_seconds": 3706.564811229706,
+      "peak_allocated_bytes": 2196792320,
+      "framework_parameters": 17001352,
+      "completed_updates": 20000
+    },
+    {
+      "experiment_id": "TA-004",
+      "status": "accepted",
+      "result_sha256": "ae47633902731aa8f5bdfea9dcc44052d4e544a7e58ea00413dd100ebdce0f98",
+      "proof_references_resolved": 36,
+      "gpu_seconds": 3702.2395655866712,
+      "peak_allocated_bytes": 2569035776,
+      "framework_parameters": 9061060,
+      "completed_updates": 20000
+    }
+  ],
+  "shared_inputs_unchanged": true
+}

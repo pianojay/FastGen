@@ -1,0 +1,7 @@
+bash transfer_aug/run_python.sh transfer_aug/experiments/TA-006/build_sources.py
+bash transfer_aug/run_python.sh transfer_aug/experiments/TA-006/verify_setup.py
+bash transfer_aug/run_python.sh transfer_aug/experiments/TA-006/finalize_setup.py
+TRANSFER_AUG_GPU=2 bash transfer_aug/run_python.sh transfer_aug/experiments/TA-006/train.py
+bash transfer_aug/run_python.sh transfer_aug/experiments/TA-006/report.py
+# Direct worker inspection of all sheets then write visual_review.json and SUMMARY.md.
+bash transfer_aug/run_python.sh transfer_aug/experiments/TA-006/finalize.py

@@ -1,0 +1,30 @@
+{
+  "category_count": 16,
+  "image_count": 128,
+  "inspected_with_image_tool": [
+    "review_1.png",
+    "review_2.png",
+    "review_3.png",
+    "review_4.png"
+  ],
+  "observations": {
+    "Butterfree": "D1 often has bold contours or black backgrounds; one D1 optimization image remains white-backed. Poses/crops vary.",
+    "Clefable": "D0 mostly pale/white-backed; D1 includes vivid scenes and black-backed sprites.",
+    "Clefairy": "D1 outlines and black backgrounds stand out; D0 includes pale renders and lighter pixel art. Similar-looking sprites are not exact duplicates.",
+    "Cubone": "D0 mainly light/soft; D1 includes darker scenes, black background and strongly outlined colored artwork. Media differ.",
+    "Dratini": "D1 contains high-contrast black panels and detailed water scenes; D0 includes pale simple depictions and a soft rendered scene.",
+    "Dugtrio": "Contrast is weaker: both domains contain detailed scenes and outlined sprites, with D1 tending stronger light-dark separation.",
+    "Exeggcute": "D0 is mostly pale/soft; D1 contains stronger outlines and dark or vivid scenes, plus black-backed line art.",
+    "Gyarados": "D1 tends detailed high contrast/dark backgrounds; a busy bright D0 card is a counterexample to a simple complexity label.",
+    "Ivysaur": "D1 often black-backed or stronger-edged; D0 lighter/flatter. Pixel-art/media differences confound appearance.",
+    "Poliwag": "D1 often stronger outlining/contrast; D0 includes an already dark low-poly rendering. Not a brightness-only split.",
+    "Primeape": "D0 muted tan/soft backgrounds; D1 black-backed sprites/renders and strong green contours. Pose/crop varies.",
+    "Seaking": "D0 softer scenic renders; D1 stronger contours and contrasting panels; white-backed drawing shows D1 need not be dark.",
+    "Shellder": "D1 sharper contrast in several samples but white-backed soft render overlaps D0 appearance; media and crop vary.",
+    "Tentacool": "D1 repeatedly uses black or high-contrast backgrounds, D0 pale/soft scenes. One D1 white-background example remains.",
+    "Venusaur": "D1 very heterogeneous: black-backed sprite, white-background line art, dark object and detailed card. D0 often softer color scenes.",
+    "Weepinbell": "D0 mostly softly lit toy/render depictions; D1 black-backed crisp sprites, vivid scene and one dark render."
+  },
+  "recurrence": "Repeated stronger light-dark contrast/edges and frequent black backgrounds in D1, relative to often paler/softer D0; weaker and heterogeneous in Dugtrio, Shellder, Venusaur.",
+  "uncertainty": "Unblinded small fixed subset; visual observations are qualitative. Pose, object scale, media, background and fine-detail differences co-vary. No semantic-style or class-correctness inference. Similar non-identical images remain possible across pools."
+}

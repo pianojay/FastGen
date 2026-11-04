@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "updates": 20,
+  "additional_recovery_updates": 2,
+  "batch_size": 16,
+  "seconds_20_updates": 4.388790590688586,
+  "seconds_per_update": 0.2194395295344293,
+  "projected_20000_seconds": 4388.790590688586,
+  "peak_allocated_bytes": 2569035776,
+  "peak_reserved_bytes": 3468689408,
+  "gpu_uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2",
+  "framework_parameters": 9061060,
+  "finite_gradients_losses": true,
+  "exact_gpu_next_step_recovery": true,
+  "reference_loss": {
+    "D": 0.275099515914917,
+    "G": 2.375924587249756,
+    "GAN": 0.4361715316772461,
+    "NCE": 1.9698870182037354,
+    "NCE_identity": 1.9096189737319946
+  },
+  "restored_loss": {
+    "D": 0.275099515914917,
+    "G": 2.375924587249756,
+    "GAN": 0.4361715316772461,
+    "NCE": 1.9698870182037354,
+    "NCE_identity": 1.9096189737319946
+  },
+  "reference_digest": "d7fe6253b7c58009369435ccda1ab0f6305c0cc4ad99257e7b2cb69327bbecfc",
+  "restored_digest": "d7fe6253b7c58009369435ccda1ab0f6305c0cc4ad99257e7b2cb69327bbecfc",
+  "torch_version": "2.7.1+cu126",
+  "device_name": "NVIDIA TITAN RTX",
+  "reset_before_production": true
+}

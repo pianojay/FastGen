@@ -1,0 +1,77 @@
+{
+  "count": 20099,
+  "dimensions": 2048,
+  "dtype": "float32",
+  "mode": "clean",
+  "model_name": "inception_v3",
+  "paths_sha256": "750afba6c9f3905304411f50024a4c1f0ec0da4146fc90ec1ab3e31c80608edb",
+  "feature_sha256": "fe490e2de0d01e41d067aaf6873ff8f425f3aa3c9cf317ec9319d8dd69ea7dce",
+  "pixels_sha256": "4d9807a789c1c76b60bf6c783c24a348eee461a4492420d5f34de8ff4de967ce",
+  "inventory_sha256": "89d8deeb1d59a3737f6f8ba8f7b19f8c8b1b1c908f69d92fd171e9c3617de214",
+  "extractor_sha256": "f58cb9b6ec323ed63459aa4fb441fe750cfe39fafad6da5cb504a16f19e958f4",
+  "environment": {
+    "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+    "executable": "/home/user/jw_soflow/exploration/.conda/eda/bin/python",
+    "prefix": "/home/user/jw_soflow/exploration/.conda/eda",
+    "user_site_enabled": false,
+    "reference_project": "FastGen-SoFlow",
+    "matched_reference_versions": {
+      "torch": "2.7.1+cu126",
+      "torchvision": "0.22.1+cu126",
+      "numpy": "1.26.4",
+      "Pillow": "12.3.0",
+      "clean-fid": "0.1.35",
+      "kagglehub": "1.0.2",
+      "scipy": "1.15.3",
+      "tqdm": "4.70.1",
+      "matplotlib": "3.10.3"
+    },
+    "packages": {
+      "torch": "2.7.1+cu126",
+      "torchvision": "0.22.1+cu126",
+      "clean-fid": "0.1.35",
+      "kagglehub": "1.0.2",
+      "numpy": "1.26.4",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.7.2",
+      "matplotlib": "3.10.3",
+      "Pillow": "12.3.0",
+      "pip": "26.2.1"
+    },
+    "module_paths": {
+      "numpy": "/home/user/jw_soflow/exploration/.conda/eda/lib/python3.10/site-packages/numpy/__init__.py",
+      "scipy": "/home/user/jw_soflow/exploration/.conda/eda/lib/python3.10/site-packages/scipy/__init__.py",
+      "sklearn": "/home/user/jw_soflow/exploration/.conda/eda/lib/python3.10/site-packages/sklearn/__init__.py",
+      "matplotlib": "/home/user/jw_soflow/exploration/.conda/eda/lib/python3.10/site-packages/matplotlib/__init__.py",
+      "torch": "/home/user/jw_soflow/exploration/.conda/eda/lib/python3.10/site-packages/torch/__init__.py",
+      "torchvision": "/home/user/jw_soflow/exploration/.conda/eda/lib/python3.10/site-packages/torchvision/__init__.py",
+      "cleanfid": "/home/user/jw_soflow/exploration/.conda/eda/lib/python3.10/site-packages/cleanfid/__init__.py"
+    },
+    "gpu_identity": "GPU-e9d30df5-3b84-1a7e-c505-c6fff0a0ce7f, NVIDIA TITAN RTX, 24576 MiB",
+    "cuda_runtime": "12.6",
+    "compute_capability": [
+      7,
+      5
+    ],
+    "peak_allocated_bytes": 125640192,
+    "cpu_pca_shape": [
+      6,
+      2
+    ],
+    "feature_smoke_shape": [
+      2,
+      2048
+    ],
+    "extractor_sha256": "f58cb9b6ec323ed63459aa4fb441fe750cfe39fafad6da5cb504a16f19e958f4",
+    "scope": "Environment qualification using synthetic inputs only; no dataset metrics or project models."
+  },
+  "preprocessing": {
+    "samples": 30,
+    "pixel_exact_to_official_export": true,
+    "tensor_exact_to_cleanfid_loader": true
+  },
+  "seconds": 113.50752968341112,
+  "peak_allocated_bytes": 1474972160,
+  "source_sha256": "55da043d3ade3b7e9ed9bf863bea60465e31554e221b2c2bf130f00e5e9fdf7a",
+  "input_pipeline": "official dataset transform -> official PNG export uint8 -> clean-fid PIL float bicubic 299x299"
+}

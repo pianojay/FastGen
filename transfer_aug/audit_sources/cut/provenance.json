@@ -1,0 +1,49 @@
+{
+  "repository": "https://github.com/taesungp/contrastive-unpaired-translation",
+  "revision": "b3ac297708dfb6f7589d04662277e53c0d579c27",
+  "license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/README.md",
+      "status": 200,
+      "bytes": 14076,
+      "sha256": "c64dc766229737f7c48b1f82fff5df330913082dd7f8e338baaf996af12e7247"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/LICENSE",
+      "status": 200,
+      "bytes": 11199,
+      "sha256": "4136d26774a0a0fdcf3f4c0e1140f19279565d41df764c64cc75c0283e6f5249"
+    },
+    "models/networks.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/models/networks.py",
+      "status": 200,
+      "bytes": 60639,
+      "sha256": "0fb3a0c27c66b9b4a1635cb4856afeb54d2828f6389a0bb33376f3a87c82cae7"
+    },
+    "models/cut_model.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/models/cut_model.py",
+      "status": 200,
+      "bytes": 10228,
+      "sha256": "04a4b5e410233c8845bfbf1e6e8097ffdd757ea769d63e78263e0cd74658f672"
+    },
+    "models/patchnce.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/models/patchnce.py",
+      "status": 200,
+      "bytes": 2319,
+      "sha256": "2bd50b34679786219a4d5c5858a3a277b0fd4467cc49b05d37a2041cb5f7f678"
+    },
+    "options/base_options.py": {
+      "url": "https://raw.githubusercontent.com/taesungp/contrastive-unpaired-translation/b3ac297708dfb6f7589d04662277e53c0d579c27/options/base_options.py",
+      "status": 200,
+      "sha256": "e778879da92aa30581bf3760f66a0ea09e71cfcebe226c931f1aa93b30d1b0a8",
+      "bytes": 9720
+    }
+  }
+}

@@ -1,0 +1,15 @@
+# Round 2 reproducible definitions
+
+Run from repository root:
+
+`bash transfer_aug/run_python.sh transfer_aug/domain_discovery/round2/analyze.py`
+
+All feature extraction accesses only A1 indices in the pinned official-export uint8 RGB 64×64 cache. Source files are hashed against inventory. Protected official manifests and the whole pixel-cache file are integrity-hashed, not used as non-A1 analysis data.
+
+RGB is divided by 255; luminance is 0.2126 R + 0.7152 G + 0.0722 B. Population standard deviations are used. HSV saturation is (max RGB − min RGB)/max RGB, with black assigned zero. White/black use strict all-channel thresholds >0.95/<0.05. Neighbor gradient is half the sum of mean absolute vertical and horizontal luminance differences. Laplacian energy is mean squared up+down+left+right−4center on the 62×62 interior. Entropy uses 32 equal bins on [0,1], includes 1 in the final bin, natural logs, and divides by log(32). Fourier power uses the unnormalized full complex FFT of luminance; DC is zeroed and high frequency means max(abs(fx),abs(fy))≥16 in cycles/image, including negative Nyquist. Its fraction is zero for exactly constant images. Border contrast is the absolute difference between mean luminance in the outer 4-pixel frame and the remaining 56×56 interior.
+
+Every A1 path is measured in scores.csv. Deduplication retains the lexicographically first path within each category and pixel hash. Only retained images enter PCA. Class means are subtracted; residual RMS uses weight 1/n_class and divides summed squared residuals by 151. RMS ≤1e−14 is treated as zero. Unwhitened SVD uses standardized residual rows multiplied by sqrt(1/n_class). PC1 scores use the unweighted standardized rows. Sign uses ordinary Pearson correlation against class-residual, RMS-normalized luminance entropy (neighbor gradient fallback if abs(correlation)<1e−12). Explained-variance ratios use squared singular values divided by their sum. Class-constant offsets would not affect the sign correlation because scores have zero within-class mean.
+
+Within each category, ascending (PC1 score, pixel SHA-256, path) orders bottom/top floor(n/3) into D0/D1. Remaining images are middle/unused. Within category/domain, ascending SHA-256 of UTF-8 `20261008|diagnostic|category|domain|pixel_sha256|path` (path breaks hypothetical hash ties) reserves the first two as holdout. This selection is independent of score rank within each domain. All others optimize. The fixed 16-category review subset uses NumPy default_rng(20261008).choice(sorted categories,16,replace=False), then sorts category names. Two optimization and both holdout examples per domain are shown, using analogous `review` hash ordering. Sheet layout is D0 optimize×2, D0 holdout×2, D1 optimize×2, D1 holdout×2.
+
+These are statistical appearance domains, not semantic styles. Equal support does not establish comparable transformations across classes, preservation of identity, discriminator behavior, downstream usefulness, convergence or FID improvement. These A1 diagnostic holdouts are not independent external confirmation.

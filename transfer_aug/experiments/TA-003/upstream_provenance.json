@@ -1,0 +1,37 @@
+{
+  "repository": "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix",
+  "revision": "2a7afba2895d52556dd5dfe07e8555ef657ced6f",
+  "license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/junyanz/pytorch-CycleGAN-and-pix2pix/2a7afba2895d52556dd5dfe07e8555ef657ced6f/README.md",
+      "status": 200,
+      "bytes": 16743,
+      "sha256": "cac0247153ef3bbcaea17c1707d774a124359a98e9c9f1b4f2a8a7be4051fc7b"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/junyanz/pytorch-CycleGAN-and-pix2pix/2a7afba2895d52556dd5dfe07e8555ef657ced6f/LICENSE",
+      "status": 200,
+      "bytes": 3565,
+      "sha256": "5474d910fc756107f149fb5ea08e557364d1607acda4e79a03b8e8f7a6279593"
+    },
+    "models/networks.py": {
+      "url": "https://raw.githubusercontent.com/junyanz/pytorch-CycleGAN-and-pix2pix/2a7afba2895d52556dd5dfe07e8555ef657ced6f/models/networks.py",
+      "status": 200,
+      "bytes": 26800,
+      "sha256": "2bfcb7adb19f7b7ff6fd8dd76e313200acf000e96784b920658a62e1a11fc04f"
+    },
+    "models/cycle_gan_model.py": {
+      "url": "https://raw.githubusercontent.com/junyanz/pytorch-CycleGAN-and-pix2pix/2a7afba2895d52556dd5dfe07e8555ef657ced6f/models/cycle_gan_model.py",
+      "status": 200,
+      "bytes": 10381,
+      "sha256": "9d21fe213927a7965b57d3a0e29f2633f490ba8d8de57ab839975510a8cf08dd"
+    }
+  }
+}

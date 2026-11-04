@@ -1,0 +1,18 @@
+{
+  "README.md": "8aae302be3aaeb69f11cc73a63590d6787fce1b02e0a3853219977ba3cc004f3",
+  "data/pokemon-generation-one-22k/category_to_id.json": "7c27ec2a15fa4f70b5729319d596d3a80bc528cdeeb02f36b88877a6545b77e8",
+  "data/pokemon-generation-one-22k/train_split.txt": "c4068bdec8c5994fa14887d3335e762dd6a4da1bc6394a6df7fae96d293138c0",
+  "data/pokemon-generation-one-22k/val_split.txt": "6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0",
+  "dataset.py": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+  "download_dataset.py": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+  "eda/features/pixels64.npy": "4d9807a789c1c76b60bf6c783c24a348eee461a4492420d5f34de8ff4de967ce",
+  "eda/reports/inventory.csv": "89d8deeb1d59a3737f6f8ba8f7b19f8c8b1b1c908f69d92fd171e9c3617de214",
+  "eda/resources/A.txt": "c4068bdec8c5994fa14887d3335e762dd6a4da1bc6394a6df7fae96d293138c0",
+  "eda/resources/A1.txt": "720dae89bd87b6f851e09dd556afebda57e39c9820fe466d7d1b5ab84e20d3b6",
+  "eda/resources/A2.txt": "b77de093a007b38f13d0d9291ee99753b4a3939b353eb4557d452ea4591244fa",
+  "eda/resources/B.txt": "6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0",
+  "eda/resources/development_split.json": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "evaluate.py": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+  "model.py": "c4cadfacb550ade39beb041b5d6e7460d6c2a08917c457ae71f05fe3e33ed1a9",
+  "requirements.txt": "e30940e3e890e6e5463f617475b97d7415e73f349fbf4070936aa284f0573eb2"
+}

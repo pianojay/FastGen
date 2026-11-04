@@ -1,0 +1,111 @@
+{
+  "experiment_id": "TA-004",
+  "status": "setup_completed",
+  "contract_revision": 2,
+  "contract": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/SETUP_CONTRACT_v2.md",
+  "contract_sha256": "48d2c28533af0a7e591605f459c7c71bcbd5e4d8c7bb9ef8be5df8b81a365a82",
+  "upstream_commit": "b3ac297708dfb6f7589d04662277e53c0d579c27",
+  "source_provenance": "/home/user/jw_soflow/exploration/transfer_aug/audit_sources/cut/provenance.json",
+  "source_integrity_checked": true,
+  "training_applicable": true,
+  "dataset_training_performed": false,
+  "synthetic_cpu_updates_executed": 3,
+  "device": "cpu",
+  "gpu_seconds": 0,
+  "gpu_allocated_bytes": 0,
+  "parameter_counts": {
+    "G": 7837699,
+    "D": 662977,
+    "F": 560384
+  },
+  "framework_parameters": 9061060,
+  "feature_mapping": [
+    {
+      "index": 0,
+      "module": "ReflectionPad2d",
+      "shape": [
+        2,
+        3,
+        70,
+        70
+      ]
+    },
+    {
+      "index": 4,
+      "module": "Conv2d",
+      "shape": [
+        2,
+        128,
+        64,
+        64
+      ]
+    },
+    {
+      "index": 8,
+      "module": "Conv2d",
+      "shape": [
+        2,
+        256,
+        32,
+        32
+      ]
+    },
+    {
+      "index": 12,
+      "module": "ResnetBlock",
+      "shape": [
+        2,
+        256,
+        16,
+        16
+      ]
+    },
+    {
+      "index": 16,
+      "module": "ResnetBlock",
+      "shape": [
+        2,
+        256,
+        16,
+        16
+      ]
+    }
+  ],
+  "checks": {
+    "finite_outputs": true,
+    "per_image_negatives_reference": true,
+    "other_image_key_invariance": true,
+    "stopped_keys": true,
+    "G_F_nonzero_nce_gradients": true,
+    "all_optimizer_states_present": true,
+    "checkpoint_exact_next_step_rng_sampler_weights": true,
+    "no_cuda_initialization": true
+  },
+  "verification_seconds": 10.446825062856078,
+  "peak_host_rss_bytes": 1233625088,
+  "proof_paths": {
+    "verification.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/verification.json",
+    "synthetic_checkpoint.pt": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/synthetic_checkpoint.pt",
+    "cut64.py": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/cut64.py",
+    "networks.py": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/networks.py",
+    "build_sources.py": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/build_sources.py",
+    "verify_setup.py": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/verify_setup.py",
+    "LICENSE.upstream": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/LICENSE.upstream",
+    "SETUP_SUMMARY.md": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/SETUP_SUMMARY.md",
+    "setup_hashes.json": "/home/user/jw_soflow/exploration/transfer_aug/experiments/TA-004/setup_hashes.json"
+  },
+  "blockers": [
+    "Final shared domains and frozen training contract required before profiling/training."
+  ],
+  "limitations": [
+    "CPU synthetic batch2 checks only; batch16 GPU memory and speed unqualified.",
+    "No dataset loading or GPU launch runner until final contract.",
+    "No learned image quality/convergence claim."
+  ],
+  "architecture_changes": [
+    "Revision 2 corrects antialiased discriminator receptive field to 40px; upstream filters retained."
+  ],
+  "completed_checks": 8,
+  "expected_checks": 8,
+  "reproduce_command": "bash transfer_aug/run_python.sh transfer_aug/experiments/TA-004/verify_setup.py"
+}

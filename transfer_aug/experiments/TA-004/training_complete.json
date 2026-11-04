@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "updates": 20000,
+  "gpu_seconds_before_release": 3699.3321260306984,
+  "peak_allocated_bytes": 2569035776,
+  "peak_reserved_bytes": 3472883712,
+  "deterministic_review_rerun_exact": true,
+  "review_rerun_count": 32,
+  "translation_count": 302,
+  "target_identity_count": 302,
+  "final_checkpoint_sha256": "86dcb625ac70f100ad10559883360cc607fdcc7a1432c24e64c5619efdf84d05",
+  "input_hashes_after": {
+    "manifest.json": "a15a783934fb636acc7d141d3becdffea049f0082718c0a1e931bc094df18093",
+    "pixels_uint8.npy": "411c174959b83e2521e77ce3a3fa9e5b426c306a46361f8ba0804dd90de31a12"
+  },
+  "checkpoints": {
+    "update_1000.pt": "52e735cb85a1aca5f02e58423deb089845cdd2e6142cd7f79deba1852243222a",
+    "qualification.pt": "70e53ffd851b885610031f924f3bf258ec0322605e15a62435947623052af30a",
+    "latest.pt": "86dcb625ac70f100ad10559883360cc607fdcc7a1432c24e64c5619efdf84d05",
+    "final.pt": "86dcb625ac70f100ad10559883360cc607fdcc7a1432c24e64c5619efdf84d05",
+    "initial.pt": "beb520d107499e4cff566b179820e5682e7c7de8fcf101f7d9ca8fc07e187ea0",
+    "update_10000.pt": "0bdffe4ef09553e26871358f492b04452a288dba640dbf24c5f1ce95875f9f44",
+    "synthetic_checkpoint.pt": "0d15affc6ef4cd0ff846c5e90edf1b20d16841069cd576d5db530a1ec8dccd46",
+    "update_5000.pt": "3838bcd2a551973f1c957f37d63fb2f94c026e1541a2e9e104cce05fb2b63acb"
+  },
+  "gpu_uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+}

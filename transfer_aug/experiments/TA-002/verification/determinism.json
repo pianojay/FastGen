@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "raw_arrays_exact_outputs": 15100,
+  "png_exact_outputs": 15100,
+  "per_output_metrics_exact_rows": 15100,
+  "condition_metrics_exact_rows": 25,
+  "contact_sheets_exact": 34,
+  "tail_selection_exact": true,
+  "gallery_exact": true,
+  "successful_outputs_rewritten": false,
+  "seconds": 83.74595189094543
+}

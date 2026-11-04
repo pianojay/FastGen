@@ -1,0 +1,66 @@
+[
+  {
+    "source_id": 403,
+    "reason": "largest_raw_source_RMS",
+    "arm": "reference",
+    "variant": 3,
+    "metric": 0.8963312123396762,
+    "representative_overlap": true,
+    "source_path": "PokemonData/Gyarados/Gyarados65.jpg"
+  },
+  {
+    "source_id": 456,
+    "reason": "largest_raw_source_RMS",
+    "arm": "reference",
+    "variant": 1,
+    "metric": 0.881626610540407,
+    "representative_overlap": false,
+    "source_path": "PokemonData/Mankey/Mankey3.jpg"
+  },
+  {
+    "source_id": 82,
+    "reason": "largest_raw_source_RMS",
+    "arm": "latent",
+    "variant": 3,
+    "metric": 0.8785698286912677,
+    "representative_overlap": false,
+    "source_path": "PokemonData/Geodude/Geodude32.jpg"
+  },
+  {
+    "source_id": 590,
+    "reason": "largest_raw_source_RMS",
+    "arm": "reference",
+    "variant": 3,
+    "metric": 0.8749513112126522,
+    "representative_overlap": false,
+    "source_path": "PokemonData/Wartortle/Wartortle31.jpg"
+  },
+  {
+    "source_id": 415,
+    "reason": "smallest_clipped_latent_diversity",
+    "metric": 0.19569173303753684,
+    "representative_overlap": true,
+    "source_path": "PokemonData/Ivysaur/Ivysaur20.jpg"
+  },
+  {
+    "source_id": 363,
+    "reason": "smallest_clipped_latent_diversity",
+    "metric": 0.21565129132114946,
+    "representative_overlap": false,
+    "source_path": "PokemonData/Eevee/Eevee73.jpg"
+  },
+  {
+    "source_id": 420,
+    "reason": "smallest_clipped_latent_diversity",
+    "metric": 0.21708924489879747,
+    "representative_overlap": false,
+    "source_path": "PokemonData/Jynx/8cfedafc7162431282eceac38334fa12.jpg"
+  },
+  {
+    "source_id": 571,
+    "reason": "smallest_clipped_latent_diversity",
+    "metric": 0.21719890796832664,
+    "representative_overlap": true,
+    "source_path": "PokemonData/Tentacool/Tentacool59.jpg"
+  }
+]

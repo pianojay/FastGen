@@ -1,0 +1,298 @@
+{
+  "completed_review_rows": 56,
+  "counts": [
+    {
+      "alpha": 0.25,
+      "anatomy_markings": {
+        "retained": 14,
+        "uncertain": 2
+      },
+      "artifacts": {
+        "none": 16
+      },
+      "background_contamination": {
+        "uncertain": 2,
+        "visible": 14
+      },
+      "count": 16,
+      "recognizable_identity": {
+        "retained": 15,
+        "uncertain": 1
+      },
+      "review_group": "representative"
+    },
+    {
+      "alpha": 0.5,
+      "anatomy_markings": {
+        "retained": 12,
+        "uncertain": 4
+      },
+      "artifacts": {
+        "none": 9,
+        "uncertain": 5,
+        "visible": 2
+      },
+      "background_contamination": {
+        "visible": 16
+      },
+      "count": 16,
+      "recognizable_identity": {
+        "retained": 15,
+        "uncertain": 1
+      },
+      "review_group": "representative"
+    },
+    {
+      "alpha": 1.0,
+      "anatomy_markings": {
+        "disrupted": 2,
+        "retained": 7,
+        "uncertain": 7
+      },
+      "artifacts": {
+        "none": 4,
+        "uncertain": 4,
+        "visible": 8
+      },
+      "background_contamination": {
+        "visible": 16
+      },
+      "count": 16,
+      "recognizable_identity": {
+        "retained": 12,
+        "uncertain": 4
+      },
+      "review_group": "representative"
+    },
+    {
+      "alpha": 1.0,
+      "anatomy_markings": {
+        "disrupted": 1,
+        "retained": 5,
+        "uncertain": 2
+      },
+      "artifacts": {
+        "none": 3,
+        "uncertain": 1,
+        "visible": 4
+      },
+      "background_contamination": {
+        "none": 5,
+        "visible": 3
+      },
+      "count": 8,
+      "recognizable_identity": {
+        "retained": 7,
+        "uncertain": 1
+      },
+      "review_group": "tail"
+    }
+  ],
+  "inspection_order": "Four representative batches of four sheets, then two tail batches of four sheets, each opened individually with tools.view_image.",
+  "label_basis": "Direct visual comparison to content at actual 64px nearest-neighbor enlargement. Background contamination means apparent whole-field tint/brightness transfer, not imported donor objects. Artifact labels concern visible flattening, lost detail, or other appearance defects. Uncertainty includes pre-existing source blur and ambiguity between style shift and damage.",
+  "limitations": [
+    "Unblinded AI judgments, not category accuracy or blinded human evaluation.",
+    "Only 16 fixed representative samples and eight selected diagnostic outputs were reviewed.",
+    "Existing blur and card/screenshot backgrounds limit fine anatomy judgments.",
+    "Tail selection was frozen numerical ranking; labels were not assigned by metrics."
+  ],
+  "recorded_utc": "2026-10-07T12:01:19.807034+00:00",
+  "required_review_rows": 56,
+  "required_sheets": 24,
+  "reviewer": "TA-001 worker; unblinded AI visual judgment",
+  "sheets": [
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/010_0.png",
+      "review_group": "representative",
+      "sample_id": "010_0",
+      "sha256": "5bd7c9f3251176acf1a4b220a2696b3acf70d5c46711b40756b3773e512a8f57",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/016_0.png",
+      "review_group": "representative",
+      "sample_id": "016_0",
+      "sha256": "0be3e36b225d789b9f13d105d5e08b6df3e406a244c5fe526764c8b93c98dd04",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/017_0.png",
+      "review_group": "representative",
+      "sample_id": "017_0",
+      "sha256": "3abbdee008248fd9febcfb995c81990037e74077f3efc3ccd2e8e5a0c05460b2",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/019_0.png",
+      "review_group": "representative",
+      "sample_id": "019_0",
+      "sha256": "b3a62d5a8ba29c19079c48e59f7cc966c4775871a175222d5d5ac9f096c8f4b9",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/027_0.png",
+      "review_group": "representative",
+      "sample_id": "027_0",
+      "sha256": "b28c282f7e4e429e9834061fab340ca7c24489bc1274590fdc62df158ffcda38",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/029_0.png",
+      "review_group": "representative",
+      "sample_id": "029_0",
+      "sha256": "0ed23eaff7b2d39500ae5dbc5967a10485ec7f8dc6f01152f7c7e3f83c3f6ae8",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/034_0.png",
+      "review_group": "representative",
+      "sample_id": "034_0",
+      "sha256": "9974ec889f619c424449ad191e083e5a41a845966a8d26e205070ffe302eee9a",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/050_0.png",
+      "review_group": "representative",
+      "sample_id": "050_0",
+      "sha256": "6597d34ff94a22ba75825bc695269a42f8d651812f6d497ec42497a21424d491",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/056_0.png",
+      "review_group": "representative",
+      "sample_id": "056_0",
+      "sha256": "fa8aac2a7c8406b586e9678c348bab88307e5264aef44b0881c7e6eeace13cea",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/105_0.png",
+      "review_group": "representative",
+      "sample_id": "105_0",
+      "sha256": "b183fec4b68b68a175dffb184fbd8a5a7607744e48b1fe0a653324ce9e175300",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/110_0.png",
+      "review_group": "representative",
+      "sample_id": "110_0",
+      "sha256": "e1471892d5a8a4877fa70708f4456af61ec7bccade9361b19134ac46a836fe64",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/122_0.png",
+      "review_group": "representative",
+      "sample_id": "122_0",
+      "sha256": "ca225d9a3d66282a8cc7ac80cbe53346db55cd2f9a318e2c0db6ef965691b628",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/124_0.png",
+      "review_group": "representative",
+      "sample_id": "124_0",
+      "sha256": "c29239fbfe0a970b5c5a95b21b5f6291f213a867a1303118460e2e0f2d17b7a7",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/134_0.png",
+      "review_group": "representative",
+      "sample_id": "134_0",
+      "sha256": "5a9efe177f73475c9df75493092c07c5db8ca286acbeb3d313143090e4394694",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/139_0.png",
+      "review_group": "representative",
+      "sample_id": "139_0",
+      "sha256": "78f2276b6c9ce9dbf6b2786ee12790519f1df883ee288143e292594f5c1586fd",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/representative/146_0.png",
+      "review_group": "representative",
+      "sample_id": "146_0",
+      "sha256": "ec96766df363fd7c6c65d1569fe5a830c7be77a7af5d2735a68660521c160fd7",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/tail/082_3.png",
+      "review_group": "tail",
+      "sample_id": "082_3",
+      "sha256": "bce4dd2852d8d7215a72a5547d5f04a9849482c0506dea20c6396ba246ede2ae",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/tail/104_3.png",
+      "review_group": "tail",
+      "sample_id": "104_3",
+      "sha256": "202ceeb523c2bf336f2a4a5d23d3fc76642b06eb407dd86eae5eb93628eb0847",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/tail/018_2.png",
+      "review_group": "tail",
+      "sample_id": "018_2",
+      "sha256": "9ec20ca9d482b76deb7d0cdf59428ac967c6e0082021ff00d01f35403e98f35c",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/tail/128_1.png",
+      "review_group": "tail",
+      "sample_id": "128_1",
+      "sha256": "512a6f1edb1ee99d82164e3230d6e72a3167fa0b3f11295adc4fe37bdd61840c",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/tail/013_1.png",
+      "review_group": "tail",
+      "sample_id": "013_1",
+      "sha256": "72dcdfc07edee33688e9d293fcda6b3392ea6834d3f99b1a9403df025c69cf36",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/tail/020_0.png",
+      "review_group": "tail",
+      "sample_id": "020_0",
+      "sha256": "67e3f2a579d59860f2f16b5d936fce63629190a3eda48e704fd9ceb3af25dbc2",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/tail/093_0.png",
+      "review_group": "tail",
+      "sample_id": "093_0",
+      "sha256": "9a52477fd2cc77427620dfae80e05ded347e4bc8f46756b312b315f9770216b0",
+      "tool": "tools.view_image"
+    },
+    {
+      "actual_tool_view_completed": true,
+      "path": "sheets/tail/086_2.png",
+      "review_group": "tail",
+      "sample_id": "086_2",
+      "sha256": "419beaa4e3a9f84a71316d58d24c3c0f9bf98220d3cd4c2ff67d45d1e85e8021",
+      "tool": "tools.view_image"
+    }
+  ],
+  "viewed_sheets": 24
+}

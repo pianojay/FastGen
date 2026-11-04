@@ -1,0 +1,1174 @@
+{
+  "categories": [
+    "Butterfree",
+    "Clefable",
+    "Clefairy",
+    "Cubone",
+    "Dratini",
+    "Dugtrio",
+    "Exeggcute",
+    "Gyarados",
+    "Ivysaur",
+    "Poliwag",
+    "Primeape",
+    "Seaking",
+    "Shellder",
+    "Tentacool",
+    "Venusaur",
+    "Weepinbell"
+  ],
+  "rows": [
+    {
+      "category": "Butterfree",
+      "column": 1,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Butterfree/Butterfree24.jpg",
+      "role": "optimize",
+      "score": -1.890535108946966
+    },
+    {
+      "category": "Butterfree",
+      "column": 2,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Butterfree/Butterfree70.jpg",
+      "role": "optimize",
+      "score": -1.6069019893952934
+    },
+    {
+      "category": "Butterfree",
+      "column": 3,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Butterfree/Butterfree14.jpg",
+      "role": "holdout",
+      "score": -1.3510365487151772
+    },
+    {
+      "category": "Butterfree",
+      "column": 4,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Butterfree/811d90692780433eba8a88e6f7fe68bc.jpg",
+      "role": "holdout",
+      "score": -1.6870287551734757
+    },
+    {
+      "category": "Butterfree",
+      "column": 5,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Butterfree/Butterfree2.jpg",
+      "role": "optimize",
+      "score": 0.5885167844078756
+    },
+    {
+      "category": "Butterfree",
+      "column": 6,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Butterfree/Butterfree38.jpg",
+      "role": "optimize",
+      "score": 1.7619027932250164
+    },
+    {
+      "category": "Butterfree",
+      "column": 7,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Butterfree/Butterfree44.jpg",
+      "role": "holdout",
+      "score": 4.057444809587094
+    },
+    {
+      "category": "Butterfree",
+      "column": 8,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Butterfree/Butterfree40.jpg",
+      "role": "holdout",
+      "score": 4.297779619549047
+    },
+    {
+      "category": "Clefable",
+      "column": 1,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Clefable/Clefable25.jpg",
+      "role": "optimize",
+      "score": -1.7244998771273068
+    },
+    {
+      "category": "Clefable",
+      "column": 2,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Clefable/Clefable57.jpg",
+      "role": "optimize",
+      "score": -1.9865776614858008
+    },
+    {
+      "category": "Clefable",
+      "column": 3,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Clefable/5992ce3d207f4472b89cfc033208ddda.jpg",
+      "role": "holdout",
+      "score": -1.4119857320623939
+    },
+    {
+      "category": "Clefable",
+      "column": 4,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Clefable/Clefable18.jpg",
+      "role": "holdout",
+      "score": -2.1756715636950386
+    },
+    {
+      "category": "Clefable",
+      "column": 5,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Clefable/Clefable54.jpg",
+      "role": "optimize",
+      "score": 2.3722112646618334
+    },
+    {
+      "category": "Clefable",
+      "column": 6,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Clefable/dc8ff78ac8e845488c2db18a63cb63a8.jpg",
+      "role": "optimize",
+      "score": 0.331868557417362
+    },
+    {
+      "category": "Clefable",
+      "column": 7,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Clefable/Clefable72.jpg",
+      "role": "holdout",
+      "score": 3.715314539595456
+    },
+    {
+      "category": "Clefable",
+      "column": 8,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Clefable/2d0d2f3a132d406abb0874c06342ee73.jpg",
+      "role": "holdout",
+      "score": 2.9195200744180627
+    },
+    {
+      "category": "Clefairy",
+      "column": 1,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Clefairy/Clefairy42.jpg",
+      "role": "optimize",
+      "score": -3.0602238632907253
+    },
+    {
+      "category": "Clefairy",
+      "column": 2,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Clefairy/bcb44348ad7644b2b9ddd3cfdcdbf313.jpg",
+      "role": "optimize",
+      "score": -1.7838267232558076
+    },
+    {
+      "category": "Clefairy",
+      "column": 3,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Clefairy/Clefairy25.jpg",
+      "role": "holdout",
+      "score": -1.5681909600966897
+    },
+    {
+      "category": "Clefairy",
+      "column": 4,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Clefairy/Clefairy40.jpg",
+      "role": "holdout",
+      "score": -1.4489143514396379
+    },
+    {
+      "category": "Clefairy",
+      "column": 5,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Clefairy/Clefairy16.jpg",
+      "role": "optimize",
+      "score": 1.349178200612638
+    },
+    {
+      "category": "Clefairy",
+      "column": 6,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Clefairy/Clefairy29.jpg",
+      "role": "optimize",
+      "score": 1.482897006392609
+    },
+    {
+      "category": "Clefairy",
+      "column": 7,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Clefairy/Clefairy17.jpg",
+      "role": "holdout",
+      "score": 3.115520659411254
+    },
+    {
+      "category": "Clefairy",
+      "column": 8,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Clefairy/40b9e9ad15284eb385262713f71e9990.jpg",
+      "role": "holdout",
+      "score": 3.454663003486579
+    },
+    {
+      "category": "Cubone",
+      "column": 1,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Cubone/Cubone77.jpg",
+      "role": "optimize",
+      "score": -2.2369297760747835
+    },
+    {
+      "category": "Cubone",
+      "column": 2,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Cubone/Cubone8.jpg",
+      "role": "optimize",
+      "score": -1.3058347261948882
+    },
+    {
+      "category": "Cubone",
+      "column": 3,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Cubone/Cubone40.jpg",
+      "role": "holdout",
+      "score": -1.2029991312794954
+    },
+    {
+      "category": "Cubone",
+      "column": 4,
+      "domain": "D0",
+      "page": 1,
+      "path": "PokemonData/Cubone/7ccc09c54c7345a6a640d0c3dfbec13b.jpg",
+      "role": "holdout",
+      "score": -0.9865233338801458
+    },
+    {
+      "category": "Cubone",
+      "column": 5,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Cubone/Cubone26.jpg",
+      "role": "optimize",
+      "score": 0.5541767877514187
+    },
+    {
+      "category": "Cubone",
+      "column": 6,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Cubone/765c723986e24611898957827e799f7c.jpg",
+      "role": "optimize",
+      "score": 3.8257033493019725
+    },
+    {
+      "category": "Cubone",
+      "column": 7,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Cubone/Cubone13.jpg",
+      "role": "holdout",
+      "score": 2.3870246145772125
+    },
+    {
+      "category": "Cubone",
+      "column": 8,
+      "domain": "D1",
+      "page": 1,
+      "path": "PokemonData/Cubone/9d86a9f09bde4407b1d55dcf4cb430fe.jpg",
+      "role": "holdout",
+      "score": 0.7210254203389652
+    },
+    {
+      "category": "Dratini",
+      "column": 1,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Dratini/Dratini58.jpg",
+      "role": "optimize",
+      "score": -1.2191309719746855
+    },
+    {
+      "category": "Dratini",
+      "column": 2,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Dratini/Dratini40.jpg",
+      "role": "optimize",
+      "score": -1.1949776251618682
+    },
+    {
+      "category": "Dratini",
+      "column": 3,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Dratini/Dratini46.jpg",
+      "role": "holdout",
+      "score": -2.1418141792836294
+    },
+    {
+      "category": "Dratini",
+      "column": 4,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Dratini/Dratini36.jpg",
+      "role": "holdout",
+      "score": -1.286395077278483
+    },
+    {
+      "category": "Dratini",
+      "column": 5,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Dratini/Dratini12.jpg",
+      "role": "optimize",
+      "score": 4.32708889010931
+    },
+    {
+      "category": "Dratini",
+      "column": 6,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Dratini/Dratini25.jpg",
+      "role": "optimize",
+      "score": 2.8428072752437417
+    },
+    {
+      "category": "Dratini",
+      "column": 7,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Dratini/Dratini37.jpg",
+      "role": "holdout",
+      "score": 0.9730450535894903
+    },
+    {
+      "category": "Dratini",
+      "column": 8,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Dratini/Dratini17.jpg",
+      "role": "holdout",
+      "score": 2.3066556303904084
+    },
+    {
+      "category": "Dugtrio",
+      "column": 1,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Dugtrio/73f08af7fa354c60b63d890f76f06aeb.jpg",
+      "role": "optimize",
+      "score": -1.0021791368571042
+    },
+    {
+      "category": "Dugtrio",
+      "column": 2,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Dugtrio/Dugtrio74.jpg",
+      "role": "optimize",
+      "score": -0.857670815882562
+    },
+    {
+      "category": "Dugtrio",
+      "column": 3,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Dugtrio/Dugtrio16.jpg",
+      "role": "holdout",
+      "score": -3.586969302540026
+    },
+    {
+      "category": "Dugtrio",
+      "column": 4,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Dugtrio/Dugtrio69.jpg",
+      "role": "holdout",
+      "score": -1.250817554839356
+    },
+    {
+      "category": "Dugtrio",
+      "column": 5,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Dugtrio/Dugtrio62.jpg",
+      "role": "optimize",
+      "score": 1.0030330546741901
+    },
+    {
+      "category": "Dugtrio",
+      "column": 6,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Dugtrio/Dugtrio60.jpg",
+      "role": "optimize",
+      "score": 1.185938556461144
+    },
+    {
+      "category": "Dugtrio",
+      "column": 7,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Dugtrio/6c2d9495c3354341ad86713b66017920.jpg",
+      "role": "holdout",
+      "score": 0.6870545135312514
+    },
+    {
+      "category": "Dugtrio",
+      "column": 8,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Dugtrio/e73bb16bc2c6457c97994dae827eaf7d.jpg",
+      "role": "holdout",
+      "score": 2.2673736046981556
+    },
+    {
+      "category": "Exeggcute",
+      "column": 1,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Exeggcute/9259c01f616e407baf0611d02b2605cb.jpg",
+      "role": "optimize",
+      "score": -1.7617118413774262
+    },
+    {
+      "category": "Exeggcute",
+      "column": 2,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Exeggcute/436630ab470d434bbfcefa005e0477dd.jpg",
+      "role": "optimize",
+      "score": -1.9627917579279472
+    },
+    {
+      "category": "Exeggcute",
+      "column": 3,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Exeggcute/6192611f57e846eeb191ba5859cd19d9.jpg",
+      "role": "holdout",
+      "score": -2.594615340938155
+    },
+    {
+      "category": "Exeggcute",
+      "column": 4,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Exeggcute/Exeggcute47.jpg",
+      "role": "holdout",
+      "score": -2.1852781774838252
+    },
+    {
+      "category": "Exeggcute",
+      "column": 5,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Exeggcute/Exeggcute42.jpg",
+      "role": "optimize",
+      "score": 2.6549833088466124
+    },
+    {
+      "category": "Exeggcute",
+      "column": 6,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Exeggcute/Exeggcute18.jpg",
+      "role": "optimize",
+      "score": 1.5247171822302645
+    },
+    {
+      "category": "Exeggcute",
+      "column": 7,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Exeggcute/76b20bb1256a4f32bbbd38c333b84f61.jpg",
+      "role": "holdout",
+      "score": 1.1831820739191916
+    },
+    {
+      "category": "Exeggcute",
+      "column": 8,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Exeggcute/Exeggcute57.jpg",
+      "role": "holdout",
+      "score": 5.054106484771117
+    },
+    {
+      "category": "Gyarados",
+      "column": 1,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Gyarados/Gyarados93.jpg",
+      "role": "optimize",
+      "score": -1.0806708971846546
+    },
+    {
+      "category": "Gyarados",
+      "column": 2,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Gyarados/Gyarados3.jpg",
+      "role": "optimize",
+      "score": -3.5173102196521295
+    },
+    {
+      "category": "Gyarados",
+      "column": 3,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Gyarados/fcc725422e05470dbe712580210a1611.jpg",
+      "role": "holdout",
+      "score": -1.9964445508548825
+    },
+    {
+      "category": "Gyarados",
+      "column": 4,
+      "domain": "D0",
+      "page": 2,
+      "path": "PokemonData/Gyarados/Gyarados78.jpg",
+      "role": "holdout",
+      "score": -2.0381581701090057
+    },
+    {
+      "category": "Gyarados",
+      "column": 5,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Gyarados/Gyarados44.jpg",
+      "role": "optimize",
+      "score": 1.1984146537053728
+    },
+    {
+      "category": "Gyarados",
+      "column": 6,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Gyarados/Gyarados85.jpg",
+      "role": "optimize",
+      "score": 2.8596857706704255
+    },
+    {
+      "category": "Gyarados",
+      "column": 7,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Gyarados/Gyarados57.jpg",
+      "role": "holdout",
+      "score": 2.6518534466557075
+    },
+    {
+      "category": "Gyarados",
+      "column": 8,
+      "domain": "D1",
+      "page": 2,
+      "path": "PokemonData/Gyarados/Gyarados65.jpg",
+      "role": "holdout",
+      "score": 0.9295369846796061
+    },
+    {
+      "category": "Ivysaur",
+      "column": 1,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Ivysaur/Ivysaur56.jpg",
+      "role": "optimize",
+      "score": -2.1657944561996585
+    },
+    {
+      "category": "Ivysaur",
+      "column": 2,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Ivysaur/Ivysaur44.jpg",
+      "role": "optimize",
+      "score": -1.3524797036450078
+    },
+    {
+      "category": "Ivysaur",
+      "column": 3,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Ivysaur/Ivysaur82.jpg",
+      "role": "holdout",
+      "score": -1.0700787586876614
+    },
+    {
+      "category": "Ivysaur",
+      "column": 4,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Ivysaur/Ivysaur41.jpg",
+      "role": "holdout",
+      "score": -2.7025230256377797
+    },
+    {
+      "category": "Ivysaur",
+      "column": 5,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Ivysaur/Ivysaur71.jpg",
+      "role": "optimize",
+      "score": 2.341506282094538
+    },
+    {
+      "category": "Ivysaur",
+      "column": 6,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Ivysaur/93fd3a08a0f8409e8db86ca66a7381ff.jpg",
+      "role": "optimize",
+      "score": 2.686398749485681
+    },
+    {
+      "category": "Ivysaur",
+      "column": 7,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Ivysaur/Ivysaur20.jpg",
+      "role": "holdout",
+      "score": 1.267428564216952
+    },
+    {
+      "category": "Ivysaur",
+      "column": 8,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Ivysaur/6231456343bc47cea782f5903a7b0513.jpg",
+      "role": "holdout",
+      "score": 0.9872644820237759
+    },
+    {
+      "category": "Poliwag",
+      "column": 1,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Poliwag/Poliwag23.jpg",
+      "role": "optimize",
+      "score": -2.699015161909833
+    },
+    {
+      "category": "Poliwag",
+      "column": 2,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Poliwag/Poliwag11.jpg",
+      "role": "optimize",
+      "score": -1.105113950024302
+    },
+    {
+      "category": "Poliwag",
+      "column": 3,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Poliwag/976e0e50333c4e51a381e93c53351229.jpg",
+      "role": "holdout",
+      "score": -1.8491902274834833
+    },
+    {
+      "category": "Poliwag",
+      "column": 4,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Poliwag/Poliwag76.jpg",
+      "role": "holdout",
+      "score": -2.7709579377834874
+    },
+    {
+      "category": "Poliwag",
+      "column": 5,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Poliwag/5d91c83c99964cffb9a524751b8472bd.jpg",
+      "role": "optimize",
+      "score": 4.770374498407755
+    },
+    {
+      "category": "Poliwag",
+      "column": 6,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Poliwag/fa5aed92fd3245c7af79dbf61cdf1fe7.jpg",
+      "role": "optimize",
+      "score": 0.9854957274032004
+    },
+    {
+      "category": "Poliwag",
+      "column": 7,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Poliwag/Poliwag101.jpg",
+      "role": "holdout",
+      "score": 0.8642971645993717
+    },
+    {
+      "category": "Poliwag",
+      "column": 8,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Poliwag/de6278c9be65464894b85f43afbbe426.jpg",
+      "role": "holdout",
+      "score": 1.8143461881815217
+    },
+    {
+      "category": "Primeape",
+      "column": 1,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Primeape/Primeape33.jpg",
+      "role": "optimize",
+      "score": -1.8800273374728342
+    },
+    {
+      "category": "Primeape",
+      "column": 2,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Primeape/f31c7b5ff1014af581500c7542ad09a0.jpg",
+      "role": "optimize",
+      "score": -1.9025794024243423
+    },
+    {
+      "category": "Primeape",
+      "column": 3,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Primeape/Primeape25.jpg",
+      "role": "holdout",
+      "score": -1.8506425692491952
+    },
+    {
+      "category": "Primeape",
+      "column": 4,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Primeape/Primeape47.jpg",
+      "role": "holdout",
+      "score": -1.9055594569937069
+    },
+    {
+      "category": "Primeape",
+      "column": 5,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Primeape/Primeape60.jpg",
+      "role": "optimize",
+      "score": 0.7574362653343054
+    },
+    {
+      "category": "Primeape",
+      "column": 6,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Primeape/Primeape95.jpg",
+      "role": "optimize",
+      "score": 2.541253688951226
+    },
+    {
+      "category": "Primeape",
+      "column": 7,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Primeape/Primeape6.jpg",
+      "role": "holdout",
+      "score": 3.511272654663665
+    },
+    {
+      "category": "Primeape",
+      "column": 8,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Primeape/cbc70975639047e99edfb924fcf71561.jpg",
+      "role": "holdout",
+      "score": 2.494333455599721
+    },
+    {
+      "category": "Seaking",
+      "column": 1,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Seaking/4483f1b9886e4896a86c3eb3375fcba2.jpg",
+      "role": "optimize",
+      "score": -1.503710581019659
+    },
+    {
+      "category": "Seaking",
+      "column": 2,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Seaking/Seaking15.jpg",
+      "role": "optimize",
+      "score": -1.4625432748343123
+    },
+    {
+      "category": "Seaking",
+      "column": 3,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Seaking/8c40fd80f4e240aba555f8970e29ca68.jpg",
+      "role": "holdout",
+      "score": -3.0598407829032706
+    },
+    {
+      "category": "Seaking",
+      "column": 4,
+      "domain": "D0",
+      "page": 3,
+      "path": "PokemonData/Seaking/Seaking43.jpg",
+      "role": "holdout",
+      "score": -1.1877433288552177
+    },
+    {
+      "category": "Seaking",
+      "column": 5,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Seaking/Seaking46.jpg",
+      "role": "optimize",
+      "score": 1.3606205445836053
+    },
+    {
+      "category": "Seaking",
+      "column": 6,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Seaking/Seaking53.jpg",
+      "role": "optimize",
+      "score": 4.7835247701696755
+    },
+    {
+      "category": "Seaking",
+      "column": 7,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Seaking/Seaking48.jpg",
+      "role": "holdout",
+      "score": 1.029980820714377
+    },
+    {
+      "category": "Seaking",
+      "column": 8,
+      "domain": "D1",
+      "page": 3,
+      "path": "PokemonData/Seaking/Seaking58.jpg",
+      "role": "holdout",
+      "score": 0.9724661237200649
+    },
+    {
+      "category": "Shellder",
+      "column": 1,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Shellder/6400fc3df21f47ff82734e7104465158.jpg",
+      "role": "optimize",
+      "score": -0.8743028650323711
+    },
+    {
+      "category": "Shellder",
+      "column": 2,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Shellder/9fc301b3b3c0455baf921553004fca94-0.jpg",
+      "role": "optimize",
+      "score": -1.1060547619396757
+    },
+    {
+      "category": "Shellder",
+      "column": 3,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Shellder/Shellder31.jpg",
+      "role": "holdout",
+      "score": -1.814805631059554
+    },
+    {
+      "category": "Shellder",
+      "column": 4,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Shellder/Shellder43.jpg",
+      "role": "holdout",
+      "score": -0.8168380634506953
+    },
+    {
+      "category": "Shellder",
+      "column": 5,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Shellder/Shellder45.jpg",
+      "role": "optimize",
+      "score": 3.7253581304652776
+    },
+    {
+      "category": "Shellder",
+      "column": 6,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Shellder/de0bbbe7f7fd4fc9a44470be10a9faf6.jpg",
+      "role": "optimize",
+      "score": 2.4820992726261055
+    },
+    {
+      "category": "Shellder",
+      "column": 7,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Shellder/Shellder7.jpg",
+      "role": "holdout",
+      "score": 0.993730781739008
+    },
+    {
+      "category": "Shellder",
+      "column": 8,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Shellder/a7518e8b0deb41d0a0e983e9f04942a4.jpg",
+      "role": "holdout",
+      "score": 2.0544925138121664
+    },
+    {
+      "category": "Tentacool",
+      "column": 1,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Tentacool/Tentacool49.jpg",
+      "role": "optimize",
+      "score": -1.5760403840968658
+    },
+    {
+      "category": "Tentacool",
+      "column": 2,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Tentacool/Tentacool76.jpg",
+      "role": "optimize",
+      "score": -2.009080727406943
+    },
+    {
+      "category": "Tentacool",
+      "column": 3,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Tentacool/Tentacool20.jpg",
+      "role": "holdout",
+      "score": -3.0812937466889907
+    },
+    {
+      "category": "Tentacool",
+      "column": 4,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Tentacool/7979c97c87c64f1fabd74b4ecba2abac.jpg",
+      "role": "holdout",
+      "score": -0.914839680238059
+    },
+    {
+      "category": "Tentacool",
+      "column": 5,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Tentacool/Tentacool84.jpg",
+      "role": "optimize",
+      "score": 2.8096775762090234
+    },
+    {
+      "category": "Tentacool",
+      "column": 6,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Tentacool/53641ef21240460aab2d0647696ef3ec.jpg",
+      "role": "optimize",
+      "score": 2.057441785791795
+    },
+    {
+      "category": "Tentacool",
+      "column": 7,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Tentacool/Tentacool59.jpg",
+      "role": "holdout",
+      "score": 1.857195970570782
+    },
+    {
+      "category": "Tentacool",
+      "column": 8,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Tentacool/Tentacool29.jpg",
+      "role": "holdout",
+      "score": 1.1121370675885804
+    },
+    {
+      "category": "Venusaur",
+      "column": 1,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Venusaur/97f0946f7cdf4913bcff7002912863a2.jpg",
+      "role": "optimize",
+      "score": -2.0306317267813725
+    },
+    {
+      "category": "Venusaur",
+      "column": 2,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Venusaur/Venusaur46.jpg",
+      "role": "optimize",
+      "score": -2.664995766348313
+    },
+    {
+      "category": "Venusaur",
+      "column": 3,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Venusaur/Venusaur45.jpg",
+      "role": "holdout",
+      "score": -1.1889531350646156
+    },
+    {
+      "category": "Venusaur",
+      "column": 4,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Venusaur/bf07f75c99234eecaf99073220bb59d5.jpg",
+      "role": "holdout",
+      "score": -1.0831419602582726
+    },
+    {
+      "category": "Venusaur",
+      "column": 5,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Venusaur/46d8c58469424855b66d13890442bd69.jpg",
+      "role": "optimize",
+      "score": 1.5802379323677704
+    },
+    {
+      "category": "Venusaur",
+      "column": 6,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Venusaur/d0a9193c60c7451f88fbf1e717203bb1.jpg",
+      "role": "optimize",
+      "score": 1.1398423706581333
+    },
+    {
+      "category": "Venusaur",
+      "column": 7,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Venusaur/Venusaur44.jpg",
+      "role": "holdout",
+      "score": 1.081880235625634
+    },
+    {
+      "category": "Venusaur",
+      "column": 8,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Venusaur/b9d19187c6b4450f8fe7371a89bb4c9e.jpg",
+      "role": "holdout",
+      "score": 0.9493715222975448
+    },
+    {
+      "category": "Weepinbell",
+      "column": 1,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Weepinbell/Weepinbell27.jpg",
+      "role": "optimize",
+      "score": -2.0162616335371135
+    },
+    {
+      "category": "Weepinbell",
+      "column": 2,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Weepinbell/Weepinbell6.jpg",
+      "role": "optimize",
+      "score": -1.201429006306695
+    },
+    {
+      "category": "Weepinbell",
+      "column": 3,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Weepinbell/97452e407c7b470b9fc3b2616e2354e5.jpg",
+      "role": "holdout",
+      "score": -2.2711711291571257
+    },
+    {
+      "category": "Weepinbell",
+      "column": 4,
+      "domain": "D0",
+      "page": 4,
+      "path": "PokemonData/Weepinbell/Weepinbell70.jpg",
+      "role": "holdout",
+      "score": -2.245850447594919
+    },
+    {
+      "category": "Weepinbell",
+      "column": 5,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Weepinbell/a7162718bee643dda5d6ab9704886bd8.jpg",
+      "role": "optimize",
+      "score": 4.176788804234626
+    },
+    {
+      "category": "Weepinbell",
+      "column": 6,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Weepinbell/Weepinbell7.jpg",
+      "role": "optimize",
+      "score": 3.3578737985125633
+    },
+    {
+      "category": "Weepinbell",
+      "column": 7,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Weepinbell/Weepinbell35.jpg",
+      "role": "holdout",
+      "score": 0.49262217978592143
+    },
+    {
+      "category": "Weepinbell",
+      "column": 8,
+      "domain": "D1",
+      "page": 4,
+      "path": "PokemonData/Weepinbell/Weepinbell52.jpg",
+      "role": "holdout",
+      "score": 0.6582592840910384
+    }
+  ]
+}

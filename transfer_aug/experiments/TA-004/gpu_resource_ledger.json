@@ -1,0 +1,27 @@
+{
+  "gpu_budget_seconds": 28800,
+  "sessions": [
+    {
+      "pid": 1097587,
+      "started_at": "2026-10-07T15:13:44.574480+00:00",
+      "ended_at": "2026-10-07T15:13:45.064897+00:00",
+      "gpu_seconds": 0.4904344938695431,
+      "gpu_uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2",
+      "lease_inode": 6858035
+    },
+    {
+      "started_at": "2026-10-07T15:14:00+00:00",
+      "ended_at": "2026-10-07T15:14:06+00:00",
+      "gpu_seconds": 6,
+      "purpose": "Conservative charge for CUDA UUID format inspection, no models or training"
+    },
+    {
+      "pid": 1097808,
+      "started_at": "2026-10-07T15:14:17.033802+00:00",
+      "ended_at": "2026-10-07T16:15:52.782915+00:00",
+      "gpu_seconds": 3695.7491310928017,
+      "gpu_uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2",
+      "lease_inode": 6858035
+    }
+  ]
+}

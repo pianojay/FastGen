@@ -1,0 +1,12 @@
+{
+  "condition_metrics_exact": true,
+  "contact_sheet_png_bytes_exact": 24,
+  "display_png_bytes_exact": 2416,
+  "gallery_html_exact": true,
+  "metrics_csv_bytes_exact": true,
+  "pass": true,
+  "raw_output_arrays_exact": 2416,
+  "successful_outputs_rewritten": false,
+  "tail_selection_exact": true,
+  "timestamp_utc": "2026-10-07T11:59:26.175424+00:00"
+}

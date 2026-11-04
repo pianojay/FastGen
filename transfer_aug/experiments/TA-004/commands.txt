@@ -1,0 +1,8 @@
+# CPU setup
+bash transfer_aug/run_python.sh transfer_aug/experiments/TA-004/build_sources.py
+bash transfer_aug/run_python.sh transfer_aug/experiments/TA-004/verify_setup.py
+bash transfer_aug/run_python.sh transfer_aug/experiments/TA-004/finalize_setup.py
+# GPU qualification/training/generation; authorized escalated execution, physical GPU 2 only
+TRANSFER_AUG_GPU=2 bash transfer_aug/run_python.sh transfer_aug/experiments/TA-004/train.py > transfer_aug/experiments/TA-004/train.log 2>&1
+# CPU EDA after successful GPU generation
+bash transfer_aug/run_python.sh transfer_aug/experiments/TA-004/report.py > transfer_aug/experiments/TA-004/report.log

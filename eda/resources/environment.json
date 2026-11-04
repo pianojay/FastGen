@@ -1,0 +1,17 @@
+{
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "executable": "/usr/bin/python3",
+  "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "Pillow": "12.3.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "torch": "2.7.1+cu126",
+    "torchvision": "0.22.1+cu126",
+    "matplotlib": "3.10.3",
+    "clean-fid": null,
+    "kagglehub": null
+  },
+  "note": "Existing environment inspected only. Package versions do not establish runtime compatibility; no GPU or feature extractor used."
+}

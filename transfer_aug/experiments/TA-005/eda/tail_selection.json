@@ -1,0 +1,66 @@
+[
+  {
+    "source_eval_index": 199,
+    "reason": "largest_raw_source_rms",
+    "metric": 0.9224878119571839,
+    "arm": "reference",
+    "variant": 1,
+    "representative_overlap": false,
+    "source_path": "PokemonData/Persian/Persian53.jpg"
+  },
+  {
+    "source_eval_index": 143,
+    "reason": "largest_raw_source_rms",
+    "metric": 0.9162015821447085,
+    "arm": "reference",
+    "variant": 1,
+    "representative_overlap": false,
+    "source_path": "PokemonData/Machoke/Machoke58.jpg"
+  },
+  {
+    "source_eval_index": 269,
+    "reason": "largest_raw_source_rms",
+    "metric": 0.9093159255632096,
+    "arm": "reference",
+    "variant": 2,
+    "representative_overlap": true,
+    "source_path": "PokemonData/Tentacool/Tentacool20.jpg"
+  },
+  {
+    "source_eval_index": 403,
+    "reason": "largest_raw_source_rms",
+    "metric": 0.9062711305797974,
+    "arm": "reference",
+    "variant": 3,
+    "representative_overlap": true,
+    "source_path": "PokemonData/Gyarados/Gyarados65.jpg"
+  },
+  {
+    "source_eval_index": 310,
+    "reason": "lowest_clipped_latent_diversity",
+    "metric": 0.132691929189947,
+    "representative_overlap": false,
+    "source_path": "PokemonData/Arcanine/Arcanine20.jpg"
+  },
+  {
+    "source_eval_index": 510,
+    "reason": "lowest_clipped_latent_diversity",
+    "metric": 0.14745952589306796,
+    "representative_overlap": false,
+    "source_path": "PokemonData/Pinsir/682fdb73329647c99f1b2586795a14fa.jpg"
+  },
+  {
+    "source_eval_index": 513,
+    "reason": "lowest_clipped_latent_diversity",
+    "metric": 0.16956409670058195,
+    "representative_overlap": true,
+    "source_path": "PokemonData/Poliwag/de6278c9be65464894b85f43afbbe426.jpg"
+  },
+  {
+    "source_eval_index": 307,
+    "reason": "lowest_clipped_latent_diversity",
+    "metric": 0.17213789431703408,
+    "representative_overlap": false,
+    "source_path": "PokemonData/Alakazam/Alakazam18.jpg"
+  }
+]

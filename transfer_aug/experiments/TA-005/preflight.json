@@ -1,0 +1,17 @@
+{
+  "contract_sha256": "8ab1115ed4c9554ed47027b76d4c3cba58d6d22f3351a78146e8ddd0fc9cf75c",
+  "manifest_sha256": "a15a783934fb636acc7d141d3becdffea049f0082718c0a1e931bc094df18093",
+  "pixels_sha256": "411c174959b83e2521e77ce3a3fa9e5b426c306a46361f8ba0804dd90de31a12",
+  "evaluation_sha256": "c341c5ace1b11337318aeaf9aef70dc2bb98b7216b1da0e2bc453f68e55f6efb",
+  "utc": "2026-10-07T16:42:55.227156+00:00",
+  "code_sha256": {
+    "runner.py": "a59a41b4d010c7578850c68344f83aae6d94fac644c1b52ac17ca804a267155e",
+    "verify_setup.py": "8b98abd5ad200d63189147521e19878a69d64d9e21dc8543ab1e1774dbc6ce76",
+    "verify_data.py": "659bbdcb8ed582df6da1361e22c702b29cbd76548a0ce806552bb397fd811dba",
+    "data.py": "6f7d35e82828aec8330f74797b3a2c8aaa84996d11215f8d2e9a76f45e4b3dfb",
+    "upstream_utils.py": "174bffa7473d88ee91e0c21ed7e0ed626cd83d31e6db1be993b98addc3af1836",
+    "generation.py": "ff6c480da001a42b8f92700860e88058cf35e95eacc7c0734c687281359ca331",
+    "networks.py": "bf8bf5dead288d663018ecd2fdfd0da28c85286c7c1cb3b78a837a5c6ecf68b6",
+    "engine.py": "c3123fe839596ea016b39b7b30be229a6bf2b9804c08ec434b7b865f2ffc1b97"
+  }
+}

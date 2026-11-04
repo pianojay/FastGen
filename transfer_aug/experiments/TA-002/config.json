@@ -1,0 +1,37 @@
+{
+  "experiment_id": "TA-002",
+  "contract_revision": 1,
+  "cohort": "A1-transfer-20261007-v1",
+  "source_count": 604,
+  "resolution": [
+    64,
+    64
+  ],
+  "color_space": "official-export RGB; float64 sRGB [0,1]",
+  "method": "pinned official NumPy FDA; content phase, centered symmetric square amplitude interpolation",
+  "arms": [
+    "intra",
+    "inter"
+  ],
+  "radii": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "strengths": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "controls": 604,
+  "training_applicable": false,
+  "device": "cpu",
+  "threads": 2,
+  "learned_parameters": 0,
+  "display_export": "np.rint(np.clip(raw,0,1)*255).astype(np.uint8)",
+  "tail_selection": "per arm clipped_fraction descending, rms_change descending, sample_id/radius/alpha ascending, 4 distinct content IDs",
+  "reference_revision": "b9a0cdf0bcc9b787c00e39df73eda5673706f219",
+  "reference_path": "transfer_aug/audit_sources/fda/utils/__init__.py",
+  "zero_denominator_policy": "exact zero outside-mask content norm flagged; relative metric null"
+}

@@ -1,0 +1,24 @@
+{
+  "a1_source_hashes_rechecked_after_regeneration": 14059,
+  "artifact_sha256": {
+    "counts.json": "27fad97f414c7472df61dc0dac0b0df5c5f253d2a9834761c919d30b21ed5768",
+    "cross_class_duplicates.json": "3ddb786d1376daa38837bd36088999d067ded7768f24a5f59bbe220bef94f06d",
+    "domain_manifest.json": "d6a99c722a46a873a02cc1cf15bac54ca2e56a5ea4c6395ca6a18f499bcbff7f",
+    "duplicate_exclusions.json": "1ef0b8ff681bd51a5b085e0cb5376ff0a241b702eba441d9d602913d317f67bf",
+    "pca.json": "93eaf17e1a0c2ee98674bd351df782937ea87acfd9746dda4850897851d920c9",
+    "review_1.png": "bc1ea66537dabdcdf95538e50a2da038f96873bc96c959a9ade3af9649e76cca",
+    "review_2.png": "0239c3c34df90af7aed9d28f653fe3dd584a101fa3e4f20534f1da9f8dda9b62",
+    "review_3.png": "c7a310df84be7a7bf6dca1ae1a70e55a490ac7df5edc18b9b92c8a4b9304d77e",
+    "review_4.png": "5f0e58da19f8d6539cdd263c629aaf999779f796506eaf61bc713397ca8207f8",
+    "review_selection.json": "f534bbfa2e4fa81aa9f1afb8e43184bf095c1368f7768278dc47a0e189750831",
+    "scores.csv": "b3e89736604692519d48bbf28708f87db955254c02238c984ed96ad26fc4aa1a"
+  },
+  "balanced_domain_counts": true,
+  "exact_full_regeneration": true,
+  "global_train_holdout_pixel_overlap": 0,
+  "numerical_checks": {
+    "checkerboard_gradient_laplacian_entropy_fft": true,
+    "constant_black": true,
+    "constant_white": true
+  }
+}

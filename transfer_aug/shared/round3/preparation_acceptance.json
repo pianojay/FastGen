@@ -1,0 +1,19 @@
+{
+  "status": "accepted",
+  "experiments": [
+    {
+      "experiment_id": "TA-005",
+      "setup_result_sha256": "9c531156543fa100f030d7f71a232615b4213f6178c9af8c44672b41a37269dd",
+      "status": "accepted",
+      "proof_references": 6
+    },
+    {
+      "experiment_id": "TA-006",
+      "setup_result_sha256": "6d2e451cb58498c0b03271464820d2e7abc11cebf90693005791ada77935fa19",
+      "status": "accepted",
+      "proof_references": 6
+    }
+  ],
+  "evaluation_freeze_sha256": "06a11aac6366cbc9cc03dcc305a81e143bf50c7661cbd56c6dea2fee8ae64cdb",
+  "scope": "Master reviewed worker summaries/status/counts/verification metadata and resolving proof paths, not raw implementation artifacts."
+}

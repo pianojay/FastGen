@@ -1,0 +1,9 @@
+{
+  "descriptors": "Frozen eleven descriptors, class centering/scales/PC1 on clipped rounded RGB",
+  "raw_RMS": "Raw generated values affinely (x+1)/2; may extend outside nominal [0,1]",
+  "clipped_RMS_and_diversity": "Floating affine RGB clipped with np.clip((raw.astype(float64)+1)/2,0,1), without PNG quantization",
+  "aggregation": "Four variants averaged per source then summarized across302 sources/direction/arm",
+  "diversity": "Mean six pairwise pixel RMS; raw and clipped separately; not semantic diversity",
+  "tail_selection": "Four largest unique-source raw RMS then four distinct smallest clipped latent diversity",
+  "review": "Small unblinded AI review; no class accuracy/FID claims"
+}

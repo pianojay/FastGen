@@ -1,0 +1,23 @@
+{
+  "per_output.json_unaffected_fields_exact": true,
+  "source_aggregates.json_unaffected_fields_exact": true,
+  "max_raw_minus_clipped_source_rms": 0.0,
+  "max_raw_minus_clipped_diversity": 0.0,
+  "max_clipping_mean_absolute": 0.0,
+  "max_outside_range_fraction": 0.0,
+  "tail_source_selection_unchanged": true,
+  "tail_indices": [
+    199,
+    143,
+    269,
+    403,
+    310,
+    510,
+    513,
+    307
+  ],
+  "original_output_checkpoint_and_sheet_files_verified_unchanged": 7888,
+  "all_22_previously_reviewed_sheet_hashes_unchanged": true,
+  "definition": "Clipped RGB means float64 np.clip((raw+1)/2,0,1), no uint8 rounding. Descriptor/PCA inputs remain quantized PNG.",
+  "status": "passed"
+}

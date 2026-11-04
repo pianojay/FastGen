@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "experiment_id": "TA-002",
+  "contract_revision": 1,
+  "status": "completed",
+  "contract_sha256": "366e4ac85810d4b1c0e850f972c9175f4a550ced13f982c1c6c0910f3801e905",
+  "common_protocol_sha256": "1be27b900ee25ad95aed707427fb047e2456c122c6a0d2c4cf1feaa02fe51425",
+  "cohort_sha256": "da15bf04c3281a170e18ffc6116a298366d0287356c1ba19c6765027be7b5a6c",
+  "bundle_manifest_sha256": "46d27966191a14746aa8ec212509aefb0c46b905de0e674947e9b2e094203bda",
+  "training_applicable": false,
+  "expected_output_count": 15100,
+  "completed_output_count": 15100,
+  "expected_transformed_output_count": 14496,
+  "completed_transformed_output_count": 14496,
+  "expected_control_output_count": 604,
+  "completed_control_output_count": 604,
+  "expected_review_count": 392,
+  "completed_review_count": 392,
+  "expected_representative_review_count": 384,
+  "completed_representative_review_count": 384,
+  "expected_tail_review_count": 8,
+  "completed_tail_review_count": 8,
+  "expected_sheet_count": 34,
+  "completed_sheet_count": 34,
+  "resources": {
+    "device": "cpu",
+    "parameters": 0,
+    "learned_parameters": 0,
+    "training_applicable": false,
+    "gpu_seconds": 0,
+    "gpu_allocated_bytes": 0,
+    "gpu_reserved_bytes": 0,
+    "peak_training_allocation_bytes": 0,
+    "cpu_threads": 2,
+    "peak_host_memory_bytes": 1705627648,
+    "peak_host_memory_basis": "Maximum ru_maxrss*1024 across experiment execution processes, not aggregate of overlapping processes",
+    "elapsed_seconds": 1074.3563768863678,
+    "wall_start_unix": 1791373884.5969105,
+    "wall_start_basis": "Conservative pre-dispatch bound: contract freeze mtime provided by master; includes implementation time.",
+    "budget_seconds": 7200,
+    "within_budget": true,
+    "stage_seconds": {
+      "numerical_verification": 56.58733797073364,
+      "generation_and_measurement": 88.99272394180298,
+      "deterministic_recompute_including_sheets": 83.74595189094543,
+      "integrity_before": 1.547976016998291,
+      "integrity_after": 1.5407640933990479,
+      "initial_script_total": 150.4337830543518,
+      "sheet_generation_and_initial_overhead": 3.3057451248168945
+    },
+    "process_cpu_seconds": 402.75377499999996,
+    "cpu_time_scope": "Main generation, replay, and post-integrity processes; short preparation, manual review, and report scripts excluded from process CPU sum but included in elapsed budget."
+  },
+  "checks": {
+    "integrity_before": {
+      "pass": true,
+      "proof": "verification/integrity_before.json"
+    },
+    "numerical_acceptance": {
+      "pass": true,
+      "proof": "verification/numerical_checks.json"
+    },
+    "full_grid_mechanism": {
+      "pass": true,
+      "proof": "verification/generation_checks.json"
+    },
+    "deterministic_recompute": {
+      "pass": true,
+      "proof": "verification/determinism.json"
+    },
+    "visual_review_coverage": {
+      "pass": true,
+      "proof": "verification/visual_review_checks.json"
+    },
+    "synthetic_and_clipping_audit": {
+      "pass": true,
+      "proof": "verification/supplemental_checks.json"
+    },
+    "integrity_after": {
+      "pass": true,
+      "proof": "verification/integrity_after.json"
+    },
+    "handoff_coverage": {
+      "pass": true,
+      "proof": "verification/handoff_checks.json"
+    },
+    "output_hash_inventory": {
+      "pass": true,
+      "proof": "hashes.json"
+    }
+  },
+  "key_findings": [
+    "Raw transfer remained confined to the selected square within numerical precision: maximum outside-mask complex error 4.5475e-13; imaginary residual 4.9927e-16. Clipping introduced outside-mask changes, supporting the mechanism hypothesis.",
+    "At radius 4, alpha 1, median post-clipping outside-mask relative L2 was 0.20273 intra and 0.24423 inter; p95 was 0.54227 and 0.53781. Relative raw changes stayed below 4.50e-15 across the grid.",
+    "Full-strength median RGB RMS increased from r0 to r4: 0.18981 to 0.23758 intra, 0.23086 to 0.27388 inter. Inter exceeded intra in every matched condition, descriptively for these fixed donors.",
+    "Visual inspection showed mostly retained layouts with stronger color patches/halos and altered surface markings at larger radii/strengths. Representative identity retained/uncertain: intra 179/13, inter 176/16; anatomy/markings disrupted: intra 15/192, inter 33/192. These are unblinded correlated judgments, not accuracy estimates.",
+    "Clipping-ranked intra tails were visually mild on white backgrounds despite 61.8-66.0% clipped channels (RMS 0.00586-0.03819, maximum excursions 0.0131-0.0827). Inter tails mixed mild recoloring, darkening, and strong cyan contamination. None of the selected excursions was roundoff-sized."
+  ],
+  "limitations": [
+    "A1-only 604-image fixed cohort and one frozen donor pairing per arm; no A2/B analysis.",
+    "No training, discriminator, classifier, pretrained features, augmentation-utility, class-correctness, or FID measurement; no recipe selected.",
+    "Visual judgments are unblinded AI comparisons at 64 pixels, limited to 16 representative contents and eight ranked outputs. Repeated conditions are correlated; dense/washed-out source details are sometimes uncertain.",
+    "Background-contamination labels include visible color changes to the background, not evidence of copied donor objects. Anatomy/markings includes surface coloration.",
+    "Global donor image amplitude includes subject and background; donor-class differences do not isolate a causal class effect.",
+    "Clipped fraction is a strict scalar-channel count and is not perceptual severity; tail selection is biased toward clipping, including white-background DC cases.",
+    "Raw metrics use unnormalized NumPy complex FFT norms. Relative L2 denominators depend on source and radius; exact-zero flags are explicit.",
+    "Elapsed budget uses the master-provided conservative pre-dispatch contract-freeze timestamp; host memory is measured process peak."
+  ],
+  "evidence": {
+    "summary": "SUMMARY.md",
+    "config": "config.json",
+    "implementation": "run.py",
+    "environment": "environment.json",
+    "condition_metrics": "condition_metrics.csv",
+    "condition_metrics_json": "condition_metrics.json",
+    "per_output_metrics": "per_output_metrics.csv",
+    "review_rows": "visual_reviews.csv",
+    "manual_visual_judgments": "visual_judgments_manual.json",
+    "gallery": "gallery.html",
+    "sheets": "sheets",
+    "tail_selection": "tail_selection.json",
+    "numeric_arrays": "raw",
+    "raw_layout": "raw/layout.json",
+    "display_pngs": "png",
+    "verification": "verification",
+    "commands": "commands.jsonl",
+    "reproduction": "REPRODUCE.md",
+    "hashes": "hashes.json",
+    "resources": "resources.json",
+    "failure_evidence": "failures"
+  },
+  "evidence_notes": {
+    "sheet_count": "32 representative arm-specific sheets plus 2 sheets containing four separately labeled tails each.",
+    "raw_array_bytes": 1484390784,
+    "hash_inventory_sha256": "ccf4e4ee61fcb6c6a183abda3fc6f988f60011a6c51f483db056c95929b2d373",
+    "summary_word_count": 328,
+    "semantic_judgments_not_performance_metrics": true,
+    "failures": "One bare-python inspection command unavailable; no numerical/generation failure occurred. Saved evidence documents resolution."
+  }
+}

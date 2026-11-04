@@ -1,0 +1,26 @@
+{
+  "contract_scope_complete": true,
+  "exact_alpha0_controls": 604,
+  "finite_raw_arrays": true,
+  "generation_process_completed": true,
+  "metric_rows": 2416,
+  "pass": true,
+  "png_count": 2416,
+  "raw_dtype": "float64",
+  "raw_shape": [
+    4,
+    604,
+    64,
+    64,
+    3
+  ],
+  "recompute_process_completed": true,
+  "representative_review_rows": 48,
+  "review_conditions_match_frozen_selection": true,
+  "summary_word_count": 390,
+  "tail_ranking_unchanged": true,
+  "tail_review_rows": 8,
+  "timestamp_utc": "2026-10-07T12:05:42.857955+00:00",
+  "transformed_outputs": 1812,
+  "viewed_sheet_hashes_match": 24
+}

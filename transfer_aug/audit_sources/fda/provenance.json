@@ -1,0 +1,35 @@
+{
+  "repository": "https://github.com/YanchaoYang/FDA",
+  "revision": "b9a0cdf0bcc9b787c00e39df73eda5673706f219",
+  "license": null,
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/YanchaoYang/FDA/b9a0cdf0bcc9b787c00e39df73eda5673706f219/README.md",
+      "status": 200,
+      "bytes": 4174,
+      "sha256": "ed9273a1769d4c2b6b657444e1f51c9db919c7c6d328472cf94cf390afc0ddf2"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/YanchaoYang/FDA/b9a0cdf0bcc9b787c00e39df73eda5673706f219/LICENSE",
+      "status": 404
+    },
+    "utils/__init__.py": {
+      "url": "https://raw.githubusercontent.com/YanchaoYang/FDA/b9a0cdf0bcc9b787c00e39df73eda5673706f219/utils/__init__.py",
+      "status": 200,
+      "bytes": 3181,
+      "sha256": "165c60e0e96ed4b357550089b499086f562458248f3cec5796d5151f080b8b4d"
+    },
+    "FDA_demo.py": {
+      "url": "https://raw.githubusercontent.com/YanchaoYang/FDA/b9a0cdf0bcc9b787c00e39df73eda5673706f219/FDA_demo.py",
+      "status": 200,
+      "bytes": 682,
+      "sha256": "285ff684e8451c5440dc7bcb2652bb1a7cf8d2b74776a414fdb7aeca796441e8"
+    },
+    "train.py": {
+      "url": "https://raw.githubusercontent.com/YanchaoYang/FDA/b9a0cdf0bcc9b787c00e39df73eda5673706f219/train.py",
+      "status": 200,
+      "bytes": 5306,
+      "sha256": "a60bb6eab067c12375ef69a1ceacdf8d04b314916e5d9f957c0613531779dbbc"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "repository": "https://github.com/jrosebr1/color_transfer",
+  "revision": "6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f",
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "files": {
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/README.md",
+      "status": 200,
+      "bytes": 1521,
+      "sha256": "ee19a5a7157aa8ec158cf7d578a1ca191605579110236cc98d34a8928e384812"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/LICENSE",
+      "status": 404
+    },
+    "color_transfer/color_transfer.py": {
+      "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/color_transfer/color_transfer.py",
+      "status": 404
+    },
+    "LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/LICENSE.txt",
+      "status": 200,
+      "sha256": "e650c745629806ea19bc9c97d79b245bce69380d87f751a33d5877fd19fd54fe",
+      "bytes": 1112
+    },
+    "color_transfer/__init__.py": {
+      "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/color_transfer/__init__.py",
+      "status": 200,
+      "sha256": "51ed90fd02e2bfd96790506621dea1ac883733e878b3f298a9a536815122a99a",
+      "bytes": 4775
+    },
+    "example.py": {
+      "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/example.py",
+      "status": 200,
+      "sha256": "39a79341322cc90150c21996ff53850d2ddb64973d40fee7bd4ff71ff5b9f399",
+      "bytes": 2081
+    },
+    "setup.py": {
+      "url": "https://raw.githubusercontent.com/jrosebr1/color_transfer/6724ccf927f2e3838ccd3f3da8b2542b79c9bf2f/setup.py",
+      "status": 200,
+      "sha256": "28618a27ff9ea5c00630482c322caa46226d045f71d762f867e558ae1eb8c75f",
+      "bytes": 574
+    }
+  }
+}

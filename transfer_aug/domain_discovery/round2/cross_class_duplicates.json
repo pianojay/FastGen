@@ -1,0 +1,89 @@
+{
+  "groups": {
+    "0405bde9d5d59fb07993380125b348807d41a4352fca1ee96cab45f7b78b34db": [
+      {
+        "category": "Nidoran-m",
+        "domain": "D1",
+        "path": "PokemonData/Nidoran-m/Nidoran-m58.jpg",
+        "role": "optimize"
+      },
+      {
+        "category": "Nidorino",
+        "domain": "D1",
+        "path": "PokemonData/Nidorino/f05ea8a5fe334839aa104487fb295c8b.jpg",
+        "role": "optimize"
+      }
+    ],
+    "20c431e5e1b458c770e6209c19e3cbb618086377345d4b13f9b83d24c2839601": [
+      {
+        "category": "Mankey",
+        "domain": "D1",
+        "path": "PokemonData/Mankey/58e418e30c5d443e97ffaac20e4867c1.jpg",
+        "role": "optimize"
+      },
+      {
+        "category": "Primeape",
+        "domain": "D1",
+        "path": "PokemonData/Primeape/Primeape60.jpg",
+        "role": "optimize"
+      }
+    ],
+    "5bccba5a26bb0c6e09bbafab29192e3b03344156d028ad9963169641e0078c25": [
+      {
+        "category": "Alakazam",
+        "domain": "D1",
+        "path": "PokemonData/Alakazam/64527ef991ff42c6883623f263f3c2f4.jpg",
+        "role": "optimize"
+      },
+      {
+        "category": "Kadabra",
+        "domain": "D1",
+        "path": "PokemonData/Kadabra/f02640d4ea714d91ba16fafd46b3a49b.jpg",
+        "role": "optimize"
+      }
+    ],
+    "82f9b770cfb2ead6c2299a8678f469f2e44868ba60e002e593535ae26267ca73": [
+      {
+        "category": "Poliwhirl",
+        "domain": "D0",
+        "path": "PokemonData/Poliwhirl/ef4d09c9e96c4fc1b2bdb1b427a92820.jpg",
+        "role": "optimize"
+      },
+      {
+        "category": "Poliwrath",
+        "domain": "D0",
+        "path": "PokemonData/Poliwrath/Poliwrath92.jpg",
+        "role": "optimize"
+      }
+    ],
+    "9e809245f497c7bec0cf7d4e5d95bf2ecd6e9cde348d84a8d8122d9996e61710": [
+      {
+        "category": "Cubone",
+        "domain": "middle",
+        "path": "PokemonData/Cubone/9d5269c2392b49b6b8f37e15ff284351.jpg",
+        "role": "unused"
+      },
+      {
+        "category": "Marowak",
+        "domain": "middle",
+        "path": "PokemonData/Marowak/f2f2769669734a28bb848108a8da09ad.jpg",
+        "role": "unused"
+      }
+    ],
+    "b22e7d3c717b75ad5e3456982d2c165428670437345a11472866cb3af299b2f1": [
+      {
+        "category": "Pidgeot",
+        "domain": "D1",
+        "path": "PokemonData/Pidgeot/95d8d837370a4433b3d8428868ab026e.jpg",
+        "role": "optimize"
+      },
+      {
+        "category": "Pidgeotto",
+        "domain": "D1",
+        "path": "PokemonData/Pidgeotto/c9d0e5645c8a41bb98e1924728130028.jpg",
+        "role": "optimize"
+      }
+    ]
+  },
+  "holdout_leakage": {}
+}

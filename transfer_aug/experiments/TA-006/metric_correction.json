@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "correction": "Clipped source RMS and pairwise diversity now use floating np.clip((raw.astype(float64)+1)/2,0,1); no PNG rounding.",
+  "clipping_magnitude": "Already used mean(abs(raw_affine-np.clip(raw_affine,0,1))); unchanged and exhaustively checked.",
+  "descriptor_PCA": "Clipped quantized viewing RGB, unchanged.",
+  "measurement_outputs_checked": 5436,
+  "source_arm_diversity_groups_checked": 1208,
+  "max_absolute_errors": {
+    "clipped_source_rms": 0.0,
+    "clipped_pairwise_diversity": 0.0,
+    "clipping_mean_magnitude": 0.0
+  },
+  "zero_out_of_range_outputs_with_exact_raw_clipped_agreement": 830,
+  "tail_membership_and_order_unchanged": true,
+  "tail_source_ids": [
+    403,
+    456,
+    82,
+    590,
+    415,
+    363,
+    420,
+    571
+  ],
+  "GPU_or_model_changes": false,
+  "visual_reinspection_required": false
+}

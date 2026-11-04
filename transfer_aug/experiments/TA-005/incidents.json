@@ -1,0 +1,27 @@
+{
+  "training_incidents": [],
+  "training_retries": 0,
+  "reporting_corrections": [
+    {
+      "stage": "CPU report",
+      "issue": "Recomputing viewing RGB through float64 affine values produced occasional one-level rounding differences against float32 export.",
+      "resolution": "Descriptor/view checks now use the exact float32 PNG quantization operation. Raw float64 RMS calculations remain unchanged; all saved images and model weights unchanged."
+    },
+    {
+      "stage": "CPU report metadata",
+      "issue": "Report timer name was reused by a sheet loop.",
+      "resolution": "Renamed CPU timer, reran report; 30.33 seconds measured. Scientific arrays and sheets unchanged."
+    },
+    {
+      "stage": "Output metadata",
+      "issue": "Self-control variant inherited array-offset4 while measurement table used0.",
+      "resolution": "Normalized 604 self-control manifest variant labels to0 and fixed generator metadata expression. Raw image index8 and all image bytes unchanged."
+    },
+    {
+      "stage": "Master handoff targeted metric-definition audit",
+      "issue": "Clipped source RMS and clipped diversity incorrectly included uint8 PNG rounding.",
+      "resolution": "Now np.clip(raw-affine float64 RGB,0,1) without quantization. All corrected clipped metrics equal raw metrics exactly since MUNIT outputs lie in[-1,1]. All raw metrics, descriptor/PCA values, generated files, checkpoints and review sheets unchanged. Tail source ranking unchanged. Prior aggregates/results and verification retained under report_corrections/clipped_float_v1/."
+    }
+  ],
+  "scientific_contract_changes": []
+}

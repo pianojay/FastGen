@@ -1,0 +1,17 @@
+{
+  "final_outputs": 5436,
+  "source_arm_records": 1208,
+  "representative_sources": 64,
+  "tail_sources": 8,
+  "milestone_sources": 32,
+  "sheets": 22,
+  "source_score_max_error": 1.7763568394002505e-15,
+  "exact_duplicate_quantized_excess": 0,
+  "all_finite": true,
+  "out_of_range_fraction": 0.0,
+  "raw_min": -1.0,
+  "raw_max": 1.0,
+  "cpu_seconds": 30.812006797641516,
+  "aggregation": "four variants averaged per source then302 sources per direction/arm",
+  "clipped_metric_definition": "np.clip((raw_float64+1)/2,0,1), without uint8 quantization; descriptors use quantized PNG RGB"
+}

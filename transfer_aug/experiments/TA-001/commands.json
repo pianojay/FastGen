@@ -1,0 +1,21 @@
+{
+  "working_directory": "/home/user/jw_soflow/exploration",
+  "initial_read_commands": [
+    "cat transfer_aug/AGENTS.md transfer_aug/MASTER.md transfer_aug/shared/PROTOCOL_V1.md transfer_aug/experiments/TA-001/CONTRACT_v1.md transfer_aug/EXPERIMENT_LEDGER.json",
+    "rg --files transfer_aug",
+    "cat transfer_aug/shared/cohort_v1/bundle_manifest.json (failed: actual filename is manifest.json)",
+    "cat transfer_aug/shared/cohort_v1/manifest.json transfer_aug/run_python.sh",
+    "cat transfer_aug/audit_sources/color/color_transfer/__init__.py"
+  ],
+  "execution_commands": [
+    "bash transfer_aug/run_python.sh transfer_aug/experiments/TA-001/run_experiment.py generate > transfer_aug/experiments/TA-001/generate.log 2>&1 (attempt 1: synthetic near-constant mean test failed)",
+    "cp transfer_aug/experiments/TA-001/run_experiment.py transfer_aug/experiments/TA-001/verification/failed_attempt_1_implementation.py",
+    "cp transfer_aug/experiments/TA-001/generate.log transfer_aug/experiments/TA-001/verification/failed_attempt_1.log",
+    "bash transfer_aug/run_python.sh transfer_aug/experiments/TA-001/run_experiment.py generate > transfer_aug/experiments/TA-001/generate.log 2>&1 (attempt 2: shifted population reduction)",
+    "bash transfer_aug/run_python.sh transfer_aug/experiments/TA-001/run_experiment.py recompute > transfer_aug/experiments/TA-001/recompute.log 2>&1",
+    "bash transfer_aug/run_python.sh transfer_aug/experiments/TA-001/record_visual_review.py",
+    "bash transfer_aug/run_python.sh transfer_aug/experiments/TA-001/finalize.py"
+  ],
+  "visual_inspection": "All 16 representative and eight tail sheets are opened with tools.view_image; per-output judgments and tool paths are recorded in visual_review.csv and visual_inspection.json.",
+  "other_operations": "Source and records authored with apply_patch; read-only status/metric summaries via shell and the pinned Python runner. No environment/package/shared-input changes."
+}

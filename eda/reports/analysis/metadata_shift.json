@@ -1,0 +1,27 @@
+{
+  "all_151_categories_B_equals_first_20_lexicographic": true,
+  "categories": 151,
+  "selection_code_reviewed": false,
+  "inference": "Exact manifest property; filename-based selection is consistent with these manifests. Historical construction code was not examined.",
+  "categories_with_higher_B_median_white_fraction": 151,
+  "A": {
+    "formats": {
+      "JPEG": 16932,
+      "PNG": 147
+    },
+    "filename_32hex_count": 4967,
+    "count": 17079,
+    "median_native_width": 436.0,
+    "median_native_height": 435.0
+  },
+  "B": {
+    "formats": {
+      "PNG": 1336,
+      "JPEG": 1684
+    },
+    "filename_32hex_count": 1597,
+    "count": 3020,
+    "median_native_width": 200.0,
+    "median_native_height": 200.0
+  }
+}

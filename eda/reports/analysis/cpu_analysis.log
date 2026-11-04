@@ -1,0 +1,66 @@
+Fitting A-only PCA
+Clustering k=16
+Clustering k=32
+Clustering k=64
+Full FID(A,B)=15.710899; clean-fid verification passed
+FID uniform seed=20261005 U/B=20.546 U/V=14.573 elapsed=31s
+FID balanced seed=20261005 U/B=20.698 U/V=14.754 elapsed=40s
+FID uniform seed=20261006 U/B=21.247 U/V=14.946 elapsed=49s
+FID balanced seed=20261006 U/B=20.970 U/V=14.702 elapsed=60s
+FID uniform seed=20261007 U/B=20.704 U/V=14.758 elapsed=69s
+FID balanced seed=20261007 U/B=21.286 U/V=14.873 elapsed=79s
+FID uniform seed=20261008 U/B=21.329 U/V=14.963 elapsed=88s
+FID balanced seed=20261008 U/B=20.624 U/V=14.895 elapsed=98s
+FID uniform seed=20261009 U/B=21.240 U/V=14.898 elapsed=107s
+FID balanced seed=20261009 U/B=20.771 U/V=14.868 elapsed=117s
+FID uniform seed=20261010 U/B=20.747 U/V=14.942 elapsed=126s
+FID balanced seed=20261010 U/B=20.825 U/V=14.833 elapsed=135s
+FID uniform seed=20261011 U/B=20.717 U/V=14.762 elapsed=145s
+FID balanced seed=20261011 U/B=21.296 U/V=14.750 elapsed=154s
+FID uniform seed=20261012 U/B=20.804 U/V=14.845 elapsed=163s
+FID balanced seed=20261012 U/B=21.004 U/V=14.836 elapsed=172s
+FID uniform seed=20261013 U/B=21.119 U/V=14.961 elapsed=181s
+FID balanced seed=20261013 U/B=20.964 U/V=14.878 elapsed=190s
+FID uniform seed=20261014 U/B=21.312 U/V=14.593 elapsed=199s
+FID balanced seed=20261014 U/B=20.580 U/V=14.654 elapsed=208s
+FID uniform seed=20261015 U/B=21.241 U/V=14.937 elapsed=217s
+FID balanced seed=20261015 U/B=20.798 U/V=14.894 elapsed=226s
+FID uniform seed=20261016 U/B=21.694 U/V=14.945 elapsed=235s
+FID balanced seed=20261016 U/B=21.082 U/V=15.008 elapsed=245s
+FID uniform seed=20261017 U/B=21.363 U/V=14.978 elapsed=254s
+FID balanced seed=20261017 U/B=21.537 U/V=14.752 elapsed=264s
+FID uniform seed=20261018 U/B=21.306 U/V=14.911 elapsed=273s
+FID balanced seed=20261018 U/B=21.097 U/V=14.890 elapsed=283s
+FID uniform seed=20261019 U/B=20.767 U/V=14.898 elapsed=292s
+FID balanced seed=20261019 U/B=20.299 U/V=14.588 elapsed=301s
+FID uniform seed=20261020 U/B=21.050 U/V=14.955 elapsed=310s
+FID balanced seed=20261020 U/B=20.383 U/V=14.748 elapsed=319s
+FID uniform seed=20261021 U/B=21.064 U/V=14.847 elapsed=328s
+FID balanced seed=20261021 U/B=20.250 U/V=14.678 elapsed=337s
+FID uniform seed=20261022 U/B=21.007 U/V=14.990 elapsed=346s
+FID balanced seed=20261022 U/B=20.831 U/V=14.821 elapsed=355s
+FID uniform seed=20261023 U/B=21.422 U/V=14.948 elapsed=364s
+FID balanced seed=20261023 U/B=20.890 U/V=14.778 elapsed=373s
+FID uniform seed=20261024 U/B=21.158 U/V=14.726 elapsed=382s
+FID balanced seed=20261024 U/B=20.604 U/V=14.779 elapsed=391s
+FID duplicate sensitivity 20261005 U/B=24.890 U/V=16.817
+FID duplicate sensitivity 20261006 U/B=24.141 U/V=16.759
+FID duplicate sensitivity 20261007 U/B=24.501 U/V=16.970
+FID duplicate sensitivity 20261008 U/B=24.196 U/V=16.833
+FID duplicate sensitivity 20261009 U/B=24.863 U/V=16.568
+FID duplicate sensitivity 20261010 U/B=25.070 U/V=16.717
+FID duplicate sensitivity 20261011 U/B=24.838 U/V=16.845
+FID duplicate sensitivity 20261012 U/B=24.328 U/V=16.701
+FID duplicate sensitivity 20261013 U/B=24.675 U/V=16.857
+FID duplicate sensitivity 20261014 U/B=24.367 U/V=16.831
+FID duplicate sensitivity 20261015 U/B=25.163 U/V=16.630
+FID duplicate sensitivity 20261016 U/B=25.119 U/V=16.777
+FID duplicate sensitivity 20261017 U/B=24.490 U/V=16.808
+FID duplicate sensitivity 20261018 U/B=24.742 U/V=16.593
+FID duplicate sensitivity 20261019 U/B=24.477 U/V=16.841
+FID duplicate sensitivity 20261020 U/B=24.134 U/V=16.784
+FID duplicate sensitivity 20261021 U/B=24.805 U/V=16.771
+FID duplicate sensitivity 20261022 U/B=24.718 U/V=16.870
+FID duplicate sensitivity 20261023 U/B=24.281 U/V=16.907
+FID duplicate sensitivity 20261024 U/B=24.655 U/V=17.027
+CPU feature analyses complete

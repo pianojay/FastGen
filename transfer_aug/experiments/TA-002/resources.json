@@ -1,0 +1,29 @@
+{
+  "device": "cpu",
+  "parameters": 0,
+  "learned_parameters": 0,
+  "training_applicable": false,
+  "gpu_seconds": 0,
+  "gpu_allocated_bytes": 0,
+  "gpu_reserved_bytes": 0,
+  "peak_training_allocation_bytes": 0,
+  "cpu_threads": 2,
+  "peak_host_memory_bytes": 1705627648,
+  "peak_host_memory_basis": "Maximum ru_maxrss*1024 across experiment execution processes, not aggregate of overlapping processes",
+  "elapsed_seconds": 1074.3563768863678,
+  "wall_start_unix": 1791373884.5969105,
+  "wall_start_basis": "Conservative pre-dispatch bound: contract freeze mtime provided by master; includes implementation time.",
+  "budget_seconds": 7200,
+  "within_budget": true,
+  "stage_seconds": {
+    "numerical_verification": 56.58733797073364,
+    "generation_and_measurement": 88.99272394180298,
+    "deterministic_recompute_including_sheets": 83.74595189094543,
+    "integrity_before": 1.547976016998291,
+    "integrity_after": 1.5407640933990479,
+    "initial_script_total": 150.4337830543518,
+    "sheet_generation_and_initial_overhead": 3.3057451248168945
+  },
+  "process_cpu_seconds": 402.75377499999996,
+  "cpu_time_scope": "Main generation, replay, and post-integrity processes; short preparation, manual review, and report scripts excluded from process CPU sum but included in elapsed budget."
+}
