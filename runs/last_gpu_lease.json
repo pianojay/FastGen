@@ -1,0 +1,20 @@
+{
+  "acquired_at": 1791034480.6243746,
+  "device": {
+    "capability": "7.5",
+    "index": "2",
+    "name": "NVIDIA TITAN RTX",
+    "total_MiB": "24576",
+    "used_MiB": "1",
+    "utilization_pct": "0",
+    "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+  },
+  "owner": {
+    "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+    "pid": 3706690,
+    "start_ticks": "1081779176",
+    "uid": 1000
+  },
+  "process_local_device": "cuda:0",
+  "project": "/home/user/jw_soflow/FastGen-SiD-DiT"
+}

@@ -1,0 +1,186 @@
+{
+  "config_sha256": "28c371ef0253453e7f651da593865158765529cf9a9d53e4fda0b80c84d5f9ea",
+  "runs": {
+    "A1": {
+      "attempts": [
+        {
+          "allowance_at_start": 57600.0,
+          "end": 1790944834.5135798,
+          "identity": {
+            "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+            "pid": 3167629,
+            "start_ticks": "1071205118",
+            "uid": 1000
+          },
+          "log": "runs/campaign/A1/worker_00.log",
+          "pid": 3167629,
+          "returncode": 0,
+          "seconds": 16094.691118240356,
+          "start": 1790928739.8224616
+        }
+      ],
+      "consumed_seconds": 16094.691118240356
+    },
+    "A2": {
+      "attempts": [
+        {
+          "allowance_at_start": 57600.0,
+          "end": 1790978636.0689137,
+          "identity": {
+            "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+            "pid": 3343894,
+            "start_ticks": "1074436103",
+            "uid": 1000
+          },
+          "log": "runs/campaign/A2/worker_00.log",
+          "pid": 3343894,
+          "returncode": 0,
+          "seconds": 17586.38890337944,
+          "start": 1790961049.6800103
+        }
+      ],
+      "consumed_seconds": 17586.38890337944
+    },
+    "A3": {
+      "attempts": [
+        {
+          "allowance_at_start": 57600.0,
+          "end": 1791015501.9006994,
+          "identity": {
+            "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+            "pid": 3537189,
+            "start_ticks": "1077985535",
+            "uid": 1000
+          },
+          "log": "runs/campaign/A3/worker_00.log",
+          "pid": 3537189,
+          "returncode": 0,
+          "seconds": 18957.900256872177,
+          "start": 1790996544.0004425
+        }
+      ],
+      "consumed_seconds": 18957.900256872177
+    },
+    "A4": {
+      "attempts": [
+        {
+          "allowance_at_start": 57600.0,
+          "end": 1791055049.9730065,
+          "identity": {
+            "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+            "pid": 3706690,
+            "start_ticks": "1081779176",
+            "uid": 1000
+          },
+          "log": "runs/campaign/A4/worker_00.log",
+          "pid": 3706690,
+          "returncode": 0,
+          "seconds": 20569.566415309906,
+          "start": 1791034480.4065912
+        }
+      ],
+      "consumed_seconds": 20569.566415309906
+    },
+    "S1": {
+      "attempts": [
+        {
+          "allowance_at_start": 57600.0,
+          "end": 1790928739.8113592,
+          "identity": {
+            "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+            "pid": 3090844,
+            "start_ticks": "1069743719",
+            "uid": 1000
+          },
+          "log": "runs/campaign/S1/worker_00.log",
+          "pid": 3090844,
+          "returncode": 0,
+          "seconds": 14613.977494478226,
+          "start": 1790914125.8338647
+        }
+      ],
+      "consumed_seconds": 14613.977494478226
+    },
+    "S2": {
+      "attempts": [
+        {
+          "allowance_at_start": 57600.0,
+          "end": 1790961049.66837,
+          "identity": {
+            "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+            "pid": 3259186,
+            "start_ticks": "1072814588",
+            "uid": 1000
+          },
+          "log": "runs/campaign/S2/worker_00.log",
+          "pid": 3259186,
+          "returncode": 0,
+          "seconds": 16215.143506765366,
+          "start": 1790944834.5248632
+        }
+      ],
+      "consumed_seconds": 16215.143506765366
+    },
+    "S3": {
+      "attempts": [
+        {
+          "allowance_at_start": 57600.0,
+          "end": 1790996543.9902349,
+          "identity": {
+            "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+            "pid": 3438257,
+            "start_ticks": "1076209865",
+            "uid": 1000
+          },
+          "log": "runs/campaign/S3/worker_00.log",
+          "pid": 3438257,
+          "returncode": 0,
+          "seconds": 17756.697492599487,
+          "start": 1790978787.2927423
+        }
+      ],
+      "consumed_seconds": 17756.697492599487
+    },
+    "S4": {
+      "attempts": [
+        {
+          "allowance_at_start": 57600.0,
+          "end": 1791034480.3930106,
+          "identity": {
+            "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+            "pid": 3624175,
+            "start_ticks": "1079881327",
+            "uid": 1000
+          },
+          "log": "runs/campaign/S4/worker_00.log",
+          "pid": 3624175,
+          "returncode": 0,
+          "seconds": 18978.47941660881,
+          "start": 1791015501.913594
+        }
+      ],
+      "consumed_seconds": 18978.47941660881
+    },
+    "T": {
+      "attempts": [
+        {
+          "allowance_at_start": 72000.0,
+          "end": 1790905201.7838843,
+          "identity": {
+            "boot_id": "5d097b6f-70a8-4143-89b2-4b241965db21",
+            "pid": 2916757,
+            "start_ticks": "1065521231",
+            "uid": 1000
+          },
+          "log": "runs/campaign/T/worker_00.log",
+          "pid": 2916757,
+          "returncode": 0,
+          "seconds": 33300.828439474106,
+          "start": 1790871900.9554448
+        }
+      ],
+      "consumed_seconds": 33300.828439474106
+    }
+  },
+  "started_at": 1790871900.9551725
+}

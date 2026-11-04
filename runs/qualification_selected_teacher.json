@@ -1,0 +1,267 @@
+{
+  "campaign_config_sha256": "28c371ef0253453e7f651da593865158765529cf9a9d53e4fda0b80c84d5f9ea",
+  "counts": {
+    "discriminator_head": 0,
+    "ema_state_elements": 61823923,
+    "fake_score_discriminator": 61823875,
+    "student": 61823875,
+    "teacher": 61823875
+  },
+  "disposable_weights_not_saved": true,
+  "frozen_teacher_unchanged": true,
+  "memory": {
+    "allocated_bytes": 2353092608,
+    "device": {
+      "capability": "7.5",
+      "index": "2",
+      "name": "NVIDIA TITAN RTX",
+      "total_MiB": "24576",
+      "used_MiB": "15460",
+      "utilization_pct": "48",
+      "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+    },
+    "host": {
+      "Pss_bytes": 2170967040,
+      "Rss_bytes": 2273386496,
+      "VmHWM_bytes": 2292584448,
+      "VmRSS_bytes": 2273386496
+    },
+    "peak_allocated_bytes": 15763146752,
+    "peak_reserved_bytes": 15927869440,
+    "reserved_bytes": 15927869440
+  },
+  "probe_config": {
+    "checkpoint_every": 250,
+    "checkpointing": false,
+    "effective_batch": 64,
+    "evaluation": {
+      "batch_size": 16,
+      "confirmation_seed": 271828,
+      "samples_per_class": 20,
+      "selection": "minimum development FID; earliest tie; confirmation does not reselect",
+      "selection_seed": 1729
+    },
+    "frozen_before_teacher_training": true,
+    "log_every": 50,
+    "loss_scale": 65536,
+    "microbatch": 16,
+    "nfe_runs": {
+      "1": {
+        "evaluate_at": [
+          1000,
+          2000,
+          4000
+        ],
+        "ladder": [
+          1.0
+        ],
+        "updates": 4000
+      },
+      "2": {
+        "evaluate_at": [
+          1000,
+          2000,
+          4000
+        ],
+        "ladder": [
+          1.0,
+          0.5
+        ],
+        "updates": 4000
+      },
+      "3": {
+        "evaluate_at": [
+          1000,
+          2000,
+          4000
+        ],
+        "ladder": [
+          1.0,
+          0.6666666666666667,
+          0.33333333333333337
+        ],
+        "updates": 4000
+      },
+      "4": {
+        "evaluate_at": [
+          1000,
+          2000,
+          4000
+        ],
+        "ladder": [
+          1.0,
+          0.75,
+          0.5,
+          0.25
+        ],
+        "updates": 4000
+      }
+    },
+    "precision": "fp16",
+    "probe_full_rollout": true,
+    "student": {
+      "alpha": 1.0,
+      "betas": [
+        0.0,
+        0.999
+      ],
+      "d_weight": 1.0,
+      "ema_half_life_images": 50000,
+      "evaluate_at": [
+        1000,
+        2000,
+        4000
+      ],
+      "fake_lr": 2e-05,
+      "g_gan_weight": 0.01,
+      "gan_ramp": 1,
+      "gan_warmup": 0,
+      "grad_clip": 10,
+      "lr": 2e-05,
+      "lr_warmup": 1,
+      "sid_weight": 1.0,
+      "updates": 4000
+    },
+    "student_seed": 91373,
+    "teacher": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "ema_half_life_images": 100000,
+      "evaluate_at": [
+        10000,
+        20000,
+        30000
+      ],
+      "grad_clip": 10,
+      "lr": 0.0002,
+      "lr_warmup": 500,
+      "solver_calls": 32,
+      "updates": 30000
+    },
+    "teacher_seed": 20261002,
+    "teacher_validity": {
+      "flag": "relative 16x16 pixel diversity <0.05 or fewer than 10 unique images of 20",
+      "human_gallery_review": "required before freezing T* for distillation; no FID threshold and no second teacher",
+      "nonfinite_outputs": "block",
+      "persistent_severe_collapse": "at least 30 of 151 classes flagged at both final two predeclared checkpoints and at selected checkpoint"
+    },
+    "watchdogs": {
+      "campaign_sum_allowance_seconds": 547200,
+      "max_exact_recoveries_per_run": 2,
+      "no_progress_seconds": 3600,
+      "preparation_and_qualification_max_seconds": 14400,
+      "student_seconds": {
+        "1": 57600,
+        "2": 57600,
+        "3": 57600,
+        "4": 57600
+      },
+      "teacher_seconds": 72000
+    }
+  },
+  "purpose": "Three disposable full-path A4 updates from the selected scratch teacher.\n\nThis uses the frozen training implementation, never writes campaign model state,\nand spends the already declared engineering-probe allowance. It is a numerical\nand memory check, with no FID evaluation or quality selection.\n",
+  "source": {
+    "commit": "3b1502c467c7a6c82fd0da21398dd21b66beeb54",
+    "files": {
+      "flow_sid/__init__.py": "3c1c732cdaf623dd5bd4218b71475d98d702757fca9dc38f12378d084857ca73",
+      "flow_sid/common.py": "e4dc5a2cc2f3fcce5f7afcb9310eb02975fda0c609a57a2fe6beac76e1d11d20",
+      "flow_sid/data.py": "2db84f3af46cb508dc2a132ff4c0da0346604084466e6335d4cd36a3b97d1f39",
+      "flow_sid/engine.py": "d265be60a6a6ade3c3b4c7e46dfc3dae86d14fe7583e9650ef81ffbd55bd84db",
+      "flow_sid/evaluation.py": "eab273142eaa2d2a42d2c6a39a6c2deb2ccf28fc70719c6d66257ee14c1ba7c3",
+      "flow_sid/flow.py": "ef2c5139d07827f5612d5d4c3be05a6109820eb635357984e15d2ea6a3db027a",
+      "flow_sid/gpu.py": "0ec6bc46fe3c121ba1b3c2e953d1246de99eabe75aba9b25b190f0fbad3f3f55",
+      "flow_sid/networks.py": "eaee62c7af192125e5befb0e219315475ba04d2eca22b954025453ad69d2d952",
+      "flow_sid/unet.py": "d078a92dcfe3f5c2e65d4f45079b645303a387e3bda3c1d6c29b1b5cfa848c44",
+      "model.py": "b16f82d5513aca91859cdc258cd13937611192b125936bc4c008536c95df2921",
+      "scripts/campaign.py": "984ee0a3d36bec16695db084fe6d1afb3606757364ebe3174f8d5b9bf0c894f2",
+      "scripts/check_export.py": "047b950e4bc0248f4ba4cff26c7bb7ebae7d0c74beafa79e81cff90b6bb4bd29",
+      "scripts/qualify.py": "b276e949cf820a085f2c2a6855c5f2be98b6ee0423ca224048b80d3fd39cf4ee",
+      "scripts/report.py": "4a9def2434f17c429cb70d11f7621aa99a0d7d6798365853362ce47bb838b7be",
+      "scripts/run_gpu.sh": "2ce3a6ea63e07316befa1f761b815a46e3c6304857eddba298e8e9304ced7ee9",
+      "scripts/smoke_evaluation.py": "0c450da70f1683cc952d70ed43466b1ce0bb10a660edf6e99ab4a5f36c4f703e",
+      "scripts/train_stage.py": "7ed47b5ef6bd925623d2b249a12a5cdfb1b81c5ad85617636d027e65f3117f58"
+    },
+    "sha256": "49ae213d200a0f1253dafea2d382b114534e5e31263fd5943fd4e4aa9ad028f1"
+  },
+  "teacher_checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf",
+  "teacher_tensor_sha256": "87992c00b868e03c3559ac6fcf5c81c37e69f9f0a00231c646b25484043cad49",
+  "updates": [
+    {
+      "d_bce_loss": 1.0150029510259628,
+      "draw_fake": "b7717e5e0e414e172a7fd21a2e3a7229379b5eee5c41bfd26ba7692c7022dc0d",
+      "draw_g": "f0a5f2336fd843d4b3c127cb7c0f8539597285df8f2112b7702285e788e69575",
+      "exposures": {
+        "d_real_images": 64,
+        "fake_images": 64,
+        "fake_updates": 1,
+        "g_images": 64,
+        "g_updates": 1,
+        "teacher_images": 0
+      },
+      "fake_D_grad_norm": 0.5834856629371643,
+      "fake_fm_loss": 0.03333799168467522,
+      "g_gan_loss": 0.0,
+      "g_grad_norm": 0.0001571776083437726,
+      "gan_coefficient": 0.0,
+      "loss_scale": 65536.0,
+      "lr": 2e-05,
+      "seconds": 6.590432431548834,
+      "sid_loss": 8.953673022915609e-05,
+      "step": 1,
+      "step_fake": 3,
+      "step_g": 3
+    },
+    {
+      "d_bce_loss": 1.0371841341257095,
+      "draw_fake": "50df5676b3fbd3ce8cfafaed493702f9fb6fe0470f01d81a7f1b76a6c8be91bd",
+      "draw_g": "1d53ef4db7ac0c8a70c9f0419cf5e52867ac445b5569d85516797cbae3c9efef",
+      "exposures": {
+        "d_real_images": 128,
+        "fake_images": 128,
+        "fake_updates": 2,
+        "g_images": 128,
+        "g_updates": 2,
+        "teacher_images": 0
+      },
+      "fake_D_grad_norm": 0.5534283518791199,
+      "fake_fm_loss": 0.03246677480638027,
+      "g_gan_loss": 0.1644265092909336,
+      "g_grad_norm": 0.00022339215502142906,
+      "gan_coefficient": 0.01,
+      "loss_scale": 65536.0,
+      "lr": 2e-05,
+      "seconds": 5.803041199222207,
+      "sid_loss": 0.00010163005208596587,
+      "step": 2,
+      "step_fake": 3,
+      "step_g": 3
+    },
+    {
+      "d_bce_loss": 0.9517654478549957,
+      "draw_fake": "d56eb31abcf0b60477f8b28241300fa19733f0517a732f5d46abeee6370bf614",
+      "draw_g": "eb0ad8323bc4a4e5db8d628b5a83a4173aff8160b5ab22c0c2ae2eba1a8d048d",
+      "exposures": {
+        "d_real_images": 192,
+        "fake_images": 192,
+        "fake_updates": 3,
+        "g_images": 192,
+        "g_updates": 3,
+        "teacher_images": 0
+      },
+      "fake_D_grad_norm": 0.5425947904586792,
+      "fake_fm_loss": 0.030968488659709692,
+      "g_gan_loss": 0.16721437871456146,
+      "g_grad_norm": 0.0003129384422209114,
+      "gan_coefficient": 0.01,
+      "loss_scale": 65536.0,
+      "lr": 2e-05,
+      "seconds": 5.795918792486191,
+      "sid_loss": 0.00012803291974705644,
+      "step": 3,
+      "step_fake": 3,
+      "step_g": 3
+    }
+  ]
+}

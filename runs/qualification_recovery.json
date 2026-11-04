@@ -1,0 +1,110 @@
+{
+  "config": {
+    "checkpointing": false,
+    "effective_batch": 64,
+    "loss_scale": 65536,
+    "microbatch": 16,
+    "precision": "fp16",
+    "student": {
+      "alpha": 1.0,
+      "betas": [
+        0.0,
+        0.999
+      ],
+      "d_weight": 1.0,
+      "ema_half_life_images": 50000,
+      "fake_lr": 2e-05,
+      "g_gan_weight": 0.01,
+      "gan_ramp": 625,
+      "gan_warmup": 625,
+      "grad_clip": 10,
+      "lr": 2e-05,
+      "lr_warmup": 100,
+      "sid_weight": 1.0
+    },
+    "student_seed": 91373,
+    "teacher": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "ema_half_life_images": 100000,
+      "grad_clip": 10,
+      "lr": 0.0002,
+      "lr_warmup": 500
+    },
+    "teacher_seed": 20261002
+  },
+  "source": {
+    "commit": "fb95ec67b675799315e632acd647600a771343a9",
+    "files": {
+      "flow_sid/__init__.py": "3c1c732cdaf623dd5bd4218b71475d98d702757fca9dc38f12378d084857ca73",
+      "flow_sid/common.py": "87a58afb033f806b9c849263957949e7d41d49fdaccb92383e39513526a92b0b",
+      "flow_sid/data.py": "d2b0d1c3d506e1c88c0f3726f7fb026211b09027b7dd703a93af7a2bdc13cad8",
+      "flow_sid/engine.py": "d265be60a6a6ade3c3b4c7e46dfc3dae86d14fe7583e9650ef81ffbd55bd84db",
+      "flow_sid/evaluation.py": "f339c843e0dab893c9a7954558a5d957b8f05f244c8017ba5cf3b44f0602daef",
+      "flow_sid/flow.py": "ef2c5139d07827f5612d5d4c3be05a6109820eb635357984e15d2ea6a3db027a",
+      "flow_sid/gpu.py": "0ec6bc46fe3c121ba1b3c2e953d1246de99eabe75aba9b25b190f0fbad3f3f55",
+      "flow_sid/networks.py": "eaee62c7af192125e5befb0e219315475ba04d2eca22b954025453ad69d2d952",
+      "flow_sid/unet.py": "d078a92dcfe3f5c2e65d4f45079b645303a387e3bda3c1d6c29b1b5cfa848c44",
+      "model.py": "b16f82d5513aca91859cdc258cd13937611192b125936bc4c008536c95df2921",
+      "scripts/check_export.py": "047b950e4bc0248f4ba4cff26c7bb7ebae7d0c74beafa79e81cff90b6bb4bd29",
+      "scripts/qualify.py": "1d68d1fd6803743bd7583003c0e74b3e398d02eba96a8107d7cc333cd2df68cf",
+      "scripts/smoke_evaluation.py": "0c450da70f1683cc952d70ed43466b1ce0bb10a660edf6e99ab4a5f36c4f703e"
+    },
+    "sha256": "ea4fc4f128dd172a498e063cd63ad81ef311c4eb361a0c4269bba9e66adf6b60"
+  },
+  "stages": {
+    "A4": {
+      "interruption": "save, destroy objects, reload, next complete update",
+      "memory": {
+        "allocated_bytes": 2346276864,
+        "device": {
+          "capability": "7.5",
+          "index": "2",
+          "name": "NVIDIA TITAN RTX",
+          "total_MiB": "24576",
+          "used_MiB": "15478",
+          "utilization_pct": "12",
+          "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+        },
+        "host": {
+          "Pss_bytes": 7179678720,
+          "Rss_bytes": 7193329664,
+          "VmHWM_bytes": 7193329664,
+          "VmRSS_bytes": 7193329664
+        },
+        "peak_allocated_bytes": 15761704960,
+        "peak_reserved_bytes": 15946743808,
+        "reserved_bytes": 15946743808
+      },
+      "next_complete_update_bitwise_equal": true
+    },
+    "T": {
+      "interruption": "save, destroy objects, reload, next complete update",
+      "memory": {
+        "allocated_bytes": 1334993920,
+        "device": {
+          "capability": "7.5",
+          "index": "2",
+          "name": "NVIDIA TITAN RTX",
+          "total_MiB": "24576",
+          "used_MiB": "6070",
+          "utilization_pct": "51",
+          "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+        },
+        "host": {
+          "Pss_bytes": 4159164416,
+          "Rss_bytes": 4172812288,
+          "VmHWM_bytes": 4172812288,
+          "VmRSS_bytes": 4172812288
+        },
+        "peak_allocated_bytes": 6010042368,
+        "peak_reserved_bytes": 6123683840,
+        "reserved_bytes": 6081740800
+      },
+      "next_complete_update_bitwise_equal": true
+    }
+  },
+  "zero_adversarial_equivalence": true
+}

@@ -1,0 +1,18 @@
+{
+  "question": "Can the fixed best SoFlow U-Net160 diagonal velocity act as a credible SiD teacher compared with current frozen RF teacher?",
+  "scope": "Evaluation only; no parameter updates, no student training",
+  "declared_before_full_launch": true,
+  "gpu": 3,
+  "device_uuid": "GPU-c651701d-9ecd-e23e-13a9-2bc13b838b5d",
+  "watchdog_seconds": 2400,
+  "smoke_cost_seconds": 13.166941203176975,
+  "smoke_batch16_forward_seconds": {"soflow": 0.08338, "rf": 0.08103},
+  "expected_full_seconds": 1300,
+  "field_probe": "604 development images (4/class), fixed common noise; 8 fixed time bins plus empirical SiD logit-normal; paired class-bootstrap CI",
+  "gradient_probe": "30 class-spanning completed S1 EMA generated inputs and fixed completed S1 fake network; five times; frozen teacher parameters with full input Jacobian, actual SiD surrogate",
+  "fid_probe": "3020 generated per method, common CPU initial noise seed2026100213, official compute_fid on fixed3020 development PNGs; SoFlow diagonal32Euler, RF32Euler, SoFlow4endpoint",
+  "precision": "FP16 autocast with FP32 parameter/state; matched for all probe methods; smoke FP16/FP32 relative output RMS below0.0006",
+  "stopping": "Stop on nonfinite numerical result, unexpected call count, device ownership mismatch, memory-limit violation or 2400-second watchdog; no extra seeds or sweeps",
+  "interpretation": "A diagnostic qualification, not proof of distillation success. Velocity and denoiser errors use equivalent targets with t-squared weighting. Never rank historical multiseed FID26.52 directly against this single matched draw.",
+  "next_training": "Not authorized by this probe"
+}

@@ -1,0 +1,59 @@
+{
+  "attempt_seconds": 20559.80569362268,
+  "exposures": {
+    "d_real_images": 256000,
+    "fake_images": 256000,
+    "fake_updates": 4000,
+    "g_images": 256000,
+    "g_updates": 4000,
+    "teacher_images": 0
+  },
+  "horizon": 4000,
+  "memory": {
+    "allocated_bytes": 2345694208,
+    "device": {
+      "capability": "7.5",
+      "index": "2",
+      "name": "NVIDIA TITAN RTX",
+      "total_MiB": "24576",
+      "used_MiB": "3496",
+      "utilization_pct": "0",
+      "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+    },
+    "host": {
+      "Pss_bytes": 6892561408,
+      "Rss_bytes": 6989369344,
+      "VmHWM_bytes": 7962210304,
+      "VmRSS_bytes": 6989365248
+    },
+    "peak_allocated_bytes": 15763146752,
+    "peak_reserved_bytes": 16133390336,
+    "reserved_bytes": 3380609024
+  },
+  "phase": "complete",
+  "pid": 3706690,
+  "run": "A4",
+  "selected": {
+    "checkpoint": "runs/campaign/A4/best.pt",
+    "checkpoint_sha256": "c3dc606d52a670e5ecddd2d900d9b598552848cce06f72cd7518fde861f56b22",
+    "diversity": {
+      "exact_unique_fraction": 1.0,
+      "median_relative_diversity": 1.1209285390875643,
+      "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+      "potential_collapse_classes": []
+    },
+    "fid": 45.83630721575793,
+    "gallery_directory": "runs/campaign/A4/eval_004000",
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "run": "A4",
+    "samples": 3020,
+    "sampling_draws_sha256": "450178278452c10c41258d56def30d4b4c4e1d4668b9440ef8d5ab591a3a676e",
+    "seconds": 101.78900351375341,
+    "seed": 1729,
+    "step": 4000,
+    "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+  },
+  "step": 4000,
+  "time": 1791055040.285085
+}

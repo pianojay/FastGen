@@ -1,0 +1,11 @@
+test_accumulation_reductions (test_math.Mathematics) ... ok
+test_conditioning (test_math.Mathematics) ... ok
+test_detached_fake_target_and_bce (test_math.Mathematics) ... ok
+test_flow_direction_and_conversion (test_math.Mathematics) ... ok
+test_nfe_and_gradient_boundaries (test_math.Mathematics) ... ok
+test_sid_full_input_jacobians (test_math.Mathematics) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.738s
+
+OK

@@ -1,0 +1,3112 @@
+{
+  "schema": 1,
+  "group": "FastGen-SiD-DiT",
+  "archive_branch": "archive/sid-dit",
+  "source_head": "0e116ded7b75251c23438deda98b1a33da8da958",
+  "files": [
+    {
+      "original_path": "FastGen-SiD-DiT/.gitignore",
+      "git_path": ".gitignore",
+      "sha256": "b2c1fd87ed93c535b56c981451bc5c4db4dd1a5203aa4621b536c11a0b59805f",
+      "bytes": 294
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/.orca/.gitignore",
+      "git_path": ".orca/.gitignore",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "bytes": 14
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/AGENTS.md",
+      "git_path": "AGENTS.md",
+      "sha256": "1ab912a2352e7aed17ef76c2994e994184b018ea2e42bb10dcc24f9f365b9e6b",
+      "bytes": 6456
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/README.md",
+      "git_path": "README.md",
+      "sha256": "8aae302be3aaeb69f11cc73a63590d6787fce1b02e0a3853219977ba3cc004f3",
+      "bytes": 20277
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/README_LOCAL.md",
+      "git_path": "README_LOCAL.md",
+      "sha256": "a06d3f7cc3c1f93fda0366a9a4e167db8f0bdff147fbdb0e291c755c842947d9",
+      "bytes": 1868
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/THIRD_PARTY.md",
+      "git_path": "THIRD_PARTY.md",
+      "sha256": "5b6f23077271fbb7db0681b91bdb9dbab90abf997d07fc57efd904a02aac602c",
+      "bytes": 2272
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/analysis_tools/archive_candidates.py",
+      "git_path": "analysis_tools/archive_candidates.py",
+      "sha256": "b5c1ee5e58e35276a8e7e239da1744c53fe8b7087632192936b1e89d31faec2c",
+      "bytes": 3696
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/analysis_tools/audit_campaign.py",
+      "git_path": "analysis_tools/audit_campaign.py",
+      "sha256": "1b30897583ab3f348d36593fc1955d116508ca0ddf9660426c7d1c3e3e1e28c6",
+      "bytes": 8087
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/analysis_tools/comparison_panels.py",
+      "git_path": "analysis_tools/comparison_panels.py",
+      "sha256": "e8b109e0c883fcc86f4b1f4aff3b41f5b8c8c85a36798abf82d25fc21b3e650b",
+      "bytes": 4585
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/analysis_tools/package_exports.py",
+      "git_path": "analysis_tools/package_exports.py",
+      "sha256": "3bb8c62a489d94ee81634339293466b088581de8632bf12cee9f95fdcb780402",
+      "bytes": 6643
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/analysis_tools/qualify_selected_teacher.py",
+      "git_path": "analysis_tools/qualify_selected_teacher.py",
+      "sha256": "2047f6b4fdc0e873cb1bdf2658f7876bce85984331858d5c78b444da5ac2a693",
+      "bytes": 3562
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/analysis_tools/update_report.py",
+      "git_path": "analysis_tools/update_report.py",
+      "sha256": "4b5d6ed2645854324387b02ee4dd9a6206ba914799dbaff45ffead96eb1f7e27",
+      "bytes": 14829
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A1/001000.json",
+      "git_path": "artifacts/evaluated_weights/A1/001000.json",
+      "sha256": "e09eacfae7796aab538dad54bcd458372bd9cb40d1aa69f4513627533fe5589d",
+      "bytes": 1039
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A1/002000.json",
+      "git_path": "artifacts/evaluated_weights/A1/002000.json",
+      "sha256": "e33caccb75b0c6be36820cca4438dc8da5b77bc05f65cb499ef1ca08aa11dcac",
+      "bytes": 1038
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A1/004000.json",
+      "git_path": "artifacts/evaluated_weights/A1/004000.json",
+      "sha256": "59fcf224e7d605f5b086c4dc85566bc7571a203e667d65e3688cd851002cf112",
+      "bytes": 1038
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A2/001000.json",
+      "git_path": "artifacts/evaluated_weights/A2/001000.json",
+      "sha256": "7e3333a2269a8bdfa1e61980fb90d32ab305e718676968434a1cbed50039b800",
+      "bytes": 1039
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A2/002000.json",
+      "git_path": "artifacts/evaluated_weights/A2/002000.json",
+      "sha256": "591c99c654335de175bbf8ef9b5ca59f8650bedaab56a20eb7c3d2152d241e6a",
+      "bytes": 1037
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A2/004000.json",
+      "git_path": "artifacts/evaluated_weights/A2/004000.json",
+      "sha256": "253cd9e2d498af08c0eb30fc8d7bf79287ab1a63c3fcffa89c2c2ea6cf1c9d06",
+      "bytes": 1037
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A3/001000.json",
+      "git_path": "artifacts/evaluated_weights/A3/001000.json",
+      "sha256": "bdb093d6a1930da1e3a22276c89a504543a3b6206ef84a5b2083f9a80fba5939",
+      "bytes": 1039
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A3/002000.json",
+      "git_path": "artifacts/evaluated_weights/A3/002000.json",
+      "sha256": "6ec6332861e86efde41e99f19c1b80701c2589af7d68f8cd14676d598543228d",
+      "bytes": 1038
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A3/004000.json",
+      "git_path": "artifacts/evaluated_weights/A3/004000.json",
+      "sha256": "9c1e0b3ac384c43c88b9b5961979250d7e646e39614a7ee84265627f342efb03",
+      "bytes": 1038
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A4/001000.json",
+      "git_path": "artifacts/evaluated_weights/A4/001000.json",
+      "sha256": "ebf85eab74b7a884f737574e96abc5fc70bbdbecf54da63773d4164a384ea3cb",
+      "bytes": 1039
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A4/002000.json",
+      "git_path": "artifacts/evaluated_weights/A4/002000.json",
+      "sha256": "ccb37985831561c00176a7a193edc08e77ef7612c09f884887a1fcd076ed4c42",
+      "bytes": 1037
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/A4/004000.json",
+      "git_path": "artifacts/evaluated_weights/A4/004000.json",
+      "sha256": "4ae1cb13621483af0c9aa2a99b2bf19ba9a4db4f5b62b77beac185ec72d034b6",
+      "bytes": 1040
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S1/001000.json",
+      "git_path": "artifacts/evaluated_weights/S1/001000.json",
+      "sha256": "008034a1fa53251ac1d4252022c1b3d63227d4a8a5e327217720dd3677877d18",
+      "bytes": 1039
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S1/002000.json",
+      "git_path": "artifacts/evaluated_weights/S1/002000.json",
+      "sha256": "ef323f63f4435c60a7c83c351f1b7df2172e13763ad0ca98eabab73214d4ce0a",
+      "bytes": 1036
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S1/004000.json",
+      "git_path": "artifacts/evaluated_weights/S1/004000.json",
+      "sha256": "455d81b6d2006965ccb76cc09064b914677d8abe1d1f129fa691661fdb28865f",
+      "bytes": 1040
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S2/001000.json",
+      "git_path": "artifacts/evaluated_weights/S2/001000.json",
+      "sha256": "077741866f887a17383671e7ed0745beaa828d025d7a270532428ba2f56f78f1",
+      "bytes": 1039
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S2/002000.json",
+      "git_path": "artifacts/evaluated_weights/S2/002000.json",
+      "sha256": "d5a48d85233b7c51d9064c0326b641478128bd454950173292fef9523efb42d7",
+      "bytes": 1039
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S2/004000.json",
+      "git_path": "artifacts/evaluated_weights/S2/004000.json",
+      "sha256": "8ab267185f0161f019d1b06c45be94a4d9ea399b414a967fdad0400c07306355",
+      "bytes": 1040
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S3/001000.json",
+      "git_path": "artifacts/evaluated_weights/S3/001000.json",
+      "sha256": "fe6378cf855330131461b85229448ba961e83479979a6d401136639ede9fda3b",
+      "bytes": 1037
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S3/002000.json",
+      "git_path": "artifacts/evaluated_weights/S3/002000.json",
+      "sha256": "9ba63bbaf32b8a9667fc4d6bd6d053b8ea66e527a34df26b19f047b4b6749ca3",
+      "bytes": 1039
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S3/004000.json",
+      "git_path": "artifacts/evaluated_weights/S3/004000.json",
+      "sha256": "351e5c2576bbfab6fd7ec80d1a52ea5aaba9ae36849a0a051975c7288c7991b9",
+      "bytes": 1039
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S4/001000.json",
+      "git_path": "artifacts/evaluated_weights/S4/001000.json",
+      "sha256": "413e73fd4eec7288eeb9166686b4b1ab7400d8a1a43ff5642e8c71ae71144f71",
+      "bytes": 1039
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S4/002000.json",
+      "git_path": "artifacts/evaluated_weights/S4/002000.json",
+      "sha256": "32d15f64eaf83fcc8138cad811e93638b89594788d57838362533a625aa1e163",
+      "bytes": 1039
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/S4/004000.json",
+      "git_path": "artifacts/evaluated_weights/S4/004000.json",
+      "sha256": "98f731eaf6da9687db3f6976a77df407e2701ba59bfd4e18abcea97f7481d185",
+      "bytes": 1037
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/T/010000.json",
+      "git_path": "artifacts/evaluated_weights/T/010000.json",
+      "sha256": "f3d3a5598a944364310cbb3040c8c383af9325004d2d2b3f3e46d872067672e1",
+      "bytes": 1037
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/T/020000.json",
+      "git_path": "artifacts/evaluated_weights/T/020000.json",
+      "sha256": "bfac74cd4643639456dfc697e380b2c7e79aec2468f0ae1ab299159a8dd1efc1",
+      "bytes": 1038
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/evaluated_weights/T/030000.json",
+      "git_path": "artifacts/evaluated_weights/T/030000.json",
+      "sha256": "a520d3ba2caef101c0903554f1940bc5c859be2576375f53fccb289aec4c9c1c",
+      "bytes": 1038
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/exports/inference/README.md",
+      "git_path": "artifacts/exports/inference/README.md",
+      "sha256": "a4c5538e7bf9c1ec6a32d8c0eebd111a2092ecb9a102ec997a3158ba22fa6f72",
+      "bytes": 883
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/exports/inference/category_to_id.json",
+      "git_path": "artifacts/exports/inference/category_to_id.json",
+      "sha256": "7c27ec2a15fa4f70b5729319d596d3a80bc528cdeeb02f36b88877a6545b77e8",
+      "bytes": 2656
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/exports/inference/flow_sid/__init__.py",
+      "git_path": "artifacts/exports/inference/flow_sid/__init__.py",
+      "sha256": "3c1c732cdaf623dd5bd4218b71475d98d702757fca9dc38f12378d084857ca73",
+      "bytes": 62
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/exports/inference/flow_sid/flow.py",
+      "git_path": "artifacts/exports/inference/flow_sid/flow.py",
+      "sha256": "ef2c5139d07827f5612d5d4c3be05a6109820eb635357984e15d2ea6a3db027a",
+      "bytes": 2796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/exports/inference/flow_sid/networks.py",
+      "git_path": "artifacts/exports/inference/flow_sid/networks.py",
+      "sha256": "eaee62c7af192125e5befb0e219315475ba04d2eca22b954025453ad69d2d952",
+      "bytes": 1563
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/exports/inference/flow_sid/unet.py",
+      "git_path": "artifacts/exports/inference/flow_sid/unet.py",
+      "sha256": "d078a92dcfe3f5c2e65d4f45079b645303a387e3bda3c1d6c29b1b5cfa848c44",
+      "bytes": 19792
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/exports/inference/manifest.json",
+      "git_path": "artifacts/exports/inference/manifest.json",
+      "sha256": "2faec8ddebf751a36d710a6e8e0ab2686131c2ecf473c9734faa3179b36e1bd5",
+      "bytes": 2220
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/exports/inference/model.py",
+      "git_path": "artifacts/exports/inference/model.py",
+      "sha256": "b16f82d5513aca91859cdc258cd13937611192b125936bc4c008536c95df2921",
+      "bytes": 4877
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/exports/inference/src/__init__.py",
+      "git_path": "artifacts/exports/inference/src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/exports/inference/src/utils.py",
+      "git_path": "artifacts/exports/inference/src/utils.py",
+      "sha256": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f",
+      "bytes": 1027
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/plumbing_evaluation/diversity.json",
+      "git_path": "artifacts/plumbing_evaluation/diversity.json",
+      "sha256": "daca38c4e262a1e15c218218ae7380ec9ba71b77c8303cd452dc1804186c610f",
+      "bytes": 54137
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/plumbing_evaluation/metrics.json",
+      "git_path": "artifacts/plumbing_evaluation/metrics.json",
+      "sha256": "3049d4c5b0628c15b420d3e6cbf7b0e7ce91e5f588f457104d322d3a1e7f26da",
+      "bytes": 289
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/report/comparisons/manifest_through_nfe1.json",
+      "git_path": "artifacts/report/comparisons/manifest_through_nfe1.json",
+      "sha256": "def001cf7ee8af09a4dcb73d3d5ce1f1920cd19bf6dfe5ab41ba2489f72d6ae3",
+      "bytes": 99691
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/report/comparisons/manifest_through_nfe2.json",
+      "git_path": "artifacts/report/comparisons/manifest_through_nfe2.json",
+      "sha256": "9f28cdb38b5f9d3757baa933565218e7a3a40b00a0c9627b86c1f405d2398857",
+      "bytes": 177265
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/report/comparisons/manifest_through_nfe3.json",
+      "git_path": "artifacts/report/comparisons/manifest_through_nfe3.json",
+      "sha256": "db460a188447df2fca9deebd6155298746e53e07ec87c31fa1c826db4681c14f",
+      "bytes": 254839
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/report/quality_vs_nfe.svg",
+      "git_path": "artifacts/report/quality_vs_nfe.svg",
+      "sha256": "f7ba3328bc94df68b44b9edd9c0a5522becd1c5db83145b4728559058ea164a5",
+      "bytes": 2623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/artifacts/report/quality_vs_pipeline_cost.svg",
+      "git_path": "artifacts/report/quality_vs_pipeline_cost.svg",
+      "sha256": "2e2d2054434d90f6e12993dc44c92a467d7093b8cfb8a67d16fc26ecda5d399f",
+      "bytes": 2556
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/assets/FastGen.pdf",
+      "git_path": "assets/FastGen.pdf",
+      "sha256": "1a9ccc1af4d6513d3eaef28998b6540581bb368399c333a888168f85dc85e6aa",
+      "bytes": 1326452
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/assets/representative_samples.png",
+      "git_path": "assets/representative_samples.png",
+      "sha256": "f57aa021d0840177145e241063a1c4c689180c3fc194706c39453c4caa8b3df6",
+      "bytes": 1472342
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/configs/campaign.json",
+      "git_path": "configs/campaign.json",
+      "sha256": "9c7806460de032ebea4e1adc18638d1380d6734952d2e1402ca75e99f07ca207",
+      "bytes": 2630
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/configs/probe_recipe.json",
+      "git_path": "configs/probe_recipe.json",
+      "sha256": "253d21c03d6e6a51770e13153008a3da2599d22493048a89cdd75a741b6cbc6b",
+      "bytes": 647
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/configs/qualification.json",
+      "git_path": "configs/qualification.json",
+      "sha256": "2c1537f356ade83d78db2075b5f7e1a7ac5dd7ba351e8f3b7f69f0c4fedc0c58",
+      "bytes": 649
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/data/pokemon-generation-one-22k/category_to_id.json",
+      "git_path": "data/pokemon-generation-one-22k/category_to_id.json",
+      "sha256": "7c27ec2a15fa4f70b5729319d596d3a80bc528cdeeb02f36b88877a6545b77e8",
+      "bytes": 2656
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/data/pokemon-generation-one-22k/train_split.txt",
+      "git_path": "data/pokemon-generation-one-22k/train_split.txt",
+      "sha256": "c4068bdec8c5994fa14887d3335e762dd6a4da1bc6394a6df7fae96d293138c0",
+      "bytes": 703371
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/data/pokemon-generation-one-22k/val_split.txt",
+      "git_path": "data/pokemon-generation-one-22k/val_split.txt",
+      "sha256": "6dfba46a82c1bb329287d6da0f87be1b3b71d26c217150bf681f37cce4264df0",
+      "bytes": 153787
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/dataset.py",
+      "git_path": "dataset.py",
+      "sha256": "47aea2b4ae6833198cbfa0801e0cc63fd5425dbe72bb77aec7f19a97ad90d063",
+      "bytes": 5923
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/docs/DIRECTION_AUDIT_20261002.md",
+      "git_path": "docs/DIRECTION_AUDIT_20261002.md",
+      "sha256": "afde578cae52bf91708c062eef547d468a042dcd1937c5c78d466491ce432b7b",
+      "bytes": 12108
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/docs/EXPERIMENT_PLAN.md",
+      "git_path": "docs/EXPERIMENT_PLAN.md",
+      "sha256": "cb2d43087bfa54b044f102c0da6c1a86d473a332c027d413820a8f3557bb07a7",
+      "bytes": 11684
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/docs/FEASIBILITY_FOCUS.md",
+      "git_path": "docs/FEASIBILITY_FOCUS.md",
+      "sha256": "fdcae8af07628e7329316ace763bbbe739fcbf72deccbd2272754aea03671be5",
+      "bytes": 4725
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/docs/FEASIBILITY_HANDOFF.md",
+      "git_path": "docs/FEASIBILITY_HANDOFF.md",
+      "sha256": "d4c64518438f47b22c6e12572d27828d6b9d5b31b4a6135b48bb17af3fe7888b",
+      "bytes": 8408
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/docs/FROZEN_PROTOCOL.md",
+      "git_path": "docs/FROZEN_PROTOCOL.md",
+      "sha256": "b5922a780139a0856068b23be88eb6298ddc26f8f6ce9514aadfe9d3617fe190",
+      "bytes": 5066
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/docs/HANDOFF.md",
+      "git_path": "docs/HANDOFF.md",
+      "sha256": "6d5ddf9b5980c56a91ef1a216fa0465d77ada636620b19a3deb857a74ba08914",
+      "bytes": 12625
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/docs/IMPLEMENTATION.md",
+      "git_path": "docs/IMPLEMENTATION.md",
+      "sha256": "ca437f1df2cf0f5dd7fdcfa8f1f218bce46754a6e6384b9a89993e422c332593",
+      "bytes": 10373
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/docs/RESULTS.md",
+      "git_path": "docs/RESULTS.md",
+      "sha256": "6f91057381538bfe3ee2a4ae1b17cc6e422890e05ad03aada4d662868c14fe6d",
+      "bytes": 26604
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/download_dataset.py",
+      "git_path": "download_dataset.py",
+      "sha256": "e8e882dec2a83dcf5bdbfc1eb592df50948966a66d2a147ea87332652a8190a0",
+      "bytes": 3553
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/evaluate.py",
+      "git_path": "evaluate.py",
+      "sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "bytes": 5578
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/flow_sid/__init__.py",
+      "git_path": "flow_sid/__init__.py",
+      "sha256": "3c1c732cdaf623dd5bd4218b71475d98d702757fca9dc38f12378d084857ca73",
+      "bytes": 62
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/flow_sid/common.py",
+      "git_path": "flow_sid/common.py",
+      "sha256": "e4dc5a2cc2f3fcce5f7afcb9310eb02975fda0c609a57a2fe6beac76e1d11d20",
+      "bytes": 3474
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/flow_sid/data.py",
+      "git_path": "flow_sid/data.py",
+      "sha256": "2db84f3af46cb508dc2a132ff4c0da0346604084466e6335d4cd36a3b97d1f39",
+      "bytes": 4490
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/flow_sid/engine.py",
+      "git_path": "flow_sid/engine.py",
+      "sha256": "d265be60a6a6ade3c3b4c7e46dfc3dae86d14fe7583e9650ef81ffbd55bd84db",
+      "bytes": 17969
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/flow_sid/evaluation.py",
+      "git_path": "flow_sid/evaluation.py",
+      "sha256": "eab273142eaa2d2a42d2c6a39a6c2deb2ccf28fc70719c6d66257ee14c1ba7c3",
+      "bytes": 8779
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/flow_sid/flow.py",
+      "git_path": "flow_sid/flow.py",
+      "sha256": "ef2c5139d07827f5612d5d4c3be05a6109820eb635357984e15d2ea6a3db027a",
+      "bytes": 2796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/flow_sid/gpu.py",
+      "git_path": "flow_sid/gpu.py",
+      "sha256": "0ec6bc46fe3c121ba1b3c2e953d1246de99eabe75aba9b25b190f0fbad3f3f55",
+      "bytes": 3313
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/flow_sid/networks.py",
+      "git_path": "flow_sid/networks.py",
+      "sha256": "eaee62c7af192125e5befb0e219315475ba04d2eca22b954025453ad69d2d952",
+      "bytes": 1563
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/flow_sid/unet.py",
+      "git_path": "flow_sid/unet.py",
+      "sha256": "d078a92dcfe3f5c2e65d4f45079b645303a387e3bda3c1d6c29b1b5cfa848c44",
+      "bytes": 19792
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/model.py",
+      "git_path": "model.py",
+      "sha256": "b16f82d5513aca91859cdc258cd13937611192b125936bc4c008536c95df2921",
+      "bytes": 4877
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/program_comparison.md",
+      "git_path": "program_comparison.md",
+      "sha256": "183a437268fe206e361791bd59d68afc2d6e3e0810c40463044c788f6afe5677",
+      "bytes": 17659
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/requirements.txt",
+      "git_path": "requirements.txt",
+      "sha256": "e30940e3e890e6e5463f617475b97d7415e73f349fbf4070936aa284f0573eb2",
+      "bytes": 50
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/audit_through_nfe2.json",
+      "git_path": "resources/audit_through_nfe2.json",
+      "sha256": "652416e41397af7d4712b5bd8a4c2b9be59504cada9a3d1e6d160e65fb35714d",
+      "bytes": 7418
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/audit_through_nfe4.json",
+      "git_path": "resources/audit_through_nfe4.json",
+      "sha256": "7a0cdc969c44f0d6f4d1e9cdd61e32a3b84824c8c55341f8d963562eddfd5af3",
+      "bytes": 13164
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/campaign_results.json",
+      "git_path": "resources/campaign_results.json",
+      "sha256": "0fc9b2f6cf86c761a50c414c37827027de42e57f20dcc65e68445b08ff2fe0fa",
+      "bytes": 57938
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/campaign_source.json",
+      "git_path": "resources/campaign_source.json",
+      "sha256": "63ba34185eefc8b4c79df557f6f33df48f6af265aebdcdf65a86283201996dba",
+      "bytes": 1761
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/development_split.json",
+      "git_path": "resources/development_split.json",
+      "sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "bytes": 310859
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/direction_audit_20261002.json",
+      "git_path": "resources/direction_audit_20261002.json",
+      "sha256": "a46e61ad1ad765ec49658809c5beaa2198ec834cbb6adfd5a5bd852fe6f6a312",
+      "bytes": 1815
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/environment.lock.txt",
+      "git_path": "resources/environment.lock.txt",
+      "sha256": "4c0c0c934b547bc7f5511473cd4c5e88e6a72dcf632bc8c31613bc07837ab150",
+      "bytes": 923
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/evaluated_weights_inventory.json",
+      "git_path": "resources/evaluated_weights_inventory.json",
+      "sha256": "8c5316cc3a58be292020844f4fd38abc4146fd484b2e15c1e98ecb8c18ec190b",
+      "bytes": 31860
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/export_verification_through_nfe2.json",
+      "git_path": "resources/export_verification_through_nfe2.json",
+      "sha256": "b5982f43af7dbcba73df7c6eb4322840625fa163e905a8341a8a5cae2e04a6c5",
+      "bytes": 2050
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/export_verification_through_nfe4.json",
+      "git_path": "resources/export_verification_through_nfe4.json",
+      "sha256": "83d542e870a9661a7edef1cd94e0e483c1931dd80107dd91aa8ee27250227e70",
+      "bytes": 4242
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/final_campaign_summary.json",
+      "git_path": "resources/final_campaign_summary.json",
+      "sha256": "c2449d4cb27b6550fed750ca208b331ac2bc474d57f782e055d012093bab067d",
+      "bytes": 4212
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/four_nfe_pair_findings.json",
+      "git_path": "resources/four_nfe_pair_findings.json",
+      "sha256": "8f283b47133c30fbf351e1c6faf2e6d839f21f1861bd3f3b891aa0cbc6541da7",
+      "bytes": 1524
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/frozen_students.json",
+      "git_path": "resources/frozen_students.json",
+      "sha256": "144fe06d190a733d783bd3b85cec79791049761013556fb2875d81c6e751a1be",
+      "bytes": 1244
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/gallery_reviews.json",
+      "git_path": "resources/gallery_reviews.json",
+      "sha256": "1320824221ea8b0f7a256e71be0487c336629cfa23a0ffaa3503a12161ae594d",
+      "bytes": 20819
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/handoff_verification.json",
+      "git_path": "resources/handoff_verification.json",
+      "sha256": "4335f8f4024272b5d7e2b013e87aff91e03e8c3f59753faaa6f527316df64cb8",
+      "bytes": 2289
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/milestone_nfe2.json",
+      "git_path": "resources/milestone_nfe2.json",
+      "sha256": "e199034314658b70cc45c5ce2c83d84e1628a5bceb974ccde83d6babdfbda9a1",
+      "bytes": 32269
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/one_nfe_pair_findings.json",
+      "git_path": "resources/one_nfe_pair_findings.json",
+      "sha256": "76f3d3005d13b81cece4cfa302f2590ec4cda323acbe26b61422eba586f95207",
+      "bytes": 1534
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/pair_draw_audit_1_001000.json",
+      "git_path": "resources/pair_draw_audit_1_001000.json",
+      "sha256": "cefb5ca3b38da6d943957107c12a07631e809b5644dfc2abe8bf5ae00f4b644a",
+      "bytes": 274
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/pair_draw_audit_1_final.json",
+      "git_path": "resources/pair_draw_audit_1_final.json",
+      "sha256": "42179310a9e9a30fc9029c15abf5974d141b96ba00761b11d5414101413f2edc",
+      "bytes": 138
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/pair_draw_audit_3_final.json",
+      "git_path": "resources/pair_draw_audit_3_final.json",
+      "sha256": "27800792a25665ca078775893f27f90d1344d2b79742b1a3b25ff82d967db23c",
+      "bytes": 320
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A1_001000.json",
+      "git_path": "resources/progress_A1_001000.json",
+      "sha256": "3ca81272438834ecb8d01cba35c3c3e9e3d7b2137bd145f81a7b735f0995f21c",
+      "bytes": 2215
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A1_002000.json",
+      "git_path": "resources/progress_A1_002000.json",
+      "sha256": "14919acc04c46264eb38bfe7969405704314163ee912badd2e253fbe1e1ab151",
+      "bytes": 2143
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A1_final.json",
+      "git_path": "resources/progress_A1_final.json",
+      "sha256": "e3fa5ae743a870d0e2b4e7ace34ab4df8ee997ee16acfbcc3aeaeddd63b4b999",
+      "bytes": 6839
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A2_001000.json",
+      "git_path": "resources/progress_A2_001000.json",
+      "sha256": "4ad858cafdee2749217cd0bff1b902649ae700280f421ab4aebe9b95cfc8950a",
+      "bytes": 2207
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A2_002000.json",
+      "git_path": "resources/progress_A2_002000.json",
+      "sha256": "e9083b9408a7adaa86a8f3b3d11ba5cf52a2687e8f034046c88c9b89cf988d5b",
+      "bytes": 2204
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A2_final.json",
+      "git_path": "resources/progress_A2_final.json",
+      "sha256": "421a3d1070ecfadd3781fd4228294b7256390e7b8514ecd0012601df92d21020",
+      "bytes": 6832
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A3_001000.json",
+      "git_path": "resources/progress_A3_001000.json",
+      "sha256": "522dcc6f93e19a9c0a80a31b925f381127cca3e72e85fcda9829f0f0740f28bb",
+      "bytes": 2205
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A3_002000.json",
+      "git_path": "resources/progress_A3_002000.json",
+      "sha256": "5fcb0c0bb8a88e033baac36c61cb049243d9eed1220472002b1a61290e475111",
+      "bytes": 2206
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A3_final.json",
+      "git_path": "resources/progress_A3_final.json",
+      "sha256": "03330b8073e49766ae1bffc84d7ee99189c469ff090af2d821e4a20caef69e82",
+      "bytes": 6877
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A4_001000.json",
+      "git_path": "resources/progress_A4_001000.json",
+      "sha256": "ac81758fc26538d5c8a648345c37fdfe5c5620792be5b6ac677b1b8daaef14c8",
+      "bytes": 2208
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A4_002000.json",
+      "git_path": "resources/progress_A4_002000.json",
+      "sha256": "8c72bf378b10833790768c2c8b10c82d79ef13dc5f19f35e0ce426d69eed83cf",
+      "bytes": 2205
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_A4_final.json",
+      "git_path": "resources/progress_A4_final.json",
+      "sha256": "f3bd5426159770da5bf0a2efe601822a28735bcd927820661528eee6df612e3a",
+      "bytes": 6859
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S1_001000.json",
+      "git_path": "resources/progress_S1_001000.json",
+      "sha256": "9ff735159c476648aab5f0bfcb9dc80f3ea3f17a92e90e672466947c99cfa545",
+      "bytes": 2031
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S1_002000.json",
+      "git_path": "resources/progress_S1_002000.json",
+      "sha256": "dd583629e7a3db8f4945232cac8c3d03ac304b8ebfe243c10d4bd2ca0ab7d801",
+      "bytes": 2026
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S1_final.json",
+      "git_path": "resources/progress_S1_final.json",
+      "sha256": "05e85df7ecd291e69b41baeb581779257be5a2497da49585dc0247917d91af00",
+      "bytes": 7095
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S2_001000.json",
+      "git_path": "resources/progress_S2_001000.json",
+      "sha256": "20ec903aa4556d46253d0fa8766ddd08ddb10393e7d8dbc574bb865e69eb4384",
+      "bytes": 2029
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S2_002000.json",
+      "git_path": "resources/progress_S2_002000.json",
+      "sha256": "62a8792d146d33638a82e06720cd5c65b28873e063d403bf94eba37fef0ca22d",
+      "bytes": 2030
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S2_final.json",
+      "git_path": "resources/progress_S2_final.json",
+      "sha256": "394eb68e4985b2f9c2bdf9f1d6888dc293c87c323fc2e9332c24196f907f198f",
+      "bytes": 6831
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S3_001000.json",
+      "git_path": "resources/progress_S3_001000.json",
+      "sha256": "1f728aaa45092f3272d2b7b10cf5ecd586e7ebf53aae653efb7366bdd0fe9354",
+      "bytes": 2025
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S3_002000.json",
+      "git_path": "resources/progress_S3_002000.json",
+      "sha256": "c28a2a0954a9d1c7b029064b881351f8aad977d4d4fb688f51c11474732715ab",
+      "bytes": 2030
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S3_final.json",
+      "git_path": "resources/progress_S3_final.json",
+      "sha256": "70f6cf292c9bd8cde77376b6c8ae679aa1d6284239942c774623b105110cc82b",
+      "bytes": 6875
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S4_001000.json",
+      "git_path": "resources/progress_S4_001000.json",
+      "sha256": "13b2ce1187ade5fe5ec7e918b4009396bb9e11aad793efed8abf748bd530a22d",
+      "bytes": 2030
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S4_002000.json",
+      "git_path": "resources/progress_S4_002000.json",
+      "sha256": "0bb930acebebe7632358486a5d5d1555ad85ce6c858c3ffbe862192c42cb31b6",
+      "bytes": 2030
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_S4_final.json",
+      "git_path": "resources/progress_S4_final.json",
+      "sha256": "e5dd862495b7a4e0e8bb991ae6473ab74c9766f1942afac19a6c731ea906ea45",
+      "bytes": 6852
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_T_010000.json",
+      "git_path": "resources/progress_T_010000.json",
+      "sha256": "af48282b7e0dfda83105785b5c48717363eddf08f5f82a6d81d5259844d8c13d",
+      "bytes": 2562
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_T_020000.json",
+      "git_path": "resources/progress_T_020000.json",
+      "sha256": "d5fe6ccdd49fc897eb4e5899dea1c661e9ab1a63a87f39ca41e9b7482b3ca636",
+      "bytes": 2077
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/progress_T_final.json",
+      "git_path": "resources/progress_T_final.json",
+      "sha256": "adbe18044dedd10330b4a15cda102221d91a6638aec6dbde8495299ae373bf4d",
+      "bytes": 6939
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/provenance.json",
+      "git_path": "resources/provenance.json",
+      "sha256": "b6e7b057353695d9ecc9b7eaad9c7cd0352a4391b67c59bc2f88ce2159ef9bae",
+      "bytes": 21286
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/qualification_summary.json",
+      "git_path": "resources/qualification_summary.json",
+      "sha256": "739262fceeb10a976908a4655d94104e6cb4ec3979b291f339d4b277dc81e380",
+      "bytes": 7935
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/selected_teacher_probe.json",
+      "git_path": "resources/selected_teacher_probe.json",
+      "sha256": "50fdeb1152c80b24d0a3ba21db3f254eff58c11e98d4d2e54a877bdaa38ed6ce",
+      "bytes": 8589
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/teacher_qualification.json",
+      "git_path": "resources/teacher_qualification.json",
+      "sha256": "383c711cf9593ab8f0e4d661aca15fddd267e091c73abb0c8df46a6fbdd71927",
+      "bytes": 1390
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/three_nfe_pair_findings.json",
+      "git_path": "resources/three_nfe_pair_findings.json",
+      "sha256": "64c7c6ee0b1d3fdc2e6f249c29e7fa0617a75b0be7a7962fc86f50f5b39549de",
+      "bytes": 1314
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/resources/two_nfe_pair_findings.json",
+      "git_path": "resources/two_nfe_pair_findings.json",
+      "sha256": "b291960397845dcbd6976f88cda4a3f3d8a8e4aa4249f52339f072b178066199",
+      "bytes": 1532
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/confirmation/diversity.json",
+      "git_path": "runs/campaign/A1/confirmation/diversity.json",
+      "sha256": "0f120df33f91df637ec0a90bd342bfec03178cee01b57e8dc8a70a7734df7eec",
+      "bytes": 53942
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/confirmation/metrics.json",
+      "git_path": "runs/campaign/A1/confirmation/metrics.json",
+      "sha256": "34802cb20bc95201f0b8f7b84dddad79aa4f43d13cbe5e11ab944dcf7f6d4557",
+      "bytes": 624
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/d_bce_loss.svg",
+      "git_path": "runs/campaign/A1/d_bce_loss.svg",
+      "sha256": "0c41763a7dd1b48011401d4a77a66efea32a52aaf40a79dd067b7262fc73b525",
+      "bytes": 26766
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/eval_001000/diversity.json",
+      "git_path": "runs/campaign/A1/eval_001000/diversity.json",
+      "sha256": "9cf385c2a4654cd443db69a7052314701cc2a3e51e4b263269660aec093eb0f8",
+      "bytes": 53929
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/eval_001000/metrics.json",
+      "git_path": "runs/campaign/A1/eval_001000/metrics.json",
+      "sha256": "9a0e3df5c97c8d655e5894f3f7f461aa34099751f29b1323aabd830cef57688c",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/eval_002000/diversity.json",
+      "git_path": "runs/campaign/A1/eval_002000/diversity.json",
+      "sha256": "05f897b89b31e4028b7f427aea6a10f7d038b5062889f5bf39125dc9c4c89ef9",
+      "bytes": 53845
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/eval_002000/metrics.json",
+      "git_path": "runs/campaign/A1/eval_002000/metrics.json",
+      "sha256": "88bc02b77e4ae3a6c54455dd1f6b88f3705c64ff6811692e0c2d52460ee3a5a6",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/eval_004000/diversity.json",
+      "git_path": "runs/campaign/A1/eval_004000/diversity.json",
+      "sha256": "22fb8e6154ff88e03043d09a2ea7c78b0d5542696a150f6b562d7e57368d9543",
+      "bytes": 53862
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/eval_004000/metrics.json",
+      "git_path": "runs/campaign/A1/eval_004000/metrics.json",
+      "sha256": "24144b0e4443fb910c847d5581ad8b8905c89c2e0e0219053b8117ae9eed1955",
+      "bytes": 622
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/evaluations.jsonl",
+      "git_path": "runs/campaign/A1/evaluations.jsonl",
+      "sha256": "49611c00201219dba51b3d161a1ba1b92f5ed03848edc610053538ecc10663bf",
+      "bytes": 1835
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/export.json",
+      "git_path": "runs/campaign/A1/export.json",
+      "sha256": "9767a72679acead60d667b2f5a56ee93897cf403568c45cacd72ca8aa1da064f",
+      "bytes": 971
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/fake_D_grad_norm.svg",
+      "git_path": "runs/campaign/A1/fake_D_grad_norm.svg",
+      "sha256": "c8903602ee973bd3b9a2c46b6135ffd10aba44675553d62c88f18707d33ed61d",
+      "bytes": 26808
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/fake_fm_loss.svg",
+      "git_path": "runs/campaign/A1/fake_fm_loss.svg",
+      "sha256": "8c61bfbe3b84333c15323eb520b8588cc15005f116d1c316afbfdbbe72450e0e",
+      "bytes": 26674
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/g_gan_loss.svg",
+      "git_path": "runs/campaign/A1/g_gan_loss.svg",
+      "sha256": "a70d39f41c7ca695979f5b8b01d140b23a2c7ceafb485ac9af010e884fd0c412",
+      "bytes": 26793
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/g_grad_norm.svg",
+      "git_path": "runs/campaign/A1/g_grad_norm.svg",
+      "sha256": "522cb387cf6e7ae54bbf1776f5ef8a76a1b44d45753f078cdf6f2e1b80bb2fb3",
+      "bytes": 26807
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/identity.json",
+      "git_path": "runs/campaign/A1/identity.json",
+      "sha256": "0bae5fd72596489d632174bd76eba2abe018bbc42b3a793076a69733e0ce05b7",
+      "bytes": 2282
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/memory.jsonl",
+      "git_path": "runs/campaign/A1/memory.jsonl",
+      "sha256": "a47aabb6c8de859dd301ed7e32191c9c5ce8d4319cc7878dbfab97eb6c151705",
+      "bytes": 37156
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/seconds.svg",
+      "git_path": "runs/campaign/A1/seconds.svg",
+      "sha256": "9c2385fc7b01ad6c378488bcc752eed8bdd6e8092cc97272684e7a3151344b82",
+      "bytes": 26799
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/selected.json",
+      "git_path": "runs/campaign/A1/selected.json",
+      "sha256": "f8e796c2705c60a8723b5ed46f42b17f6b682b5603bb3c2430868f8953458bd5",
+      "bytes": 931
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/sid_loss.svg",
+      "git_path": "runs/campaign/A1/sid_loss.svg",
+      "sha256": "64f15b66901eee107443fb7e009c5b3221d0ef4a5a4675d6bac796020b22bbdf",
+      "bytes": 26740
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/status.json",
+      "git_path": "runs/campaign/A1/status.json",
+      "sha256": "638712808862f5a00ac8475efd6dd24f8e14dd3125a764d38297ad4d8f2187ca",
+      "bytes": 1887
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A1/worker_00.log",
+      "git_path": "runs/campaign/A1/worker_00.log",
+      "sha256": "8b7072f07ede5273cc640db27827a97cc3adb604db6565f651cf73b0e40f3dd0",
+      "bytes": 205457
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/confirmation/diversity.json",
+      "git_path": "runs/campaign/A2/confirmation/diversity.json",
+      "sha256": "27ad45fab84fbea3b61f4584885f3c380c2046ea25ca78adfc65a0272c7ba39b",
+      "bytes": 53863
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/confirmation/metrics.json",
+      "git_path": "runs/campaign/A2/confirmation/metrics.json",
+      "sha256": "db86c10dbf70ffb5a7ed33128e3ea71f92bcdef6323142ce8373ecf6fa454bd7",
+      "bytes": 625
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/d_bce_loss.svg",
+      "git_path": "runs/campaign/A2/d_bce_loss.svg",
+      "sha256": "a3428e4731fceb3278dea5ecd83f7748c0e662e5f15d857687bb95a8e77bddc0",
+      "bytes": 26762
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/eval_001000/diversity.json",
+      "git_path": "runs/campaign/A2/eval_001000/diversity.json",
+      "sha256": "e0d4b8f72d2f8f7dab6f74a79ce62c9b79b2345c3e974309d252f6f72f4a1ba3",
+      "bytes": 53911
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/eval_001000/metrics.json",
+      "git_path": "runs/campaign/A2/eval_001000/metrics.json",
+      "sha256": "7ca1386096a4e40f6f90fe99c8581c33d2eb481feaebfe130b3587f677a2d9d9",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/eval_002000/diversity.json",
+      "git_path": "runs/campaign/A2/eval_002000/diversity.json",
+      "sha256": "655066141870e8eb2cf419493b137d54e454ec4ad22a020dc76e2a05ac671c99",
+      "bytes": 53835
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/eval_002000/metrics.json",
+      "git_path": "runs/campaign/A2/eval_002000/metrics.json",
+      "sha256": "20a70ea45a158a15057fb528bb0a097ae1284f71daaf6f78f4dd6bc8b4ab11ce",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/eval_004000/diversity.json",
+      "git_path": "runs/campaign/A2/eval_004000/diversity.json",
+      "sha256": "4940724bb8ba263026ec7db87f2cf093ebd4d99821701958ab21c70450ee9f1c",
+      "bytes": 53838
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/eval_004000/metrics.json",
+      "git_path": "runs/campaign/A2/eval_004000/metrics.json",
+      "sha256": "70477fcff03d7a30ae880431c1ea63965ca96dd042e7019807b9fdc089855395",
+      "bytes": 622
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/evaluations.jsonl",
+      "git_path": "runs/campaign/A2/evaluations.jsonl",
+      "sha256": "b67d796e454480f0f6b0270bee5cfd42606908a5faccbcdf934c560b616c20a4",
+      "bytes": 1835
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/export.json",
+      "git_path": "runs/campaign/A2/export.json",
+      "sha256": "760f4e12bb55c1c7d3091e10f5a8f634047c3591ddc24488eeb6ea613523c63d",
+      "bytes": 981
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/fake_D_grad_norm.svg",
+      "git_path": "runs/campaign/A2/fake_D_grad_norm.svg",
+      "sha256": "fb55dc5b40d7faee73f0b4520a4755f20ab633f78ccb829008e4c7473711fd65",
+      "bytes": 26809
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/fake_fm_loss.svg",
+      "git_path": "runs/campaign/A2/fake_fm_loss.svg",
+      "sha256": "cc3f84622ed106e0bf88ec84fb572c0cd349f0087d6ada9eb2e2864cf11cc09f",
+      "bytes": 26717
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/g_gan_loss.svg",
+      "git_path": "runs/campaign/A2/g_gan_loss.svg",
+      "sha256": "9c95399702f1f52568b88a53b6695ee87cf61a6b8a8d5d52e18c78e2cb9c9cfd",
+      "bytes": 26793
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/g_grad_norm.svg",
+      "git_path": "runs/campaign/A2/g_grad_norm.svg",
+      "sha256": "b6e382c6205f235e3531e822c2818d2a3ff914011d94a38da5b4fd594104cc08",
+      "bytes": 26808
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/identity.json",
+      "git_path": "runs/campaign/A2/identity.json",
+      "sha256": "6d92c2192ff141a99d73de193d89082b9ed871bb0ada2f067fadd8e157c00d2f",
+      "bytes": 2282
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/memory.jsonl",
+      "git_path": "runs/campaign/A2/memory.jsonl",
+      "sha256": "6f96b87811cc217e1b2b02b4a8f7a4177e931e631c276ffd0fca127f91696234",
+      "bytes": 37156
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/seconds.svg",
+      "git_path": "runs/campaign/A2/seconds.svg",
+      "sha256": "a3987ae5f7f1fdd18041ed8bd0b409c42767157e090cf1d987429a77d9800ae6",
+      "bytes": 26763
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/selected.json",
+      "git_path": "runs/campaign/A2/selected.json",
+      "sha256": "874c450fe75507e44a19006f632e7fde76592dd817d9b379ab1a1a2b60ca87e2",
+      "bytes": 931
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/sid_loss.svg",
+      "git_path": "runs/campaign/A2/sid_loss.svg",
+      "sha256": "527af10c851d4e44329dcb7e5c442711ae83553368e492570faf309105f86d13",
+      "bytes": 25518
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/status.json",
+      "git_path": "runs/campaign/A2/status.json",
+      "sha256": "2c719dd2d3e5a56ae4df32f778f5b6607e79c007f71a762b07c6b9bd986c1bf4",
+      "bytes": 1887
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A2/worker_00.log",
+      "git_path": "runs/campaign/A2/worker_00.log",
+      "sha256": "f49b5a9be7e415448ab62b81b4165b1de98c6f28647e95dd4331b72bcac4044f",
+      "bytes": 205247
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/confirmation/diversity.json",
+      "git_path": "runs/campaign/A3/confirmation/diversity.json",
+      "sha256": "2d0f7a4ada30e9fc0deca28cf7da93ae1d1f4ef5fc4c1f9fbb9873145d315b4c",
+      "bytes": 53871
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/confirmation/metrics.json",
+      "git_path": "runs/campaign/A3/confirmation/metrics.json",
+      "sha256": "40f39152e01c494931e78bc349cd29e5ae73d210baa4a3c3fcecdbf84c47ee03",
+      "bytes": 624
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/d_bce_loss.svg",
+      "git_path": "runs/campaign/A3/d_bce_loss.svg",
+      "sha256": "5e3ea1561121d399f8184294ba8737d1e147d9c9e98be7594d942a6d51ebfb2b",
+      "bytes": 26771
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/eval_001000/diversity.json",
+      "git_path": "runs/campaign/A3/eval_001000/diversity.json",
+      "sha256": "12447a91248efc83f166eeccfac1c78f6c3e7fe1d0618330d167b6340512644a",
+      "bytes": 53869
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/eval_001000/metrics.json",
+      "git_path": "runs/campaign/A3/eval_001000/metrics.json",
+      "sha256": "cea98b21570728c1d39b35b516532c945d765ea1306f28b352c67b0509491e33",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/eval_002000/diversity.json",
+      "git_path": "runs/campaign/A3/eval_002000/diversity.json",
+      "sha256": "c236448d15b7956a231b876c1ecb3bdb07cb7ab801580d21e5907c9069c86d48",
+      "bytes": 53885
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/eval_002000/metrics.json",
+      "git_path": "runs/campaign/A3/eval_002000/metrics.json",
+      "sha256": "5bf07c518dcfd87e722f05f6e9466b35f0999e81bcc93acff8c8f14dd52a2002",
+      "bytes": 622
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/eval_004000/diversity.json",
+      "git_path": "runs/campaign/A3/eval_004000/diversity.json",
+      "sha256": "230685a99404e1b012f6becf637f16237878dbd21f8bc6b1dc99e08b96df8778",
+      "bytes": 53867
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/eval_004000/metrics.json",
+      "git_path": "runs/campaign/A3/eval_004000/metrics.json",
+      "sha256": "838e69bc9fabfb897201054bc8066f1c9c5d74b056b96a8834b6707766535f6d",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/evaluations.jsonl",
+      "git_path": "runs/campaign/A3/evaluations.jsonl",
+      "sha256": "f50882995881c6cfa6f0b3bfe2efb433d0f238936bd487baf0bb194e116fb6c6",
+      "bytes": 1835
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/export.json",
+      "git_path": "runs/campaign/A3/export.json",
+      "sha256": "2d60c219bdd83be58b7e446d0be89725c5caccae1b827084d779d3452459402c",
+      "bytes": 1020
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/fake_D_grad_norm.svg",
+      "git_path": "runs/campaign/A3/fake_D_grad_norm.svg",
+      "sha256": "772d4080d4430dd67d7981d8f4366cdd24dc1aaf31de1850df43fba836ce1103",
+      "bytes": 26806
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/fake_fm_loss.svg",
+      "git_path": "runs/campaign/A3/fake_fm_loss.svg",
+      "sha256": "f4044bbbb3cf6da5d28ca09233fc431e278f5b4a4edc0fb0a5031d21fb6cb76d",
+      "bytes": 26805
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/g_gan_loss.svg",
+      "git_path": "runs/campaign/A3/g_gan_loss.svg",
+      "sha256": "5db3bcb9f6903d1c878fe5b5d2179926e4f8835bbabbb9fb37bbddb68450e085",
+      "bytes": 26798
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/g_grad_norm.svg",
+      "git_path": "runs/campaign/A3/g_grad_norm.svg",
+      "sha256": "2de8e8957d42621835b317145e2f98db08f77d7b4b66d0ab019e680c8c4b256e",
+      "bytes": 26809
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/identity.json",
+      "git_path": "runs/campaign/A3/identity.json",
+      "sha256": "d6396ba47d751c184751b820e5ebe9694603abd41f0416c2b0e24d1540a4733d",
+      "bytes": 2282
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/memory.jsonl",
+      "git_path": "runs/campaign/A3/memory.jsonl",
+      "sha256": "bedfb82a88bb1de08756bc90b465e61066dae38b51f404ae369d005274e54426",
+      "bytes": 37156
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/seconds.svg",
+      "git_path": "runs/campaign/A3/seconds.svg",
+      "sha256": "abf553b31cc10e5b645ef0461ab62f4f5ac6ef99a534a601eb17d52e4122a5b9",
+      "bytes": 26750
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/selected.json",
+      "git_path": "runs/campaign/A3/selected.json",
+      "sha256": "11ed01ad42bf34041f249c7e6973ba90a4d7619a403a4e0b889e001801b1cee4",
+      "bytes": 932
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/sid_loss.svg",
+      "git_path": "runs/campaign/A3/sid_loss.svg",
+      "sha256": "22841a0a1b8906370fac0eb7f41f57e32afa0d546c00a7dad6c2200beaa9764f",
+      "bytes": 25835
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/status.json",
+      "git_path": "runs/campaign/A3/status.json",
+      "sha256": "d72f6a22c6d89deda9f7af983afc5987b899d14ae25288539d53354a6cfd8c29",
+      "bytes": 1888
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A3/worker_00.log",
+      "git_path": "runs/campaign/A3/worker_00.log",
+      "sha256": "2e7f0b080bf359d54360ad05a75d15d334799f670862931242001d22ca88212b",
+      "bytes": 202954
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/confirmation/diversity.json",
+      "git_path": "runs/campaign/A4/confirmation/diversity.json",
+      "sha256": "fa89d277d4af706f7fc113cf0eff1ade9758b3eab0bca1dd63ea78dafb354ab3",
+      "bytes": 53851
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/confirmation/metrics.json",
+      "git_path": "runs/campaign/A4/confirmation/metrics.json",
+      "sha256": "169e1dd9d91b79e145d7e7f07e787ab9a2a3bc15adf95bf072c4ce5f86df9004",
+      "bytes": 624
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/d_bce_loss.svg",
+      "git_path": "runs/campaign/A4/d_bce_loss.svg",
+      "sha256": "625b3433bdf538cd59af7bc64559afa3a6b87fe96962a2bf414c06732c58f227",
+      "bytes": 26768
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/eval_001000/diversity.json",
+      "git_path": "runs/campaign/A4/eval_001000/diversity.json",
+      "sha256": "9c4f69bdd48b984a720479b9bf1fb0225b1b157ace3804d1603cbd6a440cc32c",
+      "bytes": 53877
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/eval_001000/metrics.json",
+      "git_path": "runs/campaign/A4/eval_001000/metrics.json",
+      "sha256": "e5a3b051758bef826d35c35cb8f7c9679da7ad2252f77b35f3796d4889d81842",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/eval_002000/diversity.json",
+      "git_path": "runs/campaign/A4/eval_002000/diversity.json",
+      "sha256": "266c985b039d3813b3c4266d14f6f734163073c7235489dd44f78f09d8dc10b0",
+      "bytes": 53914
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/eval_002000/metrics.json",
+      "git_path": "runs/campaign/A4/eval_002000/metrics.json",
+      "sha256": "b451ce5b75c24f9d7506ec032d3cb826190cc265fbbf5588b015f84b1fc008f3",
+      "bytes": 621
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/eval_004000/diversity.json",
+      "git_path": "runs/campaign/A4/eval_004000/diversity.json",
+      "sha256": "0cb29523ef8f5771cb7e561dee3f672e72b5d869926c4f9f076e90d3c9f1be7c",
+      "bytes": 53856
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/eval_004000/metrics.json",
+      "git_path": "runs/campaign/A4/eval_004000/metrics.json",
+      "sha256": "f889bcb484e2c12c2c1f33da32f650e5f1b210e4a1d55e1a48240909a520473c",
+      "bytes": 624
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/evaluations.jsonl",
+      "git_path": "runs/campaign/A4/evaluations.jsonl",
+      "sha256": "9a49cb3cf3505b6d816554e3baa1451d517661366611e0cd67c5151d2876ee5b",
+      "bytes": 1835
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/export.json",
+      "git_path": "runs/campaign/A4/export.json",
+      "sha256": "8fbba1711c185814e4e618e690edda39d9a02b4e6178e87090a82b1b94cc9482",
+      "bytes": 1000
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/fake_D_grad_norm.svg",
+      "git_path": "runs/campaign/A4/fake_D_grad_norm.svg",
+      "sha256": "cbbcbdfc64c9193467f8bb6db09a70b83eed4835cafa2b0367c52144783f62dd",
+      "bytes": 26809
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/fake_fm_loss.svg",
+      "git_path": "runs/campaign/A4/fake_fm_loss.svg",
+      "sha256": "7329625768f333f3ab174d977185f8b176ea53d43ddf1ef242960a794b030030",
+      "bytes": 26807
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/g_gan_loss.svg",
+      "git_path": "runs/campaign/A4/g_gan_loss.svg",
+      "sha256": "163628b235401746441d6c4ffbe1d182fc86cccd31686223bc34d45af2b8675c",
+      "bytes": 26798
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/g_grad_norm.svg",
+      "git_path": "runs/campaign/A4/g_grad_norm.svg",
+      "sha256": "7d2881e820c5b9d9c72bce6296569b5cba24bd9e8fd1d654034d43815aa73a3d",
+      "bytes": 26806
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/identity.json",
+      "git_path": "runs/campaign/A4/identity.json",
+      "sha256": "5f43c50906fbac5a85d08f173eac23ff9f08efb7c3f74ad758912916f6d7c1dd",
+      "bytes": 2282
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/memory.jsonl",
+      "git_path": "runs/campaign/A4/memory.jsonl",
+      "sha256": "61d3e9c799ab017d5ffd611cde4ab63748775c6f5fdea3d60512f3241c9c77d7",
+      "bytes": 37156
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/seconds.svg",
+      "git_path": "runs/campaign/A4/seconds.svg",
+      "sha256": "f9cba6efd07e8a566b6f4ef437bf27b94fe7855396cf066609e364cd24d2df9b",
+      "bytes": 26655
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/selected.json",
+      "git_path": "runs/campaign/A4/selected.json",
+      "sha256": "df6d21f3f12f7654dec32e9c1c200784fdb55c42b554caf592b7f718d47858b3",
+      "bytes": 933
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/sid_loss.svg",
+      "git_path": "runs/campaign/A4/sid_loss.svg",
+      "sha256": "eb4eca299dfe7913d8328fa960baf21c4b95c976b23312dcb3eac5137a040980",
+      "bytes": 25674
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/status.json",
+      "git_path": "runs/campaign/A4/status.json",
+      "sha256": "3b0a97acbf6bacb06c1f454bc260370c1f1aaf239f502156cb80893815082c85",
+      "bytes": 1887
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/A4/worker_00.log",
+      "git_path": "runs/campaign/A4/worker_00.log",
+      "sha256": "53f9a06b67ec89ee947af9d91a21d4a72715e0569e0e8b545c11dd004efa1461",
+      "bytes": 204951
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/confirmation/diversity.json",
+      "git_path": "runs/campaign/S1/confirmation/diversity.json",
+      "sha256": "30dae74f0785870c14e267f8b9848e8248d4b3944ba18bd198f6e7cacb8090fc",
+      "bytes": 53909
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/confirmation/metrics.json",
+      "git_path": "runs/campaign/S1/confirmation/metrics.json",
+      "sha256": "ff5a4f0e794b54b87319363663296f897dd31bb31cacc6cfd25625848b3dfea0",
+      "bytes": 626
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/d_bce_loss.svg",
+      "git_path": "runs/campaign/S1/d_bce_loss.svg",
+      "sha256": "05e9a8f45a76661dc10d168c75311d4ac3c34923bfc50db01be369fe2e90cd47",
+      "bytes": 26796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/eval_001000/diversity.json",
+      "git_path": "runs/campaign/S1/eval_001000/diversity.json",
+      "sha256": "6edb54360335f9b538e25380af51d372a1fb23d906a0b94d1fc8a67653345f62",
+      "bytes": 53944
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/eval_001000/metrics.json",
+      "git_path": "runs/campaign/S1/eval_001000/metrics.json",
+      "sha256": "59c317a8648c8f2f468a751d38695465eb1b77883a8ae9120b122650c0c41251",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/eval_002000/diversity.json",
+      "git_path": "runs/campaign/S1/eval_002000/diversity.json",
+      "sha256": "45a4f8da0013ea4644a6be94cc52b6fe2e4ebc65c6f73d13daa4a4fc921fdba0",
+      "bytes": 53910
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/eval_002000/metrics.json",
+      "git_path": "runs/campaign/S1/eval_002000/metrics.json",
+      "sha256": "9c72598cabad1fbaf59a8f53d2145bfd7c2ce3d3fee5f023be76a8f4fd16b7ce",
+      "bytes": 622
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/eval_004000/diversity.json",
+      "git_path": "runs/campaign/S1/eval_004000/diversity.json",
+      "sha256": "fe66099318062c131e3dd8647127a3da04faf6ca8052688a9a4ea6f985cc5f01",
+      "bytes": 53864
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/eval_004000/metrics.json",
+      "git_path": "runs/campaign/S1/eval_004000/metrics.json",
+      "sha256": "ac6a6d1dbba4cf68764318c19b27b8a6f8f51e1d186a1789b47fafd111fecbd9",
+      "bytes": 624
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/evaluations.jsonl",
+      "git_path": "runs/campaign/S1/evaluations.jsonl",
+      "sha256": "96032c1afff77b72ebfc421682ad30d48b1e9a532f3c8e20666c25e156d9ab5b",
+      "bytes": 1836
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/export.json",
+      "git_path": "runs/campaign/S1/export.json",
+      "sha256": "c5d6137846f54f2ac1ea1083abdcb2549447d764058e93f0dea4fad391ed215a",
+      "bytes": 973
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/fake_D_grad_norm.svg",
+      "git_path": "runs/campaign/S1/fake_D_grad_norm.svg",
+      "sha256": "47df50f4536cf1e033280f7c24de2c172a926fc67cdfcf1b5e1667322dba9b00",
+      "bytes": 26795
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/fake_fm_loss.svg",
+      "git_path": "runs/campaign/S1/fake_fm_loss.svg",
+      "sha256": "0d0b770b8ce0a27a3bc2a17f3e75a0282bcb9543d5958d5af4568c3ffd6d032f",
+      "bytes": 26602
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/g_gan_loss.svg",
+      "git_path": "runs/campaign/S1/g_gan_loss.svg",
+      "sha256": "37a6319194d5ca1b7537299447274dfe4c4e8a6000903fa6a9dbb7fa7eb0dd92",
+      "bytes": 26796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/g_grad_norm.svg",
+      "git_path": "runs/campaign/S1/g_grad_norm.svg",
+      "sha256": "b06923028741595c956c4a6e710e7eab565a3dd23fce6b021608e3d0afd3f17d",
+      "bytes": 26809
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/identity.json",
+      "git_path": "runs/campaign/S1/identity.json",
+      "sha256": "40a44673ab6dac501d7ca6971d48fb94e68eda90d709f8d93350753c8a0d0949",
+      "bytes": 2282
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/memory.jsonl",
+      "git_path": "runs/campaign/S1/memory.jsonl",
+      "sha256": "815645bfcbf28a9c03a2c96b24f7bc996a25a8e9ab9520ba1d4475bc28a41ab0",
+      "bytes": 37156
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/seconds.svg",
+      "git_path": "runs/campaign/S1/seconds.svg",
+      "sha256": "47f7dd805eb931ed2f58abc4f4d9d3bf8234e1b35f952b2615ebac29faddfd8f",
+      "bytes": 26799
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/selected.json",
+      "git_path": "runs/campaign/S1/selected.json",
+      "sha256": "1b8d045e86117f1f6e0f2d33f11a6f6cbb004d7153a2650a08cc9f55296eab70",
+      "bytes": 933
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/sid_loss.svg",
+      "git_path": "runs/campaign/S1/sid_loss.svg",
+      "sha256": "6f58696838a8aff47827073befc4f80a71d8c2e0a6cc737828cdbf3cd468e89e",
+      "bytes": 26767
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/status.json",
+      "git_path": "runs/campaign/S1/status.json",
+      "sha256": "af36abc2346b5e2caeaa36b14b8f427859e6922d3b10b8ba5a1347148d9d8c22",
+      "bytes": 1883
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S1/worker_00.log",
+      "git_path": "runs/campaign/S1/worker_00.log",
+      "sha256": "ebd71b9ce3d5da08349e008d12b965c0abf6ce5327f102e164fb4cb288fc4de0",
+      "bytes": 201896
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/confirmation/diversity.json",
+      "git_path": "runs/campaign/S2/confirmation/diversity.json",
+      "sha256": "aef120bd3abd99207ef13ec832b7271bbdfe88e59f16df7ee7afde4d5d689a1b",
+      "bytes": 53911
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/confirmation/metrics.json",
+      "git_path": "runs/campaign/S2/confirmation/metrics.json",
+      "sha256": "e2200816904921b3b49431e721bd9b2e95e25fc37b4a4c90cc86a4b2e4261d22",
+      "bytes": 624
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/d_bce_loss.svg",
+      "git_path": "runs/campaign/S2/d_bce_loss.svg",
+      "sha256": "05e9a8f45a76661dc10d168c75311d4ac3c34923bfc50db01be369fe2e90cd47",
+      "bytes": 26796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/eval_001000/diversity.json",
+      "git_path": "runs/campaign/S2/eval_001000/diversity.json",
+      "sha256": "a6611e77e435688013f240bcbf446a0cac89c5a4012e963fbcedb78feadf62a2",
+      "bytes": 53836
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/eval_001000/metrics.json",
+      "git_path": "runs/campaign/S2/eval_001000/metrics.json",
+      "sha256": "60b4792e5b2303565bcbccc1cc0dd96a85332ca01a6f73e3f5036254e744fab6",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/eval_002000/diversity.json",
+      "git_path": "runs/campaign/S2/eval_002000/diversity.json",
+      "sha256": "3f8578b2bac8c2078773bb343cbb0836d5675ab78e65c2e2e92dc1328df905e0",
+      "bytes": 53899
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/eval_002000/metrics.json",
+      "git_path": "runs/campaign/S2/eval_002000/metrics.json",
+      "sha256": "280f8c5a9a57acbeadc2c7f9cf55693f46e4bfcfb6f86bb57238ed8f8aa32c8e",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/eval_004000/diversity.json",
+      "git_path": "runs/campaign/S2/eval_004000/diversity.json",
+      "sha256": "cba79c8443199ca14069fed21096102e376508e774e60541f9677683b981716c",
+      "bytes": 53870
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/eval_004000/metrics.json",
+      "git_path": "runs/campaign/S2/eval_004000/metrics.json",
+      "sha256": "93f75212790d1f1615107846acd3609af6fa6d526ecbf32bd6d0a578245565d6",
+      "bytes": 624
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/evaluations.jsonl",
+      "git_path": "runs/campaign/S2/evaluations.jsonl",
+      "sha256": "19b21339c0b8917c056025610da2baf8b488d4419227922f1950ed6f566e6f0e",
+      "bytes": 1837
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/export.json",
+      "git_path": "runs/campaign/S2/export.json",
+      "sha256": "19dc43ab6bc4a84186b00bccc1c0090b0373ffd20ec8171cc773eb2aa1641e92",
+      "bytes": 980
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/fake_D_grad_norm.svg",
+      "git_path": "runs/campaign/S2/fake_D_grad_norm.svg",
+      "sha256": "3f0314c9f191a9642572ee08a9107449589373ebe77c9fda513dc5e593c586fb",
+      "bytes": 26786
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/fake_fm_loss.svg",
+      "git_path": "runs/campaign/S2/fake_fm_loss.svg",
+      "sha256": "fbb603cb4619bdd6d5db850ba7a72fb274ef6fc00cd9850c7f97e584594d844b",
+      "bytes": 26744
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/g_gan_loss.svg",
+      "git_path": "runs/campaign/S2/g_gan_loss.svg",
+      "sha256": "37a6319194d5ca1b7537299447274dfe4c4e8a6000903fa6a9dbb7fa7eb0dd92",
+      "bytes": 26796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/g_grad_norm.svg",
+      "git_path": "runs/campaign/S2/g_grad_norm.svg",
+      "sha256": "e666056b8966c66f566c331d9eba6f7c2e58a379d42c728baac11a132fae404e",
+      "bytes": 26806
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/identity.json",
+      "git_path": "runs/campaign/S2/identity.json",
+      "sha256": "94bbe16e643be7c664f0879e2553060d63edca85cc92f68574ab58230d97a8af",
+      "bytes": 2282
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/memory.jsonl",
+      "git_path": "runs/campaign/S2/memory.jsonl",
+      "sha256": "c471f52f6a3f71877f3b7315b8bedf07eccaaa232c339ed3367855c04f6f5aa0",
+      "bytes": 37156
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/seconds.svg",
+      "git_path": "runs/campaign/S2/seconds.svg",
+      "sha256": "0966d5927a990ab4579433b2cac73337f6a8cfd03768d5f25f1d7e586c46566f",
+      "bytes": 26754
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/selected.json",
+      "git_path": "runs/campaign/S2/selected.json",
+      "sha256": "3c321f977ecbe3afa03b7607b266148fc2a23f2f08106d3e06989f26654d9c95",
+      "bytes": 933
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/sid_loss.svg",
+      "git_path": "runs/campaign/S2/sid_loss.svg",
+      "sha256": "292e3f506c397f6c2a869b3f56a90380a4a7ab83b0402b4513917e5af122bec9",
+      "bytes": 26764
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/status.json",
+      "git_path": "runs/campaign/S2/status.json",
+      "sha256": "b55116a0454f1c2494fa38c031069f4f20bfe612c5007163674bf6b5761f59cc",
+      "bytes": 1883
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S2/worker_00.log",
+      "git_path": "runs/campaign/S2/worker_00.log",
+      "sha256": "519ed0acd40f5b74ed9260a0ab6c2e5a731c248f80096fb5aa0a3ec07b93d5e1",
+      "bytes": 200782
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/confirmation/diversity.json",
+      "git_path": "runs/campaign/S3/confirmation/diversity.json",
+      "sha256": "c773068d2a7a5c5073f835e33c7b4271e27cb7c4a1155107f326523de33fcf62",
+      "bytes": 53938
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/confirmation/metrics.json",
+      "git_path": "runs/campaign/S3/confirmation/metrics.json",
+      "sha256": "0b7ca648609d486e4be292f22b1cacd3349bbf2d3761461a564c3de13c8706a7",
+      "bytes": 625
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/d_bce_loss.svg",
+      "git_path": "runs/campaign/S3/d_bce_loss.svg",
+      "sha256": "05e9a8f45a76661dc10d168c75311d4ac3c34923bfc50db01be369fe2e90cd47",
+      "bytes": 26796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/eval_001000/diversity.json",
+      "git_path": "runs/campaign/S3/eval_001000/diversity.json",
+      "sha256": "7fd33709fadf2ad8efb43fadbc92bcb4793510fa5b36397671efb09db6f9376a",
+      "bytes": 53884
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/eval_001000/metrics.json",
+      "git_path": "runs/campaign/S3/eval_001000/metrics.json",
+      "sha256": "76cc2a2376a896f67724f7e1d0214f24918b56fa7f18425ebcf022d0009eabb3",
+      "bytes": 621
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/eval_002000/diversity.json",
+      "git_path": "runs/campaign/S3/eval_002000/diversity.json",
+      "sha256": "554d4494f7ccf5d4a17667b6e8deba7d8abba884a5951cd3b82066575802fd21",
+      "bytes": 53903
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/eval_002000/metrics.json",
+      "git_path": "runs/campaign/S3/eval_002000/metrics.json",
+      "sha256": "965eea51cebae83bed64623bd1e1a357c41ff0dd88ee87add27091e868662f0d",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/eval_004000/diversity.json",
+      "git_path": "runs/campaign/S3/eval_004000/diversity.json",
+      "sha256": "fbe2a15199ea9f28a92d8967629031b9d27d2dcde1aecc7de07d7f549c9aeb93",
+      "bytes": 53919
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/eval_004000/metrics.json",
+      "git_path": "runs/campaign/S3/eval_004000/metrics.json",
+      "sha256": "5f0addb195ff61ff5435b027b94ac9566ca1795e0f98650b36bc8fd68e5f0340",
+      "bytes": 624
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/evaluations.jsonl",
+      "git_path": "runs/campaign/S3/evaluations.jsonl",
+      "sha256": "42cfa57caed2e22a14531e455195a7fc8ee5ad26d6667540c9b8933478d2e92b",
+      "bytes": 1835
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/export.json",
+      "git_path": "runs/campaign/S3/export.json",
+      "sha256": "b313c1a763c9b5c2207fa960ff74afe7ae1774d93fdbac8e6067c7951549d05f",
+      "bytes": 1021
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/fake_D_grad_norm.svg",
+      "git_path": "runs/campaign/S3/fake_D_grad_norm.svg",
+      "sha256": "020b9ce54da227d7261560b1b4cfa51d68eec626a969a792a1f07df4d5db9a3a",
+      "bytes": 26813
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/fake_fm_loss.svg",
+      "git_path": "runs/campaign/S3/fake_fm_loss.svg",
+      "sha256": "8259a006764ee258602c00df1c9470056fa514bb11576e7554db71983870896d",
+      "bytes": 26782
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/g_gan_loss.svg",
+      "git_path": "runs/campaign/S3/g_gan_loss.svg",
+      "sha256": "37a6319194d5ca1b7537299447274dfe4c4e8a6000903fa6a9dbb7fa7eb0dd92",
+      "bytes": 26796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/g_grad_norm.svg",
+      "git_path": "runs/campaign/S3/g_grad_norm.svg",
+      "sha256": "c8a768cdd3b7e8a062c6a4119bc4207968da8629f4e37a8ba74d97d3a7ffacc8",
+      "bytes": 26806
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/identity.json",
+      "git_path": "runs/campaign/S3/identity.json",
+      "sha256": "3c3ae576b1b5c43145434fe9492e3a6e011f1cadbc035098105e40ad0443d2f3",
+      "bytes": 2282
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/memory.jsonl",
+      "git_path": "runs/campaign/S3/memory.jsonl",
+      "sha256": "d0812a5acb641a5016b6e3d069296ec3dbd6e4b5f3d15924c34a3eb24c874e6d",
+      "bytes": 37156
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/seconds.svg",
+      "git_path": "runs/campaign/S3/seconds.svg",
+      "sha256": "35e4fb328c814a8a27449ab0f749950989bc99b4b5bbed5aa99d0482c86d9e1c",
+      "bytes": 26710
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/selected.json",
+      "git_path": "runs/campaign/S3/selected.json",
+      "sha256": "aef9c2820eee1ef0fc7180208b420d9de34303197f8efbbbe34fdc0e9a35fabd",
+      "bytes": 933
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/sid_loss.svg",
+      "git_path": "runs/campaign/S3/sid_loss.svg",
+      "sha256": "7c16f6930714e5c48f20115d0f4e2bc943e9cd05d29e8bae4453f7f43270e288",
+      "bytes": 26794
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/status.json",
+      "git_path": "runs/campaign/S3/status.json",
+      "sha256": "5ebcf70691e6a8df3fa1093ea16c95648c8235b4e1f55ad67145e6449ec8bf5f",
+      "bytes": 1884
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S3/worker_00.log",
+      "git_path": "runs/campaign/S3/worker_00.log",
+      "sha256": "5f5638b5331f6a50bbe900e82c3db457f46d2e4722049551d6aba3650a8fdb8f",
+      "bytes": 202715
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/confirmation/diversity.json",
+      "git_path": "runs/campaign/S4/confirmation/diversity.json",
+      "sha256": "be4af33fb1b7a7289a0ec559f83c8f02031719a2c1271fb9333a20c774c179c7",
+      "bytes": 53894
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/confirmation/metrics.json",
+      "git_path": "runs/campaign/S4/confirmation/metrics.json",
+      "sha256": "374697a1d96457766a8ce6cd4988e60d3b997d61fcecf117a44d4b3b1c65c81e",
+      "bytes": 625
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/d_bce_loss.svg",
+      "git_path": "runs/campaign/S4/d_bce_loss.svg",
+      "sha256": "05e9a8f45a76661dc10d168c75311d4ac3c34923bfc50db01be369fe2e90cd47",
+      "bytes": 26796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/eval_001000/diversity.json",
+      "git_path": "runs/campaign/S4/eval_001000/diversity.json",
+      "sha256": "3dc58947775c374bf392a9b0ae9e1d72a62706f70edc021341aa3fb3c05d633e",
+      "bytes": 53907
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/eval_001000/metrics.json",
+      "git_path": "runs/campaign/S4/eval_001000/metrics.json",
+      "sha256": "25dfbefce75b7201ad4be2bc70c2e1e3ff9e2a4c80342fc5a99ed932da7ce97a",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/eval_002000/diversity.json",
+      "git_path": "runs/campaign/S4/eval_002000/diversity.json",
+      "sha256": "e5501dd086b49ed789a30be9b9bcc2304241258d4a42d5e406be87fc3d8054d9",
+      "bytes": 53915
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/eval_002000/metrics.json",
+      "git_path": "runs/campaign/S4/eval_002000/metrics.json",
+      "sha256": "ba63d96d34a04344c67ddaff403db25f18510fbd183242069cd6096fffe9b8eb",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/eval_004000/diversity.json",
+      "git_path": "runs/campaign/S4/eval_004000/diversity.json",
+      "sha256": "d9ea1605fd8dc5279380d17b39d1f6de298751d0976dc24811dcb27afb00cd9d",
+      "bytes": 53892
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/eval_004000/metrics.json",
+      "git_path": "runs/campaign/S4/eval_004000/metrics.json",
+      "sha256": "1514f260760b13d6a32e3324c8d98149a535ce71aab7ce2d7bc5a8981d9d0c33",
+      "bytes": 622
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/evaluations.jsonl",
+      "git_path": "runs/campaign/S4/evaluations.jsonl",
+      "sha256": "7d43ecaf871bd482b45c979fca6f172a2e0b959a994c6c8d8b7d6f93511b0d55",
+      "bytes": 1835
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/export.json",
+      "git_path": "runs/campaign/S4/export.json",
+      "sha256": "54079c1e3bd5793c2176a5f61c1fff3165fb22a37e89f185e4dff4886f639d5c",
+      "bytes": 1001
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/fake_D_grad_norm.svg",
+      "git_path": "runs/campaign/S4/fake_D_grad_norm.svg",
+      "sha256": "95c06dd976103db80e39724a99bfaf85b2ebb85a40b3d060a329a11569a35e9c",
+      "bytes": 26799
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/fake_fm_loss.svg",
+      "git_path": "runs/campaign/S4/fake_fm_loss.svg",
+      "sha256": "b0a52c6e344d1bff597d81e84988d54ab1bfb93c5e4c9ef19472d164c4f122dc",
+      "bytes": 26803
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/g_gan_loss.svg",
+      "git_path": "runs/campaign/S4/g_gan_loss.svg",
+      "sha256": "37a6319194d5ca1b7537299447274dfe4c4e8a6000903fa6a9dbb7fa7eb0dd92",
+      "bytes": 26796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/g_grad_norm.svg",
+      "git_path": "runs/campaign/S4/g_grad_norm.svg",
+      "sha256": "caf096e030ae2aa34e0b23a9dcfe77276de2942d53801a22befe659a8646f247",
+      "bytes": 26806
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/identity.json",
+      "git_path": "runs/campaign/S4/identity.json",
+      "sha256": "13f6bf7536496c5635232f5e399b8d5df03162ca777dc2e86c98709201ab6a0c",
+      "bytes": 2282
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/memory.jsonl",
+      "git_path": "runs/campaign/S4/memory.jsonl",
+      "sha256": "6f4c91b4326de6a7686f5191075febe7931aa074f257152ff468deddc7f6ce12",
+      "bytes": 37156
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/seconds.svg",
+      "git_path": "runs/campaign/S4/seconds.svg",
+      "sha256": "f93123a068f14e2937fdda5f7e757d84c6c46bc9cce40b500455927ed15a81dc",
+      "bytes": 26650
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/selected.json",
+      "git_path": "runs/campaign/S4/selected.json",
+      "sha256": "3b711f2ab61ccb78a1e30070234c49fe9c31fdb412fa42dc9207068943ad0ebf",
+      "bytes": 932
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/sid_loss.svg",
+      "git_path": "runs/campaign/S4/sid_loss.svg",
+      "sha256": "632be1db2463137005b8b5da7fadc9a43550c80ff5be8976be12f3a9ebc48f14",
+      "bytes": 26779
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/status.json",
+      "git_path": "runs/campaign/S4/status.json",
+      "sha256": "095773cf8e4792d4ed9cd68c864b79438a270e05cdcef796a073fea74d32f5e9",
+      "bytes": 1883
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/S4/worker_00.log",
+      "git_path": "runs/campaign/S4/worker_00.log",
+      "sha256": "18c9d8db43c3d9ff582cb2e8dac483e1d6b58fad79066012e412879e4dd85eae",
+      "bytes": 201458
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/eval_010000/diversity.json",
+      "git_path": "runs/campaign/T/eval_010000/diversity.json",
+      "sha256": "42b3618111b8327291a764922c7aa3d4b6154af9ff9b8991df01c19655c341fb",
+      "bytes": 53993
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/eval_010000/metrics.json",
+      "git_path": "runs/campaign/T/eval_010000/metrics.json",
+      "sha256": "9a6b1e51152e6f7e1c2ce56cfa65c45b8e4e05f748ffa763b6587282a6ff7eda",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/eval_020000/diversity.json",
+      "git_path": "runs/campaign/T/eval_020000/diversity.json",
+      "sha256": "e710f73359e9cba4c4c9291101675aa4675ec887cdbc7013912636f61147a5d9",
+      "bytes": 53989
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/eval_020000/metrics.json",
+      "git_path": "runs/campaign/T/eval_020000/metrics.json",
+      "sha256": "4af5c27d72a94121602fd134e53db1910636e6aaf87581ce299c7f2f3a3795ea",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/eval_030000/diversity.json",
+      "git_path": "runs/campaign/T/eval_030000/diversity.json",
+      "sha256": "18803dadd27f656741c37aeb91afd2275622b25640b6aa555cbcf22bd11f87a1",
+      "bytes": 53982
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/eval_030000/metrics.json",
+      "git_path": "runs/campaign/T/eval_030000/metrics.json",
+      "sha256": "8d450504232ac527ebe77c874cfacaf5e3b1388901ad4c0f9f835e8da25bc0ce",
+      "bytes": 623
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/evaluations.jsonl",
+      "git_path": "runs/campaign/T/evaluations.jsonl",
+      "sha256": "91a40ac7a4e01c9be80a955e7bd78c7335b49451d6094db5f4dda87eb464c781",
+      "bytes": 1836
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/fm_loss.svg",
+      "git_path": "runs/campaign/T/fm_loss.svg",
+      "sha256": "e94fda00928ffaa20331dc5ee8b9b29292264f94fde80e925551ed253a1a9260",
+      "bytes": 22827
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/g_grad_norm.svg",
+      "git_path": "runs/campaign/T/g_grad_norm.svg",
+      "sha256": "cba8dfcf828da0d6d2550d47fbee27220679bf07de1192ee10498ed513778cae",
+      "bytes": 22838
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/identity.json",
+      "git_path": "runs/campaign/T/identity.json",
+      "sha256": "3f0971ecd07d58a15c5ed1f677b6fc5648c209d440f40f5d12c678d595a246ef",
+      "bytes": 2211
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/qualified.json",
+      "git_path": "runs/campaign/T/qualified.json",
+      "sha256": "383c711cf9593ab8f0e4d661aca15fddd267e091c73abb0c8df46a6fbdd71927",
+      "bytes": 1390
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/seconds.svg",
+      "git_path": "runs/campaign/T/seconds.svg",
+      "sha256": "2363266424f0e3695de3078cd9a1cd612b21dd97cb8126d8be372299e7fdab72",
+      "bytes": 22832
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/selected.json",
+      "git_path": "runs/campaign/T/selected.json",
+      "sha256": "d21a03b802622fe864ca2303ad4b302ff5cef81fa36c0a95f366223314ed1fab",
+      "bytes": 868
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/T/status.json",
+      "git_path": "runs/campaign/T/status.json",
+      "sha256": "e52664039a944f555e1971e04b88ab15861435ede8fdc42d043e2e5ac3c9c4cc",
+      "bytes": 1812
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/campaign/allowance.json",
+      "git_path": "runs/campaign/allowance.json",
+      "sha256": "7f4f3273e76a0662ea04cc419b01c20869b4aba3c21e7f3033c7a09dd8e6adb1",
+      "bytes": 5236
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/candidate_archive.log",
+      "git_path": "runs/candidate_archive.log",
+      "sha256": "781dfc13422a2c921c1e2b1f9f24874b46f1bce52728899c2bed188a05195111",
+      "bytes": 3159
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/cost.jsonl",
+      "git_path": "runs/cost.jsonl",
+      "sha256": "b0a1ec4e80d30ed1a034d068f96cf472fd65444f7d3948741f01ebe422e43a29",
+      "bytes": 6156
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/current_status.json",
+      "git_path": "runs/current_status.json",
+      "sha256": "3b0a97acbf6bacb06c1f454bc260370c1f1aaf239f502156cb80893815082c85",
+      "bytes": 1887
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/evaluation_export_smoke.json",
+      "git_path": "runs/evaluation_export_smoke.json",
+      "sha256": "61c36d78e8b35064a20a617a472da0bad027f03099f825fe55514dc93a05e2a7",
+      "bytes": 1843
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/evaluation_smoke.log",
+      "git_path": "runs/evaluation_smoke.log",
+      "sha256": "cec03196a6c92cc73c474f063224fecb39f31120f251507cf2bed24b4759d7d5",
+      "bytes": 35683
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/hardware.json",
+      "git_path": "runs/hardware.json",
+      "sha256": "1359818b726ad0c55c9252deef4298936e7c963ca33602a2d8d4a1598950b5ca",
+      "bytes": 1449
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/hardware.log",
+      "git_path": "runs/hardware.log",
+      "sha256": "542280aca515e1a811f984095eb26d07017d1591eb7d954ef0426b54687b5158",
+      "bytes": 1375
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/last_gpu_lease.json",
+      "git_path": "runs/last_gpu_lease.json",
+      "sha256": "13a25569e5c8b7b90c13236d802f08c99d0b07e309a168c8c0e6f15ae43ddc10",
+      "bytes": 495
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/math_tests.log",
+      "git_path": "runs/math_tests.log",
+      "sha256": "ccae0bbc49d6288d9f11e801848c307cf06818380e3e67aeee614cfd64ff4db1",
+      "bytes": 463
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/preprocessing.json",
+      "git_path": "runs/preprocessing.json",
+      "sha256": "dfed9beedd1b6508cadae112f9d6907abb6b9031361f3aba76420fc1f3058853",
+      "bytes": 847
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/profile_attempt01_uuid_format.log",
+      "git_path": "runs/profile_attempt01_uuid_format.log",
+      "sha256": "3ed769cc51b0722f817d5194674dc75ac1025c79ae2d038096225a9f3d9caf95",
+      "bytes": 502
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/profile_attempt02.log",
+      "git_path": "runs/profile_attempt02.log",
+      "sha256": "b1a55c5369e2b5fe8e9675c400f492ef3e2b15f426d24b96968959f2280204d7",
+      "bytes": 4092
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/profile_attempt03.log",
+      "git_path": "runs/profile_attempt03.log",
+      "sha256": "b9a5014246df5b5ba41b1a829a55510f61e4749f55ae70ef77c3d34f9ad45fad",
+      "bytes": 6285
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/profile_attempt04.log",
+      "git_path": "runs/profile_attempt04.log",
+      "sha256": "6234cd539bafa61f9768436bc9af141a40d8ce9a1532e7024d752b45534aa4c1",
+      "bytes": 6284
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/profile_attempt05_full_rate.log",
+      "git_path": "runs/profile_attempt05_full_rate.log",
+      "sha256": "8d52e58195c8e5461afb321129370a11ad8083f5ce0af893ea4b5910e3761e22",
+      "bytes": 12204
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/qualification_allowance.json",
+      "git_path": "runs/qualification_allowance.json",
+      "sha256": "12bafcf57107688a0c4e05b50b445aa237b7980b73d2d37c0fc206bf6b80b4ef",
+      "bytes": 217
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/qualification_profile.json",
+      "git_path": "runs/qualification_profile.json",
+      "sha256": "829ecab8e729fb7767c3c0e6a21ca48275ab4ce9907e0523320f29698f7d84ae",
+      "bytes": 21413
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/qualification_profile_attempt03.json",
+      "git_path": "runs/qualification_profile_attempt03.json",
+      "sha256": "9aa0e6fbbfdf34afa854f3b0a961132a2cd0960181705ebb947820202ec64a98",
+      "bytes": 12771
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/qualification_profile_attempt04.json",
+      "git_path": "runs/qualification_profile_attempt04.json",
+      "sha256": "0b96ee5ecc1f863d6419d3fb06c8796ddd51ce7452a0948d25cc2fd556a4b1c7",
+      "bytes": 12770
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/qualification_recovery.json",
+      "git_path": "runs/qualification_recovery.json",
+      "sha256": "42980aa2d57fefa45248495506c8a38bbe9fc88b9fb9be5aff9272a3b41bbaec",
+      "bytes": 3802
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/qualification_selected_teacher.json",
+      "git_path": "runs/qualification_selected_teacher.json",
+      "sha256": "50fdeb1152c80b24d0a3ba21db3f254eff58c11e98d4d2e54a877bdaa38ed6ce",
+      "bytes": 8589
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/qualification_selected_teacher.log",
+      "git_path": "runs/qualification_selected_teacher.log",
+      "sha256": "2d343f8ed0086529f41a66773a404e5d23149906c22f5439b9efff07074944ad",
+      "bytes": 2387
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/recovery.log",
+      "git_path": "runs/recovery.log",
+      "sha256": "840df600cd0e71c2e330c3714ff42b25c0279840ddd24278337f6a45478709c5",
+      "bytes": 67
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/report_T_010000.log",
+      "git_path": "runs/report_T_010000.log",
+      "sha256": "9c96758b1f411b07e9853e809e9a1a6927e5291ab3c4eb75c6b64c672f152cb8",
+      "bytes": 1585
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/report_before_training.log",
+      "git_path": "runs/report_before_training.log",
+      "sha256": "1514effe2ba83c71cd89f7f6f08df21f11415cd44c17e3f0dcf6baf0bd25fc43",
+      "bytes": 1582
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/setup_cost.json",
+      "git_path": "runs/setup_cost.json",
+      "sha256": "c7c9ef18f347f0bf59803186ac0386ccf2f124cb1eceb5874c924b36109b2598",
+      "bytes": 511
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/REPORT.md",
+      "git_path": "runs/soflow_teacher_qualification_20261002/REPORT.md",
+      "sha256": "9df6742813b3ee4546ce95a641b578ac17aa83144e89b551531975626e692941",
+      "bytes": 10310
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/build_report.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/build_report.py",
+      "sha256": "77be4fd2ebbdfd4fa9c9bd7b336cf45305ce09f5c89b01066885b600d238b6c3",
+      "bytes": 12496
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/completed.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/completed.json",
+      "sha256": "6e657c210163cb74bb78174b4889044c9236fec2118615585b2b3843df84733a",
+      "bytes": 3632
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/conversion_check.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/conversion_check.json",
+      "sha256": "ff862565cd3868875f9ad3743ac15d40a056a210e0d26e8802bad00df105adb9",
+      "bytes": 946
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/fid_metrics.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/fid_metrics.json",
+      "sha256": "a5e3bb1068e705b6cf8e489fdef6eb712d7cd6e58e585b3942c64c701d6e3af9",
+      "bytes": 1824
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/field_metrics.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/field_metrics.json",
+      "sha256": "9ce11c2d1c6ac0ebe7d1c6289a95ab0de418e98a3572fb2146f3ab4e7224667a",
+      "bytes": 5520
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/final_artifact_hashes.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/final_artifact_hashes.json",
+      "sha256": "9cc28030586bcdd240a253a12318ebfc4a15a6bf91a8c2d298519762ad598c27",
+      "bytes": 1863
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/full.log",
+      "git_path": "runs/soflow_teacher_qualification_20261002/full.log",
+      "sha256": "4a5a13017ba28f499043ed50bfb51580823d56c06a51e96e19a8315c932b675b",
+      "bytes": 39464
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/full_start.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/full_start.json",
+      "sha256": "7bdc237919e0f7284c42436991366f946cc599c8c2169f9a5c22edf13e94cd8e",
+      "bytes": 1283
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/gradient_metrics.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/gradient_metrics.json",
+      "sha256": "985067274d0be9f12ce6ce928bd1b2a7043febe0b69f2ed9a0fcf2e17e50101e",
+      "bytes": 3826
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/gradient_scaled.log",
+      "git_path": "runs/soflow_teacher_qualification_20261002/gradient_scaled.log",
+      "sha256": "464298c6209e1792b83ebf4c290ca1ce8b70ef3a7ff1d57e5de1729a8045c8f9",
+      "bytes": 4048
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/gradient_scaled_check_start.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/gradient_scaled_check_start.json",
+      "sha256": "7ecbb6504372fad40f855e520b9b9a5a75c195129fa1ed7f962c223d19ae57b4",
+      "bytes": 1299
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/gradient_scaled_completed.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/gradient_scaled_completed.json",
+      "sha256": "ec1bad057a17da660b9303da3d62b630b0761c306f829a9c643abe67353ba152",
+      "bytes": 1359
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/gradient_scaled_metrics.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/gradient_scaled_metrics.json",
+      "sha256": "dcef63053233e32751c209b0373f5d37bd9d7b741b496eea690e99355b002288",
+      "bytes": 3806
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/gradient_scaled_probe.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/gradient_scaled_probe.py",
+      "sha256": "cf3e813769581444f8d62af1616df3a35695b910d956602dd84d27e1479d30a3",
+      "bytes": 6834
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/probe.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/probe.py",
+      "sha256": "b43d1da1d438c4931af61e7fce372dd1b488a5dd8b47cd3e2108c2aeb07d3824",
+      "bytes": 13609
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/protocol.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/protocol.json",
+      "sha256": "3a7a0f11313c262dc4cdb42b5b46cab6b416b2f046dc152ecadb85673e955ec8",
+      "bytes": 1655
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/smoke_start.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/smoke_start.json",
+      "sha256": "1639aab096a99244f76d0a4e820366892fb529229ddcacde3047afb307fbca04",
+      "bytes": 1284
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/snapshot/evaluate.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/snapshot/evaluate.py",
+      "sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+      "bytes": 5578
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/snapshot/flow_sid/__init__.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/snapshot/flow_sid/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/snapshot/flow_sid/flow.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/snapshot/flow_sid/flow.py",
+      "sha256": "ef2c5139d07827f5612d5d4c3be05a6109820eb635357984e15d2ea6a3db027a",
+      "bytes": 2796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/snapshot/flow_sid/networks.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/snapshot/flow_sid/networks.py",
+      "sha256": "eaee62c7af192125e5befb0e219315475ba04d2eca22b954025453ad69d2d952",
+      "bytes": 1563
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/snapshot/flow_sid/unet.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/snapshot/flow_sid/unet.py",
+      "sha256": "d078a92dcfe3f5c2e65d4f45079b645303a387e3bda3c1d6c29b1b5cfa848c44",
+      "bytes": 19792
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/snapshot/selected.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/snapshot/selected.json",
+      "sha256": "d21a03b802622fe864ca2303ad4b302ff5cef81fa36c0a95f366223314ed1fab",
+      "bytes": 868
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/snapshot/soflow_fastgen/__init__.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/snapshot/soflow_fastgen/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/snapshot/soflow_fastgen/models.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/snapshot/soflow_fastgen/models.py",
+      "sha256": "9c889f9e20a9783f7d9fe503771f617032ea0876001b2a53e74259978e6720cf",
+      "bytes": 11583
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/snapshot/soflow_fastgen/sampling.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/snapshot/soflow_fastgen/sampling.py",
+      "sha256": "c536149529fcf97ef55f73ca244f9fe4f744283ed57df38bcd73a914246c3279",
+      "bytes": 3281
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/snapshot/soflow_fastgen/unet.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/snapshot/soflow_fastgen/unet.py",
+      "sha256": "c083e2d94b01229ffa8aa792d9d5cb33d7e2ae8a5c14cadef5838ed74777fd0a",
+      "bytes": 19412
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/source_manifest.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/source_manifest.json",
+      "sha256": "78b09a9006c290f9f9c7df887ea2e30b8e5b1bedc0995aefc058450b616b78f3",
+      "bytes": 1806
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/verification.json",
+      "git_path": "runs/soflow_teacher_qualification_20261002/verification.json",
+      "sha256": "549a9453bff017fd257e440abad36d852b353a73ad142adb29ea7625bdc227b2",
+      "bytes": 1085
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/soflow_teacher_qualification_20261002/verify_sources.py",
+      "git_path": "runs/soflow_teacher_qualification_20261002/verify_sources.py",
+      "sha256": "a93e4023311590848ade126f3a91c5c3e3399f1a86f709552a840d3b79eb10e1",
+      "bytes": 1523
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/students_12_supervisor.log",
+      "git_path": "runs/students_12_supervisor.log",
+      "sha256": "4b7fa32d926a7069978ce08edc108469aad77770775df24a25bf900285e48de1",
+      "bytes": 231
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/students_34_supervisor.log",
+      "git_path": "runs/students_34_supervisor.log",
+      "sha256": "25e6ea21d1e887ce677f5ae389a70489b376e8ec2a45e6263681684d64360ec8",
+      "bytes": 231
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/runs/teacher_supervisor.log",
+      "git_path": "runs/teacher_supervisor.log",
+      "sha256": "9e91112a6e387757b0e7f8cc7993170e9884c184c1e957f5e897b6badcb079c5",
+      "bytes": 57
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/scripts/campaign.py",
+      "git_path": "scripts/campaign.py",
+      "sha256": "984ee0a3d36bec16695db084fe6d1afb3606757364ebe3174f8d5b9bf0c894f2",
+      "bytes": 6124
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/scripts/check_export.py",
+      "git_path": "scripts/check_export.py",
+      "sha256": "047b950e4bc0248f4ba4cff26c7bb7ebae7d0c74beafa79e81cff90b6bb4bd29",
+      "bytes": 1133
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/scripts/qualify.py",
+      "git_path": "scripts/qualify.py",
+      "sha256": "b276e949cf820a085f2c2a6855c5f2be98b6ee0423ca224048b80d3fd39cf4ee",
+      "bytes": 7260
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/scripts/report.py",
+      "git_path": "scripts/report.py",
+      "sha256": "4a9def2434f17c429cb70d11f7621aa99a0d7d6798365853362ce47bb838b7be",
+      "bytes": 4741
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/scripts/run_gpu.sh",
+      "git_path": "scripts/run_gpu.sh",
+      "sha256": "2ce3a6ea63e07316befa1f761b815a46e3c6304857eddba298e8e9304ced7ee9",
+      "bytes": 550
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/scripts/smoke_evaluation.py",
+      "git_path": "scripts/smoke_evaluation.py",
+      "sha256": "0c450da70f1683cc952d70ed43466b1ce0bb10a660edf6e99ab4a5f36c4f703e",
+      "bytes": 2934
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/scripts/train_stage.py",
+      "git_path": "scripts/train_stage.py",
+      "sha256": "7ed47b5ef6bd925623d2b249a12a5cdfb1b81c5ad85617636d027e65f3117f58",
+      "bytes": 8687
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/src/__init__.py",
+      "git_path": "src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/src/utils.py",
+      "git_path": "src/utils.py",
+      "sha256": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f",
+      "bytes": 1027
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/tests/test_math.py",
+      "git_path": "tests/test_math.py",
+      "sha256": "220fb89f108e058df207bd975d854077f566719b8d65a6c1a44966b27b8167a3",
+      "bytes": 6241
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/ACKNOWLEDGEMENTS",
+      "git_path": "vendor/ml-sid-dit/ACKNOWLEDGEMENTS",
+      "sha256": "fcc5f8a167f4f9efab09bed4f523f01a0329ec880e06d6a38434c782657a8400",
+      "bytes": 55386
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/LICENSE",
+      "git_path": "vendor/ml-sid-dit/LICENSE",
+      "sha256": "6b4a9607cda0f43d499d387abc770d8c1c4566d4ba17c827055460ede75979b0",
+      "bytes": 2658
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/README.md",
+      "git_path": "vendor/ml-sid-dit/README.md",
+      "sha256": "100c65df5ecfa20257f565a635753ff2b1c142de7491e327a20fcc8577b7c7cb",
+      "bytes": 8578
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/dataset_tool.py",
+      "git_path": "vendor/ml-sid-dit/dataset_tool.py",
+      "sha256": "c2ec09d14ac4eb506bbeabb2b0209f4b79677f3178dc3461fd0fe9ea502d67f9",
+      "bytes": 19431
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/dnnlib/__init__.py",
+      "git_path": "vendor/ml-sid-dit/dnnlib/__init__.py",
+      "sha256": "1ecb88d5819b79cc8532fbe04ffb9e4436bafdd4da280e3c3f2d3d0f2ec37eaf",
+      "bytes": 151
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/dnnlib/util.py",
+      "git_path": "vendor/ml-sid-dit/dnnlib/util.py",
+      "sha256": "6350e2bcce1b83c3470b1f43bcdf0d795d0de617f696461c7a373c9098d9b15e",
+      "bytes": 17199
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/generate_sid_fewstep_sd3.py",
+      "git_path": "vendor/ml-sid-dit/generate_sid_fewstep_sd3.py",
+      "sha256": "b546351f1c205bc5fcfde0cbfbb151c7f0dbdb2ba0bd68c3657c5947f6ff4306",
+      "bytes": 11751
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/metrics/__init__.py",
+      "git_path": "vendor/ml-sid-dit/metrics/__init__.py",
+      "sha256": "1567bc685cf47ee3cb0556a6d0145219c0c9301ff780c54c9dfb41912479d2c0",
+      "bytes": 113
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/metrics/sid_fid_and_clip.py",
+      "git_path": "vendor/ml-sid-dit/metrics/sid_fid_and_clip.py",
+      "sha256": "6c5ce3d85bfe02f3f9ff162b7454d259624eed90d7e95f4c102029aaf648a850",
+      "bytes": 4466
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/metrics/sid_metric_main.py",
+      "git_path": "vendor/ml-sid-dit/metrics/sid_metric_main.py",
+      "sha256": "442609216dda19770441ff6be7e72b8f1f0f3fcb00b71fcf9fd2bc273063336f",
+      "bytes": 5303
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/metrics/sid_metric_utils.py",
+      "git_path": "vendor/ml-sid-dit/metrics/sid_metric_utils.py",
+      "sha256": "21a4d1dde9f5b6681a9c48a3a0436d89116b976d4b801d0b5aa52d96e80d0ef4",
+      "bytes": 24509
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/networks/clip.py",
+      "git_path": "vendor/ml-sid-dit/networks/clip.py",
+      "sha256": "6c3b1522a42ea08d64c39a39427c32e4ef40924d23233d19ccb40c768e0dbbca",
+      "bytes": 2435
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/run_sid_dit.sh",
+      "git_path": "vendor/ml-sid-dit/run_sid_dit.sh",
+      "sha256": "21d4759a3ab03f72f2ea02bf422b1cd27fa89a12da155418092a9cded43118f2",
+      "bytes": 10398
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/sid_dit_environment.yml",
+      "git_path": "vendor/ml-sid-dit/sid_dit_environment.yml",
+      "sha256": "576f47cf522a076a1c22d361f920f55eb5f6f5450191d5f8e61b676f45a4e46d",
+      "bytes": 663
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/sid_dit_flux_train.py",
+      "git_path": "vendor/ml-sid-dit/sid_dit_flux_train.py",
+      "sha256": "3eac474ced52e08ab9f175e628e4027cd1ca97d59cc5429f7760d9c4a26a5118",
+      "bytes": 21610
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/sid_dit_sd3_train.py",
+      "git_path": "vendor/ml-sid-dit/sid_dit_sd3_train.py",
+      "sha256": "39905279eb8c745fed82760cdc0133ece338b7434b4a6d89a9f7d90ced3e50f5",
+      "bytes": 21608
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/sid_dit_train.py",
+      "git_path": "vendor/ml-sid-dit/sid_dit_train.py",
+      "sha256": "191934c3ea52f850641ce5bd6a6659a2717ab8bdc089d0c1387c3ad8c8306db8",
+      "bytes": 21141
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/torch_utils/__init__.py",
+      "git_path": "vendor/ml-sid-dit/torch_utils/__init__.py",
+      "sha256": "3ca5fad0e224437c0be86175e4d3b974c7b4b01165e04f5e020176e0e147c2bd",
+      "bytes": 364
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/torch_utils/distributed.py",
+      "git_path": "vendor/ml-sid-dit/torch_utils/distributed.py",
+      "sha256": "e21a40c384c649fc6348844dbcee1b23140bac26c737056076bf31c7f4ecc49b",
+      "bytes": 2384
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/torch_utils/misc.py",
+      "git_path": "vendor/ml-sid-dit/torch_utils/misc.py",
+      "sha256": "57c71687360f88a7b0132f0c611d25c19f410486aa5e95bc3a8cbc03946c58ac",
+      "bytes": 11072
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/torch_utils/training_stats.py",
+      "git_path": "vendor/ml-sid-dit/torch_utils/training_stats.py",
+      "sha256": "0142fe1633aa8bea99eaa07a7c10d08c0f5c9dde41ca5cef86cca1890b4933d7",
+      "bytes": 10840
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/__init__.py",
+      "git_path": "vendor/ml-sid-dit/training/__init__.py",
+      "sha256": "0d89cf7c942338f65311ac6368866afe2ac5ee5169afba24722228c7b07704bb",
+      "bytes": 112
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/aesthetics_dataset.py",
+      "git_path": "vendor/ml-sid-dit/training/aesthetics_dataset.py",
+      "sha256": "114d4c8159a0aebe7512e4d49b59d32f4e6ab91ee165884f3ce38a964202d35b",
+      "bytes": 1934
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/dataset.py",
+      "git_path": "vendor/ml-sid-dit/training/dataset.py",
+      "sha256": "19c86c1779d936cad40f94d801c9ac068d5ae6eae38c91230bcad53073e82624",
+      "bytes": 15375
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/mscoco_dataset.py",
+      "git_path": "vendor/ml-sid-dit/training/mscoco_dataset.py",
+      "sha256": "6ca20eaacc44ca8b6e1e8200bc68153fefc3d8a48badf94e1368c79b823ad8a2",
+      "bytes": 3855
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/precompute_latents.py",
+      "git_path": "vendor/ml-sid-dit/training/precompute_latents.py",
+      "sha256": "c8783bb363867543c551c4647f61a4feb86eac6dd4457330282c47c8ba1d576a",
+      "bytes": 26930
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/sid_dit_flux_train.py",
+      "git_path": "vendor/ml-sid-dit/training/sid_dit_flux_train.py",
+      "sha256": "bfb87e5919e423cc4ba72decc64f113278cdcc3120bf86a7583836217330843d",
+      "bytes": 21568
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/sid_dit_flux_training_loop.py",
+      "git_path": "vendor/ml-sid-dit/training/sid_dit_flux_training_loop.py",
+      "sha256": "73d8eaf424e4c870883baffb69c1bb9e0928daba91477088ba0ab8b4c4910454",
+      "bytes": 146312
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/sid_dit_flux_util.py",
+      "git_path": "vendor/ml-sid-dit/training/sid_dit_flux_util.py",
+      "sha256": "0e350ed8dd5e04ae54dcf76656a61ae44062c43c5315265099182bad668bd722",
+      "bytes": 37247
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/sid_dit_sd3_training_loop.py",
+      "git_path": "vendor/ml-sid-dit/training/sid_dit_sd3_training_loop.py",
+      "sha256": "e2be3a3db1e533d75c41df8c24fe01510eeeed56a62efc97f898dc9592819968",
+      "bytes": 144156
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/sid_dit_sd3_util.py",
+      "git_path": "vendor/ml-sid-dit/training/sid_dit_sd3_util.py",
+      "sha256": "6015b11a1d4a6eabee1c56ce252ab4913dde73a6c34e5179de9ef3560a4e2720",
+      "bytes": 27291
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/sid_dit_training_loop.py",
+      "git_path": "vendor/ml-sid-dit/training/sid_dit_training_loop.py",
+      "sha256": "07a27f0dca0c8b4e4afcc6b2902518c881ed4f72242f3326b9d9b9958be33ba4",
+      "bytes": 101671
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/sid_dit_util.py",
+      "git_path": "vendor/ml-sid-dit/training/sid_dit_util.py",
+      "sha256": "da00ba83f4d621eadc312ed58db160a136da88a2b70258818e69e4690aaae326",
+      "bytes": 17494
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/transformer_with_encoder.py",
+      "git_path": "vendor/ml-sid-dit/training/transformer_with_encoder.py",
+      "sha256": "e5a93b7ef36dcc4f22d74cc95f0b6ad2b39fe44761975993372bcee3ce64807b",
+      "bytes": 13968
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/transformer_with_encoder_flux.py",
+      "git_path": "vendor/ml-sid-dit/training/transformer_with_encoder_flux.py",
+      "sha256": "b49b349b2358a74ee9936d31e32a55450f28e760b01ff6327cbb886b1147123a",
+      "bytes": 12163
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/ml-sid-dit/training/transformer_with_encoder_sd3.py",
+      "git_path": "vendor/ml-sid-dit/training/transformer_with_encoder_sd3.py",
+      "sha256": "f2f8120de71387d1220de3d6897d15e30857e42c85d21f03938fd71e7f332ca9",
+      "bytes": 11389
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/.gitignore",
+      "git_path": "vendor/sid-sida/.gitignore",
+      "sha256": "32981c913e959171c7da283003986229077cb489ba1f41bcab018b321ceadd7f",
+      "bytes": 141
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/LICENSE.txt",
+      "git_path": "vendor/sid-sida/LICENSE.txt",
+      "sha256": "02c9a8e50e8776dd1496a3c4d025dbab3f9175c5ad20697abbe0c513d49887f2",
+      "bytes": 11413
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/README.md",
+      "git_path": "vendor/sid-sida/README.md",
+      "sha256": "4d371ef3f1010f17de33ba2f9c583ce35dc646d3c9d22a52f19458dcf108a532",
+      "bytes": 25150
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/datafree_dataset_tool.py",
+      "git_path": "vendor/sid-sida/datafree_dataset_tool.py",
+      "sha256": "181bc45841152c90e4d19b947dc2589a2c0cec68c40a3f76038519f60414fb15",
+      "bytes": 20146
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/dataset_tool.py",
+      "git_path": "vendor/sid-sida/dataset_tool.py",
+      "sha256": "9cedf44bf0a78184aaa2380bf2b033716aa6b6976ab10d06f972cf96133782f9",
+      "bytes": 19325
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/dnnlib/__init__.py",
+      "git_path": "vendor/sid-sida/dnnlib/__init__.py",
+      "sha256": "57a5dd0f58b26c72961c7a64e0a7806c722c6046e06e79ce64ea344b47ecd516",
+      "bytes": 377
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/dnnlib/util.py",
+      "git_path": "vendor/sid-sida/dnnlib/util.py",
+      "sha256": "00a0e339dc8eca358c9053ae6d93ab87b8d3f4df1e5dd30d3185558721986e1c",
+      "bytes": 17098
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/edm2/__init__.py",
+      "git_path": "vendor/sid-sida/edm2/__init__.py",
+      "sha256": "e6191415d4ee726a2b18a639811070d39e5b8fc46bad388b4cc11795e60129b2",
+      "bytes": 337
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/edm2/dataset.py",
+      "git_path": "vendor/sid-sida/edm2/dataset.py",
+      "sha256": "5bca8f0d967aec0238d96c6a3586e883eb4534d26d1a24dedcd7e80bf61715a2",
+      "bytes": 9210
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/edm2/encoders.py",
+      "git_path": "vendor/sid-sida/edm2/encoders.py",
+      "sha256": "4733f539cb2982cdf4a7db0212ad19e5b008990474ae7f965095dcb0512ebb18",
+      "bytes": 7070
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/edm2/misc.py",
+      "git_path": "vendor/sid-sida/edm2/misc.py",
+      "sha256": "2d2db83d436984ff1682ed55854088acdc8299ce2215686734fd16e07f466905",
+      "bytes": 11548
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/edm2/networks_edm2.py",
+      "git_path": "vendor/sid-sida/edm2/networks_edm2.py",
+      "sha256": "ca7b03c263fb71fca293cca337d1982785217de294eb3967ff471f6a18c156ad",
+      "bytes": 15053
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/edm2/phema.py",
+      "git_path": "vendor/sid-sida/edm2/phema.py",
+      "sha256": "7b300c7aa154eeae8b2246ec1543ecd0f07c6caf48fa8a04d72ac32f545226cd",
+      "bytes": 6088
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/edm2/training_loop.py",
+      "git_path": "vendor/sid-sida/edm2/training_loop.py",
+      "sha256": "eb070f85cb46012bbe549402d8721f5997bbd73c23a2db157eaf88de1b1b95e2",
+      "bytes": 13602
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/environment.yaml",
+      "git_path": "vendor/sid-sida/environment.yaml",
+      "sha256": "7d90476ba5df04e4421b5a6780a94d83be4df6ba1646a99e6c902469ebc53bee",
+      "bytes": 343
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/generate_onestep.py",
+      "git_path": "vendor/sid-sida/generate_onestep.py",
+      "sha256": "94e58b8239388351eb3fb53bd56ec0407a6e54a9e82b8c0ef8fcd173f0ea8f42",
+      "bytes": 7677
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/generate_onestep_edm2.py",
+      "git_path": "vendor/sid-sida/generate_onestep_edm2.py",
+      "sha256": "352e6f101abefa35ddc2b3a2876da920ba002524394decaf7a195e4a7cc0e431",
+      "bytes": 18456
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics/__init__.py",
+      "git_path": "vendor/sid-sida/metrics/__init__.py",
+      "sha256": "5efa02ab9dadcd7c016c7de60161b08288ae64d3375ed6f287c1501b2635f3d9",
+      "bytes": 435
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics/perceptual_path_length.py",
+      "git_path": "vendor/sid-sida/metrics/perceptual_path_length.py",
+      "sha256": "a2f8319504ecfb00dd5e2c05e39946760bcf28abb9ff9d2b8460474e4863bdee",
+      "bytes": 5557
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics/sid_frechet_inception_distance.py",
+      "git_path": "vendor/sid-sida/metrics/sid_frechet_inception_distance.py",
+      "sha256": "536486d299498e860c88cac949c806a100847632763aaa518467d74654da6e6a",
+      "bytes": 2966
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics/sid_inception_score.py",
+      "git_path": "vendor/sid-sida/metrics/sid_inception_score.py",
+      "sha256": "3816c7b8823c3f3d98febde8a312d4016d7378d4b0aa5c2b75b9de32f5da5736",
+      "bytes": 2115
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics/sid_kernel_inception_distance.py",
+      "git_path": "vendor/sid-sida/metrics/sid_kernel_inception_distance.py",
+      "sha256": "1bec79bb83c5439f4eb7454ffab9753c538f1f8eab7fa3dae9764cfd9cfe531b",
+      "bytes": 2534
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics/sid_metric_main.py",
+      "git_path": "vendor/sid-sida/metrics/sid_metric_main.py",
+      "sha256": "35f2f12f36c196822c7d9632750877b3ec809f40eaf92ef09c7fed6ae6081ade",
+      "bytes": 6083
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics/sid_metric_utils.py",
+      "git_path": "vendor/sid-sida/metrics/sid_metric_utils.py",
+      "sha256": "d89f7e9b5240686278ef8df59fee8288c55053ae876b60c64439af3f4c6318bc",
+      "bytes": 14594
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics/sid_precision_recall.py",
+      "git_path": "vendor/sid-sida/metrics/sid_precision_recall.py",
+      "sha256": "ab89c5391feec98f6feee22655995515238f32aa40ec8c7ad161666db87c2bb0",
+      "bytes": 4099
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics_edm2/__init__.py",
+      "git_path": "vendor/sid-sida/metrics_edm2/__init__.py",
+      "sha256": "013a1b1cababc4f6668775cedc98f3737ae19517ceffb832a175e888fb59dc37",
+      "bytes": 7
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics_edm2/perceptual_path_length.py",
+      "git_path": "vendor/sid-sida/metrics_edm2/perceptual_path_length.py",
+      "sha256": "3b1205aef3d6fd662fcd9530e2ff7edb364b1d25ccfc50bb14948086542ede5c",
+      "bytes": 5562
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics_edm2/sid_frechet_inception_distance_edm2.py",
+      "git_path": "vendor/sid-sida/metrics_edm2/sid_frechet_inception_distance_edm2.py",
+      "sha256": "61c7363f98020c8538abc97f16268d6736ba2b772427c6135be7e8f979ebf979",
+      "bytes": 5301
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics_edm2/sid_metric_main_edm2.py",
+      "git_path": "vendor/sid-sida/metrics_edm2/sid_metric_main_edm2.py",
+      "sha256": "98a2ad0e80b9ee0aeace0b8e04e9a9f944db6966e6b85af605f1efb701a8cb51",
+      "bytes": 7454
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/metrics_edm2/sid_metric_utils_edm2.py",
+      "git_path": "vendor/sid-sida/metrics_edm2/sid_metric_utils_edm2.py",
+      "sha256": "ba30e35dc0f4071184eeda9da9e9815c3916c62ebebb73a029a252df8bb1ee56",
+      "bytes": 24897
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/run_generate_onestep.sh",
+      "git_path": "vendor/sid-sida/run_generate_onestep.sh",
+      "sha256": "2d272b4e73b84190b69da34693cc2ff7c71a1f053b638e68899566c5bb936a5f",
+      "bytes": 364
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/run_sid.sh",
+      "git_path": "vendor/sid-sida/run_sid.sh",
+      "sha256": "751e5a119f9a2634862ae92fd99b2c558b62522591daa1cdf645fad09e4867cf",
+      "bytes": 4215
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/run_sid_edm2.sh",
+      "git_path": "vendor/sid-sida/run_sid_edm2.sh",
+      "sha256": "d1434e54bd906c0b1e671e0e1e1b5aab709d7c507bf408e4bd06f1fd5bff1d70",
+      "bytes": 8950
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/run_sid_sida.sh",
+      "git_path": "vendor/sid-sida/run_sid_sida.sh",
+      "sha256": "b5475774d45797e395ae9db1043ecad767822c9270cc13a8899cf1f934949a20",
+      "bytes": 9521
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/run_sid_sida_edm2.sh",
+      "git_path": "vendor/sid-sida/run_sid_sida_edm2.sh",
+      "sha256": "ba084b1a8eab49b9a04bf5feebabae52d6685a365ea9a0f739569a8cd636af50",
+      "bytes": 9955
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/run_sid_v1.sh",
+      "git_path": "vendor/sid-sida/run_sid_v1.sh",
+      "sha256": "7050b97b6215d336e51d6627dee05577a646bd45daa8e43e362c1c5a08fa192d",
+      "bytes": 6206
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/run_sida.sh",
+      "git_path": "vendor/sid-sida/run_sida.sh",
+      "sha256": "7dfd76f6c3d66c879471ba772dffb95656269dafa8bb9b8bf2847367a85dccac",
+      "bytes": 9512
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/run_sida_edm2.sh",
+      "git_path": "vendor/sid-sida/run_sida_edm2.sh",
+      "sha256": "6e7ae20dba7ec7b27b12bce842f7b1ecf62e97aada1db4d91cf7afc5023bfd39",
+      "bytes": 9096
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sid_generate.py",
+      "git_path": "vendor/sid-sida/sid_generate.py",
+      "sha256": "47a8ac0087c9eeb89c46ff23b22f7af4f9699fc2ef8c665fe31d687bd747e02c",
+      "bytes": 14459
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sid_metrics.py",
+      "git_path": "vendor/sid-sida/sid_metrics.py",
+      "sha256": "71e9b4c6b04a101de1e9ad189d46bbe4d09f275d0b1dcfc6a6858140ec189236",
+      "bytes": 8399
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sid_metrics_edm2.sh",
+      "git_path": "vendor/sid-sida/sid_metrics_edm2.sh",
+      "sha256": "0dfce40cdc69d73a3d60c5d4ca167174d507c752ba4a28ddf856454377d212df",
+      "bytes": 18468
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sid_train.py",
+      "git_path": "vendor/sid-sida/sid_train.py",
+      "sha256": "5f355571d1a60edb72ef6e6da8324bb33875bcb9bdee791c6151ef4583710bac",
+      "bytes": 15993
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_edm2_train.py",
+      "git_path": "vendor/sid-sida/sida_edm2_train.py",
+      "sha256": "061f0d8da803288301c52333c7cde9dd67d170227af123b38c2c8003d1c22e9c",
+      "bytes": 20672
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_train.py",
+      "git_path": "vendor/sid-sida/sida_train.py",
+      "sha256": "9ca162ca159acd56a6838eac6b3f8326b31a6e108e5c30f82c418a2b314dceab",
+      "bytes": 20329
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_training/__init__.py",
+      "git_path": "vendor/sid-sida/sida_training/__init__.py",
+      "sha256": "5447136fbeb32a5cc9346e664bc49f65715294f5afef1acdd04ade89b714aa2f",
+      "bytes": 260
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_training/sida_loss.py",
+      "git_path": "vendor/sid-sida/sida_training/sida_loss.py",
+      "sha256": "63edbef7a20f7382983077bd7e57d73e71e9df3f3ddf4368bab86e4281edbd48",
+      "bytes": 8336
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_training/sida_networks.py",
+      "git_path": "vendor/sid-sida/sida_training/sida_networks.py",
+      "sha256": "dc23e8985470323c99828af809e0a77faab4808d2091977b323db0f365c9f6ab",
+      "bytes": 19300
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_training/sida_training_loop.py",
+      "git_path": "vendor/sid-sida/sida_training/sida_training_loop.py",
+      "sha256": "5b3d469bdf3eeab2ae2e9e931081090acd577529a65d1c353ede8d27ba9033f8",
+      "bytes": 28120
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_training_edm2/__init__.py",
+      "git_path": "vendor/sid-sida/sida_training_edm2/__init__.py",
+      "sha256": "e97773d022b123767532a2b6bf6e3a51b4674e981411d9eb90af146a9cac0ff4",
+      "bytes": 250
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_training_edm2/json_labels_dataset.py",
+      "git_path": "vendor/sid-sida/sida_training_edm2/json_labels_dataset.py",
+      "sha256": "c587fcb3d75ac01bdcfeb21daf4245d38446528df7cf4bec8d2c0026d263e1ce",
+      "bytes": 2260
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_training_edm2/networks_edm2_modified.py",
+      "git_path": "vendor/sid-sida/sida_training_edm2/networks_edm2_modified.py",
+      "sha256": "898adb0fcca7245cf7393286ac16a3184a831799c5374d2689696d555e4db3c5",
+      "bytes": 18180
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_training_edm2/sida_loss_edm2.py",
+      "git_path": "vendor/sid-sida/sida_training_edm2/sida_loss_edm2.py",
+      "sha256": "5fb1ae388c35458ea984e53c1c911ac1a9c707c3126f89518c8c8973d0d151a2",
+      "bytes": 22380
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_training_edm2/sida_networks_edm2.py",
+      "git_path": "vendor/sid-sida/sida_training_edm2/sida_networks_edm2.py",
+      "sha256": "220219708524211d03ef714f406dd4e5d239b390b23e81d48458d173a2e4c43c",
+      "bytes": 12974
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_training_edm2/sida_training_loop_edm2.py",
+      "git_path": "vendor/sid-sida/sida_training_edm2/sida_training_loop_edm2.py",
+      "sha256": "4df9c9a91df7ce2db135d58c5741c00be212be960662e18ad26a1a20421d00ff",
+      "bytes": 40796
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/sida_training_edm2/vae_edm2_utils.py",
+      "git_path": "vendor/sid-sida/sida_training_edm2/vae_edm2_utils.py",
+      "sha256": "4f1f708199020d7bf62c9ce51bb1a3f4d0eeb79d9dd57955a6730c8e9f339369",
+      "bytes": 2038
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/__init__.py",
+      "git_path": "vendor/sid-sida/torch_utils/__init__.py",
+      "sha256": "c206ac297b56e0acc8671f9f93170e3822abc87abcdf5886b65ea326ade8dac8",
+      "bytes": 337
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/custom_ops.py",
+      "git_path": "vendor/sid-sida/torch_utils/custom_ops.py",
+      "sha256": "ee123ae0458fbe463000d5962a5b804d9e91b25d3fda8500eeaa6ddf6b5c932a",
+      "bytes": 5644
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/distributed.py",
+      "git_path": "vendor/sid-sida/torch_utils/distributed.py",
+      "sha256": "ad471875c199d67cc42e9a125887e55cec794cb7650ec509ce7d2a889ce9b68d",
+      "bytes": 2160
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/misc.py",
+      "git_path": "vendor/sid-sida/torch_utils/misc.py",
+      "sha256": "d1b9ccfa41cbb0e232675d49d1875179cb010dbbd2a021584aa5d1614348ac83",
+      "bytes": 10966
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/__init__.py",
+      "git_path": "vendor/sid-sida/torch_utils/ops/__init__.py",
+      "sha256": "41573fda6f071467e105e595188c3e9641499ba22462046e9bcf725c4a5616cc",
+      "bytes": 438
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/bias_act.cpp",
+      "git_path": "vendor/sid-sida/torch_utils/ops/bias_act.cpp",
+      "sha256": "4a3eb091ce936451ac3a0e9c7c771cc5576cba195332cd777ec275cb806f4f53",
+      "bytes": 4376
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/bias_act.cu",
+      "git_path": "vendor/sid-sida/torch_utils/ops/bias_act.cu",
+      "sha256": "bc6b93e2c347cc00b07dfe0f6dca35011c2291645806239cc86632902694d017",
+      "bytes": 6147
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/bias_act.h",
+      "git_path": "vendor/sid-sida/torch_utils/ops/bias_act.h",
+      "sha256": "f0ca2d087bb22b20f6642e4affd7c77e2ff5b601a2f6d1632a79002608d87aa4",
+      "bytes": 1280
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/bias_act.py",
+      "git_path": "vendor/sid-sida/torch_utils/ops/bias_act.py",
+      "sha256": "e6e0ecdb18a181c010ec54502753540d1c47454feba7654e1e7d1f600f227ac9",
+      "bytes": 10100
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/conv2d_gradfix.py",
+      "git_path": "vendor/sid-sida/torch_utils/ops/conv2d_gradfix.py",
+      "sha256": "8d59bb824cd8f730032bffd6f02353bae6df96c4541caad31063e3e5f635ffb3",
+      "bytes": 7677
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/conv2d_resample.py",
+      "git_path": "vendor/sid-sida/torch_utils/ops/conv2d_resample.py",
+      "sha256": "7de74103801ab85e9f909dfe2386f3fcbc53a08a5b8466da147ab37be866c20d",
+      "bytes": 7591
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/fma.py",
+      "git_path": "vendor/sid-sida/torch_utils/ops/fma.py",
+      "sha256": "f3fdd6b890e250124557cba35360a1297cac5bdbc4925325403b44bf290956e9",
+      "bytes": 2034
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/grid_sample_gradfix.py",
+      "git_path": "vendor/sid-sida/torch_utils/ops/grid_sample_gradfix.py",
+      "sha256": "a49a8195b734ecba95c9b63d035f26faa5d794a0b26eb3e9d5f3c521be29c536",
+      "bytes": 3299
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/upfirdn2d.cpp",
+      "git_path": "vendor/sid-sida/torch_utils/ops/upfirdn2d.cpp",
+      "sha256": "a3930ed91584ab11786f44aca9abad9beab9f4020b564d4c547727da49d70b11",
+      "bytes": 4559
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/upfirdn2d.cu",
+      "git_path": "vendor/sid-sida/torch_utils/ops/upfirdn2d.cu",
+      "sha256": "af059a0dd7be4ba24e2b6b2f8fb5bcb0a89c4ac8320d17a59f228580164528ca",
+      "bytes": 21050
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/upfirdn2d.h",
+      "git_path": "vendor/sid-sida/torch_utils/ops/upfirdn2d.h",
+      "sha256": "9f703976585fd9c07d18cf1c00edd3a495dc641ff1e1e1671e2df2ab24126535",
+      "bytes": 1836
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/ops/upfirdn2d.py",
+      "git_path": "vendor/sid-sida/torch_utils/ops/upfirdn2d.py",
+      "sha256": "94d386941cc4da50ade97da1da1ca02c0866a84e7595347e90474a6c0ef93c2c",
+      "bytes": 16338
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/persistence.py",
+      "git_path": "vendor/sid-sida/torch_utils/persistence.py",
+      "sha256": "71589e7a4b5175047a48a4bc58e30438b58bea87e415e6873d13d7d438c44b38",
+      "bytes": 10044
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/torch_utils/training_stats.py",
+      "git_path": "vendor/sid-sida/torch_utils/training_stats.py",
+      "sha256": "0f16df14740b91a040870e8425dce37014142be7f7016e6871fe19a5585a19c6",
+      "bytes": 10736
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/training/__init__.py",
+      "git_path": "vendor/sid-sida/training/__init__.py",
+      "sha256": "5447136fbeb32a5cc9346e664bc49f65715294f5afef1acdd04ade89b714aa2f",
+      "bytes": 260
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/training/augment.py",
+      "git_path": "vendor/sid-sida/training/augment.py",
+      "sha256": "fd411af7c2d74489ce11a245293047369fc044d00a9aeed1c0bd46b322c8a8b5",
+      "bytes": 19424
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/training/dataset.py",
+      "git_path": "vendor/sid-sida/training/dataset.py",
+      "sha256": "f46fe15ecd66206819e416ffca6ea22a06610405d6954ccc0fffc53092ab81c2",
+      "bytes": 9138
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/training/networks.py",
+      "git_path": "vendor/sid-sida/training/networks.py",
+      "sha256": "2c02ea22779577e80489c3f8861489dab0a0e88164f5c2b6e7a3cc0fec5a38c6",
+      "bytes": 35767
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/training/sid_loss.py",
+      "git_path": "vendor/sid-sida/training/sid_loss.py",
+      "sha256": "fa47caa3b2a65d3182d4feca2eddec102498d0aa471a66f8b0425cf1bf4b02c5",
+      "bytes": 3605
+    },
+    {
+      "original_path": "FastGen-SiD-DiT/vendor/sid-sida/training/sid_training_loop.py",
+      "git_path": "vendor/sid-sida/training/sid_training_loop.py",
+      "sha256": "a8af28b9267192dfe4764a6d8a82f675e2912565c42bfe745355f0f53797c8da",
+      "bytes": 21943
+    }
+  ],
+  "outcome": "Teacher and eight students completed. SiDA improved the tested one-call arm but degraded the two-/three-/four-call comparisons. One training realization per arm.",
+  "evidence_review": "Historical report checked; migration hashes/restore verified separately. No scientific rerun."
+}

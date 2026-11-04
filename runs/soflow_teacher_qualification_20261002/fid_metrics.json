@@ -1,0 +1,47 @@
+{
+  "soflow_diagonal32": {
+    "fid": 38.38943797979988,
+    "generation_seconds": 376.49552690051496,
+    "total_seconds": 405.69303263910115,
+    "neural_calls_per_sample": 32,
+    "batched_network_calls": 6048,
+    "samples": 3020,
+    "initial_noise_sha256": "3b85f065380768e2a56bf36abab4e56ae914fc742fe8fccd3ca72b5db6abe426",
+    "noise_seed": 2026100213,
+    "raw_absmax": 1.8368449211120605,
+    "raw_out_of_range_fraction": 0.169241380165218,
+    "reference_count": 3020,
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "official_score": false
+  },
+  "rf32": {
+    "fid": 37.32665871627512,
+    "generation_seconds": 419.28202792443335,
+    "total_seconds": 449.1220082435757,
+    "neural_calls_per_sample": 32,
+    "batched_network_calls": 6048,
+    "samples": 3020,
+    "initial_noise_sha256": "3b85f065380768e2a56bf36abab4e56ae914fc742fe8fccd3ca72b5db6abe426",
+    "noise_seed": 2026100213,
+    "raw_absmax": 1.3977129459381104,
+    "raw_out_of_range_fraction": 0.017693970534975165,
+    "reference_count": 3020,
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "official_score": false
+  },
+  "soflow_endpoint4": {
+    "fid": 26.576067555002055,
+    "generation_seconds": 52.139694184064865,
+    "total_seconds": 82.21180894225836,
+    "neural_calls_per_sample": 4,
+    "batched_network_calls": 756,
+    "samples": 3020,
+    "initial_noise_sha256": "3b85f065380768e2a56bf36abab4e56ae914fc742fe8fccd3ca72b5db6abe426",
+    "noise_seed": 2026100213,
+    "raw_absmax": 1.4463069438934326,
+    "raw_out_of_range_fraction": 0.11610193652559327,
+    "reference_count": 3020,
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "official_score": false
+  }
+}

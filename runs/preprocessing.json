@@ -1,0 +1,20 @@
+{
+  "development": {
+    "cache_sha256": "6d510065241af5cccf1ef3bb1cea8bb22c589ab5617f61b3bb2043a6cce28efe",
+    "count": 3020,
+    "identity": {
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "paths_sha256": "785074d7eedc8bca9a214c132c6874bf6a6adccdf9f645ffed54f4ea178585f0",
+      "transform": "PIL RGB -> torchvision Resize([64,64]) bilinear -> uint8 CHW"
+    }
+  },
+  "optimization": {
+    "cache_sha256": "b4560eb9348aa7081d50802fc2ec963e9eea2f8f6ee8312417bb8cf7fb803934",
+    "count": 14059,
+    "identity": {
+      "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+      "paths_sha256": "025e25fae77281ee24d8848f6cb0f431cd2b0f5c2b6f3a980c39d85d3ffab57b",
+      "transform": "PIL RGB -> torchvision Resize([64,64]) bilinear -> uint8 CHW"
+    }
+  }
+}

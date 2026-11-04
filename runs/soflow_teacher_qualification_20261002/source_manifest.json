@@ -1,0 +1,38 @@
+{
+  "/home/user/jw_soflow/FastGen-SoFlow/soflow_fastgen/models.py": {
+    "snapshot": "snapshot/soflow_fastgen/models.py",
+    "sha256": "9c889f9e20a9783f7d9fe503771f617032ea0876001b2a53e74259978e6720cf"
+  },
+  "/home/user/jw_soflow/FastGen-SoFlow/soflow_fastgen/unet.py": {
+    "snapshot": "snapshot/soflow_fastgen/unet.py",
+    "sha256": "c083e2d94b01229ffa8aa792d9d5cb33d7e2ae8a5c14cadef5838ed74777fd0a"
+  },
+  "/home/user/jw_soflow/FastGen-SoFlow/soflow_fastgen/sampling.py": {
+    "snapshot": "snapshot/soflow_fastgen/sampling.py",
+    "sha256": "c536149529fcf97ef55f73ca244f9fe4f744283ed57df38bcd73a914246c3279"
+  },
+  "/home/user/jw_soflow/FastGen-SiD-DiT/flow_sid/networks.py": {
+    "snapshot": "snapshot/flow_sid/networks.py",
+    "sha256": "eaee62c7af192125e5befb0e219315475ba04d2eca22b954025453ad69d2d952"
+  },
+  "/home/user/jw_soflow/FastGen-SiD-DiT/flow_sid/unet.py": {
+    "snapshot": "snapshot/flow_sid/unet.py",
+    "sha256": "d078a92dcfe3f5c2e65d4f45079b645303a387e3bda3c1d6c29b1b5cfa848c44"
+  },
+  "/home/user/jw_soflow/FastGen-SiD-DiT/flow_sid/flow.py": {
+    "snapshot": "snapshot/flow_sid/flow.py",
+    "sha256": "ef2c5139d07827f5612d5d4c3be05a6109820eb635357984e15d2ea6a3db027a"
+  },
+  "/home/user/jw_soflow/FastGen-SiD-DiT/evaluate.py": {
+    "snapshot": "snapshot/evaluate.py",
+    "sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb"
+  },
+  "/home/user/jw_soflow/FastGen-SiD-DiT/resources/development_split.json": {
+    "snapshot": "snapshot/development_split.json",
+    "sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e"
+  },
+  "/home/user/jw_soflow/FastGen-SiD-DiT/runs/campaign/T/selected.json": {
+    "snapshot": "snapshot/selected.json",
+    "sha256": "d21a03b802622fe864ca2303ad4b302ff5cef81fa36c0a95f366223314ed1fab"
+  }
+}

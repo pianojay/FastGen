@@ -1,0 +1,36 @@
+{
+  "config_sha256": "28c371ef0253453e7f651da593865158765529cf9a9d53e4fda0b80c84d5f9ea",
+  "counts": {
+    "discriminator_head": 0,
+    "ema_state_elements": 61823923,
+    "fake_score_discriminator": 61823875,
+    "student": 61823875,
+    "teacher": 61823875
+  },
+  "initial_weights_sha256": "87992c00b868e03c3559ac6fcf5c81c37e69f9f0a00231c646b25484043cad49",
+  "run": "A4",
+  "source": {
+    "commit": "3b1502c467c7a6c82fd0da21398dd21b66beeb54",
+    "files": {
+      "flow_sid/__init__.py": "3c1c732cdaf623dd5bd4218b71475d98d702757fca9dc38f12378d084857ca73",
+      "flow_sid/common.py": "e4dc5a2cc2f3fcce5f7afcb9310eb02975fda0c609a57a2fe6beac76e1d11d20",
+      "flow_sid/data.py": "2db84f3af46cb508dc2a132ff4c0da0346604084466e6335d4cd36a3b97d1f39",
+      "flow_sid/engine.py": "d265be60a6a6ade3c3b4c7e46dfc3dae86d14fe7583e9650ef81ffbd55bd84db",
+      "flow_sid/evaluation.py": "eab273142eaa2d2a42d2c6a39a6c2deb2ccf28fc70719c6d66257ee14c1ba7c3",
+      "flow_sid/flow.py": "ef2c5139d07827f5612d5d4c3be05a6109820eb635357984e15d2ea6a3db027a",
+      "flow_sid/gpu.py": "0ec6bc46fe3c121ba1b3c2e953d1246de99eabe75aba9b25b190f0fbad3f3f55",
+      "flow_sid/networks.py": "eaee62c7af192125e5befb0e219315475ba04d2eca22b954025453ad69d2d952",
+      "flow_sid/unet.py": "d078a92dcfe3f5c2e65d4f45079b645303a387e3bda3c1d6c29b1b5cfa848c44",
+      "model.py": "b16f82d5513aca91859cdc258cd13937611192b125936bc4c008536c95df2921",
+      "scripts/campaign.py": "984ee0a3d36bec16695db084fe6d1afb3606757364ebe3174f8d5b9bf0c894f2",
+      "scripts/check_export.py": "047b950e4bc0248f4ba4cff26c7bb7ebae7d0c74beafa79e81cff90b6bb4bd29",
+      "scripts/qualify.py": "b276e949cf820a085f2c2a6855c5f2be98b6ee0423ca224048b80d3fd39cf4ee",
+      "scripts/report.py": "4a9def2434f17c429cb70d11f7621aa99a0d7d6798365853362ce47bb838b7be",
+      "scripts/run_gpu.sh": "2ce3a6ea63e07316befa1f761b815a46e3c6304857eddba298e8e9304ced7ee9",
+      "scripts/smoke_evaluation.py": "0c450da70f1683cc952d70ed43466b1ce0bb10a660edf6e99ab4a5f36c4f703e",
+      "scripts/train_stage.py": "7ed47b5ef6bd925623d2b249a12a5cdfb1b81c5ad85617636d027e65f3117f58"
+    },
+    "sha256": "49ae213d200a0f1253dafea2d382b114534e5e31263fd5943fd4e4aa9ad028f1"
+  },
+  "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+}

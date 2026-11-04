@@ -1,0 +1,36 @@
+{
+  "seed": 2026100207,
+  "gpu_physical_index": 3,
+  "gpu_uuid": "GPU-c651701d-9ecd-e23e-13a9-2bc13b838b5d",
+  "precision": "FP32 parameters and state, FP16 autocast cache disabled",
+  "torch": "2.6.0+cu124",
+  "python": "/home/user/miniconda3/envs/fastgen_sid_dit/bin/python",
+  "parameters": {
+    "soflow_diagonal": 61934243,
+    "rf_teacher": 61823875
+  },
+  "soflow_checkpoint_sha256": "32bf7e04d68750aff505546266d97ba9a4077e17fd68ba911254850473e75a79",
+  "rf_checkpoint_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf",
+  "no_parameter_updates": true,
+  "mode": "gradient_scaled_check",
+  "smoke": {
+    "soflow_diagonal": {
+      "batch16_forward_seconds": 0.08163720392622054,
+      "finite_velocity": true,
+      "finite_input_gradient": true,
+      "fp16_fp32_relative_rms": 0.0005521831335499883,
+      "v_rms": 1.075019121170044,
+      "input_gradient_rms": 1.614445136510767e-05
+    },
+    "rf_teacher": {
+      "batch16_forward_seconds": 0.08073924737982452,
+      "finite_velocity": true,
+      "finite_input_gradient": true,
+      "fp16_fp32_relative_rms": 0.0004677196266129613,
+      "v_rms": 1.0171568393707275,
+      "input_gradient_rms": 1.4133953300188296e-05
+    }
+  },
+  "peak_allocated_bytes": 5033630720,
+  "elapsed_seconds": 12.81238324381411
+}

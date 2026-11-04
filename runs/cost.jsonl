@@ -1,0 +1,52 @@
+{"event": "start", "pid": 2904900, "stage": "preprocessing", "time": 1790870629.4141338}
+{"event": "end", "outcome": "ok", "pid": 2904900, "seconds": 55.03498435020447, "stage": "preprocessing", "time": 1790870684.4491174}
+{"event": "start", "pid": 2908616, "stage": "qualification_profile", "time": 1790871051.4670517}
+{"event": "end", "outcome": "('1dc48c25-2861-508e-c83b-a2a4fab02ad2', 'GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2')", "pid": 2908616, "seconds": 3.7266299724578857, "stage": "qualification_profile", "time": 1790871055.1936812}
+{"event": "start", "pid": 2908937, "stage": "qualification_hardware", "time": 1790871084.9379842}
+{"event": "end", "outcome": "ok", "pid": 2908937, "seconds": 3.9435176849365234, "stage": "qualification_hardware", "time": 1790871088.8815014}
+{"event": "start", "pid": 2909045, "stage": "qualification_profile", "time": 1790871089.8601186}
+{"event": "end", "outcome": "ok", "pid": 2909045, "seconds": 87.12109971046448, "stage": "qualification_profile", "time": 1790871176.9812179}
+{"event": "start", "pid": 2909944, "stage": "qualification_profile", "time": 1790871202.522487}
+{"event": "end", "outcome": "ok", "pid": 2909944, "seconds": 55.33623933792114, "stage": "qualification_profile", "time": 1790871257.8587253}
+{"event": "start", "pid": 2910772, "stage": "qualification_profile", "time": 1790871285.1525514}
+{"event": "end", "outcome": "ok", "pid": 2910772, "seconds": 54.45785355567932, "stage": "qualification_profile", "time": 1790871339.6104043}
+{"event": "start", "pid": 2911172, "stage": "qualification_recovery", "time": 1790871340.824995}
+{"event": "end", "outcome": "ok", "pid": 2911172, "seconds": 59.84852647781372, "stage": "qualification_recovery", "time": 1790871400.6735203}
+{"event": "start", "pid": 2911861, "stage": "qualification_evaluation_export", "time": 1790871402.3824937}
+{"event": "end", "outcome": "ok", "pid": 2911861, "seconds": 98.65464568138123, "stage": "qualification_evaluation_export", "time": 1790871501.0371387}
+{"event": "start", "pid": 2913476, "stage": "qualification_profile", "time": 1790871551.948593}
+{"event": "end", "outcome": "ok", "pid": 2913476, "seconds": 95.34666109085083, "stage": "qualification_profile", "time": 1790871647.2952533}
+{"event": "start", "pid": 2916757, "stage": "run_T", "time": 1790871901.046242}
+{"event": "end", "outcome": "ok", "pid": 2916757, "seconds": 33295.837028980255, "stage": "run_T", "time": 1790905196.8832707}
+{"event": "start", "pid": 3090104, "stage": "qualification_selected_teacher", "time": 1790914025.9166794}
+{"event": "end", "outcome": "ok", "pid": 3090104, "seconds": 27.37575387954712, "stage": "qualification_selected_teacher", "time": 1790914053.2924323}
+{"event": "start", "pid": 3090844, "stage": "run_S1", "time": 1790914125.9297779}
+{"event": "end", "outcome": "ok", "pid": 3090844, "seconds": 14609.98445725441, "stage": "run_S1", "time": 1790928735.9142349}
+{"event": "start", "pid": 3167629, "stage": "run_A1", "time": 1790928739.9085677}
+{"event": "end", "outcome": "ok", "pid": 3167629, "seconds": 16086.078619480133, "stage": "run_A1", "time": 1790944825.987187}
+{"event": "start", "pid": 3259186, "stage": "run_S2", "time": 1790944834.609609}
+{"event": "start", "pid": 3259484, "stage": "analysis_comparison_panels", "time": 1790944893.1530464}
+{"event": "end", "outcome": "ok", "pid": 3259484, "seconds": 1.6345562934875488, "stage": "analysis_comparison_panels", "time": 1790944894.7876024}
+{"event": "end", "outcome": "ok", "pid": 3259186, "seconds": 16209.384295225143, "stage": "run_S2", "time": 1790961043.9939039}
+{"event": "start", "pid": 3343894, "stage": "run_A2", "time": 1790961049.7676587}
+{"event": "end", "outcome": "ok", "pid": 3343894, "seconds": 17579.555188417435, "stage": "run_A2", "time": 1790978629.322847}
+{"event": "start", "pid": 3437711, "stage": "export_verification_through_nfe2", "time": 1790978697.0476434}
+{"event": "start", "pid": 3437712, "stage": "analysis_comparison_panels", "time": 1790978698.4104009}
+{"event": "end", "outcome": "ok", "pid": 3437712, "seconds": 3.2525129318237305, "stage": "analysis_comparison_panels", "time": 1790978701.6629136}
+{"event": "end", "outcome": "ok", "pid": 3437711, "seconds": 29.2087242603302, "stage": "export_verification_through_nfe2", "time": 1790978726.2563672}
+{"event": "start", "pid": 3438257, "stage": "run_S3", "time": 1790978787.3782754}
+{"event": "end", "outcome": "ok", "pid": 3438257, "seconds": 17745.398617744446, "stage": "run_S3", "time": 1790996532.776893}
+{"event": "start", "pid": 3537189, "stage": "run_A3", "time": 1790996544.1066644}
+{"event": "end", "outcome": "ok", "pid": 3537189, "seconds": 18946.095386743546, "stage": "run_A3", "time": 1791015490.2020512}
+{"event": "start", "pid": 3624175, "stage": "run_S4", "time": 1791015501.9983811}
+{"event": "start", "pid": 3624312, "stage": "analysis_comparison_panels", "time": 1791015532.160643}
+{"event": "end", "outcome": "ok", "pid": 3624312, "seconds": 4.831674337387085, "stage": "analysis_comparison_panels", "time": 1791015536.9923172}
+{"event": "end", "outcome": "ok", "pid": 3624175, "seconds": 18974.76738524437, "stage": "run_S4", "time": 1791034476.7657661}
+{"event": "start", "pid": 3706690, "stage": "run_A4", "time": 1791034480.4793687}
+{"event": "end", "outcome": "ok", "pid": 3706690, "seconds": 20559.819393873215, "stage": "run_A4", "time": 1791055040.2987623}
+{"event": "start", "pid": 3818129, "stage": "export_verification_through_nfe4", "time": 1791055133.381401}
+{"event": "end", "outcome": "ok", "pid": 3818129, "seconds": 39.23480272293091, "stage": "export_verification_through_nfe4", "time": 1791055172.6162033}
+{"event": "start", "pid": 3818409, "stage": "analysis_comparison_panels", "time": 1791055190.214141}
+{"event": "end", "outcome": "ok", "pid": 3818409, "seconds": 6.369849681854248, "stage": "analysis_comparison_panels", "time": 1791055196.58399}
+{"event": "start", "pid": 3819068, "stage": "final_candidate_archive_inventory", "time": 1791055329.8384597}
+{"event": "end", "outcome": "ok", "pid": 3819068, "seconds": 23.640419244766235, "stage": "final_candidate_archive_inventory", "time": 1791055353.4788787}

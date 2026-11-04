@@ -1,0 +1,24 @@
+{
+  "ema_tensor_sha256": "b831e8a948fdb45ede5fb44b66b8e9d9c97895e3ede92a1b9aa010e1484740b1",
+  "evaluation": {
+    "diversity": {
+      "exact_unique_fraction": 1.0,
+      "median_relative_diversity": 1.035371518540166,
+      "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+      "potential_collapse_classes": []
+    },
+    "fid": 41.7538507761534,
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "samples": 3020,
+    "sampling_draws_sha256": "5b4c542c3c370103332514eeb9701f851a88ea583edf70e883fe1911f37afc34",
+    "seconds": 84.93093751557171,
+    "seed": 1729
+  },
+  "method": "CPU extraction of EMA from complete-update recovery checkpoint",
+  "path": "artifacts/evaluated_weights/S3/001000.pt",
+  "run": "S3",
+  "saved_at": 1790983116.2435489,
+  "sha256": "abc097f406c4945d4291a3e58d9102beb764bd07920a63b8abab385d1212c01f",
+  "step": 1000
+}

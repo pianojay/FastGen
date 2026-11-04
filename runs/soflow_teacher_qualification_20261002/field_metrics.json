@@ -1,0 +1,218 @@
+{
+  "0.01": {
+    "soflow_diagonal": {
+      "velocity_mse": 0.47097999306506666,
+      "denoiser_mse": 4.709799652227235e-05
+    },
+    "rf_teacher": {
+      "velocity_mse": 0.4462455024831737,
+      "denoiser_mse": 4.4624547760896345e-05
+    },
+    "paired_velocity_delta_soflow_minus_rf": {
+      "mean": 0.024734490581892973,
+      "class_bootstrap_95ci": [
+        0.023132416759525112,
+        0.026422292378342507
+      ]
+    },
+    "paired_denoiser_delta": {
+      "mean": 2.4734487613760027e-06,
+      "class_bootstrap_95ci": [
+        2.3075213539941136e-06,
+        2.6355589659262165e-06
+      ]
+    }
+  },
+  "0.05": {
+    "soflow_diagonal": {
+      "velocity_mse": 0.19780954707487924,
+      "denoiser_mse": 0.0004945238886178635
+    },
+    "rf_teacher": {
+      "velocity_mse": 0.19489049425484328,
+      "denoiser_mse": 0.00048722626004577766
+    },
+    "paired_velocity_delta_soflow_minus_rf": {
+      "mean": 0.0029190528200359533,
+      "class_bootstrap_95ci": [
+        0.002536266597777309,
+        0.0032963849463814635
+      ]
+    },
+    "paired_denoiser_delta": {
+      "mean": 7.297628572085773e-06,
+      "class_bootstrap_95ci": [
+        6.293589727129496e-06,
+        8.288058762861469e-06
+      ]
+    }
+  },
+  "0.1": {
+    "soflow_diagonal": {
+      "velocity_mse": 0.13728872489874924,
+      "denoiser_mse": 0.0013728873565309644
+    },
+    "rf_teacher": {
+      "velocity_mse": 0.13931169133287985,
+      "denoiser_mse": 0.00139311702047137
+    },
+    "paired_velocity_delta_soflow_minus_rf": {
+      "mean": -0.0020229664341306053,
+      "class_bootstrap_95ci": [
+        -0.0022700134024875155,
+        -0.0017777794349124495
+      ]
+    },
+    "paired_denoiser_delta": {
+      "mean": -2.022966394040561e-05,
+      "class_bootstrap_95ci": [
+        -2.2917120104888065e-05,
+        -1.7784934273652272e-05
+      ]
+    }
+  },
+  "0.25": {
+    "soflow_diagonal": {
+      "velocity_mse": 0.09570655563772218,
+      "denoiser_mse": 0.0059816597387293315
+    },
+    "rf_teacher": {
+      "velocity_mse": 0.10014998134756029,
+      "denoiser_mse": 0.006259373830174966
+    },
+    "paired_velocity_delta_soflow_minus_rf": {
+      "mean": -0.004443425709838109,
+      "class_bootstrap_95ci": [
+        -0.004778373474409397,
+        -0.004123395950061621
+      ]
+    },
+    "paired_denoiser_delta": {
+      "mean": -0.0002777140914456339,
+      "class_bootstrap_95ci": [
+        -0.0002977893879127902,
+        -0.00025876181235129093
+      ]
+    }
+  },
+  "0.5": {
+    "soflow_diagonal": {
+      "velocity_mse": 0.09286086734026572,
+      "denoiser_mse": 0.02321521681964718
+    },
+    "rf_teacher": {
+      "velocity_mse": 0.09743050664404271,
+      "denoiser_mse": 0.024357626662552603
+    },
+    "paired_velocity_delta_soflow_minus_rf": {
+      "mean": -0.004569639303776997,
+      "class_bootstrap_95ci": [
+        -0.005001938793906905,
+        -0.004176526029967389
+      ]
+    },
+    "paired_denoiser_delta": {
+      "mean": -0.001142409842905422,
+      "class_bootstrap_95ci": [
+        -0.00124268862488217,
+        -0.001046390638556424
+      ]
+    }
+  },
+  "0.75": {
+    "soflow_diagonal": {
+      "velocity_mse": 0.125734326984758,
+      "denoiser_mse": 0.07072555902414024
+    },
+    "rf_teacher": {
+      "velocity_mse": 0.12569618679040315,
+      "denoiser_mse": 0.070704105208375
+    },
+    "paired_velocity_delta_soflow_minus_rf": {
+      "mean": 3.8140194354862564e-05,
+      "class_bootstrap_95ci": [
+        -0.0006834483447959585,
+        0.000712999301370455
+      ]
+    },
+    "paired_denoiser_delta": {
+      "mean": 2.145381576523481e-05,
+      "class_bootstrap_95ci": [
+        -0.00036399962275677567,
+        0.0003970892885961995
+      ]
+    }
+  },
+  "0.9": {
+    "soflow_diagonal": {
+      "velocity_mse": 0.1877091908210654,
+      "denoiser_mse": 0.15204443672782933
+    },
+    "rf_teacher": {
+      "velocity_mse": 0.17492019533124192,
+      "denoiser_mse": 0.14168535042492464
+    },
+    "paired_velocity_delta_soflow_minus_rf": {
+      "mean": 0.012788995489823502,
+      "class_bootstrap_95ci": [
+        0.011284735266717508,
+        0.014275973898802714
+      ]
+    },
+    "paired_denoiser_delta": {
+      "mean": 0.010359086302904696,
+      "class_bootstrap_95ci": [
+        0.00909643975828176,
+        0.01154822795405145
+      ]
+    }
+  },
+  "0.99": {
+    "soflow_diagonal": {
+      "velocity_mse": 0.415848053880776,
+      "denoiser_mse": 0.4075726855743602
+    },
+    "rf_teacher": {
+      "velocity_mse": 0.3400241962159114,
+      "denoiser_mse": 0.3332577219467289
+    },
+    "paired_velocity_delta_soflow_minus_rf": {
+      "mean": 0.07582385766486459,
+      "class_bootstrap_95ci": [
+        0.06744613240207761,
+        0.08487834818599535
+      ]
+    },
+    "paired_denoiser_delta": {
+      "mean": 0.0743149636276313,
+      "class_bootstrap_95ci": [
+        0.06528247889680233,
+        0.08299826829577024
+      ]
+    }
+  },
+  "sid_logit_normal": {
+    "soflow_diagonal": {
+      "velocity_mse": 0.14605384508443886,
+      "denoiser_mse": 0.0801392861228804
+    },
+    "rf_teacher": {
+      "velocity_mse": 0.14126744275505573,
+      "denoiser_mse": 0.07451105832890771
+    },
+    "paired_velocity_delta_soflow_minus_rf": {
+      "mean": 0.00478640232938311,
+      "class_bootstrap_95ci": [
+        0.0028019193280796636,
+        0.0069240068616684735
+      ]
+    },
+    "paired_denoiser_delta": {
+      "mean": 0.005628227793972686,
+      "class_bootstrap_95ci": [
+        0.003843589509603246,
+        0.007419056911912293
+      ]
+    }
+  }
+}

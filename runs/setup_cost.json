@@ -1,0 +1,6 @@
+{
+  "recorded_setup_start": 1790870298,
+  "teacher_worker_start": 1790871900.9554448,
+  "notes": "Setup wall time begins at environment creation. Includes implementation, dependencies, data preprocessing and qualification with overlapping work; do not sum it again with overlapping preparation stage durations. Pre-environment read-only handoff review was not instrumented. All failed GPU probes appear in cost.jsonl; all 64 attempted probe updates charged.",
+  "pre_teacher_wall_seconds": 1602.9554448127747
+}

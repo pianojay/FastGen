@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/user/jw_soflow/FastGen-SiD-DiT/scripts/qualify.py", line 134, in <module>
+    main()
+  File "/home/user/jw_soflow/FastGen-SiD-DiT/scripts/qualify.py", line 27, in main
+    setup_torch()
+  File "/home/user/jw_soflow/FastGen-SiD-DiT/flow_sid/engine.py", line 30, in setup_torch
+    assert str(prop.uuid) == EXPECTED_UUID, (str(prop.uuid), EXPECTED_UUID)
+AssertionError: ('1dc48c25-2861-508e-c83b-a2a4fab02ad2', 'GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2')

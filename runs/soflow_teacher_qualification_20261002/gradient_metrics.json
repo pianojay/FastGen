@@ -1,0 +1,101 @@
+{
+  "fake_generator_source": "completed S1 4000 update EMA generator and raw fake network, fixed for both teachers",
+  "source_sha256": "db96bdd657a3e7f6f6819e8320efa19c6153ae71e52e7cb18ea09d99a1c72495",
+  "results": {
+    "0.05": {
+      "soflow_diagonal": {
+        "sid_surrogate_sum": -9.708368088467978e-05,
+        "sid_gradient_rms": 2.0002312339784112e-07,
+        "sid_gradient_norm_median": 2.071621383947786e-05,
+        "denoiser_vjp_norm_mean": 0.8652559598286946,
+        "finite": true,
+        "nonzero_fraction": 0.9992079138755798
+      },
+      "rf_teacher": {
+        "sid_surrogate_sum": 0.00010151409333047923,
+        "sid_gradient_rms": 1.2677911342962034e-07,
+        "sid_gradient_norm_median": 1.3531564945878927e-05,
+        "denoiser_vjp_norm_mean": 0.8672372996807098,
+        "finite": true,
+        "nonzero_fraction": 0.9992377161979675
+      },
+      "paired_gradient_cosine_mean": 0.15462610125541687
+    },
+    "0.25": {
+      "soflow_diagonal": {
+        "sid_surrogate_sum": -0.0016933646402321756,
+        "sid_gradient_rms": 2.7624491849564947e-06,
+        "sid_gradient_norm_median": 0.000312027899781242,
+        "denoiser_vjp_norm_mean": 1.0114911595980327,
+        "finite": true,
+        "nonzero_fraction": 0.9996201992034912
+      },
+      "rf_teacher": {
+        "sid_surrogate_sum": 0.0001468860609747935,
+        "sid_gradient_rms": 2.5895756152749527e-06,
+        "sid_gradient_norm_median": 0.0002866495051421225,
+        "denoiser_vjp_norm_mean": 1.0181476751963296,
+        "finite": true,
+        "nonzero_fraction": 0.9994601607322693
+      },
+      "paired_gradient_cosine_mean": 0.07956971228122711
+    },
+    "0.5": {
+      "soflow_diagonal": {
+        "sid_surrogate_sum": -0.004148828447796404,
+        "sid_gradient_rms": 2.642933850438567e-06,
+        "sid_gradient_norm_median": 0.00028519926127046347,
+        "denoiser_vjp_norm_mean": 1.0670915087064108,
+        "finite": true,
+        "nonzero_fraction": 0.9987738728523254
+      },
+      "rf_teacher": {
+        "sid_surrogate_sum": 0.0006564243667526171,
+        "sid_gradient_rms": 1.553376705487608e-06,
+        "sid_gradient_norm_median": 0.00016407952352892607,
+        "denoiser_vjp_norm_mean": 1.0615876773993174,
+        "finite": true,
+        "nonzero_fraction": 0.997753918170929
+      },
+      "paired_gradient_cosine_mean": 0.09849914908409119
+    },
+    "0.75": {
+      "soflow_diagonal": {
+        "sid_surrogate_sum": -0.0063276249275077134,
+        "sid_gradient_rms": 2.328648861293914e-06,
+        "sid_gradient_norm_median": 0.00020929051970597357,
+        "denoiser_vjp_norm_mean": 1.1433948159217835,
+        "finite": true,
+        "nonzero_fraction": 0.9994900226593018
+      },
+      "rf_teacher": {
+        "sid_surrogate_sum": 0.000746427416743245,
+        "sid_gradient_rms": 8.979607741821383e-07,
+        "sid_gradient_norm_median": 8.58099665492773e-05,
+        "denoiser_vjp_norm_mean": 1.0470788697401683,
+        "finite": true,
+        "nonzero_fraction": 0.9983208775520325
+      },
+      "paired_gradient_cosine_mean": 0.09603429585695267
+    },
+    "0.95": {
+      "soflow_diagonal": {
+        "sid_surrogate_sum": -0.006667739769909531,
+        "sid_gradient_rms": 8.495775318806409e-07,
+        "sid_gradient_norm_median": 7.714411185588688e-05,
+        "denoiser_vjp_norm_mean": 1.3566654562950133,
+        "finite": true,
+        "nonzero_fraction": 0.9999972581863403
+      },
+      "rf_teacher": {
+        "sid_surrogate_sum": 0.0002760977586149238,
+        "sid_gradient_rms": 2.005733392707043e-07,
+        "sid_gradient_norm_median": 1.854750189522747e-05,
+        "denoiser_vjp_norm_mean": 0.9604316612084707,
+        "finite": true,
+        "nonzero_fraction": 0.9997775554656982
+      },
+      "paired_gradient_cosine_mean": 0.08930470049381256
+    }
+  }
+}

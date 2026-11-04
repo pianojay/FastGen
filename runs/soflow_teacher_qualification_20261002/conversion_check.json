@@ -1,0 +1,22 @@
+{
+  "max_abs_per_image_mse_identity_error": 2.0977258685661582e-07,
+  "score_denoiser_velocity_identity_max_abs_error_float64": 2.6147972675971687e-12,
+  "by_bin": {
+    "0.01_soflow_diagonal": 2.4592736735126828e-11,
+    "0.01_rf_teacher": 2.8204522095257424e-11,
+    "0.05_soflow_diagonal": 2.142041919273724e-10,
+    "0.05_rf_teacher": 2.0023435340355e-10,
+    "0.1_soflow_diagonal": 6.239861244893008e-10,
+    "0.1_rf_teacher": 6.146728989513128e-10,
+    "0.25_soflow_diagonal": 1.862645149230957e-09,
+    "0.25_rf_teacher": 1.862645149230957e-09,
+    "0.5_soflow_diagonal": 7.450580596923828e-09,
+    "0.5_rf_teacher": 7.450580596923828e-09,
+    "0.75_soflow_diagonal": 1.7695128917694092e-08,
+    "0.75_rf_teacher": 2.0489096641540527e-08,
+    "0.9_soflow_diagonal": 6.258487705856908e-08,
+    "0.9_rf_teacher": 4.9173831950799496e-08,
+    "0.99_soflow_diagonal": 2.0977258685661582e-07,
+    "0.99_rf_teacher": 1.5811920173192107e-07
+  }
+}

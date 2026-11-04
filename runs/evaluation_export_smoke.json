@@ -1,0 +1,62 @@
+{
+  "evaluation": {
+    "fid": 468.69046099229695,
+    "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+    "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+    "samples": 3020,
+    "seconds": 58.98423884622753,
+    "seed": 271828
+  },
+  "exports": {
+    "1": {
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 1,
+      "parameters": 61823875,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/fastgen_export_em9ootuj"
+    },
+    "2": {
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 2,
+      "parameters": 61823875,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/fastgen_export_em9ootuj"
+    },
+    "3": {
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 3,
+      "parameters": 61823875,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/fastgen_export_em9ootuj"
+    },
+    "4": {
+      "finite": true,
+      "independent_loading": true,
+      "nfe": 4,
+      "parameters": 61823875,
+      "source_directory": "/home/user/jw_soflow/FastGen-SiD-DiT/artifacts/fastgen_export_em9ootuj"
+    }
+  },
+  "memory": {
+    "allocated_bytes": 33652736,
+    "device": {
+      "capability": "7.5",
+      "index": "2",
+      "name": "NVIDIA TITAN RTX",
+      "total_MiB": "24576",
+      "used_MiB": "268",
+      "utilization_pct": "7",
+      "uuid": "GPU-1dc48c25-2861-508e-c83b-a2a4fab02ad2"
+    },
+    "host": {
+      "Pss_bytes": 2364783616,
+      "Rss_bytes": 2378907648,
+      "VmHWM_bytes": 2411667456,
+      "VmRSS_bytes": 2378907648
+    },
+    "peak_allocated_bytes": 767166976,
+    "peak_reserved_bytes": 1285554176,
+    "reserved_bytes": 35651584
+  },
+  "purpose": "Untrained plumbing only; not a model-quality result"
+}

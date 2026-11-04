@@ -1,0 +1,67 @@
+{
+  "exports": {
+    "A1": {
+      "nfe": 1,
+      "parameters": 61823875,
+      "path": "../A1.ckpt",
+      "sha256": "f7a7c0e54198919c8e4f30323e128769cddf9bb499574a88ab9870796f27bd06"
+    },
+    "A2": {
+      "nfe": 2,
+      "parameters": 61823875,
+      "path": "../A2.ckpt",
+      "sha256": "73a36512a8330335d9a61fe6503a8e035b4ce957f97159bf6807d1b1e9d1cf78"
+    },
+    "A3": {
+      "nfe": 3,
+      "parameters": 61823875,
+      "path": "../A3.ckpt",
+      "sha256": "711385f963e33af4060215e45f40a5f7155ced666cbf7287fb1e73e520bbdd75"
+    },
+    "A4": {
+      "nfe": 4,
+      "parameters": 61823875,
+      "path": "../A4.ckpt",
+      "sha256": "eee3acbfcac249fb4f8dfb1b16f04b2568f7baea1e1dc2ce80c0554a9b3dfcd2"
+    },
+    "S1": {
+      "nfe": 1,
+      "parameters": 61823875,
+      "path": "../S1.ckpt",
+      "sha256": "771623ffe0bec96ca2327a1e311aabb05438b50e921ac6a5255ddfe485270f73"
+    },
+    "S2": {
+      "nfe": 2,
+      "parameters": 61823875,
+      "path": "../S2.ckpt",
+      "sha256": "3d536e81636cc1c773b768ae72d3e8e2d742131603d3d75aee5f6f813db76639"
+    },
+    "S3": {
+      "nfe": 3,
+      "parameters": 61823875,
+      "path": "../S3.ckpt",
+      "sha256": "94d318a3cce4d77a1af080e7cacc8f34ee69da4f7f08e56a0091e79610647b31"
+    },
+    "S4": {
+      "nfe": 4,
+      "parameters": 61823875,
+      "path": "../S4.ckpt",
+      "sha256": "a1b10f4e052efd07dd9795e9372aef7e06a97a25b8c61bd5afc83bfd99da40f5"
+    }
+  },
+  "files": {
+    "flow_sid/__init__.py": "3c1c732cdaf623dd5bd4218b71475d98d702757fca9dc38f12378d084857ca73",
+    "flow_sid/flow.py": "ef2c5139d07827f5612d5d4c3be05a6109820eb635357984e15d2ea6a3db027a",
+    "flow_sid/networks.py": "eaee62c7af192125e5befb0e219315475ba04d2eca22b954025453ad69d2d952",
+    "flow_sid/unet.py": "d078a92dcfe3f5c2e65d4f45079b645303a387e3bda3c1d6c29b1b5cfa848c44",
+    "model.py": "b16f82d5513aca91859cdc258cd13937611192b125936bc4c008536c95df2921",
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/utils.py": "f5a02c07d8ad190969468b5ef947f0037a6943deb98e7903cd193361f742988f"
+  },
+  "required_runtime": {
+    "numpy": "2.2.6",
+    "python": "3.10",
+    "torch": "2.6.0"
+  },
+  "training_networks_in_export": false
+}

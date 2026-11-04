@@ -1,0 +1,21 @@
+{
+  "checkpoint": "runs/campaign/A4/best.pt",
+  "checkpoint_sha256": "c3dc606d52a670e5ecddd2d900d9b598552848cce06f72cd7518fde861f56b22",
+  "diversity": {
+    "exact_unique_fraction": 1.0,
+    "median_relative_diversity": 1.1209285390875643,
+    "metric_limit": "Pixel diagnostics flag duplication; recognition requires gallery review.",
+    "potential_collapse_classes": []
+  },
+  "fid": 45.83630721575793,
+  "gallery_directory": "runs/campaign/A4/eval_004000",
+  "official_evaluate_sha256": "f201320f3505ad478096313eedf657388a0c6aca4af456095509e13807228adb",
+  "partition_sha256": "825bde8601ca141e992f004ceb13a4fb989e818ec401e335955f70ef6a17677e",
+  "run": "A4",
+  "samples": 3020,
+  "sampling_draws_sha256": "450178278452c10c41258d56def30d4b4c4e1d4668b9440ef8d5ab591a3a676e",
+  "seconds": 101.78900351375341,
+  "seed": 1729,
+  "step": 4000,
+  "teacher_sha256": "8bafcc5cb0e5d1e0f7a644fe6789640ccda9b513813633bc27a40eb81d17b3cf"
+}
