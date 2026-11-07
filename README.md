@@ -2,7 +2,14 @@
 
 Private, selected archival backup of the former `~/jw_soflow` workspace, created November 4, 2026. Source histories and compact records live on independent branches; main is an index and restoration interface.
 
-**No research is active.** Historical AGENTS/program instructions are evidence, not permission to launch experiments. Future work requires a fresh assignment and qualification on its actual host.
+The November 5–7 A100 campaign completed fresh S3 60k and FM25 40k runs. Code and configurations are on [deadline/soflow-a100-20261105](https://github.com/pianojay/FastGen/tree/deadline/soflow-a100-20261105). Research decisions, setup measurements, and campaign records are on the [Master project branch](https://github.com/pianojay/master_root/tree/FastGen). Historical archive instructions retain their original scope.
+
+| A100 recipe | One-call development FID | Four-call development FID |
+|---|---:|---:|
+| Fresh S3 60k | 57.0394 | 22.7310 |
+| Fresh FM25 40k | 71.8435 | 24.0835 |
+
+Scores average four paired sampling seeds on the original training-derived development reference. Each recipe has one training seed. The [campaign results](https://github.com/pianojay/master_root/blob/FastGen/programs/soflow-a100-campaign-20261105/results.json) include the per-seed metrics and local checkpoint identities. The new model weights are retained locally under the user's November 7 publication instruction. The existing migration release continues to hold the original archival assets.
 
 - [Owning Master project](https://github.com/pianojay/master_root/tree/FastGen): charter, research map, historical relationships, dispatch and diary.
 - [Restore guide](RESTORE.md): clone, authenticated download, checksum verification, original-path reconstruction and optional worktrees.
